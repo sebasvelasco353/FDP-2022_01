@@ -7,6 +7,9 @@ Bienvenidos y bienvenidas al [**repositorio**]() para la clase de Fundamentos de
 - [Reglas de la clase.](#reglas-de-la-clase)
 - [Razones para este repositorio](#razones-para-este-repositorio)
 - [Algunos comandos de git](#algunos-comandos-de-git)
+  - [clone](#clone)
+  - [add](#add)
+  - [Commit](#commit)
 - [Vocabulario de la clase](#vocabulario-de-la-clase)
   - [Web](#web)
   - [Git](#git)
@@ -18,9 +21,11 @@ Bienvenidos y bienvenidas al [**repositorio**]() para la clase de Fundamentos de
 ## Intro.
 El registro de la materia, ejercicios propuestos, links utiles y demas datos que nos van a ser utiles los pueden encontrar en este [**Repositorio**.]()
 
-Los invito a que lo [**clonen**]() y antes de las clases hagan [**pull**]() para revisar el nuevo contenido, haciendo uso de este [**Repositorio**]() uds podran llegar a la clase con una idea de que vamos a ver, encontrar algunos ejemplos relacionados con la clase y mas informacion que les permitira entender mas facil y ser cada vez mejores desarrolladores y desarrolladoras.
+Los invito a que le hagan un [**fork**](https://docs.github.com/en/get-started/quickstart/fork-a-repo) a este repo, lo [**clonen**]() y antes de las clases hagan [**pull**]() para revisar el nuevo contenido, haciendo uso de este [**Repositorio**]() uds podran llegar a la clase con una idea de que vamos a ver, encontrar algunos ejemplos relacionados con la clase y mas informacion que les permitira entender mas facil y ser cada vez mejores desarrolladores y desarrolladoras.
 
-La idea de este ejercicio es que uds tengan un lugar donde visitar para recordar, practicar y aprender cosas durante y despues del semestre, sientanse libres de abrir [**pull requests**]() con contenido que les parece interesante o agregar preguntas a la seccion de FAQ para que todas las personas que tengan este [**repositorio**]() puedan ver la respuesta, _muchas veces tenemos las mismas dudas y viene bien preguntar en publico (sin pena que todos estamos aprendiendo)_.
+La idea de este ejercicio es que uds tengan un lugar donde visitar para recordar, practicar y aprender cosas durante y despues del semestre, sientanse libres de abrir [**pull requests**]() con contenido que les parece interesante o agregar preguntas a la seccion de Discussions para que todas las personas que tengan este [**repositorio**]() puedan ver la respuesta, _muchas veces tenemos las mismas dudas y viene bien preguntar en publico (sin pena que todos estamos aprendiendo)_.
+
+**_NOTA:_** La seccion de FAQ se actualizara con las preguntas mas frecuentes que encontremos durante el semestre como una forma mas sencilla de encontrar respuestas.
 
 ## Reglas de la clase.
 Si queremos una clase amena y donde se logre el objetivo (aprender), necesitamos tener algunas reglas que nos permitan estar todos en el mismo lugar.
@@ -32,9 +37,26 @@ Si queremos una clase amena y donde se logre el objetivo (aprender), necesitamos
 - Practiquemos lo que aprendemos.
 
 ## Razones para este [repositorio]()
-La idea es que uds puedan acceder a este repo desde el dia 1 de clase y lo utilicen como una guia detallada de las cosas que vamos a ver durante todo el semestre, en mi vida laboral me he dado cuenta que me ayuda mucho tener un lugar donde tomo notas y escribo ideas de cosas que quiero hacer o aprender, este [**repositorio**]() es una herramienta para eso, para que con la ayuda de todos escribamos lo que hacemos en cada clase y tengamos una ayuda mas a la hora de cumplir nuestros objetivos de la materia.
+La idea es que uds puedan acceder a este repo desde el dia 1 de clase y lo utilicen como una guia detallada de las cosas que vamos a ver durante todo el semestre, en mi vida laboral me he dado cuenta que me ayuda mucho tener un lugar donde tomo notas y escribo ideas de cosas que quiero hacer o aprender, este [**repositorio**]() es una herramienta para eso, para que [con la ayuda de todos](https://docs.github.com/en/get-started/quickstart/contributing-to-projects) escribamos lo que hacemos en cada clase y tengamos una ayuda mas a la hora de cumplir nuestros objetivos de la materia.
 
-## Algunos comandos de [git]()
+## Algunos comandos de [git](https://git-scm.com/book/es/v2/Inicio---Sobre-el-Control-de-Versiones-Fundamentos-de-Git)
+Aqui guardaremos los comandos que nos van a ser utiles en esta clase y el futuro.
+### clone
+Lo usamos para clonar el repositorio objetivo en nuestra maquina.
+```
+git clone [URL del repositorio]
+```
+### add
+Lo usamos para decir que archivos queremos que hagan parte de nuestro [commit](), a este comando le tenemos que entregar los archivos que vamos a agregar, si queremos todos los de la carpeta en la que estamos usamos un punto.
+```
+git add [los archivos que queremos agregar] o git add .
+```
+### Commit
+Un commit es un snapshot de nuestro codigo en el tiempo, cada commit debe tener un mensaje que diga que en que avanzamos o que cambiamos del codigo para en un futuro poder encontrarlos mas facilmente.
+```
+git commit -m "[Mensaje que quiero dejar en el commit]"
+```
+
 
 ## Vocabulario de la clase
 ### Web
@@ -44,6 +66,8 @@ La idea es que uds puedan acceder a este repo desde el dia 1 de clase y lo utili
 ### Git
 - [**Git**](https://git-scm.com/book/es/v2/Inicio---Sobre-el-Control-de-Versiones-Fundamentos-de-Git): Git es un programa que se encarga de guardar archivos que corresponden a momentos en la historia de nuestro proyecto, es decir para controlar las versiones y el flujo del desarrollo de un proyecto de desarrollo, cada uno de esos momentos se llama [commit]().
 - [**Repositorio**]():
+- [**fork**]():
+- [**branch**]():
 - [**Commit**]():
 - [**Branch**]():
 - [**Clonar**]():
