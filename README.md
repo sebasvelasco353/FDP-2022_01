@@ -23,7 +23,9 @@ El registro de la materia, ejercicios propuestos, links utiles y demas datos que
 
 Los invito a que le hagan un [**fork**](https://docs.github.com/en/get-started/quickstart/fork-a-repo) a este repo, lo [**clonen**]() y antes de las clases hagan [**pull**]() para revisar el nuevo contenido, haciendo uso de este [**Repositorio**]() uds podran llegar a la clase con una idea de que vamos a ver, encontrar algunos ejemplos relacionados con la clase y mas informacion que les permitira entender mas facil y ser cada vez mejores desarrolladores y desarrolladoras.
 
-La idea de este ejercicio es que uds tengan un lugar donde visitar para recordar, practicar y aprender cosas durante y despues del semestre, sientanse libres de abrir [**pull requests**]() con contenido que les parece interesante o agregar preguntas a la seccion de Discussions para que todas las personas que tengan este [**repositorio**]() puedan ver la respuesta, _muchas veces tenemos las mismas dudas y viene bien preguntar en publico (sin pena que todos estamos aprendiendo)_.
+La idea de este ejercicio es que uds tengan un lugar donde visitar para recordar, practicar y aprender cosas durante y despues del semestre, sientanse libres de abrir [**pull requests**]() con contenido que les parece interesante o agregar preguntas a la seccion de Discussions para que todas las personas que tengan este [**repositorio**]() puedan ver la respuesta.
+
+ _muchas veces tenemos las mismas dudas y viene bien preguntar en publico (sin pena que todos estamos aprendiendo)_.
 
 **_NOTA:_** La seccion de FAQ se actualizara con las preguntas mas frecuentes que encontremos durante el semestre como una forma mas sencilla de encontrar respuestas.
 
@@ -47,7 +49,7 @@ Lo usamos para clonar el repositorio objetivo en nuestra maquina.
 git clone [URL del repositorio]
 ```
 ### add
-Lo usamos para decir que archivos queremos que hagan parte de nuestro [commit](), a este comando le tenemos que entregar los archivos que vamos a agregar, si queremos todos los de la carpeta en la que estamos usamos un punto.
+Lo usamos para decir que archivos queremos que hagan parte de nuestro [commit](https://www.w3schools.com/git/git_commit.asp?remote=gitlab), a este comando le tenemos que entregar los archivos que vamos a agregar, si queremos todos los de la carpeta en la que estamos usamos un punto.
 ```
 git add [los archivos que queremos agregar] o git add .
 ```
@@ -64,12 +66,13 @@ git commit -m "[Mensaje que quiero dejar en el commit]"
 - [**Responsive Web**](https://www.w3schools.com/whatis/whatis_responsive.asp): Hace referencia a crear paginas y aplicaciones que se acomoden a el dispositivo en el cual estan visitandolas, esto se consigue reorganizando el contenido y cambiando algunas propiedades visuales que ayudan a que el usuario pueda navegar y tener acceso a la informacion que busca mas facil.
 - [**Web Accesible**](https://developer.mozilla.org/es/docs/Learn/Accessibility/What_is_accessibility): Es crear paginas y aplicaciones que brinden las facilidades necesarias para que usuarios con necesidades diferentes puedan **acceder** e **interactuar** con lo que desarrollamos, esto se logra de diferentes formas como por ejemplo el uso correcto de tags.
 ### Git
-- [**Git**](https://git-scm.com/book/es/v2/Inicio---Sobre-el-Control-de-Versiones-Fundamentos-de-Git): Git es un programa que se encarga de guardar archivos que corresponden a momentos en la historia de nuestro proyecto, es decir para controlar las versiones y el flujo del desarrollo de un proyecto de desarrollo, cada uno de esos momentos se llama [commit]().
-- [**Repositorio**]():
-- [**fork**]():
-- [**branch**]():
-- [**Commit**]():
+- [**Git**](https://git-scm.com/book/es/v2/Inicio---Sobre-el-Control-de-Versiones-Fundamentos-de-Git): Git es un programa que se encarga de guardar archivos que corresponden a momentos en la historia de nuestro proyecto, es decir para controlar las versiones y el flujo del desarrollo de un proyecto de desarrollo, cada uno de esos momentos se llama [commit](https://www.w3schools.com/git/git_commit.asp?remote=gitlab).
+- [**Repositorio**](): Basicamente es nuestro proyecto, puede ser local o estar en un servidor y es usado por los controladores de versiones para guardar ahi los estados de nuestro proyecto.
+- [**Fork**](https://www.toolsqa.com/git/git-fork/): Es una copia de un repositorio, esto es usado para para experimentar ya hacer multiples cambios en el proyecto sin afectar el repositorio original, esto para trabajar en colaboracion con mas personas o tomar repositorios como base de otro proyecto.
+
+  [aqui](https://docs.github.com/en/get-started/quickstart/contributing-to-projects) pueden encontrar informacion mas detallada sobre el proceso de contribuir a un proyecto mediante Pull Requests.
 - [**Branch**]():
+- [**Commit**](https://www.w3schools.com/git/git_commit.asp?remote=gitlab): Es un snapshot del codigo en ese momento, los utilizamos para guardar nuestros cambios en el codigo del proyecto.
 - [**Clonar**]():
 - [**Pull**]():
 - [**Pull Request**]():
@@ -78,9 +81,10 @@ git commit -m "[Mensaje que quiero dejar en el commit]"
 - [**Concatenar**]():
 
 
-## Lecturas de interes.
-Les dejo por aca algunas lecturas que ayudan a entender conceptos que veremos en esta clase, otros mas complejos se los estare agregando al terminar el semestre.
+## Paginas recomendadas.
+[**W3 Schools**](https://www.w3schools.com/), [**FreeCodeCamp**](https://www.freecodecamp.org/), [**CodePen**](https://codepen.io/), [**StackOverflow**](https://codepen.io/), [**Git**](https://git-scm.com/)
 
-## Videos recomendados.
+## Canales de Youtube recomendados.
+[**Hola Mundo**](https://www.youtube.com/channel/UC4FHiPgS1KXkUMx3dxBUtPg), [**Traversy Media**](https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA), [**FreeCodeCamp**](https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ), [**Web Dev Simplified**](https://www.youtube.com/channel/UCFbNIlppjAuEX4znoulh0Cw), [**Kevin Powell**](https://www.youtube.com/channel/UCFbNIlppjAuEX4znoulh0Cw), [**Fireship**](https://www.youtube.com/channel/UCsBjURrPoezykLs9EqgamOA), [**Academind**](https://www.youtube.com/channel/UCSJbGtTlrDami-tDGPUV9-w), [**The Net Ninja**](https://www.youtube.com/c/TheNetNinja)
 
 ## FAQ
