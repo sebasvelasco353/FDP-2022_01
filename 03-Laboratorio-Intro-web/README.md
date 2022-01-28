@@ -5,7 +5,7 @@ como vimos en la clase pasada, existen gran cantidad de etiquetas y cada una tie
 Cuando queremos agregar un video a nuestra pagina usamos el siguiente tag y sus propiedades.
 
 ``` html
-<video width="320" height="240" controls>
+<video width="320" height="240" controls poster="https://github.com/sebasvelasco353/FDP-2022_01">
   <source src="movie.mp4" type="video/mp4">
   <source src="movie.ogg" type="video/ogg">
   Your browser does not support the video tag.
@@ -20,7 +20,7 @@ adentro de este tag tenemos los de source, estos son los que usamos para especif
 Para agregar imagenes a nuestra pagina usamos el siguiente tag
 
 ```html
-<img src="img.jpg" alt="example img tag" width="500" height="600">
+<img src="../img.jpg" alt="example img tag" width="500" height="600" loading="lazy">
 
 ```
 El tag img no solamente nos permite agregar una imagen (local o por url) a la pagina sino tambien darle las siguientes propiedades: **alt** es el texto alternativo para mostrar cuando la imagen esta cargando o no pudo ser cargada, la idea es que este texto de una breve descripcion de lo que muestra la imagen, **src** es el link al archivo de la imagen que queremos mostrar en nuestra pagina, **loading** le dice al navegador si debe cargar la imagen apenas empieza a cargar la pagina o si hace un lazy loading.
@@ -42,7 +42,7 @@ Al igual que la etiqueta de video, en esta encontramos que tenemos la posibilida
 Usamos forms cuando queremos capturar datos o input interactuando con un usuario para despues usar esa informacion, procesarla o enviarla a nuestro servidor para agregarla a una base de datos.
 
 ```html
-<form>
+<form action="action">
 aqui agregamos los elementos que hacen parte de nuestro form.
 </form>
 ```
