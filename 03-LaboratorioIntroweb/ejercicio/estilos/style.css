@@ -6,6 +6,9 @@
 section {
     width: 100vw;
     height: 100vh;
+    font-size: 1.5rem;
+    margin-top: 2em;
+    padding: 1%;
 }
 .introSection-img {
     width: 50vw;
