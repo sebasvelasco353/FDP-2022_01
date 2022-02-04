@@ -7,7 +7,11 @@ box-sizing: border-box;
 
 body{
     font-family: 'open sans';
+    background-color: rgba(189, 182, 182, 0.658)
+    ;
 }
+
+
 
 .contenedor{
     padding: 60px 0;
@@ -21,11 +25,23 @@ body{
     display:flex; align-items: center;
     justify-content: center;
 }
-footer {background-color:lightgoldenrodyellow;
+footer {background-color:rgb(250, 193, 193);
 color: black
 ;}
 .textos-header{
-background-color: gainsboro;
+background-color: rgb(217, 244, 245);
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+;
+font-weight: bolder;
+
+
+
 }
-image {align-items: center;
+.contenedor{
+    background-color: rgb(153, 164, 168);
+
+}
+
+img{
+    margin-left: 45px;
 }
