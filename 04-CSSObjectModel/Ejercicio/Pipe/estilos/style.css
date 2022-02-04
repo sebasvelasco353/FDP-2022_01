@@ -14,20 +14,26 @@
  
 .landing-data{
     display: grid;
-    grid-template-columns: 50% 50%;
-    
+    grid-template-columns: 1fr 3fr;
+    margin: 1em;
+    column-gap: 1em;
+  row-gap: 1em;
 }
-
+.landing-text{
+    margin: 1em;
+}
  .landing-banner{
     padding-left: 30%;
     padding-top: 1em;
+    padding-bottom: 1em;
  }
 
  .landing-text2{
-width: 50%;
+width: 100%;
 
  }
 
  .landing-video{
      align-content: right;
+     width: 1080;
  }
