@@ -1,0 +1,186 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+    font-family: 'Open sans';
+    font-size: 18px;
+}
+
+/*Header*/
+header{
+    width: 100%;
+    position: fixed;
+    background-color: #fff;
+}
+
+.Textosheader {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.Textosheader h1{
+    font-weight: 700;
+}
+/*Fin header*/
+
+.banner {
+    padding-top: 130px;
+}
+
+.Contenedor {
+    padding: 30px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.Titulo {
+    color: #008e96;
+    font-size: 30px;
+    text-align: center;
+    margin: 30px;
+    padding-top: 15px;
+}
+
+/*Barra de navegación*/
+header nav {
+    background-color: #008d7f;
+    overflow: hidden;
+}
+
+header nav ul {
+    list-style: none;
+    }
+
+header nav ul li{
+    float: left;
+    }
+
+header nav ul li a{
+    padding:10px 82px;
+    color: #fff;
+    display: block;
+    text-decoration: none;
+    }
+
+header nav ul li a:hover {
+    background: #00a594;
+}
+/*Fin barra de navegación*/
+
+.cards {
+    display: flex;
+    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 48% 4% 48%;
+}
+
+.Tarjeta1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    gap: 1em;
+}
+
+.Tarjeta2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    gap: 1em;
+}
+
+.Tarjeta3 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    gap: 1em;
+}
+
+.Tarjeta4 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    gap: 1em;
+}
+
+.Tarjeta5 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    gap: 1em;
+}
+
+.Tarjeta6 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    gap: 1em;
+}
+
+h4 {
+    text-align: center;
+}
+
+footer {
+    background-color: #e7e7e7;
+}
+
+.Contenedorintro {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 100%;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    gap: 1em;
+}
+
+.Portada {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    gap: 1em;
+}
+
+.Contenedorarte {
+    display: grid;
+    grid-template-columns: 5% 90% 5%;
+    grid-template-rows: 100%;
+    background-color: #e7e7e7;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.backgroundarte {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.videoarte {
+    width: 90%;
+    padding:  30px;
+    text-align: center;
+}
