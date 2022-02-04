@@ -1,5 +1,4 @@
 *{
-    border: 1px solid red;
     margin: 0;
     padding: 0;
     background-color: ;
@@ -37,6 +36,7 @@ width: 100%;
  }
 
  .landing-video{
+     padding-top: 1em;
      align-content: right;
      width: 1080;
  }
