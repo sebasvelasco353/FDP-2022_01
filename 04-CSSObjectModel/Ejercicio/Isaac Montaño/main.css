@@ -1,0 +1,68 @@
+.Sección-superior {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 1em;
+
+}
+.Sección-superior div {
+    background-color: antiquewhite;
+    padding: 1em
+}
+.Sección-superior div:hover{
+    border: 2px solid rosybrown;
+}
+.TextoGeneral {
+    background-color: white;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    transition: background-color: ;
+    
+
+}
+.ImágenDerecha {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    justify-content: center;
+}
+.DosLibros {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1em;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.BannerScott {
+    display: flex;
+      justify-content: center;
+      padding-top: 2em;
+      
+}
+.VideoScott {
+    display: flex;
+      justify-content: center;
+      padding: 2em;
+
+}
+
+.FixedAbajo {
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    background-color: rgb(63, 62, 62);
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    border: 2px solid #383a35;
+    justify-content: center;
+
+}
+.TextoConoceMás {
+    color: white;
+}
