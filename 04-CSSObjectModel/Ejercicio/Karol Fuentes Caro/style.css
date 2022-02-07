@@ -1,0 +1,57 @@
+p {
+    line-height: 150%;
+}
+.headingIntro{
+    font-size: 60px;
+    color: rgba(72, 32, 59, 1);
+    font-weight: bold;
+    font-family: 'Burtons';
+    margin-left: 2%;
+}
+
+.grid-comida{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    grid-template-rows: 20% 50% 30%;
+    background-color: rgb(255, 251, 245);
+    padding: 2em;
+    font-family: 'Roboto', sans-serif;
+}
+.one{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    padding: 1em;
+    background-color:rgb(240, 202, 100);
+}
+.two{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    padding: 1em;
+    margin-left: 4%;
+    margin-top: 3%;
+    background-color: rgb(255, 251, 245);
+}
+.three{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    padding: 1em;
+    margin: auto;
+    background-color: rgba(0, 171, 190, 1);
+}
+.four{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    padding: 1em;
+    align-content: center;
+    background-color: rgb(255, 251, 245);
+    margin-left: 2%;
+}
