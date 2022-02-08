@@ -14,11 +14,9 @@
 **
 */
 
-// TODO: se debe hacer un software para guardar las ultimas 24 medidas de temperatura en una mision de la antartida que busca mostrar los cambios de temperatura durante un dia, muestras tomadas cada hora del dia registrando tambien la hora en la que fue tomada.
-
-// TODO: debemos dar al usuario la posibilidad de convertir de C a F y de F a C porque esa informacion va a ser verificada por cientificos en todo el mundo.
-
-// TODO: En la interfaz debemos mostrar los ultimos tres registros hasta el momento pero guardar los ultimos 24.
+// TODO: guardar maximo 24 elementos y empezar a sobreescribir el mas viejo despues.
+// TODO: debemos dar al usuario la posibilidad de convertir de C a F y de F a C.
+// TODO: En la interfaz debemos mostrar los ultimos tres registros hasta el momento.
 
 let celcius = 0;
 let registroTemperaturas = [];
