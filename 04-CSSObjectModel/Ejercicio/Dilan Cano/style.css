@@ -1,0 +1,35 @@
+.list-menu {
+    
+    background-color: #efefef;
+    border: solid 2px blue;
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+
+}
+
+.colums {
+    
+    padding: 10px;
+    border: solid 2px green;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+
+}
+
+.intro {
+
+    background-color: #efefef;
+    border: solid 2px yellow;
+    padding: 10px;
+
+}
+
+.explain {
+
+    margin-top: 30px;
+    background-color: #efefef;
+    border: solid 2px orangered;
+    padding: 10px;
+
+}
