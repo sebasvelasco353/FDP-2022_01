@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <title>01 - Intro a JS</title>
+</head>
+<body>
+    <header>
+        <span>Clase 08</span>
+        <nav>
+            <ul class="navigationList">
+                <li class="navigationList__item navigationList__item--active">Clase 08 - Operators en JS y profundizacion en condicionales.</li>
+                <li class="navigationList__item"><a href="https://www.w3schools.com/js/js_operators.asp">W3Schools - operators en Javascript</a></li>
+                <li class="navigationList__item"><a href="https://www.w3schools.com/js/js_if_else.asp">W3Schools - condicionales en Javascript</a></li>
+                <li class="navigationList__item"><a href="https://www.w3schools.com/js/js_iterables.asp">W3Schools - Iterables en Javascript</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Intro a Javascript.</h1>
+        <aside class="content__intro">En esta clase vamos a ver como hacer operaciones aritmeticas y profundizamos un poco mas sobre condicionales y los datos iterables</aside>
+        <div class="container__content">
+            <label for="temperatura">Temperatura:</label>
+            <input type="number" name="temperatura" id="temperatura">
+            <label for="escala">escala de temperatura:</label>
+            <select name="escala" id="escala">
+                <option value="C">Celcius (C)</option>
+                <option value="F">Fahrenheit (F)</option>
+            </select>
+            <div class="displayTemperaturas">
+                <h2>Ultimas tres medidas:</h2>
+                <ul class="ListaMedidas">
+                    <!-- TODO: Aqui vamos a agregar de forma dinamica desde JS los elementos que queremos mostrar -->
+                </ul>
+
+            </div>
+        </div>
+    </div>
+    <script src="./js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+/* Importamos la fuente de google fonts */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@700&family=Roboto&display=swap');
+
+header {
+    width: 100%;
+    display: flex;
+    padding: 1rem 2rem;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+}
+header > span {
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+header > nav > .navigationList {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+header > nav > .navigationList > .navigationList__item {
+    list-style-type: none; /* Remove bullets */
+    margin: 0 1rem;
+    font-size: 1.5rem;
+    transition: color 0.2s ease-out;
+}
+header > nav > .navigationList > .navigationList__item:hover {
+    color: gray;
+    text-decoration: underline;
+}
+header > nav > .navigationList > .navigationList__item--active {
+    font-size: 2rem;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+}
+h1{
+    text-align: center;
+    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+}
+h2{
+    text-align: center;
+    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+}
+.content__intro {
+    font-size: 1.8rem;
+    font-family: 'Roboto', sans-serif;
+}
+.container__content {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    padding: 5rem 2rem;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+.container__content > .content__intro {
+    font-size: 1.6rem;
+}
