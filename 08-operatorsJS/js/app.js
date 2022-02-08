@@ -37,15 +37,26 @@ const renderUltimosDatos = () => {
     const LISTA_MEDIDAS_ELEMENT = document.getElementById("listaMedidas");
     LISTA_MEDIDAS_ELEMENT.innerHTML = '';
 
-    for (let i = 0; i < 3; i++) {
-        console.log(i, registroTemperaturas[i]);
-        console.log(registroTemperaturas);
-        const tempObj = registroTemperaturas[i];
-        var tag = document.createElement("p");
+    if (registroTemperaturas.length > 2) {
+        const registroTemperaturasInv = [...registroTemperaturas].reverse();
+        for (let i = 0; i < 3 ; i++) {
+            const tempObj = registroTemperaturasInv[i];
+            var tag = document.createElement("p");
 
-        tag.innerHTML =`Temperatura: ${tempObj.temperatura} ${tempObj.escala} - fecha: ${tempObj.fecha}.`;
+            tag.innerHTML =`Temperatura: ${tempObj.temperatura} ${tempObj.escala} - fecha: ${tempObj.fecha}.`;
 
-        LISTA_MEDIDAS_ELEMENT.appendChild(tag);
+            LISTA_MEDIDAS_ELEMENT.appendChild(tag);
+        }
+    } else {
+        for (let i = 0; i < registroTemperaturas.length; i++) {
+            const tempObj = registroTemperaturas[i];
+            var tag = document.createElement("p");
+
+            tag.innerHTML =`Temperatura: ${tempObj.temperatura} ${tempObj.escala} - fecha: ${tempObj.fecha}.`;
+
+            console.log(tag);
+            LISTA_MEDIDAS_ELEMENT.appendChild(tag);
+        }
     }
 }
 
