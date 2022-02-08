@@ -35,6 +35,7 @@ header > nav > .navigationList > .navigationList__item--active {
 .container {
     display: flex;
     flex-direction: column;
+    padding: 5rem 2rem;
 }
 h1{
     text-align: center;

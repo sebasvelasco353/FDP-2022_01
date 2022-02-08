@@ -31,12 +31,15 @@
                 <option value="C">Celcius (C)</option>
                 <option value="F">Fahrenheit (F)</option>
             </select>
+            <button class="botonGuardar" onclick="handleRegistroTemperaturas()">
+                Guardar Registro
+            </button>
             <div class="displayTemperaturas">
                 <h2>Ultimas tres medidas:</h2>
-                <ul class="ListaMedidas">
+                <div class="ListaMedidas" id="listaMedidas">
+                    <p><b>Aqui estan las ultimas tres medidas:</b></p>
                     <!-- TODO: Aqui vamos a agregar de forma dinamica desde JS los elementos que queremos mostrar -->
-                </ul>
-
+                </div>
             </div>
         </div>
     </div>
