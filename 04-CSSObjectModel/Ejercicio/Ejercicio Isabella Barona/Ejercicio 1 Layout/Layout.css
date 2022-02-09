@@ -1,0 +1,77 @@
+body{
+    background-color: whitesmoke;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container{
+    padding: 1em;
+    margin: 15px 15px;
+    display: grid;
+    grid-template-columns: [First] 45% [Second] 55% [Last];
+    grid-template-rows: [Row1] 15vh [Row2] auto [Row3] 35vh [Row4];
+}
+
+header{
+    background-color: darkorange;
+    border-radius: 10px;
+    text-align: center;
+    font-size: large;
+    margin: 10px 0 20px 0;
+    display: grid;
+    grid-column-start: First;
+    grid-column-end: Last;
+    grid-row-start: Row1;
+    grid-row-end: Row2;
+    position: -webkit-sticky;
+    position: sticky;
+    top: -1px;
+}
+
+.Intro{
+    padding: 20px;
+    margin: 0 10px 10px 0;
+    background-color: white;
+    border-left: 15px solid darkorange;
+    border-radius: 10px;
+    align-self: stretch;
+    display: grid;
+    grid-column-start: First;
+    grid-column-end: Second;
+    grid-row-start: Row2;
+    grid-row-end: Row3;
+}
+
+aside{
+    padding: 20px;
+    margin: 10px 10px 10px 0;
+    background-color: darkorange;
+    border-radius: 10px;
+    display: grid;
+    grid-column-start: First;
+    grid-column-end: Second;
+    grid-row-start: Row3;
+    grid-row-end: Row4;   
+    transition: background-color 0.2s ease-in;
+}
+
+aside:hover {
+    background-color: cornflowerblue;
+}
+
+.Video{
+    font-size: small;
+    padding: 20px;
+    margin: 0 0 10px 10px;
+    background-color: white;
+    border-radius: 10px;
+    justify-self: center;
+    display: grid;
+    grid-column-start: Second;
+    grid-column-end: Last;
+    grid-row-start: Row2;
+    grid-row-end: Row4;
+}
+
+.Textoblanco{
+    color: white;
+}

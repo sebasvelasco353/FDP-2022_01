@@ -1,0 +1,55 @@
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+    padding: auto;
+}
+header {
+    padding: 50px;
+    background-color: lavender;
+    text-align: center;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    background-color: beige;
+}
+
+nav a {
+    color: darksalmon;
+    padding: 15px 21px;
+    text-decoration: none;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+aside{
+    flex: 30px;
+    background-color: azure;
+    padding: 20px;
+    image-orientation: center;
+}
+
+section{
+    flex: 70%;
+    background-color: blanchedalmond;
+    padding: 20px;
+}
+
+footer{
+    padding: 20px;
+    text-align: center;
+    background-color: aquamarine;
+}
+
+@media screen and (max-width: 700px) {
+    nav, .row{
+        flex-direction: column;
+    }
+    
+}

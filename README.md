@@ -58,6 +58,11 @@ Un commit es un snapshot de nuestro codigo en el tiempo, cada commit debe tener 
 ```
 git commit -m "[Mensaje que quiero dejar en el commit]"
 ```
+### push
+push es pa subir los cambios en el commit a el servidor
+```
+git push
+```
 
 
 ## Vocabulario de la clase
