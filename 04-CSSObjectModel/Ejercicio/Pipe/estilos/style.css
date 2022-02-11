@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: ;
+}
+
+.landing-header{
+    background-color: #10154C;
+    grid-template-columns: [first-line] 100% ;
+    grid-template-rows: 2em ;
+    padding: 10px 10px 10px 10px;
+    color: white;
+    text-align: center;
+}
+
+ 
+.landing-data{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    margin: 1em;
+    column-gap: 1em;
+  row-gap: 1em;
+}
+.landing-text{
+    margin: 1em;
+}
+ .landing-banner{
+    padding-left: 30%;
+    padding-top: 1em;
+    padding-bottom: 1em;
+ }
+
+ .landing-text2{
+width: 100%;
+
+ }
+
+ .landing-video{
+     padding-top: 1em;
+     align-content: right;
+     width: 1080;
+ }
