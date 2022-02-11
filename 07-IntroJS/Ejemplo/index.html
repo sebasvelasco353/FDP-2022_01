@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <title>01 - Intro a JS</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <span>Clase 07</span>
+            <nav>
+                <ul class="navigationList">
+                    <li class="navigationList__item navigationList__item--active">Home</li>
+                    <li class="navigationList__item">Ejemplos</li>
+                    <li class="navigationList__item"><a href="https://www.w3schools.com/js/js_operators.asp">W3Schools - operators en Javascript</a></li>
+                </ul>
+            </nav>
+        </header>
+        <h1>Intro a Javascript.</h1>
+        <div class="container__content">
+            <aside class="content__intro">En esta clase vamos a ver un poco de como funciona Javascript, que son variables y constantes, la diferencia entre las palabras reservadas let, var y const, tipos de datos, estructuras secuenciales, bloques de codigo y estructuras de seleccion.</aside>
+
+            <div class="content__variables">
+                <h2>Variables</h2>
+                <p>Las variables son espacios de almacenamiento a los cuales les asignamos un nombre para acceder a esos espacios despues, estas pueden variar durante el tiempo de ejecucion de la pagina. <br>
+                <b>Un ejemplo seria:</b> podemos tener una variable donde guardamos el numero de veces que el usuario ha ganado premios en nuestra plataforma de rifas. <br>
+                Las variables las declaramos usando las palabras <b>var</b> o <b>let</b>, la diferencia entre estas dos palabras es el scope, es decir desde que partes del codigo podemos acceder a esas variables, las que declaramos con <b>var</b> pueden usarse dentro de la funcion, mientras que las que declaramos usando <b>let</b> solo pueden usarse dentro del bloque, es decir dentro del par de llaves (marcado por {}) donde se encuentran.</p>
+            </div>
+
+            <div class="content__constantes">
+                <h2>Constantes</h2>
+                Al igual que las variables, las constantes son un espacio en memoria que tiene un identificador, pero que no vamos a modificar, es decir, valores que permaneceran igual durante todo el ciclo de vida de nuestro codigo, por convencion se escriben en mayusculas.
+            </div>
+            <div class="content__dataTypes">
+                <p>Tenemos diferentes tipos de datos, estos tienen diferentes propiedades y los usamos para situaciones especificas, en javascript el tipo de variable puede cambiar con el tiempo, asi que debemos tener cuidado con las operaciones que hacemos. <br>
+                Estos son:</p>
+                <ul>
+                    <li>
+                        <b>String:</b> Son lineas de texto, un string puede ser un nombre, una propiedad, un texto, o una serie de caracteres.
+                    </li>
+                    <li>
+                        <b>Numbers:</b> Como lo dice su nombre, estos pueden escribirse enteros o decimales usando un punto.
+                    </li>
+                    <li>
+                        <b>Booleans:</b> Solo tienen dos valores posibles, verdadero o falso.
+                    </li>
+                    <li>
+                        <b>Arrays:</b> Son colecciones de elementos, se escriben con llaves cuadradas [].
+                    </li>
+                    <li>
+                        <b>Objects:</b> Son elementos con propiedades y funciones, se escriben con llaves {}.
+                    </li>
+                </ul>
+            </div>
+            <div class="content__secuencial">
+                <h2>Estructuras secuenciales</h2>
+                <p>Una estructura secuencial es aquella en la que cada paso ocurre despues de otro en secuencia, muchos de estos pasos dependen de pasos que ocurrieron anteriormente. <br>
+                Podemos pensarlo como una serie de pasos que deben ocurrir para llegar a un objetivo final.
+                </p>
+            </div>
+            <div class="content__bloquesCodigo">
+                <h2>Bloques de codigo</h2>
+                <p>Es codigo que tenemos agrupado entre llaves, esto es para delimitar o para ordenar nuestro codigo, podemos crear bloques en cualquier momento como por ejemplo creando una funcion que ejecutara operaciones y nos devuelve un valor, o un objeto con propiedades especificas.</p>
+            </div>
+            <div class="content__estructurasSeleccion">
+                <h2>Estructuras de seleccion</h2>
+                <p>Con estas podemos tomar decidiones de que camino deberia tomar nuestra aplicacion, por ejemplo que hacer si tenemos o no un usuario valido, o si el numero de estudiantes es mayor a 20.</p>
+                <ul>
+                    <li><b>if:</b> un if es una forma de verificar si se cumple una condicion, como lo aprendimos en la clase de logica y argumentacion: si a entonces b, b solamente va a ocurrir en caso de que se cumpla la condicion a.</li>
+                    <li><b>if/else:</b> el if/else funciona igual que el if pero nos permite decirle que hacer cuando la condicion no se cumple.</li>
+                    <li><b>switch:</b> nos permite dar casos o condiciones especificas y que hacer cuando se cumplen esas condiciones.</li>
+                </ul>
+            </div>
+            <div class="content__homework">
+                <h2>Lectura en casa</h2>
+                <ul>
+                    <li><a href=""><b>Eventos de mouse</b></a></li>
+                    <li><a href=""><b>Eventos del teclado </b></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="./js/app.js"></script>
+</body>
+</html>
