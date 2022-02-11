@@ -16,3 +16,11 @@ Los datos que van a guardar son los siguientes:
 Si la persona tiene 50 años o mas debe activarse un campo donde se informe si se ha realizado o no pruebas de colesterol y triglicéridos en los ultimos 6 meses, si tiene menos de 50 debe preguntarse si se ha realizado pruebas de Azucar en los ultimos 3 mese.
 
 La interfaz debe ser facil de usar, debe cargar las opciones de los dropdown desde Javascript e imprimir en consola cuando un usuario selecciona algo, finalmente mostrar en pantalla los datos ingresados y presentar un boton para ingresar nuevo.
+
+## Como usar el boilerplate.
+
+Un boilerplate es como tener una plantilla para ahorrarnos mucho codigo que no da mucha funcionalidad, esto les va a permitir empezar rapidamente.
+Entonces lo que van a hacer es duplicar la carpeta, cambiarle el nombre y empezar desde ahi, tambien les deje los arreglos que van a utiliar para llenar dos campos.
+
+
+Muchos exitos.
