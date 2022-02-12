@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Ejercicio formulario Isabella Barona</title>
+</head>
+
+<body>
+    <form action="" class="Formulario">
+        <h1 class="Form_Titulo">Formulario</h1>
+
+        <label for="" class="form_label">Nombre</label>
+        <input type="text" name="Nombre" id="Nombre"><br>
+        
+        <label for="" class="form_label">Apellidos</label>
+        <input type="text" name="Apellidos" id="Apellidos"><br>
+        
+        <label for="" class="form_label">Estatura en centimetros</label>
+        <input type="number" name="Estatura" id="Estatura" min="1" max="200"><br>
+        
+        <label for="" class="form_label">¿Fuma?</label>
+        <input type="radio" id="SiFuma" name="Fuma" value="Si">
+        <label for="SiFuma"> Si</label>
+        <input type="radio" id="NoFuma" name="Fuma" value="No">
+        <label for="NoFuma"> No</label><br>
+
+        
+
+
+        <label for="" class="form_label">Edad</label>
+        <input type="number" name="Edad" id="Edad" min="1" max="100"><br>
+        
+        <label for="" class="form_label">¿Se ha realizado pruebas de coresterol y triglicéridos en los ultimos 6 meses?</label>
+        <input type="radio" id="SiExamenCYT" name="ExamenCYT" value="Si">
+        <label for="SiExamenCYT"> Si</label>
+        <input type="radio" id="NoExamenCYT" name="ExamenCYT" value="No">
+        <label for="NoExamenCYT"> No</label><br>
+        
+        <label for="" class="form_label">¿Se ha realizado pruebas de azúcar en los ultimos 3 meses?</label>
+        <input type="radio" id="SiExamenA" name="ExamenA" value="Si">
+        <label for="SiExamenA"> Si</label>
+        <input type="radio" id="NoExamenA" name="ExamenA" value="No">
+        <label for="NoExamenA"> No</label><br>
+        
+        
+        
+        
+        
+        <label for="" class="form_label">Nacionalidad</label>
+        <select id="Nacionalidad" required>
+        </select><br>
+            
+
+        <label for="" class="form_label">Grupo sanguíneo</label>
+        <select id="Sangre" required>
+        </select><br>
+
+        <label for="" class="form_label">Cirugías anteriores</label>
+        <input type="text" name="Cirugias" id="Cirugias"><br>
+
+        
+    
+
+        <button type="button" onclick="datos()"> Enviar datos </button>
+
+    </form>
+
+    <script type="text/javascript" src="./js/app.js"></script>
+
+</body>
+
+</html>
