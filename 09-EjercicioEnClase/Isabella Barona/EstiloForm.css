@@ -1,0 +1,92 @@
+.Container {
+    padding: 10px 20px 10px 20px;
+    box-sizing: border-box;
+    background-color: royalblue;
+    color: white;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    gap: 40px;
+    position:sticky;
+    top: 1px;
+  }
+
+  .Lab{
+      justify-content: flex-start;
+      flex-grow: 1;
+  }
+
+  .Otro:hover{
+      cursor: pointer;
+      background-color: rgba(255, 255, 255, 0.5);
+      color: black;
+      padding: 5px;
+      box-sizing: border-box;
+      transition-duration: 1s;
+  }
+
+body{
+    background-color: whitesmoke;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+h1{
+    background-color: white;
+    width: 50%;
+    margin: 50px auto 10px auto;
+    padding: 2%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border-top: 15px solid royalblue;
+    text-align: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.Preguntas{
+    background-color: white;
+    width: 50%;
+    margin: 0 auto 0 auto;
+    padding: 2%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+input, select{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.displayDatos{
+    background-color: white;
+    width: 50%;
+    margin: 20px auto auto auto;
+    padding: 2%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border-left: 10px solid royalblue;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+button{
+    background-color: royalblue;
+    color: white;
+    width: 100%;
+    height: 50px;
+    border-color: transparent;
+    font-size: medium;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.Rei{
+    background-color: rgba(65, 105, 225, 0.7);
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: rgba(14, 46, 143);
+}

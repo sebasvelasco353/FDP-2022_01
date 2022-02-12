@@ -54,6 +54,14 @@ function datos() {
     
     {
         console.log(Nombre + " " + Apellidos + "" + Estatura + "" + Edad + "" + Cirugias);
-       
     }
+}
+
+function Reinicio(){
+    document.getElementById("Nombre").value="";
+    document.getElementById("Apellidos").value="";
+    document.getElementById("Estatura").value="";
+    document.getElementById("Edad").value="";
+    document.getElementById("Cirugias").value="";
+    document.getElementById("Nombre").focus();
 }
