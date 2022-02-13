@@ -5,22 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./js/app.js">
+    <link rel="stylesheet" href="./style.css">
     <title>Ositos medicos</title>
 </head>
 <body>
      <header>
-     
-        <h1>Laboratorio de pruebas clínicas</h1>
+        <img src="img/LogoHospital.png" class="ImgLogo">
 
+        <img src="img/ubicacion.png" class="ImgUbicacion">
+        <p class="direccion">Cl. 5 # 36-08, Cali, Valle del Cauca <br> Santiago de Cali, Colombia</p> 
+        
      </header>
+
+     <div class="divnav"></div>
+
      
-     <p>Primer nombre<input type="text" name="Primer Nombre" id="nombre1"></p>
-     <p>Segundo nombre<input type="text" name="Segundo Nombre" id="nombre2"></p>
-     <p>Estatura(cm)<input type="number" name="Estatura" id="estatura"></p>
 
-<form>
+     <div class="TextBox"><div>
+         <img src="img/medico2.jpg" class="ImgMedico2">
+        
+        </div><h1></h1></div>
 
-<p>Fumador/a
+     <div class="secciongris"></div>
+
+     <div class="LineaBajo"></div>
+
+
+<div class="formulario">
+    
+     <p>Primer nombre</p><input type="text" name="Primer Nombre" id="nombre1">
+     <p>Segundo nombre</p><input type="text" name="Segundo Nombre" id="nombre2">
+     <p>Estatura(cm)</p><input type="number" name="Estatura" id="estatura">
+
+
+     
+<form><br>
+
+<label>Fumador/a</label>
     <form action="">
         <input type="radio" name="fumador">
     <label for="html">Sí</label>
@@ -31,7 +52,7 @@
 
 </form>
 
-     <p>Edad<input type="number" name="edad" id="edad"></p>
+<label>Edad</label><input type="number" name="edad" id="edad"><br>
 
         <form>
             <label for="">Grupo sanguíneo</label>
@@ -45,16 +66,17 @@
             <option id="O-">O-</option>
             <option  id="AB-">AB-</option>
         </select>
-        </form>
+        </form><br>
 
         <form name="option">
             
-            <label name="nacionalidad">Nacionalidad</label>
-            <select>
-            <option value="paises" id="paises"></option>
+            <label>Nacionalidad</label>
+            <select id="paises">
+            <option></option>
            </select>
-        </form>
-            
-  
+        </form><br>
+      
+        <label>Cirugías anteriores</label><input type="text" name="Cirugias" id="cirugias">
+    </div>
 </body>
 </html>
