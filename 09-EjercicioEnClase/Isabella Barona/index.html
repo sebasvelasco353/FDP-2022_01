@@ -20,7 +20,7 @@
     </header>
   
 
-    <form action="" id="Formulario">
+    <form id="Formulario">
         <h1 class="Form_Titulo">Formulario clínico</h1>
         
         <section class="Preguntas">
@@ -33,32 +33,29 @@
         
             <label for="" class="label">Estatura en centimetros</label>
             <input type="number" name="Estatura" id="Estatura" min="1" max="200"><br>
-
         
-
-
+            
             <label for="" class="label">Edad</label>
-            <input type="number" name="Edad" id="Edad" min="1" max="100"><br>
+            <select name="Age" id="Age" onclick="DisplayCYT(), DisplayAZ()">
+            </select><br>
+
+
+            <div id="CYT">
+            <label for="" class="ExamenCYT">¿Se ha realizado pruebas de coresterol y triglicéridos en los ultimos 6 meses?</label><br><br>
+            <input type="checkbox" id="ExamenCYT" name="ExamenCYT" value="Si">
+            <label for="ExamenCYT" class="label"> Si</label><br>
+            </div>
+
+            <div id="AZ">
+            <label for="" class="label">¿Se ha realizado pruebas de azúcar en los ultimos 3 meses?</label><br><br>
+            <input type="checkbox" id="ExamenA" name="ExamenA" value="Si">
+            <label for="ExamenA" class="label"> Si</label><br>
+            </div>
         
-            <label for="" class="ExamenCYT">¿Se ha realizado pruebas de coresterol y triglicéridos en los ultimos 6 meses?</label>
-            <input type="radio" class="ExamenCYT" id="SiCYT" name="ExamenCYT" value="Si">
-            <label for="SiExamenCYT" class="ExamenCYT"> Si</label>
-            <input type="radio" class="ExamenCYT"id="NoCYT" name="ExamenCYT" value="No">
-            <label for="NoExamenCYT" class="ExamenCYT"> No</label><br>
         
-            <label for="" class="label">¿Se ha realizado pruebas de azúcar en los ultimos 3 meses?</label>
-            <input type="radio" id="SiA" name="ExamenA" value="Si">
-            <label for="SiExamenA" class="label"> Si</label>
-            <input type="radio" id="NoA" name="ExamenA" value="No">
-            <label for="NoExamenA" class="label"> No</label><br>
-        
-        
-        
-            <label for="" class="label">¿Fuma?</label>
-            <input type="radio" id="SiFuma" name="Fuma" value="Si">
-            <label for="SiFuma" class="label"> Si</label>
-            <input type="radio" id="NoFuma" name="Fuma" value="No">
-            <label for="NoFuma" class="label"> No</label><br>
+            <label for="" class="label">¿Fuma?</label><br><br>
+            <input type="checkbox" id="Fuma" name="Fuma" value="Si">
+            <label for="Fuma" class="label"> Si</label><br>
 
         
         
@@ -78,6 +75,7 @@
     
 
             <button type="button" onclick="datos()"> Enviar datos </button>
+
             <button type="button" class="Rei" onclick="Reinicio()"> Nueva entrada </button>
 
         </section>

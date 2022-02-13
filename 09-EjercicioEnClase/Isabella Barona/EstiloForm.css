@@ -51,8 +51,14 @@ h1{
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-input, select{
+#Nombre, #Apellidos, #Estatura, #Age, #Nacionalidad, #Sangre, #Cirugias{
     width: 100%;
+    margin-bottom: 20px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+#ExamenCYT, #ExamenA, #Fuma{
     margin-bottom: 20px;
     padding: 5px;
     box-sizing: border-box;
@@ -89,4 +95,13 @@ button{
 button:hover{
     cursor: pointer;
     background-color: rgba(14, 46, 143);
+}
+
+
+#CYT{
+    display: none;
+}
+
+#AZ{
+    display: none;
 }
