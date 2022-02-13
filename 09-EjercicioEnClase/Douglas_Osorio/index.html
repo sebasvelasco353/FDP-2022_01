@@ -18,23 +18,25 @@
         <label for="apellido">Apellido:</label>
         <input type="string" name="apellido" id="apellido">
         <label for="estatura">Estatura (cm):</label>
-        <input type="number" min="1" max="120" name="estatura" id="estatura">
+        <input type="number" min="10" max="300" name="estatura" id="estatura">
         <label for="fuma">¿El paciente fuma?</label>
         <select name="fuma" id="fuma">
             <option value="si">Sí</option>
             <option value="no">No</option>
         </select>
         <label for="edad">Edad</label>
-        <input type="number" min="1" max="120" name="edad" id="edad">
+        <input type="number" min="0" max="120" name="edad" id="edad">
         <label for="nacionalidad">Nativo de</label>
         <select name="nacionalidad" id="nacionalidad"></select>
         <label for="gruposang">Tipo de sangre</label>
         <select name="gruposang" id="gruposang"></select>
-        <button class="botonGuardar" onclick="handleDatospaciente()">
-            Guardar Registro
+        
 </div>
-
-</button>
+<div class="container">
+    <button class="botonGuardar" onclick="infopaciente()">
+        Guardar Registro
+    </button>
+</div>
 <script src="./js/app_med.js"></script> 
 </body>
 </html>

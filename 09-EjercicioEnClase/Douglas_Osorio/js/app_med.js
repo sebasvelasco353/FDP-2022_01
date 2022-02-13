@@ -19,12 +19,33 @@ if (confirm("¿Se ha realizado alguna operación?")) {
     operacion=true;
     var label=document.createElement("label")
     label.innerHTML="¿Qué operación(es) se ha realizado?"
-    var input=document.createElement("input")
+    var input=document.createElement("input"); input.setAttribute("id","operación")
     input.type="text"
     document.getElementById("container__content").appendChild(label);
     document.getElementById("container__content").appendChild(input);
 } else {
     operacion=false;
+}
+const infopaciente = () => {
+    var nombre = document.getElementById("nombre").value;
+    var apellido = document.getElementById("apellido").value;
+    var estatura = document.getElementById("estatura").value;
+    var fuma = document.getElementById("fuma").value;
+    var edad = document.getElementById("edad").value;
+    var nacionalidad = document.getElementById("nacionalidad").value;
+    var gruposang = document.getElementById("gruposang").value;
+    var operacion = document.getElementById("operacion").value;
+    const registroObj = {
+        nombre,
+        apellido,
+        estatura,
+        fuma,
+        edad,
+        nacionalidad,
+        gruposang,
+        operacion
+    }
+    datospaciente.push(registroObj);
 }
 for (let i = 0; i < paises.length ; i++) {
     const tempObj = paises[i];
@@ -40,25 +61,21 @@ for (let i = 0; i <grupoSanguineo.length ; i++) {
     option.value=tempObj
     document.getElementById("gruposang").appendChild(option);
 }
-const handleDatospaciente = () => {
-    var nombre = document.getElementById("nombre").value;
-    var apellido = document.getElementById("apellido").value;
-    var estatura = document.getElementById("estatura").value;
-    var fuma = document.getElementById("fuma").value;
-    var edad = document.getElementById("edad").value;
-    var nacionalidad = document.getElementById("nacionalidad").value;
-    var gruposang = document.getElementById("gruposang").value;
-    var input;
-    const registroObj = {
-        nombre,
-        apellido,
-        estatura,
-        fuma,
-        edad,
-        nacionalidad,
-        gruposang,
-        input
-    }
-    datospaciente.push(registroObj);
+let age=datospaciente[4]
+if (age>49) {
+    var label2=document.createElement("label")
+    label2.innerHTML="¿Se ha realizado pruebas de colesterol y triglicéridos en los ultimos 6 meses?"
+    var input2=document.createElement("input")
+    input2.type="select"
+    document.getElementById("container__content").appendChild(label2);
+    document.getElementById("container__content").appendChild(input2);
+    
+} else {
+    var label3=document.createElement("label")
+    label3.innerHTML="¿Se ha realizado pruebas de azucar en los ultimos 3 meses?"
+    var input3=document.createElement("input")
+    input3.type="select"
+    document.getElementById("container__content").appendChild(label3);
+    document.getElementById("container__content").appendChild(input3);
 }
-console.log (input);
+console.log(edad);
