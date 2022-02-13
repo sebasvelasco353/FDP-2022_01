@@ -20,7 +20,7 @@
     </header>
   
 
-    <form action="" class="Formulario">
+    <form action="" id="Formulario">
         <h1 class="Form_Titulo">Formulario clínico</h1>
         
         <section class="Preguntas">
@@ -40,16 +40,16 @@
             <label for="" class="label">Edad</label>
             <input type="number" name="Edad" id="Edad" min="1" max="100"><br>
         
-            <label for="" class="label">¿Se ha realizado pruebas de coresterol y triglicéridos en los ultimos 6 meses?</label>
-            <input type="radio" id="SiExamenCYT" name="ExamenCYT" value="Si">
-            <label for="SiExamenCYT" class="label"> Si</label>
-            <input type="radio" id="NoExamenCYT" name="ExamenCYT" value="No">
-            <label for="NoExamenCYT" class="label"> No</label><br>
+            <label for="" class="ExamenCYT">¿Se ha realizado pruebas de coresterol y triglicéridos en los ultimos 6 meses?</label>
+            <input type="radio" class="ExamenCYT" id="SiCYT" name="ExamenCYT" value="Si">
+            <label for="SiExamenCYT" class="ExamenCYT"> Si</label>
+            <input type="radio" class="ExamenCYT"id="NoCYT" name="ExamenCYT" value="No">
+            <label for="NoExamenCYT" class="ExamenCYT"> No</label><br>
         
             <label for="" class="label">¿Se ha realizado pruebas de azúcar en los ultimos 3 meses?</label>
-            <input type="radio" id="SiExamenA" name="ExamenA" value="Si">
+            <input type="radio" id="SiA" name="ExamenA" value="Si">
             <label for="SiExamenA" class="label"> Si</label>
-            <input type="radio" id="NoExamenA" name="ExamenA" value="No">
+            <input type="radio" id="NoA" name="ExamenA" value="No">
             <label for="NoExamenA" class="label"> No</label><br>
         
         
@@ -63,12 +63,12 @@
         
         
             <label for="" class="label">Nacionalidad</label>
-            <select id="Nacionalidad" required>
+            <select name="Nacionalidad" id="Nacionalidad" required>
             </select><br>
             
 
             <label for="" class="label">Grupo sanguíneo</label>
-            <select id="Sangre" required>
+            <select name="Sangre" id="Sangre" required>
             </select><br>
 
             <label for="" class="label">Cirugías anteriores</label>
@@ -78,7 +78,7 @@
     
 
             <button type="button" onclick="datos()"> Enviar datos </button>
-            <button type="button" class="Rei" onclick="Reinicio()"> Reiniciar </button>
+            <button type="button" class="Rei" onclick="Reinicio()"> Nueva entrada </button>
 
         </section>
         
@@ -87,7 +87,8 @@
     <div class="displayDatos">
         <h2>Datos enviados</h2>
         <div class="ListaDatos" id="ListaDatos">
-            <p>Aqui estan los datos enviados</p>
+            <p>Aqui estan los últimos datos enviados</p>
+            
         </div>
     </div>
 
