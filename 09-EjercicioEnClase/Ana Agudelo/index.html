@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Laboratorio Prueba</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form class="formulario" method="post">
+        <h1 class="formulario_titulo">Laboratorio Prueba</h1>
+        <p>Bienvenidos a la nueva forma de actualizar datos</p>
+
+        <section class="datos">
+            <label for="" class="formulario_label">Nombre/s</label>
+            <input type="text" class="formulario_input">
+        </section>
+
+        <section class="datos">
+            <label for="" class="formulario_label">Apellidos</label>
+            <input type="text" class="formulario_input">
+        </section>
+
+        <section class="datos">
+            <label for="" class="formulario_label">Estatura</label>
+            <input type="number" class="formulario_input">
+        </section>
+
+        <section class="datos">
+            <label for="" class="formulario_label">Fumador/a</label>
+            <section class="formulario_select">
+                <input type="radio" id="si" name="fuma" value="si" checked>
+                    <label for="fuma">Sí</label>
+                <input type="radio" id="no" name="fuma" value="no" checked>
+                    <label for="fuma">No</label>
+            </section>
+        </section>
+        
+        <section class="datos">
+            <label for="" class="formulario_label" id="edad">Edad</label>
+            <input type="number" class="formulario_input">
+        </section>
+
+        <section class="datos">
+            <label for="" class="formulario_label">Nacionalidad</label>
+            <input type="text" class="formulario_input">
+        </section>
+
+        <section class="datos">
+            <label for="" class="formulario_label">Grupo Sanguíneo</label>
+            <select name="estatura" id="" class="formulario_select">
+                <option value=" ">Elige</option>
+                <option value="a+">A+</option>
+                <option value="a-">A-</option>
+                <option value="b+">B+</option>
+                <option value="b-">B-</option>
+                <option value="ab+">AB+</option>
+                <option value="ab-">AB-</option>
+                <option value="o+">O+</option>
+                <option value="o-">O-</option>
+            </select>
+        </section>
+
+        <section class="datos">
+            <label for="" class="formulario_label">Cirugías recientes</label>
+            <section class="formulario_select">
+                <input type="radio" id="si" name="fuma" value="si" checked>
+                    <label for="fuma">Sí</label>
+                <input type="radio" id="no" name="fuma" value="no" checked>
+                    <label for="fuma">No</label>
+            </section>
+        </section>
+
+        <button type="submit" class="formulario_submit">Enviar Datos</button>
+        <button type="submit" class="formulario_submit">Ingresar nuevo</button>
+        
+    </form>
+</body>
+
+</html>
