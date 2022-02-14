@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <title>Médico</title>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Llene los datos</h1>
+        <p class="content__intro">Por favor ingrese la información solicitada del paciente</p>
+        <div class="container__content">
+            <label for="edad">Edad</label>
+            <input type="number" min="0" max="120" name="edad" id="edad">
+            <label for="nombre">Nombre(s):</label>
+            <input type="string" name="nombre" id="nombre">
+            <label for="apellido">Apellidos:</label>
+            <input type="string" name="apellido" id="apellido">
+            <label for="fuma">¿Fuma?</label>
+            <select name="fuma" id="fuma">
+                <option value="Sí">Sí</option>
+                <option value="No">No</option>
+            </select>
+            <label for="estatura">Estatura(cm)</label>
+            <input type="number" min="10" max="250" name="estatura" id="estatura">
+            <label for="nacionalidad">Nativo de</label>
+            <select name="nacionalidad" id="nacionalidad"></select>
+            <label for="gruposang">Tipo de sangre</label>
+            <select name="gruposang" id="gruposang"></select>
+            <label for="operaciones">¿Ha tenido operaciones previas, cuáles?</label>
+            <input type="string" name="operaciones" id="operaciones">
+            <button class="botonGuardar" onclick="handleRegistroTemperaturas()">
+                Guardar
+            </button>
+            <div class="displayTemperaturas">
+                <h2>Los datos del paciente son:</h2>
+                <div class="ListaMedidas" id="listaMedidas">
+                    <p><b></b></p>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/app2.js"></script>
+</body>
+</html>
