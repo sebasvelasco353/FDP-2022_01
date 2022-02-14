@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Ejercicio formulario Isabella Barona</title>
     <link rel="stylesheet" href="EstiloForm.css">
+    <link rel="shortcut icon" href="medical-symbol_2695-fe0f.png">
 </head>
 
 <body>
 
     <header class="Container">
-        <p class="Lab"><b>Laboratorio clínico</b></p>
+        <p class="Lab">&#9877; <b> Laboratorio clínico</b></p>
         <p class="Otro">Inicio</p>
         <p class="Otro">Sobre nosotros</p>
         <p class="Otro">Servicios</p>
@@ -19,63 +20,56 @@
         <p class="Otro">Contacto</p>
     </header>
   
+    <img src="https://www.labamsterdam.cl/gallery_gen/cb06cd839062c55a1c4e23ffee47432b.jpg" class="Img"/>
 
     <form id="Formulario">
         <h1 class="Form_Titulo">Formulario clínico</h1>
         
         <section class="Preguntas">
 
-            <label for="" class="label">Nombre</label>
-            <input type="text" name="Nombre" id="Nombre"><br>
+            <label for="" class="label">Nombres <b>٭</b></label>
+            <input type="text" name="Nombre" id="Nombre" required><br>
         
-            <label for="" class="label">Apellidos</label>
+            <label for="" class="label">Apellidos <b>٭</b></label>
             <input type="text" name="Apellidos" id="Apellidos"><br>
         
-            <label for="" class="label">Estatura en centimetros</label>
+            <label for="" class="label">Estatura en centimetros <b>٭</b> </label>
             <input type="number" name="Estatura" id="Estatura" min="1" max="200"><br>
         
-            
-            <label for="" class="label">Edad</label>
-            <select name="Age" id="Age" onclick="DisplayCYT(), DisplayAZ()">
+            <label for="" class="label">Edad <b>٭</b> </label>
+            <select name="Edad" id="Edad" onclick="DisplayCYT(), DisplayAZ()">
             </select><br>
 
-
             <div id="CYT">
-            <label for="" class="ExamenCYT">¿Se ha realizado pruebas de coresterol y triglicéridos en los ultimos 6 meses?</label><br><br>
+            <label for="" class="ExamenCYT">¿Se ha realizado pruebas de <b><u>coresterol y triglicéridos</u></b> en los ultimos <b><u>6</u></b> meses?</label><br><br>
             <input type="checkbox" id="ExamenCYT" name="ExamenCYT" value="Si">
             <label for="ExamenCYT" class="label"> Si</label><br>
             </div>
 
             <div id="AZ">
-            <label for="" class="label">¿Se ha realizado pruebas de azúcar en los ultimos 3 meses?</label><br><br>
+            <label for="" class="label">¿Se ha realizado pruebas de <b><u>azúcar</u></b> en los ultimos <b><u>3</u></b> meses?</label><br><br>
             <input type="checkbox" id="ExamenA" name="ExamenA" value="Si">
             <label for="ExamenA" class="label"> Si</label><br>
             </div>
-        
-        
+    
             <label for="" class="label">¿Fuma?</label><br><br>
             <input type="checkbox" id="Fuma" name="Fuma" value="Si">
             <label for="Fuma" class="label"> Si</label><br>
 
-        
-        
-            <label for="" class="label">Nacionalidad</label>
+            <label for="" class="label">Nacionalidad <b>٭</b> </label>
             <select name="Nacionalidad" id="Nacionalidad">
             </select><br>
             
-
-            <label for="" class="label">Grupo sanguíneo</label>
+            <label for="" class="label">Grupo sanguíneo <b>٭</b> </label>
             <select name="Sangre" id="Sangre">
             </select><br>
             
             <label for="" class="label">Cirugías anteriores</label>
             <input type="text" name="Cirugias" id="Cirugias"><br>
 
-        
-    
+            <p class="Especifico"> <b>٭</b> Campos obligatorios</p>
 
-            <button type="button" onclick="datos()"> Enviar datos </button>
-
+            <button id="Enviar" type="button" onclick="datos()"> Enviar datos </button>
             <button type="button" class="Rei" onclick="Reinicio()"> Nueva entrada </button>
 
         </section>
@@ -84,16 +78,19 @@
 
     <div class="displayDatos">
         <h2>Datos enviados</h2>
-        <div class="ListaDatos" id="ListaDatos">
-            <p>Aqui estan los últimos datos enviados</p>
-            
-        </div>
+            <div class="displayInfo">
+                <div class="ListaDatos" id="ListaDatos">
+                    <p>Aqui estan los datos de los ultimos tres pacientes:</p>
+                </div>
+            </div>
     </div>
 
+    <footer>
+        <p>&#9877; Laboratorio clínico <br> @2022 </p>
+        <p style="text-align:right;"> servicioalcliente@correo.com <br> 01 8000 444 444 </p>
+    </footer>
 
     <script type="text/javascript" src="./js/app.js"></script>
 
-
 </body>
-
 </html>

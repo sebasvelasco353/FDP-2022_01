@@ -16,20 +16,20 @@ for (let i = 0; i < grupoSanguineo.length ; i++) {
     document.getElementById ("Sangre").appendChild(option);
 }
 
-const Age = ["", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60", "61", "62", "63", "64", "65", "66", "67", "68", "69", "70", "71", "72", "73", "74", "75", "76", "77", "78", "79", "80", "81", "82", "83", "84", "85", "86", "87", "88", "89", "90", "91", "92", "93", "94", "95", "96", "97", "98", "99", "100"];
-for (let i = 0; i < Age.length ; i++) {
-    const tempObj = Age[i];
+const Edad = ["", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60", "61", "62", "63", "64", "65", "66", "67", "68", "69", "70", "71", "72", "73", "74", "75", "76", "77", "78", "79", "80", "81", "82", "83", "84", "85", "86", "87", "88", "89", "90", "91", "92", "93", "94", "95", "96", "97", "98", "99", "100"];
+for (let i = 0; i < Edad.length ; i++) {
+    const tempObj = Edad[i];
     var option = document.createElement("option");
     option.text= tempObj
     option.value= tempObj
-    document.getElementById ("Age").appendChild(option);
+    document.getElementById ("Edad").appendChild(option);
 }
 
 function datos() {
     var Nombre = document.getElementById("Nombre").value;
     var Apellidos = document.getElementById("Apellidos").value;
     var Estatura = document.getElementById("Estatura").value;
-    var Age = document.getElementById("Age").value;
+    var Edad = document.getElementById("Edad").value;
     var ExamenCYT = document.getElementById("ExamenCYT").checked;
     var ExamenA = document.getElementById("ExamenA").checked;
     var Fuma = document.getElementById("Fuma").checked;
@@ -37,10 +37,14 @@ function datos() {
     var Sangre = document.getElementById("Sangre").value;
     var Cirugias = document.getElementById("Cirugias").value;
 
+    if (!Nombre|| !Apellidos || !Estatura || !Edad || !Nacionalidad || !Sangre){
+        alert("Por favor digite los campos obligatorios");
+        return;
+    } 
     {
-        console.log("Nombre completo: " + Nombre + Apellidos);
+        console.log("Nombre completo: " + Nombre + "" + Apellidos);
         console.log("Estatura: " + Estatura);
-        console.log("Age: " + Age);
+        console.log("Edad: " + Edad);
         console.log("Examen colesterol y triglicéridos: " + ExamenCYT);
         console.log("Examen azúcar: " + ExamenA);     
         console.log("Fuma: " + Fuma);
@@ -49,14 +53,13 @@ function datos() {
         console.log("Cirugías: " + Cirugias);
         console.log("___________________"); 
     }
-        
 }
 
 function Reinicio(){
     document.getElementById("Nombre").value="";
     document.getElementById("Apellidos").value="";
     document.getElementById("Estatura").value="";
-    document.getElementById("Age").value="";
+    document.getElementById("Edad").value="";
     document.getElementById("Cirugias").value="";
     document.getElementById("Fuma").checked=false;
     document.getElementById("ExamenCYT").checked=false;
@@ -67,8 +70,7 @@ function Reinicio(){
 }
 
 function DisplayCYT() {
-
-    if (document.getElementById("Age").value >= "50"){
+    if (document.getElementById("Edad").value >= "50"){
         document.getElementById('CYT').style.display = 'block';
     }else{
         document.getElementById('CYT').style.display='none';
@@ -76,8 +78,7 @@ function DisplayCYT() {
 }
 
 function DisplayAZ() {
-
-    if (document.getElementById("Age").value < "50"){
+    if (document.getElementById("Edad").value < "50"){
         document.getElementById('AZ').style.display = 'block';
     }else{
         document.getElementById('AZ').style.display='none';
