@@ -1,0 +1,24 @@
+.colums {
+    
+    padding: 10px;
+    border: solid 2px green;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+
+}
+
+.intro {
+
+    border: solid 2px brown;
+    padding: 10px;
+
+}
+
+.explain {
+
+    border: solid 2px yellowgreen;
+    margin-top: 30px;
+    padding: 10px;
+
+}
