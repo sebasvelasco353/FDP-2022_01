@@ -23,7 +23,8 @@ p {
 .heading2{
     font-size: 18px;
     font-weight: 500;
-    font-family: 'Inter', sans-serif;    
+    font-family: 'Inter', sans-serif;   
+    margin-left: 2%; 
 }
 
 .grid-formulario {
@@ -31,7 +32,7 @@ p {
     grid-template-columns: 50% 50%;
     grid-gap: 10px;
     grid-template-rows: 20% 10% 60% 10%;
-    background-color: rgb(141, 71, 233);
+    background-color: rgb(227, 229, 240);
     padding: 2em;
     font-family: 'Inter', sans-serif;
 }
@@ -50,8 +51,7 @@ p {
     grid-row-start: 2;
     grid-row-end: 3;
     padding: 2em;
-    margin-left: 2%;
-    background-color: rgb(94, 196, 221);
+    background-color: rgb(227, 229, 240);
     font-weight: 500;
 }
 
@@ -60,17 +60,17 @@ p {
     grid-row-start: 3;
     grid-row-end: 4;
     padding: 4em;
-    background-color: rgb(46, 57, 214);
+    background-color: rgb(227, 229, 240);
     font-family: 'Inter', sans-serif;
     font-weight: 300;
+    margin-top: 0%;
 }
 
 .four{
     grid-column: 2/3;
     grid-row-start: 3;
     grid-row-end: 4;
-    padding: 4em;
-    background-color: rgb(170, 209, 120);   
+    background-color: rgb(227, 229, 240);   
 }
 
 
