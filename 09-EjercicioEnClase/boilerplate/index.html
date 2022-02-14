@@ -30,11 +30,13 @@
 
      <div class="LineaBajo"></div>
 
-
+<form class="form">
 <div class="formulario">
     
-     <p>Primer nombre</p><input type="text" name="Primer Nombre" id="nombre1">
-     <p>Segundo nombre</p><input type="text" name="Segundo Nombre" id="nombre2">
+    <h2>Formulario Clínico</h2>
+
+     <p>Primer nombre</p><input type="text" name="Primer Nombre" id="nombre1" value="">
+     <p>Apellido</p><input type="text" name="Apellido" id="apellido">
      <p>Estatura(cm)</p><input type="number" name="Estatura" id="estatura">
 
 
@@ -42,10 +44,10 @@
 <form><br>
 
 <label>Fumador/a</label>
-    <form action="">
-        <input type="radio" name="fumador">
+    <form>
+    <input type="radio" name="fumador" id="fumadorsi">
     <label for="html">Sí</label>
-    <input type="radio" name="fumador">
+    <input type="radio" name="fumador" id="fumadorno">
     <label for="html">No</label>
 </form>
 </p>
@@ -56,7 +58,7 @@
 
         <form>
             <label for="">Grupo sanguíneo</label>
-        <select name="Grupo sanguíneo" id="Grupo sanguíneo">
+        <select name="Grupo sanguíneo" id="GrupoS">
             <option id="A+">A+</option>
             <option id="B+">B+</option>
             <option id="O+">O+</option>
@@ -77,6 +79,9 @@
         </form><br>
       
         <label>Cirugías anteriores</label><input type="text" name="Cirugias" id="cirugias">
-    </div>
+
+        <input type="submit" class="buttonSubmit" value="Enviar"></input>
+        <input type="reset" class="buttonReset" value="reset"></input>
+    </div></form>
 </body>
 </html>

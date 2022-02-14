@@ -88,11 +88,13 @@ header > h1{
     display: flex;
     flex-direction: column;
     width: 20rem;
-    padding: 4rem 2rem;
-    max-width: 1080px;
+    padding: 2rem 3rem;
+
     margin: 5rem auto;
     text-align: justify;
     background-color: #ECECEC;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     
     
 }
@@ -106,3 +108,17 @@ input{
     
 }
 
+.buttonSubmit{
+    width: 50%;
+    background: #24763F;
+    color: #ECECEC;
+    margin-top: 10px;
+}
+
+.buttonReset{
+    width: 50%;
+    margin-left: 50%;
+    margin-top: -21px;
+    background: blue;
+    color: #ECECEC;
+}
