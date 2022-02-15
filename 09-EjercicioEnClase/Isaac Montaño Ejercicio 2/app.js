@@ -16,7 +16,7 @@ for (let i = 0; i < grupoSanguineo.length ; i++) {
     document.getElementById("GrupoSanguineo").appendChild(option);
     }
 
-    const edades = ['', '1' ,	'2',	'3',	'4',	'5',	'6',	'7'	,'8',	'9',	'10',
+    const Edad = ['', '1' ,	'2',	'3',	'4',	'5',	'6',	'7'	,'8',	'9',	'10',
 '11',	'12'	,'13'	,'14',	'15',	'16',	'17',	'18',	'19',	'20',
 '21',	'22',	'23',	'24'	,'25',	'26',	'27',	'28',	'29',	'30',
 '31',	'32',	'33',	'34',	'35',	'36',	'37',	'38',	'39',	'40',
@@ -26,12 +26,12 @@ for (let i = 0; i < grupoSanguineo.length ; i++) {
 '71',	'72', '73',	'74',	'75',	'76',	'77',	'78',	'79',	'80',
 '81',	'82',	'83',	'84',	'85',	'86',	'87',	'88',	'89',	'90',
 '91',	'92',	'93',	'94',	'95',	'96',	'97',	'98',	'99',	'100'];
-for (let i = 0; i < edades.length ; i++) {
-    const tempObj = edades[i];
+for (let i = 0; i < Edad.length ; i++) {
+    const tempObj = Edad[i];
     var option = document.createElement("option");
     option.text= tempObj
     option.value=tempObj
-    document.getElementById("edad").appendChild(option);
+    document.getElementById("Edad").appendChild(option);
     }
 
 function datos() {
@@ -57,14 +57,12 @@ function datos() {
 }}
 
 function DisplayAnciano() {
-    if (document.getElementById("edad").value >= "50" )
+    if (document.getElementById("Edad").value >= "50" )
     { document.getElementById("Anciano").style.display = 'block'
 }else{document.getElementById("Anciano").style.display = "none"; 
-}
-}
+}}
 function DisplayJoven() {
-    if (document.getElementById("edad").value < "50" )
+    if (document.getElementById("Edad").value < "50" )
     { document.getElementById("Joven").style.display = 'block'
 }else{document.getElementById("Joven").style.display = "none"; 
-}
-}
+}}
