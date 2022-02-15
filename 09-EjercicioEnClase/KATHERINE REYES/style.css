@@ -22,7 +22,10 @@ html {
 
 header {
     width: 100%;
-    height: 100px;
+    height: 200px;
+    padding: 45px 0 10px 0;
+    margin: auto;
+    overflow: hidden;
     background-color:rgb(9, 192, 183); 
     background-size: cover;
     background-attachment: fixed;
@@ -30,13 +33,14 @@ header {
 }
 nav{
         text-align: right;
-        padding: 30px 50px 0 0;
+        font-size: medium;
+        padding: 30px 20px 0 0;
 }  
 nav > a{
         color:rgb(255, 255, 255);
         font-weight: 300;
         text-decoration: none;
-        margin-right: 5px;
+        margin-right: 10px;
 }
 nav > a:hover{
     text-decoration: underline;
@@ -61,26 +65,68 @@ header .textos-header{
     font-weight: 300;
     color:#fff;
 }
-
-.wave{
-    position: absolute;
-    bottom: 0;
-    width: 150%;
-}
-.text {
-    background-color:rgb(218, 218, 218);
+.formulario {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 10px;
+    align-items: left;
+    margin-top: 50px;
+    margin: 30px;
+    width: 500px;
+    text-align: left;
+    padding: 3rem 3rem;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.3);
+    font-size: 20px;
+    font-family: sans-serif;
 }
-.text > h1{
-    text-align: right;
-    margin-left: 1rem;
-    margin-top: 2.5rem;
-    font-size: 15px;
-    font-weight: 700;
-    color: cornflowerblue;
+
+/* footer */
+
+footer{
+    background: #006d6d;
+    padding: 30px 0 10px 0;
+    margin: auto;
+    overflow: hidden;
+    height: 200px;
+    width: auto;
+}
+
+.contenedor-footer{
+    display: flex;
+    width: 60%;
+    justify-content: space-evenly;
+    margin: auto;
+}
+
+.content-foo{
+    text-align: center;
+}
+
+.content-foo h3{
+    color: #fff;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    font-size: 25px;
+    border: none;
+}
+
+.content-foo p{
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+    border-bottom: 1px solid #f2f2f2;
+    padding-bottom: 10px;
+}
+
+.title-final{
+    text-align: center;
+    font-size: 20px;  
+    color: honeydew;
+}
+@media screen and (max-width:900px){
+    header{
+ background-position: center;
+ }
+ @media screen and (max-width:500px){
+    nav{
+text-align: center;
+padding: 30px 0 0 0;
 }
