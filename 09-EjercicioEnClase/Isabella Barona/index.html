@@ -16,15 +16,19 @@
         <p class="Otro">Inicio</p>
         <p class="Otro">Sobre nosotros</p>
         <p class="Otro">Servicios</p>
-        <p class="Otro">Historia clinica y formularios</p>
+        <p class="Otro">Historial clínico y formularios</p>
         <p class="Otro">Contacto</p>
     </header>
   
     <img src="https://www.labamsterdam.cl/gallery_gen/cb06cd839062c55a1c4e23ffee47432b.jpg" class="Img"/>
 
     <form id="Formulario">
-        <h1 class="Form_Titulo">Formulario clínico</h1>
-        
+
+        <div class="h1">
+        <h1>Formulario clínico</h1>
+        <p class="Instrucciones"> Este formulario registra los datos de los pacientes para pruebas clínicas en laboratorio</p>
+        </div>
+
         <section class="Preguntas">
 
             <label for="" class="label">Nombres <b>٭</b></label>
@@ -34,7 +38,7 @@
             <input type="text" name="Apellidos" id="Apellidos"><br>
         
             <label for="" class="label">Estatura en centimetros <b>٭</b> </label>
-            <input type="number" name="Estatura" id="Estatura" min="1" max="200"><br>
+            <input type="number" name="Estatura" id="Estatura" min="1" max="300"><br>
         
             <label for="" class="label">Edad <b>٭</b> </label>
             <select name="Edad" id="Edad" onclick="DisplayCYT(), DisplayAZ()">
@@ -53,7 +57,7 @@
             </div>
     
             <label for="" class="label">¿Fuma?</label><br><br>
-            <input type="checkbox" id="Fuma" name="Fuma" value="Si">
+            <input type="checkbox" id="Fuma" name="Fuma">
             <label for="Fuma" class="label"> Si</label><br>
 
             <label for="" class="label">Nacionalidad <b>٭</b> </label>
@@ -69,21 +73,18 @@
 
             <p class="Especifico"> <b>٭</b> Campos obligatorios</p>
 
-            <button id="Enviar" type="button" onclick="datos()"> Enviar datos </button>
+            <button id="Enviar" type="button" onclick="datos(), handleRegistro()"> Enviar datos </button>
             <button type="button" class="Rei" onclick="Reinicio()"> Nueva entrada </button>
 
         </section>
-        
     </form>
 
     <div class="displayDatos">
         <h2>Datos enviados</h2>
-            <div class="displayInfo">
-                <div class="ListaDatos" id="ListaDatos">
-                    <p>Aqui estan los datos de los ultimos tres pacientes:</p>
-                </div>
-            </div>
-    </div>
+            <div class="DatosEnviados" id="listaMedidas">
+                <p>Aqui estan los datos de los ultimos tres pacientes:</p>
+            </div> 
+    </div>        
 
     <footer>
         <p>&#9877; Laboratorio clínico <br> @2022 </p>

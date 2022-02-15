@@ -40,9 +40,14 @@ function datos() {
     if (!Nombre|| !Apellidos || !Estatura || !Edad || !Nacionalidad || !Sangre){
         alert("Por favor digite los campos obligatorios");
         return;
+    }
+    if (document.getElementById("Estatura").value >"300" ){
+        alert("Por favor digite una estatura válida");
+        return;
     } 
+
     {
-        console.log("Nombre completo: " + Nombre + "" + Apellidos);
+        console.log("Nombre completo: " + Nombre + " " + Apellidos);
         console.log("Estatura: " + Estatura);
         console.log("Edad: " + Edad);
         console.log("Examen colesterol y triglicéridos: " + ExamenCYT);
@@ -52,8 +57,7 @@ function datos() {
         console.log("Tipo de Sangre: " + Sangre);
         console.log("Cirugías: " + Cirugias);
         console.log("___________________"); 
-    }
-}
+    }}
 
 function Reinicio(){
     document.getElementById("Nombre").value="";
@@ -74,13 +78,56 @@ function DisplayCYT() {
         document.getElementById('CYT').style.display = 'block';
     }else{
         document.getElementById('CYT').style.display='none';
-    }
-}
+    }}
 
 function DisplayAZ() {
     if (document.getElementById("Edad").value < "50"){
         document.getElementById('AZ').style.display = 'block';
     }else{
         document.getElementById('AZ').style.display='none';
-    }
+    }}
+
+let registroDatos = [];
+
+const handleRegistro = () => {
+    var Nombre = document.getElementById("Nombre").value;
+    var Apellidos = document.getElementById("Apellidos").value;
+    var Estatura = document.getElementById("Estatura").value;
+    var Edad = document.getElementById("Edad").value;
+    var ExamenCYT = document.getElementById("ExamenCYT").checked;
+    var ExamenA = document.getElementById("ExamenA").checked;
+    var Fuma = document.getElementById("Fuma").checked;
+    var Nacionalidad = document.getElementById("Nacionalidad").value;
+    var Sangre = document.getElementById("Sangre").value;
+    var Cirugias = document.getElementById("Cirugias").value;
+
+    const registroObj = {
+        Nombre, Apellidos, Estatura, Edad, ExamenA, ExamenCYT, Fuma, Nacionalidad, Sangre, Cirugias}
+    registroDatos.push(registroObj);
+    renderUltimosDatos();
+}
+
+const renderUltimosDatos = () => {
+    const LISTA_MEDIDAS_ELEMENT = document.getElementById("listaMedidas");
+    LISTA_MEDIDAS_ELEMENT.innerHTML = '';
+
+    if (registroDatos.length > 2) {
+        const registroDatosInv = [...registroDatos].reverse();
+        for (let i = 0; i < 3 ; i++) {
+            const tempObj = registroDatosInv[i];
+            var tag = document.createElement("p");
+
+            tag.innerHTML =`<b>Nombre completo: </b> ${tempObj.Nombre}  ${tempObj.Apellidos} <br> <b> Estatura: </b> ${tempObj.Estatura} <br> <b> Edad: </b> ${tempObj.Edad} <br> <b> Examen de Azúcar: </b> ${tempObj.ExamenA} <br> <b> Examen coresterol y triglicéridos: </b> ${tempObj.ExamenCYT} <br> <b> ¿Fuma?: </b> ${tempObj.Fuma} <br> <b> Nacionalidad: </b> ${tempObj.Nacionalidad} <br> <b> Sangre: </b> ${tempObj.Sangre} <br>   `;
+
+            LISTA_MEDIDAS_ELEMENT.appendChild(tag);
+        }
+    } else {
+        for (let i = 0; i < registroDatos.length; i++) {
+            const tempObj = registroDatos[i];
+            var tag = document.createElement("p");
+
+            tag.innerHTML =`<b>Nombre completo: </b> ${tempObj.Nombre}  ${tempObj.Apellidos} <br> <b> Estatura: </b> ${tempObj.Estatura} <br> <b> Edad: </b> ${tempObj.Edad} <br> <b> Examen de Azúcar: </b> ${tempObj.ExamenA} <br> <b> Examen coresterol y triglicéridos: </b> ${tempObj.ExamenCYT} <br> <b> ¿Fuma?: </b> ${tempObj.Fuma} <br> <b> Nacionalidad: </b> ${tempObj.Nacionalidad} <br> <b> Sangre: </b> ${tempObj.Sangre} <br>   `;
+            
+            LISTA_MEDIDAS_ELEMENT.appendChild(tag);
+        }}
 }
