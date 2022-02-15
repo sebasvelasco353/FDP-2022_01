@@ -15,3 +15,9 @@
     max-width: 1080px;
     margin: 0 auto;
 }
+#Anciano {
+    display: none;
+}
+#Joven {
+    display: none;
+}

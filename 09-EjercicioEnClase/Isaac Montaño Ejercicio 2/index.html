@@ -31,8 +31,26 @@
         <br>
 
         <label for="edad">Ingrese la edad del paciente</label>
-        <input type="number" minlength="1" maxlength="100" id= "edad" required>
+        <select  id= "edad" onclick="DisplayAnciano(), DisplayJoven()" required>
         <br>
+
+<div id = "Anciano"> 
+    <label for="colesterol">Marque la casilla si se ha hecho una prueba de colesterol en los últimos 6 meses</label>
+        <input type="checkbox" name="colesterol" id="colesterol" value="SiSeHizoPruebaColesterol">
+        <br>
+     <label for="trigliceridos">Marque la casilla si se ha hecho una prueba de
+         trigliceridos en los últimos 6 meses</label>
+        <input type="checkbox" name="trigliceridos" id="trigliceridos" value="SiSeHizoPruebaTrigliceridos">
+        <br>
+
+</div>
+<div id = "Joven">
+    <label for="azucar">Marque la casilla si se ha hecho una prueba de azucar en los últimos 6 meses</label>
+        <input type="checkbox" name="azucar" id="azucar" value="SiSeHizoPruebaAzucar">
+        <br>
+
+</div>
+
         <label for="" class="label">Nativo de</label>
         <select name="nacionalidad" id="nacionalidad">
         </select>
@@ -44,11 +62,6 @@
         <br>
         <label for="cirugias">Escriba las cirugías que ha tenido anteriormente</label>
         <input type="text" name="cirugias" id="cirugias">
-
-        
-
-        <label for="anciano" class="label">El paciente es mayor o igual a 50 años</label>
-        <input type="checkbox" name="anciano" id="anciano" value="Mayor" >
 
         <br>
         <button type="button" onclick="datos()">Enviar datos</button>
