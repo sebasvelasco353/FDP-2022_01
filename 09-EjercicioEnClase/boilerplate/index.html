@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./js/app.js">
+    
     <link rel="stylesheet" href="./style.css">
     <title>Ositos medicos</title>
 </head>
@@ -35,7 +35,7 @@
     
     <h2>Formulario Clínico</h2>
 
-     <p>Primer nombre</p><input type="text" name="Primer Nombre" id="nombre1" value="">
+     <p>Primer nombre</p><input type="text" name="Primer Nombre" id="nombre" value="">
      <p>Apellido</p><input type="text" name="Apellido" id="apellido">
      <p>Estatura(cm)</p><input type="number" name="Estatura" id="estatura">
 
@@ -45,43 +45,54 @@
 
 <label>Fumador/a</label>
     <form>
-    <input type="radio" name="fumador" id="fumadorsi">
+    <input type="radio" name="fumador" id="fumador" value="Sí">
     <label for="html">Sí</label>
-    <input type="radio" name="fumador" id="fumadorno">
+    <input type="radio" name="fumador" id="fumador" value="No">
     <label for="html">No</label>
 </form>
 </p>
 
 </form>
 
-<label>Edad</label><input type="number" name="edad" id="edad"><br>
+<label>Edad</label><input type="number" name="edad" id="edad" onclick="CholesterolTest()" onclick="PruebaAzucar()"><br>
 
-        <form>
+<div id="colesterol">
+    <label for="">¿Se ha realizado pruebas de colesterol y triglicéridos en los ultimos 6 meses?</label><br>
+    <input type="radio" name="" id="TestC" value="Sí">
+    <label for="TestC">Sí</label>
+    <input type="radio" name="" id="TestC" value="No">
+    <label for="TestC">No</label> <br>
+</div>
+
+<div id="azucar">
+    <label for="">¿Se ha realizado pruebas de Azucar en los ultimos 3 meses?</label><br>
+    <input type="radio" name="" id="TestA" value="Sí">
+    <label for="TestA">Sí</label>
+    <input type="radio" name="" id="TestA" value="No">
+    <label for="TestA">No</label> <br>
+</div><br>
+
+
             <label for="">Grupo sanguíneo</label>
-        <select name="Grupo sanguíneo" id="GrupoS">
-            <option id="A+">A+</option>
-            <option id="B+">B+</option>
-            <option id="O+">O+</option>
-            <option  id="AB+">AB+</option>
-            <option id="A-">A-</option>
-            <option id="B-">B-</option>
-            <option id="O-">O-</option>
-            <option  id="AB-">AB-</option>
-        </select>
-        </form><br>
+        <select name="GrupoSanguíneo" id="GrupoS">
 
-        <form name="option">
+        </select>
+        <br>
+
+            <label for="">Nacionalidad</label>
+            <select name="Nacionalidad" id="Nacionalidad"></select>
             
-            <label>Nacionalidad</label>
-            <select id="paises">
-            <option></option>
-           </select>
-        </form><br>
+          
+        <br>
       
         <label>Cirugías anteriores</label><input type="text" name="Cirugias" id="cirugias">
 
-        <input type="submit" class="buttonSubmit" value="Enviar"></input>
+    
+        <button id="submit" type="button" class="buttonSubmit" onclick="handleClick()"> Enviar</button>
         <input type="reset" class="buttonReset" value="reset"></input>
     </div></form>
+    <div id="error"></div>
+
+    <script src="./js/app.js"></script>
 </body>
 </html>
