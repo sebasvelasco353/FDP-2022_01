@@ -63,6 +63,26 @@ push es pa subir los cambios en el commit a el servidor
 ```
 git push
 ```
+### moverme entre branches
+```
+git checkout <branch>
+```
+### Ver los remotos de mi repo
+```
+git remote -v
+```
+### Agregar un nuevo remoto
+```
+git remote add <nombre_del_remoto> <url_del_remoto>
+```
+### Preguntar si hay cambios
+```
+git fetch <nombre_del_remoto>
+```
+### mezclar los cambios con tu codigo
+```
+git merge <nombre_del_remoto>/<branch>
+```
 
 
 ## Vocabulario de la clase
