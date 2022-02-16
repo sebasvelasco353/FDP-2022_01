@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital la sonrisa</title>
+    <link rel="stylesheet" href="style.css" />
+   
+
+</head>
+<body>
+    <header> 
+        <h1>Hospital la sonrisa</h1>
+     
+</header>
+<div class="container">
+    <h2>Registro de pacientes</h2>
+</div>
+<div class="Descripcion">
+<aside>Se registraran los datos de los pacientes que requieran atencion medica</aside>
+</div>
+<div class="Casillallenar">
+    <label for="nombres">Nombres:</label>
+    <input name="nombres" id="nombres">
+    <label for="apellidos">Apellidos:</label>
+    <input name="apellidos" id="apellidos">
+    <label for="estatura">Estatura:</label>
+    <input type="number" name="estatura" id="estatura">
+    <label for="Fumador">Fumador:</label>
+    <select name="Fumador" id="Fumador">
+        <option value="Fumador">Si </option>
+        <option value="No Fumador">No </option>
+    </select>
+    <label for="Edad">Edad:</label>
+    <input type="number" name="Edad" id="Edad">
+
+    <label for="Nacionalidad">Nacionalidad:</label>
+    <select name="Nacionalidad" id="Nacionalidad">
+    
+    </select>
+    <label for="Grupo sanguíneo">Grupo sanguíneo:</label>
+    <select name="Grupo sanguíneo" id="Grupo sanguíneo">  
+    </select>
+    <label for="cirugias anteriores">Cirugias anteriores:</label>
+    
+    <select name="cirugias anteriores" id="cirugias anteriores">
+       <option value="Con cirugias anteriores">Si </option>
+       <option value="Sin cirugias anteriores">No </option>
+</select>
+
+
+
+</div>
+
+<div class="msj_colesterol" id="msj_colesterol">
+    <h3>Te has realizado o no pruebas de colesterol y triglicéridos en los ultimos 6 meses?</h3>
+    <label for="colesterol">Si</label>
+    <input type="radio" id="colesterol" name="colesterol"></input>
+    <label for="colesterol2">No</label>
+    <input type="radio" id="colesterol2" name="colesterol2"></input>
+
+</div>
+
+<div class="msj_azucar" id="msj_azucar">
+    <h3>Te has realizado una prueba de azucar los ultimos 3 meses?</h3>
+    <label for="msj_azucar">Si</label>
+    <input type="radio" id="msj_azucar" name="msj_azucar"></input>
+    <label for="colesterol2">No</label>
+    <input type="radio" id="msj_azucar" name="msj_azucar"></input>
+</div>
+
+<button class="button" onclick="handleRegistroTemperaturas()">
+    Guardar Registro
+</button>
+
+<!--button class="button" onclick="handleRegistroTemperaturas()"
+    Nuevo registro-->
+<div class="displayPacientes">
+    <h2>Registro actual de pacientes</h2>
+</div>
+     <div class="ListaPacientes" id="ListaPacientes">
+     <p><b>Aqui se mostrara los pacientes registrados actualmente:</b></p>
+    </div>
+
+
+
+
+<script src="app hospital.js"></script>
+
+   
+
+</body>
+</html>
