@@ -151,7 +151,9 @@ footer{
  background-position: center;
  }
  @media screen and (max-width:500px){
+ }
     nav{
 text-align: center;
 padding: 30px 0 0 0;
+}
 }
