@@ -49,6 +49,7 @@ const sumarDatos = (paramA, paramB) => { // Definir arrow function con parametro
 ejemploArrow();
 ejemploKeyword();
 const resultado = sumarDatos(23, 55); // invocar una funcion con parametros
+
 /*
 *
 * pensemos que las funciones nos van a ayudar a mantener el orden y a hacer codigo mas eficiente, si tenemos una tarea grande, por ejemplo mostrar en pantalla
