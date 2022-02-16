@@ -1,0 +1,156 @@
+<!DOCTYPE html> <center>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario principal</title>
+    <h1>Registro datos</h1>
+    
+    <script src="datos.js"></script>
+</head>
+<body>
+   <form onsubmit="salida()" > 
+       <fieldset>
+  <ul ><label>Nombre: <input type="text" name="Nombre" id="Nombre" /></label> </ul> 
+   <ul> <label>Apellidos: <input type="text" id="Apellidos" name="Apellidos" /></label> </ul>
+   <ul> <label>Estatura: <input type="text" id="Estatura" name="Estatura"/></label> </ul>
+   <ul> <label>Edad: <input number="" id="Edad" name="edad" /></label></ul>
+   <p>Nacionalidad</p>  <select name="Nacionalidad" id="Nacionalidad">
+    <option value="Afganistán">Afganistán</option>
+    <option value="Albania">Albania</option>
+    <option value="Alemania">Alemania</option>
+    <option value="Andorra">Andorra</option>
+    <option value="Angola">Angola</option>
+    <option value="Antigua y Barbuda">Antigua y Barbuda</option>
+    <option value="Arabia Saudita">Arabia Saudita</option>
+    <option value="Argelia">Argelia</option>
+    <option value="Argentina">Argentina</option>
+    <option value="Armenia">Armenia</option>
+    <option value="Australia">Australia</option>
+    <option value="Austria">Austria</option>
+    <option value="Azerbaiyán">Azerbaiyán</option>
+    <option value="Bahamas">Bahamas</option>
+    <option value="Bangladés">Bangladés</option>
+    <option value="Barbados">Barbados</option>
+    <option value="Baréin">Baréin</option>
+    <option value="Bélgica">Bélgica</option>
+    <option value="Belice">Belice</option>
+    <option value="Benín">Benín</option>
+    <option value="Bielorrusia">Bielorrusia</option>
+    <option value="Birmania">Birmania</option>
+    <option value="Bolivia">Bolivia</option>
+    <option value="Bosnia y Herzegovina">Bosnia y Herzegovina</option>
+    <option value="Botsuana">Botsuana</option>
+    <option value="Botsuana">Botsuana</option>
+    <option value="Brasil">Brasil</option>
+    <option value="Brunéi">Brunéi</option>
+    <option value="Bulgaria">Bulgaria</option>
+    <option value="Burkina Faso">Burkina Faso</option>
+    <option value="Burundi">Burundi</option>
+    <option value="Bután">Bután</option>
+    <option value="Cabo Verde">Cabo Verde</option>
+    <option value="Camboya">Camboya</option>
+    <option value="Camerún">Camerún</option>
+    <option value="Canadá">Canadá</option>
+    <option value="Chile">Chile</option>
+    <option value="Colombia">Colombia</option>
+    <option value="Costa Rica">Costa Rica</option>
+    <option value="Cuba">Cuba</option>
+    <option value="Dinamarca">Dinamarca</option>
+    <option value="Ecuador">Ecuador</option>
+    <option value="El Salvador">El Salvador</option>
+    <option value="España">España</option>
+    <option value="Estados Unidos">Estados Unidos</option>
+    <option value="Francia">Francia</option>
+    <option value="Guatemala">Guatemala</option>
+    <option value="Grecia">Grecia</option>
+    <option value="Honduras">Honduras</option>
+    <option value="Italia">Italia</option>
+    <option value="Jamaica">Jamaica</option>
+    <option value="Japon">Japon</option>
+    <option value="Marruecos">Marruecos</option>
+    <option value="México">México</option>
+    <option value="Nicaragua">Nicaragua</option>
+    <option value="Panamá">Panamá</option>
+    <option value="Paraguay">Paraguay</option>
+    <option value="Perú">Perú</option>
+    <option value="Portugal">Portugal</option>
+    <option value="Reino Unido">Reino Unido</option>
+    <option value="República Dominicana">República Dominicana</option>
+    <option value="Rusia">Rusia</option>
+    <option value="Singapur">Singapur</option>
+    <option value="Suecia">Suecia</option>
+    <option value="Suiza">Suiza</option>
+    <option value="Turquía">Turquía</option>
+    <option value="Uruguay">Uruguay</option>
+    <option value="Venezuela">Venezuela</option>
+    
+  
+  </select>
+  
+   
+
+    
+   <ul> <label>Cirugías anteriores: <input  type="text" id="Cirugíasanteriores" name="Cirugíasanteriores" /></label> </ul>
+   <ul> <label>Fumador/a <label><input type="checkbox" id="Fumador" value="first_checkbox"> si </label>
+
+    <input type="checkbox" id="fuma" value="second_checkbox"> <label for="cbox2">no</label> <br>
+    <p>Grupo sanguineo:</p>  <select name="Gruposanguineo" id="Gruposanguineo"> <option value="A+">A+</option>
+        <option value="B+">B+</option>
+        <option value="O+">O+</option>
+        <option value="AB+">AB+</option>
+        <option value="A-">A-</option>
+        <option value="B-">B-</option>
+        <option value="B-">B-</option>
+        <option value="O-">O-</option>
+        <option value="AB-">AB-</option><br>
+    
+       
+   <div>
+       <input type="submit" value="enviar">
+    </div>
+   
+</fieldset>
+   </form>
+  </center>
+</body>
+</html>
+<style>
+    h1 {
+      color: darkslateblue;
+      background-color: white;
+      border: 1px solid white;
+      align-items: center;
+    }
+    body { 
+        display: block;
+        width: 100%;
+        border: 1px solid rgba(0, 0, 0, 3);
+        margin-bottom: 40px ;
+        
+
+    }
+    input{
+       padding: 10px;
+       border:1px solid rgba(0, 0, 0, 3);
+       background: rgba(71, 71, 71, 0.199);
+       border: darkslateblue;
+       margin-left: 3px;
+       
+    }
+
+    label{
+        padding-left: 15px;
+     z-index: -20;
+        margin-top: -85p;
+        border: darkslateblue;
+        color: gray;
+    }
+   p{
+    col
+   }
+    
+    
+        
+    
