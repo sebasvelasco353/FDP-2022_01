@@ -21,46 +21,72 @@
                     <li><a href="#"> Instalaciones </a></li>
                 </ul>
             </nav>
-        </header>
+    </header>
     <div class="Contenido">
-    <div class="Consigna">
-        <p>A raíz de la necesidad de crear una base de datos para nuestros usuarios 
-        y su información, se plantea la siguiente plataforma:</p>
-    </div>
+        <div class="Consigna">
+            <p>A raíz de la necesidad de crear una base de datos para nuestros usuarios 
+            y su información, se plantea la siguiente plataforma:</p>
+        </div>
     <br>
-    <form action="" class="Formulario">
-        <p>Nombre: <input type="text" name="Name" value="" id="Nombre"></p>
-        <p>Apellido: <input type="text" name="Apellido" id="Apellido"></p>
-        <p>Estatura: <input type="number" step="0.01" name="Estatura" id="Estatura"></p>
-        <p>¿Fumador?: <br>
+    <div class="Formulario">
+        <label>Nombre:</label>
+            <input type="text" name="Name" value="" id="Nombre"> <br>
+        <label>Apellido:</label>
+            <input type="text" name="Apellido" id="Apellido"> <br>
+        <label>Estatura:</label>
+            <input type="number" step="0.01" name="Estatura" id="Estatura"> <br>
+    <div class="Radio">
+        <label>¿Fumador?:</label>
             <input type="radio" name="Fumador" value="Sí" id="Fumador">
-            <label for="Sí">Sí</label>
+        <label for="Sí">Sí</label>
             <input type="radio" name="Fumador" value="No" id="Fumador">
-            <label for="No">No</label></p>
-        <p>Edad: <input type="number" name="Edad" id="Edad"></p>
-        <p>Nacionalidad: <input type="text" name="Nacionalidad" id="Nacionalidad"></p>
-        <p>Grupo sanguíneo: <input type="text" name="RH" id="RH"></p>
-        <p>¿Cirugías previas?: <br>
+        <label for="No">No</label>
+    </div>
+            <br>
+        <label>Edad:</label>
+            <input type="number" name="Edad" id="Edad">
+
+            <div id="ColesterolQ">
+                <label>¿Se ha realizado pruebas de colesterol y triglicéridos en los últimos 6 meses?</label>
+                <input type="radio" name="Colesterol" id="Colesterol" value="Sí">
+                <label>Sí</label>
+                <input type="radio" name="Colesterol" id="Colesterol" value="No">
+                <label>No</label>
+            </div>
+
+            <div id="AzucarQ">
+                <label>¿Se ha realizado pruebas de Azucar en los últimos 3 meses?</label>
+                <input type="radio" name="Azucar" id="Azucar" value="Sí">
+                <label>Sí</label>
+                <input type="radio" name="Azucar" id="Azucar" value="No">
+                <label>No</label>
+            </div>
+            <br>
+        <label>Nacionalidad:</label>
+            <select name="Nacionalidad" id="Nacionalidad"></select> <br>
+        <label>Grupo sanguíneo:</label>
+            <select name="RH" id="RH"></select> <br>
+    <div class="Radio">
+        <label>¿Cirugías?:</label>
             <input type="radio" name="Cirugías" value="Sí" id="Cirugías">
-            <label for="Sí">Sí</label>
+        <label for="Sí">Sí</label>
             <input type="radio" name="Cirugías" value="No" id="Cirugías">
-            <label for="No">No</label></p>
-    <div class="Botones">
-        <div class="submit">
-            <input type="submit" name="Enviar">
-        </div>
-        <div class="Reset">
-            <input type="reset" name="Reset">
+        <label for="No">No</label>
+    </div>
+            <br>
+        <div class="Botones">
+            <input id="Submit" type="submit" onclick="handleClick()" onclick="AnotherQ()"></input>
+            <input type="reset" value="Clear form"></input>
         </div>
     </div>
-    </form>
 </div>
 <footer>
     <div class="Textos">
     <h3>Otro aviso parroquial</h3>
-    <p>Mk no entiendo. Comprendo el objetivo del ejercicio, lo que tengo que hacer e incluso la lógica
-        requerida para hacer los condicionales (que se espera sea lo más difícil). Pero por alguna razón 
-        no puedo hacer que nada del js funcione. Lo intenté, lo juro. Pero no puedo. </p>
+    <p>Me estaba quejando porque no podía hacer el js pero por obra y gracia del Espiritu Santo
+        (y puede que tal vez tu explicación), ya puedo :) <br>
+        Pd: Sé que el diseño está sencillito pero es que ando probando esa vaina del minimalismo (obvio Juliana, 
+        definitivamente tu mejor excusa).</p>
     </div>
 </footer>
 </body>
