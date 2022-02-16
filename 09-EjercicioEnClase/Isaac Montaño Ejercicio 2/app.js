@@ -58,11 +58,11 @@ function datos() {
 
 function DisplayAnciano() {
     if (document.getElementById("Edad").value >= "50" )
-    { document.getElementById("Anciano").style.display = 'block'
+    { document.getElementById("Anciano").style.display = 'block';
 }else{document.getElementById("Anciano").style.display = "none"; 
 }}
 function DisplayJoven() {
     if (document.getElementById("Edad").value < "50" )
-    { document.getElementById("Joven").style.display = 'block'
+    { document.getElementById("Joven").style.display = 'block';
 }else{document.getElementById("Joven").style.display = "none"; 
 }}

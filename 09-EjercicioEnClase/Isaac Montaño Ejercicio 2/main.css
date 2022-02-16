@@ -6,6 +6,7 @@
             padding: 5rem 2rem;
             max-width: 1080px;
             margin: 0 auto;
+            background-color: aquamarine;
         }
 
 .Título {
@@ -14,6 +15,7 @@
     padding: 0.5rem 2rem;
     max-width: 1080px;
     margin: 0 auto;
+    
 }
 #Anciano {
     display: none;
