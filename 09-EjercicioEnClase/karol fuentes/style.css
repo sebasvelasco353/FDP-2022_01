@@ -73,6 +73,9 @@ p {
     background-color: rgb(227, 229, 240);   
 }
 
+#divcolesterol, #divazucar {
+    display: none;
+}
 
 
 
