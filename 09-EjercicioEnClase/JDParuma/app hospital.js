@@ -51,11 +51,11 @@ const renderUltimosDatos = () => {
 
     if (registropacientes.length > 2) {
         const registropacientesRe = [...registropacientes].reverse();
-        for (let i = 0; i < 3 ; i++) {
+        for (let i = 0; i < Infinity ; i++) {
             const pacObj = registropacientesRe[i];
             var tag = document.createElement("p");
 
-            tag.innerHTML =`Pacientes: ${pacObj.nombres} ${pacObj.apellidos} ${pacObj.estatura} ${pacObj.Fumador} ${pacObj.Edad} ${pacObj.Nacionalidad} ${pacObj.Gruposanguíneo} ${pacObj.cirugiasanteriores}.`;
+            tag.innerHTML =`Paciente: ${pacObj.nombres} ${pacObj.apellidos} ${pacObj.estatura} ${pacObj.Fumador} ${pacObj.Edad} ${pacObj.Nacionalidad} ${pacObj.Gruposanguíneo} ${pacObj.cirugiasanteriores}.`;
 
             LISTA_Pacientes.appendChild(tag);
         }
@@ -64,7 +64,7 @@ const renderUltimosDatos = () => {
             const pacObj = registropacientes[i];
             var tag = document.createElement("p");
 
-            tag.innerHTML =`Pacientes: ${pacObj.nombres} ${pacObj.apellidos} ${pacObj.estatura} ${pacObj.Fumador} ${pacObj.Edad} ${pacObj.Nacionalidad} ${pacObj.Gruposanguíneo} ${pacObj.cirugiasanteriores}.`;
+            tag.innerHTML =`Paciente: ${pacObj.nombres} ${pacObj.apellidos} ${pacObj.estatura} ${pacObj.Fumador} ${pacObj.Edad} ${pacObj.Nacionalidad} ${pacObj.Gruposanguíneo} ${pacObj.cirugiasanteriores}.`;
 
             console.log(tag);
             LISTA_Pacientes.appendChild(tag);
