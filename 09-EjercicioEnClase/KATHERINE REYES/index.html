@@ -33,10 +33,9 @@
 <p>Apellidos: <input type="text" name="Apellidos" id="Apellidos" value=""></p>
 <p>Sexo: <input type="radio" name= "hm" value= "h">Hombre
     <input type="radio" name= "hm" value= "m">Mujer</p>
-<p>Edad: <select name="Edad" id="Edad" min="1" max="100" onclick="DisplayCYT(), DisplayAzucar()"></select></p>
 <p>Estatura (cm): <input type="number" name="Estatura" id="Estatura" min="1" max="300"></p>
-<p>Grupo Sanguineo: <input type="text" name="Grupo Sanguineo(RH)" id="RH"></p>
-<p>Nacionalidad: <input type="text" name="Nacionalidad" id="Nacionalidad"></p>
+<p>Grupo Sanguineo: <select name="Grupo Sanguineo(RH)" id="RH"></select></p>
+<p>Nacionalidad: <select name="Nacionalidad" id="Nacionalidad"></select></p>
 <p>¿El paciente es fumador@? <br>
     <input type="radio" name="fumador" id="Fumador">
     <label for="Fumador">Si</label>
@@ -49,6 +48,8 @@
      <input type="radio" name="cirugias" value="no" id="cirugias">
      <label for="cirugias">No</label>
 </p>
+<p>Edad: <select name="Edad" id="Edad" onclick="ExamenCYT(), ExamenAzucar()"></select></p>
+
 <div id="CYT">
     <p>¿Se ha realizado pruebas de coresterol y triglicéridos en los ultimos 6 meses?<br>
     <input type="radio" name="ExamenCYT" value="Si" id="ExamenCYT">
@@ -65,12 +66,10 @@
     <input type="radio" name="ExamenA" value="No" id="ExamenA">
     <label for="No" class="label"> No</label>
 </p>
-<p class="Especifico"> *Campos obligatorios</p>
-
+ </div>
     </div>
-    <button id="Enviar" type="submit" onclick="datos(), handleRegistro()"> Enviar</button>
-    <button id="Borrar" type="delete" onclick="datos(), handleRegistro()"> Borrar</button>
-    <button id="Reiniciar" type="reset" onclick="Reinicio()"> Nuevo registro</button>
+    <button id="Enviar" type="submit" onclick="handleRegistro()"> Enviar</button>
+    <button id="Borrar" type="delete" onclick="handleRegistro()"> Borrar</button>
 </form>
 </div>
 <footer>
