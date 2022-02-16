@@ -11,43 +11,39 @@
 <header>Medicrap</header>
 <body>
 
-    <section class="user.data">
+    <section class="user-data">
+        <container class="cuser-data">
 <form>
     <label for="fname">Nombres</label>
-    <input type="text" id="fname" name="fname">
+    <input type="text" id="fname" name="fname" placeholder="Ingrese sus nombres">
     <label for="flastname">Apellidos</label>
-    <input type="text" name="flastname" id="flastname">
+    <input type="text" name="flastname" id="flastname" placeholder="Ingrese sus apellidos">
     <label for="fage">Edad</label>
-    <input type="text" id="fage" name="fage">
+    <input type="text" id="fage" name="fage" placeholder="Ingrese su edad">
     <label for="fheight">Estatura</label>
-    <input type="text" id="fheight" name="fheight">
+    <input type="text" id="fheight" name="fheight" placeholder="Ingrese su estatura">
     <select name="fnationality" id="fnationality">
         <option value="default" selected> 
             --- seleccione un país --- 
-          </option> 
-        <option value="free">Free</option>
-        <option value="starter">Starter </option>
-        <option value="professional">Professional</option>
-        <option value="corporate">Corporate</option>
     </select>
     
     <select name="fbloodt" id="fbloodt">
         <option value="default" selected> 
             --- seleccione un grupo sanguíneo --- 
          </option> 
-        <option value="free">Free</option>
-        <option value="starter">Starter </option>
-        <option value="professional">Professional</option>
-        <option value="corporate">Corporate</option>
+        <option value="fbloodt">A+</option>
+        
     </select>
 
     <label for="fsurgery">Cirugías anteriores</label>
-    <input type="text" id="fsurgery" name="fsurgery">
+    <input type="text" id="fsurgery" name="fsurgery" placeholder="Ingrese sus cirugías">
 
-    <button>Holi</button>
+    <button class="botonEnviar" onclick="handleregistroDatos()">Enviar</button>
+    <button>Nuevo</button>
 
 
 </form>
+</container>
 </section>
 
 
