@@ -33,30 +33,44 @@
 <p>Apellidos: <input type="text" name="Apellidos" id="Apellidos" value=""></p>
 <p>Sexo: <input type="radio" name= "hm" value= "h">Hombre
     <input type="radio" name= "hm" value= "m">Mujer</p>
-<p>Edad: <input type="text" name="Edad" required></p>
-<p>Estatura (cm): <input type="number" name="Estatura" id="Estatura"></p>
+<p>Edad: <select name="Edad" id="Edad" min="1" max="100" onclick="DisplayCYT(), DisplayAzucar()"></select></p>
+<p>Estatura (cm): <input type="number" name="Estatura" id="Estatura" min="1" max="300"></p>
 <p>Grupo Sanguineo: <input type="text" name="Grupo Sanguineo(RH)" id="RH"></p>
 <p>Nacionalidad: <input type="text" name="Nacionalidad" id="Nacionalidad"></p>
 <p>¿El paciente es fumador@? <br>
-    <input type="radio" name="fumador" id="si">
-    <label for="html">Si</label>
-    <input type="radio" name="fumador" value="no">
-    <label for="html">No</label>
+    <input type="radio" name="fumador" id="Fumador">
+    <label for="Fumador">Si</label>
+    <input type="radio" name="fumador" value="No">
+    <label for="Fumador">No</label>
     </p>
 <p>¿El paciente cuenta con cirugias anteriores? <br>
      <input type="radio" name="cirugias" value="si" id="cirugias">
-     <label for="si">Si</label>
+     <label for="cirugias">Si</label>
      <input type="radio" name="cirugias" value="no" id="cirugias">
-     <label for="no">No</label>
+     <label for="cirugias">No</label>
 </p>
-<div class="Botones">
-<div class="Enviar">
-    <input type="submit" name="Enviar">
-</div>
-<div class="Reset">
-    <input type="Reset" name="Reset">
-</div>
-</div>
+<div id="CYT">
+    <p>¿Se ha realizado pruebas de coresterol y triglicéridos en los ultimos 6 meses?<br>
+    <input type="radio" name="ExamenCYT" value="Si" id="ExamenCYT">
+    <label for="Si">Si</label>
+    <input type="radio" name="ExamenCYT" value="No" id="ExamenCYT">
+    <label for="No">No</label>
+</p>
+    </div>
+
+    <div id="Azucar">
+   <p>¿Se ha realizado pruebas de azúcar en los ultimos 3 meses?<br>
+    <input type="radio" name="ExamenA" value="Si" id="ExamenA">
+    <label for="Si" class="label"> Si</label>
+    <input type="radio" name="ExamenA" value="No" id="ExamenA">
+    <label for="No" class="label"> No</label>
+</p>
+<p class="Especifico"> *Campos obligatorios</p>
+
+    </div>
+    <button id="Enviar" type="submit" onclick="datos(), handleRegistro()"> Enviar</button>
+    <button id="Borrar" type="delete" onclick="datos(), handleRegistro()"> Borrar</button>
+    <button id="Reiniciar" type="reset" onclick="Reinicio()"> Nuevo registro</button>
 </form>
 </div>
 <footer>
@@ -70,6 +84,6 @@
 </div>
 <h2 class="title-final">El mejor servicio para ti.</h2>
 </footer>
-<script src="app.js"></script>
+<script type="text/javascript" src="./js/app.js"></script>
 </body>
 </html>
