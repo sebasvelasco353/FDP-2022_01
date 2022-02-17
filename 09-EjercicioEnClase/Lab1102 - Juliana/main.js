@@ -49,12 +49,17 @@ const handleClick = (e) => {
         
         registroDatos.push(obj);
         console.log(registroDatos);
+
+        alert('Los datos fueron registrados correctamente')
     }
 
 const AnotherQ = (f) => {
         if (document.getElementById("Edad").value >= 50) {
             document.getElementById("ColesterolQ").style.display="block";
+            document.getElementById("AzucarQ").style.display="none";
         } else {
             document.getElementById("AzucarQ").style.display="block";
+            document.getElementById("ColesterolQ").style.display="none";
+
         }
     }

@@ -44,7 +44,7 @@
     </div>
             <br>
         <label>Edad:</label>
-            <input type="number" name="Edad" id="Edad">
+            <input type="number" name="Edad" id="Edad" onchange="AnotherQ()">
 
             <div id="ColesterolQ">
                 <label>¿Se ha realizado pruebas de colesterol y triglicéridos en los últimos 6 meses?</label>
@@ -55,7 +55,7 @@
             </div>
 
             <div id="AzucarQ">
-                <label>¿Se ha realizado pruebas de Azucar en los últimos 3 meses?</label>
+                <label>¿Se ha realizado pruebas de azúcar en los últimos 3 meses?</label>
                 <input type="radio" name="Azucar" id="Azucar" value="Sí">
                 <label>Sí</label>
                 <input type="radio" name="Azucar" id="Azucar" value="No">
@@ -75,8 +75,8 @@
     </div>
             <br>
         <div class="Botones">
-            <input id="Submit" type="submit" onclick="handleClick()" onclick="AnotherQ()"></input>
-            <input type="reset" value="Clear form"></input>
+            <input type="submit" onclick="handleClick()"></input>
+            <input type="reset" value="Limpiar"></input>
         </div>
     </div>
 </div>
