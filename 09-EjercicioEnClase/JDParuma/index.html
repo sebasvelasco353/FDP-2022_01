@@ -70,11 +70,23 @@
     <input type="radio" id="msj_azucar" name="msj_azucar"></input>
 </div>
 
-<button class="button" onclick="handleRegistroTemperaturas()">
-    Guardar Registro
-</button>
 
-<!--button class="button" onclick="handleRegistroTemperaturas()"
+<div class="button" id="button">
+<button class="button" type="submit" onclick="selectEdad();">Siguiente</button>
+
+</div>
+
+
+<div class="button2" id="button2">
+<button id="button2" type="submit" onclick="handleRegistroTemperaturas()"&& onclick="date_inputs();">Guardar Registro</button>
+</div>
+
+<!--<div class="button2" id="Enviar">
+    <button id="button2" type="submit" onclick="handleRegistroTemperaturas()">
+        Guardar Registro</button>
+    </div>
+
+button class="button" onclick="handleRegistroTemperaturas()"
     Nuevo registro-->
 <div class="displayPacientes">
     <h2>Registro actual de pacientes</h2>
@@ -82,6 +94,7 @@
      <div class="ListaPacientes" id="ListaPacientes">
      <p><b>Aqui se mostrara los pacientes registrados actualmente:</b></p>
     </div>
+
 
 
 

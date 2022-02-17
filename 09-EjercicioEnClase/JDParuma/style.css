@@ -53,9 +53,18 @@ margin: 0 auto;
     font-size: 1rem;
     display: flex;
     flex-direction: column;
-    max-width: 200px;
+    max-width: 500px;
     margin: 1rem auto;
+    
+}
 
+.button2{
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    max-width: 100px;
+    margin: 1rem auto;
+    display: none;
 }
 
 .displayPacientes{
@@ -75,11 +84,19 @@ margin: 0 auto;
 
 .msj_azucar{
   display: none;
+  font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 1rem auto;
+    display: none;
+
     
 }
 
 .msj_colesterol{
     display: none;
+    justify-content: center;
 }
 
 

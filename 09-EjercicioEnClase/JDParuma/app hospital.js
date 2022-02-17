@@ -31,6 +31,7 @@ const handleRegistroTemperaturas = () => {
     var Nacionalidad = document.getElementById("Nacionalidad").value;
     var Gruposanguíneo = document.getElementById("Grupo sanguíneo").value;
     var cirugiasanteriores = document.getElementById("cirugias anteriores").value;
+    
     const registroObj = {
         nombres,
         apellidos,
@@ -40,6 +41,7 @@ const handleRegistroTemperaturas = () => {
         Nacionalidad,
         Gruposanguíneo,
         cirugiasanteriores
+       
         
     }
     registropacientes.push(registroObj);
@@ -49,7 +51,7 @@ const renderUltimosDatos = () => {
     const LISTA_Pacientes = document.getElementById("ListaPacientes");
     LISTA_Pacientes.innerHTML = '';
 
-    if (registropacientes.length > 2) {
+    if (registropacientes.length > 10) {
         const registropacientesRe = [...registropacientes].reverse();
         for (let i = 0; i < Infinity ; i++) {
             const pacObj = registropacientesRe[i];
@@ -71,14 +73,55 @@ const renderUltimosDatos = () => {
         }
     }
 }
+
+function date_inputs(){
+    let date_inputs_nombres = document.getElementById("nombres").value;
+    let date_inputs_apellidos = document.getElementById("apellidos").value;
+    let date_inputs_estatura = document.getElementById("estatura").value;
+    let date_inputs_Edad = document.getElementById("Edad").value;
+    let date_inputs_Nacionalidad = document.getElementById("Nacionalidad").value;
+    let date_inputs_Gruposanguíneo = document.getElementById("Grupo sanguíneo").value;
+    let date_inputs_cirugiasanteriores = document.getElementById("Con cirugias anteriores").Checked;
+    let date_inputs_cirugiasanteriores2 = document.getElementById("Sin cirugias anteriores").Checked;
+    let date_inputs_Fumador = document.getElementById("Fumador").Checked;
+    let date_inputs_Fumador2 = document.getElementById("No Fumador").Checked;
+
+//impresion en consola:
+    console.log("Nombre:"+date_inputs_nombres)
+    console.log("Apellidos:"+date_inputs_apellidos)
+    console.log("Estatura:"+date_inputs_estatura)
+    console.log("Edad:"+date_inputs_Edad)
+    console.log("Nacionalidad:"+date_inputs_Nacionalidad)
+    console.log("Gruposanguíneo:"+date_inputs_Gruposanguíneo)
+    console.log("Con ciruguias anteriores:"+date_inputs_cirugiasanteriores)
+    console.log("Sin ciruguias anteriores:"+date_inputs_cirugiasanteriores2)
+    console.log("Fumador:"+date_inputs_Fumador)
+    console.log("No Fumador:"+date_inputs_Fumador2)
+    
+    
+
+}
+
+
+
+
+
+
+
+
+
 function selectEdad(){
     var input_edad = document.getElementById("Edad").value;
     if (input_edad >= 50){
         document.getElementById('msj_azucar').style.display ='none'
         document.getElementById('msj_colesterol').style.display ='block'
-        console.log(input_edad);
+        document.getElementById('button').style.display ='none'
+        document.getElementById('button2').style.display ='block'
+       
     } else if(input_edad < 50){
         document.getElementById('msj_colesterol').style.display ='none'
         document.getElementById('msj_azucar').style.display ='block'
+        document.getElementById('button').style.display ='none'
+        document.getElementById('button2').style.display ='block'
     }
 }
