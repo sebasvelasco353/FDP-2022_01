@@ -7,20 +7,78 @@
     <link rel="stylesheet" href="/09-EjercicioEnClase/Mariana Ocampo/styles/style.css">
     <title>Medicina eficaz</title>
 </head>
-<header>Medicina eficaz</header>
-<body>
-    <form>
-        <label for="Nombre">Nombre</label>
 
+<header>
+     Medicina eficaz
+</header>
+<body>
+
+    
+
+    <form class="Pagina">
+        <label for="Nombre">Nombre</label>
+        
         <input name="ingresanombre" type="text" value="Por favor, ingresa aquí" id="Nombre"/>
 
+        <label for="Apellido">Apellido</label>
+        
+        <input name="ingresaapellido" type="text" value="Por favor, ingresa aquí" id="Apellido"/>
+        
         <label for="Edad">Edad</label>
-
-        <input name="ingresaedad" type="text" value="Por favor, ingresa aquí" id="Edad"/>
         
-</form>
+        <input name="ingresaedad" type="number" min="1" max="120" value="Por favor, ingresa aquí" id="Edad"/>
         
+        <label for="fuma">"¿El paciente fuma?"</label>
+        <select name="fuma" id="fuma">
+            <option value="SI">SI</option>
+            <option value="NO">NO</option>
+        </select>
 
+     <label for="estatura">Estatura (cm)</label>
+
+     <input type="number" min="1" max="180" name="ingresaestatura" id="estatura">
+
+     <label for="Nacionalidad">Nacionalidad</label>
+     <select name="Nacionalidad" id="Nacionalidad"></select>
+     
+     
+     
+     
+     <label for="gruposangui">Tipo de sangre</label>
+     <select name="gruposangui" id="gruposangui"></select>
+    
+    <label for="cirugias anteriores">Cirugias anteriores:</label>
+
+    <select name="cirugias anteriores" id="cirugiasanteriores">
+        <div class="cirugiasanteriores">
+            <label for="opcionsi_uno">Si</label>
+            <input type="radio" name="option" value="Si" id="opcionsi_uno"></input>
+            <label for="opciondos_uno">No</label>
+            <input type="radio" name="option" value="No" id="opciondos_uno"></input>
+        </div>
+        
+</select>
+   
+<div>
+    <div class="container_content">
+        <button class="Botonguardar" onclick="Tratardatosdelpaciente()">
+            Guardar 
+        </div>
+    </form>
+    <div class="menscolesterol" id="menscolesterol1">
+        <h4>¿Te has realizado una prueba de colesterol y triglicéridos los ultimos 6 meses?</h4>
+        <label for="colesterol">Si</label>
+        <input type="radio" id="colesterol" name="option_tres"></input>
+        <label for="colesterol2">No</label>
+        <input type="radio" id="colesterol2" name="option_tres"></input>
+    </div>
+    <div class="mensazucar" id="mensazucar1">
+        <h4>¿Te has realizado una prueba de azucar los ultimos 3 meses?</h4>
+        <label for="azucar">Si</label>
+        <input type="radio" id="sugar" name="option_cuatro"></input>
+        <label for="azucar2">No</label>
+        <input type="radio" id="azucar2" name="option_cuatro"></input>
+    </div>
 
 <script src="./js/app.js"></script>
 </body>
