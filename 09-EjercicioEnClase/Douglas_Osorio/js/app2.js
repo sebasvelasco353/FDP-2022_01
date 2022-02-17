@@ -96,12 +96,18 @@ const handleRegistroTemperaturas = () => {
     renderUltimosDatos ();        
 }
 const renderUltimosDatos = () => {
+    //obtener dónde los voy a poner
+    //llamar el array
+    //crear el espacio
+    //llenar el espacio...
+    //sólo con este if me imprime los resultados :c
     const LISTA_MEDIDAS_ELEMENT = document.getElementById("listaMedidas");
     LISTA_MEDIDAS_ELEMENT.innerHTML = '';
+    
 
     if (registroTemperaturas.length > 2) {
         const registroTemperaturasInv = [...registroTemperaturas].reverse();
-        for (let i = 0; i < 3 ; i++) {
+        for (let i = 0; i < 1 ; i++) {
             const tempObj = registroTemperaturasInv[i];
             var tag = document.createElement("p");
 
@@ -140,4 +146,21 @@ for (let i = 0; i <grupoSanguineo.length ; i++) {
     option.text=tempObj
     option.value=tempObj
     document.getElementById("gruposang").appendChild(option);
+}
+for (let i = 0; i <registroTemperaturas.length ; i++) {
+    const tempObj = registroTemperaturas[i];
+    var p = document.createElement("p");
+    p.text=tempObj
+    p.value=tempObj
+    document.getElementById("listaMedidas").appendChild(p);
+}
+const clean = () =>{
+   document.getElementById("nombre").value="";
+   document.getElementById("fuma").value=null;
+   document.getElementById("apellido").value="";
+   document.getElementById("estatura").value=0;
+   document.getElementById("nacionalidad").value=null;
+   document.getElementById("gruposang").value=null;
+   document.getElementById("operaciones").value="";
+   document.getElementById("edad").value=0;
 }

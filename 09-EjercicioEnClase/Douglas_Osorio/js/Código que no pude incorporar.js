@@ -1,4 +1,4 @@
-/* uno para imprimir solo y el boton para resetear, no funcionaron*/const renderUltimosDatos = () => {
+/* uno para imprimir sin tanta cosa del if*/const renderUltimosDatos = () => {
     const LISTA_MEDIDAS_ELEMENT = document.getElementById("listaMedidas");
     LISTA_MEDIDAS_ELEMENT.innerHTML = '';
     var tag = document.createElement("p");
@@ -8,12 +8,3 @@
              Tipo de sangre: ${tempObj.gruposang} - Operaciones anteriores: ${tempObj.operaciones} - 
              Exámen de triglicéridos y colesterol: ${tempObj.examenestri} - Exámen de azucar: ${tempObj.examenesazu}.`;
            
-             const reset = () =>{
-                const form= getElementById ("form");
-                form.addEventListener("submit", function(event){
-                    form.reset
-                })
-            }
-            <button class="summit"  onclick="reset()">
-            Nuevo ingreso
-            </button>

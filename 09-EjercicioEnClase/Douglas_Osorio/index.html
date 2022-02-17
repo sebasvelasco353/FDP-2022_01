@@ -15,7 +15,7 @@
         <p class="content__intro">Por favor ingrese la información solicitada del paciente</p>
         <div class="container__content" id="form">
             <label for="edad">Edad</label>
-            <input type="number" min="0" max="120" name="edad" id="edad">
+            <input type="number" min="0" max="120" value="null" name="edad" id="edad">
             <label for="nombre">Nombre(s):</label>
             <input type="string" name="nombre" id="nombre">
             <label for="apellido">Apellidos:</label>
@@ -35,6 +35,9 @@
             <input type="string" name="operaciones" id="operaciones">
             <button class="botonGuardar" onclick="handleRegistroTemperaturas()">
                 Guardar
+            </button>
+            <button class="clear" id="clear" onclick="clean()">
+                Nuevo registro
             </button>
 
             <div class="displayTemperaturas">
