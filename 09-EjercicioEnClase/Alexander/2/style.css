@@ -43,3 +43,30 @@ body{
     margin-left: 30%;
     border-radius: 12px;
 }
+
+#datos_ingresados_principal{
+    display: none;
+}
+#datos_ingresados{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 20px;
+    padding-left: 20%;
+    padding-right: 20%;
+    gap: 12px;
+}
+#datos_ingresados h4{
+    grid-column: span 2;
+}
+#datos_ingresados button{
+    margin-left: 30%;
+    margin-right: 30%;
+    border-radius: 12px;
+}
+#datos_ingresados input{
+    border-radius: 12px;
+}
+#datos_enviados{
+    display: none;
+    text-align: center;
+}
