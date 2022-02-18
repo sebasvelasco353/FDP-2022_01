@@ -1,1 +1,11 @@
-@import 'reset/variables' , 'reset/mixins' , 
+@import 'reset/variables' , 'reset/mixins' , 'reset/reset' ,'reset/keyframes';
+
+.arcordeon{
+    width: 90%;
+    max-width: 120em;
+    background-color: lightskyblue;
+    padding: 2em;
+}
+.arcordeon.bloque{}
+.arcordeon .h2{}
+.arcordeon .contenido{}
