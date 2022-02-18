@@ -116,4 +116,10 @@ git merge <nombre_del_remoto>/<branch>
 ## Canales de Youtube recomendados.
 [**Hola Mundo**](https://www.youtube.com/channel/UC4FHiPgS1KXkUMx3dxBUtPg), [**Traversy Media**](https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA), [**FreeCodeCamp**](https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ), [**Web Dev Simplified**](https://www.youtube.com/channel/UCFbNIlppjAuEX4znoulh0Cw), [**Kevin Powell**](https://www.youtube.com/channel/UCFbNIlppjAuEX4znoulh0Cw), [**Fireship**](https://www.youtube.com/channel/UCsBjURrPoezykLs9EqgamOA), [**Academind**](https://www.youtube.com/channel/UCSJbGtTlrDami-tDGPUV9-w), [**The Net Ninja**](https://www.youtube.com/c/TheNetNinja)
 
-
+## Keyboard Shortcuts en Vscode
+- **Buscar archivos:** cmd+p o ctrl+p
+- **Comandos:** cmd+shift+p o ctrl+shift+p
+- **Mover una linea de codigo:** alt+FlechaDireccion
+- **copiar una linea de codigo en otro renglon:** alt+shift+flechaDireccion
+- **cursor multiple:** alt+click
+- **Seleccionar similares:** con el texto seleccionado cmd+d o ctrl+d
