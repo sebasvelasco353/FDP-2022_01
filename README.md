@@ -67,6 +67,10 @@ git push
 ```
 git checkout <branch>
 ```
+### crear una nueva branch
+```
+git checkout -b "<branch>"
+```
 ### Ver los remotos de mi repo
 ```
 git remote -v
@@ -112,4 +116,4 @@ git merge <nombre_del_remoto>/<branch>
 ## Canales de Youtube recomendados.
 [**Hola Mundo**](https://www.youtube.com/channel/UC4FHiPgS1KXkUMx3dxBUtPg), [**Traversy Media**](https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA), [**FreeCodeCamp**](https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ), [**Web Dev Simplified**](https://www.youtube.com/channel/UCFbNIlppjAuEX4znoulh0Cw), [**Kevin Powell**](https://www.youtube.com/channel/UCFbNIlppjAuEX4znoulh0Cw), [**Fireship**](https://www.youtube.com/channel/UCsBjURrPoezykLs9EqgamOA), [**Academind**](https://www.youtube.com/channel/UCSJbGtTlrDami-tDGPUV9-w), [**The Net Ninja**](https://www.youtube.com/c/TheNetNinja)
 
-## FAQ
+
