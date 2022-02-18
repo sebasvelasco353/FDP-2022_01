@@ -63,6 +63,30 @@ push es pa subir los cambios en el commit a el servidor
 ```
 git push
 ```
+### moverme entre branches
+```
+git checkout <branch>
+```
+### crear una nueva branch
+```
+git checkout -b "<branch>"
+```
+### Ver los remotos de mi repo
+```
+git remote -v
+```
+### Agregar un nuevo remoto
+```
+git remote add <nombre_del_remoto> <url_del_remoto>
+```
+### Preguntar si hay cambios
+```
+git fetch <nombre_del_remoto>
+```
+### mezclar los cambios con tu codigo
+```
+git merge <nombre_del_remoto>/<branch>
+```
 
 
 ## Vocabulario de la clase
@@ -92,4 +116,10 @@ git push
 ## Canales de Youtube recomendados.
 [**Hola Mundo**](https://www.youtube.com/channel/UC4FHiPgS1KXkUMx3dxBUtPg), [**Traversy Media**](https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA), [**FreeCodeCamp**](https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ), [**Web Dev Simplified**](https://www.youtube.com/channel/UCFbNIlppjAuEX4znoulh0Cw), [**Kevin Powell**](https://www.youtube.com/channel/UCFbNIlppjAuEX4znoulh0Cw), [**Fireship**](https://www.youtube.com/channel/UCsBjURrPoezykLs9EqgamOA), [**Academind**](https://www.youtube.com/channel/UCSJbGtTlrDami-tDGPUV9-w), [**The Net Ninja**](https://www.youtube.com/c/TheNetNinja)
 
-## FAQ
+## Keyboard Shortcuts en Vscode
+- **Buscar archivos:** cmd+p o ctrl+p
+- **Comandos:** cmd+shift+p o ctrl+shift+p
+- **Mover una linea de codigo:** alt+FlechaDireccion
+- **copiar una linea de codigo en otro renglon:** alt+shift+flechaDireccion
+- **cursor multiple:** alt+click
+- **Seleccionar similares:** con el texto seleccionado cmd+d o ctrl+d
