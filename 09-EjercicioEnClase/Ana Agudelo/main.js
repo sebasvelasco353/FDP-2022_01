@@ -36,7 +36,7 @@ const handleClick = (e) => {
         nombre: document.getElementById("nombre").value,
         apellido: document.getElementById("apellido").value,
         estatura: document.getElementById("estatura").value,
-        fumador: document.getElementById("si").value,
+        fumador: document.getElementById("si").onclick,
         edad: document.getElementById("edad").value,
         nacionalidad: document.getElementById("Nacionalidad").value,
         rh: document.getElementById("sangre").value,
