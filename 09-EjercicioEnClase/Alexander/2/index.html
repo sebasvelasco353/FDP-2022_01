@@ -60,7 +60,7 @@
                 <label for="option_no_uno">No</label>
                 <input type="radio" name="option" value="No" id="option_no_uno"></input>
             </div>
-            <!-- <input type="text" class="cual_cirugia" id="cual_cirugia" placeholder="¿Que cirugia?"> -->
+            <input type="text" class="cual_cirugia" id="cual_cirugia" placeholder="¿Que cirugia?">
         </div>
         <!--Grupo Fumador/a-->
         <div id="group_smoker" class="group_smoker">
@@ -111,7 +111,9 @@
         <input type="text" name="name" id="country_final" disabled></input>
         <label for="name_final">Tipo de sangre:</label>
         <input type="text" name="name" id="blood_final" disabled></input>
-        <button type="button" id="button_reset" onclick="reset_form();">Editar</button>
+        <label for="name_final">Cirugia previas:</label>
+        <input type="text" name="name" id="ciruprev_final" disabled></input>
+        <button type="button" id="button_reset" onclick="edit_form();">Editar</button>
         <button type="submit" id="button_enviar" onclick="end_form();">Finalizar</button>
     </div>
 </div>

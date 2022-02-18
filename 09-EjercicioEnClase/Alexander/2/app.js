@@ -26,6 +26,7 @@ function datos_finales_fomrulario(){
     let date_input_height = document.getElementById("form_input_height").value;
     let date_input_country = document.getElementById("input_country").value;
     let date_input_blood = document.getElementById("input_blood").value;
+    let date_input_ciruprev_final = document.getElementById("cual_cirugia").value;
     // inputs que recibiran los valores y mostrarlos al final del formulario
     document.getElementById("name_final").value = date_input_name;
     document.getElementById("lastname_final").value = date_input_lastname;
@@ -33,6 +34,7 @@ function datos_finales_fomrulario(){
     document.getElementById("height_final").value = date_input_height;
     document.getElementById("country_final").value = date_input_country;
     document.getElementById("blood_final").value = date_input_blood;
+    document.getElementById("ciruprev_final").value = date_input_ciruprev_final;
     //ocultar formulario y mostrar datos finales
     document.getElementById('form_user').style.display = 'none';
     document.getElementById('msj_colesterol').style.display = 'none';
@@ -40,6 +42,22 @@ function datos_finales_fomrulario(){
     document.getElementById('send2').style.display = 'none';
     document.getElementById('datos_ingresados_principal').style.display = 'block';
 }
+
+window.onload=function(){
+    
+    document.getElementById("option_yes_uno").addEventListener("click", ocultarElemento);
+    document.getElementById("option_no_uno").addEventListener("click", mostrarElemento);
+  }
+  
+  function ocultarElemento(){
+  
+    document.getElementById("cual_cirugia").style.display="block"; 
+  } 
+  
+  function mostrarElemento(){
+  
+    document.getElementById("cual_cirugia").style.display="none"; 
+  }
 
 // funcion para obtener los datos de los campos e imprimirlos en la consola
 function date_inputs(){
@@ -53,6 +71,7 @@ function date_inputs(){
     let date_input_blood = document.getElementById("input_blood").value;
     let date_input_ciruprev = document.getElementById("option_yes_uno").checked;
     let date_input_ciruprev2 = document.getElementById("option_no_uno").checked;
+    let date_input_ciruprev_text = document.getElementById("cual_cirugia").value;
     let date_input_smoke= document.getElementById("option_yes_dos").checked;
     let date_input_smoke2 = document.getElementById("option_no_dos").checked;
     // datos de los campos de seleccion del colesterol y azucar
@@ -70,6 +89,7 @@ function date_inputs(){
     console.log('¿Cirugias previas?')
     console.log("Si:"+date_input_ciruprev);
     console.log("No:"+date_input_ciruprev2);
+    console.log("Cirugia previa:"+date_input_ciruprev_text);
     console.log('¿Fumas?')
     console.log("Si:"+date_input_smoke);
     console.log("No:"+date_input_smoke2);
@@ -83,7 +103,7 @@ function date_inputs(){
 }
 
 //Funcion para reiniciar el formulario
-function reset_form(){
+function edit_form(){
     document.getElementById('form_user').style.display = 'block';
     document.getElementById('datos_ingresados_principal').style.display = 'none';
     document.getElementById('send').style.display = 'block';
