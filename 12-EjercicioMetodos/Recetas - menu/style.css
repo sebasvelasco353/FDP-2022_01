@@ -1,0 +1,11 @@
+#content_recetas{
+    padding: 12%;
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+    text-align: center;
+}
+#Pasos_receta{
+    /* display: none; */
+    text-align: left;
+}
+
