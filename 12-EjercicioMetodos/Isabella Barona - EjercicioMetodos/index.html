@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio de Metodos.</title>
+    <link rel="shortcut icon" href="./Imagenes/Icono.png">
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+
+<body>
+
+    <header>
+            <img id="Logo" src="./Imagenes/Logo.png"/>
+            <h2 class="Logo">Recetas colombianas</h2>
+            <ul class="Nave">
+                <li> Inicio</li>
+                <li>Acerca</li>
+                <li>Recetas
+                    <ul class="Opciones">
+                        <li>Platos principales</li>
+                        <li>Guarniciones y pasabocas</li>
+                        <li>Sopas</li>
+                        <li>Bebidas</li>
+                        <li>Postres</li>
+                        <li>Otros</li>
+                    </ul>
+                </li>
+                <li>Restaurantes</li>
+                <li>Libros</li>
+            </ul>
+    </header>
+
+    <div class="Recetas" id="Recetas">
+
+        <div class="Opt" id="Opt">
+            
+            <h2>Pasabocas</h2>
+            <p>Aquí encontraras algunas recetas tipicas de pasabocas colombianos, perfectas para ofrecer a tus invitados en reuniones o simplemente para calmar el hambre.</p>
+
+            <section class="Receta1" onclick="DisplayReceta()">
+                <img src="./Imagenes/Empanada.jpg" class="Img"/>
+                <p class="R1">Empanadas</p>
+            </section>
+    
+            <section class="Receta2" onclick="DisplayReceta()">
+                <img src="./Imagenes/Patacon.jpg" class="Img"/>
+                <p class="R2">Patacones</p>
+            </section>
+    
+            <section class="Receta3" onclick="DisplayReceta()">
+                <img src="./Imagenes/Aborrajado.jpg" class="Img"/>
+                <p class="R3">Maduro Aborrajado</p>
+            </section>
+
+            <button> Ver más </button>
+        </div>
+        
+        <div class="Seleccion" id="Seleccion">
+
+            <button id="Atras" onclick="Atras()">🡨</button>
+
+            <h2 id="Titulo">T</h2>
+            <p id="Descripcion">D</p><br>
+
+            <div class="Encabezado">
+                <div class="Porciones">
+                    <p>Porciones</p>
+                    <p id="Porc">45</p>
+                </div>
+                <div class="Tiempo">
+                    <p>Tiempo de preparación</p>
+                    <p id="Tiem">45</p>
+                </div>
+            </div>
+
+            <h3>Ingredientes</h3>
+            <ul id="Ingredientes">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+
+            <h3>Procedimiento</h3>
+            <ol id="Procedimiento">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ol>
+        </div>
+
+    </div>
+
+<script src="./js/app.js"></script>
+
+</body>
+</html>

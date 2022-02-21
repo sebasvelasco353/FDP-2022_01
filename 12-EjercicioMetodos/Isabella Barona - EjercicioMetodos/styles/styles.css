@@ -1,0 +1,138 @@
+html{
+    background-color: white;
+    color: rgb(53, 53, 53);
+}
+    body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header{
+    background-color: rgb(255, 197, 5);
+    color: white;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.4);
+    padding: 1vh 3vh 1vh 3vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    gap: 50px;
+    position:sticky;
+    top: 0px;
+}
+
+.Logo{
+    justify-content: flex-start;
+    flex-grow: 1;
+}
+
+#Logo{
+    width: 50px;
+    height: 50px;
+    align-items: right;
+    padding: 10px 0;
+}
+
+.Opciones, .Nave{
+    list-style: none;
+}
+
+.Nave li{
+    background-color: rgb(255, 197, 5);
+    padding: 5px 20px;
+}
+
+.Nave li:hover{
+    background-color: rgb(255, 220, 103);
+    cursor: pointer;
+}
+
+.Nave > li{
+    float: left;
+}
+
+.Nave li ul{
+    display: none;
+    position: absolute;
+    min-width: 140px;
+    top: 52px;
+    left: 938px;
+}
+
+.Nave li:hover > ul{
+    display: block;
+}
+
+.Recetas{
+    padding: 5vh 3vh 1vh 3vh;
+    width: 75%;
+    margin: auto;
+    text-align: center;
+}
+
+.Img{
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+}
+
+.Receta1:hover, .Receta2:hover, .Receta3:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.Opt{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    gap: auto;
+    margin: 1vh 0 0 0;
+}
+
+button{
+    width: 20%;
+    height: 50px;
+    background-color: rgb(255, 197, 5);
+    color: white;
+    font-size: medium;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.4);
+    margin: 5% 40% 5% 40%;
+}
+
+button:hover{
+    background-color: rgb(255, 220, 103);
+    cursor: pointer;
+}
+
+.Seleccion{
+    text-align: left;
+}
+
+#Atras{
+    width: 35px;
+    height: 35px;
+    margin: 1% 40% 0 0;
+}
+
+#Titulo, #Descripcion{
+    text-align: center;
+}
+
+.Encabezado{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    gap: auto;
+    font-size: small;
+    font-weight: bold;
+    color: grey;
+    text-align: center;
+}
+
+#Porc, #Tiem{
+    font-weight: 100;
+}
+
+#Seleccion{
+    display: none;
+}
