@@ -1,0 +1,25 @@
+.Formulario {
+   font-family: 'Roboto', sans-serif;
+            font-size: 1rem;
+            display: flex;
+            flex-direction: column;
+            padding: 5rem 2rem;
+            max-width: 1080px;
+            margin: 0 auto;
+            background-color: aquamarine;
+        }
+
+.Título {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem 2rem;
+    max-width: 1080px;
+    margin: 0 auto;
+    
+}
+#Anciano {
+    display: none;
+}
+#Joven {
+    display: none;
+}
