@@ -1,0 +1,118 @@
+body{
+    background-color: #04BFB9;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+.nav li a{
+    margin-top: 0px;
+    padding-left: 0px;
+}
+.form-register{
+    width: 450px;
+    background: #02736F;
+    padding: 25px;
+    margin:auto;
+    margin-top: 200px;
+    border-radius: 4px;
+    font-size: 15px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-shadow:  9px 15px 51px #4EF4EF;
+}
+.form-register h1{
+    color: white;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+.form-register h2{
+    color: white;
+    line-height: 40px;
+}
+.controls{
+    width: 100%;
+    background: white;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 2px solid #115754;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ 
+
+}
+ .form-register p{
+     height: 40px;
+     text-align: center;
+     color: white;
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     font-size: 16px;
+     line-height: 60px;
+ }
+ .form-register a:hover{
+     height: 40px;
+     text-align:left;
+     color:#4EF4EF;
+     }
+     
+.form-register .botons{
+width: 100%;
+background: white;
+border: none;
+padding: 12px;
+margin: 16px 0px;
+font-size: 14px;
+color:#3D7573;
+
+
+     }
+.form-register .botons:hover{
+    color: #022422;
+border: none;
+color: #4EF4EF;
+}
+#header{
+    margin-top: 100px;
+
+}
+h4{
+    color: white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+line-height: 40px;
+font-size: 18px;
+}
+
+h5{
+    color: white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+line-height: 60px;
+font-size: 18px;
+}
+
+#comentario,#coment{
+    display: none;
+    
+}
+.siono{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+line-height: 60px;
+font-size: 18px;
+}
+p{
+    color: white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+line-height: 60px;
+font-size: 18px;
+
+}
+
+button{
+    background-color: white;
+    color: #115754;
+    line-height: 30px;
+}
+

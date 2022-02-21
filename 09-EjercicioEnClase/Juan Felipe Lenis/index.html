@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+
+    <title>Medicrap</title>
+</head>
+<header>Medicrap</header>
+<body>
+
+    <section class="user-data">
+        <container class="cuser-data">
+<form>
+    <label for="fname">Nombres</label>
+    <input type="text" id="fname" name="fname" placeholder="Ingrese sus nombres">
+    <label for="flastname">Apellidos</label>
+    <input type="text" name="flastname" id="flastname" placeholder="Ingrese sus apellidos">
+    <label for="fage">Edad</label>
+    <input type="text" id="fage" name="fage" placeholder="Ingrese su edad">
+    <label for="fheight">Estatura</label>
+    <input type="text" id="fheight" name="fheight" placeholder="Ingrese su estatura">
+    <select name="fnationality" id="fnationality">
+        <option value="default" selected> 
+            --- seleccione un país --- 
+    </select>
+    
+    <select name="fbloodt" id="fbloodt">
+        <option value="default" selected> 
+            --- seleccione un grupo sanguíneo --- 
+         </option> 
+        <option value="fbloodt">A+</option>
+        
+    </select>
+
+    <label for="fsurgery">Cirugías anteriores</label>
+    <input type="text" id="fsurgery" name="fsurgery" placeholder="Ingrese sus cirugías">
+
+    <button class="botonEnviar" onclick="handleregistroDatos()">Enviar</button>
+    <button>Nuevo</button>
+
+
+</form>
+</container>
+</section>
+
+
+<script src="./js/app.js"></script>
+</body>
+</html>
