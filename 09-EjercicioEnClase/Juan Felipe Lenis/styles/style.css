@@ -1,0 +1,12 @@
+* { border: 1px solid red;
+    
+}
+
+.cuser-data{
+    padding: 1em;
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em 2em;
+
+}
