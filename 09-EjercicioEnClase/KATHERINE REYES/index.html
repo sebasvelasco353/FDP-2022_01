@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LABORATORIO CLINICO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#">Servicios</a>
+        <a href="#">Sedes Alternas</a>
+        <a href="#">Contenido</a>
+    </nav>
+    <section class="textos-header">
+        <h1>Laboratorio Clinico IDIME S.A</h1>
+        <h2>El presente formulario es para dar ingreso al paciente, para poder realizarle las muestras indicadas</h2>
+    </section>
+    <div class="wave" style="height: 150px; overflow: hidden;">
+    <svg viewBox="0 0 500 150" preserveAspectRatio="none"
+    style="height: 100%; width: 100%;">
+</svg></div>
+</header>
+<img class= "imagen1" src="imagenes/imagen1.jpg" alt="imagen1">
+</form action="form">
+<div class="formulario">
+    <h3> Formulario de Ingreso</h3>
+<p>Nombres: <input type="text" name="Nombre" id="Nombre" value=""></p>
+<p>Apellidos: <input type="text" name="Apellidos" id="Apellidos" value=""></p>
+<p>Sexo: <input type="radio" name= "hm" value= "h">Hombre
+    <input type="radio" name= "hm" value= "m">Mujer</p>
+<p>Estatura (cm): <input type="number" name="Estatura" id="Estatura" min="1" max="300"></p>
+<p>Grupo Sanguineo: <select name="Grupo Sanguineo(RH)" id="RH"></select></p>
+<p>Nacionalidad: <select name="Nacionalidad" id="Nacionalidad"></select></p>
+<p>¿El paciente es fumador@? <br>
+    <input type="radio" name="fumador" id="Fumador">
+    <label for="Fumador">Si</label>
+    <input type="radio" name="fumador" value="No">
+    <label for="Fumador">No</label>
+    </p>
+<p>¿El paciente cuenta con cirugias anteriores? <br>
+     <input type="radio" name="cirugias" value="si" id="cirugias">
+     <label for="cirugias">Si</label>
+     <input type="radio" name="cirugias" value="no" id="cirugias">
+     <label for="cirugias">No</label>
+</p>
+<p>Edad: 
+    <select name="Edad" id="Edad" onclick="ExamenCYT(), ExamenAzucar()"></select></p>
+
+<div id="CYT">
+    <p>¿Se ha realizado pruebas de coresterol y triglicéridos en los ultimos 6 meses?<br>
+    <input type="radio" name="ExamenCYT" value="Si" id="ExamenCYT">
+    <label for="Si">Si</label>
+    <input type="radio" name="ExamenCYT" value="No" id="ExamenCYT">
+    <label for="No">No</label>
+</p>
+    </div>
+
+    <div id="Azucar">
+   <p>¿Se ha realizado pruebas de azúcar en los ultimos 3 meses?<br>
+    <input type="radio" name="ExamenA" value="Si" id="ExamenA">
+    <label for="Si" class="label"> Si</label>
+    <input type="radio" name="ExamenA" value="No" id="ExamenA">
+    <label for="No" class="label"> No</label>
+</p>
+ </div>
+    </div>
+    <button id="Enviar" type="submit" onclick="handleRegistro()"> Enviar</button>
+    <button id="Borrar" type="delete" onclick="handleRegistro()"> Borrar</button>
+</form>
+</div>
+<footer>
+<div class="contenedor-footer">
+    <div class="content-foo">
+<h3>Idime S.A</h3>
+<p> Prestamos servicios de laboratorio clínico, imágenes diagnósticas. 
+    y consulta externa, ofreciendo excelencia y calidad en la atención. 
+    Además de oportunidad y confianza en los resultados. </p>
+    </div>
+</div>
+<h2 class="title-final">El mejor servicio para ti.</h2>
+</footer>
+<script type="text/javascript" src="./js/app.js"></script>
+</body>
+</html>
