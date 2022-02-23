@@ -12,44 +12,42 @@
 <body>
 
     <header>
-            <img id="Logo" src="./Imagenes/Logo.png"/>
-            <h2 class="Logo">Recetas colombianas</h2>
-            <ul class="Nave">
-                <li> Inicio</li>
-                <li>Acerca</li>
-                <li>Recetas
-                    <ul class="Opciones">
-                        <li>Platos principales</li>
-                        <li>Guarniciones y pasabocas</li>
-                        <li>Sopas</li>
-                        <li>Bebidas</li>
-                        <li>Postres</li>
-                        <li>Otros</li>
-                    </ul>
-                </li>
-                <li>Restaurantes</li>
-                <li>Libros</li>
-            </ul>
+        <img id="Logo" src="./Imagenes/Logo.png"/>
+        <h2 class="Logo">Recetas colombianas</h2>
+        <ul class="Nave">
+            <li> Inicio</li>
+            <li>Acerca</li>
+            <li>Recetas
+                <ul class="Opciones">
+                    <li>Platos principales</li>
+                    <li>Guarniciones y pasabocas</li>
+                    <li>Sopas</li>
+                    <li>Bebidas</li>
+                    <li>Postres</li>
+                    <li>Otros</li>
+                </ul>
+            </li>
+            <li>Restaurantes</li>
+            <li>Libros</li>
+        </ul>
     </header>
 
     <div class="Recetas" id="Recetas">
-
         <div class="Opt" id="Opt">
-            
             <h2>Pasabocas</h2>
             <p>Aquí encontraras algunas recetas tipicas de pasabocas colombianos, perfectas para ofrecer a tus invitados en reuniones o simplemente para calmar el hambre.</p>
 
-            <section class="Receta1" id="Receta1" onclick="DisplayReceta(), MostrarTitulo(), MostrarPorciones(), MostrarTiempo(), MostrarIng(), MostrarProce()">
+            <section class="Receta1" id="Receta1" onclick="DisplayReceta(), Receta1()">
                 <img src="./Imagenes/Carimañola.png" class="Img"/>
                 <p class="R1">Carimañola</p>
             </section>
     
-            <section class="Receta2" onclick="DisplayReceta(), MostrarTitulo()">
+            <section class="Receta2" id="Receta2" onclick="DisplayReceta(), Receta2()">
                 <img src="./Imagenes/Patacon.jpg" class="Img"/>
                 <p class="R2">Patacones</p>
             </section>
     
-            <section class="Receta3" onclick="DisplayReceta(), MostrarTitulo()">
+            <section class="Receta3" id="Receta3" onclick="DisplayReceta(), Receta3()">
                 <img src="./Imagenes/Aborrajado.jpg" class="Img"/>
                 <p class="R3">Maduro Aborrajado</p>
             </section>
@@ -58,33 +56,31 @@
         </div>
         
         <div class="Seleccion" id="Seleccion">
-
-            <button id="Atras" onclick="Atras()">🡨</button>
-
-            <h2 id="Titulo">T</h2>
+            <h2 id="Titulo"></h2>
 
             <div class="Encabezado">
                 <div class="Porciones">
                     <p>Porciones</p>
-                    <p id="Porc">45</p>
+                    <p id="Porc"></p>
                 </div>
                 <div class="Tiempo">
                     <p>Tiempo de preparación</p>
-                    <p id="Tiem">45</p>
+                    <p id="Tiem"></p>
                 </div>
             </div>
 
             <h3>Ingredientes</h3>
-            <ul id="Ingredientes">
-                <p id="Ing"></p>
-            </ul><br>
+                <ul id="Ingredientes">
+                    <p id="Ing"></p>
+                </ul><br>
 
             <h3>Procedimiento</h3>
-            <ol id="Procedimiento">
-                <p id="Proce"></p>
-            </ol>
-        </div>
+                <ol id="Procedimiento">
+                    <p id="Proce"></p>
+                </ol>
 
+            <button id="Atras" onclick="Atras()">⮌ volver</button>
+        </div>
     </div>
 
     <footer>

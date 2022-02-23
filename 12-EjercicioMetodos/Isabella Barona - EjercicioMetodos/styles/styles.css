@@ -108,13 +108,7 @@ button:hover{
     text-align: left;
 }
 
-#Atras{
-    width: 35px;
-    height: 35px;
-    margin: 1% 40% 0 0;
-}
-
-#Titulo, #Descripcion{
+#Titulo{
     text-align: center;
 }
 
@@ -137,11 +131,17 @@ button:hover{
     display: none;
 }
 
+#Atras{
+    width: 70px;
+    height: 50px;
+    margin: 5% 40% 0 0;
+}
+
 footer{
     background-color: rgb(255, 197, 5);
     color: white;
     text-align: left;
     font-size: small;
-    margin: 5vh 0 0 0;
+    margin: 3vh 0 0 0;
     padding: 3px 15px;
 }
