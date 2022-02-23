@@ -136,3 +136,12 @@ button:hover{
 #Seleccion{
     display: none;
 }
+
+footer{
+    background-color: rgb(255, 197, 5);
+    color: white;
+    text-align: left;
+    font-size: small;
+    margin: 5vh 0 0 0;
+    padding: 3px 15px;
+}

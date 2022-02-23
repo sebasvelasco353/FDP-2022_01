@@ -39,17 +39,17 @@
             <h2>Pasabocas</h2>
             <p>Aquí encontraras algunas recetas tipicas de pasabocas colombianos, perfectas para ofrecer a tus invitados en reuniones o simplemente para calmar el hambre.</p>
 
-            <section class="Receta1" onclick="DisplayReceta()">
-                <img src="./Imagenes/Empanada.jpg" class="Img"/>
-                <p class="R1">Empanadas</p>
+            <section class="Receta1" id="Receta1" onclick="DisplayReceta(), MostrarTitulo(), MostrarPorciones(), MostrarTiempo(), MostrarIng(), MostrarProce()">
+                <img src="./Imagenes/Carimañola.png" class="Img"/>
+                <p class="R1">Carimañola</p>
             </section>
     
-            <section class="Receta2" onclick="DisplayReceta()">
+            <section class="Receta2" onclick="DisplayReceta(), MostrarTitulo()">
                 <img src="./Imagenes/Patacon.jpg" class="Img"/>
                 <p class="R2">Patacones</p>
             </section>
     
-            <section class="Receta3" onclick="DisplayReceta()">
+            <section class="Receta3" onclick="DisplayReceta(), MostrarTitulo()">
                 <img src="./Imagenes/Aborrajado.jpg" class="Img"/>
                 <p class="R3">Maduro Aborrajado</p>
             </section>
@@ -62,7 +62,6 @@
             <button id="Atras" onclick="Atras()">🡨</button>
 
             <h2 id="Titulo">T</h2>
-            <p id="Descripcion">D</p><br>
 
             <div class="Encabezado">
                 <div class="Porciones">
@@ -77,26 +76,20 @@
 
             <h3>Ingredientes</h3>
             <ul id="Ingredientes">
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
+                <p id="Ing"></p>
+            </ul><br>
 
             <h3>Procedimiento</h3>
             <ol id="Procedimiento">
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+                <p id="Proce"></p>
             </ol>
         </div>
 
     </div>
+
+    <footer>
+        <p>© 2022</p>
+    </footer>
 
 <script src="./js/app.js"></script>
 
