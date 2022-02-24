@@ -1,0 +1,115 @@
+body{
+    margin: 0;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    background-color: gray;
+    width: 100%;
+    height: 6rem;
+    padding: 1rem 0;
+    margin: 0;
+    
+}
+
+.logoHeader{
+    width: auto;
+    height: 4rem;
+    margin-top: 0.8rem;
+    margin-left: 20%;
+}
+
+
+.divnav{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    margin-left: 25%;
+    margin-top: 15px;
+    border-radius: 20px;
+    width: 50%;
+    height: 3rem;
+    background-color: yellow;
+}
+
+.navegador{
+    list-style: none;
+    font-family: Helvetica;
+    margin-left: 10%;
+    
+}
+
+.navegador li{
+    display: inline-block;
+}
+
+.navegador li a{
+    margin: 2rem;
+}
+
+.ImgPubli{
+    margin-top: 50px; 
+    margin-left: 28%;  
+}
+
+.Encabezado{    
+    margin-top: 3rem;
+    background-color: #EADC03;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    padding-top: 1px;
+;
+    color: aliceblue;
+}
+
+.divRecetas{
+    background-color: antiquewhite;
+    bottom: 0;
+}
+
+section h3{
+    text-align: center;
+}
+
+
+.secRecetas{
+    position: relative;
+    overflow: hidden;
+    margin-left: 42%;
+    margin-top: 2rem;
+}
+.ImgReceta{
+    width: 20rem;
+    height: 30rem;
+}
+
+.divText{
+    display: block;
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.637);
+    color: white;
+    height: 25%;
+    fill-opacity: 5px;
+    width: 20rem;
+
+}
+
+.divText h3{
+    margin-top: 15%;
+}
+
+footer{
+    height: 4rem;
+    width: 100%;
+    background-color: gray;
+    text-align: center;
+    padding-top: 10px;
+    margin-top: 2rem;
+}
+
+
