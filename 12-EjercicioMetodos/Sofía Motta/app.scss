@@ -9,11 +9,19 @@
 .arcordeon.bloque{
     margin: 0 0 1em;
     padding: 1em;
+    @include neo(1, 1em , 1em );
 }
 .arcordeon .h2{
     margin: 0 0 1em;
     padding: 1em;
+    @include neo(1, 1em , 1em );
 }
 .arcordeon .contenido{
-    padding: 1em;
+    height: 0;
+    padding: 0em;
+    overflow: hidden;
+    transition: all .5s ease;
+}
+.arcordeon .bloque.activo .contenido{
+    height: 4em;
 }
