@@ -2,7 +2,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-h3{
+h3, p{
     text-align: center;
 }
 
@@ -17,42 +17,64 @@ header {
 }
 
 .recetas {
-    display: grid;
-    width: 100%;
-    grid-template-columns: 30% 30% 30%;
-    margin-left: 70px;
-    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.individual {
+    width: 30%;
+    margin-bottom: 10px;
+    overflow: hidden;
     position: relative;
-  }
+    cursor: pointer;
+}
 
-  img {
+.individual > img {
+    width: 100%;
+    height: 40vh;
+    object-fit: cover;
     display: block;
-    width: 95%;
-  }
+}
 
-  .recetas:hover {
-      background-color: rgba(0, 0, 0, 0.459);
-  }
+.descripcion-hover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background-color: #000000a6;
+    transition: transform .05s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
-  p {
-      text-align: center;
-      margin-top: 30px;
-      padding: 10px;
-  }
+.descripcion-hover p{
+    color: #ffffff;
+    margin: 20px;
+    margin-top: 10px;
+}
 
-  .description{
-      margin-top: -250px;
-      margin-left: none;
-      padding: 20px;
-  }
+.descripcion-hover h3{
+    color: #ffffff;
+    margin-top: 20px;
+}
 
-  button {
-    display: inline-block;
-    width:50%;
-    height: 40px;
+.individual:hover .descripcion-hover{
+    transform: scale(1);
+}
+
+button {
+    width: 30%;
+    background-color: #ffffff00;
+    border-color: white;
     border-radius: 20px;
-    background-color: rgba(255, 255, 255, 0);
-    color: gray;
-    border: 3px solid gray;
-    margin-left: 80px;
-  }
+    text-align: center;
+    color: #ffffff;
+    font-size: medium;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 5px;
+}
