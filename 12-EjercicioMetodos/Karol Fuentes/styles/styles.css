@@ -1,0 +1,53 @@
+p {
+    line-height: 150%;
+}
+
+.grid-recetario {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-template-rows: 30% 20% 50%;
+    background-color: rgb(255, 251, 245);
+    padding: 2em;
+    font-family: sans-serif;
+}
+
+.one {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-color: rgb(173, 97, 243);
+}
+
+.two {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-color: rgb(71, 201, 194);
+}
+
+.three {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    background-color: rgb(235, 133, 38);
+}
+
+.four {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    background-color: rgb(219, 24, 122);
+}
+
+.five {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    background-color: rgb(114, 216, 74);
+}
