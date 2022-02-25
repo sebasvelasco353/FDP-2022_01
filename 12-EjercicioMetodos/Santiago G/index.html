@@ -13,11 +13,11 @@
      </header>
      <div class="divnav">
         <ul class="navegador">
-            <li><a>Recetas</a></li>
-            <li><a>Libros</a></li>
-            <li><a>Restaurantes</a></li>
-            <li><a>Chefs</a></li>
-            <li><a>Otros</a></li>
+            <li><ul>Recetas</ul></li>
+            <li><ul>Libros</ul></li>
+            <li><ul>Restaurantes</ul></li>
+            <li><ul>Chefs</ul></li>
+            <li><ul>Otros</ul></li>
         </ul>
     </div>
 <!--Navegador de la página hasta aquí-->
@@ -25,34 +25,53 @@
      <img src="https://www.totalmedios.com/img/noticias/2020/07/5efc7c6909240__838x390.jpg" class="ImgPubli">     
 
      <div class="Encabezado">
-         <h2>Conoce las recetas que tenemos especialmente para ti</h2>
+         <h2>Conoce las recetas qué tenemos especialmente para ti</h2>
      </div>
-
+<div id="opt">
      <div class="divRecetas">
      
-     <section class="secRecetas">
+     <section class="secRecetas" id="receta1" onclick="Displayreceta(), receta1()">
      
         <img src="https://solorecetas.com/wp-content/uploads/2019/07/recetas-gourmet.jpg" class="ImgReceta">
-        <div class="divText"><h3>Empanadas</h3></div>
+        <div class="divText"><h3>LANGOSTINOS</h3></div>
 
     </section>
 
-     <section class="secRecetas"> 
+     <section class="secRecetas" id="receta2" onclick="Displayreceta()"> 
         <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/aguacates-a-la-plancha-1533819232.jpg?crop=0.5555555555555556xw:1xh;center,top&resize=980:*" class="ImgReceta">
-        <div class="divText"><h3>Arepa de Huevo</h3></div>
+        <div class="divText"><h3>AGUACATES A LA PLANCHA</h3></div>
     </section>
 
-     <section class="secRecetas"> 
+     <section class="secRecetas" id="receta3" onclick="Displayreceta()"> 
         <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/gambas-a-la-naranja-1528120459.jpg?crop=0.888888888888889xw:1xh;center,top&resize=980:*" class="ImgReceta">
-        <div class="divText"><h3>Carimañola</h3></div>     
+        <div class="divText"><h3>CAMARONES</h3></div>     
     </section>
  
 </div>
 <!--Recetas hasta aquí-->
+</div>
+ <div id="InfoRecetas">
+    <h2>Ingredientes</h2>
+     <ul id="Ing">
+         <p id="Ingredientes"></p>
+     </ul>
 
+     <h2>Pasos</h2>
+     <ul id="Pasos">
+         <p id="Pas"></p>
+     </ul>
+
+</div>
+
+
+</div>
+<button id="Volver" onclick="volver()">Volver</button>
+<!--Hasta aquí van la información de las recetas para ejecutarlas en el Js-->
 <footer>
     <p>El Gourmet© 2022 - Todos los derechos reservados</p>
 </footer>
-</body>
+
 <script src="./js/app.js"></script>
+</body>
+
 </html>
