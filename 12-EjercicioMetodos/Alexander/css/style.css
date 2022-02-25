@@ -1,0 +1,20 @@
+#content_recetas{
+    padding: 12%;
+    grid-template-columns: 30% auto;
+    display: grid;
+    text-align: center;
+}
+#Pasos_receta{
+    text-align: left;
+    padding: 20px;
+}
+#Recetas{ 
+    display: flex;
+    flex-direction: column;
+}
+#ArrozPollo, #PolloRelleno, #Shandwich{
+    display: none;
+}
+img{
+    cursor: pointer;
+}
