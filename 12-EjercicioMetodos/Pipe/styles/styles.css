@@ -1,0 +1,12 @@
+
+*{
+    border: 1px solid red;
+}
+
+
+.recetas_header{
+    padding: 1em;
+    margin: 0;
+    color: aqua;
+    background-color: black;
+}
