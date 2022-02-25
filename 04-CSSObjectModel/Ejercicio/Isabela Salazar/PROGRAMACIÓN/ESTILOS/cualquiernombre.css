@@ -1,0 +1,95 @@
+.binicio, .bcalendario,.bcertificaciones,.breglamentos {color: #F2F0F0; background-color: #085A8C;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
+button{
+    background-color: #085A8C;
+    color: #F2F0F0;
+    border: #085A8C;
+}
+button:hover{
+    background-color:#F2F0F0;
+    color: #011526;
+    }
+button:hover{
+    background-color: #F2F0F0;
+    border:#085A8C;
+}
+button:hover{
+    background-color: #F2F0F0;
+    border:#085A8C;
+}
+button:hover{
+    background-color: #F2F0F0;
+    border:#085A8C;
+}
+h1,h2{font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;color:#F2F0F0}
+
+img{width: 400px;height:300px;margin-top:30px; margin-bottom: 30px;}
+
+  body{background: #011526;}
+
+    .container{
+      padding: 1em;
+      margin: 15px 15px;
+      display: grid;
+      grid-template-columns:[first] 100% [line3] 100% [col4-start]30%[five][end];
+      
+    }
+      
+
+
+h3,h4,h5{display: flex;
+align-items: center;
+justify-content: center;
+height: px
+}
+.content {
+    background-color: #F2F0F0;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    border: 3px solid #bbbbba;
+  }
+
+h7,h8,h9,h10 {
+    color: #bbbbba;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+h7,h8,h9,h10{
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 1px;
+}
+h7,h8,h9,h10 {
+    margin: 0;
+    padding: 10px 0;
+    color: #bbbbba;
+    text-shadow: 3px,3px,1px,black;
+
+}
+h11 {
+    color: #bbbbba;
+    font-size: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif7;
+}
+
+footer{
+    
+    color: #011526;
+}
+h12 {
+    color: #bbbbba;
+        font-size: 15px;
+        line-height: 18px;
+        letter-spacing: 1px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif7;
+    }
+    h13 {
+        color: #bbbbba;
+            font-size: 15px;
+            line-height: 18px;
+            letter-spacing: 1px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif7;
+        }
+        
+
+
+  
