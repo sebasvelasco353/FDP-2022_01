@@ -4,9 +4,51 @@
 }
 
 
-.recetas_header{
-    padding: 1em;
-    margin: 0;
+.recipes_header{
     color: aqua;
     background-color: black;
+}
+
+
+.recipes{
+    padding: 1em;
+    margin: 1em;
+    display: grid;
+    grid-template-rows: 50% 50%;
+}
+
+.recipes_images{
+
+    padding: 1em;
+    margin: 1em;
+    display: flex;
+    gap:10px 10px;
+
+}
+
+.recipe_image1{
+
+    border-radius: 10px;
+    max-width: 20em;
+    height: 20em;
+}
+
+.recipe_image2{
+
+    border-radius: 10px;
+    max-width: 20em;
+    height: 20em;
+}
+.recipe_image3{
+
+    border-radius: 10px;
+    max-width: 20em;
+    height: 20em;
+}
+
+.recipes_data{
+
+    display: flex;
+    flex-direction: row;
+    align-self: ;
 }
