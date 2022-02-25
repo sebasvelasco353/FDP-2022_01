@@ -56,3 +56,20 @@ function receta2(){
     console.log(PasosText);
 
 }
+
+function receta3(){
+    const Ingredientes = document.getElementById("Ingredientes");
+    Ingredientes.innerHTML = '';
+    var IngredientsText = document.createElement("p");
+    IngredientsText.innerHTML = linea + Mantequilla + linea + Camarón + linea + Cilantro + linea + Limón + linea + sal;
+    Ingredientes.appendChild(IngredientsText);
+    console.log(IngredientsText);
+
+    const Pasos = document.getElementById("Pas");
+    Pasos.innerHTML = '';
+    var PasosText = document.createElement("p");
+    PasosText.innerHTML = linea + Pelar + linea + Limpiar + Bowl + linea + 'Dejar cocinar por unos minutos hasta que tome cuerpo';
+    Ingredientes.appendChild(PasosText);
+    console.log(PasosText);
+
+}

@@ -123,3 +123,18 @@ button{
     margin: 2rem;
     border-radius: 20%;
 }
+
+.InfoRecetas{
+    background-color: antiquewhite;
+    height: 20rem;
+    padding-top: 2rem;
+}
+
+.titIng{
+    margin-left: 8rem;
+}
+
+.ingredientes{
+    margin-left: 8rem;
+}
+
