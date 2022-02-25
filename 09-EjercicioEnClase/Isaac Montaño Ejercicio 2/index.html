@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>"Ejercicio 2"</title>
+</head>
+<body>
+    <div class="Título">
+        <h1>Formulario del paciente</h1>
+    </div>
+    
+    <form action="" name="FormularioPaciente" method="get" class="Formulario">
+
+        <label for="Nombre">Ingrese el nombre del paciente</label>
+        <input type="text" name="Nombre" id="Nombre" required>
+        <br>
+
+        <label for="Apellido">Ingrese el apellido del paciente</label>
+        <input type="text" name="Apellido" id="Apellido" required>
+        <br>
+
+        <label for="estatura">Ingrese la estatura en centímetros del paciente</label>
+        <input type="number" minlength="50" maxlength="210" id= "estatura" required>
+        <br>
+
+        <label for="fuma">Marque la casilla si el paciente fuma</label>
+        <input type="checkbox" name="Fuma" id="fuma" value="SiFuma">
+        <br>
+
+        <label for="Edad">Ingrese la edad del paciente</label>
+        <select  id= "Edad" onclick="DisplayAnciano(), DisplayJoven()" required>
+        <br>
+
+<div id = "Anciano">
+    <label for="" class= "colesterol">Marque la casilla si se ha hecho una prueba de colesterol y trigliceridos en los últimos 6 meses</label>
+    <input type="checkbox" id="colesterol" value="SiSeHizoPruebaColesterolyTrigliceridos">
+</div> 
+
+<div id = "Joven">
+    <label for="azucar">Marque la casilla si se ha hecho una prueba de azucar en los últimos 6 meses</label>
+        <input type="checkbox" name="azucar" id="azucar" value="SiSeHizoPruebaAzucar">
+        <br>
+
+</div>
+
+        <label for="" class="label">Nativo de</label>
+        <select name="nacionalidad" id="nacionalidad">
+        </select>
+        <br>
+
+        <label for="" class="label">Ingrese el grupo sanguineo del paciente</label>
+        <select name= "GrupoSanguineo" id= "GrupoSanguineo" required>
+        </select>
+        <br>
+        <label for="cirugias">Escriba las cirugías que ha tenido anteriormente</label>
+        <input type="text" name="cirugias" id="cirugias">
+
+        <br>
+        <button type="button" onclick="datos()">Enviar datos</button>
+
+        <input type="submit" id="enviar" name="enviar" value="Enviar">
+    </form>
+
+    <script type="text/javascript" src="app.js"></script>
+    
+</body>
+</html>
