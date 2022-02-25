@@ -111,3 +111,15 @@ footer{
     padding-top: 10px;
     margin-top: 2rem;
 }
+
+
+button{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #EADC03;
+    color: white;
+    width: 5rem;
+    height: 3rem;
+    border: none;
+    margin: 2rem;
+    border-radius: 20%;
+}
