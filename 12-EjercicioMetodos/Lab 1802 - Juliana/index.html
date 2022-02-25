@@ -23,14 +23,43 @@
         </nav>
     </header>
     <h1 class="Titulo">A morning coffee</h1>
-    <h4 class="Subtitulo">Where happiness is enjoyed in sips</h4>
+    <h3 class="Subtitulo">Where happiness is enjoyed in sips</h3>
     <div class="Contenedor">
-    <div class="Main">
-        <img class="Img1" src="https://images.pexels.com/photos/10720391/pexels-photo-10720391.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
-        <img class="Img2" src="https://images.pexels.com/photos/7488732/pexels-photo-7488732.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
-        <img class="Img3" src="https://images.pexels.com/photos/11130829/pexels-photo-11130829.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+    <div class="Main" id="Main">
+        <img class="Img1" src="https://images.pexels.com/photos/10720391/pexels-photo-10720391.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" onclick ="Receta1()" >
+        <h3 class="Name1">Caffe mocha</h3>
+        <img class="Img2" src="https://images.pexels.com/photos/7488732/pexels-photo-7488732.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"  onclick="Receta2()">
+        <h3 class="Name2">Iced caramel macchiato</h3>
+        <img class="Img3" src="https://images.pexels.com/photos/11130829/pexels-photo-11130829.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" onclick="Receta3()">
+        <h3 class="Name3">Vainilla latte</h3>
     </div>
     </div>
+    <div id="HandleRecetas">
+    <div id="Receta1" class="Receta1">
+        <!--Si no me funciona, me abro un only -->
+    </div>
+    <div id="Receta2" class="Receta2">
+        <!--Si no me funciona, me abro un only -->
+    </div>
+    <div id="Receta3" class="Receta3">
+        <!--Si no me funciona, me abro un only -->
+    </div>
+    </div>
+    <div style="text-align: center;"><button class="Volver" onclick="Volver()">¡Mira otras recetas!</button></div>
+    <div class="ContenedorVideos">
+        <h2 class="TituloVideo">¿Aún tienes ganas de más? ¡Prueba estas recetas!</h2>
+        <div class="Videos">
+            <iframe width="500" height="315" src="https://www.youtube.com/embed/MMhd9FHFEO8" title="YouTube video player" 
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="500" height="315" src="https://www.youtube.com/embed/0ECVLj4zuVQ" title="YouTube video player" frameborder="0" 
+         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+    <footer> 
+        <h2>Chiquito pero con amor</h2>
+        <h2  class="Disclaimer">(y odio, lagrimas, autodesprecio y muchas otras emociones que surgen cuando algo no me sale bien)</h2>
+        <h3 class="Corazón">♥</h3>
+    </footer>
 <script src="./js/app.js"></script>
 </body>
 </html>

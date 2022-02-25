@@ -38,12 +38,13 @@ header nav ul li a:hover {
     text-align: center;
     padding-top: 60px;
     font-size: 50px;
+    color: #ffa946;
 }
 
-.Subtitulo {
+.Subtitulo, .TituloVideo {
     font-family: 'Source Code Pro', monospace;
-    padding-top: 5px;
     font-weight: 600;
+    padding: auto;
     align-items: center;
     text-align: center;
 }
@@ -57,8 +58,10 @@ header nav ul li a:hover {
 .Main {
     display: grid;
     grid-template-columns: 30% 30% 30%;
-    grid-template-rows: 50% 50%;
+    grid-template-rows: 100%;
     justify-content: space-between;
+    margin: auto;
+    padding-bottom: 40px;
 }
 
 .Img1 {
@@ -68,6 +71,8 @@ header nav ul li a:hover {
     grid-row-end: 2;
     gap: 1em;
     width: 100%;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50);
+    cursor: pointer;
 }
 
 .Img2 {
@@ -77,6 +82,8 @@ header nav ul li a:hover {
     grid-row-end: 2;
     gap: 1em;
     width: 100%;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50);
+    cursor: pointer;
 }
 
 .Img3 {
@@ -86,4 +93,66 @@ header nav ul li a:hover {
     grid-row-end: 2;
     gap: 1em;
     width: 100%;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50);
+    cursor: pointer;
+}
+
+.Name1, .Name2, .Name3 {
+    text-align: center;
+    font-family: 'Source Code Pro', monospace;
+    padding: auto;
+}
+
+.Videos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 1rem;
+    width: 80%;
+    margin: auto;
+}
+
+.TituloVideo {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    color: #ffa946;
+}
+
+footer {
+    padding: 60px;
+    background-color: #ffa946;
+}
+
+footer h2 {
+    font-size: 30px;
+    font-family: 'Berkshire Swash', cursive;
+    text-align: center;
+}
+
+.Corazón {
+    text-align: center;
+    font-size: 50px;
+}
+
+.Disclaimer {
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.Receta1, .Receta2, .Receta3 {
+    width: 85%;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 17px;
+    text-align: left;
+    margin-left: 7rem;
+    background-color: #ffa946;
+}
+
+.Volver {
+    margin: 15px;
+    padding: 5px;
+    color: #ffa946;
+    font-size: 1rem;
+    font-family:'Source Code Pro', monospace;
 }
