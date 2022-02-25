@@ -1,3 +1,5 @@
+var contenedor = document.getElementById("textoReceta");
+
 let ol = document.createElement("p");
 
 let li4 = document.createElement("p");
@@ -53,6 +55,11 @@ li11.appendChild(li11Texto);
 
 const verReceta = (Receta) => {
     console.log(Receta);
+
+    ul.innerHTML = "";
+
+    contenedor.innerHTML = "";
+
     switch (Receta) {
         
         case "receta1": //mostrar la primera receta
@@ -62,8 +69,10 @@ const verReceta = (Receta) => {
         ul.appendChild(li3);
         ul.appendChild(li5);
         ul.appendChild(li6);
+
+        console.log(contenedor);
          
-        document.body.appendChild(ul);
+        contenedor.appendChild(ul);
         
         document.body.appendChild(ol);
                            
@@ -74,11 +83,16 @@ const verReceta = (Receta) => {
         ul.appendChild(li1);
         ul.appendChild(li7);
         ul.appendChild(li8);
-         
-        document.body.appendChild(ul);
 
-        document.body.appendChild(ol);       
+        console.log(contenedor);
+         
+        contenedor.appendChild(ul);
+
+        document.body.appendChild(ol);    
+       
+
         break;
+
 
         case "receta3": //mostrar la primera receta
         
@@ -86,8 +100,10 @@ const verReceta = (Receta) => {
         ul.appendChild(li9);
         ul.appendChild(li10);
         ul.appendChild(li11);
+
+        console.log(contenedor);
          
-        document.body.appendChild(ul);
+        contenedor.appendChild(ul);
         
         document.body.appendChild(ol);                
         break;
