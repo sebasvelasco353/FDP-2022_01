@@ -140,14 +140,6 @@ footer h2 {
     font-family: 'Source Code Pro', monospace;
 }
 
-.Receta1, .Receta2, .Receta3 {
-    width: 85%;
-    font-family: 'Source Code Pro', monospace;
-    font-size: 17px;
-    text-align: left;
-    margin-left: 7rem;
-    background-color: #ffa946;
-}
 
 .Volver {
     margin: 15px;
@@ -155,4 +147,13 @@ footer h2 {
     color: #ffa946;
     font-size: 1rem;
     font-family:'Source Code Pro', monospace;
+}
+
+#HandleRecetas {
+    width: 85%;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 17px;
+    text-align: left;
+    margin-left: 7rem;
+    background-color: #ffa946;
 }

@@ -65,43 +65,22 @@ var Revolver = "*Revuelve muy bien."
 var Disfrutar = "*¡Disfruta de tu preparación!";
 var Enter = "<br>"
 
-let paso = 0;
+const Pasos = document.getElementById("HandleRecetas")
 
 function Receta1() {
-    paso1()
-    let empty = "";
-    if(paso === 1) {
-        const Pasos = document.getElementById("Receta1")
     Pasos.innerHTML = Sirope + 'chocolate' + Enter + Hielo + Enter + Espresso + Enter + Espuma + Enter + Leche + Enter + Revolver + Enter + '*Agrega crema batida y ralladura de chocolate al gusto' + Enter + Disfrutar;
-    empty = document.getElementById("Receta2");
-    empty = document.getElementById("Receta3");
-    }
-    
 }
+    
 
 function Receta2() {
-paso2();
-let empty = "";
-    if(paso === 2){
-        const Pasos = document.getElementById("Receta2")
         Pasos.innerHTML = Espresso + Enter + Hielo + Enter + Sirope + 'vainilla.' + Enter + Sirope + 'caramelo.' + Enter + Espuma + Enter + Leche + Revolver + Enter + Disfrutar;
-        empty = document.getElementById("Receta1");
-        empty = document.getElementById("Receta3");
     }
    
-}
 
 function Receta3() {
-    paso3();
-    let empty = "";
-    if(paso === 3){
-        const Pasos = document.getElementById("Receta3")
         Pasos.innerHTML = Sirope + 'vainilla.' + Enter + Espresso + Enter + Espuma + Enter + Leche + Enter + Disfrutar;
-        empty = document.getElementById("Receta1");
-        empty = document.getElementById("Receta2");
     }
     
-}
 
 if (document.getElementById(Receta1).style.display === "block") {
     document.getElementById(Receta2).style.display = "none";
@@ -109,15 +88,6 @@ if (document.getElementById(Receta1).style.display === "block") {
 }
 
 function Volver() {
-    document.getElementById('HandleRecetas').style.display = 'none';
+    document.getElementById('HandleRecetas').innerHTML = '';
 }
 
-function paso1() {
-    paso = 1;
-}
-function paso2() {
-    paso = 2;
-}
-function paso3() {
-    paso = 3;
-}
