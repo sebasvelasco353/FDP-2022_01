@@ -10,34 +10,61 @@
 <body>
     <header><h1 class=>Recetario</h1></header>
     <p>Aquí podrás encontra recteas para hacer desde la comodidad de tu casa, que podrás degustar hasta con un café o chocolate caliente</p>
+    
     <section class="recetas">
-        <section >
-            <section>
+    <div class="opciones" id="opciones">
+        <div class="recetas-opc">
                 <h4>TORTA DE NARANJA</h4>
                 <p>Disfrutalos en cualquier momento del día, para una reunión, encuentro o fiesta de tus
                      hijos. Decoralo, ponle fondant o crema, con cualquiera te quedará delicioso!! </p>
-                <button class="boton" onclick="verReceta('receta1')">Ver receta</button>
-            </section>
-        </section>
-
-        <section>
-            <section>
+                <button class="boton" onclick="verReceta(),receta1()">Ver receta</button>
+        </div>
+        <div class="recetas-opc">
                 <h4>TORTA DE BANANO</h4>
                 <p>Disfrutalos en cualquier momento del día, para una reunión, encuentro o fiesta de tus
                     hijos. Decoralo, ponle fondant o crema, con cualquiera te quedará delicioso!!</p>
-                <button class="boton" onclick="verReceta('receta2')">Ver receta</button>
-            </section>
-        </section>
-
-        <section>
-            <section id="section">
+                <button class="boton" onclick="verReceta(),receta2()">Ver receta</button>
+        </div>
+        <div class="recetas-opc">
                 <h4>TORTA DE PIÑA</h4>
                 <p>Disfrutalos en cualquier momento del día, para una reunión, encuentro o fiesta de tus
                     hijos. Decoralo, ponle fondant o crema, con cualquiera te quedará delicioso!!</p>
-                <button onclick="mostrarReceta('receta3')">Ver receta</button>
-            </section>
-        </section>
+                <button onclick="verReceta(),receta3()">Ver receta</button>
+        </div>
+    </div>
+
+    <div class="escogida" id="escogida">
+            <h2 id="nombre"></h2>
+        
+    <div class="recetacompleta">
+        
+            <div class="tiempo">
+                <p>Tiempo de preparación</p>
+                <p id="tiempo"></p>
+            </div>
+            <div class="Porciones">
+                <p>Porciones de la receta</p>
+                <p id="porciones"></p>
+            </div>
+        </div>
+        
+            <h3>Ingredientes</h3>
+                <ul id="Ingredientes">
+                <p id="Ingredientes"></p>
+                </ul><br>
+        
+            <h3>Pasos a seguir</h3>
+                <ol id="Pasos">
+                <p id="pasos"></p>
+                </ol>
+        
+        </div>
+        </div>  
+
+        <button id="volver" onclick="volver()">⮌ volver</button>
+
     </section>
+
     <script src="./js/app.js"></script>
 </body>
 </html>
