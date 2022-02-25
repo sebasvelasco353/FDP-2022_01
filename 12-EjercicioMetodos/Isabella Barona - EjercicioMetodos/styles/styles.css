@@ -64,6 +64,7 @@ header{
 .Recetas{
     padding: 5vh 3vh 1vh 3vh;
     width: 75%;
+    height: 100%;
     margin: auto;
     text-align: center;
 }
@@ -84,7 +85,7 @@ header{
     flex-flow: row wrap;
     justify-content: space-around;
     gap: auto;
-    margin: 1vh 0 0 0;
+    margin: 5vh 0 5vh 0;
 }
 
 button{
@@ -96,7 +97,7 @@ button{
     border: none;
     border-radius: 5px;
     box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.4);
-    margin: 5% 40% 5% 40%;
+    margin: 8% 40% 5% 40%;
 }
 
 button:hover{
