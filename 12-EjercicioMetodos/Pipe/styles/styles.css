@@ -5,6 +5,8 @@
 
 
 .recipes_header{
+    padding: 1em;
+    margin: 1em;
     color: aqua;
     background-color: black;
 }
@@ -13,17 +15,18 @@
 .recipes{
     padding: 1em;
     margin: 1em;
-    display: grid;
-    grid-template-rows: 50% 50%;
+    display: flex;
+    flex-direction: column;
+    
 }
 
-.recipes_images{
+.recipe_images{
 
     padding: 1em;
     margin: 1em;
     display: flex;
-    gap:10px 10px;
-
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .recipe_image1{
@@ -44,11 +47,33 @@
     border-radius: 10px;
     max-width: 20em;
     height: 20em;
+    
 }
 
 .recipes_data{
 
+    padding: 2em;
     display: flex;
     flex-direction: row;
-    align-self: ;
+    gap: 20em;
+    row-gap: 20em;
+
+}
+
+.recipe_1 {
+
+    display: flex;
+    flex-direction: row;
+}
+
+.recipe_2 {
+
+    display: flex;
+    flex-direction: row;
+}
+
+.recipe_3 {
+
+    display: flex;
+    flex-direction: row;
 }
