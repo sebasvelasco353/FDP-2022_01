@@ -5,30 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing page</title>
-    <link rel="shortcut icon" href="">
+    <link rel="shortcut icon" href="./Imagenes/LogoC.png">
     <link rel="stylesheet" href="./Css/Style.css">
 </head>
 
 <body>
     <header>
-        <img id="Logo" src=""/>
-        <ul class="Nave">
+        <section class="Logo">
+            <img id="Logo" src="./Imagenes/LogoB.png"/>
+        </section>
+            <ul class="Nave">
             <li>Inicio</li>
             <li>Sobre nosotros</li>
             <li>Servicios
-                <ul class="Opciones">
-                    <li>Diseño y publicidad</li>
-                    <li>Merchandising</li>
-                    <li>Corte y grabado láser</li>
-                    <li>Productos personalizados</li>
+                <ul class="Opciones1">
                     <li>Papelería</li>
+                    <li>Diseño y publicidad</li>
+                    <li>Productos personalizados</li>
                 </ul>
             </li>
             <li>Productos
-                <ul class="Opciones">
+                <ul class="Opciones2">
                     <li>Cuadernos y agendas</li>
                     <li>Calendarios</li>
-                    <li>Bolsos, gorras y camisetas</li>
+                    <li>Bolsos</li>
+                    <li>Gorras y camisetas</li>
+                    <li>Tazas y pines</li>
                     <li>Decoración</li>
                 </ul>
             </li>
@@ -38,68 +40,83 @@
 
     <div class="Bienvenida" id="Bienvenida">
         <section>
-            <img id="ImgBienvenida" src=""/>
+            <img id="ImgBienvenida" src="./Imagenes/ImgBienvenida.jpeg"/>
         </section>
 
-        <section>
-            <h1>Titulo</h1>
-            <p>Somos</p>
-            <button id="CTA">¡Compra ahora!</button>
+        <section id="Presentacion">
+            <h1 class="T1">Personaliza tus productos</h1><br>
+            <p>En Papelería Kroma no solo encontraras los servicios de siempre. Aquí podrás personalizar tus productos, ya sea para uso personal o para empresas.</p><br>
+            <button id="CTA"><b>¡Compra ahora!</b></button>
             <button id="CTAS">Nuestros productos</button>
         </section>
     </div>
     
     <div class="Quienes" id="Quienes">
-        <section>
-            <h1>¿Quiénes somos?</h1>
-            <p>Somos</p>
+        <section id="Acerca">
+            <h1>¿Quiénes somos?</h1><br>
+            <p>Somos una empresa dedicada a suplir suministros de papelería, servicios de personalización de productos y servicios de diseño y publicidad. Elaboramos productos de alta calidad en distintos materiales y cantidades. Puedes proveer tus propios diseños o dejarlo en manos de nuestros talentosos diseñadores.</p>
         </section>
 
-        <section>
-            <img id="ImgQuienes" src=""/>
+        <section id="ImgQuienes">
+            <img id="ImgQuienes" src="./Imagenes/ImgQuienes.png"/>
         </section>
     </div>
 
     <div class="Servicios" id="Servicios">
-       
+        
+        <h1>Nuestro servicios</h1>
+
+        <section class="Cards">
+            <div id="Card">
+                <img id="ImgCard" src="https://s1.1zoom.me/big0/889/Pencils_Ballpoint_pen_530500_1159x1024.jpg"/>
+                <h3 id="Text">Papelería</h3>
+                <p id="Text">Productos para oficina, colegio y/o manualidades</p><br>
+            </div>
+
+            <div id="Card">
+                <img id="ImgCard" src="https://summa.es/blog/wp-content/uploads/2018/09/iStock-865230556-568x480.jpg"/>
+                <h3 id="Text">Diseño y publicidad</h3>
+                <p id="Text">Te ayudamos a darle visibilidad a tu marca</p><br>
+            </div>
+
+            <div id="Card">
+                <img id="ImgCard" src="https://i.etsystatic.com/15037991/r/il/f7803a/2012653211/il_570xN.2012653211_3yk4.jpg"/>
+                <h3 id="Text">Productos personalizados</h3>
+                <p id="Text">Hacemos impresión en una gran variedad de productos</p><br>
+            </div>
+        </section>
     </div>
 
     <div class="Productos" id="Productos">
-       
+        <h1>Productos personalizados</h1>
+
     </div>
 
     <div class="Contacto" id="Contacto">
-        <section>
-            <p>Teléfono</p>
-            <p>Dirección</p>
-            <p>Correo</p>
-            <p>Horarios</p>
+        <section class="InfoContact">
+            <p class="info"><b>Teléfonos</b><br>+57 300 0000421<br>602 0000421</p>
+            <p class="info"><b>Dirección</b><br>Cra. 100 #5-169 (Unicentro) local 421</p>
+            <p class="info"><b>Correo</b><br>papelkroma@gmail.com</p>
+            <p class="info"><b>Horarios</b><br>Lunes a viernes: 8:00am a 12:00m - 1:00pm a 7:00pm<br>Sábados y festivos: 10:00am a 12:00m - 1:00pm a 5:00pm</p>
         </section>
 
-        <section>
-            <form>
-                <label for="Nombre" class="label">Nombre <b>٭</b></label>
-                <input type="text" name="Nombre" id="Nombre" required><br>
-
-                <label for="Teléfono" class="label">Teléfono <b>٭</b></label>
-                <input type="text" name="Teléfono" id="Teléfono" required><br>
-
-                <label for="Correo" class="label">Correo electrónico <b>٭</b></label>
-                <input type="text" name="Correo" id="Correo" required><br>
-
-                <label for="Mensaje" class="label">Mensaje</label>
-                <input type="text" name="Mensaje" id="Mensaje"><br>
-
-                <button>Enviar</button>
-
-                <p>Tu mensaje ha sido enviado con exito, pronto uno de nuestros agentes se pondrá en contacto contigo</p>
+        <section class="Formulario" id="Formulario">
+            <form onsubmit="return Enviare()">
+                <input type="text" name="Nombre" id="Nombre" placeholder="Nombre" required><br>
+                <input type="text" name="Teléfono" id="Teléfono" placeholder="Teléfono" required><br>
+                <input type="text" name="Correo" id="Correo" placeholder="Correo electrónico" required><br>
+                <textarea type="text" name="Mensaje" placeholder="Mensaje" id="Mensaje"></textarea>
+                <input type="submit" class="Enviar" id="Enviar" value="Enviar" onclick="Enviare(), datos(), enviado()">
             </form>
+            <p class="Enviado" id="Enviado">Tu mensaje ha sido enviado con éxito, pronto uno de nuestros agentes se pondrá en contacto contigo</p>
         </section>
     </div>
 
     <footer>
         <p>Todos los derechos reservados</p>
     </footer>
+
+    <script src="./js/JavaScript.js"></script>
 
 </body>
 </html>
