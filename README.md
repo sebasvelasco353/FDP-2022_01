@@ -100,14 +100,15 @@ git merge <nombre_del_remoto>/<branch>
 - [**Fork**](https://www.toolsqa.com/git/git-fork/): Es una copia de un repositorio, esto es usado para para experimentar ya hacer multiples cambios en el proyecto sin afectar el repositorio original, esto para trabajar en colaboracion con mas personas o tomar repositorios como base de otro proyecto.
 
   [aqui](https://docs.github.com/en/get-started/quickstart/contributing-to-projects) pueden encontrar informacion mas detallada sobre el proceso de contribuir a un proyecto mediante Pull Requests.
-- [**Branch**]():
+- [**Branch**](): branch = rama, es una bifurcacion del codigo en donde trabajamos de forma aislada de las otras, normalmente lo utilizamos para nuevas funcionalidades, proof of concept o bug fixes.
 - [**Commit**](https://www.w3schools.com/git/git_commit.asp?remote=gitlab): Es un snapshot del codigo en ese momento, los utilizamos para guardar nuestros cambios en el codigo del proyecto.
-- [**Clonar**]():
-- [**Pull**]():
-- [**Pull Request**]():
+- [**Clonar**](): hacer una copia local dle proyecto en tu computador, esto no solo nos trae los archivos y carpetas sino tambien lo relacionado con git.
+- [**Pull**](): Es "jalar" codigo remoto a tu local.
+- [**Pull Request**](): Solicitar a alguien que haga pull de tus cambios a su codigo.
 ### Javascript
-- [**Hoisting**]():
-- [**Concatenar**]():
+- [**Hoisting**](https://developer.mozilla.org/en-US/docs/Glossary/Hoisting): cuando un interpreter mueve la declaracion de variables, funciones o clases al inicio de su scope.
+- [**scope**](https://www.w3schools.com/js/js_scope.asp): nos determina donde podemos acceder a variables.
+- [**Concatenar**](https://en.wikipedia.org/wiki/Concatenation): unir caracteres.
 
 
 ## Paginas recomendadas.
