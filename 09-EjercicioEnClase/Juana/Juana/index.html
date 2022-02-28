@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LabLab</title>
+    <link rel="shortcut icon" href="Icon-Lab-icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+<form action="" class="formulario">
+    <h1 class="formulario__titulo">Datos del paciente </h1>
+    <input type="text" class="formulario__input" id="Nombres">
+    <label for="" class="formulario__label">Nombres</label>
+    <input type="text" class="formulario__input" id="Apellidos">
+    <label for="" class="formulario__label">Apellidos</label>
+    <input type="number" class="formulario__input" id="Estatura">
+    <label for="" class="formulario__label">Estatura</label>
+    <input type="number" class="formulario__input" id="Edad">
+    <label for="" class="formulario__label">Edad</label>
+    <label for="" class="formulario__cirugias">Tiene cirugías anteriores?</label>
+    <input type="radio" class="formulario__cirugiasino" name="cirugias" value="Si" id="cirugias">
+    <label for="Si"> Si </label>
+    <input type="radio" class="formulario__cirugiasino" name="cirugias"  value="No" id="cirugias">
+    <label for="No"> No </label> <br>
+    <label for="" class="formulario__fumador"> Fuma regularmente? </label>
+    <input type="radio" class="formulario__fumasino" name="fumador" value="Si" id="fumador">
+    <label for="Si"> Si </label>
+    <input type="radio" class="formulario__fumasino" name="fumador" value="No" id="fumador">
+    <label for="No"> No </label>
+    <label for="" class="formulario__Nacionalidad">Nacionalidad</label>
+    <select name="Nacionalidad" class="Nacionalidad" id="Nacionalidad"> </select>
+    <label for="" class="formulario__RH"> Grupo Sanguíneo </label>
+    <select name="RH" class="RH" id="RH"> </select>
+    <input type="submit" onclick="getData()" class="formulario__submit"> 
+    <button type="reset" class="formulario__reset"> Reset </button>
+
+</form>
+<script src="form.js"> </script>
+</body>
+</html>
