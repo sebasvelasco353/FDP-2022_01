@@ -64,11 +64,9 @@ const obj = {
     
 /*
     if (!nombre|| !apellido || !estatura || !edad || !nacionalidad || !GrupoS){
-
         alert("Estos campos son obligatorios, por favor digite su contenido");
         return;
     }
-
 }*/
 
 function error(){
@@ -81,7 +79,6 @@ function error(){
 
 
 /*function Desaparecer(){
-
     if (document.getElementById("edad").value === ''){
         document.getElementById('colesterol').value = 'none';
         document.getElementById('azucar').value = 'none';
@@ -101,4 +98,3 @@ function CholesterolTest() {
         document.getElementById('colesterol').style.display='none';
         document.getElementById('azucar').style.display = 'block';
     }}
-
