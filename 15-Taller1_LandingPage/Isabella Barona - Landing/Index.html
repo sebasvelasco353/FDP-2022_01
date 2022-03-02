@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page</title>
+    <link rel="shortcut icon" href="./Imagenes/LogoC.png">
+    <link rel="stylesheet" href="./Css/Style.css">
+</head>
+
+<body>
+    <header>
+        <section class="Logo">
+            <img id="Logo" src="./Imagenes/LogoB.png"/>
+        </section>
+            <ul class="Nave">
+            <li>Inicio</li>
+            <li>Sobre nosotros</li>
+            <li>Productos
+                <ul class="Opciones2">
+                    <li>Cuadernos y agendas</li>
+                    <li>Bolsos</li>
+                    <li>Gorras</li>
+                    <li>Camisetas</li>
+                    <li>Tazas</li>
+                    <li>Pines</li>
+                </ul>
+            </li>
+            <li>Contacto</li>
+        </ul>
+    </header>
+
+    <div class="Bienvenida" id="Bienvenida">
+        <section>
+            <img id="ImgBienvenida" src="./Imagenes/ImgBienvenida.png"/>
+        </section>
+
+        <section id="Presentacion">
+            <h1 class="T1">¡Personaliza todo lo que quieras!</h1><br>
+            <p>Pon tus diseños en una amplia variedad de productos, ya sea para tu uso personal, regalos o para tu empresa</p><br>
+            <button id="CTA"><b>¡Compra ahora!</b></button>
+            <button id="CTAS">Nuestros productos</button>
+        </section>
+    </div>
+    
+    <div class="Quienes" id="Quienes">
+        <section id="Acerca">
+            <h1>¿Quiénes somos?</h1><br>
+            <p>Somos una empresa dedicada a ofrecer servicios de personalización de productos y diseño. Elaboramos productos de alta calidad en distintos materiales y cantidades. Puedes proveer tus propios diseños o dejarlo en manos de nuestros talentosos diseñadores.</p>
+        </section>
+
+        <section id="ImgQuienes">
+            <img id="ImgQuienes" src="./Imagenes/ImgQuienes.png"/>
+        </section>
+    </div>
+
+    <div class="Servicios" id="Servicios">
+        
+        <h1>__________<br><br>Nuestros productos</h1>
+
+        <section class="Cards">
+            <div id="Card">
+                <img id="ImgCard" src="https://s1.1zoom.me/big0/889/Pencils_Ballpoint_pen_530500_1159x1024.jpg"/>
+                <h3 id="Text">Cuadernos</h3>
+            </div>
+
+            <div id="Card">
+                <img id="ImgCard" src="https://summa.es/blog/wp-content/uploads/2018/09/iStock-865230556-568x480.jpg"/>
+                <h3 id="Text">Bolsos</h3>
+            </div>
+
+            <div id="Card">
+                <img id="ImgCard" src="https://i.etsystatic.com/15037991/r/il/f7803a/2012653211/il_570xN.2012653211_3yk4.jpg"/>
+                <h3 id="Text">Gorros</h3>
+            </div>
+
+            <div id="Card">
+                <img id="ImgCard" src="https://i.etsystatic.com/15037991/r/il/f7803a/2012653211/il_570xN.2012653211_3yk4.jpg"/>
+                <h3 id="Text">Camisetas</h3>
+            </div>
+
+            <div id="Card">
+                <img id="ImgCard" src="https://i.etsystatic.com/15037991/r/il/f7803a/2012653211/il_570xN.2012653211_3yk4.jpg"/>
+                <h3 id="Text">Tazas</h3>
+            </div>
+
+            <div id="Card">
+                <img id="ImgCard" src="https://i.etsystatic.com/15037991/r/il/f7803a/2012653211/il_570xN.2012653211_3yk4.jpg"/>
+                <h3 id="Text">Pines</h3>
+            </div>
+        </section>
+    </div>
+
+    <h1 class="T2">Contáctanos</h1>
+
+    <div class="Contacto" id="Contacto">
+        <section class="InfoContact">
+            <p class="info"><b>Teléfonos</b><br>+57 300 0000421<br>602 0000421</p>
+            <p class="info"><b>Dirección</b><br>Cra. 100 #5-169 (Unicentro) local 421</p>
+            <p class="info"><b>Correo</b><br>kroma@gmail.com</p>
+            <p class="info"><b>Horarios</b><br>Lunes a viernes: 8:00am a 12:00m - 1:00pm a 7:00pm<br>Sábados y festivos: 10:00am a 12:00m - 1:00pm a 5:00pm</p>
+        </section>
+
+        <section class="Formulario" id="Formulario">
+            <form onsubmit="return Enviare()">
+                <input type="text" name="Nombre" id="Nombre" placeholder="Nombre" required><br>
+                <input type="text" name="Teléfono" id="Teléfono" placeholder="Teléfono" required><br>
+                <input type="text" name="Correo" id="Correo" placeholder="Correo electrónico" required><br>
+                <textarea type="text" name="Mensaje" placeholder="Mensaje" id="Mensaje"></textarea>
+                <input type="submit" class="Enviar" id="Enviar" value="Enviar" onclick="Enviare(), datos(), enviado()">
+            </form>
+            <p class="Enviado" id="Enviado">Tu mensaje ha sido enviado con éxito, pronto uno de nuestros agentes se pondrá en contacto contigo</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>Todos los derechos reservados</p>
+    </footer>
+
+    <script src="./js/JavaScript.js"></script>
+
+</body>
+</html>
