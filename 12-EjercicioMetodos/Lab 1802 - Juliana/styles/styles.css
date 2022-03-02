@@ -1,0 +1,159 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 16px;
+}
+
+/*Menú*/
+header nav .Menú {
+    width: 100%;
+    overflow: hidden;
+}
+
+header nav ul {
+    list-style: none;
+    }
+
+header nav ul li{
+    float: right;
+    }
+
+header nav ul li a{
+    padding: 20px 60px;
+    color: rgb(0, 0, 0);
+    display: block;
+    text-decoration: none;
+    }
+
+header nav ul li a:hover {
+    cursor: pointer;
+}
+
+.Titulo {
+    font-family: 'Berkshire Swash', cursive;
+    align-items: center;
+    text-align: center;
+    padding-top: 60px;
+    font-size: 50px;
+    color: #ffa946;
+}
+
+.Subtitulo, .TituloVideo {
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 600;
+    padding: auto;
+    align-items: center;
+    text-align: center;
+}
+
+.Contenedor {
+    padding: 20px;
+    width: 85%;
+    margin: auto;
+}
+
+.Main {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 100%;
+    justify-content: space-between;
+    margin: auto;
+    padding-bottom: 40px;
+}
+
+.Img1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    gap: 1em;
+    width: 100%;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50);
+    cursor: pointer;
+}
+
+.Img2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    gap: 1em;
+    width: 100%;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50);
+    cursor: pointer;
+}
+
+.Img3 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    gap: 1em;
+    width: 100%;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50);
+    cursor: pointer;
+}
+
+.Name1, .Name2, .Name3 {
+    text-align: center;
+    font-family: 'Source Code Pro', monospace;
+    padding: auto;
+}
+
+.Videos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 1rem;
+    width: 80%;
+    margin: auto;
+}
+
+.TituloVideo {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    color: #ffa946;
+}
+
+footer {
+    padding: 60px;
+    background-color: #ffa946;
+}
+
+footer h2 {
+    font-size: 30px;
+    font-family: 'Berkshire Swash', cursive;
+    text-align: center;
+}
+
+.Corazón {
+    text-align: center;
+    font-size: 50px;
+}
+
+.Disclaimer {
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Source Code Pro', monospace;
+}
+
+
+.Volver {
+    margin: 15px;
+    padding: 5px;
+    color: #ffa946;
+    font-size: 1rem;
+    font-family:'Source Code Pro', monospace;
+}
+
+#HandleRecetas {
+    width: 85%;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 17px;
+    text-align: left;
+    margin-left: 7rem;
+    background-color: #ffa946;
+}
