@@ -1,4 +1,4 @@
-// Variables globales
+x// Variables globales
 const NAV_ITEMS = Array.from(document.getElementsByClassName('nav_item')); // hago un array de elementos html
 const MENU_TL = gsap.timeline(); // Linea de tiempo de la animacion
 var menuState = false;

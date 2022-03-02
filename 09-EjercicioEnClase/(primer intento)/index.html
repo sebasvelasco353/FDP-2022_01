@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos_med.css">
+    <title>Akite Qramos.com</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Por favor ingrese la información del paciente</h1>
+    </div>
+    <p>Llene los siguientes campos con la información correspondiente</p>
+    <div class="container__content" id="container__content">
+        <label for="nombre">Nombre:</label>
+        <input type="string" name="nombre" id="nombre">
+        <label for="apellido">Apellido:</label>
+        <input type="string" name="apellido" id="apellido">
+        <label for="estatura">Estatura (cm):</label>
+        <input type="number" min="10" max="300" name="estatura" id="estatura">
+        <label for="fuma">¿El paciente fuma?</label>
+        <select name="fuma" id="fuma">
+            <option value="si">Sí</option>
+            <option value="no">No</option>
+        </select>
+        <label for="edad">Edad</label>
+        <input type="number" min="0" max="120" name="edad" id="edad">
+        <label for="nacionalidad">Nativo de</label>
+        <select name="nacionalidad" id="nacionalidad"></select>
+        <label for="gruposang">Tipo de sangre</label>
+        <select name="gruposang" id="gruposang"></select>
+        
+</div>
+<div class="container">
+    <button class="botonGuardar" onclick="handleinfopaciente()">
+        Guardar Registro
+    </button>
+</div>
+<script src="./js/app_med.js"></script> 
+</body>
+</html>
