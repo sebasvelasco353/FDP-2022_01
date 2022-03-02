@@ -1,0 +1,80 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h3, p{
+    text-align: center;
+}
+
+header {
+    min-height: 5vh;
+    background-color: #3f3f3f; 
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius: 0;
+    color: rgb(223, 215, 215);
+}
+
+.recetas {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.individual {
+    width: 30%;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.individual > img {
+    width: 100%;
+    height: 40vh;
+    object-fit: cover;
+    display: block;
+}
+
+.descripcion-hover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background-color: #000000a6;
+    transition: transform .05s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.descripcion-hover p{
+    color: #ffffff;
+    margin: 20px;
+    margin-top: 10px;
+}
+
+.descripcion-hover h3{
+    color: #ffffff;
+    margin-top: 20px;
+}
+
+.individual:hover .descripcion-hover{
+    transform: scale(1);
+}
+
+button {
+    width: 30%;
+    background-color: #ffffff00;
+    border-color: white;
+    border-radius: 20px;
+    text-align: center;
+    color: #ffffff;
+    font-size: medium;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 5px;
+}
