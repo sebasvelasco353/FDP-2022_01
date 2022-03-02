@@ -44,21 +44,21 @@
                  <img src="imagenes/img1.jpg" alt="receta1">
                  <div class="hover-galeria">
                  <img src="imagenes/icono1.png" alt="">
-                 <button class="button" id="receta1" onclick="mostrarreceta(), receta1()">Cupcakes</button>
+                 <button class="button" id="receta1" value="mostrar1" onclick="mostrarreceta(), Receta1()">Cupcakes</button>
                  </div>
             </div>
             <div class="imagen-port">
                  <img src="imagenes/img2.jpg" alt="receta2">
                  <div class="hover-galeria">
                  <img src="imagenes/icono1.png" alt="">
-                 <button class="button" id="receta2" onclick="mostrarreceta(), receta2()">Torta de red velvet</button>
+                 <button class="button" id="receta2" value="mostrar2" onclick="mostrarreceta(), Receta2()">Torta de red velvet</button>
             </div>
             </div>
              <div class="imagen-port">
                  <img src="imagenes/img3.jpg" alt="receta3">
                  <div class="hover-galeria">
                  <img src="imagenes/icono1.png" alt="">
-                 <button class="button" id="receta3" onclick="mostrarreceta(), receta3()">Brownies</button>
+                 <button class="button" id="receta3" alue="mostrarreceta3"onclick="mostrarreceta(), Receta3()">Brownies</button>
             </div>
             </div>
     </div>
@@ -76,7 +76,7 @@
 
     <div class="Porcionesreceta">
         <p>Porciones de la receta</p>
-        <p id="Porcionesreceta"></p>
+        <p id="porcionesreceta"></p>
     </div>
 </div>
 
@@ -90,10 +90,11 @@
         <p id="Pasos"></p>
         </ol>
 
-     <button id="regresar" onclick="regresar(`portafolio')">regresar</button>             
+</div>
+</div>
 
-</div>
-</div>
+<button id="Regresar" onclick="Regresar()">⮌ Regresar al Recetario</button>
+
      <div style="text-align: center;" >
         <iframe width="1000" height="500" src="https://www.youtube.com/embed/xVWwDc5aNDM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
     </iframe> 
@@ -125,30 +126,24 @@
 </div>  
 </section>
 
-        <section class="coments contenedor">
-            <h2 class="titulo">Comentarios</h2>
-            <div class="cards">
-                <div class="card">
-                    <img src="imagenes/face1.jpg" alt="">
-                    <div class="contenido-texto-card">
-                        <h4>@12345</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius iusto accusantium, consequuntur consectetur praesentium non libero rerum doloremque numquam. Ex recusandae alias cumque totam, nam similique obcaecati incidunt impedit atque?</div>
-                </div>
+<section class="coments contenedor">
+    <h2 class="titulo">Comentarios</h2>
+        <div class="cards">
+
+            <div class="card">
+            <img src="imagenes/face1.jpg" alt="">
+            <div class="contenido-texto-card">
+            <h4>@12345</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius iusto accusantium, consequuntur consectetur praesentium non libero rerum doloremque numquam. Ex recusandae alias cumque totam, nam similique obcaecati incidunt impedit atque?</div>
             </div>
-                <div class="card">
-                    <img src="imagenes/face2.jpg" alt="">
-                    <div class="contenido-texto-card">
-                        <h4>@6789</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur atque unde temporibus cum quos earum rem quasi distinctio vitae explicabo commodi minima molestias officiis dignissimos blanditiis, consequatur, delectus nulla adipisci.</div>
-                </div>
             </div>
+
         </div> 
-    </section>
+</section>
  <footer>
     <div class="contenedor-footer">
         <div class="content-foo">
     <p> Disfruta más recetas para ti </p>
-    <p> Da clic aquí y regístrate </p>
         </div>
     </div>
     <h2 class="title-final">El mejor servicio para ti.</h2>
