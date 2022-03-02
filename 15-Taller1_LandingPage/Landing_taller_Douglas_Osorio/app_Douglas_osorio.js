@@ -10,7 +10,7 @@ if (!estadomenus) {
 } else {
     paramenus.to(".header", {top:-100, duration: 1})
     paramenus.to(".flecha",{rotate: 0}, "-=0.5");
-    paramenus.to(".bolita", {top:-30}, "-=0.7")
+    paramenus.to(".bolita", {top:-15}, "-=0.7")
     
 }
 estadomenus=!estadomenus;

@@ -10,12 +10,13 @@ body{
     background-size: cover;
     background-position: center;
     position: fixed;
-    top: -100%; 
+    top: -15%; 
     left: 0px;
+    z-index: 1000;
 }
 .bolita{
-    position: relative;
-    top: -30px; left: 50%;
+    position: fixed;
+    top: -15px; left: 50%;
     background-color: #7F207A;
     border-radius: 100%;
     display: flex;
@@ -24,6 +25,7 @@ body{
     height: 50px;
     width: 50px;
     cursor: pointer;
+    z-index: 900;
 }
 .flecha{
     position:relative;
@@ -62,6 +64,7 @@ text-decoration: underline black;
     display:flex;
     justify-content: space-around;
     font-family: 'Outfit', sans-serif;
+    margin-top: 100px;
     padding-top: 5rem;
 }
 .logo{
@@ -75,10 +78,22 @@ font-family: 'Roboto', sans-serif;
     justify-content: space-around;
     font-family: 'Domine', serif;
     cursor: pointer;
+    margin-top: 50px;
+
 }
 .head-img{
     position: absolute;
     top: 150px;
     left: 350px;
     cursor: pointer;
+}
+.cartas{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1.5fr 1.5fr;
+    margin-top: 300px;
+    padding-left: 10%;
+}
+.vid{
+    border-radius: 15%;
 }
