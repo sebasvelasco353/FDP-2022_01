@@ -1,6 +1,7 @@
 html {
     font-size: 10px;
     font-family: 'Space Mono', monospace;
+    background-color: var(--light-pink);
 }
 * {
     /* border: 1px solid red; */

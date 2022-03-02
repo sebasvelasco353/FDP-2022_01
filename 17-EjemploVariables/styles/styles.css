@@ -12,7 +12,7 @@ header {
     padding: 1rem 1.5rem;
     align-items: center;
     border-bottom: 1px solid var(--dark-blue);
-    background-color: var(--light-pink);
+    background-color: var(--light-yellow);
 }
 li {
     margin: 0 2rem;
