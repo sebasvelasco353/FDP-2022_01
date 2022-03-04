@@ -1,6 +1,4 @@
-*{
-    margin: 0;
-}
+*{margin: 0;}
 
 html{
 background-color: rgb(250, 250, 255);
@@ -8,7 +6,7 @@ color: rgb(105, 105, 105);
 font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-header{
+.header{
     background-color: rgb(2, 25, 51);
     color: white;
     margin: auto;
@@ -18,8 +16,9 @@ header{
     flex-flow: row wrap;
     justify-content: flex-end;
     gap: 50px;
-    position:sticky;
+    position: sticky;
     top: 0px;
+    z-index: 100;
 }
 
 .Logo{
@@ -34,6 +33,19 @@ header{
     padding-top: 1vh;
 }
 
+a{
+    outline: none;
+    text-decoration: none;
+}
+
+#CTAa:visited{
+    color: rgb(2, 25, 51);
+}
+
+a:visited{
+    color: white;
+}
+
 ul, ol{
     list-style: none;
 } 
@@ -46,7 +58,7 @@ ul, ol{
 }
 
 .Nave li:hover{
-    background-color: rgb(17, 45, 77);
+    background-color: rgb(30, 60, 95);
     cursor: pointer;
 }
 
@@ -67,13 +79,14 @@ ul, ol{
 }
 
 .Bienvenida{
+    height: 120vh;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     background-color: rgb(2, 25, 51);
     color: rgb(250, 250, 255);
-}
-
+    }
+    
 #ImgBienvenida{
     width: 100%;
     margin: 5vh 10vh 10vh 10vh;
@@ -98,10 +111,12 @@ button, .Enviar{
     background-color: rgb(250, 250, 255);
     margin: 2vh 0 0 5vh;
     font-size: medium;
+    transition: transform 0.3s;
 }
 
 button:hover, .Enviar:hover{
-    background-color: rgb(195, 195, 212);
+    transform: scale(1.03);
+    opacity: 0.8;
     cursor: pointer;
 }
 
@@ -109,11 +124,6 @@ button:hover, .Enviar:hover{
     background-color: transparent;
     color: rgb(250, 250, 255);
     border: 2px solid rgb(250, 250, 255);
-}
-
-#CTAS:hover{
-    color: rgba(250, 250, 255, 0.7);
-    border: 2px solid rgba(250, 250, 255, 0.7);
 }
 
 .Quienes{
@@ -130,7 +140,7 @@ button:hover, .Enviar:hover{
 
 #Acerca{
     width: 100%;
-    padding: 15vh 5vh 15vh 15vh;
+    padding: 10vh 5vh 15vh 15vh;
     margin: 25vh 5vh 30vh 0;
     box-sizing: border-box;
 }
@@ -152,18 +162,24 @@ button:hover, .Enviar:hover{
     border-radius: 15px;
     border-top: 15px solid rgb(2, 25, 51);
     width: 40vh;
+    height: 50vh;
     margin: 3vh 2vh 5vh 0;
     padding: 0vh;
-    box-shadow: 0 0 10px rgb(228, 228, 228);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 #ImgCard{
     width: 100%;
-    height: 33vh;
+    height: 37vh;
 }
 
 #Text{
-    padding: 3vh;
+    text-align: center;
+    padding: 3vh 0;
+}
+
+.card:hover{
+    cursor:pointer;
 }
 
 .T2{
@@ -195,7 +211,6 @@ button:hover, .Enviar:hover{
     margin-top: 2vh;
     box-sizing: border-box;
     border-radius: 20px;
-    box-shadow: 0 0 5px rgb(228, 228, 228);
 }
 
 input, textarea{
