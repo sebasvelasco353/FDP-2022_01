@@ -39,11 +39,11 @@ const handleClick = (e) => {
 
 const AnotherQ = (f) => {
     if (document.getElementById("edad").value >= 50) {
-        document.getElementById("TyCQ").style.display="block";
-        document.getElementById("AzucarQ").style.display="none";
+        document.getElementById("ExamenesTyCQ").style.display="block";
+        document.getElementById("ExamenesAzucarQ").style.display="none";
     } else {
-        document.getElementById("AzucarQ").style.display="block";
-        document.getElementById("TyCQ").style.display="none";
+        document.getElementById("ExamenesAzucarQ").style.display="block";
+        document.getElementById("ExamenesTyCQ").style.display="none";
 
     }
 }
