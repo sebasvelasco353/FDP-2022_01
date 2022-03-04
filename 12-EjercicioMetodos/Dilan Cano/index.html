@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recetario</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+
+    <h1 class="titulo">RECETAS CON CARNE DE RES</h1>
+    <p class="intro">Expertos recomiendan dejar reposar la carne antes de servirla, esto ayudará 
+    a que los jugos de la carne se retraigan y permanezcan dentro de la carne y no en el plato.</p>
+    <div class="cuadricula">
+    <div class="recetas" id="recetas">
+        <img class="Img1" src="./img/bistec-papas-aromaticas.jpg" onclick ="Receta1()" >
+        <h3 class="rec1">BISTEC CON PAPAS AROMÁTICAS</h3>
+
+        <img class="Img2" src="./img/bistec-papas-salsa-roja.jpg"  onclick="Receta2()">
+        <h3 class="rec2">BISTEC CON PAPAS EN SALSA ROJA</h3>
+
+        <img class="Img3" src="./img/bistec-soldadera.jpg" onclick="Receta3()">
+        <h3 class="rec3">BISTEC A LA SOLDADERA</h3>
+
+    </div>
+    </div>
+    <div id="VerRecetas"></div>
+    </div>
+    <div><button class="Volver" id="Volver" onclick="Volver()">Volver</button></div>
+    
+<script src="./js/app.js"></script>
+</body>
+</html>
