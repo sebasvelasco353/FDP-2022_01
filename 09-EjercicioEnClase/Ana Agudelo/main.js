@@ -20,29 +20,44 @@ for (let i = 0; i < grupoSanguineo.length; i++) {
     document.getElementById ("sangre").appendChild(option);
 }
 
-const handleRegistroEdad = () => {
-    var edad = document.getElementById("edad").value;
-    
-    if (edad >= 50) {
-        document.write ("Se ha realizado pruebas de colesterol y triglicéridos en los ultimos 6 meses.")
-        
-    } else 
-        document.write("se ha realizado pruebas de Azucar en los ultimos 3 meses.")   
-    }
-
-const handleClick = (e) => {
-    e.preventDefault();
+const handleClick = (e) => { 
     const obj = {
-        nombre: document.getElementById("nombre").value,
-        apellido: document.getElementById("apellido").value,
-        estatura: document.getElementById("estatura").value,
-        fumador: document.getElementById("si").onclick,
-        edad: document.getElementById("edad").value,
-        nacionalidad: document.getElementById("Nacionalidad").value,
-        rh: document.getElementById("sangre").value,
-        cirugias: document.getElementById("cirugia").value,
+        Nombre: document.getElementById("nombre").value,
+        Apellido: document.getElementById("apellido").value,
+        Estatura: document.getElementById("estatura").value,
+        Fumador: document.getElementById("fumador").checked,
+        Edad: document.getElementById("edad").value,
+        Nacionalidad: document.getElementById("Nacionalidad").value,
+        RH: document.getElementById("sangre").value,
+        Cirugías: document.getElementById("Cirugías").checked,
     }
 
+    var registroDatos = [];
+    
     registroDatos.push(obj);
-    console.log(resgistroDatos);
+    console.log(registroDatos);
+
+    alert('Los datos fueron registrados correctamente')
 }
+
+const mostrarPreguntas = (f) => {
+    if (document.getElementById("edad").value >= 50) {
+        document.getElementById("pColesterol").style.display="block";
+        document.getElementById("pAzucar").style.display="none";
+    } else {
+        document.getElementById("pAzucar").style.display="block";
+        document.getElementById("pColesterol").style.display="none";
+
+    }
+}
+
+const limpiarForum = (g) => {  
+    location.reload(); 
+  }
+
+function unaFuncion() {
+    return "Devolviendo mensaje de return";
+}
+
+const saludo = unaFuncion();
+console.log(saludo);
