@@ -4,156 +4,119 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recetario digital</title>
-    <link rel="stylesheet" href="styles/styles.css">
+    <title>LABORATORIO CLINICO</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
 </head>
 <body>
 
-    <header>
+<header>
 
-    <section class="textos-header">
-        <h1>Recetario</h1>
-        <div style="text-align: right;" >
-  <button id="Iniciar sesión" type="button">Iniciar sesión</button>
-  <button id="Registrarse" type="button">Registrarse</button>
+    <div class="textos-header">
+        <h1>Laboratorio Clinico IDIME S.A</h1>
+        <h2>El presente formulario es para dar ingreso al paciente, para poder realizarle las muestras indicadas</h2>
+    </div>
+
+    <nav>
+        <ul>
+        <li></li><a href="#">Inicio</a>
+        <li></li><a href="#">Servicios</a>
+        <li></li><a href="#">Sedes Alternas</a>
+        <li></li><a href="#">Contenido</a>
+        </ul>
+    </nav>
+
+</header>
+    
+<div class="contenedores">
+
+<div class="consigna-form">
+    <p>Para llevar un seguimiento de nuestros pacientes, se hace consigna del presente formulario para obtener sus datos y darle segumimento</p>
 </div>
+<br>
 
-<div style="text-align: center;" >
-  <div class="field" id="searchform">
-    <input type="text" id="searchterm" placeholder="¿Que quieres cocinar?" />
-    <button type="button" id="search">Buscar</button>
-  </div>
-</div>
+<div class="formulario">
 
-     <nav>
-        <a href="#">Inicio</a>
-        <a href="#">Recetas</a>
-        <a href="#">Planea tu menú</a>
-        <a href="#">Cocina con...</a>
-     </nav>
-        <h2> Descubre el contenido que tenemos para deleitar tu paladar</h2>
-    </section>
- </header>   
+    <label for="nombres">Nombres</label>
+    <input type="text" name="nombres" id="nombres" value="">
 
- <section class="portafolio">
-    <div class="contenedor">
-        <h2 class="titulo">Reposteria</h2>
-        <div class="galeria-port" id="galeria-port">
+    <label for="apellidos">Apellidos</label>
+    <input type="text" name="apellidos" id="apellidos" value="">
 
-            <div class="imagen-port">
-                 <img src="imagenes/img1.jpg" alt="receta1">
-                 <div class="hover-galeria">
-                 <img src="imagenes/icono1.png" alt="">
-                 <button class="button" id="receta1" onclick="mostrarreceta(), receta1()">Cupcakes</button>
-                 </div>
-            </div>
-            <div class="imagen-port">
-                 <img src="imagenes/img2.jpg" alt="receta2">
-                 <div class="hover-galeria">
-                 <img src="imagenes/icono1.png" alt="">
-                 <button class="button" id="receta2" onclick="mostrarreceta(), receta2()">Torta de red velvet</button>
-            </div>
-            </div>
-             <div class="imagen-port">
-                 <img src="imagenes/img3.jpg" alt="receta3">
-                 <div class="hover-galeria">
-                 <img src="imagenes/icono1.png" alt="">
-                 <button class="button" id="receta3" onclick="mostrarreceta(), receta3()">Brownies</button>
-            </div>
-            </div>
+    <label for="edad">Edad</label>
+    <input type="number" min="0" max="110" value="null" name="edad" id="edad">
+
+    <label for="genero">Genero</label>
+        <select name="genero" id="genero">
+            <option value="Hombre">Hombre</option>
+            <option value="Mujer">Mujer</option>
+            <option value="Otro">Otro</option>
+        </select>
+
+    <label for="estatura">Estatura(cm)</label>       
+    <input type="number" name="estatura" id="estatura" min="10" max="300">
+
+    <label for="RH">Grupo Sanguineo</label>
+    <select name="RH" id="RH"></select>
+
+    <label for="nacionalidad">Nacionalidad</label>
+    <select name="Nacionalidad" id="Nacionalidad"></select>
+
+    <label for="fumador">¿El paciente es fumador@?</label>
+    <select name="fumador" id="fumador">
+        <option value="si">Si</option>
+        <option value="no">No</option>
+    </select>
+
+    <label for="cirugias">El paciente cuenta con cirugias anteriores?</label>
+    <select name="cirugias" id="cirugias">
+        <option value="si">Si</option>
+        <option value="no">No</option>
+    </select>
+
+    <br>
+
+    <div id="ExamenesTyCQ">
+        <label>¿Se ha realizado pruebas de colesterol y triglicéridos en los últimos 6 meses?</label>
+        <input type="radio" name="TyC" id="TyC" value="Sí">
+        <label>Sí</label>
+        <input type="radio" name="TyC" id="TyC" value="No">
+        <label>No</label>
     </div>
-    </div>  
-
-    <div class="seleccionada" id="seleccionada">
-    <h2 id="nombrereceta"></h2>
-
-    <div class="receta-completa">
-
-    <div class="Tiempopreparación">
-        <p>Tiempo de preparación</p>
-        <p id="tiemporeceta"></p>
-    </div>
-
-    <div class="Porcionesreceta">
-        <p>Porciones de la receta</p>
-        <p id="Porcionesreceta"></p>
-    </div>
-</div>
-
-    <h3>Ingredientes</h3>
-        <ul id="ingredientes-receta">
-        <p id="Ingredientes"></p>
-        </ul><br>
-
-    <h3>Pasos a seguir</h3>
-        <ol id="Pasos-a-seguir">
-        <p id="Pasos"></p>
-        </ol>
-
-     <button id="regresar" onclick="regresar(`portafolio')">regresar</button>             
-
-</div>
-</div>
-     <div style="text-align: center;" >
-        <iframe width="1000" height="500" src="https://www.youtube.com/embed/xVWwDc5aNDM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-    </iframe> 
+    <div id="ExamenesAzucarQ">
+        <label>¿Se ha realizado pruebas de azúcar en los últimos 3 meses?</label>
+        <input type="radio" name="Azucar" id="Azucar" value="Sí">
+        <label>Sí</label>
+        <input type="radio" name="Azucar" id="Azucar" value="No">
+        <label>No</label>
     </div>
 
-    <section class="about-services">
-        <div class="contenedor">
-            <h2 class="titulo">Otras opciones</h2>
-            <div class="servicio-cont">
-    <div class="otras-opciones">
-        <img src="imagenes/img4.jpg" alt="">
-        <h3>Comida mexicana</h3>
-        <p>Las recetas de comida mexicana (o gastronomía mexicana) son un conjunto de platillos y técnicas culinarias de México, y que forman parte de las tradiciones y vida común de sus habitantes.
-         Nuestra gastronomía se enriquece por las aportaciones de las distintas regiones del país, que deriva de la cocina prehispánica con la cocina europea, entre otras. </p>
-    </div>
-    <div class="otras otras-opciones">
-        <img src="imagenes/img5.webp" alt="">
-        <h3>Comida rapida</h3>
-        <p>Es un tipo de comida, la mayoría de las veces bocadillos, para aquellos que no tienen mucho tiempo para comer, y eligen la comida rápida, porque están listos y se sirven rápidamente.
-         Algunos modelos de comida rápida son pizzas, sándwiches, pasteles, papas fritas, etc. La dieta de Comida Rápida es altamente calórica, principalmente.</p>
-    </div>
-    <div class="otras-opciones">
-        <img src="imagenes/img6.jpg" alt="">
-        <h3>Comida italiana</h3>
-        <p>La gastronomía italiana (cucina italiana) son los alimentos, técnicas, platos y demás tradición culinaria de Italia, la cual es practicada por sus habitantes y refleja la riqueza cultural de sus regiones y de su historia.
-         La cocina italiana es parte integral de las gastronomías mediterráneas, cuya dieta fue declarada Patrimonio Cultural Inmaterial de la Humanidad en 2010 por la Unesco, y es imitada y practicada en todo el mundo. </p>
+</br>
+    <div class="botones">
+        <input type="submit" onclick="handleClick()"></input>
+        <input type="reset" value="Limpiar"></button>
     </div>
 </div>
-</div>  
-</section>
+</div>
 
-        <section class="coments contenedor">
-            <h2 class="titulo">Comentarios</h2>
-            <div class="cards">
-                <div class="card">
-                    <img src="imagenes/face1.jpg" alt="">
-                    <div class="contenido-texto-card">
-                        <h4>@12345</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius iusto accusantium, consequuntur consectetur praesentium non libero rerum doloremque numquam. Ex recusandae alias cumque totam, nam similique obcaecati incidunt impedit atque?</div>
-                </div>
-            </div>
-                <div class="card">
-                    <img src="imagenes/face2.jpg" alt="">
-                    <div class="contenido-texto-card">
-                        <h4>@6789</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur atque unde temporibus cum quos earum rem quasi distinctio vitae explicabo commodi minima molestias officiis dignissimos blanditiis, consequatur, delectus nulla adipisci.</div>
-                </div>
-            </div>
-        </div> 
-    </section>
- <footer>
-    <div class="contenedor-footer">
-        <div class="content-foo">
-    <p> Disfruta más recetas para ti </p>
-    <p> Da clic aquí y regístrate </p>
-        </div>
-    </div>
-    <h2 class="title-final">El mejor servicio para ti.</h2>
-    </footer>
- 
-<script src="./js/app.js"></script>
+<footer>
+    
+<div class="contenedor-footer">
+    <div class="content-foo">
+
+<h3>Idime S.A</h3>
+<p> Prestamos servicios de laboratorio clínico, imágenes diagnósticas. 
+    y consulta externa, ofreciendo excelencia y calidad en la atención. 
+    Además de oportunidad y confianza en los resultados. </p>
+    
+</div>
+</div>
+
+<h2 class="title-final">El mejor servicio para ti.</h2>
+
+</footer>
 </body>
+
+<script type="text/javascript" src="./js/app.js"></script>
+
 </html>
