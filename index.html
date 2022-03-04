@@ -1,34 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
+    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario Clinico</title>
-    <link rel="stylesheet" href="estilos.css">
+    <title>  TEST LABORATORY</title>
+    <link rel="stylesheet" href="style.css">
+   <style type="text/css"></style>
+
+
 
 </head>
 <body>
-    <form action="" class="formulario">
-        <h1 class="formulario__titulo">Registre sus datos</h1>
-        <input type="text" class="formulario__input"><label for="" class="formulario__label">Nombres</label> 
-        <form action="" class="formulario">
-        <input type="text" class="formulario__input"><label for="" class="formulario__label">Apellidos</label> 
-         <form action="" class="formulario">
-        <input type="text" class="formulario__input"><label for="" class="formulario__label">Estatura</label>
-        <form action="" class="formulario"> 
-         <input type="text" class="formulario__input">
-         <label for="" class="formulario__label">Fumador/a</label> 
-        <form action="" class="formulario">
-        <input type="text" class="formulario__input"><label for="" class="formulario__label">Edad</label>
-         <form action="" class="formulario">
-        <input type="text" class="formulario__input"><label for="" class="formulario__label">Nacionalidad</label>
-         <form action="" class="formulario">
-        <input type="text" class="formulario__input"><label for="" class="formulario__label">Grupo sanguíneo</label> 
-        <form action="" class="formulario">
-        <input type="text" class="formulario__input"><label for="" class="formulario__label">Cirugías anteriores</label>  
-        <input type="submit" class="formulario__submit">
-        </form>
-        <script src="form.js"></script>
+    <script type="text/javascript"></script>
+    <section class="form-register">
+
+        <h1>TEST LAB</h1>
+        <h2>Formulario</h2>
+
+        <input class="controls" type="text" name= "nombres" id="nombres" placeholder="Ingrese Sus Nombres">
+        <input class="controls" type="text" name= "apellidos" id="apellidos" placeholder="Ingrese Sus Apellidos">
+        <input class="controls" type="text" name= "estatura" id="estatura" placeholder="Ingrese Su Estatura">
+        <input class="controls" type="number" name= "Edad" id="Edad" placeholder="Ingrese Su Edad">
+
+        <button id="valid"onclick='cualquier();'>
+            Validar
+        </button>
+        
+        <div id="comentario">
+            ¿Se ha realizado una prueba de colesterol y trigliceridos en los últimos 6 meses?
+
+            <label for="categoriaa"></label>
+            <div class="siono">
+                <select name="categoria">
+                <option value="Sí">Sí</option>
+                <option value="No">No</option>          
+            </select>
+            
+        </select>
+        </div>
+
+<div>
+</div>
+
+        
+    </div>
+    <div id='come'>
+        ¿Se ha realizado una prueba de azúcar en los últimos 3 meses?
+    
+        <label for="categoriaa"></label>
+        <div class="siono">
+            <select name="categoria">
+            <option value="Sí">Sí</option>
+            <option value="No">No</option>          
+        </select>
+        
+    </select>
+    </div>
+    
+    
+       
+    
+              
+            </div>
+            <div>
+                <label for="categoriaa"></label>
+                <div class="siono">
+                    <h5> Nacionalidad</h5>
+                    <select name="categoria"id='entradapaises'>
+                             
+                </select>
+                </div>
+                
+                   
+                
+                            <h5> Fumador/a</h5>
+                        </div>
+                        <label for="categoriaa"></label>
+                        <div class="siono">
+                            <select name="categoria" id="fumador">
+                            <option value="Sí">Sí</option>
+                            <option value="No">No</option>          
+                        </select>
+                        </div>
+                <h4>Seleccione un Tipo de Sangre</h4>
+
+            </div>
+            <label for="categoria"></label>
+            <div class="tiposds">
+                <select name="categoria"id='sangres'>
+                    </select>
+            </div>
+
+        </form> 
+        <div class="cheq" id="cheq">
+        <p>Estoy de Acuerdo Con <a href="#">Terminos y Condiciones</a> </p></div>
+    <input class ="botons" onclick="consola();"  type="submit" value="Registrar">
+<p>
+    <a href="#">¿Ya Tengo Cuenta?</a>
+</p>
+
+
+
+
+   
+  
+
+
+
+
 </body>
+<script src="app.js"></script>
 </html>
