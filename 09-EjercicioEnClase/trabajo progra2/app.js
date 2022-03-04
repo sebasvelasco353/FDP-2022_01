@@ -31,23 +31,45 @@ for(let i=0;i<grupoSanguineo.length;i++){
 
 }
 
-function selectEdad(){
+function cualquier(){
     var input_edad = document.getElementById("Edad").value;
     if (input_edad >= 50){
-        document.getElementById('come').style.display ='none';
         document.getElementById('comentario').style.display ='block';
-       
-       
+        document.getElementById('come').style.display ='none';
     } else if(input_edad < 50){
-        document.getElementById('comentario').style.display ='none';
-        document.getElementById('come').style.display ='block';
-        
+            document.getElementById('comentario').style.display ='none';
+            document.getElementById('come').style.display ='block';
     }
 }
+function consola(){
+     var  nomconsola=document.getElementById('nombres').value;
+     
+     var apellido=document.getElementById('apellidos').value;
+     
+     var estat=document.getElementById('estatura').value;
+     
+     var edge=document.getElementById('Edad').value;
+     
+     var country=document.getElementById('entradapaises').value;
+     
+     var smoke=document.getElementById('fumador').value;
+     
+     var sangree=document.getElementById('sangres').value;
+
+     
 
 
 
+console.log(nomconsola);
+console.log(apellido);
+console.log(estat);
+console.log(edge);
+console.log(country);
+console.log(smoke);
+console.log(sangree);
 
-   
+
+
+}
 
 
