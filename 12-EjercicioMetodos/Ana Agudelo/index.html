@@ -5,31 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recetario</title>
-    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
-    <h1>Recetario</h1>
-    <p>Conoce las recetas ganadoras del Best Seller de Congracia, la mejor chef de Desgracia - Colombia</p>
-    <section>
-        <img src="./Image/Tortitas-de-papa.jpg" alt="Tortilla de papa">
-        <h3>TORTITAS DE PAPA, LA RECETA FÁCIL Y PRÁCTICA</h3>
-        <p>Las tortitas de papa tradicionales son una comida deliciosa. Aunque para muchas no sea tan fácil
-        prepararlas, vale la pena intentar hacerlas con este súper secreto que te vamos a compartir.</p>
+    <header><h1 class="titulo">Recetario</h1></header>
+    <p>Nosotros te damos los ingredientes y tu utilizas tu imaginación para lograr los platos.</p>
+    <section class="recetas" id="recetas">
+        <section class="individual">
+            <img src="./Image/Tortitas-de-papa.jpg" alt="Tortilla de papa">
+            <section class="descripcion-hover">
+                <h3>TORTITAS DE PAPA</h3>
+                <p>Las tortitas de papa tradicionales son una comida deliciosa. Aunque para muchas no sea tan fácil
+                prepararlas, vale la pena intentar hacerlas con este súper secreto que te vamos a compartir.</p>
+                <button class="boton" onclick="verReceta('receta1')">Ver receta</button>
+            </section>
+        </section>
+
+        <section class="individual">
+            <img src="./Image/pure-de-papa.jpg" alt="Puré de papa">
+            <section class="descripcion-hover">
+                <h3>PURÉ DE PAPA TRADICIONAL</h3>
+                <p>Prepáralo para cualquier ocasión y conquista el paladar de tu suegra, la tía, la nuera… todos 
+                querrán el secreto que sólo tú y Cocina Fácil tenemos. ¿Lista? Manos a la obra.</p>
+                <button class="boton" onclick="verReceta('receta2')">Ver receta</button>
+            </section>
+        </section>
+
+        <section class="individual">
+            <img src="./Image/souffle-de-papa.jpg" alt="souffle de papa">
+            <section class="descripcion-hover">
+                <h3>SOUFFLÉ DE PAPA</h3>
+                <p>Prepáralo para cualquier ocasión y conquista el paladar de tu suegra, la tía, la nuera… todos 
+                querrán el secreto que sólo tú y Cocina Fácil tenemos. ¿Lista? Manos a la obra.</p>
+                <button onclick="verReceta('receta3')">Ver receta</button>
+            </section>
+        </section>
+
+        <section id="textoReceta"></section>
     </section>
 
-    <section>
-        <img src="./Image/pure-de-papa.jpg" alt="">
-        <h3>PURÉ DE PAPA TRADICIONAL</h3>
-        <p>Prepáralo para cualquier ocasión y conquista el paladar de tu suegra, la tía, la nuera… todos 
-        querrán el secreto que sólo tú y Cocina Fácil tenemos. ¿Lista? Manos a la obra.</p>
-    </section>
-
-    <section>
-        <img src="./Image/souffle-de-papa.jpg" alt="">
-        <h3>SOUFFLÉ DE PAPA</h3>
-        <p>Prepáralo para cualquier ocasión y conquista el paladar de tu suegra, la tía, la nuera… todos 
-        querrán el secreto que sólo tú y Cocina Fácil tenemos. ¿Lista? Manos a la obra.</p>
-    </section>
 <script src="./js/app.js"></script>
 </body>
 </html>

@@ -1,0 +1,27 @@
+@import 'reset/variables' , 'reset/mixins' , 'reset/reset' ,'reset/keyframes';
+
+.arcordeon{
+    width: 90%;
+    max-width: 120em;
+    padding: 2em;
+    @include neo(1, 1em , 1em );
+}
+.arcordeon.bloque{
+    margin: 0 0 1em;
+    padding: 1em;
+    @include neo(1, 1em , 1em );
+}
+.arcordeon .h2{
+    margin: 0 0 1em;
+    padding: 1em;
+    @include neo(1, 1em , 1em );
+}
+.arcordeon .contenido{
+    height: 0;
+    padding: 0em;
+    overflow: hidden;
+    transition: all .5s ease;
+}
+.arcordeon .bloque.activo .contenido{
+    height: 50em;
+}

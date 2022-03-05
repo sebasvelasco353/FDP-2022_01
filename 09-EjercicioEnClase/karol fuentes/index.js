@@ -99,6 +99,6 @@ var rh = document.getElementById("rh").value;
 console.log(rh);
 
 var cirugias = document.getElementById("siCirugias").value === 'on' ? true : false;
-console.log(cirugiasanteriores);
+console.log(cirugias);
 
 

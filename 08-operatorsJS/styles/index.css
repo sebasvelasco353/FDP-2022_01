@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@700&family=Roboto&display=swap');
 
 header {
+    background-color: aqua;
     width: 100%;
     display: flex;
     padding: 1rem 2rem;
