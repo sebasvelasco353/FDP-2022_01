@@ -1,0 +1,42 @@
+div {
+
+float: left;
+
+margin-right: 20px;
+
+width: 205px;
+}
+
+.Tituloformu{
+
+float: up, left;
+
+width: 100%;
+
+margin-bottom: 30px;
+
+}
+
+.CampoNA{
+
+background-color: rgb(255, 255, 255);
+
+
+width: 100%;
+
+margin-bottom: 20px;
+}
+
+
+form{background-color: aquamarine;}
+
+.fuma{
+
+    width: 1000px;
+}
+
+.PG1, .PG2{
+
+    display: none;
+}
+

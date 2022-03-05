@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/stylesrec.css">
+    <title>DarkSea_CooKing</title>
+</head>
+<body>
+    <div><h1>Bienvenido a DarkSea Co0K1ng</h1>
+        <p class="content__intro">A continuación tenemos las recetas más famosas para hacer un almuerzo rápido</p>
+    </div>
+    <div class="container__content">
+        <label for="ingr">¿Cuál de estas sopas quieres preparar?</label>
+        <select name="princ" id="princ">
+            <option value="fideos">Fideos</option>
+            <option value="avena">Avena</option>
+            <option value="maiz">Cuchuco de maíz</option>
+        </select><br>
+        <button class="cocinar" onclick="cocina()">
+            ¡A cocinar!
+        </button>
+    </div>
+    <div class="most">
+        <p class="default" id="default"><b></b></p><br>
+        <p class="recetario" id="recetario"><b></b></p><br>
+        <p class="recetario2" id="recetario2"><b></b></p>
+        <p class="unic" id="unic"><b></b></p><br>
+        <p class="carne" id="carne"><b></b></p><br>
+        <label for="procion">¿Cuántas porciones quieres cocinar?(una porción cuenta por almuerzo y cena)</label><br>
+        <input type="number" min="1" name="porcion" id="porcion">
+        <button class="seguro" onclick="showcant()">
+        Confirmar
+        </button>
+        <p class="default" id="ingcant"><b></b></p><br>
+        <p class="default" id="ingcant2"><b></b></p><br>
+    </div>
+<script src="./js/apprec.js"></script>
+</body>
+</html>
