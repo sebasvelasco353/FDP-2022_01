@@ -1,4 +1,4 @@
-//Animaciones
+//Animaciones (Transiciones) con Gsap
 gsap.registerPlugin(ScrollTrigger);
 
 gsap.from('.header', { duration: 1, y: '-100%', ease: 'power3.inOut'})
@@ -30,76 +30,26 @@ links.forEach((item)=>{
     })
 })
 
-//Mensaje Popup de productos
-const openPopupButtons = document.querySelectorAll('[data-popup-target]')
+//Mensaje Popup de productos con Sweet Alert
+function OutOfStock(){
+    swal({
+        title: "Lo sentimos",
+        text: "Este producto se encuentra agotado en este momento",
+        icon: src="./Imagenes/Custom.png",
+    });}
 
-const closePopupButtons = document.querySelectorAll('[data-close-button]')
-
-const overlay = document.getElementById('overlay')
-
-openPopupButtons.forEach(button =>{
-    button.addEventListener('click', ()=>{
-        const popup = document.querySelector(button.dataset.popupTarget)
-        openPopup(popup)
-    })
-})
-
-closePopupButtons.forEach(button =>{
-    button.addEventListener('click', ()=>{
-        const popup = button.closest('.popup')
-        closePopup(popup)
-    })
-})
-
-function openPopup(popup){
-    if (popup == null) return
-    popup.classList.add('active')
-    overlay.classList.add('active')
-}
-
-function closePopup(popup){
-    if (popup == null) return
-    popup.classList.remove('active')
-    overlay.classList.remove('active')
-}
-
-//Mensaje popup de formulario
-const openPopupEButtons = document.querySelectorAll('[data-popupE-target]')
-
-const closePopupEButtons = document.querySelectorAll('[data-closeE-button]')
-
-openPopupEButtons.forEach(button =>{
-    button.addEventListener('click', ()=>{
-        const popupE = document.querySelector(button.dataset.popupETarget)
-        openPopupE(popupE)
-    })
-})
-
-closePopupEButtons.forEach(button =>{
-    button.addEventListener('click', ()=>{
-        const popupE = button.closest('.popupE')
-        closePopupE(popupE)
-    })
-})
-
-
-function openPopupE(popupE){
-    if (popupE == null) return
-    popupE.classList.add('active')
-    overlay.classList.add('active')
-    }
-
-function closePopupE(popupE){
-    if (popupE == null) return
-    popupE.classList.remove('active')
-    overlay.classList.remove('active')
-}
-
-document.getElementById("#Enviar").addEventListener("click", function(event){
-    event.preventDefault()
-  });
-
-
+//Mensaje Popup de enviar con Sweet Alert
+function enviado(){
+    if (Nombre.value===''|| Teléfono.value==='' || Correo.value===''){
+        swal("", "Por favor digite todos los campos","warning");
+    }else{
+        swal({
+            title: "Tu mensaje ha sido enviado con éxito",
+            text: "Pronto nos pondremos en contacto contigo",
+            icon: "success",
+            button: "¡Gracias!",
+            });
+    }}
 
 //Console log
 function datos() {
@@ -107,7 +57,6 @@ function datos() {
     var Teléfono = document.getElementById("Teléfono").value;
     var Correo = document.getElementById("Correo").value;
     var Mensaje = document.getElementById("Mensaje").value;
-
     {
         console.log("Nombre: " + Nombre);
         console.log("Teléfono: " + Teléfono);
@@ -115,13 +64,4 @@ function datos() {
         console.log("Mensaje: " + Mensaje);
         console.log("___________________"); 
     }
-return;
-}
-
-function enviado(){
-    if (Nombre.value===''|| Teléfono.value==='' || Correo.value===''){
-        document.getElementById('Enviado').style.display='none';
-    }else{
-        document.getElementById('Enviado').style.display='block';
-    }
-}
+return;}
