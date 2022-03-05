@@ -58,6 +58,7 @@ function Receta1(){
         var tag = document.createElement("p");
             tag.innerHTML = Uno + `Pelar la yuca y cocinarla en agua` + Dos + 'Cortar la carne y sofreírla' + Tres + 'Hacer una masa con la yuca y la sal' + Cuatro + 'Tomar porciones de masa y darle forma de huevo, y hacer un hueco en el centro' + Cinco + 'Rellenar con la carne y cerrarla' + Seis + Freir + Siete + Pasar;
             Proce.appendChild(tag); 
+    return;
     }
     
 function Receta2(){
@@ -91,6 +92,7 @@ function Receta2(){
         var tag = document.createElement("p");
             tag.innerHTML = Uno + Pelar + Dos + Freir + Tres + Pasar + Cuatro + 'Deje enfriar las rodajas de plátano durante 3 minutos' + Cinco + Aplastar + ' con una superficie plana ' + Seis + 'Sumergir cada rebanada en agua con sal' + Siete + Freir + Ocho + Pasar;
             Proce.appendChild(tag); 
+    return;
     }
 
 function Receta3(){
@@ -123,5 +125,6 @@ function Receta3(){
     Proce.innerHTML = '';
             var tag = document.createElement("p");
                 tag.innerHTML = Uno + Pelar + Dos + Freir + Tres + Aplastar + Cuatro + 'Poner queso en el medio' + Cinco + 'Cerrar el plátano y darle forma de cilindro' + Seis + 'Aparte, batir el huevo, la leche, la harina, la sal y el azúcar' + Siete + 'Agregar el aborrajado en la mezcla anterior' + Ocho + Freir + Nueve + Pasar;;
-                Proce.appendChild(tag);      
+                Proce.appendChild(tag);     
+    return; 
     }
