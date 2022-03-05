@@ -4,22 +4,80 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario Clinico</title>
     <link rel="stylesheet" href="estilos.css">
+    <title>Formulario Clinico</title>
+    
 </head>
 <body>
-    <form action="" class="formulario">
-        <h1 class="formulario__titulo">Registre sus datos</h1>
-        <label for="Nombres" class="formulario__label">Nombres</label> <br><input type="text" class="formulario__input">
-        <label for="Apellidos" class="formulario__label">Apellidos</label> <br><input type="text" class="formulario__input">
-        <label for="Estatura" class="formulario__label">Estatura</label> <br><input type="text" class="formulario__input">
-        <label for="Fumador/a" class="formulario__label">Fumador/a</label> <br><input type="text" class="formulario__input">
-        <label for="Edad" class="formulario__label">Edad</label> <br><input type="text" class="formulario__input">
-        <label for="Nacionalidad" class="formulario__label">Nacionalidad</label> <br><input type="text" class="formulario__input">
-        <label for="Grupo sanguíneo" class="formulario__label">Grupo sanguíneo</label> <br><input type="text" class="formulario__input">
-        <label for="Cirugías anteriores" class="formulario__label">Cirugías anteriores</label><input type="text" class="formulario__input">
-        <input type="submit" class="formulario__submit">
-        </form>
-        <script src="form.js"></script>
+    <header>
+        <div class="Textosheader">
+            <h1>Registro de datos </h1>
+        </div>
+            <nav>
+                <ul>
+                    <li><a href="#"> Inicio </a></li>
+                    <li><a href="#"> Contactos </a></li>
+                    <li><a href="#"> Servicios</a></li>
+                </ul>
+            </nav>
+    </header>
+    <div class="Contenido">
+        <div class="Consigna">
+            <p>A raíz de la necesidad de crear una base de datos para nuestros usuarios 
+            y su información, se plantea la siguiente plataforma:</p>
+        </div>
+    <br>
+    <div class="Formulario">
+        <label>Nombre</label>
+            <input type="text" name="Name" value="" id="Nombre"> <br>
+        <label>Apellido</label>
+            <input type="text" name="Apellido" id="Apellido"> <br>
+        <label>Estatura</label>
+            <input type="number" step="0.01" name="Estatura" id="Estatura">
+    <div class="Radio">
+        <label>¿Fumador?</label>
+            <input type="text" name="Fumador" value="Sí" id="Fumador">
+        <label for="Sí">Sí</label>
+            <input type="radio" name="Fumador" value="No" id="Fumador">
+        <label for="No">No</label>
+    </div>
+            <br>
+        <label>Edad</label>
+            <input type="number" name="Edad" id="Edad" onchange="AnotherQ()">
+
+            <div id="ColesterolQ">
+                <label>¿Se ha realizando pruebas de colesterol y triglicéridos en los últimos 6 meses?</label>
+                <input type="radio" name="Colesterol" id="Colesterol" value="Sí">
+                <label>Sí</label>
+                <input type="radio" name="Colesterol" id="Colesterol" value="No">
+                <label>No</label>
+            </div>
+
+            <div id="AzucarQ">
+                <label>¿Se ha realizado pruebas de azúcar en los últimos 3 meses?</label>
+                <input type="radio" name="Azucar" id="Azucar" value="Sí">
+                <label>Sí</label>
+                <input type="radio" name="Azucar" id="Azucar" value="No">
+                <label>No</label>
+            </div>
+            <br>
+        <label>Nacionalidad</label>
+            <select name="Nacionalidad" id="Nacionalidad"></select> <br>
+        <label>Grupo sanguíneo</label>
+            <select name="RH" id="RH"></select> <br>
+    <div class="Radio">
+        <label>¿Cirugías?</label>
+            <input type="radio" name="Cirugías" value="Sí" id="Cirugías">
+        <label for="Sí">Sí</label>
+            <input type="radio" name="Cirugías" value="No" id="Cirugías">
+        <label for="No">No</label>
+    </div>
+            <br>
+        <div class="Botones">
+            <input type="submit" onclick="handleClick()"></input>
+            <input type="reset" value="Limpiar"></input>
+        </div>
+    </div>
+</div>
 </body>
 </html>
