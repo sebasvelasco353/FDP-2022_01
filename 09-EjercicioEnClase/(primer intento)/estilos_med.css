@@ -1,0 +1,27 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 3rem 2rem;
+}
+.container__content {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 2rem;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+p{
+    font-size: 1.5rem;
+}
+.container{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem 2rem;
+    max-width: 1080px;
+    margin: 0 auto;
+}

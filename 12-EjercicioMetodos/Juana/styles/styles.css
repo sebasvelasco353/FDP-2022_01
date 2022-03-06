@@ -1,0 +1,48 @@
+.calculadora{
+    display:block;
+    margin: 10px auto;
+    padding:20px;
+    background-color:#bdc3d6;
+    width:345px;
+    height:500px;
+    border-radius: 25px;
+    
+  }
+  .calculadora td button{
+    display:block;
+    width:50px;
+    height: 50px;
+    font-size: 25px;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 100;
+  }
+  #creditos{
+    display:block;
+    padding-top:20px;
+    color:#fff;
+    text-align: center;
+    width:300px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-right: 10px;
+    font-weight: 100;
+
+  }
+  #resultado{
+    display:block;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 50px;
+    width: 200px;
+    height: 100px;
+    line-height: 100px;
+    background-color:#fff;
+    border-radius: 25px;
+    overflow-y: scroll;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 100;
+
+
+  }
+
+      
+
