@@ -57,7 +57,7 @@ function ageConditional() {
 function registeredFName() {
     var name = document.getElementById("fname");
 
-    if(name === " ") {
+    if(name === "") {
 
         return false;
     }
@@ -73,7 +73,7 @@ function registeredLName() {
     
     var lastname = document.getElementById("lastname");
 
-    if(lastname === " ") {
+    if(lastname === "") {
 
         return false;
     }
@@ -88,8 +88,7 @@ function registeredLName() {
 function registeredData() {
     var regFName = registeredFName();
     var regLName = registeredLName();
-
-    if(regFName === true && regLName === true) {
+    if(regFName === true && regLName === true ) {
         alert("Registrado correctamente")
     }
     else {

@@ -1,29 +1,32 @@
+// Me quedó más facil la calculadora
 
+let valores = document.getElementById("valor");
 
-var ingredients = ["Crema de Leche", "Lehe condensada", "Queso Crema", "Milo" , "Oreo", "Limón"];
-var cookware = [];
+let botonesArray = Array.from(document.getElementsByClassName("boton"));
 
-const recipe1 = (ingredients[0]) => {
+botonesArray.map( boton => {
+    boton.addEventListener("click", (e) => {
+       switch(e.target.innerText){
+            case "C":
+                valores.innerText = "";
+                break;
 
-    step1: "Licuar el"; //"y por último agregar poco a poco"// 
-//Llamar a los botones 
-    var recipe = document.getElementById("recipe_button1").innerHTML; {
-        //innerHTML pinta en la web
+            case "←":
 
-    const fullRecipe1 = () {
-    
+                if(valores.innerText){
+                    valores.innerText = valores.innerText.slice(0, -1);
+                }
+                break;
+                case "=":
+                    try{
 
-    }
-    }
-
-
-}
-
-
-console.log(recipe);
-
-
-
-//crear method
-//imprimir en consola
-//
+                        valores.innerText = eval(valores.innerText);
+                    } catch {
+                        valores.innerText ="Syntax Error";
+                    }
+                        break;
+           default:
+               valores.innerText += e.target.innerText;
+       }
+    })
+});
