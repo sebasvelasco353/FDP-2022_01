@@ -4,8 +4,7 @@
 body {
     margin: 0%;
     font-family: sans-serif;
-    background-image:url(/Users/juans/Documents/FDP-2022_01/09-EjercicioEnClase/Juana/12e[oekqwpoejqw;l.png);
-
+    background-image:url(/Users/juans/Documents/FDP-2022_01/09-EjercicioEnClase/Juana/fondo.png)
 }
 .formulario { 
 width:500px;
@@ -22,7 +21,7 @@ background-color: aliceblue;
     margin-top: 0;
     color: rgba(35, 100, 221, 0.445);
 }
-.formulario__input, .formulario__label, .formulario__submit,.formulario__fumador, .formulario__cirugias, .formulario__Nacionalidad, .formulario__RH, .formulario__reset {
+.formulario__input, .formulario__label, .formulario__submit,.formulario__fumador, .formulario__cirugias, .formulario__Nacionalidad, .formulario__RH, .formulario__reset, .formulario__Edad {
     display: block;
     width: 100%; 
     font-size: 1.3em;
@@ -55,6 +54,9 @@ color: rgba(0, 0, 0, 0.5);
 transition: all 0.2s;
 
 }
+.formulario__Edad {
+transform: translateY(-210px);
+}
 .formulario__fumador {
     padding-left: 0px;
     position: absolute;
@@ -66,10 +68,27 @@ transition: all 0.2s
 .formulario__cirugias {
     padding-left: 0px;
     position: absolute;
-    margin-top:  -30px;
+    margin-top:  20px;
     z-index: 20;
 color: rgba(0, 0, 0, 0.5);
 transition: all 0.2s; 
+
+}
+.formulario__Examenes{
+    padding-left: 0px;
+    position: absolute;
+    margin-top:  -40px;
+    z-index: 20;
+color: rgba(0, 0, 0, 0.5);
+
+
+}
+.formulario__Examenes2{
+    padding-left: 0px;
+    position: absolute;
+    margin-top:  0px;
+    z-index: 20;
+color: rgba(0, 0, 0, 0.5);
 
 
 }
@@ -83,8 +102,16 @@ transition: all 0.2s;
 }
     
 .formulario__cirugiasino {
-    margin-top: 10px;
+    margin-top: 50px;
     margin-bottom:40px;
+}
+.formulario__examenesmayor {
+    margin-top: 0px;
+    margin-bottom:0px;
+}
+.formulario__examenesmenor {
+    margin-top: 30px;
+    margin-bottom: -40px;
 }
 .formulario__fumasino {
 margin-right: -px;
