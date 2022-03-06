@@ -115,5 +115,3 @@ var siPruebaazucar = document.getElementById("siPruebaazucar").checked;
 alert("Sus datos han sido registrados.")
 }
 
-
-

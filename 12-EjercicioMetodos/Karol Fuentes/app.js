@@ -2,6 +2,8 @@ var operandoa;
 var operandob;
 var operacion;
 
+
+
 function init(){
     var resultado = document.getElementById('resultado');
     var reset = document.getElementById('reset');
@@ -10,7 +12,7 @@ function init(){
     var multiplicacion = document.getElementById('multiplicacion');
     var division = document.getElementById('division');
     var igual = document.getElementById('igual');
-    var uno = document.getElementById('uno');
+    var uno = document.getElementById('uno').value;
     var dos = document.getElementById('dos');
     var tres = document.getElementById('tres');
     var cuatro = document.getElementById('cuatro');
@@ -20,9 +22,13 @@ function init(){
     var ocho = document.getElementById('ocho');
     var nueve = document.getElementById('nueve');
     var cero = document.getElementById('cero');
+
   }
 
+
   //Cada vez que se le de click a los botones :D
+
+  
 
   uno.onclick = function(e){
     resultado.textContent = resultado.textContent  + "1";
@@ -80,6 +86,22 @@ division.onclick = function(e){
 igual.onclick = function(e){
     operandob = resultado.textContent;
     resolver();
+}
+
+const sumar = (a, b) => {
+    return a + b;
+}
+
+const restar = (a, b) => {
+    return a - b;
+}
+
+const multiplicar = (a, b) => {
+    return a * b;
+}
+
+const dividir = (a, b) => {
+    return a / b;
 }
 
 function limpiar(){
