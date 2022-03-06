@@ -1,0 +1,53 @@
+h1 {
+
+    color: rgb(194, 104, 2);
+
+    text-align: center
+}
+div {
+gap: 6px;
+align-self: center;
+justify-content: center;
+display: flex;
+flex-direction: column;
+grid-template-columns: 1fr;
+margin: 10px;
+margin-left: 500px;
+padding-bottom: 20px;
+
+}
+button{
+    width: 500px    ;
+}
+
+
+.btn1 .btn2 .btn3 {
+
+
+    flex-direction: row;
+}
+
+.text{
+
+    display: none;
+}
+
+.texto1, .texto2 {
+
+    display: none;
+}
+
+
+
+body{
+ 
+    background-color: rgb(235, 193, 115);
+}
+
+h2{
+    color: rgb(102, 44, 5);
+}
+
+p {
+    color: rgb(44, 38, 10);
+}
