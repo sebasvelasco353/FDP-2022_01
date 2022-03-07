@@ -1,0 +1,162 @@
+.Otras_Recetas{
+
+
+    display: flex;
+    flex-wrap:wrap;
+    padding: 20px;
+    background: #cca9dd;
+    justify-content: center;
+    
+
+
+
+    .Receta1{
+
+        display: flex;
+        flex-direction: column;
+        justify-content:space-between;
+        border-radius: 5px ;
+        background: #444444;
+        width: 280px;
+        margin: 20px;
+        opacity: .6;
+
+        &:hover{
+            background: #555555;
+            opacity: 1;
+
+        }
+        img{
+            width: 100%;
+            border-radius: 5px;
+
+
+        }
+
+
+
+
+
+
+    }
+
+    .Receta2{
+
+        display: flex;
+        flex-direction: column;
+        justify-content:space-between;
+        border-radius: 5px ;
+        background: #444444;
+        width: 280px;
+        margin: 20px;
+        opacity: .6;
+
+        &:hover{
+            background: #555555;
+            opacity: 1;
+
+        }
+        img{
+            width: 100%;
+            border-radius: 5px;
+
+
+        }
+
+
+
+
+
+
+    }
+
+    .Receta3{
+
+        display: flex;
+        flex-direction: column;
+        justify-content:space-between;
+        border-radius: 5px ;
+        background: #444444;
+        width: 280px;
+        margin: 20px;
+        opacity: .6;
+
+        &:hover{
+            background: #555555;
+            opacity: 1;
+
+        }
+        img{
+            width: 100%;
+            border-radius: 5px;
+
+
+        }
+
+
+
+
+
+
+    }
+
+}
+
+.boton{
+    display: flex;
+    justify-content: center;
+    
+    input{
+        border-style: none ;
+        border-radius: 5px;
+        background: #555555;
+        border: 2px solid #4717f6;
+        color: #e7dfdd;
+        padding: 10px;
+        width: 80%;
+        font-size: 18px;
+
+
+        &:hover{
+            background: #4717f6;
+            cursor: pointer;
+            box-shadow: 10px 10px 15px 0px rgba(0,0,0,0.15) ;
+
+        }
+
+
+
+
+
+
+
+    }
+}
+
+.Datos{
+    padding: 8px;
+    .titulo_R1{
+        font-size: 24px;
+        text-align: center;
+        font-weight: 700;
+
+
+
+
+
+        
+    }
+    .descripcion{
+        color: #000000;
+        padding: 5px;
+        text-align: justify;
+        font-size: 18px;
+        font-weight: 400;
+
+    }
+
+
+
+
+
+}

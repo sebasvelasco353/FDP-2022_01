@@ -45,7 +45,7 @@ const renderUltimosDatos = () => {
 
             tag.innerHTML =`Temperatura: ${tempObj.temperatura} ${tempObj.escala} - fecha: ${tempObj.fecha}.`;
 
-            LISTA_MEDIDAS_ELEMENT.appendChild(tag);
+            LISTA_MEDIDAS_ELEMENT.appendChild(ag);
         }
     } else {
         for (let i = 0; i < registroTemperaturas.length; i++) {

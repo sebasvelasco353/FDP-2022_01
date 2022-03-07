@@ -1,0 +1,72 @@
+body{
+    background-color: #E5E5E5;
+    text-align: center;
+}
+.form_user{
+    margin-left: 16%;
+    margin-right: 16%;
+    margin-top: 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.form_group_input, .cual_cirugia{
+    width: 100%;
+    background-color: #fff;
+    border: 3px solid transparent;
+    border-radius: 10px;
+    transition: .3s ease all;
+}
+.form_group_input:focus, .cual_cirugia:focus{
+    border: 3px solid #0075FF;
+    outline: none;
+}
+.msj_colesterol, .msj_sugar, .cual_cirugia{
+  display: none;
+}
+
+#send{
+    padding: 20px;
+}
+#send2{
+    display: none;
+    padding: 20px;
+}
+
+#sending, #sending2{
+    width: 20%;
+    border-radius: 10px;
+}
+#msj_sugarl, #msj_colesterol{
+    background-color: #fff;
+    margin-right: 30%;
+    margin-left: 30%;
+    border-radius: 12px;
+}
+
+#datos_ingresados_principal{
+    display: none;
+}
+#datos_ingresados{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 20px;
+    padding-left: 20%;
+    padding-right: 20%;
+    gap: 12px;
+}
+#datos_ingresados h4{
+    grid-column: span 2;
+}
+#datos_ingresados button{
+    margin-left: 30%;
+    margin-right: 30%;
+    border-radius: 12px;
+}
+#datos_ingresados input{
+    border-radius: 12px;
+}
+#datos_enviados{
+    display: none;
+    text-align: center;
+}

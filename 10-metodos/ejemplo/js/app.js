@@ -37,7 +37,7 @@
 *
 */
 
-const ejemploArrow = () => { // Arrow function
+const ejemploArrow = (nombre) => { // Arrow function
     console.log('Soy una arrow function');
 }
 function ejemploKeyword() { // usando una restricted keyword
@@ -78,6 +78,6 @@ handleBtnCick = () => {
 *
 */
 function variableLocal() {
-    let numero = 1; // Esta variable solo puede usarse dentro de esta funcion
+    let numero = [1,2,3,4]; // Esta variable solo puede usarse dentro de esta funcion
 }
 console.log(numero); // Nos da un error (numero no existe)
