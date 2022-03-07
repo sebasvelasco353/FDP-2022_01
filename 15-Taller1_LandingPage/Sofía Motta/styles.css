@@ -35,6 +35,7 @@ header{
     max-width: 1200px;
     display: flex;
     align-items: center;
+    justify-content: space-around;   
     margin: auto;
 }
 
@@ -43,4 +44,34 @@ img{
     height: 450px;
     object-fit: cover;
     width: auto;
+}
+
+.textos{
+    width: 50%;
+    color: #fff;
+}
+
+.textos h1{
+    font-size: 80px;
+}
+
+.textos h2{
+    font-size: 30px;
+}
+
+.textos a{
+    display:inline-block;
+    color: #fff;
+    font-weight: 300;
+    text-decoration: none;
+    margin-top: 30px;
+    border: 1px solid #fff;
+    width: 150px;
+    border-radius: 3px;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.wave{
+    
 }
