@@ -1,0 +1,58 @@
+body{
+    padding: 0px;
+    margin: 0px;
+}
+h3{
+    padding: 10px;
+    margin: 0px;
+}
+#Sect_menu{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color: white;
+    opacity: 0.9;
+    width: 100%;
+    position: fixed;
+}
+#sect_info_about_us, #sect_info_ourwork{
+    text-align: center; 
+}
+#info_about_us{
+    padding-left: 230px;
+    padding-right: 230px;
+    padding-bottom: 20px;
+}
+#second_Column{
+    display: flex;
+    flex-direction: row;
+    align-items: center;   
+}
+#card_structure_title{
+    background-color: chocolate;
+}
+#container_cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 20% 1fr;
+    margin-left: 12%;
+    margin-right: 12%;
+    margin-bottom: 3%;
+    margin-top: 2%;
+}
+#title{
+    background-color:burlywood;
+}
+#content{
+    background-color:chartreuse
+}
+#imgs{
+    background-color:blue;
+}
+#container_video{
+    margin-left: 12%;
+    margin-right: 12%;
+    margin-bottom: 3%;
+    margin-top: 2%;
+    justify-content: center;
+    background-color:gold;
+}
