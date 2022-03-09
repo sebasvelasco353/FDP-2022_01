@@ -1,6 +1,4 @@
-*{
-    margin: 0;
-}
+*{margin: 0;}
 
 html{
 background-color: rgb(250, 250, 255);
@@ -8,7 +6,8 @@ color: rgb(105, 105, 105);
 font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-header{
+/*Header y navegación*/
+.header{
     background-color: rgb(2, 25, 51);
     color: white;
     margin: auto;
@@ -18,8 +17,9 @@ header{
     flex-flow: row wrap;
     justify-content: flex-end;
     gap: 50px;
-    position:sticky;
+    position: sticky;
     top: 0px;
+    z-index: 100;
 }
 
 .Logo{
@@ -34,9 +34,13 @@ header{
     padding-top: 1vh;
 }
 
-ul, ol{
-    list-style: none;
-} 
+a{outline: none; text-decoration: none;}
+
+#CTAa:visited{color: rgb(2, 25, 51);}
+
+a:visited{color: white;}
+
+ul, ol{list-style: none;} 
 
 .Nave li{
     background-color: rgb(2, 25, 51);
@@ -45,14 +49,9 @@ ul, ol{
     display: block;
 }
 
-.Nave li:hover{
-    background-color: rgb(17, 45, 77);
-    cursor: pointer;
-}
+.Nave li:hover{background-color: rgb(146, 212, 246); cursor: pointer;}
 
-.Nave > li{
-    float: left;
-}
+.Nave > li{float: left;}
 
 .Nave li ul{
     display: none;
@@ -62,22 +61,19 @@ ul, ol{
     left: 1108px;
 }
 
-.Nave li:hover > ul{
-    display: block;
-}
+.Nave li:hover > ul{display: block;}
 
+/*Intro*/
 .Bienvenida{
+    height: 120vh;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     background-color: rgb(2, 25, 51);
     color: rgb(250, 250, 255);
-}
-
-#ImgBienvenida{
-    width: 100%;
-    margin: 5vh 10vh 10vh 10vh;
-}
+    }
+    
+#ImgBienvenida{width: 100%; margin: 5vh 10vh 10vh 10vh;}
 
 #Presentacion{
     width: 100%;
@@ -85,9 +81,7 @@ ul, ol{
     padding: 0 0 0 20vh;
 }
 
-.T1{
-    font-size: xx-large;
-}
+.T1{font-size: xx-large;}
 
 button, .Enviar{
     color: rgb(2, 25, 51);
@@ -95,13 +89,15 @@ button, .Enviar{
     width: 170px;
     border-radius: 35px;
     border-color: transparent;
-    background-color: rgb(250, 250, 255);
+    opacity: 0.95;
     margin: 2vh 0 0 5vh;
     font-size: medium;
+    transition: transform 0.3s;
 }
 
 button:hover, .Enviar:hover{
-    background-color: rgb(195, 195, 212);
+    opacity: 1;
+    transform: scale(1.03);
     cursor: pointer;
 }
 
@@ -109,13 +105,10 @@ button:hover, .Enviar:hover{
     background-color: transparent;
     color: rgb(250, 250, 255);
     border: 2px solid rgb(250, 250, 255);
+    opacity: 0.95;
 }
 
-#CTAS:hover{
-    color: rgba(250, 250, 255, 0.7);
-    border: 2px solid rgba(250, 250, 255, 0.7);
-}
-
+/*Quienes somos y productos*/
 .Quienes{
     display: flex;
     flex-direction: row;
@@ -123,20 +116,23 @@ button:hover, .Enviar:hover{
     background-color: rgb(250, 250, 255);
 }
 
-#ImgQuienes{
-    width: 90%;
-    margin: 5vh 5vh 0 0;
-}
+#ImgQuienes{width: 90%; margin: 5vh 5vh 0 0;}
 
 #Acerca{
     width: 100%;
-    padding: 15vh 5vh 15vh 15vh;
+    padding: 10vh 5vh 15vh 15vh;
     margin: 25vh 5vh 30vh 0;
     box-sizing: border-box;
 }
 
-.Servicios{
-    text-align: center;
+.Servicios{text-align: center;}
+
+.cr{transition: transform 0.5s;}
+
+.cr:hover{
+    cursor:pointer;
+    transform: scale(1.1);
+    opacity: 0.8;
 }
 
 .Cards{
@@ -152,23 +148,18 @@ button:hover, .Enviar:hover{
     border-radius: 15px;
     border-top: 15px solid rgb(2, 25, 51);
     width: 40vh;
+    height: 50vh;
     margin: 3vh 2vh 5vh 0;
     padding: 0vh;
-    box-shadow: 0 0 10px rgb(228, 228, 228);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-#ImgCard{
-    width: 100%;
-    height: 33vh;
-}
+#ImgCard{width: 100%; height: 37vh;}
 
-#Text{
-    padding: 3vh;
-}
+#Text{text-align: center; padding: 3vh 0;}
 
-.T2{
-    margin: 15vh 0 0 15vh;
-}
+/*Formulario de contacto*/
+.T2{margin: 15vh 0 0 15vh;}
 
 .Contacto{
     display: flex;
@@ -195,7 +186,6 @@ button:hover, .Enviar:hover{
     margin-top: 2vh;
     box-sizing: border-box;
     border-radius: 20px;
-    box-shadow: 0 0 5px rgb(228, 228, 228);
 }
 
 input, textarea{
@@ -215,18 +205,31 @@ textarea{
     max-height: 250px;
 }
 
-.Enviar{
-    margin: 0 35%;
-}
+.Enviar{margin: 0 35%;}
 
-.Enviado{
-    margin-top: 5vh;
-    padding: 3vh;
-    text-align: center;
-    display: none;
-    color: white;
-}
+/*Popups con Sweet Alert*/
+.swal-modal {
+    background-color: rgb(250, 250, 255);
+    border-radius: 15px;
+    align-content: center;
+  }
 
+.swal-text {text-align: center; color: rgb(105, 105, 105)}
+
+.swal-button {
+    width: 15vh;
+    height: 7vh;
+    padding: 5px 5px;
+    border-radius: 30px;
+    background-color: rgb(2, 25, 51);
+    font-size: 12px;
+    }
+    
+.swal-button--confirm:focus{box-shadow: none;}
+
+.swal-footer {text-align: center; margin: 2vh 0;}
+
+  /*Footer*/
 footer{
     background-color: rgb(2, 25, 51);
     color: white;
