@@ -7,16 +7,18 @@
     <title>RuvaGraphic</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/variables.css">
+    <link rel="icon" type="image/x-icon" href="./Recursos/Img/7.png">
 </head>
 <body>
     <!-- Sección Menú -->
     <section class="Sect_menu" id="Sect_menu">
         <div class="css_menu" id="firts_Column">
-            <img src="./Recursos/Img/logo.jpg" width="120" height="120"> 
-            <h1>RuvaGraphic</h1>
+            <img src="./Recursos/Img/6.png" width="160" height="80"> 
         </div>
         <div class="second_Column" id="second_Column">
-            dasdtfygukoñlikda
+            <a href="#img_fondo">Home</a>
+            <a href="#sect_info_about_us">About us</a>
+            <a href="#Section_form">Contac</a>
         </div>
     </section>
     <!-- Sección imagen de fondo  -->
@@ -25,7 +27,7 @@
     </section>
     <!-- Seccción about us -->
     <section class="sect_info_about_us" id="sect_info_about_us">
-        <h3>About us</h3>
+        <h3 class="title_about_us" id="title_about_us">About us</h3>
         <div class="info_about_us" id="info_about_us">
             Ruvagraphic is a company of desing in development that offer services to any people or group that want to star
             a business, we will take care of helping you to grow through advertising, illustrations for social networks and
@@ -35,30 +37,45 @@
     <!-- Sección del contenido our work-->
     <section class="sect_info_ourwork" id="sect_info_ourwork">
         <h3>Our work</h3>
-            <div class="container_cards" id="container_cards">
-                <div id="title">Title</div>
+            <div class="paddin_content" id="container_cards">
+                <div id="title">Illustrations</div>
                 <div id="content">Content</div>
                 <div id="imgs" class="card_css"><img src="./Recursos/Img/ilustracion.jfif" width="100%" height="100%"></div>
             </div>
-            <div class="container_cards" id="container_cards">
-                <div id="title">Title</div>
+            <div class="paddin_content" id="container_cards">
+                <div id="title">Publicity</div>
                 <div id="content">Content</div>
                 <div id="imgs" class="card_css2"><img src="./Recursos/Img/ilustracion.jfif" width="100%" height="100%"></div>
             </div>
-            <div class="container_cards" id="container_cards">
-                <div id="title">Title</div>
+            <div class="paddin_content" id="container_cards">
+                <div id="title">Desing web</div>
                 <div id="content">Content</div>
                 <div id="imgs" class="card_css"><img src="./Recursos/Img/ilustracion.jfif" width="100%" height="100%"></div>
             </div>
-            <div class="container_video" id="container_video">
-                <div id="Video"><video controls controlslist="nodownload" muted autoplay src="./Recursos/Video/Videoruva.mp4" type="video/mp4" width="100%" height="100%"></video></div>
+            <div class="paddin_content" id="container_video">
+                <div id="Video"><video controlslist="nodownload" muted src="./Recursos/Video/Videoruva.mp4" type="video/mp4" width="100%" height="100%"></video></div>
             </div>
     </section>
     <!-- Sección del formulario -->
-    <section>
-        
+    <section id="Section_form" class="paddin_content">
+        <h3>Contac us</h3>
+        <div class="paddin_content" id="dates_form">
+            <input type="text" name="nombre" id="nombre" placeholder="Name">
+            <input type="text" name="telefono" id="telefono" placeholder="Phone">
+            <input type="text" name="correo" id="correo" placeholder="Email address">
+            <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+        </div>
+        <div class="dates_form2" id="dates_form2">
+            <img src="./Recursos/Img/7.png" width="270" height="300">
+            <button>Enviar</button>
+        </div>
     </section>
-    <img src="./Recursos/Img/banner.png" width="100%" height="100%">
+    <section class="footer" id="footer">
+        <a href="https://www.instagram.com/ruvagraphic/">
+            <img src="./Recursos/Img/intg.png" width="50" height="50"> @RuvaGraphic
+        </a>
+    </section>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
 <script src="./js/app.js"></script>
 </body>
 </html>

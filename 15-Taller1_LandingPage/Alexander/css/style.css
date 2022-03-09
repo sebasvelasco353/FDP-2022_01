@@ -1,18 +1,38 @@
 body{
     padding: 0px;
     margin: 0px;
+    background-color: #C8D6E8;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+a{
+    text-decoration: none;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: white;
+    font-size: large;
+}
+input, textarea, button{
+    border: none;
+    border-radius: 12px;
+    margin: 6px;
+    padding: 12px;
+}
+h1{
+    color: white;
 }
 h3{
     padding: 10px;
     margin: 0px;
+    grid-column-start: 1;
+    grid-column-end: 3;
 }
 #Sect_menu{
     display: grid;
     grid-template-columns: 50% 50%;
-    background-color: white;
-    opacity: 0.9;
+    background-color: #3165A8;
     width: 100%;
-    position: fixed;
+    position: sticky;
+    top: 0px;
 }
 #sect_info_about_us, #sect_info_ourwork{
     text-align: center; 
@@ -22,10 +42,16 @@ h3{
     padding-right: 230px;
     padding-bottom: 20px;
 }
-#second_Column{
+#firts_Column{
     display: flex;
     flex-direction: row;
-    align-items: center;   
+    align-items: center;
+    padding: 10px 24px;
+}
+#second_Column{
+    display: flex;
+    justify-content: center;
+    align-self: center;
 }
 #card_structure_title{
     background-color: chocolate;
@@ -34,10 +60,6 @@ h3{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 20% 1fr;
-    margin-left: 12%;
-    margin-right: 12%;
-    margin-bottom: 3%;
-    margin-top: 2%;
 }
 #title{
     background-color:burlywood;
@@ -49,10 +71,26 @@ h3{
     background-color:blue;
 }
 #container_video{
-    margin-left: 12%;
-    margin-right: 12%;
-    margin-bottom: 3%;
-    margin-top: 2%;
-    justify-content: center;
-    background-color:gold;
+    justify-content: center;    
+}
+#Section_form{
+    display: grid;
+    grid-template-columns: 60% auto;
+    text-align: center;
+    margin: 10px 32px;
+}
+#dates_form{
+    display: flex;
+    flex-direction: column;
+} 
+#footer{
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: #3165A8;
+    padding: 16px;
+    text-align: center;
+}
+#dates_form2{
+    display: flex;
+    flex-direction: column;
 }
