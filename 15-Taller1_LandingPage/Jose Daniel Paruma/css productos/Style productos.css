@@ -1,0 +1,165 @@
+body,html{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+    font-family: sans-serif;
+}
+
+:root {
+    --panel-width:calc(100% / 6);
+    --darkblue: #02020c;
+    --white: #fff;
+    --lightgray: #fafafb;
+}
+
+nav{
+    background-color: lightgray;
+    height: 50px;
+    border: solid lightgray;
+}
+
+nav ul li{
+    float: left;
+    justify-content: center;
+    list-style: none;
+    margin: 10px;
+    line-height: 10px;
+}
+
+.hero-funko{
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+    background: url(Funko1.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.hero-figuras{
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+    background: url(Juguetes\ tiny.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.hero-Poster{
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+    background: url(Poster.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.hero-Masproductos{
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+    background: url(Masproductos.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: rgb(255, 6, 6);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.container h1{
+    font-size: 72px;
+    letter-spacing: 0.2rem;
+
+}
+
+.container h1 span{
+    border: 10px solid white;
+    padding: 6px 14px;
+    display: inline-block;
+}
+
+.Subtitulos{
+    font-size: 30px;
+    text-align: center;
+}
+
+.des{
+    margin: 20px;
+    display: block;
+    font-size: 26px;
+    text-shadow: 0 0 10px black;
+}
+
+.btn{
+    color: #313131;
+    padding: 10px 24px;
+    font-size: 20px;
+    text-decoration: none;
+    background: #f1f1f194;
+    border-radius: 8px;
+    transition: 0.3s all;
+}
+
+.btn:hover{
+    opacity: 0.8;
+}
+
+.imgQuienessomos{
+    float: left;
+    width: 500px;
+    height: 500px;
+    border: solid black;
+    
+}
+
+.imgUbicacion{
+    float: left;
+    width: 500px;
+    height: 500px;
+    border: solid black;
+}
+
+
+.margin{
+    margin-top: 10px;
+    
+}
+
+.Quienessomos{
+    display: grid;
+    grid-template-columns: 40% auto;
+    background-color: lightgrey;
+}
+    
+.Quienessomos > *{
+    display: flex;
+    justify-content: top;
+    align-items: top;
+}
+
+.Ubicacion{     
+    display: grid;
+    grid-template-columns: 40% auto;
+    background-color: lightgrey;
+}
+    
+.Ubicacion > *{
+    display: flex;
+    justify-content: top;
+    align-items: top;
+}
+
+.texto{
+    padding: 10px;}
+
+.clearfix{
+    clear: both;
+}
+
+.footer{
+    margin: 20px;
+}

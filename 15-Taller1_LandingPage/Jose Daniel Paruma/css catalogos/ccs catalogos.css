@@ -1,0 +1,43 @@
+body{
+    background: #444;
+    margin: 0;
+    font-family: monospace;
+}
+
+h1{
+    color: #fff;
+    text-align: center;
+    font-size: 50px;
+}
+
+.imgfunko{
+    width: 40%;
+    margin: auto;
+    list-style: none;
+    padding: 30px;
+    box-sizing: border-box;
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+.margin{
+    margin-top: 10px;
+    
+}
+
+.page-header{
+        background-color: lightgray;
+        height: 90px;
+        border: solid black;
+        font-size: 20px;
+        display: flex;
+        }
+
+
+
+
+
+
