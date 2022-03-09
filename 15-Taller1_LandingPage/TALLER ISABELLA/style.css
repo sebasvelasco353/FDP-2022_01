@@ -17,11 +17,11 @@ header{
 }
 
 header.abajo{
-    background: #fff;
+    background: #0B1E23;
     padding: 15px 20px;
 }
 .Logo{
-    color:#e6e6e6;
+    color:#ffffff;
     text-decoration: none;
     font-size: 40px;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -51,7 +51,7 @@ header ul li a{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0  15px;
     text-decoration: none;
-    color:#D9D9D9;
+    color:#0B1E23;
     letter-spacing: 2px;
     font-weight: 200;
     transition: 0.7s;
@@ -94,8 +94,9 @@ nav{
 
 }
 .menuhorizontal > li:hover{
-    background-color:#152b31;
     
+    
+    background-color: #15323a;
     border-radius: 10px;
 
 }
@@ -105,14 +106,14 @@ nav{
     display: none;
     list-style: none;
     width: 200px;
-    background-color: rgba(0, 0, 0, .5);
+    background-color: rgba(179, 149, 149, 0.5);
     border-radius: 10px;
     
 }
 
 .menuhorizontal li:hover .menuvertical{
     display: block;
-    background-color: #152b31;
+    background-color: #15323a;
 
     
     
@@ -124,8 +125,8 @@ nav{
 }
 .menuvertical li a{
     display: block;
-    color: #fff;
-    color: #06171b;
+    
+    
     
     padding: 10px 10px 10px 15px;
     border-radius: 10px;
@@ -178,7 +179,7 @@ body{
     width: 700px;
     height: 680px;
     backdrop-filter: blur(1rem);
-    
+
     color: #fff;
 
 } 
@@ -189,7 +190,7 @@ body{
 
 }
 .card h4{
-    color: #D9D9D9;
+    color: #06171b;
 }
 
 .card h2{
@@ -204,6 +205,7 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    
 
 } 
 .top-row i{
@@ -231,7 +233,27 @@ body{
     padding: 10px 15px ;
     letter-spacing: 3px;
     align-self: flex-start;
+    
 }
+/*BORTÓN VER MÁS*/
+
+.background-top-row{
+
+    background-color: #fff;
+    color: #06171b;
+
+}
+
+.background-top-row:hover{
+
+    background-color: #15323a;
+    color: #fff;
+}
+
+
+
+
+
 /*CARDS SEGUNDAS*/
 
 .bcca{
@@ -335,7 +357,7 @@ p{
 
 .form__cta:hover{
     color: white;
-    background-color: #aa8a8a;
+    background-color: #0B1E23;
 }
 
 
@@ -468,12 +490,18 @@ footer{
     color: #fff;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
-    
-    
-    
-    
+    text-decoration: underline;
 
+
+    
 }
+
+.boton{
+    color: #fff;
+}
+    
+/*ABOUT US*/
+
 
 .titulo_us{
     font-size: 30px;
@@ -507,6 +535,8 @@ footer{
     background-color: #122E34;
     padding-top: 15px;
 }
+
+
 
 
 
