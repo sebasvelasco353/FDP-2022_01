@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Clínico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="form_user" class="form_user">
+        <!--Grupo Nombre-->
+        <div id="group_name" class="group_name">
+            <label for="form_input_name" class="form_label">Nombre</label>
+            <div class="form_group_name">
+                <input type="text" class="form_group_input" id="form_input_name" placeholder="Ingresa tu nombre">
+            </div>
+        </div>
+        <!--Grupo Apellido-->
+        <div id="group_lastname" class="group_lastname">
+            <label for="form_input_lastname" class="form_label">Apellido</label>
+            <div class="form_group_lastname">
+                <input type="text" class="form_group_input" id="form_input_lastname" placeholder="Ingresa tu apellido">
+            </div>
+        </div>
+        <!--Grupo Estatura-->
+        <div id="group_height" class="group_height">
+            <label for="form_input_height" class="form_label">Estatura</label>
+            <div class="form_group_height">
+                <input type="number" class="form_group_input" id="form_input_height" placeholder="Ingresa tu estatura en centímetros">
+            </div>
+        </div>
+        <!--Grupo Edad-->
+        <div id="group_year" class="group_year">
+            <label for="form_input_year" class="form_label">Edad</label>
+            <div class="form_group_year">
+                <input type="number" class="form_group_input" id="form_input_year" placeholder="Ingresa tu edad">
+            </div>
+        </div>
+        <!--Grupo Nacionalidad-->
+        <div id="group_country" class="group_country">
+            <label for="input_country" class="form_label">Nacionalidad</label>
+            <div class="form_group_conutry">
+                <select name="input_country" id="input_country"></select>
+            </div>
+        </div>
+        <!--Grupo Tipo sangre-->
+        <div id="group_blood" class="group_blood">
+            <label for="input_blood" class="form_label">Tipo de sangre</label>
+            <div class="form_group_blood">
+                <select name="input_blood" id="input_blood"></select>
+            </div>
+        </div>
+        <!--Grupo Cirugias previas-->
+        <div id="group_ciruprev" class="group_ciruprev">
+            <label for="form_input_ciruprev" class="form_label">¿Cirugias previas?</label>
+            <div class="form_group_ciruprev">
+                <label for="option_yes_uno">Si</label>
+                <input type="radio" name="option" value="Si" id="option_yes_uno"></input>
+                <label for="option_no_uno">No</label>
+                <input type="radio" name="option" value="No" id="option_no_uno"></input>
+            </div>
+            <input type="text" class="cual_cirugia" id="cual_cirugia" placeholder="¿Que cirugia?">
+        </div>
+        <!--Grupo Fumador/a-->
+        <div id="group_smoker" class="group_smoker">
+            <label for="form_input_smoke" class="form_label">¿Fumas?</label>
+            <div class="form_group_smoke">
+                <label for="option_yes_dos">Si</label>  
+                <input type="radio" name="option_dos" value="Si" id="option_yes_dos"></input>
+                <label for="option_no_dos">No</label>
+                <input type="radio" name="option_dos" value="No" id="option_no_dos"></input>
+            </div>
+        </div>
+    </form>
+         <!--Grupo mensajes colesterol y azucar-->
+    <div class="msj_colesterol" id="msj_colesterol">
+        <h4>¿Te has realizado una prueba de colesterol y triglicéridos los ultimos 6 meses?</h4>
+        <label for="colesterol">Si</label>
+        <input type="radio" id="colesterol" name="option_tres"></input>
+        <label for="colesterol2">No</label>
+        <input type="radio" id="colesterol2" name="option_tres"></input>
+    </div>
+    <div class="msj_sugar" id="msj_sugarl">
+        <h4>¿Te has realizado una prueba de azucar los ultimos 3 meses?</h4>
+        <label for="sugar">Si</label>
+        <input type="radio" id="sugar" name="option_cuatro"></input>
+        <label for="sugar2">No</label>
+        <input type="radio" id="sugar2" name="option_cuatro"></input>
+    </div>
+        <!--botones-->
+    <div class="send" id="send"> 
+        <button id="sending" type="submit" onclick="selectEdad();">Siguiente</button>
+    </div>
+    <div class="send2" id="send2">
+    <button id="sending2" type="submit" onclick="date_inputs();">Enviar</button>
+    </div>
+    <!-- Datos finales del formulario -->
+<div class="datos_ingresados_principal" id="datos_ingresados_principal">
+    <div class="datos_ingresados" id="datos_ingresados">
+        <h4>¿Los datos ingresados son correctos?</h4>
+        <label for="name_final">Nombre:</label>
+        <input type="text" name="name" id="name_final" disabled></input>
+        <label for="name_final">Apellido:</label>
+        <input type="text" name="name" id="lastname_final" disabled></input>
+        <label for="name_final">Estatura:</label>
+        <input type="text" name="name" id="height_final" disabled></input>
+        <label for="name_final">Edad:</label>
+        <input type="text" name="name" id="year_final" disabled></input>
+        <label for="name_final">Nacionalidad:</label>
+        <input type="text" name="name" id="country_final" disabled></input>
+        <label for="name_final">Tipo de sangre:</label>
+        <input type="text" name="name" id="blood_final" disabled></input>
+        <label for="name_final">Cirugia previas:</label>
+        <input type="text" name="name" id="ciruprev_final" disabled></input>
+        <button type="button" id="button_reset" onclick="edit_form();">Editar</button>
+        <button type="submit" id="button_enviar" onclick="end_form();">Finalizar</button>
+    </div>
+</div>
+<div class="datos_enviados" id="datos_enviados">
+    <h3>¡Gracias por realizar el formulario tus datos han sido enviados correctamente!</h3>
+</div>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+:root {
+    /* Colores */
+    --light-blue: #d8e2dc;
+    --pink-blue: #e8e8e4;
+    --light-pink: #f8edeb;
+    --dark-pink: #fcd5ce;
+    --light-yellow: #ffd7ba;
+    --dark-yellow: #fec89a;
+    --dark-blue: #003049;
+
+    /* Espaciado */
+    --container-max-width: 1080px;
+}
