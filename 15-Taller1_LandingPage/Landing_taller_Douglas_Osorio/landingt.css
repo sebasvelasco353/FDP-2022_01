@@ -66,25 +66,27 @@ text-decoration: underline black;
     font-family: 'Outfit', sans-serif;
     margin-top: 100px;
     padding-top: 5rem;
+    font-size: 7rem;
 }
 .logo{
 color: white;
 font-family: 'Roboto', sans-serif;
 }
 .intro{
-    font-size: 1.2rem;
+    font-size: 2.5rem;
     color: white;
     display:flex;
     justify-content: space-around;
     font-family: 'Domine', serif;
     cursor: pointer;
     margin-top: 50px;
-
+    text-align: center;
+    margin-bottom: 400px;
 }
 .head-img{
     position: absolute;
     top: 150px;
-    left: 350px;
+    left: 340px;
     cursor: pointer;
 }
 .cartas{
@@ -95,5 +97,113 @@ font-family: 'Roboto', sans-serif;
     padding-left: 10%;
 }
 .vid{
-    border-radius: 15%;
+    border-radius: 10%;
+    display: flex;
+    justify-content: space-around;
+    margin: 5%;
+}
+.vid2{
+    border-radius:0%;
+    display: flex;
+    justify-content: space-around;
+    margin: 5%;
+}
+.carta{
+    background-color: #7F207A;
+    border-radius: 10%;
+    margin-right: 20%;
+    margin-left: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 5%;
+}
+.carta:hover{
+    background-color:  black   ;
+	transition: 1s ease;
+            filter: opacity(100%);
+            transform:scale(1.5);
+            overflow:hidden;
+}
+.titucont{
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Outfit', sans-serif;
+    font-size: 2.5rem;
+}
+.cardyo{
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Domine', serif;
+    padding: 5%;
+    font-size: 2rem;
+    text-align: center;
+}
+#naruto{
+cursor: pointer;
+}
+.seguir{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+.suscribe{
+    cursor: pointer;
+}
+.suscribe:hover{
+    background-color:  black   ;
+	transition: 1s ease;
+            filter: opacity(100%);
+            transform:scale(1.5);
+            overflow:hidden;
+}
+.fter{
+    margin-bottom: 50px;
+}
+.fot{
+    display: flex;
+    justify-content: space-around;
+    color: #7F207A;
+    font-size: 10rem;
+    font-family: 'Outfit', sans-serif;
+    cursor: pointer;
+    position: relative;
+}
+.fot:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #7F207A;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  .fot:hover:after { 
+    width: 50%; 
+    left: 23%; 
+  }
+.contact{
+    width: 100%;
+    height: auto;
+    background-color: #7F207A;
+    position: fixed;
+    bottom: -20%;
+    left: 0%;
+}
+.incont{
+    font-size: 2rem;
+    color: white;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: 'Domine', serif;
+    padding: 3rem;
+    padding-left: 15%;
+    padding-right: 20%;
 }
