@@ -28,6 +28,19 @@ gsap.from('.elementos', {duration:0.3, y: '-100%', opacity:0, delay: 0.5, })
 gsap.from('.aboutus', {duration:2, y:'-100', opacity: 0, delay: 0.5,})
 
 
+/*FEEDBACK*/
+
+function feedback(){
+    if (nombres.value===''|| apellidos.value==='' || correo.value===''|| correoo.value===''){
+        swal("", "Faltan campos por rellenar","warning");
+    }else{
+        swal({
+            title: "Tu mensaje ha sido enviado con éxito",
+            text: "Revisa tu correo",
+            icon: "success",
+            button: "¡Gracias!",
+            });
+    }}
 
 
 

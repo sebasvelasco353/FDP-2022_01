@@ -9,8 +9,9 @@
 
     <link rel="stylesheet" href="./style.css">
 
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
-
+    <script src="app.js" defer></script>
 
 </head>
 
@@ -58,7 +59,7 @@
     
 
 
-<script src="app.js" defer></script>
+
 
 
 
@@ -140,6 +141,8 @@
     </div>
 </form>
 
+
+
 <div class="container">
     <div class="card">
         <div class="top-row background-top-row">
@@ -198,9 +201,13 @@
     <input class="controls" type="text" name="nombres" id="nombres" placeholder  ="Escriba su Nombre">
     <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Escriba sus Apellidos">
     <input class="controls" type="email" name="correo" id="correo" placeholder="Escriba su Correo">
-    <input class="controls" type="password" name="correo" id="correo" placeholder="Escriba su Contraseña">
+    <input class="controls" type="password" name="correo" id="correoo" placeholder="Escriba su Contraseña">
     <p>Estoy de Acuerdo con <a href="#">Términos y Condiciones</a></p>
-    <input class="botons" type="submit" value="Registrar">
+    
+    <p id="feed">Se Han Enviado Tus Datos. Revisa Tu Correo.</p>
+    <p id="feedb"> Completa los Campos.</p>
+
+    <input class="botons" type="submit" value="Registrar" onclick="feedback()">
     <p><a href="#">¿Ya tengo una Cuenta?</a></p>
 </section>
 
