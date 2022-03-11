@@ -1,0 +1,310 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'poppins';
+}
+
+/*Header*/
+
+header { 
+  font-size: 12px;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+ul {
+  list-style: none;
+}
+
+.izquierdo,
+.derecho {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  z-index: -1;
+}
+
+.izquierdo {
+  background: #f0f0f0;
+  left: 0%;
+  width: 0%;
+}
+
+.derecho {
+  background: rgb(1, 1, 175);
+  right: 0%;
+  width: 100%;
+}
+
+.nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80px;
+  padding: 0 20px;
+}
+
+.nav ul li {
+  display: inline-block;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 8px;
+  font-weight: 600;
+  padding: 0 30px;
+}
+
+.nav .logo {
+  flex: 1;
+  font-size: 18px;
+  letter-spacing: 0;
+}
+
+.nav .menu {
+  flex: 1;
+  font-size: 18px;
+}
+
+.nav .collection {
+  flex: 1;
+}
+
+.nav .explore {
+  flex: 4;
+}
+
+.nav .search {
+  flex: 3;
+}
+
+.nav .profile {
+  flex: 0;
+}
+
+.nav .profile .img {
+  background-image: url('./img/profile.jpg');
+  background-position: 50%;
+  background-size: cover;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+
+.img-contenido {
+  position: absolute;
+  bottom: 0;
+  left: 180px;
+}
+
+.img-contenido {
+  background-image: url('./img/patinaje_0.jpg');
+  background-size: cover;
+  height: 550px;
+  width: 0;
+}
+
+.infor {
+  position: absolute;
+  bottom: 0;
+  left: 180px;
+  background: rgba(0, 0, 0, .8);
+  padding: 0 10px;
+}
+
+.infor ul li {
+  display: inline-block;
+  padding: 20px 25px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 8px;
+  font-weight: 600;
+}
+
+.infor i {
+  font-size: 18px;
+}
+
+.texto {
+  position: absolute;
+  top: 50%;
+  right: 100px;
+  transform: translateY(-50%);
+}
+
+.texto h1 {
+  font-size: 100px;
+  color: #fff;
+  font-family: 'Raiderfont';
+  text-transform: uppercase;
+}
+
+.texto p {
+  font-size: 12,5px;
+  color: #fff;
+  font-family: 'poppins';
+  text-transform: uppercase;
+  letter-spacing: 10px;
+}
+.name {
+  position: absolute;
+  top: 50%;
+  left: -270px;
+  transform: translateY(-50%);
+  font-size: 90px;
+  font-family: monospace;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 2px #fff;
+}
+
+.navegacion {
+  position: absolute;
+  bottom: 100px;
+  right: 100px;
+}
+
+.navegacion ul li {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 15px;
+  margin-top: 20px;
+}
+
+.navegacion ul li:nth-child(2) {
+  font-weight: bolder;
+}
+
+.navegacion ul li:nth-child(2)::before {
+  content: "";
+  display: inline-block;
+  border: 1px solid #fff; /*Barrita de menu*/
+  width: 65px;
+  margin: 0 10px 0 -78px;
+  transform: translateY(-3px);
+}
+
+
+/*Cards*/
+
+.productos {
+  text-align: center;
+  margin-top: 5vh;
+  color: rgb(1, 1, 175);
+  font-size: 7vh;
+}
+
+.patines {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 2vh;
+}
+
+.individual {
+  width: 30%;
+  margin-bottom: 10px;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+
+.individual > img {
+  width: 100%;
+  height: 40vh;
+  object-fit: cover;
+  display: block;
+}
+
+.descripcion-hover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  transform: scale(0);
+  background-color: #0b098ba6;
+  transition: transform .05s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.descripcion-hover p{
+  color: #ffffff;
+  margin: 20px;
+  margin-top: 10px;
+}
+
+.descripcion-hover h3{
+  color: #ffffff;
+  margin-top: 20px;
+}
+
+.individual:hover .descripcion-hover{
+  transform: scale(1);
+}
+
+button {
+  width: 30%;
+  background-color: rgb(1, 1, 175);
+  border-color: white;
+  border-radius: 20px;
+  text-align: center;
+  color: #ffffff;
+  font-size: medium;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding: 5px;
+}
+
+/* Forum*/
+
+.Formulario {
+  margin-top: 10vh;
+  width: 100%;
+  background-color: rgb(1, 1, 175);
+  padding-top: 5vh;
+  height: 80vh;
+}
+
+.Formulario h2 {
+  text-align: center;
+  color: #fff;
+  font-size: 7vh;
+}
+
+form{
+    height:auto;
+    width: 60%;
+    background-color: rgb(1, 1, 175);
+    padding-left: 10vh;
+    margin-top: 8vh;
+    box-sizing: border-box;
+    border-radius: 2px;
+    align-items: center;
+    margin-left: 20vw;
+}
+
+input, textarea{
+    width: 100%;
+    height: 7vh;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+textarea{
+    min-height: 100px;
+    max-width: 100%;
+    max-height: 250px;
+}
+
+.Enviar{
+  margin: 0 0;
+}
