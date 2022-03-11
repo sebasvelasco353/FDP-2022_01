@@ -1,7 +1,11 @@
 var ant="";
 var fid="";
 var antibug=0;
+var a=200;
 
+const conreturn = (a,b) =>{
+    return a*b
+    }
 const baseing = () => {
 let base = document.getElementById("recetario");
 base.innerText =`-Zanahoria.
@@ -53,15 +57,12 @@ const cocina = () =>{
     }     
 }   
 const precant = () =>{
-    var porcion= document.getElementById("porcion").value;
+    var b= document.getElementById("porcion").value;
 let ingcanti = document.getElementById("ingcant");
-    var zana = 1 * porcion;
-    var zapa= 200 * porcion;
-    var papa= 1 * porcion;
-    ingcanti.innerText =`la cantidad aproximada de ingredientes necesariospara cocinar ${porcion} porcion(es) son:
-    - Zanahoria(s): ${zana}
-    - Zapallo: ${zapa}g
-    - Papa(s): ${papa}
+    ingcanti.innerText =`la cantidad aproximada de ingredientes necesariospara cocinar ${b} porcion(es) son:
+    - Zanahoria(s): ${b}
+    - Zapallo: ${conreturn(a,b)} g
+    - Papa(s): ${b}
     - Condimentos al gusto`;
 }
 const showcant = () =>{
