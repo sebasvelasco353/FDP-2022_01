@@ -130,15 +130,29 @@
             </div>
         </section>
     </main>
-    <section class="Formulario" id="Formulario">
-        <form>
-            <input type="text" name="Nombre" id="Nombre" placeholder="Nombre"><br>
-            <input type="text" name="Teléfono" id="Teléfono" placeholder="Teléfono"><br>
-            <input type="text" name="Correo" id="Correo" placeholder="Correo electrónico"><br>
-            <textarea type="text" name="Mensaje" placeholder="Mensaje" id="Mensaje"></textarea>
-            <input type="button" class="Enviar" id="Enviar" value="Enviar" onclick="datos(), enviado()">
-        </form>
-    </section>
+    
+    <form action="" method="post" id="form">
+        <div class="form">
+            <h1>Formulario de registro</h1>
+            <div class="grupo">
+                <input type="text" name="" id="name" required><span class="barra"></span>
+                <label for="">Nombre</label>
+            </div>
+
+            <div class="grupo">
+                <input type="email" name="" id="email" required><span class="barra"></span>
+                <label for="">Email</label>
+        </div>
+
+        <div class="grupo">
+            <input type="Contraseña" name="" id="Contraseña" required><span class="barra"></span>
+            <label for="">Contraseña</label>
+        </div>
+    
+        <button type="submit">Suscribirse</button>
+        
+        </div>
+    </form>
 
     <swal-icon type="warning" color="purple"></swal-icon>
 
