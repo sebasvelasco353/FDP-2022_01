@@ -15,4 +15,7 @@ window.onscroll = function(){
     });
   });
 
-  
+ 
+  function alerta() {
+    alert("registrado correctamente");
+  }

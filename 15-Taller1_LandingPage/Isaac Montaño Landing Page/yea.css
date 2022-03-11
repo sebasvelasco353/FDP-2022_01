@@ -29,6 +29,7 @@
     background-color: snow;
     border: 2px solid gray;
     padding: 5px;
+    box-shadow: 7px 13px 37px cadetblue;
 }
 
 .card2 {
@@ -40,6 +41,7 @@
     background-color: snow;
     border: 2px solid gray;
     padding: 5px;
+    box-shadow: 7px 13px 37px cadetblue;
 }
 .card3 {
     grid-column-start: 3;
@@ -50,6 +52,7 @@
     background-color: snow;
     border: 2px solid gray;
     padding: 5px;
+    box-shadow: 7px 13px 37px cadetblue;
 }
 .textoN {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -194,4 +197,48 @@ html, body {
 	background: #ef8354;
 }
 
-/*pequeña prueba*/
+/*Formulario*/
+.Formulario {
+    width: 400px;
+    background: rgb(16, 9, 61);
+    padding: 30px;
+    margin: auto;
+    border-radius: 4px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: antiquewhite;
+    box-shadow: 7px 13px 37px cadetblue;
+}
+.Formulario h3 {
+    font-size: 200%;
+    margin-top: 5px;
+}
+.controles {
+    width: auto;
+    background: rgb(16, 9, 61);
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    border: 1px solid wheat;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+}
+
+.Formulario p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+}
+.Formulario a{
+    color: wheat;
+    text-decoration: underline;
+}
+.Formulario .btn {
+    width: 100%;
+    background: #2071b2;
+    border: none;
+    padding: 12px;
+    color: #fff;
+    margin: 16px 0;
+    font-size: 16px;
+}
