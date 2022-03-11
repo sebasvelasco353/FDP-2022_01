@@ -2,11 +2,34 @@
     
 }
 
-.cuser-data{
-    padding: 1em;
-    margin: 1em;
-    display: flex;
-    flex-direction: column;
-    gap: 1em 2em;
 
+
+.header-style{
+    padding:0;
+    margin:0;
+}
+
+.data{
+    background-color: white;
+}
+
+.userdata{
+    background-color: white;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) ;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 1em;
+}
+
+
+.error{
+    color: red;
+}
+
+.boxStyle{
+    background-color: white;
+    width: 10em;
+    
 }

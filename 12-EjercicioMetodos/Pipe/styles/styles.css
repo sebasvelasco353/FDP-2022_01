@@ -1,0 +1,56 @@
+
+*{
+    border: 1px solid red;
+}
+
+.header {
+    padding: 1em;
+    margin: 1em;
+    text-align: center;
+    background-color: rgb(50, 125, 128);
+    color: white;
+}
+
+.container{
+    max-width: 400px;
+    margin: 10vh auto 0 auto;
+}
+
+#valor{
+    text-align: right;
+    height: 70px;
+    line-height: 70px;
+    padding: 16px 8px;
+}
+
+.botones{
+    display: grid;
+    border-bottom: 1px rgb(50, 148, 110) ;
+    border-left: 1px rgb(50, 148, 110);
+    grid-template-columns: repeat(4, 1fr);
+
+}
+
+.botones > div {
+    border-top: 1px solid rgb(50, 148, 110);
+    border-right: 1px solid rgb(50, 148, 110);
+
+}
+
+.boton {
+    border: 0.5px solid rgb(50, 148, 110);
+    line-height: 100px;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+#equal {
+    background-color: rgb(50, 125, 128);
+    color: white;
+}
+
+.boton:hover{
+    background-color: gray;
+    color: white;
+}
