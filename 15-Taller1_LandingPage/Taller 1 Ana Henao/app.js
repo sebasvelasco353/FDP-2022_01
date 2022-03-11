@@ -46,12 +46,6 @@ TweenMax.from('.infor', 2, {
   ease: Circ.easeInOut
 })
 
-TweenMax.from('.name', 2, {
-  delay: 1.5,
-  x: -600,
-  ease: Circ.easeInOut
-})
-
 //cards
 
 gsap.from(".individual", .4, {
@@ -65,12 +59,6 @@ gsap.from(".individual", .4, {
 
 //Formulario
 
-gsap.from('.infor', {
-   duration: 1.5,
-   x:'-10%',
-   opacity: '0',
-   stagger:0.3,
-   scrollTrigger:'.infor'})
 
 gsap.from('#Formulario', {
   duration: 1.5,
