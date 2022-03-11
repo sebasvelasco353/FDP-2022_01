@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Librería Universal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light  fixed-top bg-light" style="background-color: lightgray">
+        <div class="container">
+            <a class="navbar-brand" href="#"> <img src="./Imagenes/LogoColor.png" alt="logocolor" width="120px"
+                    height="35px"> </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#biblioteca">Biblioteca </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contactus">Contact</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sign Up <i class="fas fa-user-plus"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#" tabindex="-1">Login <i class="fas fa-user"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="content" class="animate__animated animate__fadeIn">
+        <h3>Librería</h3>
+        <h1>Universal</h1>
+        <hr>
+
+        <button class="btn btn-lg btn-light" id="botondescuento"> Click to buy discount books!</button>
+    </div>
+
+    <div class="intro">
+        <div class="contenidointro" class="animate__animated animate__fadeInLeft">
+            <div class="textointro">
+                <h1 id="bestseller">Bestseller</h1>
+                <h2 id="nuestro">Nuestro</h2>
+                <p id="textobestseller">De la autora L.M. Montgomery, una novela clásica, apasionada, <br>
+                    Descubre más sobre Anne Shirley y Green Gables aquí.</p>
+            </div>
+            <img class="librointro" class="animate__animated animate__fadeInRight" src="./Imagenes/LibroIntro.png"
+                alt="Libro intro">
+            <button id="botoncomprar" class="animate__animated animate__fadeInLeft">Comprar</button>
+        </div>
+
+
+    </div>
+
+
+    </div>
+    <div class="contentTable" style="margin-top: 40px; margin-bottom: 40px;">
+        <table style="margin-top: 30px;">
+            <div id="h3card" class="animate__animated animate__slideInUp">>
+                <h3>Tenemos una selección de más de 3000 libros</h3>
+                <p id="pcard">Solo debes escoger y disfrutar</p>
+            </div>
+            <td>
+                <div class="card" id="biblioteca" style="width: 18rem;">
+                    <div class="card-header">
+                        Novelas
+                    </div>
+                    <img src="./Imagenes/origenBook.png" width="150px" alt="origen book"> <br> <br>
+                    <div>
+                        <p>Difruta las novelas y sagas de tus autores favoritos. </p> <br>
+                        <button class="vermas">Ver biblioteca</button>
+                    </div>
+                    <br>
+
+                </div>
+            </td>
+            <td>
+                <div class="card" style="width: 18rem; margin-left: 30px;">
+                    <div class="card-header">
+                        Comics
+                    </div>
+                    <img src="./Imagenes/comicBook.png" width="160px" alt="comicBook"> <br> <br>
+                    <div>
+                        <p>Emociónate con tus superhéroes y villanos favoritos. </p> <br>
+                        <button class="vermas">Ver biblioteca</button>
+                    </div>
+                    <br>
+
+                </div>
+            </td>
+            <td>
+                <div class="card" style="width: 18rem; margin-left: 30px;">
+                    <div class="card-header">
+                        Manga
+                    </div>
+                    <br><br>
+                    <img src="./Imagenes/mangaBook.png" width="160px" alt="mangabook"> <br><br>
+                    <div>
+                        <p>Vive una montaña rusa de emociones con las aventuras de los personajes. </p> <br>
+                        <button class="vermas">Ver biblioteca</button>
+                    </div>
+                    <br>
+                </div>
+            </td>
+        </table>
+    </div>
+
+    <div>
+        <section id="contactus">
+            <div class=" d-flex flex-column">
+                <div class="container d-flex flex-column" class="animate__animated animate__heartBeat">
+                    <h2 id="textcontainercontact" style=" margin-top: 40px; text-align: center;">Contact us</h2>
+                    <hr id="hrcontactus">
+                </div>
+
+                <div class="container" id="containercontact" style="margin-top: 40px; margin-bottom: 40px;">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address </label>
+                            <input type="text" class="form-control" id="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="text" class="form-control" id="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message </label>
+                            <input type="text" class="form-control" id="message" style="margin-top: 10px;">
+                        </div>
+
+                        <div class="submit" id="submitbuttom">
+                            <input type="button" value="Save" onclick="datos()">
+                        </div>
+                        <br><br><br>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+
+
+    <script src="app.js"></script>
+    <script src="animations.js"></script>
+</body>
+
+</html>
