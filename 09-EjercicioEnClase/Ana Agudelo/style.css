@@ -6,6 +6,7 @@
 body {
     margin: 0;
     font-family: sans-serif;
+    margin-bottom: 50px;
 }
 
 .formulario_titulo {
@@ -51,6 +52,11 @@ p {
     
 }
 
+.preguntas {
+    margin: 20px;
+    text-align: left;
+}
+
 .formulario_input, .formulario_select {
     margin-bottom: 5px;
     color: rgb(43, 42, 42);
@@ -70,10 +76,16 @@ p {
     font-weight: bold;
 }
 
+.Botones {
+    margin-left: 2%;
+    margin-top: 20px;
+}
+
 .guessSubmit {
     
     display: inline-block;
-    width: 100%;
+    margin-left: 10px;
+    width: 45%;
     height: 40px;
     border: none;
     border-radius: 20px;
@@ -82,4 +94,8 @@ p {
     font-size: 1.2rem;
     font-weight: bold;
 
+}
+
+#pColesterol, #pAzucar {
+    display: none;
 }

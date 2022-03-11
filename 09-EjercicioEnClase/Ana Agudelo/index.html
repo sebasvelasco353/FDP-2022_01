@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="robots" content="noindex, nofollow">
         <link rel="stylesheet" href="style.css">  
-        <title>Un primer acercamiento a JavaScript - top_hidden_code - code sample</title>
+        <title>Formulario</title>
     </head>
 
     <body>
@@ -15,66 +15,85 @@
 
         <p>Bienvenidos a la nueva forma de actualizar datos</p>
 
-        <div class="formulario">
+        <div class="formulario" id="formulario">
 
             <section class="datos">
                 <section class="datos_hijo">
-                    <label for="" class="formulario_label">Nombre/s</label>
+                    <label for="nombre" class="formulario_label">Nombre/s</label>
                     <input type="text" class="formulario_input" id="nombre">
                 </section>
                 <section class="datos_hijo">
-                    <label for="" class="formulario_label">Apellidos</label>
+                    <label for="apellido" class="formulario_label">Apellidos</label>
                     <input type="text" class="formulario_input" id="apellido">
                 </section>
             </section>
 
             <section class="datos">
                 <section class="datos_hijo">
-                    <label for="" class="formulario_label">Estatura</label>
+                    <label for="estatura" class="formulario_label">Estatura</label>
                     <input type="number" step="0.01" class="formulario_input" id="estatura">
                 </section>
                 
                 <section class="datos_hijo">
-                    <label for="" class="formulario_label">Fumador/a</label>
-                    <section class="formulario_select" id="fuma">
-                    <input type="radio" id="si" name="fuma" value="si">
-                        <label for="fuma">Sí</label>
-                    <input type="radio" id="no" name="fuma" value="no" checked>
-                        <label for="fuma">No</label>
+                    <label for="fumador" class="formulario_label">Fumador/a</label>
+                    <section class="formulario_select">
+                        <input type="radio" name="Fumador" value="Sí" id="fumador">
+                        <label for="Sí">Sí</label>
+                        <input type="radio" name="Fumador" value="No" id="fumador">
+                        <label for="No">No</label>
                     </section>
                 </section>
             </section>
 
             <section class="datos">
                 <section class="datos_hijo">
-                    <label for="guessField">Edad: </label>
-                    <input type="number" id="guessField" class="formulario_input">
+                    <label for="edad">Edad: </label>
+                    <input type="number" class="formulario_input" name="Edad" id="edad" onchange="mostrarPreguntas()">
                 </section>
-    
+                    
                 <section class="datos_hijo">
-                    <label for="" class="formulario_label">Nacionalidad</label>
+                    <label for="paises" class="formulario_label">Nacionalidad</label>
                     <select class="dropbox" name="nacionalidad" id="Nacionalidad"></select>
                 </section>
             </section>
 
+            <section id="pColesterol" class="formulario_select preguntas">
+                <label for="pregunta1">¿Se ha realizado pruebas de colesterol y triglicéridos en los últimos 6 meses?</label>
+                <br><input type="radio" name="Colesterol" id="Colesterol" value="Sí">
+                <label for="si">Sí</label>
+                <input type="radio" name="Colesterol" id="Colesterol" value="No">
+                <label for="no">No</label>
+            </section>
+
+            <section id="pAzucar" class="formulario_select preguntas">
+                <label for="pregunta2">¿Se ha realizado pruebas de azúcar en los últimos 3 meses?</label>
+                <br><input type="radio" name="Azucar" id="Azucar" value="Sí">
+                <label for="si">Sí</label>
+                <input type="radio" name="Azucar" id="Azucar" value="No">
+                <label for="no">No</label>
+            </section>
+
             <section class="datos">
                 <section class="datos_hijo">
-                    <label for="" class="formulario_label">Grupo Sanguíneo</label>
+                    <label for="sangre" class="formulario_label">Grupo Sanguíneo</label>
                     <select class="dropbox" name="sangre" id="sangre"></select>
                 </section>
     
                 <section class="datos_hijo">              
-                    <label for="" class="formulario_label">Cirugías recientes</label>
+                    <label for="cirugia" class="formulario_label">Cirugías recientes</label>
                     <section class="formulario_select">
-                        <input type="radio" id="si" name="cirugia" value="si" checked>
-                            <label for="fuma">Sí</label>
-                        <input type="radio" id="no" name="cirugia" value="no" checked>
-                            <label for="cirugia">No</label>
+                        <input type="radio" name="Cirugías" value="Sí" id="Cirugías">
+                        <label for="Sí">Sí</label>
+                        <input type="radio" name="Cirugías" value="No" id="Cirugías">
+                        <label for="No">No</label>
                     </section>
                 </section>
             </section>
 
-            <input type="submit" onclick="handleClick(event)" value="Enviar respuesta" class="guessSubmit">
+            <section class="Botones">
+                <input type="submit" class="guessSubmit" onclick="handleClick()"></input>
+                <input type="reset" class="guessSubmit" onclick="limpiarForum()"></input>
+            </section>
         </div>
 
         <script src="main.js"></script>

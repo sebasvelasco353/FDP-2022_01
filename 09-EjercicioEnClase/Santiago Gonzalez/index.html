@@ -54,10 +54,10 @@
 
 </form>
 
-<label>Edad</label><input type="number" name="edad" id="edad" onclick="CholesterolTest()" onclick="PruebaAzucar()"><br>
+<label>Edad</label><input type="number" name="edad" id="edad" onchange="CholesterolTest()"><br>
 
 <div id="colesterol">
-    <label for="">¿Se ha realizado pruebas de colesterol y triglicéridos en los ultimos 6 meses?</label><br>
+    <label>¿Se ha realizado pruebas de colesterol y triglicéridos en los ultimos 6 meses?</label><br>
     <input type="radio" name="" id="TestC" value="Sí">
     <label for="TestC">Sí</label>
     <input type="radio" name="" id="TestC" value="No">
@@ -65,7 +65,7 @@
 </div>
 
 <div id="azucar">
-    <label for="">¿Se ha realizado pruebas de Azucar en los ultimos 3 meses?</label><br>
+    <label>¿Se ha realizado pruebas de Azucar en los ultimos 3 meses?</label><br>
     <input type="radio" name="" id="TestA" value="Sí">
     <label for="TestA">Sí</label>
     <input type="radio" name="" id="TestA" value="No">
@@ -79,13 +79,19 @@
         </select>
         <br>
 
-            <label for="">Nacionalidad</label>
+            <label>Nacionalidad</label>
             <select name="Nacionalidad" id="Nacionalidad"></select>
             
           
         <br>
       
-        <label>Cirugías anteriores</label><input type="text" name="Cirugias" id="cirugias">
+    <label>Cirugías anteriores</label>
+    <form>
+    <input type="radio" name="Cirugias" id="cirugias" value="Sí">
+    <label for="html">Sí</label>
+    <input type="radio" name="Cirugias" id="cirugias" value="No">
+    <label for="html">No</label>
+    </form>
 
     
         <button id="submit" type="button" class="buttonSubmit" onclick="handleClick()"> Enviar</button>
