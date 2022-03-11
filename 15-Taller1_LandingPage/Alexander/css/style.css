@@ -5,11 +5,16 @@ body{
     font-family: Georgia, 'Times New Roman', Times, serif
 }
 a{
-    text-decoration: none;
+    text-decoration: dashed;
     margin-left: 20px;
     margin-right: 20px;
     color: white;
     font-size: large;
+}
+a:hover{
+    text-decoration: underline;
+    text-decoration-color: black;
+    color: black;
 }
 input, textarea, button{
     border: none;
@@ -25,7 +30,7 @@ h3{
     margin: 0px;
     grid-column-start: 1;
     grid-column-end: 3;
-    background-color: #2d5b97;
+    background-color: #3165A8;
     color: white;
 }
 #Sect_menu{
@@ -70,7 +75,9 @@ h3{
     background-color:#3165A8;
 }
 #content{
-    background-color:chartreuse
+    background-color:#5e94da;
+    color: #ffffff;
+    padding: 12% 12%;
 }
 #imgs{
     background-color:blue;
@@ -126,4 +133,7 @@ h3{
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button { 
   -webkit-appearance: none; 
+}
+.send_button:hover{
+    background-color: #a8a8a8;
 }
