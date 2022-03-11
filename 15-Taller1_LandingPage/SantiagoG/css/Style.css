@@ -10,16 +10,43 @@ header{
     width: 100%;
     height: 40rem;
     margin: 0;
-    background-color: aquamarine;
     
 }
 
 .HeaderDivLeft{
     display: flex;
+    flex-direction: column;
     width: 50%;
     height: 40rem;
     margin: 0;
-    background-color: aqua;
+    background-color: gray;
+}
+
+.LogoHeader{
+    width: 15rem;
+    height: auto;
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+
+.HeaderDivLeft button{
+    width: 25%;
+    margin-left: 35%;
+    margin-top: 15%;
+    border: none;
+    padding: 1rem;
+    text-align: center;
+    color: white;
+    background-color: black;
+    display: inline-block;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    border-radius: 1rem;
+}
+
+.HeaderDivLeft button a{
+    text-decoration: none;
+    color: white;
 }
 
 .HeaderDivRight{
@@ -27,13 +54,82 @@ header{
     width: 50%;
     height: 40rem;
     margin: 0;
-    background-color: aqua;
+    background-color: black;
+
 }
 
 .DivNav{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
     width: 100%;
     height: 3rem;
-    background-color: brown;
+    background-color: black;
+}
+
+.ImgNav{
+    margin-left: 20rem;
+}
+
+.navegador{
+    list-style: none;
+    font-family: Helvetica;
+    margin-left: 18%;
+    margin-top: 0.8rem;
+    
+}
+
+.navegador li{
+    display: inline-block;
+}
+
+.navegador li a{
+    margin: 3rem;
+    text-decoration: none;
+    color: white;
+}
+
+.DivBienvenida{
+    display: flex;
+    flex-direction: row;
+    background-color: aqua;
+    width: 100%;
+    height: 20rem;
+    margin-top: 3rem;
+}
+
+.ImgBienv{
+    display: flex;
+    flex-direction: row;
+    float: right;
+    width: 30rem;
+    margin-left: 15rem;
+}
+
+.BienvText{
+    margin-top: 5rem;
+    margin-left: 5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.BienvText > h2{
+    font-size: 1.2rem;
+}
+
+.ButtonBienv{
+    border: none;
+    padding: 1rem;
+    text-align: center;
+    background-color: black;
+    display: inline-block;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    border-radius: 1rem;
+}
+
+.ButtonBienv a{
+    text-decoration: none;
+    color: white;
 }
 
 footer{
