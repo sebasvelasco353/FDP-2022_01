@@ -202,7 +202,10 @@ html, body {
     width: 400px;
     background: rgb(16, 9, 61);
     padding: 30px;
-    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
     border-radius: 4px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: antiquewhite;
@@ -221,6 +224,7 @@ html, body {
     border: 1px solid wheat;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 15px;
+    color: #fff;
 }
 
 .Formulario p {
@@ -241,4 +245,5 @@ html, body {
     color: #fff;
     margin: 16px 0;
     font-size: 16px;
+    align-items: center;
 }
