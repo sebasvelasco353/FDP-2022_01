@@ -49,11 +49,18 @@ form.addEventListener("submit", e=>{
         warnings += `La contraseña no es valida <br>`
         entrar = true
     }
-
     if(entrar){
         parrafo.innerHTML = warnings
     }else{
         parrafo.innerHTML = "Enviado correctamente"
     }
 })
+ 
+    function Datosform() {
 
+    if (document.getElementById("Nombre").value===''|| document.getElementById("Email").value==='' || document.getElementById("Contraseña").value===''){
+        alert("Error hay un error en los datos enviados")
+    }else{
+        alert("Los datos de enviaron correctamente");
+    }
+}
