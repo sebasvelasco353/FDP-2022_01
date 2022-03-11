@@ -73,18 +73,17 @@ function Receta1() {
     
 
 function Receta2() {
-        Pasos.innerHTML = Espresso + Enter + Hielo + Enter + Sirope + 'vainilla.' + Enter + Sirope + 'caramelo.' + Enter + Espuma + Enter + Leche + Revolver + Enter + Disfrutar;
-    }
+    Pasos.innerHTML = Espresso + Enter + Hielo + Enter + Sirope + 'vainilla.' + Enter + Sirope + 'caramelo.' + Enter + Espuma + Enter + Leche + Revolver + Enter + Disfrutar;
+}
    
 
 function Receta3() {
-        Pasos.innerHTML = Sirope + 'vainilla.' + Enter + Espresso + Enter + Espuma + Enter + Leche + Enter + Disfrutar;
-    }
-    
+    Pasos.innerHTML = Sirope + 'vainilla.' + Enter + Espresso + Enter + Espuma + Enter + Leche + Enter + Disfrutar;
+}
 
-if (document.getElementById(Receta1).style.display === "block") {
-    document.getElementById(Receta2).style.display = "none";
-    document.getElementById(Receta3).style.display = "none";
+const Comprobante = (e) => {
+    let text = "Este texto es para comprobar que sé como funciona un return";
+    return text; 
 }
 
 function Volver() {
