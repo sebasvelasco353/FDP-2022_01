@@ -26,13 +26,20 @@
     grid-row-start: 1;
     grid-row-end: 2;
     margin: 1em;
+    background-color: snow;
+    border: 2px solid gray;
+    padding: 5px;
 }
+
 .card2 {
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 2;
     margin: 1em;
+    background-color: snow;
+    border: 2px solid gray;
+    padding: 5px;
 }
 .card3 {
     grid-column-start: 3;
@@ -40,6 +47,9 @@
     grid-row-start: 1;
     grid-row-end: 2;
     margin: 1em;
+    background-color: snow;
+    border: 2px solid gray;
+    padding: 5px;
 }
 .textoN {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -153,6 +163,8 @@ html, body {
         height: 6.6rem;
     }
 }
+
+
 
 /*Menu superior*/
 
