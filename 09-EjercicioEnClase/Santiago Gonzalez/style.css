@@ -1,0 +1,132 @@
+body{
+    margin: 0;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100px;
+    padding: 1rem 1.5rem;
+    margin: 0;
+    background-color: white;
+    
+}
+
+.ImgLogo{
+     margin-left: 20rem;
+
+}
+
+header > h1{
+    text-align: right;
+    margin-left: 1rem;
+    margin-top: 2.5rem;
+    font-family: sans-serif;
+    font-size: 15px;
+    color: green;
+}
+
+.ImgUbicacion{
+    margin-left: 5rem;
+    margin-top: 1rem;
+    
+    height: 80px;
+    width: auto;
+
+}
+
+.direccion{
+    font-family: sans-serif;
+    margin-top: 2rem;
+    font-size: 15px;
+    color: green;
+}
+
+.divnav{
+    display: flex;
+    flex-direction: row;
+    background-color: green;
+    width: 100%;
+    height: 45px;
+}
+
+.ImgMedico2{
+    
+    position: absolute;
+    height: auto;
+    width: 35rem;
+    margin-left: 70%;
+    margin-top: 25%;
+
+}
+.TextBox{
+   position: absolute;
+   
+   height: 67rem;
+   width: 50%;
+   background-color: #24763F;
+}
+
+.secciongris{
+    background-color: #ECECEC;
+    width: 100%;
+    
+    height: 67rem;
+}
+
+.LineaBajo{
+    margin-top: 0;
+    padding: 0;
+    width: 100%;
+    height: 10px;
+    background-color: green;
+    
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    padding: 2rem 3rem;
+
+    margin: 5rem auto;
+    text-align: justify;
+    background-color: #ECECEC;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+    
+}
+input{
+    box-sizing: border-box;
+    line-height: normal;
+    background: transparent;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    
+}
+
+.buttonSubmit{
+    width: 50%;
+    background: #24763F;
+    color: #ECECEC;
+    margin-top: 10px;
+}
+
+.buttonReset{
+    width: 50%;
+    margin-left: 50%;
+    margin-top: -21px;
+    background: blue;
+    color: #ECECEC;
+}
+
+#colesterol{
+    display: none;
+}
+
+#azucar{
+    display: none;
+}

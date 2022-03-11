@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Formulario Clinico</title>
+    
+</head>
+<body>
+    <header>
+        <div class="Textosheader">
+            <h1>Registro de datos </h1>
+        </div>
+            <nav>
+                <ul>
+                    <li><a href="#"> Inicio </a></li>
+                    <li><a href="#"> Contactos </a></li>
+                    <li><a href="#"> Servicios</a></li>
+                    <li><a href="#"> Instalaciones</a></li>
+                </ul>
+            </nav>
+    </header>
+    <div class="Contenido">
+        <div class="Consigna">
+            <p>A raíz de la necesidad de crear una base de datos para nuestros usuarios 
+            y su información, se plantea la siguiente plataforma:</p>
+        </div>
+    <br>
+    <div class="Formulario">
+        <label>Nombre</label>
+            <input type="text" name="Name" value="" id="Nombre"> <br>
+        <label>Apellido</label>
+            <input type="text" name="Apellido" id="Apellido"> <br>
+        <label>Estatura</label>
+            <input type="number" step="0.01" name="Estatura" id="Estatura">
+    <div class="Radio">
+        <label>¿Fumador?</label>
+            <input type="text" name="Fumador" value="Sí" id="Fumador">
+        <label for="Sí">Sí</label>
+            <input type="radio" name="Fumador" value="No" id="Fumador">
+        <label for="No">No</label>
+    </div>
+            <br>
+        <label>Edad</label>
+            <input type="number" name="Edad" id="Edad" onchange="AnotherQ()">
+
+            <div id="ColesterolQ">
+                <label>¿Se ha realizando pruebas de colesterol y triglicéridos en los últimos 6 meses?</label>
+                <input type="radio" name="Colesterol" id="Colesterol" value="Sí">
+                <label>Sí</label>
+                <input type="radio" name="Colesterol" id="Colesterol" value="No">
+                <label>No</label>
+            </div>
+
+            <div id="AzucarQ">
+                <label>¿Se ha realizado pruebas de azúcar en los últimos 3 meses?</label>
+                <input type="radio" name="Azucar" id="Azucar" value="Sí">
+                <label>Sí</label>
+                <input type="radio" name="Azucar" id="Azucar" value="No">
+                <label>No</label>
+            </div>
+            <br>
+        <label>Nacionalidad</label>
+            <select name="Nacionalidad" id="Nacionalidad"></select> <br>
+        <label>Grupo sanguíneo</label>
+            <select name="RH" id="RH"></select> <br>
+    <div class="Radio">
+        <label>¿Cirugías?</label>
+            <input type="radio" name="Cirugías" value="Sí" id="Cirugías">
+        <label for="Sí">Sí</label>
+            <input type="radio" name="Cirugías" value="No" id="Cirugías">
+        <label for="No">No</label>
+    </div>
+            <br>
+        <div class="Botones">
+            <input type="submit" onclick="handleClick()"></input>
+            <input type="reset" value="Limpiar"></input>
+        </div>
+    </div>
+</div>
+</body>
+<script src="app.js"></script>
+</html>

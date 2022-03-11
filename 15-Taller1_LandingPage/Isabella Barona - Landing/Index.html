@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="./js/JavaScript.js" defer></script>
+    <link rel="shortcut icon" href="./Imagenes/LogoC.png">
+    <link rel="stylesheet" href="./Css/Style.css">
+</head>
+
+<body>
+    <!-- Header y navegación-->
+    <div class="header" id="header">
+        <section class="Logo">
+            <img id="Logo" src="./Imagenes/LogoB.png"/>
+        </section>
+            <ul class="Nave">
+            <li><a class="Nav_Link" data-link="Bienvenida">Inicio</a></li>
+            <li><a class="Nav_Link" data-link="Quienes">Sobre nosotros</a></li>
+            <li><a class="Nav_Link" data-link="Servicios">Productos
+                <ul class="Opciones2">
+                    <li><a class="Nav_Link" data-link="Servicios">Cuadernos</a></li>
+                    <li><a class="Nav_Link" data-link="Servicios">Bolsos</a></li>
+                    <li><a class="Nav_Link" data-link="Servicios">Gorras</a></li>
+                    <li><a class="Nav_Link" data-link="Card">Camisetas</a></li>
+                    <li><a class="Nav_Link" data-link="Card">Tazas</a></li>
+                    <li><a class="Nav_Link" data-link="Card">Pines</a></li>
+                </ul>
+            </a></li>
+            <li><a class="Nav_Link" data-link="T2">Contacto</a></li>
+        </ul>
+    </div>
+
+    <!--Intro-->
+    <div class="Bienvenida" id="Bienvenida">
+        <section>
+            <img id="ImgBienvenida" src="./Imagenes/ImgBienvenida.png"/>
+        </section>
+
+        <section id="Presentacion">
+            <h1 class="T1">¡Personaliza todo lo que quieras!</h1><br>
+            <p>Pon tus diseños en una amplia variedad de productos, ya sea para tu uso personal, regalos o para tu empresa</p><br>
+            <button id="CTA"><a class="Nav_Link" id="CTAa" data-link="T2"><b>¡Compra ahora!</b></a></button>
+            <button id="CTAS"><a class="Nav_Link" data-link="Servicios">Nuestros productos</a></button>
+        </section>
+    </div>
+    
+    <!--Quienes somos y productos-->
+    <div class="Quienes" id="Quienes">
+        <section id="Acerca">
+            <h1>¿Quiénes somos?</h1><br>
+            <p>Somos una empresa dedicada a ofrecer servicios de personalización de productos y diseño. Elaboramos productos de alta calidad en distintos materiales y cantidades. Puedes proveer tus propios diseños o dejarlo en manos de nuestros talentosos diseñadores.</p>
+        </section>
+
+        <section id="ImgQuienes">
+            <img id="ImgQuienes" src="./Imagenes/ImgQuienes.png"/>
+        </section>
+    </div>
+
+    <div class="Servicios" id="Servicios">
+        <h1 id="CardT"> Nuestros productos</h1>
+
+        <section class="Cards">
+            <div class="cr" onclick="OutOfStock()">
+                <div id="Card" class="card">
+                    <img id="ImgCard" src="https://res.cloudinary.com/teepublic/image/private/s--O3P5xD5C--/c_crop,x_10,y_10/c_fit,h_682/c_crop,g_north_west,h_775,w_541,x_-78,y_-46/l_upload:v1466696258:production:blanks:ojeg4mlwj8wsz1h6dgbp/fl_layer_apply,g_north_west,x_-441,y_-290/b_rgb:000000/c_limit,f_jpg,h_630,q_90,w_630/v1517652417/production/designs/2333387_0.jpg"/>
+                    <h3 id="Text">Cuadernos</h3>  
+                </div>
+            </div>  
+            <div class="cr" onclick="OutOfStock()">
+                <div id="Card" class="card">
+                    <img id="ImgCard" src="https://cdn01.pinkoi.com/product/1mE2BY_r/0/97/500x0.jpg"/>
+                    <h3 id="Text">Bolsos</h3>
+                </div>
+            </div>
+            <div class="cr" onclick="OutOfStock()">
+                <div id="Card" class="card">
+                    <img id="ImgCard" src="https://image.spreadshirtmedia.com/image-server/v1/mp/products/T803A231MPA1648PT26X46Y4D1009780520FS1685/views/1,width=550,height=550,appearanceId=231,backgroundColor=F2F2F2,modelId=1723,crop=list/undertale-heart-character-baseball-cap.jpg"/>
+                    <h3 id="Text">Gorras</h3>
+                </div>
+            </div>
+            <div class="cr" onclick="OutOfStock()">
+                <div id="Card" class="card">
+                    <img id="ImgCard" src="https://c49d16a6c82563251344-1ab5a5b00ecdd96a368a8d8d17482920.ssl.cf2.rackcdn.com/images/TS_Black_Ghibli_Gang_T_Shirt_14_99_Flat-617-662.jpg"/>
+                    <h3 id="Text">Camisetas</h3>
+                </div>
+            </div>
+            <div class="cr" onclick="OutOfStock()">
+                <div id="Card" class="card">
+                    <img id="ImgCard" src="https://i.etsystatic.com/19277706/c/2564/2038/98/460/il/ba5aad/3183728554/il_340x270.3183728554_4pg8.jpg"/>
+                    <h3 id="Text">Tazas</h3>
+                </div>
+            </div>
+            <div class="cr" onclick="OutOfStock()">
+                <div id="Card" class="card">
+                    <img id="ImgCard" src="https://i.ebayimg.com/images/g/g2IAAOSw8VNbbkvt/s-l400.jpg"/>
+                    <h3 id="Text">Pines</h3>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!--Formulario de contacto-->
+    <h1 class="T2" id="T2">Contáctanos</h1>
+
+    <div class="Contacto" id="Contacto">
+        <section class="InfoContact">
+            <p class="info"><b>Teléfonos</b><br>+57 300 0000421<br>602 0000421</p>
+            <p class="info"><b>Dirección</b><br>Cra. 100 #5-169 (Unicentro) local 421</p>
+            <p class="info"><b>Correo</b><br>kroma@gmail.com</p>
+            <p class="info"><b>Horarios</b><br>Lunes a viernes: 8:00am a 12:00m - 1:00pm a 7:00pm<br>Sábados y festivos: 10:00am a 12:00m - 1:00pm a 5:00pm</p>
+        </section>
+
+        <section class="Formulario" id="Formulario">
+            <form>
+                <input type="text" name="Nombre" id="Nombre" placeholder="Nombre"><br>
+                <input type="text" name="Teléfono" id="Teléfono" placeholder="Teléfono"><br>
+                <input type="text" name="Correo" id="Correo" placeholder="Correo electrónico"><br>
+                <textarea type="text" name="Mensaje" placeholder="Mensaje" id="Mensaje"></textarea>
+                <input type="button" class="Enviar" id="Enviar" value="Enviar" onclick="datos(), enviado()">
+            </form>
+        </section>
+    </div>
+    <swal-icon type="warning" color="red"></swal-icon>
+    <!--Footer-->
+    <footer>
+        <p>Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>

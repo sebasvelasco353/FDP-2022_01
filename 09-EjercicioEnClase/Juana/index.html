@@ -7,21 +7,46 @@
     <title>LabLab</title>
     <link rel="shortcut icon" href="Icon-Lab-icon.png" type="image/x-icon">
     <link rel="stylesheet" href="estilos.css">
+
 </head>
 <body>
 <form action="" class="formulario">
-    <h1 class="formulario__titulo">Datos</h1>
-    <input type="text" class="formulario__input">
-    <label for="" class="formulario__label">Nombres</label>
-    <input type="text" class="formulario__input">
-    <label for="" class="formulario__label">Apellidos</label>
-    <input type="text" class="formulario__input">
-    <label for="" class="formulario__label">Estatura</label>
-    <input type="text" class="formulario__input">
-    <label for="" class="formulario__label">Edad</label>
-    <input type="text" class="formulario__input">
-    <label for="" class="formulario__label">Cirugías anteriores</label>
-    <input type="submit" class="formulario__submit">
+    <h1 class="formulario__titulo">Datos del paciente </h1>
+    <input type="text" class="formulario__input" id="Nombres">
+    <label for="Nombres" class="formulario__label">Nombres</label>
+    <input type="text" class="formulario__input" id="Apellidos">
+    <label for="Apellidos" class="formulario__label">Apellidos</label>
+    <input type="number" class="formulario__input" id="Estatura">
+    <label for="Estatura" class="formulario__label">Estatura</label>
+    <input type="number" class="formulario__input"  min="1" max="120" id="Edad" onchange="myFunction()">
+    <label for="Examenes" class="formulario__Examenes">Se ha realizado usted examenes de triglicerios y pruebas de colesterol?</label>
+    <input type="radio" class="formulario__examenesmayor" name="simayorsi" value="Si" id="simayorsi" disabled>
+    <label for="Si"> Si </label>
+    <input type="radio" class="formulario__examenesmayor" name="simayorno"  value="No" id="simayorno" disabled>
+    <label for="No"> No </label> <br>
+    <label for="Examenes" class="formulario__Examenes2">Se ha realizado usted pruebas de azucar en los ultimos 3 meses?</label>
+    <input type="radio" class="formulario__examenesmenor" name="simenorsi" value="Si" id="simenorsi" disabled>
+    <label for="Si"> Si </label>
+    <input type="radio" class="formulario__examenesmenor" name="simenorno"  value="No" id="simenorno" disabled>
+    <label for="No"> No </label> <br>
+    <label for="Edad" class="formulario__Edad">Edad</label>
+    <label for="cirugias" class="formulario__cirugias">Tiene cirugías anteriores?</label>
+    <input type="radio" class="formulario__cirugiasino" name="cirugias" value="Si" id="cirugias">
+    <label for="Si"> Si </label>
+    <input type="radio" class="formulario__cirugiasino" name="cirugias"  value="No" id="cirugias">
+    <label for="No"> No </label> <br>
+    <label for="fumador" class="formulario__fumador"> Fuma regularmente? </label>
+    <input type="radio" class="formulario__fumasino" name="fumador" value="Si" id="fumador">
+    <label for="Si"> Si </label>
+    <input type="radio" class="formulario__fumasino" name="fumador" value="No" id="fumador">
+    <label for="No"> No </label>
+    <label for="Nacionalidad" class="formulario__Nacionalidad">Nacionalidad</label>
+    <select name="Nacionalidad" class="Nacionalidad" id="Nacionalidad"> </select>
+    <label for="RH" class="formulario__RH"> Grupo Sanguíneo </label>
+    <select name="RH" class="RH" id="RH"> </select>
+    <button type="" class="formulario__reset" onclick="getData()"> Submit </button>
+    <button type="reset" class="formulario__reset"> Reset </button>
+
 </form>
 <script src="form.js"> </script>
 </body>

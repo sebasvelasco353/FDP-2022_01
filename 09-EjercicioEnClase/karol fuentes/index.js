@@ -14,7 +14,7 @@
 const grupoSanguineo = ["A+", "B+", "O+", "AB+", "A-", "B-", "O-", "AB-"];
 const paises = ["Afganistán","Albania","Alemania","Andorra","Angola","Antigua y Barbuda","Arabia Saudita","Argelia","Argentina","Armenia","Australia","Austria","Azerbaiyán","Bahamas","Bangladés","Barbados","Baréin","Bélgica","Belice","Benín","Bielorrusia","Birmania","Bolivia","Bosnia y Herzegovina","Botsuana","Brasil","Brunéi","Bulgaria","Burkina Faso","Burundi","Bután","Cabo Verde","Camboya","Camerún","Canadá","Catar","Chad","Chile","China","Chipre","Ciudad del Vaticano","Colombia","Comoras","Corea del Norte","Corea del Sur","Costa de Marfil","Costa Rica","Croacia","Cuba","Dinamarca","Dominica","Ecuador","Egipto","El Salvador","Emiratos Árabes Unidos","Eritrea","Eslovaquia","Eslovenia","España","Estados Unidos","Estonia","Etiopía","Filipinas","Finlandia","Fiyi","Francia","Gabón","Gambia","Georgia","Ghana","Granada","Grecia","Guatemala","Guyana","Guinea","Guinea ecuatorial","Guinea-Bisáu","Haití","Honduras","Hungría","India","Indonesia","Irak","Irán","Irlanda","Islandia","Islas Marshall","Islas Salomón","Israel","Italia","Jamaica","Japón","Jordania","Kazajistán","Kenia","Kirguistán","Kiribati","Kuwait","Laos","Lesoto","Letonia","Líbano","Liberia","Libia","Liechtenstein","Lituania","Luxemburgo","Madagascar","Malasia","Malaui","Maldivas","Malí","Malta","Marruecos","Mauricio","Mauritania","México","Micronesia","Moldavia","Mónaco","Mongolia","Montenegro","Mozambique","Namibia","Nauru","Nepal","Nicaragua","Níger","Nigeria","Noruega","Nueva Zelanda","Omán","Países Bajos","Pakistán","Palaos","Palestina","Panamá","Papúa Nueva Guinea","Paraguay","Perú","Polonia","Portugal","Reino Unido","República Centroafricana","República Checa","República de Macedonia","República del Congo","República Democrática del Congo","República Dominicana","República Sudafricana","Ruanda","Rumanía","Rusia","Samoa","San Cristóbal y Nieves","San Marino","San Vicente y las Granadinas","Santa Lucía","Santo Tomé y Príncipe","Senegal","Serbia","Seychelles","Sierra Leona","Singapur","Siria","Somalia","Sri Lanka","Suazilandia","Sudán","Sudán del Sur","Suecia","Suiza","Surinam","Tailandia","Tanzania","Tayikistán","Timor Oriental","Togo","Tonga","Trinidad y Tobago","Túnez","Turkmenistán","Turquía","Tuvalu","Ucrania","Uganda","Uruguay","Uzbekistán","Vanuatu","Venezuela","Vietnam","Yemen","Yibuti","Zambia","Zimbabue"];
 var nombre = document.getElementById("nombre");
-var apellidos = document.getElementById("edad");
+var apellidos = document.getElementById("apellidos");
 var estatura = document.getElementById("estatura");
 
 /*cargar datos desde el array*/
@@ -86,19 +86,32 @@ function mostrarPrueba() {
    
 }
 
+function datos() {
+   
 
-var fumador = document.getElementById("siFuma").value === 'on' ? true : false;
-
+var fumador = document.getElementById("siFuma").checked;
 var paisorigen = document.getElementById("paisorigen").value;
-console.log(paisorigen);
-
 var nombre = document.getElementById("nombre").value;
-console.log(nombre);
-
+var apellidos = document.getElementById("apellidos").value;
 var rh = document.getElementById("rh").value;
-console.log(rh);
+var cirugias = document.getElementById("siCirugias").checked;
+var estatura = document.getElementById("estatura").value;
+var edad = document.getElementById("edad").value;
+var siPruebacolesterol = document.getElementById("siPruebacolesterol").checked;
+var siPruebaazucar = document.getElementById("siPruebaazucar").checked;
+{
+   console.log("nombre: " + nombre);
+   console.log("apellidos: " + apellidos);
+   console.log("estatura: " + estatura);
+   console.log("edad: " + edad);
+   console.log("Ha realizado prueba de colesterol: " + siPruebacolesterol);
+   console.log("Ha realizado prueba de azúcar: " + siPruebaazucar);
 
-var cirugias = document.getElementById("siCirugias").value === 'on' ? true : false;
-console.log(cirugiasanteriores);
-
+   console.log("fumador: " + fumador);
+   console.log("país de origen: " + paisorigen);
+   console.log("RH: " + rh);
+   console.log("cirugías anteriores: " + cirugias);
+}
+alert("Sus datos han sido registrados.")
+}
 
