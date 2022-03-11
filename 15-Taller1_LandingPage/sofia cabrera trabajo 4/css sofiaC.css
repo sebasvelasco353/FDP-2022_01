@@ -1,0 +1,96 @@
+head{
+    background-image: url()
+    
+}
+h1{
+    color: rgb(0, 0, 0);
+    margin-top: auto;
+    font-size: 2.5em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 3px;
+    background-color: rgb(241, 226, 141);
+}
+.main-nav{
+    display: none;
+}
+.main-header__container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.main-header__btn{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px rgb(0, 0, 0); 
+    padding: 8px;
+    color: rgb(0, 0, 0);
+}
+.main-header__input{
+    display: block;
+    padding: 8px;
+}
+footer{
+    border: 5px;
+    margin: 0;
+    background-image: url(imagenes/fondo2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+height: 500px;
+}
+h3{
+  font-size: 2.5em;  
+  color: rgb(255, 229, 83);
+  align-items: center;
+ margin-top: 4px;
+ text-align: center;
+ padding-top: 190px;
+}
+h2{
+    background-color:  rgb(241, 226, 141);
+}
+
+.hide{
+    background-color: #ffffff;
+    border: none;
+    border-radius: 15px;
+    color: rgb(0, 0, 0);
+    padding: 15px 32px;
+    font-size: 1.2em;
+    box-shadow: 0px 0px 10px 0px #ffe285;
+}
+button{
+    background-color: #ffe285;
+    border: none;
+    border-radius: 15px;
+    color: rgb(0, 0, 0);
+    padding: 15px 32px;
+    font-size: 1.2em;
+    box-shadow: 0px 0px 10px 0px #ffe285;
+    display: inline-flex;
+    transition: .3s ease all;
+    cursor: pointer;
+    text-transform: uppercase;
+} 
+button:hover{
+    background-color: #ffe285;
+}
+ label{
+    background-color: #ffffff;
+    border-radius: 15px;
+    border-color: #ffe285;
+    color: rgb(177, 125, 47);
+    padding: 15px 32px;
+    font-size: 1.2em;
+    box-shadow: 0px 0px 10px 0px #ffe285;
+}
+ h4{
+    color: rgb(0, 0, 0);
+    margin-top: auto;
+    font-size: 2.5em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 3px;
+   ;   
+ }
+ 
