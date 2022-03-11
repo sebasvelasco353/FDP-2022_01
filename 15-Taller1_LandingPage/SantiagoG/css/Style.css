@@ -8,6 +8,10 @@ html{
     box-sizing:border-box;
 }
 
+body{
+    background-color: rgba(0, 255, 255, 0.144);
+}
+
 header{
     display: flex;
     flex-direction: row;
@@ -26,20 +30,22 @@ header{
     width: 50%;
     height: 40rem;
     margin: 0;
-    /*background-color: gray;*/
+    align-items: center;
 }
+
 
 .LogoHeader{
-    width: 15rem;
+    width: 40rem;
     height: auto;
-    margin-top: 2rem;
-    margin-left: 2rem;
+    margin-top: 12%;
+
 }
 
-.HeaderDivLeft button{
+.HeaderDivRight button{
     width: 25%;
+    height: 3rem;
     margin-left: 35%;
-    margin-top: 15%;
+    margin-top: 32%;
     border: none;
     padding: 1rem;
     text-align: center;
@@ -49,11 +55,25 @@ header{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 15px;
     border-radius: 1rem;
+
 }
 
-.HeaderDivLeft button a{
+.HeaderDivRight button a{
     text-decoration: none;
     color: white;
+}
+
+.btn1{
+    transition: box-shadow 0.4s ease-in-out;
+}
+
+.btn1:hover{
+
+    box-shadow: 0 0 40px 40px white inset;
+}
+
+.btn1:hover a{
+    color: black;
 }
 
 .HeaderDivRight{
@@ -65,7 +85,6 @@ header{
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
-   /* background-color: black;*/
 
 }
 
@@ -150,6 +169,19 @@ header{
     color: white;
 }
 
+.ButtonBienv{
+    transition: box-shadow 0.4s ease-in-out;
+}
+
+.ButtonBienv:hover{
+
+    box-shadow: 0 0 40px 40px white inset;
+}
+
+.ButtonBienv:hover a{
+    color: black;
+}
+
 .SomosQ{
     width: 100%;
     height: 20rem;
@@ -219,6 +251,20 @@ header{
     text-decoration: none;
     color: white;
 }
+
+.ButtonCard{
+    transition: box-shadow 0.4s ease-in-out;
+}
+
+.ButtonCard:hover{
+
+    box-shadow: 0 0 40px 40px white inset;
+}
+
+.ButtonCard:hover a{
+    color: black;
+}
+
 
 /* Formulario */
 
