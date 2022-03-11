@@ -10,6 +10,7 @@
     font-weight: normal;
 }
 
+/*cards*/
 
 .Cards {
     display: grid;
@@ -25,7 +26,6 @@
     grid-row-start: 1;
     grid-row-end: 2;
     margin: 1em;
-    border: #2071b2;
 }
 .card2 {
     grid-column-start: 2;
@@ -41,6 +41,17 @@
     grid-row-end: 2;
     margin: 1em;
 }
+.textoN {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.Subtitulos{
+    font-family: LeagueGothic;
+    font-size: 300%;
+    color: black;
+}
+
+/*Imágen incial y título */ 
 
 html, body {
     padding: 0;
@@ -77,15 +88,8 @@ html, body {
     color: white;
 }
 
-.textoN {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
 
-.Subtitulos{
-    font-family: LeagueGothic;
-    font-size: 300%;
-    color: black;
-}
+/* Botón subir página */
 
 .go-top-container {
     position: fixed;
@@ -148,4 +152,31 @@ html, body {
         width: 6.6rem;
         height: 6.6rem;
     }
+}
+
+/*Menu superior*/
+
+.menu{
+	list-style: none;
+	padding: 0;
+	background: #092327;
+	margin: auto;
+    position: fixed;
+    align-items: center;
+}
+
+.menu li a{
+	text-decoration: none;
+	color: white;
+	padding: 20px;
+	display: block;
+}
+
+.menu li{
+	display: inline-block;
+	text-align: center;
+}
+
+.menu li a:hover{
+	background: #ef8354;
 }
