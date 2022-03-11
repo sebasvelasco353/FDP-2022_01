@@ -122,3 +122,11 @@ input{
     background: blue;
     color: #ECECEC;
 }
+
+#colesterol{
+    display: none;
+}
+
+#azucar{
+    display: none;
+}
