@@ -1,0 +1,26 @@
+*{
+    border: 1px solid red;
+    padding: 0em;
+    margin: 0em;
+}
+
+.landing-header{
+    background-color: blue;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+
+.lheader{
+    padding: 1em;
+    margin: 1em;
+
+}
+
+.landing-data{
+    padding: 1em;
+    margin: 1em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+}
