@@ -9,9 +9,6 @@ gsap.registerPlugin(ScrollTrigger);
 
 gsap.from('.Header', { duration: 2.5, opacity: '0', y:'-100%', ease: "power4.Out", ScrollTrigger:'.Logo'})
 gsap.from('.Logo', { duration: 3, opacity: '0', delay: 2, ScrollTrigger:'.Logo'})
-gsap.from('.Menú', { duration: 3, opacity: '0', delay: 2, ScrollTrigger:'.Menú'})
-gsap.from('.Textos-header', { duration: 2.5, opacity: '0', x:'-30%', delay: 2.2, ScrollTrigger:'.Logo'})
-gsap.from('.CTA, .CTA2', { duration: 2.5, opacity: '0', x:'-60%', delay: 2.2, ScrollTrigger:'.Logo'})
 
 /*gsap.from('.AboutUs', { duration: 2.5, opacity: '0', x:'10%', ScrollTrigger:'.AboutUs'})
 gsap.from('.AboutUs-Text', { duration: 2.5, opacity: '0', x:'10%', ScrollTrigger:'.AboutUs'})
@@ -54,10 +51,3 @@ function Thanks() {
             icon: 'no-border'}
     })
 }
-
-/*Navegación
-document.querySelectorAll(".Menú li").forEach((btn, index) => {
-    btn.addEventListener("click", () => {
-      gsap.to(window, {duration: 1, scrollTo:{y:"#Section" + (index + 1), offsetY:70}});
-    });
-  });*/
