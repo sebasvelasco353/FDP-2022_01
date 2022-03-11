@@ -8,28 +8,31 @@
     <link rel="stylesheet" href="./css/Style.css">
 </head>
 <body>
-   <header>
+   <header class="header">
        <div class="HeaderDivLeft" id="HeaderDivLeft">
+           <h1>Dell</h1>
+           <h3>Tienda de tecnología</h3>
            <img src="https://www.uc3m.es/sdic/media/sdic/img/grande/original/ig_descuentos-en-tecnologia_logo-dell/ig_descuentos-y-beneficios_logo-dell.png" class="LogoHeader">
-           <button><a href="">¿Quiénes somos?</a></button>
+           <button><a href="#SomosQ">¿Quiénes somos?</a></button>
        </div>
 
        <div class="HeaderDivRight" id="HeaderDivRight">
-        <img src="https://www.eltiempo.com/files/article_main/uploads/2019/12/07/5dec47012d257.jpeg">
+       <!-- <img src="https://www.eltiempo.com/files/article_main/uploads/2019/12/07/5dec47012d257.jpeg">-->
     </div>
    </header>
 <!--Hasta aquí llega el codigo del header-->
+
    <div class="DivNav">
-       <img src="https://www.uc3m.es/sdic/media/sdic/img/grande/original/ig_descuentos-en-tecnologia_logo-dell/ig_descuentos-y-beneficios_logo-dell.png" class="ImgNav">
+       <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Dell_Logo.png/799px-Dell_Logo.png?20160918115731" class="ImgNav">
        <ul class="navegador">
-           <li><a href="">Menú</a></li>
-           <li><a href="">Menú</a></li>
-           <li><a href="">Menú</a></li>
+           <li><a href="#DivBienvenida">Bienvenida</a></li>
+           <li><a href="#Productos">Productos</a></li>
+           <li><a href="#Contacto">Contacto</a></li>
        </ul>
    </div>
 <!--Hasta aquí llega el codigo del Navegador-->
 
-   <div class="DivBienvenida">
+   <div class="DivBienvenida" id="DivBienvenida">
        <section>
            <img src="https://assets.spartangeek.com/cc/CP-AEROCOOL-CYLONBK-6_200106_013415.png" class="ImgBienv">
        </section>
@@ -38,70 +41,76 @@
            <h1>¿Eres amante a la tecnología?</h1>
            <h2>Este es tu lugar, encuentra todo lo que deseas</h2><br>
            <p>Compra todo lo que puedas imaginar, gracias a nuestra variedad de productos<br>podrás logar lo que te propones</p><br>
-           <button class="ButtonBienv"><a href="" >Saber más</a></button>
-           <button class="ButtonBienv"><a href="">Ver productos</a></button>
+           <button class="ButtonBienv"><a href="#SomosQ" >Saber más</a></button>
+           <button class="ButtonBienv"><a href="#Productos">Ver productos</a></button>
        </section>
    </div>
  <!--Hasta aquí llega la primera sección de bienvenida-->  
 
-    <div class="SomosQ">
-        <section>
+    <div class="SomosQ" id="SomosQ">
+        <img src="https://www.uc3m.es/sdic/media/sdic/img/grande/original/ig_descuentos-en-tecnologia_logo-dell/ig_descuentos-y-beneficios_logo-dell.png" class="ImgSomosQ">
+        <section class="QSomos">
             <h1>¿Quienes somos?</h1>
-            <p>Somos unas empresa dedicada a la distribución y venta de productos tecnologicos de todo tipo, de hogar, gaming o profesional</p>
+            <p>Somos unas empresa dedicada a la distribución y venta de <br>productos tecnologicos  de todo tipo, de hogar, gaming o profesional, entre otros.</p>
         </section>
     </div>
 
-    <div class="Productos">
-        <section id="Card">
+    <div class="Productos" id="Productos">
             
-             <div id="InsideCard">
-                <img src="" alt="">
+             <div id="Card" class="Card">
+                <img src="https://assets.spartangeek.com/cc/CP-AEROCOOL-CYLONBK-6_200106_013415.png" alt="">
                  <h2>Producto 1</h3>
+                 <button class="ButtonCard"><a href="" >Saber más</a></button>
              </div>
 
-             <div id="InsideCard">
-                <img src="" alt="">
+             <div id="Card" class="Card">
+                <img src="https://images.samsung.com/is/image/samsung/latin-en-ur55-lu28r550uqlxzx-frontblack-305260960?$684_547_PNG$" alt="">
                  <h2>Producto 2</h3>
+                 <button class="ButtonCard"><a href="" >Saber más</a></button>
              </div>
             
-             <div id="InsideCard">
-                <img src="" alt="">
+             <div id="Card" class="Card">
+                <img src="https://bucamarcas.com/wp-content/uploads/2021/12/Mouse-Logitech-G-PRO-3.png.webp" alt="">
                  <h2>Producto 3</h3>
+                 <button class="ButtonCard"><a href="" >Saber más</a></button>
              </div>
             
             
-        </section>
     </div>
  <!--Hasta aquí llega la primera sección de quienes somos y productos-->  
 
-    <h1 class="Tcontacto">Contacto</h1>
+    
 
-    <div class="Contacto">
-      <form></form>
+    <div class="Contacto" id="Contacto">
+        <h1 class="Tcontacto">Contacto</h1>
+      <form>
         <section>
             <label for="nombre" class="Cnombre">Nombre <span class="Obligatorio">*</span></label>
             <input type="text" id="InputNombre" required="obligatorio" placeholder="Escribe tu nombre">
         </section>
 
         <section>
-            <label for="email" class="Cemail">Email <span class="Obligatorio">*</span></label>
+            <label for="email" class="Cemail">Email <span class="Obligatorio">*</span></label><br>
             <input type="text" id="InputEmail" required="obligatorio" placeholder="Escribe tu Email">
         </section>
 
         <section>
-            <label for="telefono" class="Ctelefono">Teléfono</label>
+            <label for="telefono" class="Ctelefono">Teléfono</label><br>
             <input type="text" id="InputTelefono" required="obligatorio" placeholder="Escribe tu nombre">
         </section>
 
         <section>
-            <label for="mensaje" class="Cmensaje">Mensaje <span class="Obligatorio">*</span></label>
+            <label for="mensaje" class="Cmensaje">Mensaje <span class="Obligatorio">*</span></label><br>
             <input type="text" id="InputMensaje" required="obligatorio" placeholder="Deja tu comentario aquí...">
         </section>
 
-        <button type="submit" name="enviar_formulario" id="enviar_formulari"><p>Enviar</p></button>
+        <button type="submit" name="enviar_formulario" id="enviar_formulario" class="enviar_formulario"><p>Enviar</p></button>
       </form>
     </div>
 
-    <footer></footer> 
+    <footer>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Dell_Logo.png/799px-Dell_Logo.png?20160918115731" alt="">
+    </footer> 
+    <script src="js/app.js"></script>
 </body>
 </html>
