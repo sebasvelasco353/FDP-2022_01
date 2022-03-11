@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Arquitectura</title>
+</head>
+
+<body>
+  <header>
+
+    <section class="recuadro uno"></section>
+    <section class="recuadro dos"></section>
+    <section class="recuadro tres"></section>
+
+    <section class="contenedor">
+
+      <section class="navegacion">
+        <section class="logo"><img src="./img/LOGO-A2.png" alt=""></section>
+        <section class="menu">
+          <ul>
+            <li>Inicio <a href="#"></a></li>
+            <li>Servicios <a href="#"></a></li>
+            <li>Contacto <a href="#"></a></li>
+          </ul>
+        </section>
+      </section>
+    </section>
+
+    <hr class="borde">
+
+    <section class="contenido">
+
+      <section class="texto">
+        <p class="subtitulo">Bienvenidos</p>
+        <h1 class="titulo">
+          <span>Arquitectura <br> Ecologica</span>
+        </h1>
+        <p class="descripcion">Diseñamos tu proximo hogar mientras <br> construimos cuidando nuestro medio ambiente.</p>
+      </section>
+
+      <section class="img1"></section>
+      <section class="img2"></section>
+      <section class="img3"></section>
+
+    </section>
+  </header>
+
+  <section class="cuadricula">
+
+    <section class="cards">
+
+      <div class="servicios">
+        
+        <img src="img/pencil.png" class="imgPrimero">
+        <h1 class="tituloPrimero">Arquitectura</h1>
+        <div class="mas masPrimero">
+            <i class="fa fa-plus" aria-hidden="true"></i> 
+        </div>
+  
+        <div class="atras atrasPrimero">
+            <i class="fa fa-times-circle-o" aria-hidden="true"></i> 
+        </div>
+        
+        <h2 class="subtituloPrimero">Arquitectura</h2>
+        <p class="textoPrimero">Concebimos el espacio como medio de experiencia sensorial humana integral.</p>
+  
+      </div>
+  
+    </section>
+
+    <section class="cards">
+
+      <h1 class="tituloCards">Servicios</h1>
+
+      <div class="servicios">
+        
+        <img src="img/edificio.png" class="imgSegundo">
+        <h1 class="tiutloSegundo">Obra Civil</h1>
+        <div class="mas masSegundo">
+            <i class="fa fa-plus" aria-hidden="true"></i> 
+        </div>
+
+        <div class="atrasSegundo">
+            <i class="fa fa-times-circle-o" aria-hidden="true"></i> 
+        </div>
+        
+        <h2 class="subtituloSegundo">Obra Civil</h2>
+        <p class="textoSegundo">La caliad en los procesos, el cumplimiento y un adecuado uso de los recursos son baluartes en nuestra labor.</p>
+
+      </div>
+
+    </section>
+
+    <section class="cards">
+
+      <div class="servicios">
+        
+        <img src="img/gente-de-negocios.png" class="imgTercero">
+        <h1 class="tiutloTercero">Interventoria</h1>
+        <div class="mas masTercero">
+            <i class="fa fa-plus" aria-hidden="true"></i> 
+        </div>
+
+        <div class="atras atrasTercero">
+            <i class="fa fa-times-circle-o" aria-hidden="true"></i> 
+        </div>
+        
+        <h2 class="subtituloTercero">Interventoria</h2>
+        <p class="textoTercero">El seguimiento y control acusioso de una obra civil es fundamental para la perduración de esta en el tiempo.</p>
+
+      </div>
+
+    </section>
+  </section>
+
+  <section class="contacto">
+    <h1 class="tituloContacto">Contáctanos</h1>
+    <section class="interno_contacto">
+      <section class="info">
+        <h3 class="subtituloContacto">Información</h3>
+        <section class="icono_division">
+          <a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i></a>
+          <section class="detalles">
+            <h4>Dirección</h4>
+            <p>calle 1 # 1-01 Cali - Colombia</p>
+          </section>
+        </section>
+
+        <section class="icono_division">
+          <a href="#"><i class="fa fa-phone" aria-hidden="true"></i></a>
+          <section class="detalles">
+            <h4>Telefono</h4>
+            <p>312 456 7890</p>
+          </section>
+        </section>
+
+        <section class="icono_division">
+          <a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+          <section class="detalles">
+            <h4>Email</h4>
+            <p>arquieco@correo.com</p>
+          </section>
+        </section>
+
+      </section>
+      <section class="mensaje">
+        <h3 class="subtituloContacto">Mensaje</h3>
+        <form action="#">
+          <input class="inputContacto" type="text" placeholder="Tu nombre" id="nombre">
+          <input class="inputContacto" type="email" placeholder="Tu Email" id="correo">
+          <textarea class="inputContacto" name="comentario" id="comentario" cols="30" rows="10" placeholder="Comenta aquí"></textarea>
+          <input class="inputContacto" type="submit" value="Enviar" onclick="handleClick()">
+        </form>
+      </section>
+    </section>
+  </section>
+
+  <script src="./app.js"></script>
+</body>
+
+</html>
