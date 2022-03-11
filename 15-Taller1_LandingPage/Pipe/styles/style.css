@@ -13,6 +13,9 @@
 }
 
 .lHeader-li{
+    font-family: Roboto;
+    font-style: Regular;
+    font-size: 24px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-column-start: 3;
@@ -46,6 +49,9 @@
 }
 
 .landing-button{
+    font-family: Roboto;
+    font-style: Regular;
+    font-size: 20px;
     color: white;
     padding: 12px 20px;
     border-radius: 10px;
@@ -75,6 +81,9 @@
 }
 
 .dn-text{
+    font-family: Roboto;
+    font-style: Medium;
+    font-size: 18px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -90,4 +99,16 @@
 
 .dn-data{
     padding-top: 20em;
+}
+
+.l-title{
+    font-family: Roboto;
+    font-style: Medium;
+    font-size: 30px;
+}
+
+.l-text{
+    font-family: Roboto;
+    font-style: Regular;
+    font-size: 16px;
 }
