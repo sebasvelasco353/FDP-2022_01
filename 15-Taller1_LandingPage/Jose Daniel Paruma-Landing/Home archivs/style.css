@@ -8,9 +8,105 @@ body,html{
 
 :root {
     --panel-width:calc(100% / 6);
-    --darkblue: #02020c;
+    --darkblue: #ee5d8d;
     --white: #fff;
     --lightgray: #fafafb;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+/* MAIN STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.page-header {
+    position: fixed;
+    top: 30px;
+    right: 50px;
+    z-index: 1;
+}
+
+.page-header ul {
+    display: grid;
+    grid-column-gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.page-header ul a {
+    display: inline-block;
+    padding: 4px 8px;
+    border: 1px solid transparent;
+}
+
+.page-header .active a {
+    border-color: var(--white);
+}
+
+.panels {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    width: 180vw;
+    height: 100%;
+    transform: translateX(-50%) skewX(-35deg);
+    clip-path: circle(100%);
+    z-index: 1;
+    background: var(--lightgray);
+}
+
+.panels .panel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: var(--panel-width);
+    transform: scaleY(0);
+    transform-origin: top;
+    background: var(--darkblue);
+}
+
+.panels .panel:nth-child(even) {
+    transform-origin: bottom;
+}
+
+.panels .panel:nth-child(2) {
+    left: calc(var(--panel-width) - 1px);
+}
+
+.panels .panel:nth-child(3) {
+    left: calc(calc(var(--panel-width) * 2) - 2px);
+}
+
+.panels .panel:nth-child(4) {
+    left: calc(calc(var(--panel-width) * 3) - 4px);
+}
+
+.panels .panel:nth-child(5) {
+    left: calc(calc(var(--panel-width) * 4) - 5px);
+}
+
+.panels .panel:nth-child(6) {
+    left: calc(calc(var(--panel-width) * 5) - 6px);
+}
+
+.page-main {
+    display: flex;
+    height: 100%;
+    padding: 100px 15px;
+    clip-path: circle(20%);
+    overflow-y: auto;
+    background: var(--darkblue);
+}
+
+.page-main > div {
+    text-align: center;
+    margin: auto;
 }
 
 nav{
