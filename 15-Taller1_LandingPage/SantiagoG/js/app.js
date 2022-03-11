@@ -45,8 +45,12 @@ gsap.from(".Contacto", {
     scrollTrigger: ".Contacto"
 })
 
-
-
+function FeedBack(){
+    if (InputNombre.value===''|| InputTelefono.value==='' || InputEmail.value==='' || InputMensaje.value===''){
+        alert('Digite correctamente los datos obligatorios');
+    }else{
+        alert('Sus datos fueron enviados :D');
+    }}
 
 function Enviar() {
     var Nombre = document.getElementById("InputNombre").value;
@@ -59,6 +63,6 @@ function Enviar() {
         console.log("Teléfono: " + Teléfono);
         console.log("Mensaje: " + Mensaje);
 
-        alert('Sus datos fueron enviados :D');
+        
     }
 return;}
