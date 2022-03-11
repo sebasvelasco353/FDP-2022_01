@@ -2,7 +2,7 @@ body{
     padding: 0px;
     margin: 0px;
     background-color: #C8D6E8;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif
 }
 a{
     text-decoration: none;
@@ -21,10 +21,12 @@ h1{
     color: white;
 }
 h3{
-    padding: 10px;
+    padding: 18px;
     margin: 0px;
     grid-column-start: 1;
     grid-column-end: 3;
+    background-color: #2d5b97;
+    color: white;
 }
 #Sect_menu{
     display: grid;
@@ -35,12 +37,14 @@ h3{
     top: 0px;
 }
 #sect_info_about_us, #sect_info_ourwork{
-    text-align: center; 
+    text-align: center;
+    margin: 32px 0px;
 }
 #info_about_us{
-    padding-left: 230px;
-    padding-right: 230px;
-    padding-bottom: 20px;
+    padding: 32px 20px;
+    background-color: #5e94da;
+    margin: 0px 12%;
+    color: white;
 }
 #firts_Column{
     display: flex;
@@ -62,7 +66,8 @@ h3{
     grid-template-rows: 20% 1fr;
 }
 #title{
-    background-color:burlywood;
+    align-content: center;
+    background-color:#3165A8;
 }
 #content{
     background-color:chartreuse
@@ -71,17 +76,18 @@ h3{
     background-color:blue;
 }
 #container_video{
-    justify-content: center;    
+    justify-content: center;
 }
 #Section_form{
     display: grid;
-    grid-template-columns: 60% auto;
+    grid-template-columns: 60% 40%;
     text-align: center;
-    margin: 10px 32px;
+    background-color: #5e94da;
 }
 #dates_form{
     display: flex;
     flex-direction: column;
+    padding: 18px
 } 
 #footer{
     display: grid;
@@ -93,4 +99,31 @@ h3{
 #dates_form2{
     display: flex;
     flex-direction: column;
+    padding: 18px;
+}
+#dates_form2 img{
+    align-self: center;
+}
+#title_about_us, #title_our_work{
+    margin: 0px 12%;
+}
+#foot_Column2{
+    align-self: center;
+    text-align: left;
+}
+#foot_Column{
+    text-align: right;
+}
+#mensaje{
+    resize: none;
+}
+.paddin_content1{
+    margin-left: 12%;
+    margin-right: 12%;
+    margin-bottom: 2%;
+    margin-top: 0px;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
 }
