@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 40rem;
+    margin: 0;
+    background-color: aquamarine;
+    
+}
+
+.HeaderDivLeft{
+    display: flex;
+    width: 50%;
+    height: 40rem;
+    margin: 0;
+    background-color: aqua;
+}
+
+.HeaderDivRight{
+    display: flex;
+    width: 50%;
+    height: 40rem;
+    margin: 0;
+    background-color: aqua;
+}
+
+.DivNav{
+    width: 100%;
+    height: 3rem;
+    background-color: brown;
+}
+
+footer{
+    width: 100%;
+    height: 5rem;
+    background-color: aqua;
+}
