@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Página web de Computadores</title>
+    <title>Página web de Zapatos</title>
     <link rel="shortcut icon" href="img/alexcgdesign.png" type="image/x-icon">
     <link rel="stylesheet" href="estilos.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet"> 
@@ -13,34 +13,42 @@
 
 <body>
     <header>
+    <div class="container">
         <nav>
-            <a href="#">Inicio</a>
-            <a href="#">Acerca de</a> 
-            <a href="#">Portafolio</a>
-            <a href="#">Servicios</a>
-            <a href="#">Contacto</a>
+            <a href="#" id="icono" class="icono">Menú</a>
+            <div class="enlaces uno" id="enlaces">
+            <a href="">Inicio</a>
+            <a href="">Acerca de</a> 
+            <a href="">Portafolio</a>
+            <a href="">Servicios</a>
+            <a href="">Contacto</a>
+            </div>
         </nav>
-        <section class="textos-header">
+
+        <div class="textos-header">
             <h1>Los mejores productos para ti</h1>
             <h2>Siempre a tu servicio</h2>
-        </section>
-        <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
-                style="height: 100%; width: 100%;">
-                <path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
-                    style="stroke: none; fill: #fff;"></path>
-            </svg></div>
+            <a href="#">Más información</a>
+        </div>
+    </div>
     </header>
+
+    <div class="wave">
+    <div style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+     style="height: 100%; width: 100%;"></svg>
+    </div>
+    
     <main>
         <section class="contenedor sobre-nosotros">
-            <h2 class="titulo">Nuestro producto</h2>
+            <h2 class="titulo">Un poco de nuestra marca</h2>
             <div class="contenedor-sobre-nosotros">
-                <img src="img/ilustracion2.svg" alt="" class="imagen-about-us">
+                <img src="imagenes/foto1.jpg" alt="" class="imagen-about-us">
                 <div class="contenido-textos">
-                    <h3><span>1</span>Los mejores productos</h3>
+                    <h3><span>1</span>¿QUIENES SOMOS?</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt veniam eius aspernatur ad
                         consequuntur aperiam minima sed dicta odit numquam sapiente quam eum, architecto animi pariatur,
                         velit doloribus laboriosam ut.</p>
-                    <h3><span>2</span>Los mejores productos</h3>
+                    <h3><span>2</span>MISIÓN Y VISIÓN</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt veniam eius aspernatur ad
                         consequuntur aperiam minima sed dicta odit numquam sapiente quam eum, architecto animi pariatur,
                         velit doloribus laboriosam ut.</p>
@@ -52,31 +60,31 @@
                 <h2 class="titulo">Portafolio</h2>
                 <div class="galeria-port">
                     <div class="imagen-port">
-                        <img src="img/img1.jpg" alt="">
+                        <img src="imagenes/logoadidas.jpg" alt="">
                         <div class="hover-galeria">
-                            <img src="img/icono1.png" alt="">
-                            <p>Nuestro trabajo</p>
+                            <img src="imagenes/icono1.png" alt="">
+                            <p>Más contenido de adidas</p>
                         </div>
                     </div>
                     <div class="imagen-port">
-                        <img src="img/img2.jpg" alt="">
+                        <img src="imagenes/logoconverse.jpg" alt="">
                         <div class="hover-galeria">
-                            <img src="img/icono1.png" alt="">
-                            <p>Nuestro trabajo</p>
+                            <img src="imagenes/icono1.png" alt="">
+                            <p>Más contenido de converse</p>
                         </div>
                     </div>
                     <div class="imagen-port">
-                        <img src="img/img3.jpg" alt="">
+                        <img src="imagenes/logonike.jpg" alt="">
                         <div class="hover-galeria">
-                            <img src="img/icono1.png" alt="">
-                            <p>Nuestro trabajo</p>
+                            <img src="imagenes/icono1.png" alt="">
+                            <p>Más contenido de nike</p>
                         </div>
                     </div>
                     <div class="imagen-port">
-                        <img src="img/img1.jpg" alt="">
+                        <img src="imagenes/logopuma.jpg" alt="">
                         <div class="hover-galeria">
-                            <img src="img/icono1.png" alt="">
-                            <p>Nuestro trabajo</p>
+                            <img src="imagenes/icono1.png" alt="">
+                            <p>Más contenido de puma</p>
                         </div>
                     </div>
         </section>
@@ -84,14 +92,14 @@
             <h2 class="titulo">Que dicen nuestros clientes</h2>
             <div class="cards">
                 <div class="card">
-                    <img src="img/face1.jpg" alt="">
+                    <img src="imagenes/cliente1.jpg" alt="">
                     <div class="contenido-texto-card">
                         <h4>Name</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, sapiente!</p>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="img/face2.jpg" alt="">
+                    <img src="imagenes/cliente2.jpg" alt="">
                     <div class="contenido-texto-card">
                         <h4>Name</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, sapiente!</p>
@@ -104,18 +112,18 @@
                 <h2 class="titulo">Nuestros servicios</h2>
                 <div class="servicio-cont">
                     <div class="servicio-ind">
-                        <img src="img/ilustracion1.svg" alt="">
-                        <h3>Name</h3>
+                        <img src="imagenes/servicio1.jpg" alt="">
+                        <h3>Productos de calidad</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, qui?</p>
                     </div>
                     <div class="servicio-ind">
-                        <img src="img/ilustracion4.svg" alt="">
-                        <h3>Name</h3>
+                        <img src="imagenes/servicio2.jpg" alt="">
+                        <h3>Envios rapidos y seguros</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, qui?</p>
                     </div>
                     <div class="servicio-ind">
-                        <img src="img/ilustracion3.svg" alt="">
-                        <h3>Name</h3>
+                        <img src="imagenes/servicio3.jpg" alt="">
+                        <h3>Multiples medios de pago</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, qui?</p>
                     </div>
                 </div>
@@ -151,6 +159,7 @@
         </div>
         <h2 class="titulo-final">&copy; Lo mejor para los mejores</h2>
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>

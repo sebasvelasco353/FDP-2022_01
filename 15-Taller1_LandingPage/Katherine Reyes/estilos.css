@@ -8,84 +8,166 @@ body {
     font-family: 'open sans';
 }
 
-.contenedor {
-    padding: 60px 0;
-    width: 90%;
-    max-width: 1000px;
-    margin: auto;
-    overflow: hidden;
+/* navegador */
+nav{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    justify-content: flex-start;
 }
 
-.titulo {
-    color: #642a73;
-    font-size: 30px;
-    text-align: center;
-    margin-bottom: 60px;
+nav > a{
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.icono{
+    display: block;
+    z-index: 100000000;
+    animation: moverIzquierda 1s ease-in;
 }
 
 /* Header */
 
 header {
     width: 100%;
-    height: 600px;
-    background: #bc4e9c;
+    height: auto;
+    padding: 48px;
+    background: #da4453;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, hsla(340, 95%, 50%, 0.459), hsla(317, 45%, 52%, 0.664)), url(../img/portada.jpg);
+    background: -webkit-linear-gradient(to right, #89216b,#da4453);
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, hsla(340, 95%, 50%, 0.459), hsla(317, 45%, 52%, 0.664)), url(../img/portada.jpg);
+    background: linear-gradient(to right, #89216b,#da4453);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background-size: cover;
-    background-attachment: fixed;
-    position: relative;
 }
 
-nav{
-    text-align: right;
-    padding: 30px 50px 0 0;
-}
-
-nav > a{
-    color:#fff;
-    font-weight: 300;
-    text-decoration: none;
-    margin-right: 10px;
-}
-
-nav > a:hover{
-    text-decoration: underline;
-}
-
-header .textos-header{
+.container{
+    width: 95%;
+    max-width: 1200px;
     display: flex;
-    height: 430px;
-    width: 100%;
     align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
+    justify-items: center;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.textos-header{
+    width: 60%;
+    color: #fff;
 }
 
 .textos-header h1{
     font-size: 50px;
     color:#fff;
+    animation: moverDerecha 1s ease-in;
 }
 
 .textos-header h2{
     font-size: 30px;
-    font-weight: 300;
     color:#fff;
+    animation: moverIzquierda 1s ease-in;
+}
+
+.textos-header a{
+    display: inline-block;
+    color: #fff;
+    font-weight: 300;
+    font-size: 15px;
+    text-decoration: none;
+    margin-top: 30px;
+    border: 1px solid #fff;
+    width: 150%;
+    border-radius: 3px;
+    text-align: center;
+    padding: 10px 0;
+    animation: arriba 1s ease-in; 
 }
 
 .wave{
-    position: absolute;
-    bottom: 0;
+    height: 100px;
     width: 100%;
+    background: #da4453;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #89216b,#da4453);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #89216b,#da4453);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.enlaces{
+    position: fixed;
+    display: flex;
+    top: 0;
+    background: #ffffff;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    right: 0;
+    flex-direction: column;
+    width: 100%;
+    transition: all 1s ease;
+    background: #da4453;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f80759,#bc4e9c);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f80759,#bc4e9c);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.uno{
+    -webkit-clip-path: circle(0% at 0 0);
+    clip-path: circle(0% at 0 0);
+}
+
+.dos{
+    -webkit-clip-path: circle(150% at 0 0);
+    clip-path: circle(150% at 0 0);
+}
+
+/* keyframes */
+
+@keyframes moverIzquierda{
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moverDerecha{
+    0%{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes arriba{
+    0%{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
 }
 
 /* About us */
 
 main .sobre-nosotros{
     padding: 30px 0 60px 0;
+    text-align: center;
 }
 .contenedor-sobre-nosotros{
     display: flex;
@@ -93,7 +175,7 @@ main .sobre-nosotros{
 }
 
 .imagen-about-us{
-    width: 48%;
+    width: 25%;
 }
 
 .sobre-nosotros .contenido-textos{
@@ -102,10 +184,11 @@ main .sobre-nosotros{
 
 .contenido-textos h3{
     margin-bottom: 15px;
+    text-align: center;
 }
 
 .contenido-textos h3 span{
-    background: #4d0686;
+    background: #89216b;
     color: #fff;
     border-radius: 50%;
     display: inline-block;
@@ -125,9 +208,9 @@ main .sobre-nosotros{
 
 /* Galeria */
 
-
 .portafolio{
     background: #f2f2f2;
+    text-align: center;
 }
 
 .galeria-port{
@@ -158,7 +241,7 @@ main .sobre-nosotros{
     height: 100%;
     top: 0;
     transform: scale(0);
-    background: hsla(273,91%,27%, 0.7);
+    background: #89216bbe;
     transition: transform .5s;
     display: flex;
     justify-content: center;
@@ -180,13 +263,18 @@ main .sobre-nosotros{
 
 /* Clients */
 
+.titulo{
+    text-align: center;
+}
+
 .cards{
     display: flex;
     justify-content: space-evenly;
+    text-align: center;
 }
 
 .cards .card{
-    background: #4d0686;
+    background: #89216b;
     display: flex;
     width: 46%;
     height: 200px;
@@ -220,6 +308,7 @@ main .sobre-nosotros{
 .about-services{
     background: #f2f2f2;
     padding-bottom: 30px;
+    text-align: center;
 }
 
 
@@ -240,11 +329,12 @@ main .sobre-nosotros{
 
 .servicio-ind h3{
     margin: 10px 0;
+    text-align: center;
 }
 
 .servicio-ind p{
     font-weight: 300;
-    text-align: justify;
+    text-align: center;
 }
 
 /* formulario */
@@ -253,7 +343,7 @@ main .sobre-nosotros{
     height:auto;
     width: 50%;
     align-items: center;
-    background-color:#4d0686;
+    background-color:#89216b;
     padding: 3vh;
     margin-top: 2vh;
     box-sizing: border-box;
@@ -268,14 +358,14 @@ main .sobre-nosotros{
     align-content: center;
   }
 
-.swal-text {text-align: center; color: rgb(84, 21, 104)}
+.swal-text {text-align: center; color: #89216b}
 
 .swal-button {
     width: 15vh;
     height: 7vh;
     padding: 5px 5px;
     border-radius: 30px;
-    background-color: rgb(67, 12, 117);
+    background-color: #89216b;
     font-size: 12px;
     }
     
@@ -307,7 +397,7 @@ footer{
 
 .content-foo h4{
     color: #fff;
-    border-bottom: 3px solid #af20d3;
+    border-bottom: 3px solid #89216b;
     padding-bottom: 5px;
     margin-bottom: 10px;
 }
@@ -451,12 +541,60 @@ footer{
     }
 
     .content-foo p{
-        color: #ccc;
+        color: rgb(14, 14, 14);
         border-bottom: 1px solid #f2f2f2;
         padding-bottom: 20px;
     }
 
     .titulo-final{
         font-size: 20px;
+    }
+}
+
+/* media screen */
+@media screen and (max-width:800px) {
+    .textos-header h1{
+        font-size: 70px;
+    }
+
+    .textos-header h2{
+        font-size: 25px;
+    }   
+}
+
+@media screen and (max-width:700px) {
+    .textos-header h1{
+        font-size: 40px;
+    }
+
+    .textos-header h2{
+        font-size: 15px;
+    }   
+}
+
+@media screen and (max-width:450px) {
+    .container{
+        width: 100%;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+    .textos-header{
+        width: 100%;
+        text-align: center;
+    }
+    .textos-header h1{
+        font-size: 60px;
+    }
+}
+
+@media screen and (max-width:340px) {
+    .textos-header h1{
+        font-size: 35px;
+    }
+    .textos-header a{
+        width: 120px;
+    }
+    .textos-header h2{
+        font-size: 15px;
     }
 }
