@@ -47,7 +47,7 @@
 
 .Subtitulos{
     font-family: LeagueGothic;
-    font-size: 300%;
+    font-size: 200%;
     color: black;
 }
 
@@ -93,8 +93,8 @@ html, body {
 
 .go-top-container {
     position: fixed;
-    bottom: 4rem;
-    right: 4rem;
+    bottom: 1rem;
+    right: 2rem;
     width: 6.6rem;
     height: 6.6rem;
     z-index: -1;
@@ -130,8 +130,8 @@ html, body {
  
 .show .go-top-button {
     animation: popup 0.3s ease-in-out;
-    width: 6.6rem;
-    height: 6.6rem;
+    width: 5rem;
+    height: 5rem;
     z-index: 11;
 }
  
@@ -162,7 +162,8 @@ html, body {
 	background: #092327;
 	margin: auto;
     position: fixed;
-    align-items: center;
+    align-content: center;
+    width: 100%;
 }
 
 .menu li a{
@@ -180,3 +181,5 @@ html, body {
 .menu li a:hover{
 	background: #ef8354;
 }
+
+/*pequeña prueba*/
