@@ -57,7 +57,6 @@ const verReceta = (Receta) => {
     console.log(Receta);
 
     ul.innerHTML = "";
-
     contenedor.innerHTML = "";
 
     switch (Receta) {
@@ -71,7 +70,6 @@ const verReceta = (Receta) => {
         ul.appendChild(li6);
 
         console.log(contenedor);
-         
         contenedor.appendChild(ul);
         
         document.body.appendChild(ol);
@@ -85,7 +83,6 @@ const verReceta = (Receta) => {
         ul.appendChild(li8);
 
         console.log(contenedor);
-         
         contenedor.appendChild(ul);
 
         document.body.appendChild(ol);    
@@ -112,6 +109,13 @@ const verReceta = (Receta) => {
             break;
     }
 }
+
+function unaFuncion() {
+    return "Hola profe";
+}
+
+const saludo = unaFuncion();
+console.log(saludo);
 
 
 //location.reload();

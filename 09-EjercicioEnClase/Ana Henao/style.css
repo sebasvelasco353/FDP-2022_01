@@ -1,0 +1,65 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #fff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    font-size: 18px;
+}
+
+
+.contenedor {
+    width: 90%;
+    margin: auto;
+    align-items: center;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-top: 30px;
+    margin: auto;
+    width: 400px;
+    text-align: justify;
+    padding: 3rem 2rem;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.3);
+}
+
+p, h1 {
+    text-align: center;
+}
+
+h1 {
+    width: 100%;
+    color: blue;
+}
+
+input {
+    
+    padding: 2px;
+}
+
+label {
+    margin-top: 20px;
+    color: blue;
+}
+
+.Radio {
+    margin-top: 20px;
+}
+
+#preguntaColesterol, #preguntaAzucar {
+    font-size: 12px;
+    display: none;
+    margin-top: 20px;
+}
+
+.Botones {
+    margin-top: 20px;
+    width: 800px;
+    border-radius: 30px;
+}

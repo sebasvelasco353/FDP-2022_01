@@ -1,0 +1,2 @@
+/* para hacer una helper classes puedes hacer .row .loquesea y en html lo pones en la class que querás afectar */
+/* empezá con las pantallas mas pequeñas y pasá a las grandes, hace las diferencias con @media screen and (min-width: los pixeles que querás) */

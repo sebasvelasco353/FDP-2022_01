@@ -1,0 +1,542 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*MENU*/
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    transition: 0.7s;
+    padding: 30px 20px;
+    z-index: 10;
+}
+
+header.abajo{
+    background: #0B1E23;
+    padding: 15px 20px;
+}
+.Logo{
+    color:#ffffff;
+    text-decoration: none;
+    font-size: 40px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-top: 3px;
+    margin-left: 90px;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li{
+    list-style: none;
+    
+}
+
+header ul li a{
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0  15px;
+    text-decoration: none;
+    color:#0B1E23;
+    letter-spacing: 2px;
+    font-weight: 200;
+    transition: 0.7s;
+}
+
+.zona1{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(fondo3.jpg);
+    background-size: cover;
+    background-position: center center;
+    
+}
+
+nav{
+    max-width: 800px;
+    margin: auto;
+    background-color:#0B1E23;
+    font-size: 20px;
+    margin-top: 3px;
+    border-radius: 10px;
+    color: #06171b;
+
+}
+
+.menuhorizontal{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.menuhorizontal > li > a{
+    display: block;
+    padding: 10px 25px;
+    color: white;
+    text-decoration: none;
+
+
+
+}
+.menuhorizontal > li:hover{
+    
+    
+    background-color: #15323a;
+    border-radius: 10px;
+
+}
+
+.menuvertical{
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 200px;
+    background-color: rgba(179, 149, 149, 0.5);
+    border-radius: 10px;
+    
+}
+
+.menuhorizontal li:hover .menuvertical{
+    display: block;
+    background-color: #15323a;
+
+    
+    
+}
+.menuvertical li:hover{
+    background-color:#fff;
+    color: #fff;
+    
+}
+.menuvertical li a{
+    display: block;
+    
+    
+    
+    padding: 10px 10px 10px 15px;
+    border-radius: 10px;
+    
+}
+
+/*CARDS*/
+
+:root{
+    --white-text:#fff;
+
+}
+
+.background-top-row{
+    background-color:#06171b;
+    backdrop-filter:blur(.4 rem);
+
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    border: none;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: #0B1E23;
+
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    height: 20%;
+    align-items: center;
+
+}
+
+.card{
+    border-radius: 10px;
+    box-shadow: 0 1rem 1rem  #152b31;
+    display: flex;
+    flex-direction: column;
+    margin: 1.5rem;
+    overflow: hidden;
+    width: 700px;
+    height: 680px;
+    backdrop-filter: blur(1rem);
+
+    color: #fff;
+
+} 
+
+.card h6{
+    letter-spacing: 10px;
+    text-transform: uppercase;
+
+}
+.card h4{
+    color: #06171b;
+}
+
+.card h2{
+    letter-spacing: 3px;
+    margin: 1rem 0;
+
+}
+
+.top-row{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+
+} 
+.top-row i{
+    font-size: 2rem;
+
+}
+
+.content{
+    padding: 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.content p{
+    font-size: 18px;
+}
+.button{
+    border-radius: 5px;
+    color: var(--white-text);
+    font-size: 15px;
+    margin-top: 15px;
+    padding: 10px 15px ;
+    letter-spacing: 3px;
+    align-self: flex-start;
+    
+}
+/*BORTÓN VER MÁS*/
+
+.background-top-row{
+
+    background-color: #fff;
+    color: #06171b;
+
+}
+
+.background-top-row:hover{
+
+    background-color: #15323a;
+    color: #fff;
+}
+
+
+
+
+
+/*CARDS SEGUNDAS*/
+
+.bcca{
+    width: 270px;
+    height: 330px;
+}
+p{
+    margin-top: 15px;
+}
+.protein{
+    width: 250px;
+    height: 300px;
+}
+.chocolate{
+    width: 250px;
+    height: 300px;
+
+}
+
+/*CARDS PRIMERAS*/
+
+.omegatres{
+    width: 270px;
+    height: 330px
+
+}
+
+.protain{
+    width: 270px;
+    height: 330px
+}
+
+.leggings{
+    width: 280px;
+    height: 300px
+
+}
+
+/*CALL TO ACTION*/
+
+
+.form{
+    
+    box-shadow: 0 1rem 1rem  #15323a;
+    width: 1265px;
+    height: 500px;
+    backdrop-filter: blur(1rem);
+    color: #fff;
+    margin: auto;
+    background-image: url(fotofit.jpg);
+    background-size: cover;
+    background-position: center center;
+    padding: 1em;
+    margin: 3.5em 1.5em;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0%;
+    
+}
+
+.form__container{
+    display: grid;
+    gap: 10px;
+    grid-auto-columns: 100%;
+    font-size: 60px;
+    width: 100%;
+    
+
+
+}
+
+.tittle{
+    text-align: center;
+    font-size: 60px;
+}
+.form__input{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    padding: .8em 1em;
+    margin-left: 390px;
+    margin-right: 390px;
+   
+    overflow: hidden;
+    background-color: #fff;
+    backdrop-filter: blur(1rem);
+    border: none;
+    border-radius: 8px;
+     
+
+}
+.form__cta{
+    font-family:Arial, Helvetica, sans-serif ;
+    font-size: 15px;
+    padding: .8em 1em;
+    margin-left: 500px;
+    margin-right: 500px;
+    outline: #122E34;
+    border: none;
+    border-radius: 8px;
+}
+
+.form__cta:hover{
+    color: white;
+    background-color: #0B1E23;
+}
+
+
+/*CARDS PRIMERAS*/
+
+.omegatres{
+    width: 270px;
+    height: 330px
+
+}
+
+.protein{
+    width: 270px;
+    height: 330px
+}
+
+.leggings{
+    width: 280px;
+    height: 300px
+
+}
+/*CUESTIONARIO*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/*CAJA DEL FORMULARIO*/
+
+.form-register{
+    width: 100%;
+    height: 80vh;
+    background:#0B1E23;
+    padding: 30px;
+    margin: auto;
+    margin-top: 40px;
+    font-family:Arial, Helvetica, sans-serif;
+    
+    color:#fff;
+}
+
+.form-register h4{
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 3px;
+    
+
+}
+
+/*ESPACIOS INPUTS*/
+
+.controls{
+    width: 35%;
+    background: #15323a;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 16px;
+    border: 1px solid #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    letter-spacing: 3px;
+    align-items: center;
+    margin-top: 15px;
+    color: #fff;
+    
+
+}
+
+.form-register p{
+    height: 40px;
+    text-align: left;
+    font-size: 18px;
+
+}
+
+.form-register a{
+    color:#fff;
+    text-decoration: none;
+
+}
+
+.form-register a:hover{
+    color:#f7f7f7;
+    text-decoration: underline;
+
+}
+/*INPUTS*/ 
+
+.form-register .botons{
+    width: 20%;
+    background-color:#122E34;
+    color:#fff;
+    border: none;
+    padding: 12px;
+    margin: 16px 0;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.form-register .botons:hover
+{
+background-color:#fff;
+color:#122E34;
+}
+
+footer{
+    width: 100%;
+    height: 100vh;
+    flex-direction: row;
+    
+}
+
+.footer{
+    margin-top: 0;
+    height: 180px;
+    background-color: #122E34;
+    
+
+}
+
+.elementos{
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    text-decoration: underline;
+
+
+    
+}
+
+.boton{
+    color: #fff;
+}
+    
+/*ABOUT US*/
+
+
+.titulo_us{
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    color: #fff;
+    text-align: left;
+    margin-left: 30px;
+    letter-spacing: 3px;
+    margin-top: 15px;
+    text-align: center;
+    }
+
+.contenido{
+    font-size: 18px;
+    font-family: Helvetica;
+    color: #fff;
+    text-align:center;
+    margin-left: 30px;
+    
+    
+
+}
+
+.aboutus{
+    margin-bottom: 0px;
+    margin: auto;
+    align-items: center;
+    color: #fff; 
+    font-size: 15px;
+    background-color: #122E34;
+    padding-top: 15px;
+}
+
+
+
+
+
