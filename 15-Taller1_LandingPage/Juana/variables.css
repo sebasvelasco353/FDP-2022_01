@@ -1,2 +1,15 @@
 /* recordá usar root para hacer las variables de color, espaciado, etc.
 se usa escribiendo var(y el nombre de la variable */
+:root {
+    /* Colores */
+
+    --soft-black: #161a1d;
+    --black-black: #0b090a;
+    --white: #FFFFFF;
+    --soft-red: #E5383B;
+    --dark-red: #A4161A;
+
+    /* Valores */
+
+    --container-max-width: 1500px;
+}

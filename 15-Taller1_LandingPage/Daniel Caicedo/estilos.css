@@ -1,0 +1,187 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+}
+body{
+
+    font-family: 'Poppins', sans-serif;
+
+}
+
+nav{
+    position: fixed;
+    top: 20 px;
+    left:20 px;
+    display: flex;
+    justify-content: flex-start ;
+}
+
+nav a{
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.icono{
+    display:block;
+    animation: moverIzquierda 1s ease-in;
+    z-index: 100000000;
+}
+
+header{
+    background: #a8c0ff;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3f2b96, #a8c0ff);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3f2b96, #a8c0ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    padding: 48px ;
+    width: 100% ;
+
+}
+
+.contenedor{
+    width: 95%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space space-around ;
+    margin: auto;
+    
+}
+
+img{
+    display: block;
+    height: 450px;
+    object-fit: cover;
+    width: auto;
+    animation: moverArriba 1s ease-in ;
+
+
+}
+
+.textos{
+   
+    width: 50%;
+    color: #fff;
+
+}
+
+.textos h1{
+    font-size:80px;
+    animation: moverDerecha 1s ease-in ;
+
+}
+
+.textos h2{
+    font-size: 25px;
+    animation: moverIzquierda 1s ease-in ;
+}
+
+.textos a{
+    display: inline-block;
+    Color: #fff;
+    font-weight:500;
+    text-decoration: none;
+    margin-top: 30px;
+    border: 1px solid #fff;
+    width: 150px;
+    border-radius: 3px;
+    text-align:center;
+    padding: 10px 0;
+    animation: moverArriba 1s ease-in ;
+
+}
+
+.wave{
+    height: 100px;
+    width: 100%;
+    background: #a8c0ff;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3f2b96, #a8c0ff);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3f2b96, #a8c0ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.enlaces{
+    position: fixed;
+    display: flex;
+    top: 0;
+    background: #000;
+    justify-content: space-around ;
+    align-items: center;
+    height: 100vh;
+    right: 0;
+    flex-direction: column ;
+    width: 100%;
+    transition: all 1s ease;
+    background: #8E2DE2;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+
+
+.uno{
+    clip-path: circle(0% at 0 0); 
+}
+
+.dos{
+    clip-path: circle(150% at 0 0);
+}
+
+
+
+
+
+
+    
+
+@keyframes moverIzquierda {
+    
+    0%{
+      opacity: 0;
+      transform: translateX(-100px);
+
+    }
+
+    100%{
+        opacity: 1;
+        transform: translate(0);
+
+
+    }
+}
+
+@keyframes moverDerecha{
+    
+    0%{
+      opacity: 0;
+      transform: translateX(100px);
+
+    }
+
+    100%{
+        opacity: 1;
+        transform: translate(0);
+
+
+    }
+}
+
+@keyframes moverArriba{
+    
+    0%{
+      opacity: 0;
+      transform: translateY(100px);
+
+    }
+
+    100%{
+        opacity: 1;
+        transform: translate(0);
+
+
+    }
+}

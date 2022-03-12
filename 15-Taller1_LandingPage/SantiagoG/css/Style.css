@@ -1,0 +1,314 @@
+html{
+   scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+body{
+    background-color: rgba(0, 255, 255, 0.144);
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 40rem;
+    margin: 0;
+    background: url(https://zenbyte.cl/wp-content/uploads/2019/05/que%CC%81-es-un-programador-Back-end-y-Front-end002.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.HeaderDivLeft{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 40rem;
+    margin: 0;
+    align-items: center;
+}
+
+
+.LogoHeader{
+    width: 40rem;
+    height: auto;
+    margin-top: 12%;
+
+}
+
+.HeaderDivRight button{
+    width: 25%;
+    height: 3rem;
+    margin-left: 35%;
+    margin-top: 32%;
+    border: none;
+    padding: 1rem;
+    text-align: center;
+    color: white;
+    background-color: black;
+    display: inline-block;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    border-radius: 1rem;
+
+}
+
+.HeaderDivRight button a{
+    text-decoration: none;
+    color: white;
+}
+
+.btn1{
+    transition: box-shadow 0.4s ease-in-out;
+}
+
+.btn1:hover{
+
+    box-shadow: 0 0 40px 40px white inset;
+}
+
+.btn1:hover a{
+    color: black;
+}
+
+.HeaderDivRight{
+    display: flex;
+    width: 50%;
+    height: 40rem;
+    margin: 0;
+    background: url(https://i.blogs.es/ed843e/superpc-ap/1366_2000.jpeg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.DivNav{
+    position: sticky;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    width: 100%;
+    height: 3rem;
+    background-color: black;
+    border-bottom: 5px solid darkblue;
+}
+
+.ImgNav{
+    width: auto;
+    height: 2rem;
+    margin-left: 20rem;
+    margin-top: 0.5rem;
+}
+
+.navegador{
+    list-style: none;
+    font-family: Helvetica;
+    margin-left: 18%;
+    margin-top: 0.8rem;
+    
+}
+
+.navegador li{
+    display: inline-block;
+}
+
+.navegador li a{
+    margin: 3rem;
+    text-decoration: none;
+    color: white;
+}
+
+.DivBienvenida{
+    display: flex;
+    flex-direction: row;
+    background-color: aqua;
+    width: 100%;
+    height: 20rem;
+    margin-top: 3rem;
+}
+
+.ImgBienv{
+    display: flex;
+    flex-direction: row;
+    float: right;
+    width: 30rem;
+    margin-left: 15rem;
+}
+
+.BienvText{
+    margin-top: 5rem;
+    margin-left: 5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.BienvText > h2{
+    font-size: 1.2rem;
+}
+
+.ButtonBienv{
+    border: none;
+    padding: 1rem;
+    text-align: center;
+    background-color: black;
+    display: inline-block;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    border-radius: 1rem;
+}
+
+.ButtonBienv a{
+    text-decoration: none;
+    color: white;
+}
+
+.ButtonBienv{
+    transition: box-shadow 0.4s ease-in-out;
+}
+
+.ButtonBienv:hover{
+
+    box-shadow: 0 0 40px 40px white inset;
+}
+
+.ButtonBienv:hover a{
+    color: black;
+}
+
+.SomosQ{
+    width: 100%;
+    height: 20rem;
+    background-color: aqua;
+    margin-top: 10rem;
+    padding-top: 7rem;
+}
+
+.ImgSomosQ{
+    display: flex;
+    width: 35rem;
+    float: right;
+    margin-right: 18rem;
+    margin-top: -8rem;
+}
+
+.QSomos{
+    width: 50%;
+    margin-left: 40rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.Productos{
+    display: flex;
+    width: 100%;
+    height: 24rem;
+    background-color: aqua;
+    margin-top: 10rem;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.Card{
+    width: 33.333%;
+    padding: 20px 20px;
+    text-align: center;
+}
+
+.Card img{
+    width: 15rem;
+}
+
+.ButtonCard{
+    border: none;
+    padding: 1rem;
+    text-align: center;
+    background-color: black;
+    display: inline-block;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    border-radius: 1rem;
+}
+
+.ButtonCard{
+    border: none;
+    padding: 1rem;
+    text-align: center;
+    background-color: black;
+    display: inline-block;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    border-radius: 1rem;
+}
+
+.ButtonCard a{
+    text-decoration: none;
+    color: white;
+}
+
+.ButtonCard{
+    transition: box-shadow 0.4s ease-in-out;
+}
+
+.ButtonCard:hover{
+
+    box-shadow: 0 0 40px 40px white inset;
+}
+
+.ButtonCard:hover a{
+    color: black;
+}
+
+
+/* Formulario */
+
+.Contacto{
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    padding: 2rem 3rem;
+    margin: 5rem auto;
+    text-align: justify;
+    background-color: #ECECEC;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+input{
+    box-sizing: border-box;
+    line-height: normal;
+    background: transparent;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    
+}
+
+.enviar_formulario{
+    width: 5rem;
+    background: black;
+    border-radius: 1rem;
+    color: #ECECEC;
+    margin-top: 10px;
+    border: none;
+}
+
+
+footer{
+    width: 100%;
+    height: 5rem;
+    background-color: aqua;
+}
+
+footer img{
+    width: 5rem;
+    margin-top: 2rem;
+    margin-left: 48%;
+}
+
+
