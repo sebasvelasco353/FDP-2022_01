@@ -63,6 +63,16 @@ ul {
   display: inline-block;
   padding: 20px 30px;
   color: rgba(255,255,255, .5);
+  cursor: pointer;
+}
+
+a {
+  color: rgba(255,255,255, .5);
+  text-decoration: none;
+}
+
+a:hover {
+  color: #11cc2a;
 }
 
 .menu:hover {
