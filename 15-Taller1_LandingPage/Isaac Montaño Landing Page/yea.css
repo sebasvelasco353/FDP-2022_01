@@ -1,0 +1,249 @@
+@font-face {
+    font-family: "CourageRoad";
+    src: url("fuentes/CourageRoad.ttf") format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "LeagueGothic";
+    src: url("fuentes/LeagueGothic.ttf") format('truetype');
+    font-weight: normal;
+}
+
+/*cards*/
+
+.Cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding: 1em;
+    border: 1em;
+    margin: 1em;
+}
+.card1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    margin: 1em;
+    background-color: snow;
+    border: 2px solid gray;
+    padding: 5px;
+    box-shadow: 7px 13px 37px cadetblue;
+}
+
+.card2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    margin: 1em;
+    background-color: snow;
+    border: 2px solid gray;
+    padding: 5px;
+    box-shadow: 7px 13px 37px cadetblue;
+}
+.card3 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    margin: 1em;
+    background-color: snow;
+    border: 2px solid gray;
+    padding: 5px;
+    box-shadow: 7px 13px 37px cadetblue;
+}
+.textoN {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.Subtitulos{
+    font-family: LeagueGothic;
+    font-size: 200%;
+    color: black;
+}
+
+/*Imágen incial y título */ 
+
+html, body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+.full {
+    width: 100%;
+    height: 100%;
+    background: url('bgTokyo.jpg') no-repeat 50% 50%;
+    background-size: cover;
+    display: table;
+    margin: auto;
+    top: 0;
+  }
+  
+.full-inner {
+    width: 100%;
+    vertical-align: middle;
+    display: table-cell;
+  }
+  
+.content {
+    max-width: 700px;
+    margin: auto;
+    text-align: center;
+  }
+  
+.content h1{
+    font-family: CourageRoad;
+    font-size: 500%;
+    color: white;
+}
+
+
+/* Botón subir página */
+
+.go-top-container {
+    position: fixed;
+    bottom: 1rem;
+    right: 2rem;
+    width: 6.6rem;
+    height: 6.6rem;
+    z-index: -1;
+}
+ 
+.go-top-button {
+    width: 0rem;
+    height: 0rem;
+    background: #2071b2;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+ 
+.go-top-button i {
+    position: absolute;
+    font-size: 1.7rem;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    color: #fff;
+    transition: 0.2s;
+}
+ 
+.show {
+    z-index: 10;
+}
+ 
+.show .go-top-button {
+    animation: popup 0.3s ease-in-out;
+    width: 5rem;
+    height: 5rem;
+    z-index: 11;
+}
+ 
+.show i {
+    transform: translate(-50%, -50%) scale(1);
+}
+ 
+@keyframes popup {
+    0% {
+        width: 0;
+        height: 0;
+    }
+    50% {
+        width: 8rem;
+        height: 8rem;
+    }
+    100% {
+        width: 6.6rem;
+        height: 6.6rem;
+    }
+}
+
+
+
+/*Menu superior*/
+
+.menu{
+	list-style: none;
+	padding: 0;
+	background: #092327;
+	margin: auto;
+    position: fixed;
+    align-content: center;
+    width: 100%;
+}
+
+.menu li a{
+	text-decoration: none;
+	color: white;
+	padding: 20px;
+	display: block;
+}
+
+.menu li{
+	display: inline-block;
+	text-align: center;
+}
+
+.menu li a:hover{
+	background: #ef8354;
+}
+
+/*Formulario*/
+.Formulario {
+    width: 400px;
+    background: rgb(16, 9, 61);
+    padding: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 4px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: antiquewhite;
+    box-shadow: 7px 13px 37px cadetblue;
+}
+.Formulario h3 {
+    font-size: 200%;
+    margin-top: 5px;
+}
+.controles {
+    width: auto;
+    background: rgb(16, 9, 61);
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    border: 1px solid wheat;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    color: #fff;
+}
+
+.Formulario p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+}
+.Formulario a{
+    color: wheat;
+    text-decoration: underline;
+}
+.Formulario .btn {
+    width: 100%;
+    background: #2071b2;
+    border: none;
+    padding: 12px;
+    color: #fff;
+    margin: 16px 0;
+    font-size: 16px;
+    align-items: center;
+}

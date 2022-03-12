@@ -4,63 +4,83 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/Users/juans/Documents/FDP-2022_01/15-Taller1_LandingPage/Juana/pics/icon2.png">
     <title> Vynil4life </title>
     <link rel="stylesheet" href="estilos.css">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="variables.css">
 </head>
-
 <body>
-<header>
-    <div><h2><span>Vynil</span>4Life</h2></div>
+<header class="organizar">
+    <div class="logo organizar"><h2><span>Vynil</span>4Life</h2></div>
     <nav>         
-        <ul>
-        <li> Algo va aquí </li>
-        <li> Aquí va otra cosa </li>
-        <li> Y aquí otra </li>
+        <ul class="organizar">
+        <li> Mi cuenta </li>
+        <li> Nuestras tiendas </li>
+        <li> Mis pedidos </li>
         </ul>
     </nav>
-    <button class="reset"> Reset </button>
 </header>
 <div class="contenedor">
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis commodi inventore laboriosam praesentium cumque doloribus, laudantium quam maxime ex voluptatum. Fugit maxime facilis fugiat quasi laboriosam dicta optio ea alias, fuga eos, quisquam consequatur ab. Exercitationem fugiat harum sunt veniam rem ad expedita sequi, ea iste eveniet atque itaque quasi officiis. Exercitationem nostrum vero ex earum iure officia sunt quod eos molestias quidem dolores error, maxime numquam, et voluptatem sequi possimus hic repellat illum itaque. Repellendus delectus rem corporis vitae.</p>
-    <div>
-        <section>
+    <p class="intro">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis commodi inventore laboriosam praesentium cumque doloribus, laudantium quam maxime ex voluptatum. Fugit maxime facilis fugiat quasi laboriosam dicta optio ea alias, fuga eos, quisquam consequatur ab. Exercitationem fugiat harum sunt veniam rem ad expedita sequi, ea iste eveniet atque itaque quasi officiis. Exercitationem nostrum vero ex earum iure officia sunt quod eos molestias quidem dolores error, maxime numquam, et voluptatem sequi possimus hic repellat illum itaque. Repellendus delectus rem corporis vitae.</p>
+    <div class="organizar contenedor__texto">
+        <section class="seccion__texto">
             <div>
                 <h2>Quienes somos?</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex accusantium temporibus, necessitatibus consectetur soluta tempore fuga impedit, cupiditate minima possimus molestiae dolorum tenetur! Voluptatum ipsum dolores nesciunt ad architecto molestiae?</p>                
             </div>
-            <button class="section__button">Conoce más</button>
+            <button class="seccion__boton">Conoce más</button>
         </section>
-        <section>
+        <section class="seccion__texto">
             <div>
                 <h2>Nuestro catálogo</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex accusantium temporibus, necessitatibus consectetur soluta tempore fuga impedit, cupiditate minima possimus molestiae dolorum tenetur! Voluptatum ipsum dolores nesciunt ad architecto molestiae?</p>                
             </div>
-            <button class="section__button">Conoce más</button>
+            <button class="seccion__boton">Conoce más</button>
         </section>
-        <section>
+        <section class="seccion__texto">
             <div>
                 <h2>Contáctanos</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex accusantium temporibus, necessitatibus consectetur soluta tempore fuga impedit, cupiditate minima possimus molestiae dolorum tenetur! Voluptatum ipsum dolores nesciunt ad architecto molestiae?</p>                
             </div>
-            <button class="section__button">Conoce más</button>
+            <button class="seccion__boton">Conoce más</button>
         </section>
     </div>
 <section>
-    <div>
-        <form action=""></form>
-        <h2>Brindanos tus datos para hacer tu pedido!</h2>
-        
-
-
-
-    </div>  
+    <div class="formpic">
+     <div>
+        <form action="" class="formulario">
+            <h2 class="formulario__titulo">Brindanos tus datos para hacer tu pedido!</h2>
+            <label for="Nombres" class="">Nombre(s)</label>
+            <input type="text" class="formulario__input" id="Nombre">
+            <label for="Apellidos" class="">Apellidos</label>
+            <input type="text" class="formulario__input" id="Apellidos">
+            <label for="Correo" class="">Correo electrónico</label>
+            <input type="text" class="formulario__input" id="Correo">
+            <label for="Pais" class="">País</label>
+            <select name="Nacionalidad" class="formulario__select" id="Pais"> </select>
+            <label for="Direccion" class="">Dirección</label>
+            <input type="text" class="formulario__input" id="Direccion">
+            <label for="Permisos" class="">Me interesa conocer los últimos anuncios y novedades</label>
+            <input type="checkbox" class="">
+            <label for="Permisos" class="">Permito el uso de mis datos personales</label>
+            <input type="checkbox" class="">
+            <button type="button" class="formulario__boton" onclick="alerta()">Crear cuenta</button>
+            <button type="reset" class="formulario__boton">Reset</button>
+            </form>
+            </div>
+           <div>
+        <img src="pics/Vinyl shop.jpg" width="700px" height="500px" class="imagen">
+    </div>
+    </div>
 </section>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"> </script>
 <script src="LP.js"> </script>
 </body>
 </html>
 
 <!// nota super IMPORTANTE PANA, acordate de escribirle las clases a practicamente todo (header, div, button, section,form,h2)//>
+<! el onclick del button submit //>
 
 
