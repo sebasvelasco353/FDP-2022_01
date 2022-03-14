@@ -112,3 +112,8 @@
     font-style: Regular;
     font-size: 16px;
 }
+
+.form-box{
+    display: flex;
+    flex-direction: column;
+}
