@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio de Metodos.</title>
+    
+    
+    
+    <style>
+    #text{
+        display: none;
+    }
+</style>
+
+    <style>
+        #textdos{
+            display: none;
+        }
+    </style>
+
+<style>
+    #texttres{
+        display: none;
+    }
+</style>
+
+<style>
+    #boton{
+        display: block;
+    color: #014029;
+    background-color:#D9D7D7;
+    border: none;
+    padding: 10px 20px;
+    }
+</style>
+
+<style>
+    #botondos{
+    display: block;
+    color: #014029;
+    background-color:#D9D7D7;
+    border: none;
+    
+    padding:10px 20px;
+
+
+    }
+</style>
+
+<style>
+    #botontres{
+        display:block;
+        color: #014029;
+    background-color:#D9D7D7;
+    border: none;
+    padding: 10px 20px;
+    }
+</style>
+   
+
+
+<link rel="stylesheet" href="styles.css">
+   
+    
+    
+    
+    <div class="titulo">
+    <p>COFFE RECIPIES</p>
+</div>
+
+
+</head>
+<body>
+    
+    
+    
+
+    
+    <section class="pri-receta">
+        <div class="nombre-receta">
+            CAFFE MOCCA HELADO
+        </div>
+<br>
+        <div class="imagenuno">
+        <img src="cafemocca.jpg">
+    </div>
+    <br>
+        <div class="descripción">
+            Si queremos un café bien frío, debemos saber que hay vida más allá del café con hielo aunque sea una de las propuestas más rápidas y que más bien preservan la esencia del café.
+        </div>
+        <br>
+       <button id="boton" onclick="mostrar();">Leer más</button> 
+       
+       <div id="text"> INGREDIENTES
+         <br>  
+
+        -375 ml de café frío
+        <br>
+
+        -500 ml de leche semidescremada
+        <br>
+
+        -2 cucharadas de azúcar
+        <br>
+
+        -Chocolate caliente (3 cucharadas serán suficientes)
+        <br>
+
+        -Hielo en abundancia
+        <br>
+         Una vez disponemos de los ingredientes, el procedimiento es muy sencillo:
+        <br>
+
+        
+        1) Sólo hay que ponerlos todos en la licuadora y dejarla trabajar hasta que la mezcla sea homogénea.
+        <br>
+
+        2) Una vez servido en un vaso, se puede coronar la bebida con un poco de nata manchada con chocolate. En definitiva, una combinación deliciosa.</div>
+        <br>
+
+       
+       
+       <button id="boton" onclick= "ocultar();">Leer menos</button> 
+       
+
+       </div>
+
+       <script>
+           function mostrar(){
+
+            document.getElementById('text').style.display='block';
+            document.getElementById('boton').style.display='none';
+            
+
+           }
+
+           function ocultar(){
+               document.getElementById('text').style.display='none';
+               document.getElementById('boton').style.display='block';
+               
+           }
+
+       </script>
+        
+        
+    </section>
+
+    
+    <section class="segun-receta">
+        <div class="nombre-receta">
+            CAPUCHINO FRIO
+        </div>
+
+        <div class="imagendos">
+        </div>
+<br>
+        <img src="capuchinofrioagain.jpg">
+        <br>
+        <div class="descripción">
+            <br>
+
+            Italia… Nos ha dado recetas de cocina deliciosas, ciudades indescriptibles llenas de historia y belleza, un idioma maravilloso y, cómo no, el capuchino. Esa manera de servir y disfrutar el café que ha conquistado medio mundo.
+        </div>
+        <br>
+        <button id="botondos" onclick="mostrardos();">Leer más</button>
+        <br>
+
+        <div id="textdos"> INGREDIENTES
+         <br>
+         -1 taza de café
+         <br>
+
+         -50ml de leche
+         <br>
+
+         -Cacao en polvo o canela
+         <br>
+
+         -1 taza de hielos   
+        <br>
+        Preparación de este café de verano:
+        <br>
+
+1) Prepara un café solo y añádele azúcar a tu gusto.
+<br>
+2) Vierte la leche en tu licuadora y bátela hasta que consigas que salga espumosa
+<br>
+3) Una vez apartada la leche, pica los hielos en tu licuadora
+<br>
+4) En una taza, vierte el café y la leche líquida
+<br>
+5) A continuación, agrega el hielo picado y finalmente la espuma de la leche
+<br>
+6) Espolvorea cacao en polvo o canela molida para darle un toque de sabor muy rico (opcional)
+<br>
+
+Recomendación: A la hora de echar azúcar al café solo, ten en cuenta que luego vas a añadirle leche y cacao, que endulzarán la bebida.
+<br>
+<br>
+
+<button id="botondos" onclick="ocultardos();">Leer menos</button>
+
+        </div>
+
+        <script>
+            function mostrardos(){
+                document.getElementById('textdos').style.display='block';
+            }
+
+            function ocultardos(){
+                document.getElementById('textdos').style.display='none';
+            }
+
+
+
+
+        </script>
+
+
+
+
+
+    </section>
+
+    <section class="tercer-receta">
+        <div class="nombre-receta">
+            FRAPPE OREO
+        </div>
+        <br>
+        
+        <div class="imagentres">
+            
+
+        <img src="frappeoreo.jpg">
+    </div>
+    <br>
+        <div class="descripción">
+            Seguro que alguna vez has probado el Frappé de Oreo y casi has babeado. ¡Está delicioso! Te dejo aquí la receta (muy fácil) para que puedas hacer esta bebida en tu casa y disfrutarla cuando quieras.    
+        </div>
+
+        <button id="botontres" onclick="mostrartres();">Leer más</button>
+        <div id="texttres">INGREDIENTES
+        <br>
+        -100ml de leche
+        <br>
+        -5 galletas oreo
+        <br>
+        -1 bola de helado de vainilla
+        <br>
+        Preparación
+        <br>
+        1) Mete las galletas Oreo en tu licuadora y tritúralas. Deja apartada una poca cantidad para después.
+        <br>
+        2) Añade la leche y el helado de vainilla. Licua hasta conseguir una mezcla homogénea.
+        <br>
+        3) Sirve en vaso muy frío. Puedes añadirle un poco de Oreo triturada por encima o nata montada.
+        <br>
+        Variantes: Si no cuentas con helado de vainilla, puedes añadirle a cambio un poco de extracto de vainilla para darle ese toque de sabor.
+        <br>
+        
+
+        <button id="botontres" onclick="ocultartres();">Leer menos</button>
+
+
+        </div>
+
+        <script>
+
+             function mostrartres(){
+                 document.getElementById('texttres').style.display='block';
+                 document.getElementById('botontres').style.display='block';
+             }
+
+                 function ocultartres(){
+                     document.getElementById('texttres').style.display='';
+                     document.getElementById('botontres').style.display='';
+                 }
+             
+        </script>
+
+
+        </div>
+
+
+
+       
+        
+        
+
+    </section>
+    
+</body>
+
+    
+    
+<script src="./js/app.js"></script>
+
+
+
+
+
+
+
+</body>
+</html>
