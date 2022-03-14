@@ -1,0 +1,110 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    background-color: #bebebe;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+a{
+    text-decoration: dashed;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: white;
+    font-size: large;
+}
+a:hover{
+    text-decoration: underline;
+    text-decoration-color: black;
+    color: black;
+}
+input, textarea, button{
+    border: none;
+    border-radius: 12px;
+    margin: 6px;
+    padding: 12px;
+}
+h1{
+    color: rgb(29, 22, 22);
+}
+h3{
+    padding: 18px;
+    margin: 0px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: #ecedee;
+    color: rgb(27, 26, 26);
+}
+#Menu1{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color: #6d7075;
+    width: 100%;
+    position: sticky;
+    top: 0px;
+}
+
+#sobrenostros1{
+    padding: 32px 20px;
+    background-color: #97999c;
+    margin: 0px 12%;
+    color: white;
+}
+#primerac{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 24px;
+}
+#segundac{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+
+
+#Secciont1{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    text-align: center;
+    background-color: #a5a8ad;
+}
+#datos1{
+    display: flex;
+    flex-direction: column;
+    padding: 18px
+} 
+#pie1{
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: #9da0a3;
+    padding: 16px;
+    text-align: center;
+}
+#datos2{
+    display: flex;
+    flex-direction: column;
+    padding: 18px;
+}
+
+
+#piec2{
+    align-self: center;
+    text-align: left;
+}
+
+#mensaje{
+    resize: none;
+}
+.paracontenido{
+    margin-left: 12%;
+    margin-right: 12%;
+    margin-bottom: 2%;
+    margin-top: 0px;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+}
+.send_button:hover{
+    background-color: #a8a8a8;
+}
