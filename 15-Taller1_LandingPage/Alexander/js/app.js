@@ -11,29 +11,30 @@ gsap.from('.sect_info_ourwork',{duration: 3, opacity: 0})
 gsap.from('#Section_form',{duration: 3, opacity: 0})
 
 // Functiones
-// function verficando_datos(){
-//     let timerInterval
-// Swal.fire({
-//   title: 'Verificando Datos',
-//   html: 'Por favor espere solo tarda <b></b> milisegundos.',
-//   timer: 2000,
-//   timerProgressBar: true,
-//   didOpen: () => {
-//     Swal.showLoading()
-//     const b = Swal.getHtmlContainer().querySelector('b')
-//     timerInterval = setInterval(() => {
-//       b.textContent = Swal.getTimerLeft()
-//     }, 100)
-//   },
-//   willClose: () => {
-//     clearInterval(timerInterval)
-//   }
-// }).then((result) => {
-//   /* Read more about handling dismissals below */
-//   if (result.dismiss === Swal.DismissReason.timer) {
-//   }
-// })
-// }
+ function verficando_datos(){
+     let timerInterval
+ Swal.fire({
+   title: 'Verificando Datos',
+   html: 'Por favor espere solo tarda <b></b> milisegundos.',
+   timer: 2000,
+   timerProgressBar: true,
+   didOpen: () => {
+     Swal.showLoading()
+     const b = Swal.getHtmlContainer().querySelector('b')
+     timerInterval = setInterval(() => {
+       b.textContent = Swal.getTimerLeft()
+     }, 100)
+   },
+   willClose: () => {
+     clearInterval(timerInterval)
+   }
+ }).then((result) => {
+    Datos_enviados();
+   /* Read more about handling dismissals below */
+   if (result.dismiss === Swal.DismissReason.timer) {
+   }
+ })
+ }
 
 function datos_console(){
     nombre= document.getElementById('nombre').value;
