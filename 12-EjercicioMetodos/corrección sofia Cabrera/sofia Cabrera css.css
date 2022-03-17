@@ -1,0 +1,101 @@
+
+
+  
+  h1{
+    background-color: rgb(255, 255, 255);
+    color: rgb(241, 92, 92);
+    font-size: xx-large;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+button{
+    background-color: white;
+   border-color: white;
+   font-size: small;
+}
+h6{
+    font-size: large;
+    color: rgb(245, 81, 62);
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+
+}
+img{
+    display: block;
+}
+.container{
+    width: 100%;
+    margin: auto;
+}
+.container--flex{
+    display: flex;
+}
+h3{
+    background-color: rgba(248, 136, 136, 0.432);
+    color: rgb(241, 101, 101);
+    font-size: xx-large
+    
+}
+header{
+    background-color: rgb(255, 124, 124);
+    color: white;
+    padding: auto;
+    margin: 0%;
+}
+head{
+    background-color: rgb(255, 124, 124);
+}
+.banner__content{
+    color: rgb(241, 101, 101)
+}
+h2{
+    font-size:xx-large ;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgb(255, 117, 102);
+color: white;
+}
+.main-txt{
+    color: rgb(241, 101, 101) ;
+}
+.icon-whatsapp{
+    background-color: rgb(241, 101, 101);
+}
+.icon-facebook-square{
+    background-color: rgb(241, 101, 101);
+}.icon-instagram{
+    background-color: rgb(241, 101, 101);
+    padding: 2px;
+} 
+.social-icon{
+    background-color: rgb(241, 101, 101); 
+    padding: 2px;
+}
+
+
+  
+  .readMore_btn {
+    background-color: #fd6d6d;
+    border: none;
+    border-radius: 40px;
+    color: white;
+    padding: 15px 32px;
+    font-size: 1.2em;
+    box-shadow: 0px 0px 10px 0px #da5c5c;
+    
+  }
+  
+  .readMore_btn:hover {
+  
+    background-color: black;
+    color: #fff;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 3.05s;
+  }
+  .hide{
+      display: none;
+  }
+  
+.show{
+    display: block;
+}
