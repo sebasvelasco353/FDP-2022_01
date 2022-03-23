@@ -1,4 +1,9 @@
+# Welcome to async land.
+![log](img/log.jpg)
+
+
 ## Async Functions
+
 Async functions o funciones asincronas son funciones que utilizamos para ejecutar codigo en el fondo, es decir como el codigo en javascript se ejecuta de forma sincrona, usamos las funciones async para esperar una respuesta y continuar con ese proceso despues, las declaramos con la palabra async antes de function y usamos el await dentro de ellas para decirle a la funcion que debe esperar esa respuesta.
 
 ## Promesas
