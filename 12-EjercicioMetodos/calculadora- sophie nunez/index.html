@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <script src="Display.js" type="text/javascript"></script>
+    <script src="Calculadora.js" type="text/javascript"></script>
+    <script src="index.js" type="text/javascript" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="calculadora">
+            <div class="display">
+                <div id="valorarriba"></div>
+                <div id="valorabajo"></div>
+            </div>
+            <button class="twocol" onclick="display.borrarTodo()">AC</button>
+            <button onclick="display.borrar()" class="delete">⌫</button>
+            <button class="operator" value="porcentaje">%</button>
+            <button class="operator" value="dividir">÷</button>
+            <button class="number">1</button>
+            <button class="number">2</button>
+            <button class="number">3</button>
+            <button class="operator" value="multiplicar">x</button>
+            <button class="number">4</button>
+            <button class="number">5</button>
+            <button class="number">6</button>
+            <button class="operator" value="restar">-</button>
+            <button class="number">7</button>
+            <button class="number">8</button>
+            <button class="number">9</button>
+            <button class="operator" value="sumar">+</button>
+            <button class="number">0</button>
+            <button class="number">.</button>
+            <button class="operator" value="igual" id="twocol_operator">=</button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,105 @@
+*{
+    font-family: 'Fredoka', sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: #fadaff;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.calculadora {
+    display: grid;
+    grid-template-columns: repeat(4, 75px);
+    grid-template-rows: 160px repeat(5, 75px);
+    background-color: #2e3951;
+    padding: 15px;
+    border-radius: 25px;
+}
+
+button {
+    cursor: pointer;
+    margin: 5px;
+    padding: 0;
+    border-radius: 50%;
+    border: none;
+    font-size: 1.5em;
+}
+
+.number {
+    background-color: #2e3951;
+    color: #969ea8;
+}
+
+.operator {
+    background-color: #212b41;
+    color: #edb2f6;
+}
+
+#twocol_operator {
+    background-color: #edb2f6;
+    color: #212b41;
+    grid-column: 3/5;
+    grid-row: 6;
+    border-radius: 30px;
+}
+
+.twocol {
+    background-color: #212b41;
+    color: #edb2f6;
+}
+
+.number:active {
+    background-color: #212b41;
+}
+
+.operator:active {
+    background-color: #fadaff;
+}
+
+.twocol:active {
+    background-color: #fadaff;
+}
+
+#twocol_operator:active {
+    background-color: #212b41;
+    color: #edb2f6;
+}
+
+.display {
+    color: #969ea8;
+    grid-column: 1/-1;
+    display: flex;
+    padding: 15px;
+    margin: -15px -15px 10px;
+    background-color: #212b41;
+    flex-direction: column;
+    align-items: flex-end;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    text-align: right;
+    justify-content: space-between;
+    word-break: break-all;
+}
+
+#valorabajo {
+    font-size: 1.5em;
+}
+
+#valorarriba {
+    font-size: 3em;
+}
+
+.delete {
+    background-color: #212b41;
+    color: #edb2f6;
+}
+.delete:active {
+    background-color: #fadaff;
+}

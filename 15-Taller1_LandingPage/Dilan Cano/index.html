@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Venta de Motos</title>
+</head>
+
+<body>
+  <header>
+
+    <!--Menu y logo-->
+
+    <section class="contenedor">
+
+      <section class="navegacion">
+        <section class="logo"><img src="./img/LOGO-A2.png" alt=""></section>
+        <section class="menu">
+          <ul>
+            <li>Inicio <a href="#"></a></li>
+            <li>Servicios <a href="#"></a></li>
+            <li>Contacto <a href="#"></a></li>
+          </ul>
+        </section>
+      </section>
+    </section>
+
+    <!--Introducción-->
+
+    <section class="contenido">
+
+      <section class="texto">
+        <p class="subtitulo">Tienda</p>
+        <h1 class="titulo">de Motos</h1>
+        <p class="descripcion">No solo te vendemos tu nueva moto <br> te brindamos en nuestra asesoria una experiencia.</p>
+        <button id="botonProductos"><a data-link=".Servicios">Ver productos</a></button>
+      </section>
+
+      <section class="img1"></section>
+
+    </section>
+  </header>
+
+    <!--Cards-->
+
+  <div class="Servicios" id="Servicios">
+    <h1 id="CardTitulo">Nuestros Servicios</h1>
+
+    <section class="Cards">
+        <div class="cuadro">
+            <div id="Card" class="card">
+                <img id="ImgCard" src="./img/01.png"/>
+                <h3 id="Texto">Nuevas</h3>  
+            </div>
+        </div>  
+        <div class="cuadro">
+            <div id="Card" class="card">
+                <img id="ImgCard" src="./img/02.png"/>
+                <h3 id="Texto">Usadas</h3>
+            </div>
+        </div>
+        <div class="cuadro">
+            <div id="Card" class="card">
+                <img id="ImgCard" src="./img/03.png"/>
+                <h3 id="Texto">Vendenos la tuya</h3>
+            </div>
+        </div>
+        
+      </section>
+  </div>
+
+    <!--Formulario-->
+
+
+  <section class="contacto">
+    <h1 class="tituloContacto">Contáctanos</h1>
+    <section class="interno_contacto">
+
+      <section class="mensaje">
+        <form action="#">
+          <input class="inputContacto" type="text" placeholder="Nombre Completo" id="nombre">
+          <input class="inputContacto" type="email" placeholder="Email" id="correo">
+          <textarea class="inputContacto" name="comentario" id="comentario" cols="30" rows="10" placeholder="Comenta aquí"></textarea>
+          <input class="inputContacto" type="submit" value="Enviar" onclick="EnviarDatos()">
+        </form>
+      </section>
+    </section>
+  </section>
+
+  <script src="./app.js"></script>
+</body>
+
+</html>
