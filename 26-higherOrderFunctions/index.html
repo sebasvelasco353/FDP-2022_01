@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section id="loading" class="loading">Loading...</section>
+    <div class="container">
+        <div class="filter">
+            <label for="filter">Filtrar por:</label>
+            <select name="filter" id="filter">
+                <option value="all">Todos</option>
+                <option value="height>150">height > 150</option>
+                <option value="height<150">height < 150</option>
+                <option value="mass<100">mass < 100</option>
+                <option value="mass>100">mass > 100</option>
+            </select>
+        </div>
+        <h2>Los personajes que cumplen con el filtro son: </h2>
+        <section id="display">
+            <!-- results -->
+        </section>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
