@@ -48,8 +48,8 @@ function filterBy(criteria) {
 function reduce(criteria) {
     console.log(results);
     const reducers = {
-        'heightSum': results.reduce((a, b) => parseInt(a.height + b.height)),
-        'massSum': results.reduce((a, b) => parseInt(a.mass + b.mass))
+        'heightSum': results.reduce((a, b) => parseInt(a.height) + parseInt(b.height)),
+        'massSum': results.reduce((a, b) => parseInt(a.mass) + parseInt(b.mass))
     }
     return reducers[criteria];
 }
