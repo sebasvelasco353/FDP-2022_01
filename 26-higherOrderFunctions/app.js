@@ -1,6 +1,8 @@
 const url = 'https://swapi.dev/api/people';
 const loading = document.getElementById('loading');
 const filterSelect =  document.getElementById('filter');
+const reducerSelect =  document.getElementById('reducer');
+const reducer_result = document.getElementById('reducer_result');
 const display = document.getElementById('display')
 let results = [];
 
@@ -13,6 +15,7 @@ async function run(){
 
     results = filterBy(filterSelect.value);
     display_data();
+    display_reducer();
 
     loading.style.display = 'none';
 }
@@ -27,6 +30,10 @@ function display_data() {
     });
 }
 
+function display_reducer() {
+    reducer_result.innerText = `El resultado del reducer es ${reduce(reducerSelect.value)}`
+}
+
 function filterBy(criteria) {
     const filters = {
         'all': people,
@@ -38,9 +45,23 @@ function filterBy(criteria) {
     return filters[criteria];
 }
 
+function reduce(criteria) {
+    console.log(results);
+    const reducers = {
+        'heightSum': results.reduce((a, b) => parseInt(a.height + b.height)),
+        'massSum': results.reduce((a, b) => parseInt(a.mass + b.mass))
+    }
+    return reducers[criteria];
+}
+
 filterSelect.addEventListener("change", (e) => {
     results = filterBy(filterSelect.value);
     display_data();
+    display_reducer();
+});
+
+reducerSelect.addEventListener("change", (e) => {
+    display_reducer();
 });
 
 run();
