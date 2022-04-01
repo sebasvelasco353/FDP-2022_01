@@ -23,9 +23,9 @@ function display_data() {
     const display = document.getElementById("data");
     display.innerHTML = '';
     people.results.forEach(element => {
-        var opt = document.createElement('p');
+        var opt = document.createElement('tr');
         opt.className = "data_element"
-        opt.innerHTML = `<tr><td><b>${element.name}</b></td> <td>${element.gender}</td> <td>${element.birth_year}</td> <td>${element.mass}</td> <td>${element.height}</td> <td>${element.hair_color}</td> <td>${element.eye_color}</td> <td>${element.skin_color}</td></tr>`;
+        opt.innerHTML = `<td><b>${element.name}</b></td> <td>${element.height}</td> <td>${element.mass}</td> <td>${element.hair_color}</td> <td>${element.skin_color}</td>`;
         display.appendChild(opt);
     });
 }
