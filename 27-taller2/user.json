@@ -1,0 +1,98 @@
+{
+    "name": "John Doe",
+    "email": "jdoe@clinica.com",
+    "messages": [
+        {
+            "sender": "casos@clinica.com",
+            "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "timestamp": "12-03-2022",
+            "cc": "casos@clinica.com, bonos@clinica.com, it@clinica.com, info@clinica.com"
+        },
+        {
+            "sender": "bonos@clinica.com",
+            "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "timestamp": "12-03-2022",
+            "cc": "casos@clinica.com, bonos@clinica.com, it@clinica.com, info@clinica.com"
+        },
+        {
+            "sender": "it@clinica.com",
+            "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris odo consequat. Duis aute irure dolor in reprehenderit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "timestamp": "12-03-2022",
+            "cc": "casos@clinica.com, bonos@clinica.com, it@clinica.com, info@clinica.com"
+        },
+        {
+            "sender": "casos@clinica.com",
+            "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "timestamp": "12-03-2022",
+            "cc": "casos@clinica.com, bonos@clinica.com, it@clinica.com, info@clinica.com"
+        }
+    ],
+    "cases": [
+        {
+            "name": "Pepito",
+            "last_name": "Perez",
+            "age": 60,
+            "height": 190,
+            "smoker": true,
+            "country": "Colombia",
+            "bloodtype": "O+",
+            "closed": true,
+            "prev_surgery": false
+        },
+        {
+            "name": "Fulanito",
+            "last_name": "Perez",
+            "age": 16,
+            "height": 170,
+            "smoker": false,
+            "country": "Suecia",
+            "bloodtype": "A+",
+            "closed": false,
+            "prev_surgery": true
+        },
+        {
+            "name": "Britney",
+            "last_name": "Spears",
+            "age": 46,
+            "height": 165,
+            "smoker": false,
+            "country": "USA",
+            "bloodtype": "B+",
+            "closed": true,
+            "prev_surgery": true
+        },
+        {
+            "name": "Devendra",
+            "last_name": "Banhart",
+            "age": 35,
+            "height": 167,
+            "smoker": false,
+            "country": "USA",
+            "bloodtype": "A+",
+            "closed": false,
+            "prev_surgery": false
+        },
+        {
+            "name": "Dimebag",
+            "last_name": "Darrell",
+            "age": 74,
+            "height": 187,
+            "smoker": true,
+            "country": "USA",
+            "bloodtype": "B-",
+            "closed": true,
+            "prev_surgery": false
+        },
+        {
+            "name": "Facundo",
+            "last_name": "Cabral",
+            "age": 68,
+            "height": 182,
+            "smoker": false,
+            "country": "Argentina",
+            "bloodtype": "AB+",
+            "closed": true,
+            "prev_surgery": false
+        }
+    ]
+}
