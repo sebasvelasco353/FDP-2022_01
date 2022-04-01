@@ -1,0 +1,12 @@
+.title{
+    text-align: center;
+    color: rgb(12, 10, 150);
+}
+
+.div{
+    display: flex;
+    flex-direction: colums;
+    background-color:rgb(150, 180, 235);
+    font-size: 25px;
+    margin-bottom: 30px;
+ }
