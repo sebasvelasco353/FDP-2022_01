@@ -1,0 +1,16 @@
+body{
+    text-align: center;
+}
+.text{
+    background-color: lightgray;
+    color: black;
+    text-align: center;
+    padding: 8px;
+}
+h3{
+    color: white;
+    background-color: gray;
+    margin: 12px;
+    padding: 12px;
+    margin: 0px;
+}
