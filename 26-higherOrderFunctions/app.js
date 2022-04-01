@@ -1,19 +1,19 @@
-const url = 'https://swapi.dev/api/people';
-
+const url = 'https://raw.githubusercontent.com/sebasvelasco353/FDP-2022_01/main/27-taller2/user.json';
 const loading = document.getElementById('loading');
 const filterSelect =  document.getElementById('filter');
 const reducerSelect =  document.getElementById('reducer');
 const reducer_result = document.getElementById('reducer_result');
 const display = document.getElementById('display')
-
 let results = [];
+
 let people;
 
 async function run(){
     const response = await fetch(url);
     const responseObj = await response.json();
-    people = responseObj.results;
-    
+    people = responseObj;
+    console.log(people);
+
     results = filterBy(filterSelect.value);
     display_data();
     display_reducer();
@@ -64,4 +64,5 @@ filterSelect.addEventListener("change", (e) => {
 reducerSelect.addEventListener("change", (e) => {
     display_reducer();
 });
+
 run();
