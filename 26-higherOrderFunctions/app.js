@@ -64,5 +64,4 @@ filterSelect.addEventListener("change", (e) => {
 reducerSelect.addEventListener("change", (e) => {
     display_reducer();
 });
-
 run();
