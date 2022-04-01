@@ -14,8 +14,8 @@ async function run(){
 for (let i = 0; i < people.results.length; i++){
     console.log(people.results[i].name)
     datocharacter1 = datocharacter1.innerHTML + "<p>" + "${people.results[i].name}" + "<p>";
-    datocharacter2 = datocharacter2.innerHTML + "<p>" + "${people.results[i].name}" + "<p>";
-    datocharacter3 = datocharacter3.innerHTML + "<p>" + "${people.results[i].name}" + "<p>";
+    datocharacter2 = datocharacter2.innerHTML + "<p>" + "${people.results[i].haircolor}" + "<p>";
+    datocharacter3 = datocharacter3.innerHTML + "<p>" + "${people.results[i].height}" + "<p>";
 }
 }
 run();
