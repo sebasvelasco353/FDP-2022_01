@@ -1,18 +1,19 @@
 const url = 'https://swapi.dev/api/people';
+
 const loading = document.getElementById('loading');
 const filterSelect =  document.getElementById('filter');
 const reducerSelect =  document.getElementById('reducer');
 const reducer_result = document.getElementById('reducer_result');
 const display = document.getElementById('display')
-let results = [];
 
+let results = [];
 let people;
 
 async function run(){
     const response = await fetch(url);
     const responseObj = await response.json();
     people = responseObj.results;
-
+    
     results = filterBy(filterSelect.value);
     display_data();
     display_reducer();
