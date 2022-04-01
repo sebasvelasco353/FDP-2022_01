@@ -1,0 +1,44 @@
+.Formularioi {
+    width: 400px;
+    background: rgb(16, 9, 61);
+    padding: 30px;
+    margin: auto;
+    border-radius: 4px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: antiquewhite;
+    box-shadow: 7px 13px 37px cadetblue;
+}
+.Formularioi h3 {
+    font-size: 200%;
+    margin-top: 5px;
+}
+.controlesi {
+    width: auto;
+    background: rgb(16, 9, 61);
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    border: 1px solid wheat;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+}
+
+.Formularioi p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+}
+.Formularioi a{
+    color: wheat;
+    text-decoration: underline;
+}
+.Formularioi .btni {
+    width: 100%;
+    background: #2071b2;
+    border: none;
+    padding: 12px;
+    color: #fff;
+    margin: 16px 0;
+    font-size: 16px;
+}

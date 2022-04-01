@@ -1,0 +1,69 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #fff;
+    font-family: 'Open sans';
+    font-size: 18px;
+}
+
+.cabecera {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    color: white;
+    background-color: green;
+    overflow: hidden;
+}
+
+.contenedor {
+    width: 80%;
+    margin: auto;
+    align-items: center;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-top: 30px;
+    margin: auto;
+    width: 400px;
+    text-align: justify;
+    padding: 3rem 2rem;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.3);
+}
+
+p {
+    margin-top: 30px;
+    text-align: center;
+}
+
+input {
+    
+    padding: 2px;
+}
+
+label {
+    margin-top: 20px;
+}
+
+.Radio {
+    margin-top: 20px;
+}
+
+#Colesterol, #Azucar {
+    font-size: 13px;
+    display: none;
+}
+
+.Botones {
+    margin-top: 20px;
+}

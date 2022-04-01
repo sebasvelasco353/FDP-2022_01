@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edén</title>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:wght@400;700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400&family=Source+Code+Pro:wght@300;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+    <header class="Header">
+        <nav class="Nav">
+            <div class="Logo">Edén</div>
+            <ul class="Menú">
+                <li><a href="#" id="Section1btn"> Home </a></li>
+                <li><a href="#" id="Section2btn"> About us </a></li>
+                <li><a href="#" id="Section3btn"> Adopt a plant </a></li>
+                <li><a href="#" id="Section4btn"> Contact </a></li>
+            </ul>
+            </nav>
+        <h1 class="Textos-header">Edén: <br>A paradise on earth</h1>
+        <button class="CTA">Adopt a plant!</button>
+        <button class="CTA2">Contact us</button>
+    </header>
+    <section class="Card-info">
+        <h2 class="AboutUs">About us</h2>
+        <p class="AboutUs-Text">We are the personification of paradise on earth. A place where <br>you can buy all 
+            kinds of plants, flowers and shrubs for your home. <br>Modernity and ecology, all in the same place.</p>
+        <div class="Cards-3">
+            <img class="Img1" src="https://images.pexels.com/photos/2616046/pexels-photo-2616046.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+            <p class="Text1">We provide that touch of nature that your spaces need</p>
+            <img class="Img2" src="https://images.pexels.com/photos/1701535/pexels-photo-1701535.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+            <p class="Text2">Modernity in all the spaces of your home</p>
+            <img class="Img3" src="https://images.pexels.com/photos/1974508/pexels-photo-1974508.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+            <p class="Text3">The beauty of plants illuminates every corner</p>
+        </div>
+        <div class="Space"></div>
+    </section>
+    <section class="Cards-product">
+        <div class="PlantsInfo">
+            <h2 class="PlantsTittle">Adopt a plant</h2>
+            <p class="PlantsText">There are several ways to help the planet; <br>adopting a plant is one of them. 
+            Dare to give your life <br>a break while taking care of the environment. Adopt a plant!
+        </p>
+        </div>
+        <div class="Container">
+            <div class="CardPlant" onclick="Thanks()">
+                <img class="ImgCard" src="https://images.pexels.com/photos/1931143/pexels-photo-1931143.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"/>
+                <h3 class="NameCard">Succulents</h3>  
+                <p class="TextCard">This protective guardians purify the environment and take care of harmony.</p>  
+            </div>
+            <div class="CardPlant" onclick="Thanks()">
+                <img class="ImgCard" src="https://images.pexels.com/photos/1269732/pexels-photo-1269732.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"/>
+                <h3 class="NameCard">Fern</h3>  
+                <p class="TextCard">Ferns near the entrance of the home provide joy and protection from negativity.</p>  
+            </div>
+            <div class="CardPlant" onclick="Thanks()">
+                <img class="ImgCard" src="https://images.pexels.com/photos/1903965/pexels-photo-1903965.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"/>
+                <h3 class="NameCard">Cactus</h3>  
+                <p class="TextCard">They are a strong and independent plant. Still, they produce beautiful flowers.</p>  
+            </div>
+        </div>  
+    </section>
+    <div class="ContainerForm">
+    <section class="Form">
+        <h1 class="TittleForm">Want to know more?</h1>
+        <form>
+            <div class="CamposForm">
+                <input type="text" placeholder="Name" id="Name">
+            </div>
+            <div class="CamposForm">
+                <input type="email" placeholder="Email" id="Email">
+            </div>
+            <div class="CamposForm">
+                <input type="text" placeholder="Message" id="Message">
+            </div>
+                <input type="button" value="Contact us!" onclick="ContactUs()">
+        </form>
+    </section>
+    </div>
+    <section class="Quote">
+        <h1>"The earth laughs in flowers"</h1>
+        <h3>-Ralph Waldo</h3>
+    </section>
+    <footer>
+        <p>©Juliana Buitrago, 2022 – Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <script src="App.js"></script>
+</body>
+</html>

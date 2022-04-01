@@ -1,0 +1,18 @@
+.card_css{
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+.card_css2{
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+.paddin_content{
+    margin-left: 12%;
+    margin-right: 12%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}

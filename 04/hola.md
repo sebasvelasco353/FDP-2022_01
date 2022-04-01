@@ -1,1 +1,0 @@
-En estas lineas de codigo hice varias cosas, hice la estructura global de la página a través del Html, usando Grid y Flex; por otro lado hice un css con elementos basicos como imagenes, videos, estilos de letras y colores. :D 

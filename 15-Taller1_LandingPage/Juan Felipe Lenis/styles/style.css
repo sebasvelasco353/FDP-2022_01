@@ -1,0 +1,119 @@
+*{
+    border: 1px solid red;
+    padding: 0em;
+    margin: 0em;
+}
+
+.landing-header{
+    color: black;
+    background-color: #DEFFF2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr ;
+ 
+}
+
+.lHeader-li{
+    font-family: Roboto;
+    font-style: Regular;
+    font-size: 24px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-start: 3;
+}
+
+.lHeader{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.lHeader2{
+    display: flex;
+    align-items: center;
+}
+
+.bg-body{
+    background: white url('/15-Taller1_LandingPage/Pipe/sources/Background-2.png');
+    height: 1580.82px;
+
+}
+
+.landing-data{
+    padding: 1em;
+    margin: 1em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+}
+
+.landing-button{
+    font-family: Roboto;
+    font-style: Regular;
+    font-size: 20px;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #E8C547;
+    display: inline-block;
+    transition: 300ms;
+    
+}
+
+.landing-button:hover{
+    transform: translateY(-8px);
+}
+
+
+.hlanding-button{
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+}
+
+
+.dn-images{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.dn-text{
+    font-family: Roboto;
+    font-style: Medium;
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.landing-text{
+    margin: 12em;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+   justify-content: space-between;
+}
+
+.dn-data{
+    padding-top: 20em;
+}
+
+.l-title{
+    font-family: Roboto;
+    font-style: Medium;
+    font-size: 30px;
+}
+
+.l-text{
+    font-family: Roboto;
+    font-style: Regular;
+    font-size: 16px;
+}
+
+.form-box{
+    display: flex;
+    flex-direction: column;
+}

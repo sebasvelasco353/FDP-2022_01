@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Venta de Motos</title>
+</head>
+
+<body>
+  <header>
+    <div class="izquierdo"></div>
+    <div class="derecho"></div>
+
+    <nav class="nav">
+      <ul>
+        <div class="img"></div>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="contenido">
+      <div class="img-contenido">
+        <div class="patines"></div>
+      </div>
+
+      <div class="infor">
+        <ul>
+          <li>canariam.com</li>
+          <li>@canariam</li>
+        </ul>
+      </div>
+
+      <div class="texto">
+        <h1>Canariam</h1>
+        <p>Todo lo que necesitas para patinar</p>
+      </div>
+
+
+      <div class="navegacion">
+        <ul>
+          <li>Inicio</li>
+          <li>Producto</li>
+          <li>Contacto</li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <h1 class="productos">Productos</h1>
+
+  <section class="patines" id="patines">
+    <section class="individual">
+      <img src="./img/01.png" alt="Patines Profesionales">
+      <section class="descripcion-hover">
+        <p>Ingresa a nuestros pruductos para conocerlos</p>
+        <button class="boton" onclick="verMas('Profesionales')">Ver más</button>
+      </section>
+    </section>
+
+    <section class="individual">
+      <img src="./img/02.png" alt="Patines Semiprofesionales">
+      <section class="descripcion-hover">
+        <p>Ingresa a nuestros pruductos para conocerlos</p>
+        <button class="boton" onclick="verMas('SemiPro')">Ver más</button>
+      </section>
+    </section>
+
+    <section class="individual">
+      <img src="./img/03.png" alt="Patines Recreativos">
+      <section class="descripcion-hover">
+        <p>Ingresa a nuestros pruductos para conocerlos</p>
+        <button onclick="verMas('Recreativos')">Ver más</button>
+      </section>
+    </section>
+  </section>
+
+  <section class="Formulario" id="Formulario">
+    <h2>Contacto</h2>
+    <form>
+        <input type="text" name="Nombre" id="Nombre" placeholder="Nombre"><br>
+        <input type="text" name="Correo" id="Correo" placeholder="Correo electrónico"><br>
+        <textarea type="text" name="Mensaje" placeholder="Mensaje" id="Mensaje"></textarea>
+        <input type="button" class="Enviar" id="Enviar" value="Enviar" onclick="enviarDatos()">
+    </form>
+  </section>
+
+  <script src="./app.js"></script>
+</body>
+
+</html>
