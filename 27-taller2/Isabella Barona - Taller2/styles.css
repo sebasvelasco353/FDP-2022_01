@@ -1,0 +1,262 @@
+html{
+    background-color: whitesmoke;
+    color: rgb(72, 73, 77);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    margin: auto;
+    display: flex;
+}
+
+.loading {
+    width: 70%;
+    height: 96%;
+    background-color: white;
+    position: absolute;
+    z-index: 100;
+    padding: 1% 15%;
+    cursor: progress;
+}
+
+.Gif{
+    width: 50%;
+    margin: 15vh 16vw;
+}
+
+/* Menú del lado */
+.Menu{
+    width: 20%;
+    height: 100vh;
+    background-color: royalblue;
+    margin: 0;
+    padding: 2vh 4vh;
+    font-size: x-large;
+    box-sizing: border-box;
+}
+
+.Logo{
+    display: flex;
+    color: white;
+}
+
+.LogoIMG{
+    width: 13%;
+    height: 18%;
+    margin: 3vh 3vh 0 0;
+}
+
+ion-icon {
+    color: white;
+  }
+
+li{
+    list-style: none;
+    font-size: large;
+    color: white;
+    margin: 4vh 1vh;
+    padding: 1vh;
+    border-radius: 2vh;
+}
+
+li:hover{
+    cursor: pointer;
+    background-color: rgba(255, 255, 255,0.3);
+}
+
+/* Cuerpo */
+.Cuerpo{
+    width: 79%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+.Header{
+    width: 100%;
+    height: 8vh;
+    background-color: white;
+    margin: 0;
+    padding: 0 2vh 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.IconHeader{
+    color: black;
+    margin: 1vh;
+}
+
+.IconHeader:hover{
+    color: rgba(0, 0, 0,0.5);
+    cursor: pointer;
+}
+
+/* Inicio */
+.Inicio{
+    padding: 2vh 5vh;
+    box-sizing: border-box;
+    display: block;
+}
+
+.Bienvenido{
+    background-color: royalblue;
+    color: white;
+    padding: 1vh 3vh;
+    margin: 7vh auto 5vh auto;
+    border-radius: 20px;
+    width: 95%;
+}
+
+.BienvenidoIMG{
+    width: 12%;
+    position: absolute;
+    top: 15%; left: 80%;
+}
+
+.InfoG{
+    display: flex;
+    justify-content: space-between;
+    margin: 5vh 0;
+}
+
+/* Inicio - Cards*/
+    .Cards{
+        text-align: center;
+        border-radius: 20px;
+    }
+
+    #C1, #C2, #C3{
+        width: 30%;
+        height: 40vh;
+    }
+
+    #C1, #C2_1, #C2_2, #C3{
+        background-color: white;
+    }
+
+    #C2_1, #C2_2{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #C2{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        font-size: small;
+    }
+
+    .CardsIMG1{
+        width: 75%;
+        margin: 3vh 0 1vh 0;
+    } 
+
+    .CardsIMG2, .CardsIMG3{
+        width: 28%;
+        margin: 2vh;
+    }
+
+    .CardsIMG4{
+        width: 47%;
+        margin: 3vh 0 1vh 0;
+    }
+
+
+
+    .CardText{
+        text-align: left;
+        padding: 2vh;
+    }
+
+/* Pacientes */
+.Pacientes{
+    padding: 2vh 5vh;
+    box-sizing: border-box;
+    display: none;
+}
+
+/* Pacientes - Filter*/
+    .OpcionesPacientes{
+        display: flex;
+    }
+
+    .toolbar {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: space-between;
+        margin: 1rem 0;
+        background-color: white;
+        padding: 2vh;
+        border-radius: 20px;
+        width: 18vw;
+    }
+
+    .SearchIcon{color: black;}
+    
+    select{
+        border: none;
+        border-radius: 3px;
+        overflow: hidden;
+        position: relative;
+        border: none;
+        outline: none;
+    }
+
+    .filter:focus{
+        -webkit-appearance: none;
+        border: none;
+        outline: none;
+    }
+
+    .filter select:focus{
+        border: none;
+        outline: none;
+    }
+
+    .FilterResults{
+        margin: 2vw;
+    }
+
+/* Pacientes - Añadir Paciente */
+    .AddPaciente{
+        display: flex;
+        background-color: royalblue;
+        color: white;
+        padding: 1vh 0 3vh 2vh;
+        margin: 3vh;
+        border-radius: 20px;
+        width: 14vw;
+        height: 3vh;
+    }
+
+    .AddPaciente:hover{
+        background-color: rgba(65, 105, 225, 0.7);
+        cursor: pointer;
+    }
+
+    .AddPacienteText{
+        margin: 1vh;
+    }
+
+/* Pacientes - Display resultados */
+    #display_pacientes {
+        height: 50vh;
+        overflow-y: auto;
+        background-color: white;
+    }
+
+    .display_element {
+        padding: 1rem 1.5rem;
+        margin: 1rem 0;
+        background-color: white;
+        border-radius: 20px;
+        transition: background-image 0.2s ease-in-out;
+    }
+
+/* Mensajes */
+.Mensajes{
+    display: none;
+}

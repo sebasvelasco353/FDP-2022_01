@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="shortcut icon" href="./Img/Symbol.png">
+    <title>Dashboard</title>
+</head>
+<body>
+    
+    <!--<section id="loading" class="loading"><img class="Gif" src="https://thumbs.gfycat.com/OrganicMajorFallowdeer-max-1mb.gif"></section>
+       --> 
+        <section class="Menu">
+            <section class="Logo">
+                <img class="LogoIMG" src="./Img/SymbolB.png">
+                <h1>HC Medical</h1>
+            </section>
+
+            <div class="Options">
+                <li onclick="display_Inicio()"><ion-icon name="home"></ion-icon> Inicio </li>
+                <li onclick="display_Pacientes()"><ion-icon name="people"></ion-icon> Pacientes</li>
+                <li onclick="display_Mensajes()"><ion-icon name="chatbubble-ellipses"></ion-icon> Mensajes</li>
+            </div>
+        </section>
+
+        <div class="Cuerpo">
+            <section class="Header">
+                    <li><ion-icon size="large" class="IconHeader" name="notifications-outline"></ion-icon></li>
+                    <li><ion-icon size="large" class="IconHeader" name="person-circle-outline"></ion-icon></li>
+            </section>
+    
+        <!-- Inicio -->
+            <div id="Inicio" class="Inicio">
+                <h3>Dashboard</h3>
+
+                <section class="Bienvenido">
+                    <h3 id="Nombre">Bienvenido</h3>
+                    <p>Ten un buen día en tu trabajo</p>  
+                    <img class="BienvenidoIMG" src="https://cdn.pixabay.com/photo/2020/05/02/05/27/doctor-5119911_960_720.png">  
+                </section>
+
+                <h4>Información general</h4>
+
+                <div class="InfoG">
+                    <section id="C1" class="Cards">
+                        <img class="CardsIMG1" src="./Img/CardIMG1.jpg">
+                        <h2 id="Number1">00</h2>
+                        <p>Pacientes nuevos</p>
+                    </section>
+
+                    <section id="C2">
+                        <section id="C2_1" class="Cards">
+                            <img class="CardsIMG2" src="./Img/CardIMG2.png">
+                            <section class="CardText"><h2 id="Number2">00</h2><p>Casos sin cerrar</p></section>
+                        </section>
+
+                        <section id="C2_2" class="Cards">
+                            <img class="CardsIMG3" src="./Img/CardIMG3.png">
+                            <section class="CardText"><h2 id="Number3">00</h2><p>Casos cerrados</p></section>
+                        </section>
+                    </section>
+
+                    <section id="C3" class="Cards">
+                        <img class="CardsIMG4" src="./Img/CardIMG4.jpg">
+                        <h2 id="Number4">00</h2>
+                        <p>Nuevos mensajes</p>
+                    </section>
+                </div>
+            </div>    
+
+        <!-- Pacientes -->
+        <div id="Pacientes" class="Pacientes">
+            <h3>Pacientes</h3>
+
+
+            <div class="container">
+                <div class="OpcionesPacientes">
+                    <div class="toolbar">
+                        <div class="filter">
+                            <label for="filter"><ion-icon class="SearchIcon" name="search"></ion-icon> Filtrar por:</label>
+                            <select name="filter" id="filter">
+                                <option value="all">Todos</option>
+                                <option value="closed">Estado</option>
+                                <option value="age<50">Edad < 50</option>
+                                <option value="age>50">Edad > 50</option>
+                                <option value="prev_surgery">Cirugías anteriores</option>
+                            </select>
+                        </div>
+                    </div>
+    
+                    <section class="AddPaciente"> 
+                        <ion-icon size="large" name="add-circle-outline"></ion-icon></ion-icon>
+                        <p class="AddPacienteText">Agregar paciente</p>
+                    </section>
+                </div>
+                
+                <div class="FilterResults">
+                    <h5>Los pacientes que cumplen con estas condiciones son: </h5>
+                    <section id="display_pacientes">
+                        <!-- results -->
+                    </section>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mensajes -->
+        <div id="Mensajes" class="Mensajes">
+            Mensajes
+        </div>
+        </div>
+        
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="./app.js"></script>
+</body>
+</html>
