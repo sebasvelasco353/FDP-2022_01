@@ -4,11 +4,9 @@ html{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-body {
-    margin: auto;
-    display: flex;
-}
+body {margin: auto; display: flex;}
 
+/*Loading*/
 .loading {
     width: 70%;
     height: 96%;
@@ -19,10 +17,7 @@ body {
     cursor: progress;
 }
 
-.Gif{
-    width: 50%;
-    margin: 15vh 16vw;
-}
+.Gif{width: 50%; margin: 15vh 16vw;}
 
 /* Menú del lado */
 .Menu{
@@ -35,20 +30,11 @@ body {
     box-sizing: border-box;
 }
 
-.Logo{
-    display: flex;
-    color: white;
-}
+.Logo{display: flex; color: white;}
 
-.LogoIMG{
-    width: 13%;
-    height: 18%;
-    margin: 3vh 3vh 0 0;
-}
+.LogoIMG{width: 13%; height: 18%; margin: 3vh 3vh 0 0;}
 
-ion-icon {
-    color: white;
-  }
+.IconMenu{color: white;}
 
 li{
     list-style: none;
@@ -59,17 +45,10 @@ li{
     border-radius: 2vh;
 }
 
-li:hover{
-    cursor: pointer;
-    background-color: rgba(255, 255, 255,0.3);
-}
+li:hover{cursor: pointer; background-color: rgba(255, 255, 255,0.3);}
 
 /* Cuerpo */
-.Cuerpo{
-    width: 79%;
-    display: flex;
-    flex-direction: column;
-}
+.Cuerpo{width: 79%; display: flex; flex-direction: column;}
 
 /* Header */
 .Header{
@@ -83,22 +62,45 @@ li:hover{
     justify-content: flex-end;
 }
 
-.IconHeader{
-    color: black;
-    margin: 1vh;
+.dropdown{position: relative;}
+
+.dropdown ul{
+    background-color: white;
+    border-radius: 10px;
+    position: absolute;
+    max-height: 0px;
+    width: 15vw;
+    z-index: 10;
+    overflow: hidden;
+    text-align: left;
+    
 }
 
-.IconHeader:hover{
+.dropdown:hover ul{
+    border-top: solid 10px royalblue;
+    transition: all 0.3s;
+    max-height: 400px;
+    right: 1vw;
+    top: 4vh;
+}
+
+.dropdown li{
+    color: black;
+    margin: 2vh 0;
+    font-size: small;
+    padding: 0;
+    border-radius: 0;
+}
+
+.IconHeader{color: black; margin: 1vh;}
+
+.IconHeader:hover, .dropdown li:hover{
     color: rgba(0, 0, 0,0.5);
     cursor: pointer;
 }
 
 /* Inicio */
-.Inicio{
-    padding: 2vh 5vh;
-    box-sizing: border-box;
-    display: block;
-}
+.Inicio{padding: 2vh 5vh; box-sizing: border-box; display: block;}
 
 .Bienvenido{
     background-color: royalblue;
@@ -122,24 +124,13 @@ li:hover{
 }
 
 /* Inicio - Cards*/
-    .Cards{
-        text-align: center;
-        border-radius: 20px;
-    }
+    .Cards{text-align: center; border-radius: 20px;}
 
-    #C1, #C2, #C3{
-        width: 30%;
-        height: 40vh;
-    }
+    #C1, #C2, #C3{width: 30%; height: 40vh;}
 
-    #C1, #C2_1, #C2_2, #C3{
-        background-color: white;
-    }
+    #C1, #C2_1, #C2_2, #C3{background-color: white;}
 
-    #C2_1, #C2_2{
-        display: flex;
-        flex-wrap: wrap;
-    }
+    #C2_1, #C2_2{display: flex; flex-wrap: wrap;}
 
     #C2{
         display: flex;
@@ -148,27 +139,13 @@ li:hover{
         font-size: small;
     }
 
-    .CardsIMG1{
-        width: 75%;
-        margin: 3vh 0 1vh 0;
-    } 
+    .CardsIMG1{width: 75%; margin: 3vh 0 1vh 0;} 
 
-    .CardsIMG2, .CardsIMG3{
-        width: 28%;
-        margin: 2vh;
-    }
+    .CardsIMG2, .CardsIMG3{width: 28%; margin: 2vh;}
 
-    .CardsIMG4{
-        width: 47%;
-        margin: 3vh 0 1vh 0;
-    }
+    .CardsIMG4{width: 47%; margin: 3vh 0 1vh 0;}
 
-
-
-    .CardText{
-        text-align: left;
-        padding: 2vh;
-    }
+    .CardText{text-align: left; padding: 2vh;}
 
 /* Pacientes */
 .Pacientes{
@@ -178,9 +155,7 @@ li:hover{
 }
 
 /* Pacientes - Filter*/
-    .OpcionesPacientes{
-        display: flex;
-    }
+    .OpcionesPacientes{display: flex;}
 
     .toolbar {
         display: flex;
@@ -205,20 +180,9 @@ li:hover{
         outline: none;
     }
 
-    .filter:focus{
-        -webkit-appearance: none;
-        border: none;
-        outline: none;
-    }
+    .filter:focus{-webkit-appearance: none; outline: none;}
 
-    .filter select:focus{
-        border: none;
-        outline: none;
-    }
-
-    .FilterResults{
-        margin: 2vw;
-    }
+    .filter select:focus{outline: none;}
 
 /* Pacientes - Añadir Paciente */
     .AddPaciente{
@@ -232,14 +196,14 @@ li:hover{
         height: 3vh;
     }
 
-    .AddPaciente:hover{
+    .AddPaciente:hover, .ModalButton:hover{
         background-color: rgba(65, 105, 225, 0.7);
         cursor: pointer;
+        transform: scale(1.05);
+        transition-duration: 0.4s;
     }
 
-    .AddPacienteText{
-        margin: 1vh;
-    }
+    .AddPacienteText, .RedactMensajeText{margin: 1vh;}
 
 /* Pacientes - Display resultados */
     #display_pacientes {
@@ -248,15 +212,130 @@ li:hover{
         background-color: white;
     }
 
-    .display_element {
+    .displayp_element {
         padding: 1rem 1.5rem;
         margin: 1rem 0;
-        background-color: white;
+        background-color: royalblue;
+        color: black;
         border-radius: 20px;
         transition: background-image 0.2s ease-in-out;
     }
 
 /* Mensajes */
 .Mensajes{
+    padding: 2vh 5vh;
+    box-sizing: border-box;
     display: none;
 }
+
+.ModalButton{
+    display: flex;
+    background-color: royalblue;
+    color: white;
+    padding: 2vh 0 3vh 2vh;
+    border-radius: 20px;
+    width: 9vw;
+    height: 4vh;
+}
+
+/* Mensajes - Espacio para escribir mensaje*/
+    .Modal{
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        position: fixed;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        visibility: hidden;
+    }
+
+    .ModalMensaje{
+        position: relative;
+        background-color: white;
+        border-radius: 20px;
+        padding: 5vh;
+        width: 60vw;
+        height: 60vh;
+        border-top: solid 10px royalblue;
+        transition: transform 0.8s;
+        transform: translateY(0%);
+    }
+
+    .Modal-Close{
+        transform: translateY(-200%);
+    }
+
+    .Cerrar{
+        position: absolute;
+        top: 2vh;
+        right: 2vw;
+    }
+
+    .border{
+        margin: 0 0 3vh 0;
+        padding: 0 0 1vh 0;
+        border-bottom: solid 1px rgb(192, 192, 192);
+        color: gray;
+        width: 95%;
+    }
+
+    input{
+        width: 90%;
+        color: gray;
+        border: none;
+    }
+
+    input:focus, textarea:focus{outline: none;}
+
+    textarea{
+        resize: none;
+        min-width: 95%;
+        min-height: 60%;
+        border: none;
+        margin: 0 0 3vh 0;
+    }
+
+    button{
+        border: none;
+        padding: 2vh;
+        margin: 0 3vh 0 0;
+        width: 16vh;
+        border-radius: 15px;
+    }
+
+    button:hover, .Cerrar:hover, .Cards:hover{
+        cursor: pointer;
+        transform: scale(1.05);
+        transition-duration: 0.4s;
+    }
+
+    #Enviar{
+        background-color: royalblue;
+        color: white;
+    }
+
+    .swal-modal {border-radius: 20px;}
+
+    .swal-button {
+        border-radius: 15px;
+        background-color: royalblue;
+        margin: 1vh 12vw;
+    }
+
+    /* Mensajes - Display mensajes*/
+    #display_mensajes{
+        background-color: white;
+        height: 55vh;
+        overflow-y: auto
+    }
+
+    .displaym_element {
+        padding: 1rem 1.5rem;
+        margin: 1rem 0;
+        background-color: white;
+        color: black;
+        border-radius: 20px;
+        transition: background-image 0.2s ease-in-out;
+    }

@@ -9,7 +9,6 @@
     <title>Dashboard</title>
 </head>
 <body>
-    
     <!--<section id="loading" class="loading"><img class="Gif" src="https://thumbs.gfycat.com/OrganicMajorFallowdeer-max-1mb.gif"></section>
        --> 
         <section class="Menu">
@@ -19,19 +18,32 @@
             </section>
 
             <div class="Options">
-                <li onclick="display_Inicio()"><ion-icon name="home"></ion-icon> Inicio </li>
-                <li onclick="display_Pacientes()"><ion-icon name="people"></ion-icon> Pacientes</li>
-                <li onclick="display_Mensajes()"><ion-icon name="chatbubble-ellipses"></ion-icon> Mensajes</li>
+                <li class="IconMenu" onclick="display_Inicio()"><ion-icon name="home"></ion-icon> Inicio </li>
+                <li class="IconMenu" onclick="display_Pacientes()"><ion-icon name="people"></ion-icon> Pacientes</li>
+                <li class="IconMenu" onclick="display_Mensajes()"><ion-icon name="mail-unread"></ion-icon> Mensajes</li>
             </div>
         </section>
 
         <div class="Cuerpo">
+            <!--Header-->
             <section class="Header">
-                    <li><ion-icon size="large" class="IconHeader" name="notifications-outline"></ion-icon></li>
-                    <li><ion-icon size="large" class="IconHeader" name="person-circle-outline"></ion-icon></li>
+                <div class="dropdown">
+                    <ion-icon size="large" class="IconHeader" name="notifications-outline"></ion-icon>
+                    <ul>
+                        <li><ion-icon name="folder-open-outline"></ion-icon>  Revisa los casos sin cerrar</li>
+                        <li><ion-icon name="mail-unread-outline"></ion-icon>  4 mensajes nuevos</li>
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <ion-icon size="large" class="IconHeader" name="person-circle-outline"></ion-icon>
+                    <ul>
+                        <li><ion-icon name="build-outline"></ion-icon>  Configuración</li>
+                        <li><ion-icon name="log-out-outline"></ion-icon>  Cerrar sesión</li>
+                    </ul>
+                </div>
             </section>
     
-        <!-- Inicio -->
+            <!--Inicio-->
             <div id="Inicio" class="Inicio">
                 <h3>Dashboard</h3>
 
@@ -44,75 +56,99 @@
                 <h4>Información general</h4>
 
                 <div class="InfoG">
-                    <section id="C1" class="Cards">
+                    <section id="C1" class="Cards" onclick="display_Pacientes()">
                         <img class="CardsIMG1" src="./Img/CardIMG1.jpg">
                         <h2 id="Number1">00</h2>
                         <p>Pacientes nuevos</p>
                     </section>
 
                     <section id="C2">
-                        <section id="C2_1" class="Cards">
+                        <section id="C2_1" class="Cards" onclick="display_Pacientes()">
                             <img class="CardsIMG2" src="./Img/CardIMG2.png">
                             <section class="CardText"><h2 id="Number2">00</h2><p>Casos sin cerrar</p></section>
                         </section>
 
-                        <section id="C2_2" class="Cards">
+                        <section id="C2_2" class="Cards" onclick="display_Pacientes()">
                             <img class="CardsIMG3" src="./Img/CardIMG3.png">
                             <section class="CardText"><h2 id="Number3">00</h2><p>Casos cerrados</p></section>
                         </section>
                     </section>
 
-                    <section id="C3" class="Cards">
+                    <section id="C3" class="Cards" onclick="display_Mensajes()">
                         <img class="CardsIMG4" src="./Img/CardIMG4.jpg">
                         <h2 id="Number4">00</h2>
-                        <p>Nuevos mensajes</p>
+                        <p>Mensajes nuevos</p>
                     </section>
                 </div>
             </div>    
 
-        <!-- Pacientes -->
-        <div id="Pacientes" class="Pacientes">
-            <h3>Pacientes</h3>
-
-
-            <div class="container">
-                <div class="OpcionesPacientes">
-                    <div class="toolbar">
-                        <div class="filter">
-                            <label for="filter"><ion-icon class="SearchIcon" name="search"></ion-icon> Filtrar por:</label>
-                            <select name="filter" id="filter">
-                                <option value="all">Todos</option>
-                                <option value="closed">Estado</option>
-                                <option value="age<50">Edad < 50</option>
-                                <option value="age>50">Edad > 50</option>
-                                <option value="prev_surgery">Cirugías anteriores</option>
-                            </select>
+            <!-- Pacientes -->
+            <div id="Pacientes" class="Pacientes">
+                <h3>Pacientes</h3>
+                <div class="container">
+                    <div class="OpcionesPacientes">
+                        <div class="toolbar">
+                            <div class="filter">
+                                <label for="filter"><ion-icon class="SearchIcon" name="search"></ion-icon> Filtrar por:</label>
+                                <select name="filter" id="filter" onchange="handleFiltro(event)">
+                                    <option value="all">Todos</option>
+                                    <option value="closed">Estado</option>
+                                    <option value="age<50">Edad < 50</option>
+                                    <option value="age>50">Edad > 50</option>
+                                    <option value="prev_surgery">Cirugías anteriores</option>
+                                </select>
+                            </div>
                         </div>
-                    </div>
     
-                    <section class="AddPaciente"> 
-                        <ion-icon size="large" name="add-circle-outline"></ion-icon></ion-icon>
-                        <p class="AddPacienteText">Agregar paciente</p>
-                    </section>
-                </div>
+                        <section class="AddPaciente"> 
+                            <ion-icon size="large" name="add-circle-outline"></ion-icon></ion-icon>
+                            <p class="AddPacienteText">Agregar paciente</p>
+                        </section>
+                    </div>
                 
-                <div class="FilterResults">
-                    <h5>Los pacientes que cumplen con estas condiciones son: </h5>
+                    <h4>Los pacientes que cumplen con estas condiciones son: </h4>
                     <section id="display_pacientes">
                         <!-- results -->
                     </section>
                 </div>
             </div>
+
+            <!-- Mensajes -->
+            <div id="Mensajes" class="Mensajes">
+                <h3>Mensajes</h3>
+
+                <section id="ModalButton" class="ModalButton"> 
+                    <ion-icon size="large" name="create-outline"></ion-icon>
+                    <p class="RedactMensajeText">Redactar</p>
+                </section>
+
+                <h4>Bandeja de entrada</h4>
+                <section id="display_mensajes">
+                    <!-- results -->
+                </section>
+            </div>
         </div>
 
-        <!-- Mensajes -->
-        <div id="Mensajes" class="Mensajes">
-            Mensajes
-        </div>
+        <div class="Modal">
+            <div class="ModalMensaje Modal-Close">
+                <div class="Cerrar">x</div>
+                <section class="border">
+                    <label for="Para">Para: </label>
+                    <input type="email" id="Email" name="email"><br>
+                </section>
+                <section class="border">
+                    <label for="Asunto">Asunto: </label>
+                    <input type="text" id="Asunto" name="Asunto"><br>
+                </section>
+                <textarea id="Mensaje" name="mensaje" placeholder="Escribe tu mensaje"></textarea><br>
+                <button id="Enviar" onclick="enviado()">Enviar</button>
+                <button id="Borrar" onclick="Reinicio()">Borrar</button>
+            </div>
         </div>
         
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="./app.js"></script>
 </body>
 </html>
