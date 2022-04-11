@@ -1,41 +1,52 @@
-const url = './user.json';
+const url = 'https://raw.githubusercontent.com/IBaronap/FDP-2022_01/main/27-taller2/user.json';
 
-const filterSelect = document.querySelector("#filter");
+//animaciones
+gsap.from('.Menu', { duration: 1, x: '-100%', ease: 'power3.inOut', delay: 0.2})
+gsap.from('.Header', { duration: 1, y: '-100%', ease: 'power3.inOut', delay: 0.5})
+gsap.from('.Inicio', { duration: 1, x: '-150%', ease: 'power2.inOut', delay: 0.5})
+
+//const y let
+const filterSelect = document.getElementById('filter');
 const displayp = document.querySelector('#display_pacientes');
 const displaym = document.querySelector('#display_mensajes');
-const docname = document.querySelector('#Nombre');
-const docemail = document.querySelector('#DocEmail');
 
 let jsonRes;
 let data;
 let mensajes;
 
-const loading = document.getElementById('loading');
-
 //async function
 async function run(){
-    
     const res = await fetch(url);
     jsonRes = await res.json();
-    data = jsonRes.cases.filter(p => p.closed === true);
+    data = jsonRes.cases;
     mensajes = jsonRes.messages;
-
-    loading.style.display = 'none';
-    console.log(data);
+    results = filterBy(filterSelect.value);
     draw();
 }
 
-function handleFiltro(e){
-    data = jsonRes.cases.filter(p => p.closed === (e.target.value === 'true'));
-    draw ();
+//Filtro pacientes
+function filterBy(criteria) {
+    const filters = {
+    'all': data,
+    'closed': data.filter(p => p.closed === true),
+    'open': data.filter(p => p.closed === false),
+    'age<50': data.filter(p => p.age < 50),
+    'age>50': data.filter(p => p.age > 50),
+    'prev_surgery': data.filter(p => p.prev_surgery === true),
+    }
+    return filters[criteria];
 }
 
-//display data (pacientes, mensajes, nombre, email y # de mensajes)
+filterSelect.addEventListener("change", (e) => {
+    results = filterBy(filterSelect.value);
+    console.log(results);
+    draw();
+})
 
+//display data (pacientes, mensajes, nombre, email y # de mensajes)
 function draw() {
     displayp.innerHTML = "";
-    data.forEach(element => {
-        console.log(`Desde foreach: ${element.name}`);
+    results.forEach(element => {
         const opt = document.createElement('div');
         opt.className = "display_element";
         opt.innerHTML = `<p><b>${element.last_name}, ${element.name}</b></p> <p>Edad: ${element.age}<br>Altura: ${element.height}<br>Fumador: ${element.smoker}<br>País: ${element.country}<br>Tipo de sangre: ${element.bloodtype}<br>Caso cerrado: ${element.closed}<br>Cirugías anteriores: ${element.prev_surgery}</p>`;
@@ -44,52 +55,68 @@ function draw() {
 
     displaym.innerHTML = "";
     mensajes.forEach(element => {
-        console.log(`Desde foreach: ${element.sender}`);
         const opt = document.createElement('div');
         opt.className = "display_element";
         opt.innerHTML = `<p><b>${element.sender}</b> <font size="2">(${element.timestamp})<br>Para: Mi, ${element.cc}</font></p><p>${element.message}`;
         displaym.appendChild(opt);
     });
 
-    {docname.innerHTML = "";
+    {document.getElementById('Nombre').innerHTML = "";
         const opt = document.createElement('div');
         opt.innerHTML = `Bienvenido ${jsonRes.name}`;
-        docname.appendChild(opt);
+        document.getElementById('Nombre').appendChild(opt);
     }
     
-    {docemail.innerHTML = "";
+    {document.getElementById('DocEmail').innerHTML = "";
         const opt = document.createElement('div');
         opt.innerHTML = `Mensajes para ${jsonRes.email}`;
-        docemail.appendChild(opt);
+        document.getElementById('DocEmail').appendChild(opt);
+    }
+
+    {document.getElementById('bandeja').innerHTML = "";
+        const opt = document.createElement('div');
+        opt.innerHTML = `Bandeja de entrada (${mensajes.length})`;
+        document.getElementById('bandeja').appendChild(opt);
+    }
+
+    {document.getElementById('Number_results').innerHTML = "";
+        const opt = document.createElement('h');
+        opt.innerHTML = `${results.length} pacientes cumplen con esta condición`;
+        document.getElementById('Number_results').appendChild(opt);
     }
 }
-    
+
 //display partes
 function display_Inicio(){
+    gsap.from('.Inicio', { duration: 1, x: '-100%', ease: 'power2.inOut'})
     document.getElementById('Inicio').style.display='block';
     document.getElementById('Pacientes').style.display='none';
     document.getElementById('Mensajes').style.display='none';
 }
 
 function display_Pacientes(){
+    gsap.from('.Pacientes', { duration: 1, x: '-100%', ease: 'power2.inOut'})
     document.getElementById('Inicio').style.display='none';
     document.getElementById('Pacientes').style.display='block';
     document.getElementById('Mensajes').style.display='none';
 }
 
 function display_Mensajes(){
+    gsap.from('.Mensajes', { duration: 1, x: '-100%', ease: 'power2.inOut'})
     document.getElementById('Inicio').style.display='none';
     document.getElementById('Pacientes').style.display='none';
     document.getElementById('Mensajes').style.display='block';
 }
 
-
+function mantenimiento(){
+    swal("Lo sentimos, no se puede realizar esta acción", "Esta sección se encuentra en mantenimiento","error");
+};
 
 //Display espacio para enviar mensaje
-let cerrar = document.querySelectorAll('.Cerrar')[0];
-let abrir = document.querySelectorAll('.ModalButton')[0];
-let modal = document.querySelectorAll('.ModalMensaje')[0];
-let modalC = document.querySelectorAll('.Modal')[0];
+let cerrar = document.querySelector('.Cerrar');
+let abrir = document.querySelector('.ModalButton');
+let modal = document.querySelector('.ModalMensaje');
+let modalC = document.querySelector('.Modal');
 
 abrir.addEventListener("click", function(){
     modalC.style.visibility = "visible";
@@ -109,6 +136,7 @@ function enviado(){
         swal("", "Por favor digite todos los campos","warning");
     }else{
         swal("", "Tu mensaje ha sido enviado con éxito", "success",);
+        Reinicio();
     }}
 
 function Reinicio(){
@@ -117,4 +145,5 @@ function Reinicio(){
     document.getElementById("Mensaje").value="";
 }
 
+//run
 run();

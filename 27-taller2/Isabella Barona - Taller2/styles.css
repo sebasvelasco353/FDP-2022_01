@@ -6,21 +6,6 @@ html{
 
 body {margin: auto; display: flex;}
 
-/*Loading*/
-.loading {
-    width: 70%;
-    height: 96%;
-    bottom: 0;
-    right: 0;
-    background-color: white;
-    position: absolute;
-    z-index: 100;
-    padding: 1% 15%;
-    cursor: progress;
-}
-
-.Gif{width: 50%; margin: 15vh 16vw;}
-
 /* Menú del lado */
 .Menu{
     width: 20%;
@@ -30,6 +15,7 @@ body {margin: auto; display: flex;}
     padding: 2vh 4vh;
     font-size: x-large;
     box-sizing: border-box;
+    z-index: 1;
 }
 
 .Logo{display: flex; color: white;}
@@ -62,6 +48,7 @@ li:hover{cursor: pointer; background-color: rgba(255, 255, 255,0.3);}
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    z-index: 2;
 }
 
 .dropdown{position: relative;}
@@ -75,7 +62,6 @@ li:hover{cursor: pointer; background-color: rgba(255, 255, 255,0.3);}
     z-index: 10;
     overflow: hidden;
     text-align: left;
-    
 }
 
 .dropdown:hover ul{
@@ -96,10 +82,7 @@ li:hover{cursor: pointer; background-color: rgba(255, 255, 255,0.3);}
 
 .IconHeader{color: black; margin: 1vh;}
 
-.IconHeader:hover, .dropdown li:hover{
-    color: rgba(0, 0, 0,0.5);
-    cursor: pointer;
-}
+.IconHeader:hover, .dropdown li:hover{color: rgba(0, 0, 0,0.5); cursor: pointer;}
 
 /* Inicio */
 .Inicio{padding: 2vh 5vh; box-sizing: border-box; display: block;}
@@ -113,17 +96,9 @@ li:hover{cursor: pointer; background-color: rgba(255, 255, 255,0.3);}
     width: 95%;
 }
 
-.BienvenidoIMG{
-    width: 12%;
-    position: absolute;
-    top: 15%; left: 80%;
-}
+.BienvenidoIMG{width: 13%; position: absolute; top: 12%; left: 80%;}
 
-.InfoG{
-    display: flex;
-    justify-content: space-between;
-    margin: 5vh 0;
-}
+.InfoG{display: flex; justify-content: space-between; margin: 5vh 0;}
 
 /* Inicio - Cards*/
     .Cards{text-align: center; border-radius: 20px;}
@@ -150,11 +125,7 @@ li:hover{cursor: pointer; background-color: rgba(255, 255, 255,0.3);}
     .CardText{text-align: left; padding: 2vh;}
 
 /* Pacientes */
-.Pacientes{
-    padding: 2vh 5vh;
-    box-sizing: border-box;
-    display: none;
-}
+.Pacientes{padding: 2vh 5vh; box-sizing: border-box; display: none;}
 
 /* Pacientes - Filter*/
     .OpcionesPacientes{display: flex;}
@@ -208,11 +179,7 @@ li:hover{cursor: pointer; background-color: rgba(255, 255, 255,0.3);}
     .AddPacienteText, .RedactMensajeText{margin: 1vh;}
 
 /* Pacientes - Display resultados */
-    #display_pacientes {
-        height: 50vh;
-        width: 100%;
-        overflow-y: auto;
-    }
+    #display_pacientes {height: 50vh; width: 100%; overflow-y: auto;}
 
     .display_element {
         padding: 2vh 2vw;
@@ -223,11 +190,7 @@ li:hover{cursor: pointer; background-color: rgba(255, 255, 255,0.3);}
     }
 
 /* Mensajes */
-.Mensajes{
-    padding: 2vh 5vh;
-    box-sizing: border-box;
-    display: none;
-}
+.Mensajes{padding: 2vh 5vh; box-sizing: border-box; display: none;}
 
 .ModalButton{
     display: flex;
@@ -250,6 +213,7 @@ li:hover{cursor: pointer; background-color: rgba(255, 255, 255,0.3);}
         justify-content: center;
         align-items: center;
         visibility: hidden;
+        z-index: 3;
     }
 
     .ModalMensaje{
@@ -262,17 +226,13 @@ li:hover{cursor: pointer; background-color: rgba(255, 255, 255,0.3);}
         border-top: solid 10px royalblue;
         transition: transform 0.8s;
         transform: translateY(0%);
+        overflow: hidden;
+        z-index: 4;
     }
 
-    .Modal-Close{
-        transform: translateY(-200%);
-    }
+    .Modal-Close{transform: translateY(-200%);}
 
-    .Cerrar{
-        position: absolute;
-        top: 2vh;
-        right: 2vw;
-    }
+    .Cerrar{position: absolute; top: 2vh; right: 2vw;}
 
     .border{
         margin: 0 0 3vh 0;
@@ -282,11 +242,7 @@ li:hover{cursor: pointer; background-color: rgba(255, 255, 255,0.3);}
         width: 95%;
     }
 
-    input{
-        width: 90%;
-        color: gray;
-        border: none;
-    }
+    input{width: 90%; color: gray; border: none;}
 
     input:focus, textarea:focus{outline: none;}
 
@@ -312,10 +268,7 @@ li:hover{cursor: pointer; background-color: rgba(255, 255, 255,0.3);}
         transition-duration: 0.4s;
     }
 
-    #Enviar{
-        background-color: royalblue;
-        color: white;
-    }
+    #Enviar{background-color: royalblue; color: white;}
 
     .swal-modal {border-radius: 20px;}
 
@@ -326,11 +279,7 @@ li:hover{cursor: pointer; background-color: rgba(255, 255, 255,0.3);}
     }
 
     /* Mensajes - Display mensajes*/
-    #display_mensajes{
-        height: 55vh;
-        width: 100%;
-        overflow-y: auto
-    }
+    #display_mensajes{height: 55vh; width: 100%; overflow-y: auto}
 
     /*scrollbar*/
     ::-webkit-scrollbar {width: 13px;}
