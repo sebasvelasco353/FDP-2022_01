@@ -1,54 +1,68 @@
 const url = './user.json';
+
 const filterSelect = document.querySelector("#filter");
+const displayp = document.querySelector('#display_pacientes');
+const displaym = document.querySelector('#display_mensajes');
+const docname = document.querySelector('#Nombre');
+const docemail = document.querySelector('#DocEmail');
+
 let jsonRes;
 let data;
+let mensajes;
 
-//const loading = document.getElementById('loading');
-//const displayp = document.getElementById('display_pacientes')
-//const displaym = document.getElementById('display_mensajes')
-//let results = [];
-
-//let user;
+const loading = document.getElementById('loading');
 
 //async function
 async function run(){
     
     const res = await fetch(url);
     jsonRes = await res.json();
-    
-    console.log(jsonRes);
+    data = jsonRes.cases.filter(p => p.closed === true);
+    mensajes = jsonRes.messages;
 
-    //loading.style.display = 'none';
-    
-    //display_datap();
-    //display_datam();
+    loading.style.display = 'none';
+    console.log(data);
+    draw();
 }
 
 function handleFiltro(e){
-    console.log( e.target.value);
-    data = jsonRes.cases
+    data = jsonRes.cases.filter(p => p.closed === (e.target.value === 'true'));
+    draw ();
 }
 
-//display data (pacientes y mensajes)
-function display_datap() {
-    displayp.innerHTML = '';
-    results.forEach(element => {
-    var opt = document.createElement('p');
-    opt.className = "displayp_element"
-    opt.innerHTML = `<p>${element.name}</p>`;
-    displayp.appendChild(opt);
-    });
-    }
+//display data (pacientes, mensajes, nombre, email y # de mensajes)
 
-function display_datam() {
-    displaym.innerHTML = '';
-    results.forEach(element => {
-    var opt = document.createElement('p');
-    opt.className = "displaym_element"
-    opt.innerHTML = `<p>${element.sender}</p>`;
-    displaym.appendChild(opt);
+function draw() {
+    displayp.innerHTML = "";
+    data.forEach(element => {
+        console.log(`Desde foreach: ${element.name}`);
+        const opt = document.createElement('div');
+        opt.className = "display_element";
+        opt.innerHTML = `<p><b>${element.last_name}, ${element.name}</b></p> <p>Edad: ${element.age}<br>Altura: ${element.height}<br>Fumador: ${element.smoker}<br>País: ${element.country}<br>Tipo de sangre: ${element.bloodtype}<br>Caso cerrado: ${element.closed}<br>Cirugías anteriores: ${element.prev_surgery}</p>`;
+        displayp.appendChild(opt);
     });
+
+    displaym.innerHTML = "";
+    mensajes.forEach(element => {
+        console.log(`Desde foreach: ${element.sender}`);
+        const opt = document.createElement('div');
+        opt.className = "display_element";
+        opt.innerHTML = `<p><b>${element.sender}</b> <font size="2">(${element.timestamp})<br>Para: Mi, ${element.cc}</font></p><p>${element.message}`;
+        displaym.appendChild(opt);
+    });
+
+    {docname.innerHTML = "";
+        const opt = document.createElement('div');
+        opt.innerHTML = `Bienvenido ${jsonRes.name}`;
+        docname.appendChild(opt);
     }
+    
+    {docemail.innerHTML = "";
+        const opt = document.createElement('div');
+        opt.innerHTML = `Mensajes para ${jsonRes.email}`;
+        docemail.appendChild(opt);
+    }
+}
     
 //display partes
 function display_Inicio(){

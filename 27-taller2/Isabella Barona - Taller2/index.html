@@ -9,8 +9,8 @@
     <title>Dashboard</title>
 </head>
 <body>
-    <!--<section id="loading" class="loading"><img class="Gif" src="https://thumbs.gfycat.com/OrganicMajorFallowdeer-max-1mb.gif"></section>
-       --> 
+    <section id="loading" class="loading"><img class="Gif" src="https://thumbs.gfycat.com/OrganicMajorFallowdeer-max-1mb.gif"></section>
+       
         <section class="Menu">
             <section class="Logo">
                 <img class="LogoIMG" src="./Img/SymbolB.png">
@@ -48,7 +48,7 @@
                 <h3>Dashboard</h3>
 
                 <section class="Bienvenido">
-                    <h3 id="Nombre">Bienvenido</h3>
+                    <h3 id="Nombre"><!-- Llamar nombre --></h3>
                     <p>Ten un buen día en tu trabajo</p>  
                     <img class="BienvenidoIMG" src="https://cdn.pixabay.com/photo/2020/05/02/05/27/doctor-5119911_960_720.png">  
                 </section>
@@ -92,10 +92,11 @@
                                 <label for="filter"><ion-icon class="SearchIcon" name="search"></ion-icon> Filtrar por:</label>
                                 <select name="filter" id="filter" onchange="handleFiltro(event)">
                                     <option value="all">Todos</option>
-                                    <option value="closed">Estado</option>
+                                    <option value="true">Caso cerrado</option>
+                                    <option value="false">Caso sin cerrar</option>
                                     <option value="age<50">Edad < 50</option>
                                     <option value="age>50">Edad > 50</option>
-                                    <option value="prev_surgery">Cirugías anteriores</option>
+                                    <option value="true">Con cirugías anteriores</option>
                                 </select>
                             </div>
                         </div>
@@ -115,7 +116,7 @@
 
             <!-- Mensajes -->
             <div id="Mensajes" class="Mensajes">
-                <h3>Mensajes</h3>
+                <h3 id="DocEmail"><!-- Llamar correo --></h3>
 
                 <section id="ModalButton" class="ModalButton"> 
                     <ion-icon size="large" name="create-outline"></ion-icon>

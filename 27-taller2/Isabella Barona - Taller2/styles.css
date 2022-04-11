@@ -10,6 +10,8 @@ body {margin: auto; display: flex;}
 .loading {
     width: 70%;
     height: 96%;
+    bottom: 0;
+    right: 0;
     background-color: white;
     position: absolute;
     z-index: 100;
@@ -166,7 +168,7 @@ li:hover{cursor: pointer; background-color: rgba(255, 255, 255,0.3);}
         background-color: white;
         padding: 2vh;
         border-radius: 20px;
-        width: 18vw;
+        width: 20vw;
     }
 
     .SearchIcon{color: black;}
@@ -208,17 +210,16 @@ li:hover{cursor: pointer; background-color: rgba(255, 255, 255,0.3);}
 /* Pacientes - Display resultados */
     #display_pacientes {
         height: 50vh;
+        width: 100%;
         overflow-y: auto;
-        background-color: white;
     }
 
-    .displayp_element {
-        padding: 1rem 1.5rem;
-        margin: 1rem 0;
-        background-color: royalblue;
-        color: black;
-        border-radius: 20px;
-        transition: background-image 0.2s ease-in-out;
+    .display_element {
+        padding: 2vh 2vw;
+        margin: 2vh 2vw 5vh 0;
+        background-color: white;
+        border-radius: 15px;
+        border-top: solid 15px royalblue;
     }
 
 /* Mensajes */
@@ -326,16 +327,16 @@ li:hover{cursor: pointer; background-color: rgba(255, 255, 255,0.3);}
 
     /* Mensajes - Display mensajes*/
     #display_mensajes{
-        background-color: white;
         height: 55vh;
+        width: 100%;
         overflow-y: auto
     }
 
-    .displaym_element {
-        padding: 1rem 1.5rem;
-        margin: 1rem 0;
-        background-color: white;
-        color: black;
-        border-radius: 20px;
-        transition: background-image 0.2s ease-in-out;
-    }
+    /*scrollbar*/
+    ::-webkit-scrollbar {width: 13px;}
+
+    ::-webkit-scrollbar-track {background-color: transparent;}
+
+    ::-webkit-scrollbar-thumb {background-color: royalblue; border-radius: 20px;}
+
+    ::-webkit-scrollbar-thumb:hover {background-color: rgba(65, 105, 225, 0.5);}
