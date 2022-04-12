@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+}
+
+:root {
+    --Blue: #1992ca; 
+    --White: #ffffff; 
+    --Gray: #858585; 
+    --Black: #1a1a1a; 
+}
+
+body{
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.Container {
+    position: relative;
+    width: 100%;
+}
+
+/*Sidebar*/
+
+.Nav {
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    background-color: var(--Blue);
+    border-left: 10px solid var(--Blue);
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.Nav.Active {
+    width: 80px;
+}
+
+.Nav ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.Nav ul li {
+    position: relative;
+    width: 100%;
+    list-style: none;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.Nav ul li:hover,
+.Nav ul li.hovered {
+    background-color: var(--White);
+}
+
+.Nav ul li:nth-child(1) {
+    top: 5px;
+    margin-bottom: 40px;
+    pointer-events: none;
+}
+
+.Nav ul li a {
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: var(--White);
+}
+
+.Nav ul li:hover a, 
+.Nav ul li.hovered a{
+    color: var(--Blue);
+}
+
+.Nav ul li a .Icon {
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    line-height: 70px;
+    text-align: center;
+}
+
+.Nav ul li a .Icon ion-icon {
+    font-size: 1.75rem;
+}
+
+.Nav ul li a .Title {
+    position: relative;
+    display: block;
+    padding: 0 10px;
+    height: 60px;
+    line-height: 60px;
+    text-align: start;
+    white-space: nowrap;
+}
+
+.Nav ul li:hover a::before,
+.Nav ul li.hovered a::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 35px 35px 0 10px var(--White);
+    background-color: transparent;
+    pointer-events: none;
+}
+
+.Nav ul li:hover a::after,
+.Nav ul li.hovered a::after{
+    content: '';
+    position: absolute;
+    bottom: -50px;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 35px -35px 0 10px var(--White);
+    background-color: transparent;
+    pointer-events: none;
+}
+
+/*Top-Bar*/
+
+.Main {
+    position: absolute;
+    width: calc(100% - 300px);
+    left: 300px;
+    min-height: 100vh;
+    background: var(--White);
+    transition: 0.5s;
+}
+
+.Main.Active {
+    width: calc(100% - 80px);
+    left: 80px;
+}
+
+.Top-Bar {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.Toggle {
+    position: relative;
+    top: 0;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+.Search {
+    position: relative;
+    width: 400px;
+    margin: 0 10px;
+}
+
+.Search label {
+    position: relative;
+    width: 100%;
+}
+
+.Search label input {
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    padding: 5px 35px;
+    outline: none;
+    border: 1px solid var(--Black);
+}
+
+.Search label ion-icon {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    font-size: 1.2rem;
+}
+
+.User {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.User img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
