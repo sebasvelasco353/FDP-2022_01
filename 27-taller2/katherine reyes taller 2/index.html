@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./estilos.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet"> 
-    <title>Dashboard</title>
+    <title>Dashboard para doctores</title>
 </head>
 
 <body>
@@ -49,92 +49,101 @@
                 <p>Es un gusto tenerte aqui nuevamente, disfruta tu dia.</p>  
             </section>
 
+            <section class="Portafolio">
+                <div class="contenedor">
+                    <h2 class="titulo">Información general</h2>
+                    <div class="galeria-port">
+                        <div class="imagen-port">
+                            <img src="imagenes/pacientes.jpg" alt="">
+                            <div class="hover-galeria">
+                                <ion-icon name="people"></ion-icon>
+                                <p>Pacientes</p>
+                            </div>
+                        </div>
+                        <div class="imagen-port">
+                            <img src="imagenes/casos abiertos.webp" alt="">
+                            <div class="hover-galeria">
+                                <ion-icon name="open"></ion-icon>
+                                <p>Casos abiertos</p>
+                            </div>
+                        </div>
+                        <div class="imagen-port">
+                            <img src="imagenes/casos cerrados.webp" alt="">
+                            <div class="hover-galeria">
+                                <ion-icon name="close"></ion-icon>
+                                <p>Casos cerrados</p>
+                            </div>
+                        </div>
+                        <div class="imagen-port">
+                            <img src="imagenes/mensajes.webp" alt="">
+                            <div class="hover-galeria">
+                                <ion-icon name="mail"></ion-icon>
+                                <p>Mensajes sin leer</p>
+                            </div>
+                        </div>
+            </section>
 
-            <h4>Información general</h4>
-
-            <div class="InformacionGeneral">
-                <section id="situacion1" class="Cards" onclick="displayPacientes()">
-                    <h2>5</h2>
-                    <p>Pacientes nuevos</p>
-                </section>
-
-                <section id="situacion2">
-                    <section id="situacion2.1" class="Cards" onclick="displayPacientes()">
-                        <section class="CardText"><h2>2</h2><p>Casos abiertos</p></section>
-                    </section>
-                    <section id="situacion2.2" class="Cards" onclick="displayPacientes()">
-                        <section class="CardText"><h2>4</h2><p>Casos cerrados</p></section>
-                    </section>
-                </section>
-
-                <section id="C3" class="Cards" onclick="displayMensajes()">
-                    <h2>10</h2>
-                    <p>Mensajes recientes</p>
-                </section>
-            </div>
-        </div>    
-
-        <!--PACIENTES-->
         <div id="Pacientes" class="Pacientes">
             <h3>Pacientes</h3>
 
-                <!--FILTRO DE PACIENTES -->
-                <div class="OpcionesPacientes">
-                    <div class="toolbar">
-                        <div class="filter">
-                            <label for="filter"><ion-icon class="SearchIcon" name="search"></ion-icon> Filtrar por:</label>
-                            <select name="filter" id="filter">
-                                <option value="Todo">Todos</option>
-                                <option value="Cerrado">Casos cerrados</option>
-                                <option value="Abierto">Casos abiertos</option>
-                                <option value="Edad<50">Edad < 50</option>
-                                <option value="Edad>50">Edad > 50</option>
-                                <option value="cirugíasAnteriores">Con cirugías anteriores</option>
-                            </select>
-                        </div>
-                    </div>
+         <div class="FiltroPacientes">
+            <div class="barraOpciones">
+            <div class="filtro">
+                <label for="filtro"><ion-icon class="SearchIcon" name="search"></ion-icon> Filtrar por:</label>
+                <select name="filtro" id="filtro">
+                    <option value="Todo">Todos</option>
+                    <option value="Cerrado">Casos cerrados</option>
+                    <option value="Abierto">Casos abiertos</option>
+                    <option value="Edad-50">Edad Menor de 50</option>
+                    <option value="Edad+50">Edad Mayor de 50</option>
+                    <option value="cirugiasAnteriores">Con cirugías anteriores</option>
+                </select>
+            </div>
+            </div>
 
-                    <!--INGRESO PACIENTE-->
-                    <section class="AñadirPaciente" onclick="ingresoPaciente()">
-                        <ion-icon size="large" name="add-circle-outline"></ion-icon></ion-icon>
-                        <p class="AgregarPaciente">Agregar paciente</p>
-                    </section>
-                </div>
+        
+             <section class="IngresarPaciente" onclick="ingresoPaciente()">
+                <ion-icon size="large" name="add-circle-outline"></ion-icon></ion-icon>
+                <p class="AgregarPaciente">Agregar paciente</p>
+            </section>
+         </div>
 
-                <!--RESULTADOS-->
-                <h4 id="NumeroResultados"><!-- Llamar # de resultados--></h4>
-                <section id="displayPacientes"><!-- results --></section>
+    
+            <h4 id="NumeroResultados"><!-- Llamar # de resultados--></h4>
+            <section id="displayPacientes"><!-- results --></section>
         </div>
 
 
-          <!--MENSAJE-->
-          <div id="Mensajes" class="Mensajes">
-            <h3 id="DocEmail"> <!-- Llamar correo --></h3>
+
+        <div id="Mensajes" class="Mensajes">
+            <h3 id="Email"> <!-- Llamar correo --></h3>
 
             <section id="ConfButton" class="ConfButton"> 
                 <ion-icon size="large" name="create-outline"></ion-icon>
-                <p class="RedactMensaje">Redactar</p>
+                <p class="RedactarMensaje">Redactar mensaje</p>
             </section>
 
-            <h4 id="bandeja"><!-- Llamar # mensajes --></h4>
+            <h4 id="BandejaEntrada"><!-- Llamar # mensajes --></h4>
             <section id="displayMensajes"><!-- results --></section>
         </div>
     </div>
-    
-    <!--MENSAJES (REDACCIÓN)-->
+
 
     <div class="MensajeConf">
-        <div class="Mensaje confClose">
+        <div class="ModalMensaje CerrarMensaje">
             <div class="Cerrar">x</div>
+
             <section class="border">
                 <label for="ReceptorMensaje">Para: </label>
-                <input type="email" id="Email" name="email"><br>
+                <input type="correo" id="correo" name="correo"><br>
             </section>
+
             <section class="border">
                 <label for="AsuntoMensaje">Asunto: </label>
                 <input type="text" id="Asunto" name="Asunto"><br>
             </section>
-            <textarea id="Mensaje" name="mensaje" placeholder=Redacte su mensaje"></textarea><br>
+
+            <textarea id="Mensaje" name="mensaje" placeholder="Redacte su mensaje"></textarea><br>
             <button id="Enviar" onclick="Enviado()">Enviar</button>
             <button id="Borrar" onclick="Reinicio()">Borrar</button>
         </div>
@@ -155,7 +164,7 @@
                         <p>Colombia</p>
                     </div>
                 </div>
-                <h2 class="titulo-final">Lo mejor para los mejores</h2>
+                <h2 class="titulo-final">Excelente trabajo. </h2>
             </footer>
 
 
