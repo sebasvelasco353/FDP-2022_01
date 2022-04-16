@@ -1,0 +1,17 @@
+*{
+    font-size: 20px;
+}
+.content {
+    display: grid;
+    grid-template-columns: 200px 200px 200px ;
+
+}
+#c1{
+    background-color: aquamarine;
+}
+#c2{
+    background-color: bisque;
+}
+#c3{
+    background-color: blueviolet;
+}

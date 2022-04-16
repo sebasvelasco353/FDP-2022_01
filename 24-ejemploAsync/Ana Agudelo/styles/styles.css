@@ -1,0 +1,42 @@
+.title{
+    margin: 5vh 2vw 0 auto;
+    padding-top: 2vh;
+    text-align: center;
+    color: white;
+    font-size: 6vh;
+}
+
+table thead {
+    background:#FFB82E;
+    font-size: 1.3rem;
+    color:black;
+    text-align: left;
+}
+
+.contenedor {
+    width: 70vw;
+    height: 80vh;
+    margin: 5vh 15vw;
+    padding: 5vh;
+    background: white; 
+    border-radius: 1vh;
+}
+
+table {
+    width: 100%;
+}
+
+th {
+    padding: 1.5vh;
+}
+
+.data_element {
+    margin: 1rem 0;
+}
+
+#data {
+    margin: auto;
+    height: 100vh;
+    width: 100vh;
+    overflow-y: auto;
+}
