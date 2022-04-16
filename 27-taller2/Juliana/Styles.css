@@ -129,7 +129,7 @@ body{
     pointer-events: none;
 }
 
-/*Top-Bar*/
+/*TopBar*/
 
 .Main {
     position: absolute;
@@ -145,7 +145,7 @@ body{
     left: 80px;
 }
 
-.Top-Bar {
+.TopBar {
     width: 100%;
     height: 60px;
     display: flex;
@@ -164,6 +164,7 @@ body{
     align-items: center;
     font-size: 2.5rem;
     cursor: pointer;
+    color: var(--Blue);
 }
 
 .Search {
@@ -190,6 +191,7 @@ body{
     position: absolute;
     top: 0;
     left: 10px;
+    align-items: center;
     font-size: 1.2rem;
 }
 
@@ -209,4 +211,114 @@ body{
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.Welcome {
+    padding-left: 20px;
+}
+
+.Grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2.2fr 0.8fr;
+}
+
+.ContainerFilter {
+    border-radius: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+}
+
+.Dropdown {
+    margin: 10px;
+}
+
+.Cases {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    width: 98%;
+}
+
+.Cases p {
+    padding: 2px;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);;
+}
+
+.ToDo {
+    border-radius: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+}
+
+.ToDo-Header {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    justify-content: space-between;
+}
+
+.ToDo .Table { 
+    margin: 10px;
+}
+
+.ToDo .Table thead td {
+    font-weight: 800;
+}
+
+.ToDo .Table td {
+    padding: 2px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);;
+}
+
+.ToDo .Table td span{ 
+    padding-right: 30px;
+}
+
+.StatusPending {
+    padding: 2px 4px;
+    background: #b80d0d;
+    color: var(--White);
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.StatusComplete {
+    padding: 2px 4px;
+    background: #3eb80d;
+    color: var(--White);
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.StatusProgress {
+    padding: 2px 4px;
+    background: #d8931d;
+    color: var(--White);
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.ContainerMess {
+    border-radius: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+}
+
+.Messages-Header {
+    margin: 10px;
+    padding: 20px 20px 0 20px;
+}
+
+.Messages div {
+    padding: 20px;
+    margin: 10px;
 }

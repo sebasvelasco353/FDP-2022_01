@@ -35,7 +35,7 @@
                 <li>
                     <a href="#">
                         <span class="Icon"><ion-icon name="chatbubbles-outline"></ion-icon></span>
-                        <span class="Title">Message</span>
+                        <span class="Title">Messages</span>
                     </a>
                 </li>
                 <li>
@@ -60,7 +60,7 @@
         </div>
 
         <div class="Main">
-            <div class="Top-Bar">
+            <div class="TopBar">
                 <div class="Toggle">
                     <ion-icon name="menu-outline"></ion-icon>
                 </div>
@@ -74,15 +74,82 @@
                     <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"/>
                 </div>
             </div>
-        </div>
 
-        <div class="Message-Cards">
-            
+            <div class="Welcome" id="Welcome">
+                <!--Info inyectada desde el Api-->
+            </div>
+    
+            <div class="Grid">
+                <div class="ContainerFilter">
+                    <div class="Dropdown">
+                        <h3>Recent patients</h3>
+                        <label for="Filter">Filter by:</label>
+                        <select name="Filter" id="Filter">
+                            <option value="All">All</option>
+                            <option value="Open">Open</option>
+                            <option value="Closed">Closed</option>
+                            <option value="Age-50">Edad < 50</option>
+                            <option value="Age+50">Edad > 50</option>
+                            <option value="PreSurgery">Previous surgery</option>
+                        </select>
+                    </div>
+                    <div class="Cases" id="Cases">
+                        <!--Info inyectada desde el Api-->
+                    </div>
+                </div>
+                <div class="ToDo">
+                    <div class="ToDo-Header">
+                        <h3>To Do:</h3>
+                        <a href="#" class="Btn">View All</a>
+                    </div>
+                    <div class="Table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td>Task</td>
+                                    <td><span>Status</span></td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span>Order coffee</span></td>
+                                    <td><p class="StatusComplete">Complete</p></td>
+                                </tr>
+                                <tr>
+                                    <td><span>Answer emails</span></td>
+                                    <td><p class="StatusProgress">Progress</p></td>
+                                </tr>
+                                <tr>
+                                    <td><span>Call mom</span></td>
+                                    <td><p class="StatusPending">Pending</p></td>
+                                </tr>
+                                <tr>
+                                    <td><span>Sign papers</span></td>
+                                    <td><p class="StatusPending">Pending</p></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ContainerMess">
+                <div class="Messages-Header">
+                    <h3>Recent messages</h3>
+                </div>
+                <div class="Messages" id="Messages">
+                <!--Info inyectada desde el Api-->
+                </div>
+                <div class="NewMessage">
+                    <button>Click</button onclick="NewMessage()">
+                </div>
+            </div>
         </div>
 
     </div>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="App.js"></script>
 </body>
 </html>
