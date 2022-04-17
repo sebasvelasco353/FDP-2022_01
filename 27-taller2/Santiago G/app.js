@@ -1,4 +1,36 @@
 const url = 'https://raw.githubusercontent.com/Santygr21/FDP-2022_01/main/27-taller2/user.json'; 
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.from(".Bienvenida",{
+    y: '-100%',
+    duration: 0.5,
+});
+
+gsap.from(".mensaje_binvenida",{
+    y: '-100%',
+    duration: 0.5,
+});
+
+gsap.from(".menu_side",{
+    x: '-100%',
+    duration: 0.5,
+});
+
+gsap.from(".menu_icon",{
+    y: '-100%',
+    duration: 0.5,
+});
+
+gsap.from(".container",{
+    x: '-100%',
+    duration: 1.5,
+});
+
+gsap.from(".message_icon",{
+    x: '100%',
+    duration: 1,
+});
+
 
 var menu_side = document.getElementById("menu_side");
 var icon_menu = document.getElementById("icon_menu");
@@ -56,10 +88,41 @@ function draw_data() {
         document.getElementById('filtro').style.display='block';
         document.getElementById('new_email').style.display='none';
         document.getElementById('formulario').style.display='none';
-        
 
     });
 
+}
+
+function initial_animation(){
+    gsap.from(".Bienvenida",{
+        y: '-100%',
+        duration: 0.5,
+    });
+    
+    gsap.from(".mensaje_binvenida",{
+        y: '-100%',
+        duration: 0.5,
+    });
+    
+    gsap.from(".menu_side",{
+        x: '-100%',
+        duration: 0.5,
+    });
+    
+    gsap.from(".menu_icon",{
+        y: '-100%',
+        duration: 0.5,
+    });
+    
+    gsap.from(".container",{
+        x: '-100%',
+        duration: 1.5,
+    });
+    
+    gsap.from(".message_icon",{
+        x: '100%',
+        duration: 1,
+    });
 }
 
 function draw_messages(){
@@ -75,6 +138,23 @@ function draw_messages(){
         document.getElementById('scrollbar').style.display='block';
         document.getElementById('new_email').style.display='block';
         document.getElementById('formulario').style.display='none';
+
+        
+    });
+
+    gsap.from(".message_page",{
+        x: '-100%',
+        duration: 1,
+    });
+
+    gsap.from(".fa-pen",{
+        x: '-100%',
+        duration: 1,
+    });
+
+    gsap.from(".scrollbar",{
+        y: '100%',
+        duration: 1,
     });
 
 }
@@ -84,8 +164,11 @@ function draw_formulario(){
         document.getElementById('scrollbar').style.display='none';
         document.getElementById('new_email').style.display='none';
         document.getElementById('formulario').style.display='block';
+        gsap.from(".formulario_box",{
+            x: '-100%',
+            duration: 1,
+        });
 }
-
 
 function movement_menu(){
     body.classList.toggle("menu__animation");
@@ -99,7 +182,7 @@ function enviado(){
     if (email.value===''|| asunto.value==='' || mensaje.value===''){
         swal("Error","Por favor digite todos los campos", "error");
     }else{
-        swal("", "Tu mensaje ha sido enviado con éxito", "success");
+        swal("", "Tu mensaje ha sido enviado", "success");
         Reinicio();
     }}
 
@@ -108,6 +191,7 @@ function enviado(){
         document.getElementById("asunto").value="";
         document.getElementById("mensaje").value="";
     }
+
 
 run();
 
