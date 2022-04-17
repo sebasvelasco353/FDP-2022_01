@@ -124,3 +124,25 @@ a.selected{
 .menu_side_animation{
     width: 250px;
 }
+
+.container{
+    width: 250px;
+    height: 80px;
+    margin-left: 50px;
+
+    display: flex;
+    align-items: center;
+
+}
+
+.filter_by{
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+.display{
+    margin-top: 100px;
+    margin-left: 25px;
+}
+

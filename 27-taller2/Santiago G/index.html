@@ -9,16 +9,31 @@
     <title>Dashboard</title>
 </head>
 <body id="body">
+<!--Menú-->
     <div class="total_menu">
     <header>
         <div class="menu_icon">
-            <i class="fa-solid fa-bars" id="icon_menu"></i>
-        </div>       
+            <i class="fa-solid fa-bars" id="icon_menu" onclick="movement_menu()"></i>
+        </div>    
+        
+        <div class="container">
+            <div class="toolbar">
+                <div class="filter">
+                    <label for="filter" class="filter_by">Filtrar por:</label>
+                    <select name="filter" id="filter" class="filter_choose">
+                        <option value="all">Todos</option>
+                        <option value="age<50">Age < 50</option>
+                        <option value="age>50">Age > 50</option>
+                        <option value="closed">Closed</option>
+                        <option value="open">Open</option>
+                        <option value="previous Surgery">Previous Surgery</option>
+                    </select>
+                </div>
     </header>
 
     <div class="menu_side" id="menu_side">
             <div class="name_page">
-                <i class="fa-solid fa-cube"></i>
+                <i class="fa-solid fa-hospital"></i>
                <h3>Dashboard</h3> 
             </div>
     
@@ -53,7 +68,9 @@
         </a>
     </div>
     </div>
-</div>
+  </div>
+  
+     <section id="display" class="display"></section>
    <script src="app.js"></script>
 </body>
 </html>
