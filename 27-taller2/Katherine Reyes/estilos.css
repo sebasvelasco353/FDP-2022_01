@@ -29,7 +29,7 @@ body {
 /* SIDEBAR */
 .sidebar{
     max-width: 250px;
-    height: 870px;
+    height: 900px;
     background-color: var(--blue);
     margin: 0;
     padding: 20px;
@@ -177,6 +177,13 @@ li:hover{
 	display: block;
 }
 
+.Inicio h3{
+	font-size: 25px;
+}
+
+.Inicio h4{
+	font-size: 20px;
+}
 .bienvenido{
     background-color: var(--blue);
     color: var(--light);
@@ -478,8 +485,3 @@ button:hover{
  ::-webkit-scrollbar-thumb:hover {
 	 background-color:var(--azul-opacidad);
 	}
-
-
-
-
-
