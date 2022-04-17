@@ -135,7 +135,7 @@ body{
     position: absolute;
     width: calc(100% - 300px);
     left: 300px;
-    min-height: 100vh;
+    max-height: 100vh;
     background: var(--White);
     transition: 0.5s;
 }
@@ -213,11 +213,20 @@ body{
     object-fit: cover;
 }
 
+/*Welcome / Patients / To Do list*/
+
 .Welcome {
     padding-left: 20px;
+    font-size: 1.2rem;
+}
+
+.Welcome span {
+    color: var(--Blue);
+    font-weight: 700;
 }
 
 .Grid {
+    position: relative;
     width: 100%;
     display: grid;
     grid-template-columns: 2.2fr 0.8fr;
@@ -232,7 +241,17 @@ body{
 
 .Dropdown {
     margin: 10px;
+    color: var(--Blue);
+    display: flex;
+    justify-content: space-between;
 }
+
+.ResFilter {
+    display: flex;
+    font-weight: 700;
+    padding: 15px;
+}
+
 
 .Cases {
     display: flex;
@@ -242,7 +261,7 @@ body{
 }
 
 .Cases p {
-    padding: 2px;
+    padding: 2px 15px;
     border-right: 1px solid rgba(0, 0, 0, 0.1);;
 }
 
@@ -258,6 +277,21 @@ body{
     flex-direction: row;
     margin: 10px;
     justify-content: space-between;
+    color: var(--Blue);
+    font-weight: 700;
+}
+
+.Btn{
+    padding: 2px 4px;
+    background: var(--Blue);
+    color: var(--White);
+    border-radius: 4px;
+    border: transparent;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .ToDo .Table { 
@@ -265,7 +299,8 @@ body{
 }
 
 .ToDo .Table thead td {
-    font-weight: 800;
+    font-weight: 700;
+    color: var(--Blue);
 }
 
 .ToDo .Table td {
@@ -307,6 +342,8 @@ body{
     text-align: center;
 }
 
+/*Recent messages*/
+
 .ContainerMess {
     border-radius: 20px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
@@ -314,11 +351,28 @@ body{
 }
 
 .Messages-Header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     margin: 10px;
     padding: 20px 20px 0 20px;
+    color: var(--Blue);
 }
 
-.Messages div {
-    padding: 20px;
+#Messages {
+    height: 35vh;
+    width: 100%;
+    overflow-y: auto;
+}
+
+.Messages div{
+    padding: 15px;
     margin: 10px;
 }
+
+/*scrollbar*/
+::-webkit-scrollbar {width: 10px;}
+
+::-webkit-scrollbar-thumb {background-color: var(--Blue); border-radius: 15px;}
+
+::-webkit-scrollbar-thumb:hover {background-color: #0c7fb5;}

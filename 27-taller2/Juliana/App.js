@@ -60,7 +60,7 @@ async function Run(){
                     Info.innerHTML="";
                         
                     let DisplayInfo = document.createElement('p');
-                    DisplayInfo.innerHTML = "Hey, " + ResJson.name + "." + `<br>` + "Have a nice day!";
+                    DisplayInfo.innerHTML = "Hey, " + `<span>${ResJson.name}.</span>` + `<br>` + "Have a nice day!";
                     Info.appendChild(DisplayInfo);
             }
             DisplayUser();
@@ -87,34 +87,41 @@ async function Run(){
                 Results.forEach(e => {
                         
                     let DisplayInfo = document.createElement('p');
-                    DisplayInfo.innerHTML = `<p><p>${e.name} ${e.last_name}</p><p>${e.age}</p><p>${e.bloodtype}</p><p>${e.country}</p></p>`;
+                    DisplayInfo.innerHTML = `<p><p>${e.name} <p>${e.last_name}</p></p><p>${e.age}</p><p>${e.bloodtype}</p><p>${e.height}cm </p><p>${e.country}</p></p>`;
                     Info.appendChild(DisplayInfo);
                 });
+                
+                const ResFilter = document.getElementById('ResFilter');
+                ResFilter.innerHTML= `<p>Results:</p><span>${Results.length}</span>`;
             }
             DisplayCases();
         }
+}
 
-        async function NewMessage(){
-            const { value: formValues } = await Swal.fire({
-                title: 'New message',
-                html:
-                  '<label for: Email><input id="swal-input1" class="swal2-input" placeholder="Send to:"></label>' +
-                  '<label for: Message><input id="swal-input2" class="swal2-input" placeholder="Message:"></label>',
-                showConfirmButton: true,
-                showCancelButton: true,
-                focusConfirm: false,
-                preConfirm: () => {
-                  return [
-                    'The message was send correctly'
-                  ]
-                }
-              })
-              
-              if (formValues) {
-                Swal.fire(JSON.stringify(formValues))
-              }
+async function NewMessage(){
+        await Swal.fire({
+        title: 'New message',
+        html:
+          '<label for: Email><input id="swal-input1" class="swal2-input" placeholder="Send to:"></label>' +
+          '<label for: Message><input id="swal-input2" class="swal2-input" placeholder="Message:"></label>',
+        showConfirmButton: true,
+        showCancelButton: true,
+        confirmButtonText: 'Send',
+      })
+      
+      .then((result) => {
+        if (result.isConfirmed) {
+          Swal.fire('Cool!', 'The message was sent succesfully!', 'success')
         }
-        NewMessage();
+      })
+}
+
+function Error() {
+    Swal.fire(
+        'Ups!',
+        'looks like this function is temporarily unavailable.',
+        'warning'
+      )
 }
 
 

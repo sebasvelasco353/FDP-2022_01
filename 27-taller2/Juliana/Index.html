@@ -20,37 +20,25 @@
                         <span class="Title">Name</span>
                     </a>
                 </li>
-                <li>
+                <li onclick="Run()">
                     <a href="#">
                         <span class="Icon"><ion-icon name="home-outline"></ion-icon></span>
                         <span class="Title">Dashboard</span>
                     </a>
                 </li>
-                <li>
-                    <a href="#">
-                        <span class="Icon"><ion-icon name="people-outline"></ion-icon></span>
-                        <span class="Title">Patients</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <span class="Icon"><ion-icon name="chatbubbles-outline"></ion-icon></span>
-                        <span class="Title">Messages</span>
-                    </a>
-                </li>
-                <li>
+                <li onclick="Error()">
                     <a href="#">
                         <span class="Icon"><ion-icon name="settings-outline"></ion-icon></ion-icon></span>
                         <span class="Title">Profile</span>
                     </a>
                 </li>
-                <li>
+                <li onclick="Error()">
                     <a href="#">
                         <span class="Icon"><ion-icon name="help-outline"></ion-icon></ion-icon></ion-icon></span>
                         <span class="Title">Help</span>
                     </a>
                 </li>
-                <li>
+                <li onclick="Error()">
                     <a href="#">
                         <span class="Icon"><ion-icon name="log-out-outline"></ion-icon></ion-icon></span>
                         <span class="Title">Sing out</span>
@@ -78,74 +66,82 @@
             <div class="Welcome" id="Welcome">
                 <!--Info inyectada desde el Api-->
             </div>
-    
-            <div class="Grid">
-                <div class="ContainerFilter">
-                    <div class="Dropdown">
-                        <h3>Recent patients</h3>
-                        <label for="Filter">Filter by:</label>
-                        <select name="Filter" id="Filter">
-                            <option value="All">All</option>
-                            <option value="Open">Open</option>
-                            <option value="Closed">Closed</option>
-                            <option value="Age-50">Edad < 50</option>
-                            <option value="Age+50">Edad > 50</option>
-                            <option value="PreSurgery">Previous surgery</option>
-                        </select>
-                    </div>
-                    <div class="Cases" id="Cases">
-                        <!--Info inyectada desde el Api-->
-                    </div>
-                </div>
-                <div class="ToDo">
-                    <div class="ToDo-Header">
-                        <h3>To Do:</h3>
-                        <a href="#" class="Btn">View All</a>
-                    </div>
-                    <div class="Table">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <td>Task</td>
-                                    <td><span>Status</span></td>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><span>Order coffee</span></td>
-                                    <td><p class="StatusComplete">Complete</p></td>
-                                </tr>
-                                <tr>
-                                    <td><span>Answer emails</span></td>
-                                    <td><p class="StatusProgress">Progress</p></td>
-                                </tr>
-                                <tr>
-                                    <td><span>Call mom</span></td>
-                                    <td><p class="StatusPending">Pending</p></td>
-                                </tr>
-                                <tr>
-                                    <td><span>Sign papers</span></td>
-                                    <td><p class="StatusPending">Pending</p></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
 
-            <div class="ContainerMess">
-                <div class="Messages-Header">
-                    <h3>Recent messages</h3>
+            <div class="DisplayInfo" id="DisplayInfo">
+                <div class="Grid">
+                    <div class="ContainerFilter">
+                        <div class="Dropdown">
+                            <div class="Filter">
+                                <h3>Recent patients</h3>
+                                <label for="Filter">Filter by:</label>
+                                    <select name="Filter" id="Filter">
+                                    <option value="All">All</option>
+                                    <option value="Open">Open</option>
+                                    <option value="Closed">Closed</option>
+                                    <option value="Age<50">Edad < 50</option>
+                                    <option value="Age>50">Edad > 50</option>
+                                    <option value="PreSurgery">Previous surgery</option>
+                                </select>
+                            </div>
+                            <div class="ResFilter" id="ResFilter">
+                                <!--Info inyectada desde el Api-->
+                            </div>
+                        </div>
+                        <div class="Cases" id="Cases">
+                            <!--Info inyectada desde el Api-->
+                        </div>
+                    </div>
+                    <div class="ToDo">
+                        <div class="ToDo-Header">
+                            <h3>To Do:</h3>
+                            <button" class="Btn" onclick="Error()">Add a task</button>
+                        </div>
+                        <div class="Table">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <td>Task</td>
+                                        <td><span>Status</span></td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><span>Order coffee</span></td>
+                                        <td><p class="StatusComplete">Complete</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span>Answer emails</span></td>
+                                        <td><p class="StatusProgress">Progress</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span>Call mom</span></td>
+                                        <td><p class="StatusPending">Pending</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span>Visit Sheldon</span></td>
+                                        <td><p class="StatusPending">Pending</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span>Sign papers</span></td>
+                                        <td><p class="StatusPending">Pending</p></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
                 </div>
-                <div class="Messages" id="Messages">
-                <!--Info inyectada desde el Api-->
-                </div>
-                <div class="NewMessage">
-                    <button>Click</button onclick="NewMessage()">
+    
+                <div class="ContainerMess">
+                    <div class="Messages-Header">
+                        <h3>Recent messages</h3>
+                        <button class="Btn" onclick="NewMessage()">New message</button>
+                    </div>
+                    <div class="Messages" id="Messages">
+                    <!--Info inyectada desde el Api-->
+                    </div>
                 </div>
             </div>
         </div>
-
     </div>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
