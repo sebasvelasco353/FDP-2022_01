@@ -199,6 +199,17 @@ a.selected{
     margin-bottom: 5px;
 }
 
+.cantidad{
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+.cantidad > h4{
+    font-family: Montserrat;
+    font-weight: 400;
+    color: #5B86E1;
+}
+
 .display{
     background-color: #fff;
     padding: 50px;

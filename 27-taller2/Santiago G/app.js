@@ -1,6 +1,7 @@
 const url = 'https://raw.githubusercontent.com/Santygr21/FDP-2022_01/main/27-taller2/user.json'; 
 gsap.registerPlugin(ScrollTrigger);
 
+//Animaciones pantalla principal
 gsap.from(".Bienvenida",{
     y: '-100%',
     duration: 0.5,
@@ -31,20 +32,18 @@ gsap.from(".message_icon",{
     duration: 1,
 });
 
-
+//definición de variables
 var menu_side = document.getElementById("menu_side");
 var icon_menu = document.getElementById("icon_menu");
 var body = document.getElementById("body");
 var icon = document.getElementById("icon_animation");
 var move = document.getElementById("icon_move");
-
 const filterSelect = document.getElementById("filter")
-
 let data;
 let message;
 let jsonRes;
 
-
+//async function
 async function run(){
     const res = await fetch(url);
     jsonRes = await res.json();
@@ -57,6 +56,7 @@ async function run(){
     draw_data();
 }
 
+//función para el filtro
 function filterBy(criteria){
     const filters = {
         'all' : data,
@@ -75,6 +75,7 @@ filterSelect.addEventListener("change", (e) => {
     draw_data();
 })
 
+//función para pintar en pantalla la información del filtro y sus animaciones
 function draw_data() {
     display.innerHTML = '';
     results.forEach(element => {
@@ -88,9 +89,15 @@ function draw_data() {
         document.getElementById('filtro').style.display='block';
         document.getElementById('new_email').style.display='none';
         document.getElementById('formulario').style.display='none';
+        document.getElementById('cantidad').style.display='block';
 
     });
 
+    {document.getElementById('cantidad').innerHTML = "";
+        const opt = document.createElement('h4');
+        opt.innerHTML = `Se encontraron ${results.length} resultados`;
+        document.getElementById('cantidad').appendChild(opt);
+    }
 }
 
 function initial_animation(){
@@ -125,6 +132,7 @@ function initial_animation(){
     });
 }
 
+//función para pintar en pantalla la información de los mensajes y sus animaciones
 function draw_messages(){
     displayM.innerHTML = '';
     message.forEach(element => {
@@ -138,6 +146,7 @@ function draw_messages(){
         document.getElementById('scrollbar').style.display='block';
         document.getElementById('new_email').style.display='block';
         document.getElementById('formulario').style.display='none';
+        document.getElementById('cantidad').style.display='none';
 
         
     });
@@ -159,25 +168,20 @@ function draw_messages(){
 
 }
 
+//función para pintar en pantalla el formulario
 function draw_formulario(){
         document.getElementById('message_page').style.display='none';
         document.getElementById('scrollbar').style.display='none';
         document.getElementById('new_email').style.display='none';
         document.getElementById('formulario').style.display='block';
+        document.getElementById('cantidad').style.display='none';
         gsap.from(".formulario_box",{
             x: '-100%',
             duration: 1,
         });
 }
 
-function movement_menu(){
-    body.classList.toggle("menu__animation");
-    menu_side.classList.toggle("menu_side_animation");
-    icon.classList.toggle("icon_animation");
-    move.classList.toggle("icon_move");
-}
-
-
+//Alertas al enviar el formulario
 function enviado(){
     if (email.value===''|| asunto.value==='' || mensaje.value===''){
         swal("Error","Por favor digite todos los campos", "error");
@@ -186,11 +190,21 @@ function enviado(){
         Reinicio();
     }}
 
-    function Reinicio(){
+    // función para el botón de eliminar en el formulario
+    function eliminar(){
         document.getElementById("email").value="";
         document.getElementById("asunto").value="";
         document.getElementById("mensaje").value="";
     }
+
+//animación del menú
+function movement_menu(){
+    body.classList.toggle("menu__animation");
+    menu_side.classList.toggle("menu_side_animation");
+    icon.classList.toggle("icon_animation");
+    move.classList.toggle("icon_move");
+}
+
 
 
 run();
