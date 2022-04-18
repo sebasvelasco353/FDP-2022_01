@@ -11,42 +11,41 @@
     <title>Dashboard</title>
 </head>
 <body>
+    <div class="Nav">
+        <ul>
+            <li>
+                <a href="#">
+                    <span class="Icon"><ion-icon name="medkit-outline"></ion-icon></span>
+                    <span class="Title">Medical Center</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="Icon"><ion-icon name="home-outline"></ion-icon></span>
+                    <span class="Title">Dashboard</span>
+                </a>
+            </li>
+            <li onclick="Error()">
+                <a href="#">
+                    <span class="Icon"><ion-icon name="settings-outline"></ion-icon></ion-icon></span>
+                    <span class="Title">Profile</span>
+                </a>
+            </li>
+            <li onclick="Error()">
+                <a href="#">
+                    <span class="Icon"><ion-icon name="help-outline"></ion-icon></ion-icon></ion-icon></span>
+                    <span class="Title">Help</span>
+                </a>
+            </li>
+            <li onclick="Error()">
+                <a href="#">
+                    <span class="Icon"><ion-icon name="log-out-outline"></ion-icon></ion-icon></span>
+                    <span class="Title">Sing out</span>
+                </a>
+            </li>
+        </ul>
+    </div>
     <div class="Container">
-        <div class="Nav">
-            <ul>
-                <li>
-                    <a href="#">
-                        <span class="Icon"><ion-icon name="medkit-outline"></ion-icon></span>
-                        <span class="Title">Name</span>
-                    </a>
-                </li>
-                <li onclick="Run()">
-                    <a href="#">
-                        <span class="Icon"><ion-icon name="home-outline"></ion-icon></span>
-                        <span class="Title">Dashboard</span>
-                    </a>
-                </li>
-                <li onclick="Error()">
-                    <a href="#">
-                        <span class="Icon"><ion-icon name="settings-outline"></ion-icon></ion-icon></span>
-                        <span class="Title">Profile</span>
-                    </a>
-                </li>
-                <li onclick="Error()">
-                    <a href="#">
-                        <span class="Icon"><ion-icon name="help-outline"></ion-icon></ion-icon></ion-icon></span>
-                        <span class="Title">Help</span>
-                    </a>
-                </li>
-                <li onclick="Error()">
-                    <a href="#">
-                        <span class="Icon"><ion-icon name="log-out-outline"></ion-icon></ion-icon></span>
-                        <span class="Title">Sing out</span>
-                    </a>
-                </li>
-            </ul>
-        </div>
-
         <div class="Main">
             <div class="TopBar">
                 <div class="Toggle">
@@ -64,12 +63,12 @@
             </div>
 
             <div class="Welcome" id="Welcome">
-                <!--Info inyectada desde el Api-->
+                <!--Info inyectada desde Js-->
             </div>
 
             <div class="DisplayInfo" id="DisplayInfo">
                 <div class="Grid">
-                    <div class="ContainerFilter">
+                    <div class="ContainerFilter" id="ContainerFilter">
                         <div class="Dropdown">
                             <div class="Filter">
                                 <h3>Recent patients</h3>
@@ -84,14 +83,14 @@
                                 </select>
                             </div>
                             <div class="ResFilter" id="ResFilter">
-                                <!--Info inyectada desde el Api-->
+                                <!--Info inyectada desde Js-->
                             </div>
                         </div>
                         <div class="Cases" id="Cases">
-                            <!--Info inyectada desde el Api-->
+                            <!--Info inyectada desde Js-->
                         </div>
                     </div>
-                    <div class="ToDo">
+                    <div class="ToDo" id="ToDo">
                         <div class="ToDo-Header">
                             <h3>To Do:</h3>
                             <button" class="Btn" onclick="Error()">Add a task</button>
@@ -131,7 +130,7 @@
                     </div>
                 </div>
     
-                <div class="ContainerMess">
+                <div class="ContainerMess" id="ContainerMess">
                     <div class="Messages-Header">
                         <h3>Recent messages</h3>
                         <button class="Btn" onclick="NewMessage()">New message</button>
@@ -143,6 +142,7 @@
             </div>
         </div>
     </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>

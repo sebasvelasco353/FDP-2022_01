@@ -1,3 +1,6 @@
+gsap.from('.Container', { duration: 1, x: '-100%', ease: 'power2.inOut', delay: 0.2})
+gsap.from('.Nav', { duration: 0.8, x: '-400', ease: 'power3.inOut', delay: 0.2})
+
 let List = document.querySelectorAll('.Nav li');
 
 function ActiveLink() {
@@ -17,7 +20,6 @@ Toggle.onclick = function() {
     Nav.classList.toggle ('Active');
     Main.classList.toggle ('Active');
 }
-
 
 var url = "https://raw.githubusercontent.com/Juli0931/FDP-2022_01/main/27-taller2/user.json";
 
@@ -92,7 +94,7 @@ async function Run(){
                 });
                 
                 const ResFilter = document.getElementById('ResFilter');
-                ResFilter.innerHTML= `<p>Results:</p><span>${Results.length}</span>`;
+                ResFilter.innerHTML= `<p>Results:</p><span> ${Results.length}</span>`;
             }
             DisplayCases();
         }
