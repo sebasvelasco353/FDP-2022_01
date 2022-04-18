@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medlife</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Round" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <aside>
+            <div class="top">
+                <div class="logo">
+                    <img src="">
+                    <h2>MED<span class="danger">LIFE</span></h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-icons-round">close</span>
+                </div>
+            </div>
+            <div class="sidebar">
+                <a href="#">
+                    <span class="material-icons-round">grid_view</span>
+                    <h3>Dashboard</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-round">task_alt</span>
+                    <h3>Results</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-round">groups</span>
+                    <h3>Pacients</h3>
+                </a>    
+                <a href="#">
+                    <span class="material-icons-round">logout</span>
+                    <h3>logout</h3>
+                </a>
+            </div>
+        </aside>
+        <main>
+            <h1>Dashboard</h1>
+            <div class="date">
+                <input type="date">
+            </div>
+            <div class="insights">
+                <div class="cases">
+                    <span class="material-icons-round">list_alt</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Unchecked Cases</h3>
+                            <h1>60</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38 " cy="38" r="36"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>60%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">Last month</small>
+                </div>
+                <div class="cases2">
+                    <span class="material-icons-round">checklist</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Checked Cases</h3>
+                            <h1>40</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38 " cy="38" r="36"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>40%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">Last month</small>
+                </div>
+                <div class="cases3">
+                    <span class="material-icons-round">inventory_2</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Archive</h3>
+                            <h1>450 cases</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38 " cy="38" r="36"></circle>
+                            </svg>
+                            <div class="number">
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">since 2020</small>
+                </div>
+            </div>
+
+
+
+
+
+            <div id="patients" class="patients">
+
+                
+                <div class="patients-options">
+
+                    <div class="tool-filter">
+                        <div class="filter">
+                            <label for="filter"><i class="uil uil-search"></i> Search for</label>
+                            <select name="filter" id="filter">
+                                <option value="all">All</option>
+                                <option value="closed">Checked cases</option>
+                                <option value="open">Unchecked cases</option>
+                                <option value="age<50">50 or less y/o </option>
+                                <option value="age>50">50 or more y/o </option>
+                                <option value="prev_surgery">Has cirguries</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <section class="patients-add" onclick="error()">
+                        <i class="uil uil-plus-circle"></i>
+                        <h3 class="add">Add patients</h3>
+                    </section>
+                </div>
+
+                <p id="counting-results"><!-- Llamar resultados--></p>
+
+                <table class="flat-table flat-table-3">
+                    <thead>
+                      <tr>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Height</th>
+                        <th>Smoke y/n</th>
+                        <th>Country</th>
+                        <th>Blood type</th>
+                        <th>Checked</th>
+                        <th>Cirguries</th>
+                      </tr>
+                     </thead>
+                    <tbody id="display-patients">
+                          <!-- datas -->
+                    </tbody>
+                </table>
+            </div>
+        </main>
+        <div class="right">
+            <div class="top">
+                <button id="menu-btn">
+                    <span class="material-icons-round">menu</span>
+                </button>
+                <div class="theme-toggler">
+                    <span class="material-icons-round Active ">light_mode</span>
+                    <span class="material-icons-round ">dark_mode</span>
+                </div>
+                <div class="profile">
+                    <div class="info">
+                        <p>Hey, <b>Dr Jonah</b></p>
+                        <small class="text-muted">Admin</small>
+                    </div>
+                    <div class="profile-photo">
+                        <img src="profile-1.jpg">
+                    </div>
+                </div>
+            </div>
+            <div class="recent-updates">
+                <h2>New messages</h2>
+                <div class="updates">
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="profile-2.jpg" >
+                        </div>
+                        <div class="message">
+                            <p> <b>Emilia Clarke</b> </p>
+                            <small class="text-muted"> 4 hours ago </small>
+                        </div>
+                        <div class="update">
+                            <div class="profile-photo">
+                                <img src="profile-3.jpg">
+                            </div>
+                            <div class="message">
+                                <p> <b>Jason newsted</b> ajsdasjdsadjsadjsa</p>
+                                <small class="text-muted"> 5 hours ago </small>
+                            </div>
+                            <div class="update">
+                                <div class="profile-photo">
+                                    <img src="profile-4.jpg">
+                                </div>
+                                <div class="message">
+                                    <p> <b> Michael Myers </b> ajdaksjdasjkdsadkjasdkasdaskdakj</p>
+                                    <small class="text-muted"> 12 hours ago </small>
+                                </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="app.js"></script>
+</body>
+</html>
