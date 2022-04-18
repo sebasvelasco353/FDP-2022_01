@@ -100,55 +100,31 @@
                 </div>
             </div>
 
+            <section class="table">
+                <div id="patients" class="patients">
+                    <h2>Patient</h2>
+                    <div class="filters">
+                        <div class="toolfilter">
+                            <div class="filter">
+                                <label for="filter">Filter by:</label>
+                                <select name="filter" id="filter">
+                                    <option value="all">all</option>
+                                    <option value="closed">closed</option>
+                                    <option value="open">not closed</option>
+                                    <option value="age<50">age - 50</option>
+                                    <option value="age>50">age + 50</option>
+                                    <option value="prev_surgery">previous surgery</option>
 
-
-
-
-            <div id="patients" class="patients">
-
-                
-                <div class="patients-options">
-
-                    <div class="tool-filter">
-                        <div class="filter">
-                            <label for="filter"><i class="uil uil-search"></i> Search for</label>
-                            <select name="filter" id="filter">
-                                <option value="all">All</option>
-                                <option value="closed">Checked cases</option>
-                                <option value="open">Unchecked cases</option>
-                                <option value="age<50">50 or less y/o </option>
-                                <option value="age>50">50 or more y/o </option>
-                                <option value="prev_surgery">Has cirguries</option>
-                            </select>
+                                    
+                                </select>
+                            </div>
                         </div>
                     </div>
-
-                    <section class="patients-add" onclick="error()">
-                        <i class="uil uil-plus-circle"></i>
-                        <h3 class="add">Add patients</h3>
-                    </section>
                 </div>
+            </section>
 
-                <p id="counting-results"><!-- Llamar resultados--></p>
 
-                <table class="flat-table flat-table-3">
-                    <thead>
-                      <tr>
-                        <th>Name</th>
-                        <th>Age</th>
-                        <th>Height</th>
-                        <th>Smoke y/n</th>
-                        <th>Country</th>
-                        <th>Blood type</th>
-                        <th>Checked</th>
-                        <th>Cirguries</th>
-                      </tr>
-                     </thead>
-                    <tbody id="display-patients">
-                          <!-- datas -->
-                    </tbody>
-                </table>
-            </div>
+
         </main>
         <div class="right">
             <div class="top">
