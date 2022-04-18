@@ -1,0 +1,43 @@
+head{
+	font-family: arial, helvetica;
+	background: #e8e8e8;
+}
+
+.menu{
+	list-style: none;
+	padding: 0;
+	background: #092327;
+	width: 90%;
+	max-width: 1000px;
+	margin: auto;
+}
+
+.menu li a{
+	text-decoration: none;
+	color: white;
+	padding: 20px;
+	display: block;
+}
+
+.menu li{
+	display: inline-block;
+	text-align: center;
+}
+
+.menu li a:hover{
+	background: #ef8354;
+}
+
+#display_mensajes {
+	height: 50vh; 
+	width: auto;
+	overflow-y: auto;
+    padding: 2rem;
+    margin: 1rem;
+	border: 1px;
+	border: #092327;
+}
+
+.display_element {
+       background-color: snow;
+   }

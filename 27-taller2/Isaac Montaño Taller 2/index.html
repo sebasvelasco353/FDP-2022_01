@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctores page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<ul class="menu">
+    <li><a href="index.html">Casos</a></li>
+    <li><a href="Mensajes.html">Mensajes</a></li>
+</ul>
+
+<body>
+
+<!--Filtro de pacientes-->
+
+    <div class="toolbar">
+        <div class="filter">
+        <label for="filter">Filtrar por: </label>
+        <select name="filter" id="filter">
+            <option value="all">Todos </option>
+            <option value="closed">Casos Cerrados </option>
+            <option value="open">Casos Abiertos</option>
+            <option value="age<50">Menores de 50 años</option>
+            <option value="age>50">Mayores de 50 años</option>
+            <option value="prev_surgery">Con cirugías previas</option>
+        </select>
+    </div>
+</div>
+
+<!--Display Pacientes Filtrado-->
+<h4 id="Number_results"><!-- Llamar # de resultados--></h4>
+<section id="display_pacientes"><!-- results --></section>
+
+
+<script src="app.js"></script>
+</body>
+</html>
