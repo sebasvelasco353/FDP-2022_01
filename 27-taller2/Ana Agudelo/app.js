@@ -58,9 +58,9 @@ function filterBy(criteria) {
     'all': data,
     'closed': data.filter(p => p.closed === true),
     'open': data.filter(p => p.closed === false),
-    'age<50': data.filter(p => p.age < 50),
-    'age>50': data.filter(p => p.age > 50),
-    'prev_surgery': data.filter(p => p.prev_surgery === true),
+    'age-50': data.filter(p => p.age < 50),
+    'age+50': data.filter(p => p.age > 50),
+    'recent_surgery': data.filter(p => p.prev_surgery === true),
     }
     return filters[criteria];
 }
