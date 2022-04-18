@@ -8,7 +8,7 @@ const datos= document.getElementById("Inicio")
     let people = await response.json();
 
     console.log(people.results);
-    // TODO: use the results to display the author's informatio
+    /
 
     for (let i = 0; i < people.results.length ; i++) {
         console.log("Genero:", people.results[i].gender)
