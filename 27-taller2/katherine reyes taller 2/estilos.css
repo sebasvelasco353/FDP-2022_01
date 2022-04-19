@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'open sans';
+}
+
+/* navegador */
+nav{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+nav > a{
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.icono{
+    display: block;
+    z-index: 100000000;
+    animation: moverIzquierda 1s ease-in;
+}
+
+/* Header */
+
+header {
+    width: 100%;
+    height: auto;
+    padding: 48px;
+    background: #0081fa;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #5d70c5,#0081fa);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #5d70c5,#0081fa);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.header{
+    width: 95%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.textos-header{
+    width: 60%;
+    color: #fff;
+    text-align: center;
+}
+
+.textos-header h1{
+    font-size: 30px;
+    color:#fff;
+    animation: moverDerecha 1s ease-in;
+}
+
+.textos-header h2{
+    font-size: 20px;
+    color:#fff;
+    animation: moverIzquierda 1s ease-in;
+}
+
+.textos-header a{
+    display: inline-block;
+    color: #fff;
+    font-weight: 100;
+    font-size: 15px;
+    text-decoration: none;
+    margin-top: 30px;
+    border: 1px solid #fff;
+    width: 150%;
+    border-radius: 2px;
+    text-align: left;
+    padding: 10px 0;
+    animation: arriba 1s ease-in; 
+}
+
+.wave{
+    height: 100px;
+    width: 100%;
+    background: #0081fa;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #5d70c5,#0081fa);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #5d70c5,#0081fa);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.enlaces{
+    position: fixed;
+    display: flex;
+    top: 0;
+    background: #ffffff;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    right: 0;
+    flex-direction: column;
+    width: 100%;
+    transition: all 1s ease;
+    background: #0081fa;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #5d70c5,#0081fa);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #5d70c5,#0081fa);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.uno{
+    -webkit-clip-path: circle(0% at 0 0);
+    clip-path: circle(0% at 0 0);
+}
+
+.dos{
+    -webkit-clip-path: circle(150% at 0 0);
+    clip-path: circle(150% at 0 0);
+}
+
+/* Inicio */
+
+.Inicio{
+    padding: 20px; 
+    box-sizing: 
+    border-box; 
+    display: block;}
+
+.Bienvenido{
+    background-color: #0081fa;
+    color: white;
+    padding: 1vh 3vh;
+    margin: 7vh auto 5vh auto;
+    border-radius: 20px;
+    width: 95%;
+}
+
+.InformacionGeneral{
+    display: flex; 
+    justify-content: space-between; 
+    margin: 5vh 0;}
+
+ /* Footer */
+
+ .contenedor-footer{
+    flex-direction: column;
+    border: none;
+}
+
+.content-foo{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.content-foo h4{
+    border: none;
+}
+
+.content-foo p{
+    color: rgb(14, 14, 14);
+    border-bottom: 1px solid #f2f2f2;
+    padding-bottom: 20px;
+}
+
+.titulo-final{
+    font-size: 20px;
+}
+
+
+/* media screen */
+@media screen and (max-width:800px) {
+    .textos-header h1{
+        font-size: 70px;
+    }
+
+    .textos-header h2{
+        font-size: 25px;
+    }   
+}
+
+@media screen and (max-width:700px) {
+    .textos-header h1{
+        font-size: 40px;
+    }
+
+    .textos-header h2{
+        font-size: 15px;
+    }   
+}
+
+@media screen and (max-width:450px) {
+    .container{
+        width: 100%;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+    .textos-header{
+        width: 100%;
+        text-align: center;
+    }
+    .textos-header h1{
+        font-size: 60px;
+    }
+}
+
+@media screen and (max-width:340px) {
+    .textos-header h1{
+        font-size: 35px;
+    }
+    .textos-header a{
+        width: 120px;
+    }
+    .textos-header h2{
+        font-size: 15px;
+    }
+}
