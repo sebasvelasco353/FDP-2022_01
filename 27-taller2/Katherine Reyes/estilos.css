@@ -1,0 +1,487 @@
+/* FONTS GOOGLE */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+:root {
+	--poppins: 'Poppins', sans-serif;
+	--lato: 'Lato', sans-serif;
+
+	--light: #F9F9F9;
+	--blue: #3C91E6;
+	--dark-blue: #000661;
+	--light-blue: #CFE8FF;
+	--light-blue-opacity: #cfe8ffc7;
+	--grey: #eee;
+	--dark-grey: #AAAAAA;
+	--azul-opacidad: #0164aa;
+	--blue-opacidad: #0164aa98;
+	--blue-light-oscuro: #6fb9ff;
+	
+}
+body {
+    font-family: 'Quicksand', sans-serif;
+    color: var(--blanco);
+	background: var(--light-blue);
+	overflow-x: hidden;
+	display: flex;
+	margin: auto;
+}
+
+/* SIDEBAR */
+.sidebar{
+    max-width: 250px;
+    height: 900px;
+    background-color: var(--blue);
+    margin: 0;
+    padding: 20px;
+    font-size: x-large;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+.logolaboratorio{
+	display: flex; 
+	color: var(--light);
+}
+
+.imagenlogo{
+	width: 30%; 
+	height: 40%; 
+	margin: 2vh 2vh 0 0;
+}
+
+.sidebar h1{
+	font-size: 20px;
+	color: var(--light);
+}
+.sidebar h2{
+	font-size: 15px;
+	color: var(--light);
+}
+
+.input-search {
+    width: 90%;
+    margin: 50px 0;
+    background-color: var(--blue-opacidad);
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.input-search i {
+    font-size: 30px;
+    margin-right: 20px;
+	color: var(--light);
+}
+
+.input-search input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    width: 100%;
+    height: 30px;
+    color: var(--light);
+    font-size: 22px;
+    display: none;
+}
+
+.Icono{
+	color: var(--light);
+	width: 90%;
+    padding: 10px 0 10px 7px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: all .3s ease;
+}
+li{
+    list-style: none;
+    font-size: large;
+    color: var(--light);
+    margin: 4vh 1vh;
+    padding: 1vh;
+    border-radius: 2vh;
+}
+
+li:hover{
+	cursor: pointer; 
+	background-color: var(--azul-opacidad);
+}
+
+/* MAIN */
+.Main{
+	width: 79%; 
+	display: flex; 
+	flex-direction: column;
+}
+
+/* HEADER */
+.header{
+    width: 103%;
+    height: 9vh;
+    background-color: var(--light);
+    margin: 0;
+    padding: 0 2vh 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    z-index: 2;
+}
+
+.drop-down-window{
+	position: relative;
+	color: var(--azul-opacidad);
+	font-size: 15px;
+	text-align: center;
+}
+
+.drop-down-window ul{
+    background-color: var(--light);
+    border-radius: 10px;
+    position: absolute;
+    max-height: 0px;
+    width: 15vw;
+    z-index: 10;
+    overflow: hidden;
+    text-align: left;
+}
+
+.drop-down-window:hover ul{
+    border-top: solid 10px var(--blue);
+    transition: all 0.3s;
+    max-height: 400px;
+    right: 1vw;
+    top: 4vh;
+}
+
+.drop-down-window li{
+    color: var(--dark-blue);
+    margin: 2vh 0;
+    font-size: small;
+    padding: 0;
+    border-radius: 0;
+}
+
+.drop-down-window li:hover{
+	color: var(--dark-blue); 
+	cursor: pointer;
+}
+
+/* BIENVENIDA */
+.Inicio{
+	padding: 2vh 5vh; 
+	box-sizing: border-box; 
+	display: block;
+}
+
+.Inicio h3{
+	font-size: 25px;
+}
+
+.Inicio h4{
+	font-size: 20px;
+}
+.bienvenido{
+    background-color: var(--blue);
+    color: var(--light);
+    padding: 1vh 3vh;
+    margin: 7vh auto 5vh auto;
+    border-radius: 20px;
+    width: 95%;
+	font-size: 20px;
+}
+
+.saludo{
+	width: 18%; 
+	position: absolute; 
+	top: 12%; 
+	left: 80%;
+}
+
+/* INFORMACION GENERAL */
+.InfoGeneral{
+	display: flex; 
+	justify-content: space-between; 
+	margin: 6vh 0;
+}
+
+.boxes{
+	width: 250px;
+	height: 350px;
+	border-radius: 6px;
+	box-shadow: 0 2px 2px var(--azul-opacidad);
+	overflow: hidden;
+	margin: 15px;
+	text-align: center;
+	transition: all 0.25s;
+	background-color: var(--blue-light-oscuro);
+	font-size: 15px;
+}
+
+#box1{ 
+	width: 24%;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+#box2{
+	width: 24%;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+#box3{
+	width: 24%;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+#box4{
+	width: 24%;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.boximg1{
+	width: 70%;
+	 margin: 4vh 0 1vh 0;
+	} 
+
+.boxes:hover{
+	cursor: pointer;
+	transform: scale(1.05);
+	transition-duration: 0.4s;
+}
+
+/* PACIENTES */
+.Pacientes{
+	padding: 2vh 5vh; 
+	box-sizing: border-box; 
+	display: none;
+}
+
+/* FILTRO PACIENTES */
+.FilterPacientes{
+	display: flex;
+}
+
+    .BarraHerramientas{
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: space-between;
+        margin: 1rem 0;
+        background-color: var(--light);
+        padding: 2vh;
+        border-radius: 20px;
+        width: 20vw;
+    }
+	select{
+        border: none;
+        border-radius: 3px;
+        overflow: hidden;
+        position: relative;
+        border: none;
+        outline: none;
+    }
+
+    .filter:focus{
+		-webkit-appearance: none; 
+		outline: none;
+	}
+
+    .filter select:focus{
+		outline: none;
+	}
+
+/* Pacientes - Añadir Paciente */
+.AgregarPaciente{
+    display: flex;
+    background-color: var(--blue);
+    color: var(--light);
+    padding: 1vh 0 3vh 2vh;
+    margin: 3vh;
+    border-radius: 15px;
+    width: 20vw;
+    height: 4vh;
+}
+
+.AgregarPaciente:hover{
+    background-color: var(--blue);
+    cursor: pointer;
+    transform: scale(1.05);
+    transition-duration: 0.4s;
+}
+
+.AgregarPacienteTexto{
+	margin: 1vh;
+	align-items: center;
+}
+
+/* DISPLAY RESULTADOS */
+#display_pacientes {
+	height: 50vh; 
+	width: 100%; 
+	overflow-y: auto;
+}
+
+.display_element{
+	padding: 2vh 2vw;
+	margin: 2vh 2vw 5vh 0;
+	background-color: var(--light);
+	border-radius: 15px;
+	border-top: solid 15px var(--blue);
+}
+
+/* MENSAJES */
+.Mensajes{
+	padding: 2vh 5vh; 
+	box-sizing: border-box; 
+	display: none;
+}
+
+.ModalButton{
+    display: flex;
+    background-color: var(--blue);
+    color: var(--light);
+    padding: 2vh 0 3vh 2vh;
+    border-radius: 20px;
+    width: 12vw;
+    height: 5vh;
+}
+
+.ModalButton:hover{
+	background-color: var(--blue);
+    cursor: pointer;
+    transform: scale(1.05);
+    transition-duration: 0.4s;
+}
+
+/* REDACCION MENSAJE */
+.Modal{
+	width: 100%;
+	height: 100%;
+	background-color: var(--light-blue-opacity);
+	position: fixed;
+	top: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	visibility: hidden;
+	z-index: 3;
+}
+.ModalMensaje{
+	position: relative;
+	background-color: var(--light);
+	border-radius: 20px;
+	padding: 5vh;
+	width: 60vw;
+	height: 65vh;
+	border-top: solid 10px var(--blue);
+	transition: transform 0.8s;
+	transform: translateY(0%);
+	overflow: hidden;
+	z-index: 4;
+}
+
+.Modal-Cerrar{
+	transform: translateY(-200%);
+}
+
+.cerrar{
+	position: absolute; 
+	top: 2vh; right: 2vw;
+}
+
+.border{
+	margin: 0 0 3vh 0;
+	padding: 0 0 1vh 0;
+	border-bottom: solid 1px var(--grey);
+	color: var(--dark-blue);
+	width: 95%;
+}
+
+input{
+	width: 90%; 
+	color: var(--dark-grey); 
+	border: none;
+}
+
+input:focus{
+	outline: none;
+}
+
+textarea:focus{
+	outline: none;	
+}
+
+textarea{
+	resize: none;
+	min-width: 95%;
+	min-height: 60%;
+	border: none;
+	margin: 0 0 3vh 0;
+}
+
+/* BOTONES */
+button{
+	border: none;
+	padding: 2vh;
+	margin: 0 3vh 0 0;
+	width: 16vh;
+	border-radius: 15px;
+}
+
+button:hover{
+	cursor: pointer;
+	transform: scale(1.05);
+	transition-duration: 0.4s;
+}
+
+#Enviar{
+	background-color: var(--blue); 
+	color: var(--light);
+}
+
+#Borrar{
+	background-color: var(--dark-blue); 
+	color: var(--light);
+}
+
+.swal-modal{
+	border-radius: 20px;
+}
+
+.swal-button {
+	border-radius: 15px;
+	background-color: var(--blue);
+	margin: 1vh 12vw;
+}
+
+/* MENSAJES DISPLAY */
+#display_mensajes{
+	height: 55vh; 
+	width: 100%; 
+	overflow-y: auto;
+}
+
+ /* SCROLL */
+ ::-webkit-scrollbar{
+	 width: 8px;
+	}
+ ::-webkit-scrollbar-thumb{
+	 background-color: var(--blue); 
+	 border-radius: 8px;
+	}
+ ::-webkit-scrollbar-thumb:hover {
+	 background-color:var(--azul-opacidad);
+	}

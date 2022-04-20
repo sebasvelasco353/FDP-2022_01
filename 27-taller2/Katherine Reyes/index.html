@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href="estilos.css">
+	<title>Dashboard laboratorio</title>
+</head>
+<body>
+
+<!-- SIDEBAR -->
+	<section class="sidebar">
+	    <section class="logolaboratorio">
+		<img class="imagenlogo" src= "img/logo.webp">
+		<h1> Laboratorio </h1>
+		</section>
+
+		<div class="input-search">
+            <i class='bx bx-search'></i>
+            <input type="text" class="input" placeholder="Buscar">
+			<h2>Buscar...</h2>
+        </div>
+
+		<div class="side-menutop">
+			<li class="Icono" onclick="display_inicio()">
+			<i class='bx bxs-home' ></i>Inicio</li>
+
+			<li class="Icono" onclick="display_pacientes()">
+			<i class='bx bxs-group' ></i>Pacientes</li>
+
+		    <li class="Icono" onclick="display_pacientes()">
+		    <i class='bx bxs-folder-open' ></i>Casos abiertos</li>
+			
+			<li class="Icono" onclick="display_pacientes()">
+			<i class='bx bxs-briefcase-alt-2' ></i>Casos cerrados</li>
+		
+			<li class="Icono" onclick="display_mensajes()">
+			<i class='bx bxs-chat' ></i>Mensajes</li>
+		</div>
+	</section>
+
+<!-- MENU -->
+	<div class="Main">
+
+	<section class="header">
+		<div class="drop-down-window">
+			Notificaciones<i class='bx bxs-bell'></i>
+	
+		<ul> 
+			<li onclick="display_pacientes()">
+			<i class='bx bxs-folder-open'></i>Revisas casos abiertos</li>
+			
+			<li onclick="display_mensajes()">
+			<i class='bx bxs-chat'></i>Mensajes sin leer</li>
+        </ul>
+	    </div>
+
+		<div class="drop-down-window">
+		Perfil<i class='bx bxs-group'></i>
+		
+		<ul>
+			<li onclick="mantenimiento_pagina()">
+			<i class='bx bxs-cog'></i>Configuración</li>
+
+			<li onclick="mantenimiento_pagina()">
+			<i class='bx bxs-log-out-circle'></i>Cerrar sesión</li>
+		</ul>
+		</div>
+	</section>
+	
+<!-- BIENVENIDA -->
+<div id="Inicio" class="Inicio">
+	<h3>Dashboard Doctores</h3>
+	<section class="bienvenido">
+		<h3 id="nombre"><!--Llamar nombre--></h3>
+		<p>Bienvenido/a de nuevo, te deseamos un gran dia</p>
+		<img class="saludo" src="img/Welcome-rafiki.png">
+	</section>
+	
+<!-- MAIN (INFO GENERAL) -->
+<h4>Información general</h4>
+
+<div class="InfoGeneral">
+	<section id="box1" class="boxes" onclick="display_pacientes()">
+		<img class="boximg1" src="img/Gynecology consultation-rafiki.png">
+			<h2>5</h2>
+			<p>Casos abiertos</p>
+	</section>
+
+	<section id="box2" class="boxes" onclick="display_pacientes()">
+		<img class="boximg1" src="img/Hospital building-rafiki.png">
+			<h2>10</h2>
+			<p>Casos cerrados</p>
+	</section>
+
+	<section id="box3" class="boxes" onclick="display_pacientes()">
+		<img class="boximg1" src="img/Hospital patient-rafiki.png">
+			<h2>8</h2>
+			<p>Pacientes nuevos</p>
+	</section>
+
+	<section id="box4" class="boxes" onclick="display_mensajes()">
+		<img class="boximg1" src="img/Work chat-rafiki.png">
+			<h2>26</h2>
+			<p>Mensajes</p>
+	</section>
+
+</div>
+</div>
+
+<!-- PACIENTES-->
+<div id="Pacientes" class="Pacientes">
+	<h3>Pacientes</h3>
+
+<!-- FILTRO PACIENTES-->
+<div class="FilterPacientes">
+	<div class="BarraHerramientas">
+		<div class="filter">
+			<label for="filter">
+			<i class='bx bxs-search'></i>filtrar por: </label>
+			<select name="filter" id="filter">
+				<option value="all">Todos</option>
+				<option value="closed">Casos cerrados</option>
+				<option value="open">Casos abiertos</option>
+				<option value="age<50">Edad < 50</option>
+				<option value="age>50">Edad > 50</option>
+				<option value="prev_surgery">Con cirugias anteriores</option>
+			</select>
+		</div>
+	</div>
+
+<!-- AGREGAR PACIENTE -->
+<section class="AgregarPaciente" onclick="mantenimiento_pagina()">
+	<i class='bx bxs-add-to-queue'></i>
+	<p class="AgregarPacienteTexto">Registrar paciente</p>
+</section>
+</div>
+
+<!-- DISPLAY RESULTADOS -->
+<h4 id="NumeroResultados"><!-- Llamar # de resultados--></h4>
+<section id="display_pacientes"><!-- results --></section>
+</div>
+
+<!-- MENASAJES -->
+<div id="Mensajes" class="Mensajes">
+	<h3 id="Correo"><!-- Llamar correo --></h3>
+
+<!-- MENASAJES (BOTON)-->
+<section id="ModalButton" class="ModalButton">
+	<i class='bx bxs-add-to-queue'></i>
+	<p class="RedactarTextoMensaje">Redacte un nuevo mensaje</p>
+</section>
+
+<!-- MENSAJES DISPLAY-->
+<h4 id="bandeja"><!-- Llamar # de mensajes --></h4>
+<section id="display_mensajes"><!-- results --></section>
+</div>
+</div>
+
+<!-- REDACCIÓN MENASAJE-->
+<div class="Modal">
+	<div class="ModalMensaje Modal-Cerrar">
+		<div class="cerrar">x</div>
+		<section class="border">
+			<label for="Para">Para:</label>
+			<input type="Email" id="Email" name="Email"><br>
+		</section>
+
+		<section class="border">
+			<label for="Asunto">Asunto: </label>
+			<input type="text" id="Asunto" name="Asunto"><br>
+		</section>
+
+		<textarea id="Mensaje" name="Mensaje" placeholder="Redacte su mensaje"></textarea><br>
+		<button id="Enviar" onclick="Enviado()">Enviar mensaje</button>
+		<button id="Borrar" onclick="Reinicio()">Borrar mensaje</button>
+	</div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/gsap.min.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="./app.js"></script>
+
+</body>
+</html>
