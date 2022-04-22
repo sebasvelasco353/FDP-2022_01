@@ -35,7 +35,7 @@ function filterBy(criteria) {
     'prev_surgery': data.filter(p => p.prev_surgery === true),
     }
     return filters[criteria];
-}
+} 
 
 filterSelect.addEventListener("change", (e) => {
     results = filterBy(filterSelect.value);
