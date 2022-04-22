@@ -51,7 +51,7 @@ function draw() {
     mensajes.forEach(element => {
         const opt = document.createElement('div');
         opt.className = "display_element";
-        opt.innerHTML = `<p><b>${element.sender}</b> <font size="2">(${element.timestamp})<br>Para: Mi, ${element.cc}</font></p><p>${element.message}`;
+        opt.innerHTML = `<p><b>${element.sender}</b> <font size="2">(${element.timestamp})<br> ${element.cc}</font></p><p>${element.message}`;
         displaym.appendChild(opt);
     });
 
@@ -62,4 +62,14 @@ function draw() {
         document.getElementById('recieved').appendChild(opt);
     }
 }
+
+function error(){
+    swal("Sorry, this function is not available right now", "error");
+};
+function send(){
+    if (Name.value===''|| Email.value==='' || message.value===''){
+        swal("", "Please, fill in all the fields","warning");
+    }else{
+        swal("", "Your message has been send :)", "success",);
+    }}
 run();

@@ -394,3 +394,47 @@ body
 {
     color: var(--white);
 }
+
+.message
+{
+    position: relative;
+    display: grid;
+    min-height: 500px;
+    padding: 20px;
+    background: var(--white);
+    border-radius: 20px;
+}
+.message .messages
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 7px 25px rgba(0,0,0,0.08);
+    border-radius: 20px;
+    padding: 10px;
+}
+.message h2
+{
+    font-weight: 600;
+    color: var(--blue);
+}
+.message p
+{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+.message .compose
+{
+    position: relative;
+    display: grid;
+    min-height: 500px;
+    padding: 20px;
+    background: var(--white);
+    box-shadow: 0 7px 25px rgba(0,0,0,0.08);
+    border-radius: 20px
+}
+.message .compose h2
+{
+    font-weight: 600;
+    color: var(--blue);
+}
