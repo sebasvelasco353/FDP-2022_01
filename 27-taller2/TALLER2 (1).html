@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos2.css">
+    <title>Dashboard</title>
+
+    <script>
+        function mialerta() {  
+            alert("Gracias por dejarnos tus comentarios :)");
+        } 
+    </script>
+    
+
+</head>
+
+
+
+<body>
+    
+
+     <!-------------NAV------------>
+<div class="container" id="container">
+    <nav class="nav">
+
+        <p class="nomempresa"> BioBot</p>
+
+        
+        <ul>
+            
+        
+    
+           
+    
+            <li>
+                <div class="barra"></div>
+    
+                <p class="menu">Calendario</p>
+            </li>
+    
+            <li>
+                <div class="barra"></div>
+    
+                <p class="menu">Pacientes</p>
+            </li>
+
+            <li>
+                <div class="barra"></div>
+    
+                <p class="menu">Chats</p>
+            </li>
+
+            <li>
+                <div class="barra"></div>
+    
+                <p class="menu">Reportes</p>
+            </li>
+
+            <li>
+                <div class="barra"></div>
+    
+                <p class="menu">Cerrar Sesión</p>
+            </li>
+
+            <li>
+                <div class="barra"></div>
+    
+                <p class="menu">Help</p>
+            </li>
+
+           
+    
+        </ul>
+    </nav>
+     <!-------------BIENVENIDA----------->
+
+    <div class="bienvenida">
+        <p>Bienvenido Dr. Frank</p>
+    </div>
+     <!-------------FILTROS----------->
+
+    <div class="filtros">
+        <div class="card" id="card">
+
+            <h2>Listado de Pacientes</h2>
+            <br>
+            <section class="tabla_de_contenido">
+                <div id="pacientes" class="pacientes">
+                    <div class="filters">
+                        <div class="filtros_funcion">
+                            <div class="filter">
+                                <label for="filter">Filtrar Datos Por:</label>
+                                <select name="filter" id="filter">
+                                    <option value="all">Todos</option>
+                                    <option value="closed">Casos Cerrados</option>
+                                    <option value="open">Casos Abiertos</option>
+                                    <option value="age<50">Edades - 50</option>
+                                    <option value="age>50">Edades + 50</option>
+                                    <option value="prev_surgery">Cirugías Previas</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <p id="results"></p>
+                    <table class="data">
+                        <thead>
+                            <tr>
+                                <td>Nombre</td>
+                                <td>Edad</td>
+                                <td>Estatura</td>
+                                <td>Fumador o No Fumador</td>
+                                <td>País</td>
+                                <td>Tipo de Sangre</td>
+                                <td>Caso Cerrado/ Abierto</td>
+                                <td>Cirugías Previas</td>
+                            </tr>
+                        </thead>
+                        <tbody id="returnData">
+
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            
+            <div class="mensajes">
+
+                <p class="titulomensajes">Mensajes Recibidos</p>
+                <br>
+                <br>
+
+                <!-- Espacios para rellenar -->
+
+                <p class="titulomensajes">Enviar Mensajes</p>
+                    
+                <div class="Espacios">
+                    <label for="Para"> Para: </label><br>
+                    <input type="email" id="Email" name="email"><br>
+                </div>
+
+
+                <div class="Espacios">
+                    <br>
+                    <label for="Caso"> Caso: </label><br>
+                   
+                    <input type="text" id="Caso" name="Caso"><br>
+                    
+                </div>
+
+            <!-- Espacio para escribir -->
+            <div class="comentario">
+            <label for="Comentario"> Comentario:  </label><br>
+
+                <textarea id="Mensaje" name="mensaje" placeholder="Escribe Un Mensaje"></textarea><br>
+            </div>
+
+            <input type="button" class="boton_enviar" onclick="mialerta();" value="Enviar"/>
+
+            <div id="Mensajes" class="Mensajes">
+                <section id="display_mensajes"><!-- results --></section>
+            </div>
+
+            
+             
+
+           
+            
+        
+            </div>
+
+
+
+
+ <script src="dash.js"></script>
+
+</body>
+</html>
