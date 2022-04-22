@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="logo-react"></ion-icon>
+                            </ion-icon>
+                        </span>
+                        <span class="title">Health Brand</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="home-outline"></ion-icon>
+                        </span>
+                        <span class="title">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="people-outline"></ion-icon>
+                        </span>
+                        <span class="title">Patient</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="chatbubble-outline"></ion-icon>
+                        </span>
+                        <span class="title">Message</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="help-outline"></ion-icon>
+                        </span>
+                        <span class="title">Help</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="log-out-outline"></ion-icon>
+                        </span>
+                        <span class="title" onclick="error()">Sing Out</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="settings-outline"></ion-icon>
+                        </span>
+                        <span class="title">Settings</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </div>
+                <!--search-->
+                <div class="search">
+                    <label for="">
+                        <input type="text" placeholder="Search Here">
+                        <ion-icon name="search-outline"></ion-icon>
+                    </label>
+                </div>
+                <!--userImg-->
+                <div class="user">
+                    <img src="img/user.jpg">
+                </div>
+            </div>
+
+            <!--cards-->
+            <div class="cardBox">
+                <div class="card">
+                    <div>
+                        <div class="numbers">6</div>
+                        <div class="cardName">Patients</div>
+                    </div>
+                    <div class="iconBx">
+                        <ion-icon name="people-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="numbers">4</div>
+                        <div class="cardName">Messages</div>
+                    </div>
+                    <div class="iconBx">
+                        <ion-icon name="chatbubble-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="numbers">4</div>
+                        <div class="cardName">Closed Cases</div>
+                    </div>
+                    <div class="iconBx">
+                        <ion-icon name="folder-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="numbers">2</div>
+                        <div class="cardName">Open Cases</div>
+                    </div>
+                    <div class="iconBx">
+                        <ion-icon name="folder-outline"></ion-icon>
+                    </div>
+                </div>
+            </div>
+
+            <div class="details">
+                <!--table-->
+                <div class="recentPatients">
+                    <div class="cardHeader">
+                        <h2>Patient Data</h2>
+                        <select class="btn" name="filter" id="filter">
+                            <option value="all">View All</option>
+                            <option value="closed">Closed</option>
+                            <option value="open">Not Closed</option>
+                            <option value="age<50">Age under 50</option>
+                            <option value="age>50">Age above 50</option>
+                            <option value="prev_surgery">Had previous surgery</option>
+                        </select>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>Name</td>
+                                <td>Age</td>
+                                <td>Height</td>
+                                <td>Smoker</td>
+                                <td>Country</td>
+                                <td>Bloodtype</td>
+                                <td>Previous Surgery</td>
+                                <td>Closed</td>
+                            </tr>
+                        </thead>
+                        <tbody id="returnData">
+                            <!-- poner cases -->
+                        </tbody>
+                    </table>
+                </div>
+                <!--profiles-->
+                <div class="recentProfiles">
+                    <div class="cardHeader">
+                        <h2>Patient Profile</h2>
+                    </div>
+                    <table>
+                        <tr>
+                            <td width="60px"><div class="imgBx"><img src="img/img1.jpg"></div></td>
+                            <td><h4>Pepito Perez<br><span>Colombia</span></h4></td>
+                        </tr><tr>
+                            <td width="60px"><div class="imgBx"><img src="img/img2.jpg"></div></td>
+                            <td><h4>Fulanito Perez<br><span>Suecia</span></h4></td>
+                        </tr><tr>
+                            <td width="60px"><div class="imgBx"><img src="img/img3.jpg"></div></td>
+                            <td><h4>Britney Spears<br><span>USA</span></h4></td>
+                        </tr><tr>
+                            <td width="60px"><div class="imgBx"><img src="img/img4.jpg"></div></td>
+                            <td><h4>Devendra Banhart<br><span>USA</span></h4></td>
+                        </tr><tr>
+                            <td width="60px"><div class="imgBx"><img src="img/img5.jpg"></div></td>
+                            <td><h4>Dimebag Darrel<br><span>USA</span></h4></td>
+                        </tr><tr>
+                            <td width="60px"><div class="imgBx"><img src="img/img6.jpg"></div></td>
+                            <td><h4>Facundo Cabral<br><span>Argentina</span></h4></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="message" id="message">
+                <h2>Messages</h2>
+                <p id="recieved">
+                    <!-- poner numero de mensajes -->
+                </p>
+                <div id="returnMessage">
+                    <!-- poner mensajes -->
+                </div>
+                <section id="compose" class="compose">
+                    <h3>Compose</h3>
+                    <label for="name">Name</label>
+                    <input type="text" id="name">
+                    <label for="e-mail">E-mail</label>
+                    <input type="text" id="e-mail">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                    <button type="submit">Send</button>
+                </section>
+            </div>
+
+        </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="./app.js"></script>
+
+    <script>
+        //menu toggle
+        let toggle = document.querySelector('.toggle');
+        let navigation = document.querySelector('.navigation');
+        let main = document.querySelector('.main');
+
+        toggle.onclick = function () {
+            navigation.classList.toggle('active');
+            main.classList.toggle('active');
+        }
+
+        //add hovered class in selected list item
+        let list = document.querySelectorAll('.navigation li');
+
+        function activeLink() {
+            list.forEach((item) =>
+                item.classList.remove('hovered'));
+            this.classList.add('hovered');
+        }
+        list.forEach((item) =>
+            item.addEventListener('mouseover', activeLink));
+    </script>
+</body>
+
+</html>
