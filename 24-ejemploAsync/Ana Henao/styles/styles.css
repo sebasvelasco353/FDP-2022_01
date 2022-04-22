@@ -1,0 +1,10 @@
+.title{
+    text-align: center;
+    color: black;
+}
+div{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(43, 226, 119);
+    font-size: 20px;
+}

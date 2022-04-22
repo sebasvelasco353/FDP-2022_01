@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+*{
+    margin: 3;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins" , sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    background: lightgray;
+}
+.side-menu .brand-name{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(231, 16, 16);
+}
+.navigation{
+    position: fixed;
+    top: 1px;
+    left: 1px;
+    bottom: 20px;
+    width: 300px;
+    border-radius: 10px;
+    box-sizing: initial;
+    border-left: 5px solid lightblue;
+    background: lightblue;
+    transition: width 0.5s;
+}
+.navigation ul{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-left: 5px;
+    padding-top: 40px;
+}
+.navigation ul li{
+    position: relative;
+    list-style: none;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.navigation ul li.active{
+    color: white;
+
+}
+.navigation ul li a{
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+}
+.navigation ul li.active a{
+    color: rgb(255, 255, 255);
+}
+.side-menu li{
+    font-size: 24px;
+    padding: 10px 40px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.navigation ul li a .icon{
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+.navigation ul li a .icon ion-icon{
+    font-size: 1.5em;
+}
+.navigation ul li a .title{
+    position: relative;
+    display: block;
+    padding-left: 10px;
+    height: 60px;
+    line-height: 60px;
+    white-space: normal;
+}
+.margin{
+    margin-top: 50px;   
+}
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    font-family: sans-serif;
+    background-color: lightblue;
+    margin: 0 auto;
+   
+}
+.container{
+width: 42.5%;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+background-color: lightgrey;
+margin: 0 auto;
+}
+.Descripcion{
+    width: 42.5%;
+    display: flex;
+    justify-content: center;
+    background-color: lightgrey;
+    margin: 0 auto;
+}
+.Img_hospital{
+    width: 42.5%;
+    display: flex;
+    justify-content: center;
+    background-color: lightgrey;
+    margin: 0 auto;
+}
+.Casillallenar{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: black;
+    background-color: lightgrey;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 2rem;
+    max-width: 500px;
+    margin: 0 auto;
+}

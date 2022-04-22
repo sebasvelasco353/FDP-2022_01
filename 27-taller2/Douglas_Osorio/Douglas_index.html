@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Douglas_styles.css">
+    <title>DS Medical Dash Board</title>
+</head>
+<body>
+<header id="header">
+    <nav class="nav">
+        <aside id="hidoc"></aside>
+        <ul>
+            <li onclick="logout()">Salir</li>
+           <li onclick="logeo()">Cambiar usuario</li>
+        </ul>
+    </nav>
+    <h2 id="tibuscar">Buscar paciente por:</h2>
+</header>
+<div class="filtros">
+    <label for="estado">Estado:</label>
+    <select class="select" name="estado" id="estado" onchange="(event)">
+        <option value="todo">Todos</option>
+        <option value="true">Terminado</option>
+        <option value="false">No Terminado</option>
+    </select><br>
+    <label for="edad">Edad:</label>
+    <select class="select" name="edad" id="edad" onchange="(event)">
+        <option value="todo">Todos</option>
+        <option value="mayor">Mayor de 50 años</option>
+        <option value="menor">Menor de 50 años</option>
+    </select><br>
+    <label for="cirujias">Cirujias previas:</label>
+    <select class="select" name="cirujia" id="cirujia" onchange="(event)">
+        <option value="todo">Todos</option>
+        <option value="true">Tiene</option>
+        <option value="false">No tiene</option>
+    </select>
+</div>
+<div id="result">
+</div>
+<button id="feed" onclick="msg()">Solicitud</button>
+<script src="Douglas_app.js"></script> 
+</body>
+</html>

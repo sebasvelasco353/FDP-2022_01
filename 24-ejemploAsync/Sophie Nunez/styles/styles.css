@@ -1,0 +1,10 @@
+.title{
+    text-align: center;
+    color: rgb(3, 12, 43);
+    font-size: 4vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+table {
+    width: 100%;
+}

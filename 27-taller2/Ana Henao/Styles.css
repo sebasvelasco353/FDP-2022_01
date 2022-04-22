@@ -1,0 +1,260 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    font-size: 16px;
+    overflow-x: hidden;
+}
+
+/*menu*/
+
+.menu {
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    background: #0b4da9;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.menu ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.menu ul li {
+    position: relative;
+    width: 100%;
+    list-style: none;
+}
+
+.menu ul li:hover {
+    background: #1a65ce;
+}
+
+.menu ul li a {
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu ul li a .icono {
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+
+.menu ul li a .icono ion-icon {
+    font-size: 24px;
+}
+
+.menu ul li a .titulo {
+    position: relative;
+    display: block;
+    padding: 0 10px;
+    height: 60px;
+    line-height: 50px;
+    text-align: start;
+    white-space: nowrap;
+}
+
+.informacion{
+    position: absolute;
+    width: calc(100%-300px);
+    left: 300px;
+}
+
+/*inicio*/
+
+.Saludo {
+    padding: 100px 30px;
+    font-size: 1.8rem;
+}
+
+.Saludo span {
+    color: #0b4da9;
+    font-weight: 700;
+}
+
+.Inicio {
+    align-items: flex-end;
+}
+
+.Cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    padding: 30px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 15px;
+    width: 22%;
+    height: 38vh;
+    padding: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.img-card{
+    width: 100%; 
+    height: 30vh;
+}
+
+.titulo-card {
+    text-align: center; 
+    padding: 8px;
+}
+
+.card{transition: transform 0.5s;}
+
+.card:hover{
+    cursor:pointer;
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+/*Pacientes*/
+
+.mostrarPacientes {
+    width: 90%;
+    display: none;
+    margin: 60px 40px;
+    align-items: center;
+}
+
+.filtro h3 {
+    color: #0b4da9;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+.Pacientes {
+    height: 65vh; 
+    width: 75vw; 
+    overflow-y: auto;
+    margin: 15px 0;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.Pacientes p {
+    padding: 10px;
+}
+
+/*Mensajes*/
+
+.mostrarMensajes {
+    width: 98%;
+    margin: 60px 40px;
+    display: none;
+}
+
+.mostrarMensajes h3 {
+    color: #0b4da9;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+.mostrarMensajes button {
+    padding: 2px 4px;
+    background: #0b4da9;
+    color: #fff;
+    border-radius: 4px;
+    border: transparent;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.Mensajes {
+    height: 65vh; 
+    width: 95%; 
+    overflow-y: auto;
+    margin: 15px 0;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.Mensajes p {
+    padding: 10px;
+}
+
+/*Nuevo mensaje*/
+
+.mostrarNuevoMensaje {
+    display: none;
+}
+
+.campoMensaje {
+    width: 800px;
+    height: 400px;
+    background: rgb(255, 255, 255);
+    border-radius: 15px;
+    margin-left: 25%;
+    margin-top: 18%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.titulo-mensaje {
+    font-size: 35px;
+    text-align: center;
+    padding: 20px 0 10px 0;
+    border-bottom: 1px solid silver;
+}
+
+.campoMensaje form {
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+.Campos {
+    margin: 30px 0;
+    border-bottom: 2px solid silver;
+}
+
+.Campos input {
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+input[type="button"]{
+    padding: 10px;
+    width: 100%;
+    height: 50px;
+    border: 1px solid;
+    background: #0b4da9;
+    color: #fff;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    outline: none;
+}
+
+input[type="button"]:hover {
+    transition: .4s;
+    opacity: 1;
+    transform: scale(1.02);
+    cursor: pointer;
+}

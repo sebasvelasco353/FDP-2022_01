@@ -1,0 +1,15 @@
+.title{
+    padding-top: 10px;
+    text-align: left;
+    color: rgb(5, 0, 78);
+}
+
+#Content {
+    display: flex;
+    flex-direction: column;
+    background-color:rgb(138, 166, 218);
+    font-size: 20px;
+    margin-bottom: 30px;
+    margin-left: 5px;
+    padding-left: 5px;
+ }
