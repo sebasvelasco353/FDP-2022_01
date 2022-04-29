@@ -1,18 +1,27 @@
 class Star {
-    constructor(speed, position, size) {
+    constructor(speed, position, size, direction) {
         this.speed = speed;
         this.position = position;
         this.size = size;
+        this.direction = direction;
     }
     draw() {
         ellipse(this.position[0], this.position[1], this.size);
     }
     move() {
-        this.draw();
-        if (this.position[0] < windowWidth) {
-            this.position[0] += this.speed/100;
+        if (this.direction) {
+            if (this.position[0] < windowWidth) {
+                this.position[0] += this.speed;
+            } else {
+                this.position[0] = 0;
+            }
         } else {
-            this.position[0] = 0;
+            if (this.position[0] > 0) {
+                this.position[0] -= this.speed;
+            } else {
+                this.position[0] = windowWidth;
+            }
         }
+        this.draw();
     }
 }
