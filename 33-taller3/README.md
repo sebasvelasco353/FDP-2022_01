@@ -1,5 +1,5 @@
 ## Taller 3 - objetos y librerias
-Uds estan haciendo una aplicacion web para ver el estdo del clima en una ciudad y estab obteniendo la informacion de un API con el siguiente URL: (espacio para el url), la idea es que deben hacer una interfaz facil de usar, moderna, con colores vivos que representen el estado del clima en la ciudad y dia seleccionado, **Se sebe presentar el producto funcional, con estilos terminados y estilos aplicados el dia 6 de mayo** con los siguientes criterios de aceptacion:
+Uds estan haciendo una aplicacion web para ver el estdo del clima en una ciudad y estan obteniendo la informacion de un API con [el siguiente URL](https://raw.githubusercontent.com/sebasvelasco353/FDP-2022_01/main/33-taller3/weather.js), la idea es que deben hacer una interfaz facil de usar, moderna, con colores vivos que representen el estado del clima en la ciudad y dia seleccionado, **Se sebe presentar el producto terminado, funcional, con estilos terminados y aplicados el dia 6 de mayo de 2022** con los siguientes criterios de aceptacion:
 
 - Obtener la informacion de forma correcta **desde el url entregado en este planteamiento**.
 - Filtrar por dias de la semana.
