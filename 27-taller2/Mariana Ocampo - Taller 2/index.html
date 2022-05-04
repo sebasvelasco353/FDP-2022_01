@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <section class="menu">
+        <section class="logo">
+            <img class="imagenlogo" src="./logo/logo1.png">
+            <h1>Medicos 123</h1>
+        </section>
+        <div class="Opciones">
+                    <a href="#" onclick="displayinicio();"><ion-icon name="home"></ion-icon>Inicio</a>
+                    <a href="#" onclick="displayPacientes();"><ion-icon name="people"></ion-icon>Pacientes</a>
+                    <a href="#" onclick="displayMensajes();"><ion-icon name="mail"></ion-icon>Mensajes</a> 
+
+        </div>
+    </section>
+
+    <!--Bienvenida al doctor-->
+    <div id="Inicio" class="Inicio">
+        <h2>Dashboard</h2>
+        <section class="Bienvenido">
+<h3 id="NOMBRE"></h3>
+<p>Gran trabajo</p>
+        </section>
+    </div>
+
+    <div id="filtro_select">
+        <label for="filter_Case">Filtrar Pacientes por</label>
+        <select name="filter_case" id="filter_case">
+            <option value="todos">Todos</option>
+            <option value="cerrado">Caso cerrado</option>
+            <option value="abierto">Caso sin cerrar</option>
+            <option value="menor_50">Edad < 50</option>
+            <option value="mayor_50">Edad > 50</option>
+            <option value="ciru_prev">Con cirugías anteriores</option>
+        </select>
+        <h4 id="Count_results"> <!-- Cantidad de Resultados --></h4>
+    </div>
+    <section id="content">
+
+        <div class="content1" id="content1">
+            <div>
+                <h3>Pacientes</h3>
+                <div class="dates_cases" id="dates_pacientes">
+                    <!-- Resultados pacientes -->
+                </div>
+            </div>
+        </div>
+
+        <div class="content2" id="content2">
+            <div>
+                <h3>Mensajes</h3>
+                <div class="dates_cases" id="dates_mensaje">
+                    <!-- Resultados mensajes -->
+                </div>
+            </div>
+
+
+    <!--Mensajes-->
+    <div class="Mensaje" id="Mensaje">
+        <div class="contenido" id="contenido">
+    <input type="text" name="texto" placeholder="Nombre">
+    <input type="text" name="texto" placeholder="Correo electronico">
+    <input type="text"  placeholder="Mensaje" >
+    <input type="submit" value="Enviar">
+</div>
+    </div>
+</body>
+<script src="./app.js"></script>
+</html>

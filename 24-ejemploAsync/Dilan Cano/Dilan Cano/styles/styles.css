@@ -1,0 +1,21 @@
+.title{
+    margin: 5vh 2vw 0 auto;
+    padding-top: 2vh;
+    text-align: center;
+}
+
+.show_element {
+    padding: 1rem 1.5rem;
+    margin: 1rem 0;
+    background-color: rgb(243, 243, 243);
+    box-shadow: 4px 4px 4px rgba(255, 255, 255, 0.4);
+}
+
+#show {
+    color: rgb(49, 49, 49);
+    margin: auto;
+    padding: 2vh;
+    height: 80vh;
+    width: 100vh;
+    overflow-y: auto;
+}
