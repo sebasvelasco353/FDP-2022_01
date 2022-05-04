@@ -1,8 +1,8 @@
 {
     "ciudades": [
         {
-            'city': 'Cali',
-            'weeklyOverall': 'Rainy',
+            "city": 'Cali',
+            "weeklyOverall": 'Rainy',
             "daily": [
                 {
                     "day": 'monday',
@@ -55,8 +55,8 @@
                 },
             ]
         }, {
-            'city': 'Bogota',
-            'weeklyOverall': 'Rainy',
+            "city": 'Bogota',
+            "weeklyOverall": 'Rainy',
             "daily": [
                 {
                     "day": 'monday',
