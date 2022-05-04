@@ -1,5 +1,5 @@
 {
-    [
+    "ciudades": [
         {
             'city': 'Cali',
             'weeklyOverall': 'Rainy',
