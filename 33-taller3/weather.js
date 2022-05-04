@@ -52,7 +52,7 @@
                     "precipitation%": 20,
                     "uvIndex": 2,
                     "sunny": true
-                },
+                }
             ]
         }, {
             "city": "Bogota",
@@ -106,7 +106,7 @@
                     "precipitation%": 20,
                     "uvIndex": 2,
                     "sunny": true
-                },
+                }
             ]
         }
     ]
