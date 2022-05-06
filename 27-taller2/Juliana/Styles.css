@@ -1,0 +1,375 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+}
+
+:root {
+    --Blue: #1992ca; 
+    --White: #ffffff; 
+    --Gray: #858585; 
+    --Black: #1a1a1a; 
+}
+
+body{
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/*Sidebar*/
+
+.Nav {
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    background-color: var(--Blue);
+    border-left: 10px solid var(--Blue);
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.Nav.Active {
+    width: 80px;
+}
+
+.Nav ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.Nav ul li {
+    position: relative;
+    width: 100%;
+    list-style: none;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.Nav ul li:hover,
+.Nav ul li.hovered {
+    background-color: var(--White);
+}
+
+.Nav ul li:nth-child(1) {
+    top: 5px;
+    margin-bottom: 40px;
+    pointer-events: none;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.Nav ul li a {
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: var(--White);
+}
+
+.Nav ul li:hover a, 
+.Nav ul li.hovered a{
+    color: var(--Blue);
+}
+
+.Nav ul li a .Icon {
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    line-height: 70px;
+    text-align: center;
+}
+
+.Nav ul li a .Icon ion-icon {
+    font-size: 1.75rem;
+}
+
+.Nav ul li a .Title {
+    position: relative;
+    display: block;
+    padding: 0 10px;
+    height: 60px;
+    line-height: 60px;
+    text-align: start;
+    white-space: nowrap;
+}
+
+.Nav ul li:hover a::before,
+.Nav ul li.hovered a::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 35px 35px 0 10px var(--White);
+    background-color: transparent;
+    pointer-events: none;
+}
+
+.Nav ul li:hover a::after,
+.Nav ul li.hovered a::after{
+    content: '';
+    position: absolute;
+    bottom: -50px;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 35px -35px 0 10px var(--White);
+    background-color: transparent;
+    pointer-events: none;
+}
+
+/*TopBar*/
+
+.Main {
+    position: absolute;
+    width: calc(100% - 300px);
+    left: 300px;
+    max-height: 100vh;
+    background: var(--White);
+    transition: 0.5s;
+}
+
+.Main.Active {
+    width: calc(100% - 80px);
+    left: 80px;
+}
+
+.TopBar {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.Toggle {
+    position: relative;
+    top: 0;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: var(--Blue);
+}
+
+.Search {
+    position: relative;
+    width: 400px;
+    margin: 0 10px;
+}
+
+.Search label {
+    position: relative;
+    width: 100%;
+}
+
+.Search label input {
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    padding: 5px 35px;
+    outline: none;
+    border: 1px solid var(--Black);
+}
+
+.Search label ion-icon {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.User {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.User img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*Welcome / Patients / To Do list*/
+
+.Welcome {
+    padding-left: 20px;
+    font-size: 1.2rem;
+}
+
+.Welcome span {
+    color: var(--Blue);
+    font-weight: 700;
+}
+
+.Grid {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2.2fr 0.8fr;
+}
+
+.ContainerFilter {
+    border-radius: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+}
+
+.Dropdown {
+    margin: 10px;
+    color: var(--Blue);
+    display: flex;
+    justify-content: space-between;
+}
+
+.ResFilter {
+    display: flex;
+    font-weight: 700;
+    padding: 15px;
+}
+
+
+.Cases {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    width: 98%;
+}
+
+.Cases p {
+    padding: 2px 15px;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);;
+}
+
+.ToDo {
+    border-radius: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+}
+
+.ToDo-Header {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    justify-content: space-between;
+    color: var(--Blue);
+    font-weight: 700;
+}
+
+.Btn{
+    padding: 2px 4px;
+    background: var(--Blue);
+    color: var(--White);
+    border-radius: 4px;
+    border: transparent;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.ToDo .Table { 
+    margin: 10px;
+}
+
+.ToDo .Table thead td {
+    font-weight: 700;
+    color: var(--Blue);
+}
+
+.ToDo .Table td {
+    padding: 2px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);;
+}
+
+.ToDo .Table td span{ 
+    padding-right: 30px;
+}
+
+.StatusPending {
+    padding: 2px 4px;
+    background: #b80d0d;
+    color: var(--White);
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.StatusComplete {
+    padding: 2px 4px;
+    background: #3eb80d;
+    color: var(--White);
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.StatusProgress {
+    padding: 2px 4px;
+    background: #d8931d;
+    color: var(--White);
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+}
+
+/*Recent messages*/
+
+.ContainerMess {
+    border-radius: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+}
+
+.Messages-Header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 20px 20px 0 20px;
+    color: var(--Blue);
+}
+
+#Messages {
+    height: 35vh;
+    width: 100%;
+    overflow-y: auto;
+}
+
+.Messages div{
+    padding: 15px;
+    margin: 10px;
+}
+
+/*scrollbar*/
+::-webkit-scrollbar {width: 10px;}
+
+::-webkit-scrollbar-thumb {background-color: var(--Blue); border-radius: 15px;}
+
+::-webkit-scrollbar-thumb:hover {background-color: #0c7fb5;}

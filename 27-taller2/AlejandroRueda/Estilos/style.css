@@ -1,0 +1,90 @@
+html{
+    color: #B4BEC9;
+    border-radius: 15px;
+}
+
+body{
+    padding: 0px;
+    margin: 0px;
+    color: rgb(72, 73, 77);
+    background-color: #B4BEC9;
+}
+
+h3{
+    padding: 0xp;
+    margin: 0px;
+}
+
+#header{
+    background-color: royalblue;
+    padding: 12px;
+    color: white;
+    font-size: x-large;
+}
+
+#content{
+    display: grid;
+    grid-template-columns: 50% auto;
+    text-align: center;
+    background-color: #B4BEC9;
+    padding: 32px;
+    gap: 32px;
+}
+
+#dates_cases, #dates_mensaje, #dates_pacientes{
+    background-color: #FFFFFF;
+}
+
+#filtro_select{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding: 12px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: royalblue;
+}
+h3{
+    background-color: royalblue;
+    color: white;
+    padding: 0px;
+    margin: 0px;
+}
+
+p{
+    margin: 0px;
+    padding: 4px;
+}
+
+#dates_send{
+    margin: 12px;
+}
+
+
+#formulario{
+
+    background-color: #faf9f9;
+
+    border-radius: 10px;
+
+    padding-top: 10px;
+}
+
+#dates_pacientes{
+
+
+    border-radius: 5px;
+}
+
+#dates_mensaje{
+
+
+    border-radius: 5px;
+}
+
+h3{
+
+border-radius:  3px;
+
+}

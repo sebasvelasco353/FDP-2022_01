@@ -1,0 +1,42 @@
+html {
+    background-color: rgb(241, 241, 156);
+    color: rgb(16, 11, 26);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    margin: auto;
+    display: flex;
+}
+ .menu {
+     width: 15%;
+     height: 100vh;
+     background-color: rgb(142, 205, 230);
+     margin: 0;
+     padding: 2vh 4vh;
+     font-size: x-large;
+     box-sizing: border-box;
+     z-index: 1;
+ }
+.logo{display: flex; color: white;}
+
+.imagenlogo{width: 25%; height: 18%; margin: 3vh 3vh 0 0;}
+
+.contenido{
+    width: 32   rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#dates_pacientes, .dates_mensaje{
+    display: none;
+}
+
+.Mensaje{
+    width: 85%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+

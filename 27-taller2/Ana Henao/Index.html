@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+        <div class="menu">
+            <ul>
+                <li onclick="displayInicio()">
+                    <a href="#">
+                        <span class="icono"><ion-icon name="home"></ion-icon></span> 
+                        <span class="titulo">Dashboard</span> 
+                    </a>
+                </li>
+                <li onclick="displayPacientes()">
+                    <a href="#">
+                        <span class="icono"><ion-icon name="people"></ion-icon></span> 
+                        <span class="titulo">Pacientes</span> 
+                    </a>
+                </li>
+                <li onclick="displayMensajes()">
+                    <a href="#">
+                        <span class="icono"><ion-icon name="chatbubble-ellipses"></ion-icon></span> 
+                        <span class="titulo">Mensajes</span> 
+                    </a>
+                </li>
+            </ul>
+        </div>
+    
+        <div class="informacion">
+            <div class="Inicio" id="Inicio">
+                <div class="Saludo" id="Saludo">
+
+                </div>
+                <div class="Cards">
+                    <div class="card" onclick="displayPacientes()">
+                        <img class="img-card" src="https://images.pexels.com/photos/3845126/pexels-photo-3845126.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"/>
+                        <h3 class="titulo-card">Pacientes</h3>  
+            
+                    </div>
+                    <div class="card" onclick="displayPacientes()">
+                        <img class="img-card" src="https://images.pexels.com/photos/40568/medical-appointment-doctor-healthcare-40568.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"/>
+                        <h3 class="titulo-card">Casos abiertos</h3>  
+                    </div>
+                    <div class="card" onclick="displayPacientes()">
+                        <img class="img-card" src="https://images.pexels.com/photos/208512/pexels-photo-208512.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"/>
+                        <h3 class="titulo-card">Casos cerrados</h3>  
+                    </div>
+                    <div class="card" onclick="displayMensajes()">
+                        <img class="img-card" src="https://images.pexels.com/photos/2764666/pexels-photo-2764666.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"/>
+                        <h3 class="titulo-card">Mensajes</h3>  
+                    </div>
+                </div>
+            </div>
+        
+            <div class="mostrarPacientes" id="mostrarPacientes">
+                <div class="filtro">
+                    <h3>Pacientes</h3>
+                    <label for="filtro">Filtrar por:</label>
+                        <select name="filtro" id="filtro">
+                        <option value="Todos">Todos</option>
+                        <option value="Abiertos">Abiertos</option>
+                        <option value="Cerrados">Cerrados</option>
+                        <option value="Edad<50">Edad < 50</option>
+                        <option value="Edad>50">Edad > 50</option>
+                        <option value="CirugiasPrev">Cirugias previas</option>
+                    </select>
+                    <div class="NumResultados" id="NumResultados">
+
+                    </div>
+                </div>
+                <div class="Pacientes" id="Pacientes">
+    
+                </div>
+            </div>
+        
+            <div class="mostrarMensajes" id="mostrarMensajes">
+                <h3>Bandeja de entrada</h3>
+                <p>Tienes 4 mensajes nuevos</p>
+                <button class="NuevoMensaje" onclick="displayNuevoMensaje()">Nuevo mensaje</button>
+                <div class="Mensajes" id="Mensajes">
+    
+                </div>
+            </div>
+
+
+            <div class="mostrarNuevoMensaje" id="mostrarNuevoMensaje">
+                <div class="campoMensaje">
+                    <h1 class="titulo-mensaje">Nuevo mensaje</h1>
+                    <form>
+                        <div class="Campos">
+                            <input type="text" placeholder="Destinatario" id="Destinatario">
+                        </div>
+                        <div class="Campos">
+                            <input type="email" placeholder="Asunto" id="Asunto">
+                        </div>
+                        <div class="Campos">
+                            <input type="text" placeholder="Mensaje" id="Mensaje">
+                        </div>
+                            <input type="button" value="Enviar" onclick="enviado()">
+                    </form>
+                </div>
+            </div>
+        </div>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+<script src="App.js"></script>  
+</body>
+</html>

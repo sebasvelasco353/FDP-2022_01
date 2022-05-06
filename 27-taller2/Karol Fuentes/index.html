@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>HealthLab</title>
+</head>
+
+<body>
+    <section class="menu">
+        <div class="menuNombreLab">
+            <h1>HealthLab</h1>
+        </div>
+        <div class="opcionesMenu">
+            <li onclick="display_Home()">Inicio</li>
+            <li onclick="display_Messages()">Mensajes</li>
+            <li onclick="display_Patients()">Pacientes</li>
+        </div>
+    </section>
+
+
+
+    <div class="Inicio" id="Inicio">
+        <h3>Dashboard Med</h3>
+        <section class="Hola">
+            <h2 id="Nombre"> Hola, </h2>  <!-- falta llamar nombre del json--></section>
+
+        <h4>Status</h4>
+
+        <div class="Status">
+            <section id="cardPacientes" class="cards" onclick="display_Pacientes()">
+                <p><b>Pacientes</b></p>
+                <h3>6</h3>
+            </section>
+
+            <section id="cardCasos">
+                <section id="cardCasosAbiertos" class="Cards" onclick="display_Pacientes()">
+                    <section class="CardTextoCasosAbiertos">
+                        <p><b>Casos abiertos</b></p>
+                        <h3>2</h3>
+                    </section>
+                </section>
+                <section id="cardCasosCerrados" class="Cards" onclick="display_Pacientes()">
+                    <section class="CardTextoCasosCerrados">
+                        <p><b>Casos cerrados</b></p>
+                        <h3>4</h3>
+                    </section>
+                </section>
+            </section>
+
+            <section id="cardMensajesNuevos" class="Cards" onclick="display_Mensajes()">
+                <p><b>Mensajes nuevos</b></p>
+                <h2>4</h2>
+            </section>
+        </div>
+    </div>
+
+
+    <!-- Pacientes -->
+    <div id="Patients" class="Patients">
+        <h3>Pacientes</h3>
+
+            <!-- Pacientes - Filter -->
+            <div class="OpcionesPatients">
+                <div class="barraFilter">
+                    <div class="filter">
+                        <label for="filter"> Filter by:</label>
+                        <select name="filter" id="filter">
+                            <option value="all">Todos</option>
+                            <option value="age>50">Edad > 50</option>
+                            <option value="age<50">Edad < 50</option>
+                            <option value="open">Caso Abierto</option>
+                            <option value="closed">Caso cerrado</option>
+                            <option value="prev_surgery">Con cirugías previas</option>
+                        </select>
+                    </div>
+                </div>
+
+                
+            </div>
+
+            <!-- Pacientes - Display resultados -->
+            <h4 id="Number_results"><!-- Llamar # de resultados--></h4>
+            <section id="display_patients"><!-- results --></section>
+    </div>
+
+    <div id="Mensajes" class="Mensajes">
+        <h3 id="DocEmail"> <!-- Llamar correo --></h3>
+
+         <!-- Mensajes - Boton -->
+         <section id="buttonRedactar" class="buttonRedactar"> 
+            <p class="nuevoMensaje">Nuevo mensaje</p>
+        </section>
+
+         <!-- Mensajes - Display mensajes-->
+         <h4 id="bandejaEntrada"><!-- Llamar # mensajes --></h4>
+         <section id="display_mensajes"><!-- results --></section>
+     </div>
+
+            <!-- Mensajes - Espacio para escribir mensaje-->
+            <div class="form">
+                <div class="formNuevoMensaje">
+                    <div class="cerrarRedactar">x</div>
+                    <section class="formPara">
+                        <label for="Para">Para: </label>
+                        <input type="email" name="email" id="Email"><br>
+                    </section>
+                    <section class="formAsunto">
+                        <label for="Asunto">Asunto: </label>
+                        <input type="text" name="Asunto" id="Asunto"><br>
+                    </section>
+                    <textarea id="mensaje" name="mensaje" placeholder="Typing..."></textarea><br>
+                    <button id="Enviar" onclick="enviado()">Enviar</button> 
+                    <button id="Borrar" onclick="Reinicio()">Borrar</button>
+                    
+                    
+                </div>
+            </div>
+
+
+
+
+
+
+
+    <script src="./app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Style/styles h.css">
+    <title>Nuestra señora</title>
+
+</head>
+<body>
+    <div class="navigation">
+    <div class="side-menu">
+        <div class="brand-name">
+            <h1><i class="icon ion-md-medical"></i>&nbsp;Nuestra señora</h1>
+        </div> 
+        <ul>
+            
+            <li class="list active">
+              <a href="Inicio.html">
+            <span class="icon"><ion-icon name="home"></ion-icon></span>
+            <span class="title">Inicio</span>   
+              </a>
+            <li class="list">
+                <a href="Pacientes.html">
+            <span class="icon"><ion-icon name="people"></ion-icon></span>
+            <span class="title">&nbsp;Pacientes</span>   
+              </a>
+            <li class="list">
+              <a href="Mensajes.html">
+            <span class="icon"><ion-icon name="mail"></ion-icon></span>
+            <span class="title">&nbsp;Mensajes</span>   
+              </a>
+    </ul>
+      </div>
+</div>
+    </div>
+    <header> 
+        <h1>Consulte segun el filtro</h1>
+</header>
+<div class="container">
+    <h2>Registro de pacientes</h2>
+</div>
+<div class="Descripcion">
+<aside>Se registraran los datos de los pacientes que requieran atencion medica</aside>
+</div>
+<div class="Casillallenar">
+    <div class="OpcionesPacientes">
+        <div class="toolbar">
+            <div class="filter">
+                <label for="filter"><ion-icon class="SearchIcon" name="search"></ion-icon> Filtrar por:</label>
+                <select name="filter" id="filter">
+                    <option value="all">Todos</option>
+                    <option value="closed">Caso cerrado</option>
+                    <option value="open">Caso sin cerrar</option>
+                    <option value="age<50">Edad < 50</option>
+                    <option value="age>50">Edad > 50</option>
+                    <option value="prev_surgery">Con cirugías anteriores</option>
+                </select>
+            </div>
+        </div>
+
+    <h4 id="Number_results"></h4>
+    <section id="display_pacientes"></section>
+</div>
+
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="Js/app.js"></script>
+</body>
+</html>

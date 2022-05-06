@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <!--Logo Inicio-->
+    <link rel="shortcut icon" href="./images/logo.png">
+    <!-- Icons CSS-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!--Fuente-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>FungiLab</title>
+</head>
+
+<body>
+    <nav>
+        <div class="logo-name">
+            <section class="logo-image">
+                <img src="./images/logo.png">
+                <span class="logo_name">FungiLab</span>
+            </section>
+        </div>
+
+        <div class="menu-items">
+                    
+            <ul class="nav-links">
+                <li>
+                    <a href="#">
+                    <i class="uil uil-estate"></i>
+                    <span class="link-name">Inicio</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#datas-patients">
+                    <i class="uil uil-users-alt"></i>
+                    <span class="link-name">Pacientes</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#message">
+                    <i class="uil uil-comments"></i>
+                    <span class="link-name">Mensajes</span>
+                    </a>
+                </li>
+            </ul>
+                    
+            <ul class="logout-mode">
+                <li>
+                    <a>
+                    <i class="uil uil-signout"></i>
+                    <span class="link-name" onclick="error()">Cerrar sesión</span>
+                    </a>
+                </li>
+        
+                <li class="mode">
+                    <a>
+                        <i class="uil uil-moon"></i>
+                        <span class="link-name">Modo Dark</span>
+                    </a>
+                    <div class="palanca">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="dashboard">
+        <!--TOOOP-->
+        <div class="top">
+            <i class="uil uil-bars menu-barras"></i><!--Dar clic para ver microinteracción-->
+        </div>
+    
+        <div id="Inicio" class="dash-content">
+
+            <section class="Bienvenido">
+                <div><img src="images/profile.jpg" alt=""></div>
+                <div>
+                    <h3 id="Nombre"> <!-- Llamar nombre --></h3>
+                    <p>Aquí están todas tus actualizciones</p>
+                </div>  
+            </section>
+
+            <section class="general">
+                <div class="title">
+                    <i class="uil uil-tachometer-fast-alt"></i>
+                    <span class="text">Tablero</span>
+                </div>
+
+                <div class="boxes">
+                    <section id="B1" class="box box1">
+                        <i class="uil uil-users-alt"></i>
+                        <span class="text">Total pacientes</span>
+                        <span class="number">6</span>
+                    </section>
+
+                    <section id="B2" class="box box2">
+                        <i class="uil uil-clipboard-notes"></i>
+                        <span class="text">Pendinetes</span>
+                        <span class="number">2</span>
+                    </section>                        
+                        
+                    <section id="B3" class="box box3">
+                        <i class="uil uil-check-circle"></i>
+                        <span class="text">Casos Cerrados</span>
+                        <span class="number">4</span>
+                    </section>
+                        
+
+                    <section id="B4" class="box box4">
+                        <i class="uil uil-chat-info"></i>
+                        <span class="text">Mensajes</span>
+                        <span class="number">4</span>
+                    </section>
+                </div>
+            </section>
+
+            <section class="datas-patients" id="datas-patients">
+                <div class="title">
+                    <i class="uil uil-users-alt"></i>
+                    <span class="text">Datos de pacientes</span>
+                </div>
+
+                <div id="patients" class="patients">
+
+                    <!-- FILTEER -->
+                    <div class="patients-options">
+
+                        <div class="tool-filter">
+                            <div class="filter">
+                                <label for="filter"><i class="uil uil-search"></i> Filtrar por:</label>
+                                <select name="filter" id="filter">
+                                    <option value="all">Todos</option>
+                                    <option value="closed">Caso cerrado</option>
+                                    <option value="open">Caso sin cerrar</option>
+                                    <option value="age-50">Menor de 50</option>
+                                    <option value="age+50">Mayor de 50</option>
+                                    <option value="recent_surgery">Con cirugías anteriores</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <section class="patients-add" onclick="error()">
+                            <i class="uil uil-plus-circle"></i>
+                            <p class="patients-addText">Añadir paciente</p>
+                        </section>
+                    </div>
+
+                    <p id="counting-results"><!-- Llamar results--></p>
+
+                    <table>
+                        <thead>
+                          <tr>
+                            <th>Nombre</th>
+                            <th>Edad</th>
+                            <th>Altura</th>
+                            <th>Fumador</th>
+                            <th>País</th>
+                            <th>Tipo de sangre</th>
+                            <th>¿Cerrado?</th>
+                            <th>Cirugías</th>
+                          </tr>
+                         </thead>
+                        <tbody id="display-patients">
+                              <!-- datas -->
+                        </tbody>
+                    </table>
+                </div>
+
+                <div id="message" class="message">
+                    <h3 id="forEmail">Sección de mensajes</h3>
+
+                    <section id="ButtonWrite" class="ButtonWrite"> 
+                        <i class="uil uil-pen"></i>
+                        <p>Redactar Nuevo</p>
+                    </section>
+
+                    <h4 id="tray"><!--# de mensajes --></h4>
+                    <section id="display-message"><!-- results --></section>
+                </div>
+        
+                <div class="email-content">
+                    <div class="content-message close-message">
+                        <div class="close">x</div>
+                        <section class="border">
+                            <label for="for">Para: </label>
+                            <input type="email" id="Email" name="email"><br>
+                        </section>
+                        <section class="border">
+                            <label for="Asunto">Asunto: </label>
+                            <input type="text" id="Asunto" name="Asunto"><br>
+                        </section>
+                        <textarea id="message" name="message" placeholder="Escribe tu mensaje"></textarea><br>
+                        <button id="send" onclick="send()">Enviar</button>
+                    </div>
+                </div>
+            </section>
+        </div>        
+    </section>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/gsap.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="./app.js"></script>
+</body>
+</html>
