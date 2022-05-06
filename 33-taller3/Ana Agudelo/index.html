@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet"href="style.css">
+</head>
+<body>
+    
+    <header>
+        <h1>Weather today</h1>
+    </header>
+    
+    <div class="Filter_City" id="Filter_City">
+        <label for="Filter_City">Elige tu ciudad</label>
+            <select name="filter_City" id="filter_City">
+                <option value="cali">Cali</option>
+                <option value="bogota">Bogotá</option>
+            </select> 
+
+        <section class="displayOverall" id="displayOverall"><!--results--></section>
+
+        <label for="Filter_Week">Selecciona el día</label>
+            <select name="days" id="days">
+                <option value="allDays">Toda la semana</option>
+                <option value="monday">Lunes</option>
+                <option value="tuesday">Martes</option>
+                <option value="wednesday">Miercoles</option>
+                <option value="thursday">Jueves</option>
+                <option value="friday">Viernes</option>
+                <option value="saturday">Sabado</option>
+                <option value="sunday">Domingo</option>
+            </select>
+
+            <section class="displayDays" id="displayDays"><!--results--></section>
+
+    </div> 
+    <div id="block"></div>
+
+    <script src="main.js"></script>
+</body>
+</html>
