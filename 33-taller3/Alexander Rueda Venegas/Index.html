@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/class.css">
+    <title>SeWeather</title>
+</head>
+<body>
+
+    <div class="container_main" id="container_main">
+        
+        <!-- Section weather of the week -->
+        <section class="sect_week_weather" id="sect_week_weather">
+
+            <!-- Container weather of the week -->
+            <div class="container_weather" id="container_weather">
+                <h2 id="title">The weather of week</h2>
+                <img src="./Recursos/Icons/cloud-rain.svg" width="16%" height="16%">
+                <div class="class" id="content_dates">
+                    <h3 id="title">Rainy</h3>
+                </div>
+            </div>
+
+            <!-- Container filter weather per day -->
+            <div class="container_select" id="container_select">
+                <div class="container_search_city" id="container_search_city">
+                    <input type="text" placeholder="Search city" id="bar_search">
+                    <button onclick="run();">Search</button>
+                </div>
+
+                <h4 id="title">Select the city and day</h4>
+                
+                <div class="container_days" id="container_days">
+                    <button>Monday</button>
+                    <button>Tuesday</button>
+                    <button>Wednesday</button>
+                    <button>Thursday</button>
+                    <button>Friday</button>
+                    <button>Saturday</button>
+                    <button>Sunday</button>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Section of the features of weather -->
+        <section class="sect_dates_weather" id="sect_dates_weather">
+            
+            <!-- Cards -->
+            <div id="cards_temperature" class="cards">
+                temperature
+            </div>
+
+            <div id="cards_precipation" class="cards">
+                precipitation
+            </div>
+
+            <div id="cards_levelUV" class="cards">
+                level ultraviolet
+            </div>
+
+            <div id="cards_sunny" class="cards">
+                sunny
+            </div>
+
+        </section>
+
+    </div>
+
+</body>
+<script class="cssdeck" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/gsap.min.js"></script>
+<script src="./Js/app.js"></script>
+</html>

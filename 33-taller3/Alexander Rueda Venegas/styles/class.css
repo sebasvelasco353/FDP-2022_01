@@ -1,0 +1,11 @@
+.cards{
+    background-color: aqua;
+    width: 50%;
+    height: 50%;
+}
+
+.cards--sunny{
+    background-color: yellow;
+    width: 50%;
+    height: 50%;
+}

@@ -1,0 +1,68 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+#container_select{
+    display: flex;
+    flex-direction: column;
+    background-color: beige;
+    align-items: center;
+}
+
+#container_weather{
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+    align-items: center;
+    color: white;
+}
+
+#select_cities, #title{
+    margin-bottom: 0.8rem;
+}
+
+#container_days button{
+    background-color: beige;
+    width: 10rem;
+    color: black;
+    padding: 6px 0px;
+    border: 0px;
+}
+
+#container_days button:hover{
+    background-color: rgb(255, 212, 131);
+}
+
+#container_days{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    gap: 0.8rem;
+}
+
+#sect_dates_weather{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin: 0.8%;
+    gap: 4rem;
+}
+
+#container_search_city{
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+    margin: 0.8rem;
+}
+
+#container_search_city input{
+    width: 16rem;
+    height: auto;
+    text-align: center;
+}
+
+#container_search_city button{
+    width: 4rem;
+    height: 2rem;
+    text-align: center;
+}
