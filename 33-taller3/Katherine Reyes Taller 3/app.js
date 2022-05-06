@@ -44,44 +44,67 @@ body.addEventListener("click" , e =>{
     }
 })
 
-//CONST BODY
-const filterSelect = document.getElementById('filter');
-const displayciudades = document.querySelector('#display_ciudades');
+//CONST BODY AND FILTERS
+const filterSelect = document.getElementById('filterCiudades');
+const filterSelect2= document.getElementById('filterDias');
+const displayInfo = document.querySelector('#displayInfoguia');
+const displaydias = document.querySelector('#display_Dias');
 
 //LET
 let jsonRes;
 let data;
-let mensajes;
 
-//aSYNC FUNCTION
+//ASYNC FUNCTION
 async function run(){
     const res = await fetch(url);
     jsonRes = await res.json();
-    data = jsonRes.cases;
-    mensajes = jsonRes.messages;
+    data = jsonRes.ciudades;
+    Cali = data[0]["daily"];
+    Cali = data[1]["daily"];
     results = filterBy(filterSelect.value);
+    results = filterDiasBy(filterSelect2.value);
     draw();
 }
 
-//FILTRO
+//FILTRO 
 function filterBy(criteria) {
+    
     const filters = {
-    'all': data,
-    'day': data.filter(p => p.closed === true),
-    'celcius': data.filter(p => p.closed === false),
-    'precipitation%': data.filter(p => p.age < 50),
-    'uvIndex': data.filter(p => p.age > 50),
-    'sunny': data.filter(p => p.prev_surgery === true),
+    'Cali': data.filter(p => p.city === "Cali"),
+    'Bogota': data.filter(p => p.city === "Bogota"),
     }
     return filters[criteria];
+}
+    filterSelect.addEventListener("change",(e) => {
+    results = filterBy(filterSelect.value);
+    draw(); 
+    })
+
+//DISPLAY
+function draw(){
+    document.getElementById('City').innerHTML = "";
+    results.forEach(element => {
+        const opt = document.createElement('h');
+        opt.innerHTML = '${element.Ciudad}';
+        document.getElementById('Ciudad').appendChild(opt);
+    });
+}
+
+function draw(){
+    document.getElementById('Weekly').innerHTML = "";
+    results.forEach(element => {
+        const opt = document.createElement('h');
+        opt.innerHTML = '${element.Weekly}';
+        document.getElementById('Weekly').appendChild(opt);
+    });
 }
 
 filterSelect.addEventListener("change", (e) => {
     results = filterBy(filterSelect.value);
     console.log(results);
     draw();
-})
+});
 
 function mantenimiento_pagina(){
     swal("Lo sentimos, no se puede realizar esta acción", "Esta sección se encuentra en mantenimiento","error");
-};
+    }

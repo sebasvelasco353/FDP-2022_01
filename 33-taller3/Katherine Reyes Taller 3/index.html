@@ -53,14 +53,9 @@
             ClimSolution siempre contigo</p>
 		<img class="saludo" src="img/hello.png">
 	</section>
-	
-    <!-- INFO GUIA --> 
-    <div class="infoguia"></div>
-    <div class="Información">
-        <h2 id="City">Ciudad seleccionada</h2>
-        <h2 id="Weekly">en general durante la semana</h2>
-    </div>
+
     <!-- FILTRO CIUDADES-->
+
 <div class="FilterCiudades">
 	<div class="BarraHerramientas">
 		<div class="filter">
@@ -72,6 +67,17 @@
             </select>
 		</div>
 	</div>
+
+    <!-- BUSCAR MAS CIUDADES -->
+<section class="BuscarCiudades" onclick="mantenimiento_pagina()">
+	<i class='bx bxs-add-to-queue'></i>
+	<p class="BuscarCiudadTexto">Más ciudades</p>
+</section>
+</div>
+
+<!-- DISPLAY RESULTADOS -->
+<section id="display_ciudades"><!-- results --></section>
+</div>
 
     <!-- FILTRO DIAS SEMANA-->
 <div class="FilterDias">

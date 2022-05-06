@@ -35,6 +35,7 @@
         background: var(--grey);
         overflow-x: hidden;
         display: flex;
+        flex-direction: column;
     }
 
 body.dark{
@@ -264,7 +265,7 @@ body.dark .search-field i{
         left: -100%;
         top: 0;
         padding: 20px;
-        background-color: var(--side-nav);
+        background-color: var(--search-text);
         z-index: 100;
         transition: all 0.4s ease;
     }
@@ -306,13 +307,13 @@ body.dark .search-field i{
     /* BIENVENIDA */
 
 .Inicio{
-	padding: 80px; 
+	padding: 50px; 
 	box-sizing: border-box; 
 	display: block;
 }
 
 .Inicio h3{
-	font-size: 30px;
+	font-size: 35px;
     text-align: center;
     color:var(--side-nav);
 }
@@ -320,8 +321,8 @@ body.dark .search-field i{
 .bienvenido{
     background-color: var(--nav-color);
     color: var(--light);
-    padding: 20px;
-    margin: 75px;
+    padding: 10px;
+    margin: 15px;
     border-radius: 20px;
     width: 90%;
     height: 30%;
@@ -332,8 +333,9 @@ body.dark .search-field i{
 
 .saludo{ 
 	width: 15%; 
-	top: 20%; 
-	left: 90%;
+	top: 15%; 
+	left: 82%;
+    position: absolute;
 }
 
 /* FILTRO CIUDADES*/
@@ -371,6 +373,32 @@ body.dark .search-field i{
 		outline: none;
 	}
 
+    /* Buscar ciudades */
+.BuscarCiudades{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+    background-color: var(--nav-color);
+    color: var(--light);
+    padding: 10px;
+    border-radius: 20px;
+    width: 200px;
+    height: 50px;
+}
+.BuscarCiudades:hover{
+    background-color: var(--blue);
+    cursor: pointer;
+    transform: scale(1.05);
+    transition-duration: 0.4s;
+}
+
+.BuscarCiudadTexto{
+	margin: 1vh;
+	align-items: center;
+}
+
 /* FILTRO DIAS */
     .FilterDias{
         display: flex;
@@ -380,11 +408,12 @@ body.dark .search-field i{
         flex-direction: row;
         align-content: center;
         justify-content: space-between;
-        margin: 10px;
+        margin-top: 2px;
+        margin-left: 60px;
         background-color: var(--light);
         padding: 10px;
         border-radius: 20px;
-        width: 450px;
+        width: 250px;
         height: 50px;
     }
 	select{
@@ -405,20 +434,39 @@ body.dark .search-field i{
 		outline: none;
 	}
 
-    /* DISPLAY RESULTADOS */
-#display_dias {
-	height: 50vh; 
-	width: 100%; 
-	overflow-y: auto;
+    /* FILTRO SELECT*/
+.filterSelect, filterSelect2 {
+    background-color: var(--light);
+    color: var(--search-text);
+    border-radius: 10px;
+    padding: 8px;
+    height: 5vh;
+    width: 20vw;
+    border: none;
+    box-shadow: 2px 2px 5px var(--dark-grey);
+    outline: none;
 }
 
-.display_element{
-	padding: 2vh 2vw;
-	margin: 2vh 2vw 5vh 0;
-	background-color: var(--light);
-	border-radius: 15px;
-	border-top: solid 15px var(--blue);
+/* FILTRO CIUDADES*/
+.Información {
+    margin: 3vh 3vw;
 }
+
+/* DISPLAY RESULTADOS */
+ #display_Dias {
+     height: 50vh; 
+     width: 100%; 
+    overflow-y: auto;
+}
+    
+.display_element{
+    padding: 2vh 2vw;
+    margin: 2vh 2vw 5vh 0;
+    background-color: var(--light);
+    border-radius: 15px;
+    border-top: solid 15px var(--blue);
+    }
+    
 
 .swal-modal{
 	border-radius: 20px;
