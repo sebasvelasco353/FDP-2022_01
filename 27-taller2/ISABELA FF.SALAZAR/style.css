@@ -173,14 +173,17 @@ body{
 /* card*/
 
 
-.card{
-    border-radius: 10px;
-   
-    width: 500px;
-    backdrop-filter: blur(15rem);
-    border: #484766;
-    color: var(--white-text);
-    background-color: #282740;
+.card{    background-color: #282740;
+    font-size: 17px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    height:70vh;
+    margin: 28px;
+    margin-left: 20px;
+    border-radius: 14px;
+    width: 450px;
+    grid-template-rows: 2;
+    
 }
 
 
@@ -354,4 +357,6 @@ input#buscador{
 
 
 }
+
+
 

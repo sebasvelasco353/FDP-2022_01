@@ -61,7 +61,7 @@ function draw() {
         
     });
 
-    data.forEach(element => {
+    mensajes.forEach(element => {
         console.log(`desde foreach: ${element.name}`);
         const opt = document.createElement('div');
         opt.innerHTML = `<b><p>${element.sender}</b> (${element.timestamp}) <br> Para: Mi, ${element.cc} </p> ${element.message}`;
