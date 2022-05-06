@@ -1,0 +1,19 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: lighter;
+    font-size: 20px;
+    padding: 4rem;
+    background-color: rgb(206, 248, 255);
+}
+
+#applogo {
+    font-size: 15px;
+    grid-row: auto;
+}
+
+#title {
+    font-size: 20px;
+    margin-left: 50px;
+    margin-top: 1px;
+}
+

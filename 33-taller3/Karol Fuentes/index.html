@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset/reset.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="./Imagenes/weatherShortcutIcon.png">
+    <title>My Weather</title>
+</head>
+
+<body>
+   <div class="headerLogo">
+       <div class="applogo">
+           <img id="logo" src="./Imagenes/weatherShortcutIcon.png" alt="logo">
+           <h1 id="title">My Weather</h1>
+       </div>
+       <div class="filterCities">
+           <label for="filterCities">Select city:</label>
+           <select name="filterCities" id="filterCities">
+               <option value="bogota">Bogotá</option>
+               <option value="cali">Cali</option>
+           </select>
+       </div>
+   </div>
+
+   <!-- <div class="banner"></div> -->
+
+   <div class="body">
+       <h2 class="city" id="city"></h2>
+       <p id="weeklyoverall">Weekly overall</p>
+
+       <section id="mostrarInfo" class="mostrarInfo">   </section>
+
+       <div class="filterDays">
+           <label for="filterDays">Select day:</label>
+           <select name="filterDays" id="filterDays">
+               <option value="thisWeek">This week</option>
+               <option value="monday">Monday</option>
+               <option value="tuesday">Tuesday</option>
+               <option value="wednesday">Wednesday</option>
+               <option value="thursday">Thursday</option>
+               <option value="friday">Friday</option>
+               <option value="saturday">Saturday</option>
+               <option value="sunday">Sunday</option>
+           </select>
+
+       </div>
+
+       <section class="displayDays" id="displayDays"> </section>
+
+   </div>
+
+
+
+
+
+    <script src="./app.js"></script>
+</body>
+</html>
