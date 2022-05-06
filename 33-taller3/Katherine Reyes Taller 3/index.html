@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href="estilos.css">
+	<title>CLIMsolution</title>
+</head>
+<body>
+
+	<nav>
+        <div class="nav-bar" id="nav-bar">
+            <i class='bx bx-menu sidebarOpen' ></i>
+            <span class="logo navLogo"><a href="#">ClimSolution</a></span>
+			<div class="menu">
+                <div class="logo-toggle">
+                    <span class="logo"><a href="#">ClimSolution</a></span>
+                    <i class='bx bx-x siderbarClose'></i>
+                </div>
+
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Recomendations</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="darkLight-searchBox">
+                <div class="dark-light">
+                    <i class='bx bx-moon moon'></i>
+                    <i class='bx bx-sun sun'></i>
+                </div>
+
+                <div class="cogBox">
+                   <div class="searchToggle">
+                    <li onclick="mantenimiento_pagina()">
+                    <i class='bx bxs-cog'></i></li>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- BIENVENIDA -->
+<div id="Inicio" class="Inicio">
+	<h3>La mejor App web para ver el Estado del clima</h3>
+	<section class="bienvenido">
+		<p>Hola, te damos un saludo, esperamos el clima te favorezca. 
+            ClimSolution siempre contigo</p>
+		<img class="saludo" src="img/hello.png">
+	</section>
+	
+    <!-- INFO GUIA --> 
+    <div class="infoguia"></div>
+    <div class="Información">
+        <h2 id="City">Ciudad seleccionada</h2>
+        <h2 id="Weekly">en general durante la semana</h2>
+    </div>
+    <!-- FILTRO CIUDADES-->
+<div class="FilterCiudades">
+	<div class="BarraHerramientas">
+		<div class="filter">
+			<label for="filter">
+			<i class='bx bxs-search'></i>filtrar por: </label>
+			<select name="filter" id="filter">
+				<option value="Cali">Cali</option>
+				<option value="Bogota">Bogota</option>
+            </select>
+		</div>
+	</div>
+
+    <!-- FILTRO DIAS SEMANA-->
+<div class="FilterDias">
+	<div class="BarraHerramientas1">
+		<div class="filter1">
+			<label for="filter1">
+			<i class='bx bxs-search'></i>filtrar por: </label>
+			<select name="filter1" id="filter1">
+				<option value="all">Todos</option>
+				<option value="monday">monday</option>
+				<option value="tuesday">tuesday</option>
+                <option value="wednesday">wednesday</option>
+				<option value="thursday">thursday</option>
+				<option value="fiday">fiday</option>
+				<option value="saturday">saturday</option>
+				<option value="sunday">sunday</option>
+			</select>
+		</div>
+	</div>
+
+<!-- DISPLAY RESULTADOS -->
+<section id="display_dias"><!-- results --></section>
+</div>
+
+<!-- SCRIPT -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/gsap.min.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="./app.js"></script>
+
+</body>
+</html>
