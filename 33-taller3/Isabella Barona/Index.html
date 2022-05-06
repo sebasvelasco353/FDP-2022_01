@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/EstilosResultados.css">
+    <link rel="shortcut icon" href="./Images/Icon.png">
+    <title>Weather App</title>
+</head>
+<body>
+    <!-- header y select ciudad-->
+    <div class="Header">
+        <section class="Logo">
+            <img src="./Images/weather (3).png">
+            <h3 style="margin: 1vh;">Weather app</h3>
+        </section>
+        <div class="Filter">
+            <label for="FiltroCiudad">Choose your city: </label>
+            <select name="FiltroCiudad" id="FiltroCiudad">
+                <option value="Cali">Cali</option>
+                <option value="Bogota">Bogotá</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- canvas -->
+    <div id="Canvas"></div>
+
+    <!-- resultados primer filtro -->
+    <div class="Content">
+        <h2 id="City">City</h2>
+        <h4 id="Weekly" style="font-weight: normal;">Weekly overall</h4>
+
+        <!-- select día -->
+        <div class="Filter2">
+            <label for="FiltroDia">Choose a day: </label>
+            <select name="FiltroDia" id="FiltroDia">
+                <option value="All">All</option>
+                <option value="Monday">Monday</option>
+                <option value="Tuesday">Tuesday</option>
+                <option value="Wednesday">Wednesday</option>
+                <option value="Thursday">Thursday</option>
+                <option value="Friday">Friday</option>
+                <option value="Saturday">Saturday</option>
+                <option value="Sunday">Sunday</option>
+            </select>
+        </div>
+
+        <!-- resultados segundo filtro -->
+        <section class="Display_day" id="Display_day"><!-- results --></section>
+    </div>
+    <script src="./JS/App.js"></script>
+    <!--<script src="./JS/ChangeColors.js"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/p5.min.js"></script>
+    <script src="./JS/Canvas.js"></script>
+</body>
+</html>
