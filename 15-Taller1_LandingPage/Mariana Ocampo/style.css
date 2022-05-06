@@ -1,5 +1,5 @@
 *{
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     box-sizing: border-box;
     margin: 0%;
     padding: 0%;
@@ -174,7 +174,7 @@ button {
     box-sizing: border-box;
     cursor: pointer;
     margin: 10px 15px;
-    background: url("./imagenes\ para\ pag\ web/organizaa.png");
+    background: url(.modelo.kjnm);
     background-position: center;
     background-image: cover;
 }

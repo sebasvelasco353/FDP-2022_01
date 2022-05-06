@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <script src="https://kit.fontawesome.com/d19446aef4.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <title>Dashboard</title>
+</head>
+<body id="body">
+<!--Header, logo del menú-->
+    <div class="total_menu">
+    <header id="icon_move">
+        <div class="menu_icon">
+            <i class="fa-solid fa-bars" id="icon_menu" onclick="movement_menu()"></i>
+        </div>  
+        
+        <div class="message_icon" id="icon_animation">
+            <i class="fa-regular fa-comment" onclick="draw_messages()"></i>
+            <i class="fa-solid fa-user" id="icon_move"></i>
+        </div>
+    </header>
+<!--Menú-->
+    <div class="menu_side" id="menu_side">
+            <div class="name_page">
+                <i class="fa-solid fa-hospital"></i>
+               <h3>Dashboard</h3> 
+            </div>
+    
+
+    <div class="menu">
+        <a href="#" class="selected">
+            <div class="option__menu">
+                 <i class="fa-solid fa-box-archive" onclick="draw_data(), initial_animation()"></i>
+                 <h3 onclick="draw_data()">Dashboard</h3>
+            </div>
+        </a>
+
+        <a href="#">
+            <div class="option__menu">
+                <i class="fa-solid fa-chart-column"></i>
+                <h3>Reports</h3>
+            </div>
+        </a>
+
+        <a href="#">
+            <div class="option__menu">
+                <i class="fa-solid fa-address-book"></i>
+                <h3>Services</h3>
+            </div>
+        </a>
+
+        <a href="#">
+            <div class="option__menu">
+                <i class="fa-solid fa-gear"></i>
+                <h3>Settings</h3>
+            </div>
+        </a>
+    </div>
+    </div>
+  </div>
+<!--Textto de bienvenida-->
+  <div class="Bienvenida">
+      <h2 class="saludo">Hola, </h2><h2>Dr. John Doe</h2>
+  </div>
+  <div class="mensaje_binvenida">
+      <h3>Hoy tenemos nueva información para usted</h3>
+    </div>
+
+<!--Filtro-->
+  <div class="container" id="container">
+    <div class="toolbar">
+        <div class="filter" id="filtro">
+            <h3>Pacientes actuales</h3>
+            <label for="filter" class="filter_by">Filtrar por:</label>
+            <select name="filter" id="filter" class="filter_choose">
+                <option value="all">Todos</option>
+                <option value="age<50">Menor de 50 años</option>
+                <option value="age>50">Mayor de 50 años</option>
+                <option value="closed">Caso cerrado</option>
+                <option value="open">Caso abierto</option>
+                <option value="previous Surgery">Cirugías previas</option>
+            </select>
+        </div>
+     <div id="cantidad" class="cantidad"></div>
+ <!--Información de los pacientes en pantalla--> 
+ <div id="Info">
+     <section id="display" class="display"></section>
+</div>
+    <!--Información mensajes-->
+<div class="message_page" id="message_page">
+     <h3 class="message_tittle" id="message_tittle">Nuevos mensajes</h3>
+     <h2 class="message_sentence">Revise detalladamente su buzón</h2>
+</div>
+<i class="fa-solid fa-pen" id="new_email" onclick="draw_formulario()"></i>
+     <div class="scrollbar" id="scrollbar">
+     <section id="displayM" class="displayM"></section>
+    </div>
+
+    <!--Nuevo mensaje-->
+    <div class="Formulario" id="formulario">
+        <div class="formulario_box">
+            <div class="close_icon"><i class="fa-solid fa-xmark" onclick="draw_messages()"></i></div>
+                <label for="para">Para: </label>
+                <input type="email" id="email" name="email"><br>
+                <label for="asunto">Asunto: </label>
+                <input type="text" id="asunto" name="asunto"><br>
+            <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje"></textarea><br>
+            <button class="enviar" id="enviar" onclick="enviado()">Enviar</button>
+            <button class="eliminar" id="eliminar" onclick="eliminar()">Eliminar</button>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/ScrollTrigger.min.js"></script>    
+    <script src="app.js"></script>
+</body>
+</html>
