@@ -1,0 +1,11 @@
+.cards{
+    background-color: rgb(103, 112, 243);
+    width: 50%;
+    height: 50%;
+}
+
+.cards--sunny{
+    background-color: rgb(255, 255, 24);
+    width: 50%;
+    height: 50%;
+}

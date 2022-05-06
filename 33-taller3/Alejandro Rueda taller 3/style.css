@@ -1,0 +1,68 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+#seleccionador{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(137, 163, 202);
+    align-items: center;
+}
+
+#contenidoclima{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(8, 51, 92);
+    align-items: center;
+    color: white;
+}
+
+#seleccionador, #title{
+    margin-bottom: 0.8rem;
+}
+
+#dias button{
+    background-color: rgb(95, 181, 252);
+    width: 10rem;
+    color: black;
+    padding: 6px 0px;
+    border: 0px;
+}
+
+#contenidocuida button:hover{
+    background-color: rgb(95, 181, 252);
+}
+
+#dias{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    gap: 0.8rem;
+}
+
+#datosclima{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin: 0.8%;
+    gap: 4rem;
+}
+
+#contenidocuida{
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+    margin: 0.8rem;
+}
+
+#contenidocuida input{
+    width: 16rem;
+    height: auto;
+    text-align: center;
+}
+
+#contenidocuida button{
+    width: 4rem;
+    height: 2rem;
+    text-align: center;
+}
