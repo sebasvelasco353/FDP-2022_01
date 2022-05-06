@@ -1,0 +1,23 @@
+body{
+    width: 750px;
+    background: #02736F;
+    padding: 25px;
+    margin:auto;
+    margin-top: 200px;
+    border-radius: 4px;
+    font-size: 15px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-shadow:  9px 15px 51px #4EF4EF;
+    margin-top: 10px;
+    color: azure;
+    height: 1295px;
+
+}
+.form-register{
+    text-align: left;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 40px;
+}
+
+

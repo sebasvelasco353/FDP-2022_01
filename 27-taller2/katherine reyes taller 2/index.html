@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./estilos.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet"> 
+    <title>Dashboard</title>
+</head>
+
+<body>
+
+    <header>
+        <section class="Header">
+        <div class="headermenú">
+            <nav>
+                <a href="#" id="icono" class="icono">Menú</a>
+                <div class="enlaces uno" id="enlaces">
+                    <a href="" onclick="displayinicio()"><ion-icon name="home"></ion-icon>Inicio</a>
+                    <a href="" onclick="displayMensajes()"><ion-icon name="mail"></ion-icon>Mensajes</a> 
+                    <a href="" onclick="displayPacientes()"><ion-icon name="people"></ion-icon>Pacientes</a> 
+                    <a href="" onclick="displayCasosAbiertos()"><ion-icon name="open"></ion-icon>Casos abiertos</a>
+                    <a href="" onclick="displayCasosCerrados()"><ion-icon name="close"></ion-icon>Casos cerrados</a>
+                    <a href="" onclick="displayConfiguración()"><ion-icon name="settings"></ion-icon>Configuración</a>
+                </div>
+            </nav>
+
+        <div class="textos-header">
+            <h1>Te damos un saludo</h1>
+            <h1>Bienvienido a un nuevo dia de labores</h1>
+            <h2>Esperamos te desempeñes de forma optima</h2>
+            <a href="#">Servicio tecnico de la empresa</a>
+        </div>
+   
+        </div>
+        </section>
+    </header>
+
+    <div class="wave">
+        <div style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+         style="height: 100%; width: 100%;"></svg>
+        </div>
+
+        <div id="Inicio" class="Inicio">
+            <h3>Bienvenido/a </h3>
+            <section class="Bienvenido">
+                <h3 id="Nombre"> </h3>
+                <p>Es un gusto tenerte aqui nuevamente, disfruta tu dia.</p>  
+            </section>
+
+
+            <h4>Información general</h4>
+
+            <div class="InformacionGeneral">
+                <section id="situacion1" class="Cards" onclick="displayPacientes()">
+                    <h2>5</h2>
+                    <p>Pacientes nuevos</p>
+                </section>
+
+                <section id="situacion2">
+                    <section id="situacion2.1" class="Cards" onclick="displayPacientes()">
+                        <section class="CardText"><h2>2</h2><p>Casos abiertos</p></section>
+                    </section>
+                    <section id="situacion2.2" class="Cards" onclick="displayPacientes()">
+                        <section class="CardText"><h2>4</h2><p>Casos cerrados</p></section>
+                    </section>
+                </section>
+
+                <section id="C3" class="Cards" onclick="displayMensajes()">
+                    <h2>10</h2>
+                    <p>Mensajes recientes</p>
+                </section>
+            </div>
+        </div>    
+
+        <!--PACIENTES-->
+        <div id="Pacientes" class="Pacientes">
+            <h3>Pacientes</h3>
+
+                <!--FILTRO DE PACIENTES -->
+                <div class="OpcionesPacientes">
+                    <div class="toolbar">
+                        <div class="filter">
+                            <label for="filter"><ion-icon class="SearchIcon" name="search"></ion-icon> Filtrar por:</label>
+                            <select name="filter" id="filter">
+                                <option value="Todo">Todos</option>
+                                <option value="Cerrado">Casos cerrados</option>
+                                <option value="Abierto">Casos abiertos</option>
+                                <option value="Edad<50">Edad < 50</option>
+                                <option value="Edad>50">Edad > 50</option>
+                                <option value="cirugíasAnteriores">Con cirugías anteriores</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!--INGRESO PACIENTE-->
+                    <section class="AñadirPaciente" onclick="ingresoPaciente()">
+                        <ion-icon size="large" name="add-circle-outline"></ion-icon></ion-icon>
+                        <p class="AgregarPaciente">Agregar paciente</p>
+                    </section>
+                </div>
+
+                <!--RESULTADOS-->
+                <h4 id="NumeroResultados"><!-- Llamar # de resultados--></h4>
+                <section id="displayPacientes"><!-- results --></section>
+        </div>
+
+
+          <!--MENSAJE-->
+          <div id="Mensajes" class="Mensajes">
+            <h3 id="DocEmail"> <!-- Llamar correo --></h3>
+
+            <section id="ConfButton" class="ConfButton"> 
+                <ion-icon size="large" name="create-outline"></ion-icon>
+                <p class="RedactMensaje">Redactar</p>
+            </section>
+
+            <h4 id="bandeja"><!-- Llamar # mensajes --></h4>
+            <section id="displayMensajes"><!-- results --></section>
+        </div>
+    </div>
+    
+    <!--MENSAJES (REDACCIÓN)-->
+
+    <div class="MensajeConf">
+        <div class="Mensaje confClose">
+            <div class="Cerrar">x</div>
+            <section class="border">
+                <label for="ReceptorMensaje">Para: </label>
+                <input type="email" id="Email" name="email"><br>
+            </section>
+            <section class="border">
+                <label for="AsuntoMensaje">Asunto: </label>
+                <input type="text" id="Asunto" name="Asunto"><br>
+            </section>
+            <textarea id="Mensaje" name="mensaje" placeholder=Redacte su mensaje"></textarea><br>
+            <button id="Enviar" onclick="Enviado()">Enviar</button>
+            <button id="Borrar" onclick="Reinicio()">Borrar</button>
+        </div>
+    </div>
+
+            <footer>
+                <div class="contenedor-footer">
+                    <div class="content-foo">
+                        <h4>Phone</h4>
+                        <p>8296312</p>
+                    </div>
+                    <div class="content-foo">
+                        <h4>Email</h4>
+                        <p>Serviciotecnico@gmail.com</p>
+                    </div>
+                    <div class="content-foo">
+                        <h4>Location</h4>
+                        <p>Colombia</p>
+                    </div>
+                </div>
+                <h2 class="titulo-final">Lo mejor para los mejores</h2>
+            </footer>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="./app.js"></script>
+ </body>
+ </html>

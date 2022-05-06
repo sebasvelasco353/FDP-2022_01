@@ -1,0 +1,8 @@
+div{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    width: 25%;
+    background-color: aqua;
+}
+
