@@ -1,13 +1,23 @@
+:root{
+--colordia: $white;
+}
 *{
     font-family: 'Merriweather', serif;
 }
 .flexcent{
 display:flex;
 justify-content:space-around;
-margin: 2rem;
+padding: 2rem;
 }
 #titulo{
     font-family: 'Noto Sans JP', sans-serif;
+    color:white ;
+}
+#cabecera{
+    background-color: #7F207A;
+}
+#filtro{
+    background-color: #888;
 }
 select {
     display: block;
@@ -45,5 +55,10 @@ select {
 .display_day{
     display:flex;
     justify-content:space-around;
-    margin: 2rem;  
+    margin: 2rem; 
+    padding: 2rem;
+    background-color: var(--colordia);
+    box-shadow: rgba(0,0,0,.03);
+    border-color: black;
+    border-radius: 20%;
 }
