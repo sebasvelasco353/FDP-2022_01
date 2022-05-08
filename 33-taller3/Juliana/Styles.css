@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Overpass', sans-serif;
+}
+
+:root {
+    --Blue: #0783bd; 
+    --White: #ffffff; 
+    --Black: #1a1a1a; 
+    --Yellow: #f7d200;
+}
+
+/*Nav*/
+.Nav {
+    position: fixed;
+    width: 100%;
+    background-color: var(--Blue);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    transition: all 0.5s ease;
+}
+
+.Nav.active{
+    background: var(--White);
+    padding: 15px;
+}
+
+.Logo ion-icon {
+    font-size: 2rem;
+    padding-right: 15px;
+}
+
+.Logo {
+    font-size: 28px;
+    font-family: 'Berkshire Swash', cursive;
+    color: var(--White);
+    font-weight: bold;
+}
+
+.Menú {
+    display: flex;
+}
+
+.Menú li {
+    list-style: none;
+    margin: 15px;
+}
+
+.Menú li a {
+    color: var(--White);
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.5s ease;
+}
+
+.Menú li a:hover {
+    padding: 5px 10px;
+    background: var(--White);
+    color: var(--Blue);
+    border-radius: 15px;
+}
+
+/*Main*/
+.Main {
+    width: 100%;
+}
+
+/*Welcome*/
+.Welcome {
+    padding-top: 110px;
+    margin-left: 25px;
+}
+
+.Welcome h1 {
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 2.2rem;
+    color: var(--Blue);
+}
+
+.Welcome h3 {
+    font-size: 1.2rem;
+}
+
+/*Filters*/
+.Filters {
+    margin: 25px;
+    color: var(--Blue);
+}
+
+/*Cards daily*/
+.Daily {
+    display: flex;
+    flex-direction: row;
+    margin-left: 25px;
+}
+
+.Daily .Element_sunny p{
+    padding: 2vh 2vw;
+    margin: 2vh 2vw 5vh 0;
+    background-color: var(--White);
+    border-radius: 15px;
+    border-top: solid 10px var(--Yellow);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.Daily .Element_rainy p{
+    padding: 2vh 2vw;
+    margin: 2vh 2vw 5vh 0;
+    background-color: var(--White);
+    border-radius: 15px;
+    border-top: solid 10px var(--Blue);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.Daily p .HeaderText-Card {
+    font-weight: 600;
+}
+
+.Daily p .Temp-Card {
+    font-size: 2.5rem;
+    font-weight: 600;
+    display: flex;
+    padding-top: 15px;
+    justify-content: center;
+}
+
+.Daily p .Status-Card {
+    font-size: 0.9rem;
+    font-weight: 500;
+    justify-content: center;
+}

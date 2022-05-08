@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Overpass:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Styles.css">
+    <title>Clima</title>
+</head>
+<body>
+    <section>
+        <nav class="Nav">
+            <div class="Logo"> <ion-icon name="cloudy-night"></ion-icon>Weather App</div>
+            <ul class="Menú">
+                <li><a href="#" id="Section1btn"> Home </a></li>
+                <li><a href="#" id="Section2btn"> Around the world </a></li>
+                <li><a href="#" id="Section3btn"> Forecast </a></li>
+                <li><a href="#" id="Section4btn"> Contact </a></li>
+            </ul>
+            </nav>
+    </section>
+
+    <section class="Main">
+            <div class="Welcome">
+                <h1>Hello, little cloud!</h1>
+                <h3>This is the weather in your area:</h3>
+            </div>
+    
+            <div class="Filters">
+                <h4>Choose your city and the day</h4>
+                <label for="FilterByC">City:</label>
+                <select name="FilterC" id="FilterC">
+                    <option value="Cali">Cali</option>
+                    <option value="Bogotá">Bogotá</option>
+                </select>
+                <label for="FilterByD">Day:</label>
+                <select name="FilterD" id="FilterD">
+                    <option value="All">All</option>
+                    <option value="Monday">Monday</option>
+                    <option value="Tuesday">Tuesday</option>
+                    <option value="Wednesday">Wednesday</option>
+                    <option value="Thursday">Thursday</option>
+                    <option value="Friday">Friday</option>
+                    <option value="Saturday">Saturday</option>
+                    <option value="Sunday">Sunday</option>
+                </select>
+            </div>
+    
+        <div class="Daily" id="Daily">
+    
+        </div>
+    </section>
+
+    <script src="App.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
