@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Noto+Sans:wght@200;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Lobster&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Noto sans;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 150px;
+    background-image: linear-gradient(to right top, #81a8e1, #85bde8, #95d0eb, #ade2ef, #cbf2f4);
+    margin-left: 0;
+    padding: 3rem;
+}
+.fa-cloud{
+    font-size: 2.5rem;
+    color: white;
+    margin-right: 1.5rem;
+    margin-left: 5rem;
+}
+
+header > h2{
+    font-weight: 700;
+    font-size: 2rem;
+    color: white;
+}
+
+.linea{
+    width: 100%;
+    height: 40px;
+    background-color: rgb(18, 53, 109);
+    margin-top: 0;
+}
+
+.inicio{
+    margin-left: 10rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.inicio > h1{
+    font-weight: 400;
+}
+
+.inicio > p{
+    font-weight: 200;
+    font-size: 17px;
+    color: rgb(18, 53, 109);
+}
+
+.raya{
+    width: 20%;
+    height: 1px;
+    margin-left: 9rem;
+    background-color: rgb(18, 53, 109);
+    margin-bottom: 2rem;
+}
+
+.Filtro{
+    margin-left: 10rem;
+}
+
+.Filtro > h3{
+    color: rgb(18, 53, 109);
+    font-weight: 700;
+    font-size: 25px;
+    margin-bottom: 0.5rem;
+}
+
+label{
+    font-weight: 200;
+    font-size: 15px;
+}
+
+.overallWeek{
+    width: 100%;
+    margin-top: 2rem;
+    margin-left: 5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    color: rgb(18, 53, 109);
+    font-size: 20px;
+}
+
+
+
+.container{
+    height: 440px;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+    overflow-y: scroll;
+}
+
+.dataCity{
+    padding-top: 5px;
+    margin-top: 1rem;
+    margin-left: 5rem;
+    width: 20%;
+    height: 200px;
+}
+
+.dataCity > h3{
+    margin-left: -15px;
+    font-weight: 700;
+}
+
+.sunny{
+    color: rgb(167, 3, 3);
+}
+
+.rainy{
+    color: rgb(0, 30, 255);
+}
+
+.dataCity > p{
+    margin-left: -100%;
+    font-weight: 200;
+}
+
+::-webkit-scrollbar {height: 10px;}
+
+::-webkit-scrollbar-thumb {background-color: rgb(18, 53, 109); border-radius: 10px;}
+
+::-webkit-scrollbar-thumb:hover {background-color: rgb(49, 171, 184);}
+
+@media (max-width: 800px) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Noto sans;
+    }
+    
+    header{
+        height: 10vh;
+        width: 100%;
+        padding-top: 5px;
+    }
+    .linea{
+        width: 100%;
+    }
+    .container{
+        height: 250px;
+        width: 30%;
+        margin-left: 10rem;
+        overflow-y: scroll;
+    }
+
+    .dataCity{
+        height: 100%;
+        width: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+  @media (max-width: 1250px) {
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Noto sans;
+    }
+    
+    header{
+        height: 10vh;
+        width: 100%;
+        padding-top: 5px;
+    }
+    .linea{
+        width: 100%;
+    }
+    .container{
+        height: 250px;
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        overflow-y: scroll;
+    }
+    .dataCity{
+        height: 100%;
+        width: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 2040px) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Noto sans;
+    }
+    
+    header{
+        height: 10vh;
+        width: 100%;
+    }
+    .linea{
+        width: 100%;
+    }
+    .container{
+        height: 250px;
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        overflow-x: scroll;
+        overflow-y: none;
+    }
+    .dataCity{
+        height: 100%;
+        width: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+}
