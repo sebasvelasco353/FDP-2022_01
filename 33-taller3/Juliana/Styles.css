@@ -244,14 +244,14 @@
     }
     
     .Welcome h3 {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
     .Filters h3 {
-        font-size: 1.8rem;
+        font-size: 1.3rem;
     }
     
     .Filters label {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
     .Filters select {
         width: 120px;
@@ -259,15 +259,15 @@
         font-size: 1.2rem;
     }
     .Overall_sunny, .Overall_rainy {
-        font-size: 1.8rem;
+        font-size: 1.3rem;
     }
     .Daily p .HeaderText-Card {
         font-weight: 600;
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
     
     .Daily p .Temp-Card {
-        font-size: 2.8rem;
+        font-size: 2.5rem;
     }
     
     .Daily p .Status-Card {

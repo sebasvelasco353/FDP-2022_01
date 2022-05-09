@@ -44,8 +44,13 @@ class Daily {
             } else {
                 Info.className = "Element_rainy";
             }
-            Info.innerHTML = `<p> <span class="HeaderText-Card">${this.day}, <br> ${this.city}</span> <br> <span class="Temp-Card">${this.celcius}°C </span> <br> <span class = "Status-Card">${this.sunny ? "Sunny" : "Rainy"}</span> <br> Precipitation ${this.precipitation}% <br> ${this.uvIndex} Uv</p>`;
-            e.appendChild(Info);
+            if (this.sunny) {
+                Info.innerHTML = `<p> <span class="HeaderText-Card">${this.day}, <br> ${this.city}</span> <br> <span class="Temp-Card">${this.celcius}°C </span> <br> <span class = "Status-Card">${this.sunny ? "Sunny" : "Rainy"}</span> <span class="Icon"><ion-icon name="sunny"></ion-icon></span> <br> Precipitation ${this.precipitation}% <br> ${this.uvIndex} Uv</p>`;
+                e.appendChild(Info);
+            } else {
+                Info.innerHTML = `<p> <span class="HeaderText-Card">${this.day}, <br> ${this.city}</span> <br> <span class="Temp-Card">${this.celcius}°C </span> <br> <span class = "Status-Card">${this.sunny ? "Sunny" : "Rainy"}</span> <span class="Icon"><ion-icon name="rainy"></ion-icon></span> <br> Precipitation ${this.precipitation}% <br> ${this.uvIndex} Uv</p>`;
+                e.appendChild(Info);
+            }
         }
     DisplayOverall(overallWeek) {
         const Info = document.createElement('div');
