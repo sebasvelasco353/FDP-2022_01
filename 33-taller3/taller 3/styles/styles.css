@@ -4,6 +4,25 @@ html {
 	background-color: aliceblue;
 }
 
+@media (max-width: 800px) {
+    .header {
+        height: 12vh;
+        width: 800px;
+        padding: 2rem;
+    }
+    .Content{margin: 3vh 3vw;}
+    .Display_day{
+        height: 100%;
+        width: 700px;
+    }
+    .display_element{
+        margin: 3vh 2vh;
+        width: 40vw;
+        height: 35vh;
+
+    }
+}
+
 body {
 	margin: auto;
 }

@@ -20,7 +20,8 @@ class Card {
         } else {
             opt.className = "display_element rainy";
         }
-        opt.innerHTML = `<h2>${this.day}</h2> <h3>It will be ${this.sunny ? "Sunny" : "Rainy"}</h3> Temperature: ${this.temp}°C<br> Precipitation: ${this.precipitation}<br> Uv Index: ${this.uv}`;
+        opt.innerHTML = `<h2>${this.day}</h2> <h3>It will be ${this.sunny ? "Sunny" : "Rainy"}</h3> 
+        Temperature: ${this.temp}°C<br> Precipitation: ${this.precipitation}<br> Uv Index: ${this.uv}`;
         elm.appendChild (opt);
     }
 }
@@ -37,24 +38,32 @@ window.onload = function (){
 function processData(data){
     data.ciudades.forEach(ciudad => {
         ciudad.daily.forEach(dayObj =>{
-            DAYS.push(new Card (dayObj.day, dayObj.celcius, dayObj.precipitation, dayObj.uvIndex, dayObj.sunny, ciudad.city));
+            DAYS.push(new Card (dayObj.day, dayObj.celcius, dayObj.precipitation, dayObj.uvIndex, dayObj.sunny, 
+                ciudad.city));
         });  
     });
     drawElements ();
 }
+
+
 
 function drawElements() {
     domElement.innerHTML = "";
     const valueC = document.getElementById("filterCity").value;
     const results = DAYS.filter(day => day.city === valueC);
     const valueD = document.getElementById("filter2").value;
-    const D = results.filter(day => day.day === valueD);
-
-    for (let i = D.length-1; i >= 0; i--) {
-        const element = D[i];
-        element.dibujar(domElement);
+    if (valueD !== "todos") {
+        const D = results.filter(day => day.day === valueD);
+        for (let i = D.length-1; i >= 0; i--) {
+            const element = D[i];
+            element.dibujar(domElement);
+        }
+    } else if (valueD === "todos") {
+        for (let i = 0; i < results.length; i++) {
+            const element = results[i];
+            element.dibujar(domElement);
+        }
     }
 }
-
 
 
