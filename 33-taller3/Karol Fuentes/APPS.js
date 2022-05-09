@@ -21,7 +21,7 @@ class Day {
     } else {
         opt.className = "display_weeklyoverall Rainy";
     }
-       opt.innerHTML =  `<h2><b>${this.city}, ${this.day}</b></h2>, <p>It seems that today will be ${this.sunny ? "Sunny" : "Rainy"}  ${this.temp}º, ${this.precipitation}%, ${this.uvIndex}`
+       opt.innerHTML =  `<h2><b>${this.city}, ${this.day}</b></h2><br><p>It seems that today will be ${this.sunny ? "Sunny" : "Rainy"}  <br><br><p>Feels like: <b>${this.temp}ºC</b><br><p>Precipitaton: <b>${this.precipitation}% </b><br><p>UV Index: <b>${this.uvIndex}</b><br><br>`
        elm.appendChild(opt);
     }
 }
@@ -57,10 +57,21 @@ function drawElements() {
     const valueDay = document.getElementById("filterDays").value;
     console.log(valueDay);
 
-    const Daysresults = results.filter(day => day.day === valueDay);
-    for (let i = results.length-1; i >= 0; i--) {
-        const element = results[i];
-        element.draw(domElement);       
+    if (valueDay === "thisWeek") {
+        for (let i = 0; i < results.length; i++) {
+            const element = results[i];
+            element.draw(domElement); 
+        }
+    } else {
+        const Daysresults = results.filter(day => day.day === valueDay);
+        const element = Daysresults[0];
+        element.draw(domElement);
     }
+
+    /*const Daysresults = results.filter(day => day.day === valueDay);
+    for (let i = Daysresults.length-1; i >= 0; i--) {
+        const element = Daysresults[i];
+        element.draw(domElement);       
+    }*/
 }
 

@@ -1,3 +1,7 @@
+html{
+    overflow-y: auto;
+}
+
 body {
     font-family: 'Segoe UI', sans-serif;
     font-weight: lighter;
@@ -5,6 +9,7 @@ body {
     padding: 4rem;
     background-color: rgb(206, 248, 255);
 }
+
 
 .headerLogo {
     box-sizing: border-box;
@@ -30,35 +35,64 @@ body {
     padding: 1px;
 }
 
-.filterCities {
+#divweeklyoverall {
+    display: flex;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    font-weight: 500;
+}
+
+#iconRainy {
+    margin-left: 2vw;
+}
+
+
+.filterSelectCities {
     border-radius: 1.25rem;
     justify-content: space-between;
-    background-color: aliceblue;
+    background-color: rgb(255, 255, 255);
     font-size: medium; 
     color: black;
-    padding: 2rem;
+    box-sizing: border-box;
+    width: 15vw;
+    height: 4vh;
     box-shadow: -0.25px 0.75px 9px -0.25px rgba(85,85,85,0.36);;
     display: flex;
-    margin: 1rem;
-    margin-top: 2%;
-    margin-left: 55%
-    
-    
-}
-#textfiltercities {
-    display: flex;
-    margin-left: -3%;
+    align-content: center;
+    padding: 4px 1rem;
+    margin: 1.5rem;
+    margin-left: 70%
 }
 
-#filterCitiesSelect {
-    display: flex;
-    height: fit-content;
-    margin: 4px;
-    margin-top: -6%;
-    margin-right: %;
+select {
+    border: none;
+    outline: none;
+    background-color: rgb(255, 255, 255);
 }
 
-#weeklyoverall {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+.filterDays select{
+    padding: 0.6rem;
+    border-radius: 8px;
 }
+
+
+.Rainy{
+    color: rgb(0, 74, 185);
+}
+
+.Sunny {
+    color: rgb(255, 111, 0);
+}
+
+#element {
+    padding-top: 2vh;
+}
+
+.display_weeklyoverall {
+    background-color: rgb(255, 255, 255);
+    margin: 2rem;
+    padding: 1.5rem 0 0rem 3rem;
+    border-radius: 20px;
+}
+
+/*overflow
