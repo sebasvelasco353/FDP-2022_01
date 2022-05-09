@@ -1,111 +1,90 @@
-var url = "https://raw.githubusercontent.com/sebasvelasco353/FDP-2022_01/main/33-taller3/weather.js";
+const Url = "https://raw.githubusercontent.com/sebasvelasco353/FDP-2022_01/main/33-taller3/weather.js";
 
+gsap.from('.Screen', { duration: 2, x: '-100%', ease: 'power2.inOut'})
 
-async function Run(){
-    let Response = await fetch(url);
-    let ResJson = await Response.json();
+const DailyCards = document.getElementById("Daily");
+const Overall = document.getElementById("Overall");
 
-    console.log(ResJson);
+let Days = [];
+let TheData;
 
-    let Cities = ResJson.ciudades;
-    console.log(Cities);
+window.onload = function () {
+    fetch(Url)
+        .then(Response => Response.json())
+        .then(Data => {
+            ProcessInfo(Data)
+            TheData = Data;
+        });
+}
 
-    const Days = [];
+function ProcessInfo(Data) {
+    Data.ciudades.forEach(City => {
+        City.daily.forEach(dayObj => {
+            Days.push(new Daily(dayObj.day, dayObj.celcius, dayObj.precipitation, dayObj.uvIndex, dayObj.sunny, City.city, City.weeklyOverall));
+        });
+        console.log(Days);
+    });
+    DisplayData();
+}
 
-    let HandleFilterC = document.getElementById('FilterC');
-    let ResultsC = FilterByC(HandleFilterC.value);
-    let HandleFilterD = document.getElementById('FilterD');
-    let ResultsD = FilterByD(HandleFilterD.value);
-
-    DisplayWeather();
-
-    class Daily{
-    constructor(day, celcius, precipitation, uvIndex, sunny, city){
+class Daily {
+    constructor(day, celcius, precipitation, uvIndex, sunny, city, weeklyOverall) {
         this.day = day;
-        this.celcius =celcius;
+        this.celcius = celcius;
         this.precipitation = precipitation;
         this.uvIndex = uvIndex;
         this.sunny = sunny;
         this.city = city;
-        }
-    /*Draw(Element) {
-        const Opt = document.createElement('div');
-
-        if (this.sunny) {
-            Info.className = "Element sunny";
-        } else {
-            Info.className = "Element rainy"
-        }
-
-        Opt.innerHTML = `<p>${this.day} <br> (${this.celcius}) <br> (${this.precipitation}) <br> (${this.uvIndex}) <br> (${this.sunny ? "Sunny" : "Rainy"})</p>`;
-        Element.appendChild(Opt);
-        }*/
+        this.weeklyOverall = weeklyOverall;
     }
-
-    function ProcessInfo() {
-        Cities.forEach(City=> {
-            City.daily.forEach(dayObj => {
-                Days.push(new Daily(dayObj.day, dayObj.celcius, dayObj.precipitation, dayObj.uvIndex, dayObj.sunny, City.city));
-            });
-            console.log(Days);
-        });
-    }
-    ProcessInfo();
-    DisplayWeather();
-
-    
-    function FilterByC(Criteria) {
-        const Condition = {
-        'Cali': Days.filter(p => p.city === "Cali"),
-        'Bogotá': Days.filter(p => p.city === "Bogota")
-        }
-        return Condition[Criteria];
-    }
-    DisplayWeather();
-    
-    HandleFilterC.addEventListener("change", (e) => {
-        ResultsC = FilterByC(HandleFilterC.value);
-        console.log(ResultsC);
-    })
-
-    
-    function FilterByD(Criteria) {
-        const Condition = {
-        'All': ResultsC,
-        'Monday': ResultsC.filter(p => p.day === "monday"),
-        'Tuesday': ResultsC.filter(p => p.day === "tuesday"),
-        'Wednesday': ResultsC.filter(p => p.day === "wednesday"),
-        'Thursday': ResultsC.filter(p => p.day === "thursday"),
-        'Friday': ResultsC.filter(p => p.day === "fiday"),
-        'Saturday': ResultsC.filter(p => p.day === "saturday"),
-        'Sunday': ResultsC.filter(p => p.day === "sunday")
-        }
-    return Condition[Criteria];
-    }
-    
-    HandleFilterD.addEventListener("change", (e) => {
-        ResultsD = FilterByD(HandleFilterD.value);
-        console.log(ResultsD);
-        DisplayWeather();
-    })
-
-    
-    function DisplayWeather() {
-        const Info = document.getElementById('Daily');
-        Info.innerHTML="";
-
-        ResultsD.forEach(e => {
-                
-            let DisplayInfo = document.createElement('div');
-            if (e.sunny) {
-                DisplayInfo.className = "Element_sunny";
+    DisplayCards(e) {
+        const Info = document.createElement('div');
+            if (this.sunny) {
+                Info.className = "Element_sunny";
             } else {
-                DisplayInfo.className = "Element_rainy"
+                Info.className = "Element_rainy";
             }
-            DisplayInfo.innerHTML = `<p> <span class="HeaderText-Card">${e.day}, <br> ${e.city}</span> <br> <span class="Temp-Card">${e.celcius}°C </span> <br> <span class = "Status-Card">${e.sunny ? "Sunny" : "Rainy"}</span> <br> ${e.precipitation}% Precipitation <br> ${e.uvIndex} Uv</p>`;
-            Info.appendChild(DisplayInfo);
-        });
+            Info.innerHTML = `<p> <span class="HeaderText-Card">${this.day}, <br> ${this.city}</span> <br> <span class="Temp-Card">${this.celcius}°C </span> <br> <span class = "Status-Card">${this.sunny ? "Sunny" : "Rainy"}</span> <br> Precipitation ${this.precipitation}% <br> ${this.uvIndex} Uv</p>`;
+            e.appendChild(Info);
+        }
+    DisplayOverall(overallWeek) {
+        const Info = document.createElement('div');
+        if (this.sunny) {
+            Info.className = "Overall_sunny";
+        } else {
+            Info.className = "Overall_rainy";
+        }
+        Info.innerHTML = `Hey, look like it's gonna be <span>${this.weeklyOverall}</span> in <span>${this.city}</span> this week`;
+        overallWeek.appendChild(Info);
     }
- }
+}
 
-Run();
+function DisplayData() {
+    DailyCards.innerHTML = "";
+    Overall.innerHTML = "";
+    const FilterC = document.getElementById("FilterC").value;
+    const ResultsC = Days.filter(e => e.city === FilterC);
+    const FilterD = document.getElementById("FilterD").value;
+    for (let i = 0; i < ResultsC.length - 6; i++) {
+        const element = ResultsC[i];
+        element.DisplayOverall(Overall);
+    }
+    if (FilterD === "all") {
+        for (let i = 0; i < ResultsC.length; i++) {
+            const element = ResultsC[i];
+            element.DisplayCards(DailyCards);
+        }
+    } else {
+        const ResultsD = ResultsC.filter(e => e.day === FilterD);
+        const element = ResultsD[0];
+        element.DisplayCards(DailyCards);
+    }
+}
+
+function Err() {
+    Swal.fire(
+        'Ups!',
+        'looks like this function is temporarily unavailable.',
+        'warning'
+      )
+}

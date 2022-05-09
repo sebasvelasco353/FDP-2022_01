@@ -24,21 +24,18 @@
     transition: all 0.5s ease;
 }
 
-.Nav.active{
-    background: var(--White);
-    padding: 15px;
-}
-
 .Logo ion-icon {
-    font-size: 2rem;
+    font-size: 3rem;
     padding-right: 15px;
 }
 
 .Logo {
-    font-size: 28px;
+    font-size: 2rem;
     font-family: 'Berkshire Swash', cursive;
     color: var(--White);
     font-weight: bold;
+    margin-left: 15px;
+    margin-bottom: 15px;
 }
 
 .Menú {
@@ -48,6 +45,7 @@
 .Menú li {
     list-style: none;
     margin: 15px;
+    font-size: 1.1rem;
 }
 
 .Menú li a {
@@ -71,24 +69,71 @@
 
 /*Welcome*/
 .Welcome {
-    padding-top: 110px;
+    padding-top: 120px;
     margin-left: 25px;
 }
 
 .Welcome h1 {
     font-family: 'Berkshire Swash', cursive;
-    font-size: 2.2rem;
+    font-size: 2.5rem;
     color: var(--Blue);
 }
 
 .Welcome h3 {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
 /*Filters*/
 .Filters {
     margin: 25px;
     color: var(--Blue);
+}
+
+.Filters select {
+    width: 100px;
+    height: 28px;
+    border-radius: 40px;
+    padding: 5px 15px;
+    margin: 0 5px;
+    outline: none;
+    border: 1px solid var(--Black);
+}
+
+.Filters h3 {
+    font-size: 1.5rem;
+}
+
+.Filters label {
+    font-size: 1.1rem;
+}
+
+.Overall {
+    margin-left: 15px;
+}
+
+.Overall_sunny, .Overall_rainy {
+    font-size: 1.2rem;
+    margin-left: 15px;
+}
+
+.Overall_sunny span {
+    padding: 2px 4px;
+    background: var(--Yellow);
+    color: var(--White);
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.Overall_rainy span {
+    padding: 2px 4px;
+    background: var(--Blue);
+    color: var(--White);
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
 }
 
 /*Cards daily*/
@@ -132,4 +177,99 @@
     font-size: 0.9rem;
     font-weight: 500;
     justify-content: center;
+}
+
+.Search {
+    position: relative;
+    width: 400px;
+    margin: 0 30px;
+}
+
+.Search h3 {
+    margin: 0 10px;
+}
+
+.Search label {
+    position: relative;
+    width: 100%;
+}
+
+.Search label input {
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    padding: 5px 35px;
+    outline: none;
+    border: 1px solid var(--Black);
+}
+
+@media (max-width: 800px){
+    .Nav {
+        width: 100%;
+    }
+
+    .Main {
+        overflow-x: hidden;
+    }
+
+    .Daily {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .Daily p .Temp-Card span {
+        font-size: 2.5rem;
+        text-align: left;
+    }
+}
+
+@media (max-width: 2040px) {
+    .Logo ion-icon {
+        font-size: 3rem;
+    }
+    
+    .Logo {
+        font-size: 2.5rem;
+    }
+    .Menú li {
+        font-size: 1.2rem;
+    }
+    .Welcome {
+        padding-top: 120px;
+    }
+    
+    .Welcome h1 {
+        font-size: 3rem;
+    }
+    
+    .Welcome h3 {
+        font-size: 1.8rem;
+    }
+    .Filters h3 {
+        font-size: 1.8rem;
+    }
+    
+    .Filters label {
+        font-size: 1.2rem;
+    }
+    .Filters select {
+        width: 120px;
+        height: 35px;
+        font-size: 1.2rem;
+    }
+    .Overall_sunny, .Overall_rainy {
+        font-size: 1.8rem;
+    }
+    .Daily p .HeaderText-Card {
+        font-weight: 600;
+        font-size: 1.3rem;
+    }
+    
+    .Daily p .Temp-Card {
+        font-size: 2.8rem;
+    }
+    
+    .Daily p .Status-Card {
+        font-size: 1rem;
+    }
 }
