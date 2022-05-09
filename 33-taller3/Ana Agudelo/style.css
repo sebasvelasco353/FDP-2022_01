@@ -1,3 +1,206 @@
-* {
-    font-family: sans-serif;
+/* Import Google Font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {margin: auto; padding-bottom: 3vh;}
+
+/* header */
+.Header{
+    background: #43AFFC;
+    height: 8vh;
+    padding: 2vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.Header p {
+    color: #fff;
+    font-size: 1.31em;
+    font-weight: 500;
+    margin-top: 8px;
+    margin-left: 5px;
+}
+
+.Logo{
+    width: 40%;
+    display: flex;
+}
+
+img{width: 10%; height: 100%;}
+
+.All_Filters {
+    display: flex;
+}
+
+.Filter_city {
+    color: #fff;
+    font-weight: 500;
+    padding: 1vh 5vw;
+}
+
+.Filter_week{
+    color: #fff;
+    font-weight: 500;
+    padding: 1vh 0;
+}
+
+.Filter_city select, .Filter_week select {
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(251, 255, 255);
+    border-radius: 50px;
+    padding: 8px;
+    height: 6vh;
+    width: 10vw;
+    border: none;
+    outline: none;
+}
+
+.Container{
+    margin: 2vh 3vw;
+}
+
+.Overall{
+    display: flex;
+    align-items: center;
+    padding-bottom: 4vh;
+    margin-left: 10vw;
+}
+
+#City {
+    color: #43AFFC;
+    font-size: 3em;
+    font-weight: 500;
+}
+
+.Overall img {
+    width: 18vw;
+    margin-top: -2em;
+}
+
+.Overview {
+    font-size: 1.31em;
+}
+
+.Display_day{
+    box-sizing: border-box;
+    margin-left: 20vw;
+}
+
+
+.display_element{
+    text-align: center;
+    border-radius: 7px;
+    width: 30vw;
+    height: 40vh;
+    display: inline-block;
+    color: white;
+    padding-bottom: 3vh;
+}
+    .rainy{
+        background: #43AFFC;
+        color: #fff;
+    }
+
+    .sunny{
+        background: #fcbb43;
+        color: #fff;
+    }
+
+.day_title {
+    font-size: 2em;
+}
+
+.temp {
+    font-size: 4.5em;
+    margin-top: -0.5em;
+    margin-bottom: -0.6em;
+
+}
+
+
+.Display_week{
+    height: 37vh;
+    width: 100%;
+    margin-left: 2vw;
+    overflow-y: hidden;
+    overflow-x: auto;
+    white-space: nowrap;
+    color: white;
+}
+
+    .display_week{
+        box-sizing: border-box;
+        margin: 0 3vh;
+        border-radius: 5px;
+        width: 10vw;
+        height: 25vh;
+        display: inline-block;
+        text-align: center;
+        font-size: small;
+    }
+
+.title_week {
+    font-size: 1.31em;
+    font-weight: 500;
+}
+
+.temp_week {
+    font-size: 3em;
+    margin-top: -0.1em;
+    margin-bottom: -0.8em;
+}
+
+/* scrollbar */
+::-webkit-scrollbar {height: 10px; width: 10px;}
+
+::-webkit-scrollbar-thumb {background-color: #43AFFC;}
+
+::-webkit-scrollbar-thumb:hover {background-color: #43affc7c;}
+
+/* responsive */
+@media (max-width: 800px) {
+    .Header {
+        height: 12vh;
+        width: 800px;
+        padding: 2vh;
+        font-size: x-small;
+    }
+    .Container{margin: 3vh 3vw;}
+    .Display_day{
+        height: 100%;
+        width: 700px;
+    }
+    .display_element{
+        margin: 3vh 2vh;
+        width: 40vw;
+        height: 35vh;
+        font-size: x-small;
+    }
+}
+
+  @media (max-width: 1250px) {
+    .Header {
+        height: 10vh;
+        width: 1250px;
+        padding: 2vh;
+        font-size: small;
+    }
+    .Container{margin: 3vh 4vw;}
+    .Display_day{
+        height: 100%;
+        width: 1150px;
+    }
+      .display_element{
+        margin: 3vh 2vh;
+        width: 20vw;
+        height: 30vh;
+        overflow: none;
+        font-size: small;
+    }
 }

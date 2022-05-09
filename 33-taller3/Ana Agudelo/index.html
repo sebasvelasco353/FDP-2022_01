@@ -4,41 +4,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./image/pngwing.png">
     <title>Weather</title>
-    <link rel="stylesheet"href="style.css">
 </head>
 <body>
-    
-    <header>
-        <h1>Weather today</h1>
-    </header>
-    
-    <div class="Filter_City" id="Filter_City">
-        <label for="Filter_City">Elige tu ciudad</label>
-            <select name="filter_City" id="filter_City">
-                <option value="cali">Cali</option>
-                <option value="bogota">Bogotá</option>
-            </select> 
+    <div class="Header">
+        <section class="Logo">
+            <img src="./image/pngwing.png">
+            <p>Weather App</p>
+        </section>
 
-        <section class="displayOverall" id="displayOverall"><!--results--></section>
+        <section class="All_Filters">
+            <div class="Filter_city">
+                <label for="FilterCity">Choose your city: </label>
+                <select name="FilterCity" id="FilterCity" onchange="drawElements()">
+                    <option value="Cali">Cali</option>
+                    <option value="Bogota">Bogotá</option>
+                </select>
+            </div>
 
-        <label for="Filter_Week">Selecciona el día</label>
-            <select name="days" id="days">
-                <option value="allDays">Toda la semana</option>
-                <option value="monday">Lunes</option>
-                <option value="tuesday">Martes</option>
-                <option value="wednesday">Miercoles</option>
-                <option value="thursday">Jueves</option>
-                <option value="friday">Viernes</option>
-                <option value="saturday">Sabado</option>
-                <option value="sunday">Domingo</option>
-            </select>
+            <div class="Filter_week">
+                <label for="FilterDay">Choose a day: </label>
+                <select name="FilterDay" id="FilterDay" onchange="drawElements()">
+                    <option value="monday">Monday</option>
+                    <option value="tuesday">Tuesday</option>
+                    <option value="wednesday">Wednesday</option>
+                    <option value="thursday">Thursday</option>
+                    <option value="fiday">Friday</option>
+                    <option value="saturday">Saturday</option>
+                    <option value="sunday">Sunday</option>
+                </select>
+            </div>
+        </section>
+    </div>
 
-            <section class="displayDays" id="displayDays"><!--results--></section>
+    <div class="Container">
+        <section class="Overall">
+            <div class="Title">
+                <p id="City"></p>
+                <img src="./image/rain.svg" alt="raining">
+                <p class="Overview">Overview of the week: <b>rainy</b></p>
+            </div>
 
-    </div> 
-    <div id="block"></div>
+            <div class="Display_day" id="Display_day"><!-- results --></div>
+        </section>
 
-    <script src="main.js"></script>
+        <div class="Display_week" id="Display_week"><!-- results --></div>
+    </div>
+
+    <script src="./main.js"></script>
 </body>
 </html>

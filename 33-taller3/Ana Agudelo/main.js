@@ -1,74 +1,87 @@
-const url = 'https://raw.githubusercontent.com/Agudelo02093/FDP-2022_01/main/33-taller3/weather.js';
+const URL = 'https://raw.githubusercontent.com/sebasvelasco353/FDP-2022_01/main/33-taller3/weather.js';
 
-const filterCity = document.getElementById("block");
-const filterWeek = document.getElementById("days");
+const DAYS = [];
+const domElement = document.getElementById("Display_day");
+let APIData;
 
-let allCitys=[];
-let days;
-
-class citys{
-    constructor(city, wOverall, daily){
-    this.city = city;
-    this.wOverall = wOverall;
-    this.daily = daily;
+class Datos {
+    constructor(day, temp, precipitation, uvIndex, sunny, city){
+        this.day = day;
+        this.temp = temp;
+        this.precipitation = precipitation;
+        this.sunny = sunny;
+        this.city = city;
+        this.uv = uvIndex;
     }
-}
-async function run(){
-    const response = await fetch(url);
-    const responseObj = await response.json();
-    days = responseObj.ciudades;
-    for (let i = 0; i < days.length; i++) {
-        allCitys.push(
-            new citys(days[i].city, days[i].weeklyOverall, days[i].daily)
-        );
-        console.log(allCitys);
+    dibujar (elm){
+        const opt = document.createElement('div');
+        if (this.sunny){
+            opt.className = "display_element sunny";
+        } else {
+            opt.className = "display_element rainy";
+        }
+        opt.innerHTML = `<p class = "day_title">${this.day}</p> <p class="temp"><b>${this.temp}°C</b></p><br> It will be <b>${this.sunny ? "Sunny" : "Rainy"}</b><br> Precipitation: ${this.precipitation}<br> Uv Index: ${this.uv}`;
+        elm.appendChild (opt);
     }
-}
-
-function filterBy(criteria) {
-    const filter = {
-        'Cali': allCitys.filter(p => p.city === "Cali"),
-        'Bogota': allCitys.filter(p => p.city === "Bogota"),
+    drawCiu (ciu){
+        const opt = document.createElement('p');
+        opt.innerHTML = `${this.city}`;
+        ciu.appendChild (opt);
     }
-    return filter[criteria];
-}
-
-filter_City.addEventListener("change", (e) => {
-    results = filterBy(filter_City.value);
-    console.log(results);
-    //draw();
-})
-
-/*function draw() {
-    
-}*/
-
-function filterdayBy(criteria) {
-    const filter_Cali = {
-        'all': Cali,
-        'mon': Cali.filter(p => p.day === "monday"),
-        'tue': Cali.filter(p => p.day === "tuesday"),
-        'wed': Cali.filter(p => p.day === "wednesday"),
-        'thu': Cali.filter(p => p.day === "thursday"),
-        'fri': Cali.filter(p => p.day === "fiday"),
-        'sat': Cali.filter(p => p.day === "saturday"),
-        'sun': Cali.filter(p => p.day === "sunday"),
-    }
-    const filter_Bogota = {
-        'all': Bogota,
-        'mon': Bogota.filter(p => p.day === "monday"),
-        'tue': Bogota.filter(p => p.day === "tuesday"),
-        'wed': Bogota.filter(p => p.day === "wednesday"),
-        'thu': Bogota.filter(p => p.day === "thursday"),
-        'fri': Bogota.filter(p => p.day === "fiday"),
-        'sat': Bogota.filter(p => p.day === "saturday"),
-        'sun': Bogota.filter(p => p.day === "sunday"),
-    }
-    if (filter_City.value === 'Cali'){
-        return filter_Cali[criteria];
-    }else{
-        return filter_Bogota[criteria];
+    weekly (week){
+        const opt = document.createElement('div');
+        if (this.sunny){
+            opt.className = "display_week sunny";
+        } else {
+            opt.className = "display_week rainy";
+        }
+        opt.innerHTML = `<p class="title_week">${this.day}</p> <p class="temp_week"><b>${this.temp}°C</b></p><br> ${this.sunny ? "Sunny" : "Rainy"}`;
+        week.appendChild (opt);
     }
 }
 
-run();
+window.onload = function (){
+    fetch (URL)
+    .then(response => response.json())
+    .then(data => {
+        processData(data)
+        APIData = data;
+    });
+}
+
+function processData(data){
+    data.ciudades.forEach(ciudad => {
+        DAYS.push(new Datos (ciudad.city))
+        ciudad.daily.forEach(dayObj =>{
+            DAYS.push(new Datos (dayObj.day, dayObj.celcius, dayObj.precipitation, dayObj.uvIndex, dayObj.sunny, ciudad.city));
+        });  
+    });
+    drawElements ();
+}
+
+function drawElements() {
+    domElement.innerHTML = "";
+    document.getElementById('City').innerHTML = "";
+    document.getElementById('Display_week').innerHTML = "";
+
+    const valueC = document.getElementById("FilterCity").value;
+    const results = DAYS.filter(day => day.city === valueC);
+
+    for (let i = 1; i > 0; i--) {
+        const element = results[i];
+        element.drawCiu(document.getElementById('City'));
+    }
+
+    const valueD = document.getElementById("FilterDay").value;
+    const D = results.filter(day => day.day === valueD);
+
+    for (let i = D.length-1; i >= 0; i--) {
+        const element = D[i];
+        element.dibujar(domElement);
+    }
+
+    for (let i = 0; i < results.length; i++) {
+        const element = results[i];
+        element.weekly(document.getElementById('Display_week'));
+    }
+}
