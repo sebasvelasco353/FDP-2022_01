@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 	<link rel="stylesheet" href="estilos.css">
-    <link rel="shortcut icon" href="./img/logo 2.png">
+    <link rel="shortcut icon" href="img/log02.png">
 	<title>CLIMsolution</title>
 </head>
 <body>
@@ -22,11 +22,11 @@
                 </div>
 
                 <ul class="nav-links">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Recomendations</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Mapa</a></li>
+                    <li><a href="#">Recomendaciones</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Contacto</a></li>
                 </ul>
             </div>
 
@@ -55,15 +55,16 @@
 		<img class="saludo" src="img/hello.png">
 	</section>
 
-  <!-- FILTRO CIUDADES-->
-
+  <!-- FILTRO CIUDADES -->
+  <div class="Filtros">
 <select name="" id="select" onchange="drawElements()">
     <option value="Cali">Cali</option>
 	<option value="Bogota">Bogota</option>
 </select>
 	
-    <!-- FILTRO DIAS SEMANA-->
-<select name="" id="daysSelector" onchange="drawElements()">	
+    <!-- FILTRO DIAS SEMANA -->
+<select name="" id="daysSelector" onchange="drawElements()">
+    <option value="todos">Todos</option>	
 	<option value="monday">monday</option>
 	<option value="tuesday">tuesday</option>
     <option value="wednesday">wednesday</option>
@@ -72,8 +73,21 @@
 	<option value="saturday">saturday</option>
 	<option value="sunday">sunday</option>
 </select>
+</div>
 
-<div id="element"></div>
+    <!-- BUSCADOR -->
+<div class="Search">
+    <label for="Search">
+        <h3>Buscar otras ciudades!</h3>
+        <input type="text" placeholder="Buscar...">
+    </label>
+</div>
+
+<div class="Overall" id="Overall">
+        
+</div>
+
+<div class= "Day" id="Day"></div>
 
 <!-- SCRIPT -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/gsap.min.js"></script>
