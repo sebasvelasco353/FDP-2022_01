@@ -20,18 +20,8 @@ async function run(){
     results = search_cities.value;
     draw();
     console.log(city);
+    console.log(api);
 }
-
-// class day_of_the_week {
-//     constructor(day, temp, sunny) {
-//         this.day = day;
-//         this.temp = temp;
-//         this.sunny = sunny;
-//     }
-//     draw(domObj){
-//         console.log(this.day, this.temo, this.sunny);
-//     }
-// }
 
 // funtion for get the object bogota
 function draw(){
@@ -72,14 +62,10 @@ function draw(){
 
 }
 
-function clear_mo() {
+function clear_all() {
     display_temperature.innerHTML = "";
     display_precipation.innerHTML = "";
     display_uvlevel.innerHTML = "";
     display_sunny.innerHTML = "";
     display_city_title.innerHTML = "";
-    gsap.from('#content_temperature', { duration: 1, y: '-120%', ease: 'power3.inOut', delay: 0.2})
-    gsap.from('#display_precipation', { duration: 1, y: '-120%', ease: 'power3.inOut', delay: 0.2})
-    gsap.from('#display_sunny', { duration: 1, y: '-120%', ease: 'power3.inOut', delay: 0.2})
-    gsap.from('#display_uvlevel', { duration: 1, y: '-120%', ease: 'power3.inOut', delay: 0.2})
 }
