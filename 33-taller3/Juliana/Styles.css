@@ -203,6 +203,7 @@
     border: 1px solid var(--Black);
 }
 
+/*Responsive*/
 @media (max-width: 800px){
     .Nav {
         width: 100%;
