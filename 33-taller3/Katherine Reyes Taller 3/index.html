@@ -54,53 +54,25 @@
 		<img class="saludo" src="img/hello.png">
 	</section>
 
-    <!-- FILTRO CIUDADES-->
+  <!-- FILTRO CIUDADES-->
 
-<div class="FilterCiudades">
-	<div class="BarraHerramientas">
-		<div class="filter">
-			<label for="filter">
-			<i class='bx bxs-search'></i>filtrar por: </label>
-			<select name="filter" id="filter">
-				<option value="Cali">Cali</option>
-				<option value="Bogota">Bogota</option>
-            </select>
-		</div>
-	</div>
-
-    <!-- BUSCAR MAS CIUDADES -->
-<section class="BuscarCiudades" onclick="mantenimiento_pagina()">
-	<i class='bx bxs-add-to-queue'></i>
-	<p class="BuscarCiudadTexto">Más ciudades</p>
-</section>
-</div>
-
-<!-- DISPLAY RESULTADOS -->
-<section id="display_ciudades"><!-- results --></section>
-</div>
-
+<select name="" id="select" onchange="drawElements()">
+    <option value="Cali">Cali</option>
+	<option value="Bogota">Bogota</option>
+</select>
+	
     <!-- FILTRO DIAS SEMANA-->
-<div class="FilterDias">
-	<div class="BarraHerramientas1">
-		<div class="filter1">
-			<label for="filter1">
-			<i class='bx bxs-search'></i>filtrar por: </label>
-			<select name="filter1" id="filter1">
-				<option value="all">Todos</option>
-				<option value="monday">monday</option>
-				<option value="tuesday">tuesday</option>
-                <option value="wednesday">wednesday</option>
-				<option value="thursday">thursday</option>
-				<option value="fiday">fiday</option>
-				<option value="saturday">saturday</option>
-				<option value="sunday">sunday</option>
-			</select>
-		</div>
-	</div>
+<select name="" id="daysSelector" onchange="drawElements()">	
+	<option value="monday">monday</option>
+	<option value="tuesday">tuesday</option>
+    <option value="wednesday">wednesday</option>
+	<option value="thursday">thursday</option>
+	<option value="fiday">friday</option>
+	<option value="saturday">saturday</option>
+	<option value="sunday">sunday</option>
+</select>
 
-<!-- DISPLAY RESULTADOS -->
-<section id="display_dias"><!-- results --></section>
-</div>
+<div id="element"></div>
 
 <!-- SCRIPT -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/gsap.min.js"></script>

@@ -5,22 +5,16 @@
 	--poppins: 'Poppins', sans-serif;
 	--lato: 'Lato', sans-serif;
 
-	--light: #F9F9F9;
-	--blue: #3C91E6;
-	--dark-blue: #000661;
-	--light-blue: #CFE8FF;
-    --yellow: #ffd106;
-    --dark-yellow: #cca700;
-    --light-yellow: #fceeb0;
-	--grey: rgb(226, 225, 225);
+	--grey: #dddddd;
 	--dark-grey: #AAAAAA;
     --black: #202020;
-    --body-color: #E4E9F7;
+    --body-color: #ffffff;
     --nav-color: #4070F4;
     --side-nav: #010718;
     --text-color: #FFF;
     --search-bar: #F2F2F2;
     --search-text: #010e31;
+    --sunny: #e2cc01;
 }
 *{
     box-sizing: border-box;
@@ -39,11 +33,12 @@
     }
 
 body.dark{
-    --body-color: #003569;
+    --body-color: #ffffff;
     --nav-color: #004488;
     --side-nav: #00274e;
     --text-color: rgb(255, 254, 254);
     --search-bar: #0052a3;
+    --grey: #000436;
 }
 
   /* NAV */
@@ -315,12 +310,13 @@ body.dark .search-field i{
 .Inicio h3{
 	font-size: 35px;
     text-align: center;
-    color:var(--side-nav);
+    color:var(--body-color);
 }
 
 .bienvenido{
     background-color: var(--nav-color);
-    color: var(--light);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    color: var(--body-color);
     padding: 10px;
     margin: 15px;
     border-radius: 20px;
@@ -338,137 +334,59 @@ body.dark .search-field i{
     position: absolute;
 }
 
-/* FILTRO CIUDADES*/
-.FilterCiudades{
-	display: flex;
-}
+/* FILTROS*/
 
-    .BarraHerramientas{
-        display: flex;
-        flex-direction: row;
-        align-content: center;
-        justify-content: space-between;
-        margin: 10px;
-        background-color: var(--light);
-        padding: 10px;
-        border-radius: 20px;
-        width: 200px;
-        height: 50px;
-    }
 	select{
-        border: none;
-        border-radius: 3px;
-        overflow: hidden;
-        position: relative;
-        border: none;
-        outline: none;
-    }
-
-    .filter:focus{
-		-webkit-appearance: none; 
-		outline: none;
-	}
-
-    .filter select:focus{
-		outline: none;
-	}
-
-    /* Buscar ciudades */
-.BuscarCiudades{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
     margin: 10px;
     background-color: var(--nav-color);
-    color: var(--light);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    color: var(--body-color);
     padding: 10px;
     border-radius: 20px;
     width: 200px;
     height: 50px;
-}
-.BuscarCiudades:hover{
-    background-color: var(--blue);
-    cursor: pointer;
-    transform: scale(1.05);
-    transition-duration: 0.4s;
-}
-
-.BuscarCiudadTexto{
-	margin: 1vh;
-	align-items: center;
-}
-
-/* FILTRO DIAS */
-    .FilterDias{
-        display: flex;
-    }
-    .BarraHerramientas1{
-        display: flex;
-        flex-direction: row;
-        align-content: center;
-        justify-content: space-between;
-        margin-top: 2px;
-        margin-left: 60px;
-        background-color: var(--light);
-        padding: 10px;
-        border-radius: 20px;
-        width: 250px;
-        height: 50px;
-    }
-	select{
-        border: none;
-        border-radius: 3px;
-        overflow: hidden;
-        position: relative;
-        border: none;
-        outline: none;
+    text-align: center;
+    font-size: 15px;
+    font-family: var(--poppins);
+    align-items: center;
     }
 
-    .filter1:focus{
-		-webkit-appearance: none; 
-		outline: none;
-	}
+/* RESULTADOS- COLOR */
 
-    .filter1 select:focus{
-		outline: none;
-	}
-
-    /* FILTRO SELECT*/
-.filterSelect, filterSelect2 {
-    background-color: var(--light);
+.sunny {
+    color: var(--sunny);
+}
+    
+.rainy{ 
     color: var(--search-text);
-    border-radius: 10px;
-    padding: 8px;
-    height: 5vh;
-    width: 20vw;
-    border: none;
-    box-shadow: 2px 2px 5px var(--dark-grey);
-    outline: none;
-}
-
-/* FILTRO CIUDADES*/
-.Información {
-    margin: 3vh 3vw;
-}
-
-/* DISPLAY RESULTADOS */
- #display_Dias {
-     height: 50vh; 
-     width: 100%; 
-    overflow-y: auto;
 }
     
-.display_element{
-    padding: 2vh 2vw;
-    margin: 2vh 2vw 5vh 0;
-    background-color: var(--light);
-    border-radius: 15px;
-    border-top: solid 15px var(--blue);
-    }
-    
+.display_element {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--body-color);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 5px;
+    margin: 15px;
+    border-radius: 20px;
+    width: 320px;
+    height: 130px;
+    font-size: 20px;
 
-.swal-modal{
+}
+
+.tittle {
+    text-align: center;
+    font-size: 20px;
+}
+
+.text {
+    text-align: right;
+    font-size: 20px;
+}
+
+   /* SWAL */ 
+   .swal-modal{
 	border-radius: 20px;
 }
 
