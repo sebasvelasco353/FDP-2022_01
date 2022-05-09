@@ -4,10 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header>
+        <div class="logo"><h2>Sunny<span>Side</span></h2></div>
+    </header>
+    <select name="" id="select" onchange="drawElements()">
+        <option value="Cali">Cali</option>
+        <option value="Bogota">Bogotá</option>
+    </select>
+    <select name="" id="daysSelector" onchange="drawElements()">
+        <option value="week" id="rain">week</option>
+        <option value="monday" id="rain">monday</option>
+        <option value="tuesday" id="heat">tuesday</option>
+        <option value="wednesday" id="rain">wednesday</option>
+        <option value="thursday" id="rain">thursday</option>
+        <option value="fiday" id="heat">friday</option>
+        <option value="saturday" id="rain">saturday</option>   
+        <option value="sunday" id="heat">sunday</option>    
+    </select>
+    <main>
+    <div id="element" class="cards"></div>
+    </main>
 <script src="code.js"> </script>
 </body>
 </html>

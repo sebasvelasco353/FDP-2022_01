@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+    --color-white: #FDF0D5;
+    --color-white2: #ebdec3;
+    --color-light: #87878759;
+
+    --card-padding: 1.8rem;
+    --padding-1: 1.2rem;
+
+    --box-shadow: 0 2rem 3rem var(--color-light);
+
+}
+
+.rain-theme {
+    --color-heat: #669BBC;
+    --color-heat-accent: #003049;
+    --color-white: #99aada;
+}
+
+.heat-theme {
+    --color-heat2: #C1121F;
+    --color-heat-accent3: #780000;
+    --color-white4: #da4f4f;
+
+}
+
+html {
+    font-size: 14px;
+    margin: auto;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: poppins, sans-serif;
+    font-size: 0.88rem;
+    background: var(--color-white);
+    user-select: none;
+    overflow-x: hidden;
+}
+
+header {
+    margin-top: 0px;
+}
+
+div {
+    display: flex;
+    flex-direction: row;
+}
+
+.display_element {
+    padding-left: 2rem;
+    margin: auto;
+    align-items: flex-start;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    margin: 1rem;
+    padding: 0.7rem;
+    position: relative;
+    box-shadow: var(--box-shadow);
+    
+}
+
+h2 { 
+    font-size: 2rem;
+    color: rgb(49, 47, 47);
+}
+
+select {
+    font-size: 15px;
+    margin-right: 2rem;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.sunny {
+    background-color: var(--color-heat2);
+}
+
+@media only screen and (max-width:500px) {
+    header {
+        width: 500px;
+        align-items: center;
+    }
+    select {
+        margin-right: 0rem;
+        margin-left: 3.5rem;
+        padding: auto;  
+    }
+    div {
+        display: contents;
+        width: 400px;
+        justify-content: space-around;
+        flex-direction: row;
+        align-items: center;
+    }
+    b {
+        margin-right: 100px;
+    }
+    }
