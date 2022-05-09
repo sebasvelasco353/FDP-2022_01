@@ -17,7 +17,11 @@
 
             <!-- Container weather of the week -->
             <div class="container_weather" id="container_weather">
-                <h2 id="title">The weather of week</h2>
+                <h2 id="title">The weather of week of
+                    <h2 id="ciudad_tilte">
+                        <!-- espacio para colocar el nombre de la ciudad -->
+                    </h2>
+                </h2>
                 <img src="./Recursos/Icons/cloud-rain.svg" width="16%" height="16%">
                 <div class="class" id="content_dates">
                     <h3 id="title">Rainy</h3>
@@ -26,6 +30,7 @@
 
             <!-- Container filter weather per day -->
             <div class="container_select" id="container_select">
+
                 <div class="container_search_city" id="container_search_city">
                     <input type="text" placeholder="Search city" id="bar_search">
                     <button onclick="run();">Search</button>
@@ -34,13 +39,13 @@
                 <h4 id="title">Select the city and day</h4>
                 
                 <div class="container_days" id="container_days">
-                    <button>Monday</button>
-                    <button>Tuesday</button>
-                    <button>Wednesday</button>
-                    <button>Thursday</button>
-                    <button>Friday</button>
-                    <button>Saturday</button>
-                    <button>Sunday</button>
+                    <button onclick="clear_mo();">Monday</button>
+                    <button onclick="">Tuesday</button>
+                    <button onclick="">Wednesday</button>
+                    <button onclick="">Thursday</button>
+                    <button onclick="">Friday</button>
+                    <button onclick="">Saturday</button>
+                    <button onclick="">Sunday</button>
                 </div>
             </div>
 
@@ -51,19 +56,23 @@
             
             <!-- Cards -->
             <div id="cards_temperature" class="cards">
-                temperature
+                Temperature
+                <h4 id="content_temperature" class="display"><!-- display temperature --></h4>
             </div>
 
             <div id="cards_precipation" class="cards">
-                precipitation
+                Precipitation
+                <h4 id="content_precipitation" class="display"><!-- display precipitation --></h4>
             </div>
 
             <div id="cards_levelUV" class="cards">
-                level ultraviolet
+                Ultraviolet
+                <h4 id="content_ultraviolet" class="display"><!-- display level ultraviolet --></h4>
             </div>
 
             <div id="cards_sunny" class="cards">
-                sunny
+                Sunny
+                <h4 id="content_sunny" class="display"><!-- display sunny --></h4>
             </div>
 
         </section>

@@ -1,5 +1,4 @@
 .cards{
-    background-color: aqua;
     width: 50%;
     height: 50%;
 }
@@ -8,4 +7,8 @@
     background-color: yellow;
     width: 50%;
     height: 50%;
+}
+
+.display{
+    background-color: aqua;
 }
