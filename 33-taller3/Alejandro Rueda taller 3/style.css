@@ -1,46 +1,75 @@
+.principalbox{
+
+
+background-color: rgb(83, 169, 250);
+
+
+}
+
+
+
+body{
+
+
+    background-color: rgb(140, 120, 233);
+}
+
 *{
     padding: 0px;
     margin: 0px;
 }
 
-#seleccionador{
+#sectweather{
     display: flex;
     flex-direction: column;
-    background-color: rgb(137, 163, 202);
+    background-color: rgb(140, 120, 233);
     align-items: center;
+    width: 100%;
 }
 
-#contenidoclima{
+#conweather{
     display: flex;
     flex-direction: column;
-    background-color: rgb(8, 51, 92);
+    background-color: rgb(228, 123, 74);
     align-items: center;
     color: white;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    border-radius: 20px;
+    margin: 20px;
+color:black; 
 }
 
-#seleccionador, #title{
+#select_cities, #title{
     margin-bottom: 0.8rem;
 }
 
-#dias button{
-    background-color: rgb(95, 181, 252);
+#contdays button{
+    background-color: rgb(140, 120, 233);
     width: 10rem;
     color: black;
     padding: 6px 0px;
     border: 0px;
+    border-radius: 10px;
+    width: 100%;
 }
 
-#contenidocuida button:hover{
-    background-color: rgb(95, 181, 252);
+#contdays button:hover{
+    background-color: rgb(67, 50, 218);
+    color:white
 }
 
-#dias{
+#contdays{
     display: grid;
     grid-template-columns: auto auto auto auto auto auto auto;
     gap: 0.8rem;
+    width: 100%;
 }
 
-#datosclima{
+#sectdateweather{
     display: flex;
     flex-direction: row;
     text-align: center;
@@ -48,21 +77,30 @@
     gap: 4rem;
 }
 
-#contenidocuida{
+#contsearchcity{
     display: flex;
     flex-direction: row;
     gap: 2%;
     margin: 0.8rem;
+    text-align: center;
 }
 
-#contenidocuida input{
+#contsearchcity input{
     width: 16rem;
     height: auto;
     text-align: center;
 }
 
-#contenidocuida button{
+#contsearchcity button{
     width: 4rem;
     height: 2rem;
     text-align: center;
+}
+
+
+#barsearch{
+
+
+border-radius: 20px;
+
 }
