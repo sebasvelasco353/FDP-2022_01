@@ -59,6 +59,7 @@ function drawElements() {
 }
 //ANIMACIONES
 gsap.from('.nav-bar', { duration: 1, x: '-100%', ease: 'power3.inOut', delay: 0.2})
+gsap.from('.Inicio', { duration: 2, delay: 0.1, x: '-100%', opacity: '0', ease: 'power3.inOut'})
 
 //NAV
 const body = document.querySelector("body"),

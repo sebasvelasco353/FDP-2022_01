@@ -248,11 +248,11 @@ body.dark .search-field i{
     color: var(--text-color);
 }
 
-@media (max-width: 790px) {
+@media (max-width: 800px) {
     nav .nav-bar .sidebarOpen{
         display: block;
     }
-
+    
     .menu{
         position: fixed;
         height: 100%;
