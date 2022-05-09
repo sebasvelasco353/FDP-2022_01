@@ -1,95 +1,59 @@
-//const input = document.querySelector('input');
-//const button = document.querySelector('button');
-//const Climacontainer = document.querySelector('.ClimaContainer');
-
-//button.addEventListener('click', (e) => {
-  //  e.preventDefault();
-    //decirClima (input.value);
-//})
-//function traerClima(ciudades) {
-  //  fetch ('https://raw.githubusercontent.com/sebasvelasco353/FDP-2022_01/main/33-taller3/weather.js')
-    //.then((res) => res.json())
-    //.then((data) => {
-     //   decirClima (data);
-    //});
- 
-//}
-//function decirClima(clima) {
-    
-
-  //  const h3 = document.createElement("h2")
-    //h3.textContent = clima.ciudades
-    //}
-
-    //Tercer intento 
-
-    // const result = document.querySelector('.result')
-    // const form = document.querySelector('.giveThe-weather')
-    // const nameCity = document.querySelector('#city')
-    // const days = document.querySelector('#days');
-    
-    // form.addEventListener('submit', (e) => {
-    //     e.preventDefault();
-
-    //     if (nameCity.value === '' ||  days.value === '') {
-    //     showError('Campos obligatorios');
-    //     return; 
-    // }
-
-    //     callAPI(nameCity.value, days.value);
-    // })
-
-    // function callAPI(city, days) {
-    //     const url = 'https://raw.githubusercontent.com/sebasvelasco353/FDP-2022_01/main/33-taller3/weather.js';
-
-    //     fetch(url)
-    //     .then(data => {
-    //         return data.json();
-    //     })
-    //     .then(dataJSON =>{
-    //         console.log(dataJSON);
-    //     })
-
-
-        
-    // }
-
-    const result = document.querySelector('.result');
-    const form = document.querySelector('.get-weather');
-    const nameCity = document.querySelector('#city');
-    const day = document.querySelector('#day');
-    
-    form.addEventListener('submit', (e) => {
-        e.preventDefault();
-    
-        if (nameCity.value === '' || day.value === '') {
-            showError('Ambos campos son obligatorios...');
-            return;
-        }
-    
-        callAPI(nameCity.value, day.value);
-        //console.log(nameCity.value);
-        //console.log(nameCountry.value);
-    })
-    
-    function callAPI(city, day){
-        const url = `https://raw.githubusercontent.com/sebasvelasco353/FDP-2022_01/main/33-taller3/weather.js`;
-    
-        fetch(url)
-            .then(data => {
-                return data.json();
-            })
-            .then(dataJSON => {
-                console.log(dataJSON);
-            })
+const URL = "https://raw.githubusercontent.com/sebasvelasco353/FDP-2022_01/main/33-taller3/weather.js"
+const DAYS = [];
+const domElement = document.getElementById("element");
+let theData;
+class Day {
+  constructor (day, temp, sunny, city, preci, uv) {
+  this.day = day;
+  this.temp = temp;
+  this.sunny = sunny;
+  this.city = city;
+  this.preci = preci;
+  this.uv = uv;
+  }
+  draw (elm) {
+    const opt = document.createElement('div');
+    if (this.sunny) {
+      opt.className = "display_element sunny";
+    } else {
+      opt.className = "display_element rainy";
     }
-    //DISPLAY DE LOS DATOS NO FUNCIONALLLL AAAA
-//     function draw() {
-//     result.innerHTML = "";
-//     result.forEach(element => {
-//         const opt = document.createElement('div');
-//         opt.className = "display_element";
-//         opt.innerHTML = `<p><b>${element.city}</b> <font size="2">(${element.day}`;
-//         result.appendChild(opt);
-//     });
-// }
+        opt.innerHTML = `<p><b class="title"> ${this.city}, ${this.sunny ? "Soleado" : "Lloviendo" }, ${this.day}</b></p> <p class="text">Temperatura(C): ${this.temp}</p><br> <p class="text"> Precipitacion: ${this.preci}</p><br> <p class="text"> uvIndex: ${this.uv}</p><br>`;
+        elm.appendChild(opt);
+  }
+}
+
+window.onload = function () {
+fetch(URL)
+  .then(response =>  response.json())
+  .then(data => {
+     processData(data)
+     theData = data;
+  });
+}
+function processData(data){
+  data.ciudades.forEach(ciudad => {
+    ciudad.daily.forEach(dayObj => {
+      DAYS.push(new Day (dayObj.day, dayObj.celcius, dayObj.sunny, ciudad.city, dayObj.precipitation, dayObj.uvIndex));
+    });
+  });
+  drawElements();
+}
+  function drawElements() {
+    domElement.innerHTML = "";
+    const valueC = document.getElementById ("select").value;
+    const results = DAYS.filter(day => day.city === valueC);
+    console.log(results);
+    const valueD = document.getElementById ("daysSelector").value;
+    console.log(valueD);
+    const D = results.filter(day => day.day === valueD);
+  for (let i = D.length-1; i >= 0; i--) {
+    const element = D[i];
+    element.draw(domElement);
+  } }
+
+
+
+
+
+

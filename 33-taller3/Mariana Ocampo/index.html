@@ -4,36 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Buscador del clima</title>
-    <link rel="stylesheet" href="./style.css">
-    <script src="./JS.js" defer></script>
-</head>
-<body>
-    <section class="weather-content">
-        <h1>Buscador del clima</h1>
-        <div class="result">
-            <p>Agrege cuidad y seleccione dia de la semana</p>
-            <h5>Clima en Bogota</h5>
-            <img src="" alt="">
-            <h2>10°C</h2>
-            <p>Max: 18°C</p>
-            <p>Min: 10°C</p> 
-        </div>
-        <form action="" method="POST" class="get-weather">
-            <input type="text" name="city" id="city" placeholder="Write your city...">
-            <select name="" id="day">
-                <option disabled selected value="">Select weekday</option>
-                <option value="Mon">Monday</option>
-                <option value="Tues">Tuesday</option>
-				<option value="Wed">Wednesday</option>
-				<option value="Thur">Thursday</option>
-				<option value="Fid">Friday</option>
-				<option value="Sat">Saturday</option>
-				<option value="Sun">Sunday</option>
-            </select>
-            <input type="submit" name="" id="" value="Get Weather">
-        </form>
-    </section>
+    <link rel="stylesheet" href="styles.css">
+    <link rel= "https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;1,200&display=swap" rel="stylesheet">
+    <link rel="import" href="./recursos/icone-meteo-grise.png">
+    <title>WheaterC</title>
     
+</head>
+
+<body>
+        <nav class="nav-main">
+            <img src="./recursos/icone-meteo-grise.png" alt="logo pagina" class="nav-brand">
+    
+</nav>
+    <select name="" id="select" onchange="drawElements()">
+      <option value="Cali">Cali</option>  
+      <option value="Bogota">Bogota</option>
+    </select>
+    <select name=""  id="daysSelector" onchange="drawElements()"> Dia
+        <option value="monday">Lunes</option>  
+        <option value="tuesday">Martes</option>
+        <option value="wednesday">Miercoles</option>
+        <option value="thursday">Jueves</option>
+        <option value="fiday">Viernes</option>
+        <option value="saturday">Sabado</option>
+        <option value="sunday">Domingo</option>  
+
+      </select>
+    <div id="element"></div>
+    <script src="./js.js"></script>
 </body>
 </html>
