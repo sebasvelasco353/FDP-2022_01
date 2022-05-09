@@ -12,20 +12,22 @@
 
 <body>
    <div class="headerLogo">
-       <div class="applogo">
-           <img id="logo" src="./Imagenes/weatherShortcutIcon.png" alt="logo">
-           <h1 id="title">My Weather</h1>
+       <div class="logo">
+           <img id="logoicon" src="./Imagenes/weatherShortcutIcon.png" alt="logo" >
+           <h1 id="title">MyWeather</h1>
        </div>
        <div class="filterCities">
-           <label for="filterCities">Select city:</label>
-           <select name="filterCities" id="filterCities">
-               <option value="bogota">Bogotá</option>
-               <option value="cali">Cali</option>
+           <label for="filterCities" id="textfiltercities">Select city:</label>
+           <select name="filterCities" id="filterCitiesSelect" onchange="drawElements()">
+               <option value="Bogota">Bogotá</option>
+               <option value="Cali">Cali</option>
            </select>
        </div>
    </div>
 
-   <!-- <div class="banner"></div> -->
+   <!-- element del js -->
+
+   <div id="element"></div>
 
    <div class="body">
        <h2 class="city" id="city"></h2>
@@ -56,6 +58,6 @@
 
 
 
-    <script src="./app.js"></script>
+    <script src="./APPS.js"></script>
 </body>
 </html>

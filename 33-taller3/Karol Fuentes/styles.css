@@ -6,14 +6,59 @@ body {
     background-color: rgb(206, 248, 255);
 }
 
-#applogo {
-    font-size: 15px;
-    grid-row: auto;
+.headerLogo {
+    box-sizing: border-box;
+    height: 60px;
+    display: flex;
+    background-color: rgb(45, 145, 233);
+    position: sticky;
+    color: aliceblue;
+}
+
+#logoicon {
+    display: flex;
+    margin-top: 16%;
+    margin-left: 15%;
+
 }
 
 #title {
+    display: flex;
     font-size: 20px;
-    margin-left: 50px;
-    margin-top: 1px;
+    margin-left: 50%;
+    margin-top: -24%;
+    padding: 1px;
 }
 
+.filterCities {
+    border-radius: 1.25rem;
+    justify-content: space-between;
+    background-color: aliceblue;
+    font-size: medium; 
+    color: black;
+    padding: 2rem;
+    box-shadow: -0.25px 0.75px 9px -0.25px rgba(85,85,85,0.36);;
+    display: flex;
+    margin: 1rem;
+    margin-top: 2%;
+    margin-left: 55%
+    
+    
+}
+#textfiltercities {
+    display: flex;
+    margin-left: -3%;
+}
+
+#filterCitiesSelect {
+    display: flex;
+    height: fit-content;
+    margin: 4px;
+    margin-top: -6%;
+    margin-right: %;
+}
+
+#weeklyoverall {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
