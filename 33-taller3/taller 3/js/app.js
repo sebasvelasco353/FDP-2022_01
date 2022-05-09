@@ -1,47 +1,60 @@
-const url = 'https://raw.githubusercontent.com/sebasvelasco353/FDP-2022_01/main/33-taller3/weather.js';
+const URL = 'https://raw.githubusercontent.com/sebasvelasco353/FDP-2022_01/main/33-taller3/weather.js';
 
-//Filtro Ciudad ------------
-const filterSelect = document.getElementById('filterCity');
-const filter2Select = document.getElementById('filterDay');
-const displayp = document.querySelector('#display_weath');
-const displaym = document.querySelector('#display_day');
+const DAYS = [];
+const domElement = document.getElementById("Display_Day");
+let APIData;
 
-let apiData;
-let data;
-
-async function run(){
-    const res = await fetch(url);
-    apiData = await res.json();
-    data = apiData.ciudades;
-    Cali = data [0]["daily"];
-    Bogota = data [1]["daily"];
-    results = filterBy(filterSelect.value);
-    results = filterdayBy (filter2Select.value)
-    draw();
-}
-
-function filterBy(criteria) {
-    const filters = {
-    "Cali": data.filter (p=> p.city === "Cali" ),
-    "Bogota": data.filter (p=> p.city === "Bogota" ),
+class Card {
+    constructor(day, temp, precipitation, uvIndex, sunny, city){
+        this.day = day;
+        this.temp = temp;
+        this.precipitation = precipitation;
+        this.sunny = sunny;
+        this.city = city;
+        this.uv = uvIndex;
     }
-    return filters[criteria];
+    dibujar (elm){
+        const opt = document.createElement('div');
+        if (this.sunny){
+            opt.className = "display_element sunny";
+        } else {
+            opt.className = "display_element rainy";
+        }
+        opt.innerHTML = `<h2>${this.day}</h2> <h3>It will be ${this.sunny ? "Sunny" : "Rainy"}</h3> Temperature: ${this.temp}°C<br> Precipitation: ${this.precipitation}<br> Uv Index: ${this.uv}`;
+        elm.appendChild (opt);
+    }
 }
 
-filterSelect.addEventListener("change", (e) => {
-    results = filterBy(filterSelect.value);
-    draw();
-})
-
-function draw() {
-    document.getElementById("City").innerHTML = "";
-    results.forEach(element => {
-        const opt = document.createElement('h');
-        opt.innerHTML = `${element.city}`;
-        document.getElementById("City").appendChild(opt);
+window.onload = function (){
+    fetch (URL)
+    .then(response => response.json())
+    .then(data => {
+        processData(data)
+        APIData = data;
     });
-
 }
 
-run();
+function processData(data){
+    data.ciudades.forEach(ciudad => {
+        ciudad.daily.forEach(dayObj =>{
+            DAYS.push(new Card (dayObj.day, dayObj.celcius, dayObj.precipitation, dayObj.uvIndex, dayObj.sunny, ciudad.city));
+        });  
+    });
+    drawElements ();
+}
+
+function drawElements() {
+    domElement.innerHTML = "";
+    const valueC = document.getElementById("filterCity").value;
+    const results = DAYS.filter(day => day.city === valueC);
+    const valueD = document.getElementById("filter2").value;
+    const D = results.filter(day => day.day === valueD);
+
+    for (let i = D.length-1; i >= 0; i--) {
+        const element = D[i];
+        element.dibujar(domElement);
+    }
+}
+
+
 

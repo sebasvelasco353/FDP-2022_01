@@ -4,44 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Doctores page</title>
+    <title>El clima Colombia</title>
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
+<div class="header">
+    <section class="logo">
+        <img src="https://www.logocrea.com/wp-content/uploads/2016/07/lluvia1.png" alt="logo lluvia" class="logito">
+    </section>
+   
+ <!--Filtro de Ciudades-->
 
-</ul>
-
-<body>
-
-<!--Filtro de Ciudades-->
-
-<div class="filter">
+<div class="filterCiudad" id="filterCiudad">
     <label for="filterCity">Elegir ciudad: </label>
-    <select name="filterCity" id="filterCity">
+    <select name="filterCity" id="filterCity" onchange="drawElements()">
     <option value="Cali">Cali </option>
     <option value="Bogota">Bogotá </option>
     </select>
 </div>
 
-<!--Ciudad y Frase-->
-<h4 id="City">Ciudad</h4>
-<h4>Weekly Overall: Rainy</h4>
+<body>
 
-<section class="Display_weath" id="Display_weath"><!-- results --></section>
+<!--Ciudad y Frase-->
+<h4 id="City" onchange="drawElements()">Ciudad</h4>
+<h4>Weekly Overall: Rainy</h4>
+</div>
+
+<div class="cuerpocss"></div>
 
 <!--Filtro días-->
 <div class="filter2">
-    <label for="filterDay">Elegir día: </label>
-    <select name="filterDay" id="filterDay">
-    <option value="Lunes">Lunes </option>
-    <option value="Martes">Martes </option>
-    <option value="Miercoles">Miércoles </option>
-    <option value="Jueves">Jueves </option>
-    <option value="Viernes">Viernes </option>
+    <label for="filter2">Elegir día: </label>
 
+    <select name="filter2" id="filter2" onchange="drawElements()">
+    <option value="monday">Lunes </option>
+    <option value="tuesday">Martes </option>
+    <option value="wednesday">Miércoles </option>
+    <option value="thursday">Jueves </option>
+    <option value="fiday">Viernes </option>
     </select>
 </div>
 
-<section class="Display_day" id="Display_day"><!-- results --></section>
+<div class="Display_Day" id="Display_Day" ><!-- results --></div></div>
+
+</div>
 
 <script src="js/app.js"></script>
 </body>

@@ -1,57 +1,56 @@
-head{
-	font-family: arial, helvetica;
-	background: #e8e8e8;
-}
-
-.menu{
-	list-style: none;
-	padding: 0;
-	background: #092327;
-	width: 90%;
-	max-width: 1000px;
-	margin: auto;
-	display: flex;
-	justify-content: space-around;
-}
-
-.menu li a{
-	text-decoration: none;
-	color: white;
-	padding: 20px;
-	display: block;
-	width: 500px;
-}
-
-.menu li{
-	display: inline-block;
-	text-align: center;
-}
-
-.menu li a:hover{
-	background: #ef8354;
-}
-
-#display_pacientes {
-	height: 50vh; 
-	width: auto;
-	overflow-y: auto;
-    padding: 2rem;
-    margin: 1rem;
-	
-}
-
-.display_element {
-	background-color: snow;
-	padding: 0.5rem;
-	margin: 1rem;
-}
-
-   .display_element:hover {
+html {
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	color: black;
 	background-color: aliceblue;
-   }
+}
 
-.toolbar{
-	margin: 1rem;
-	padding: 1rem;
+body {
+	margin: auto;
+}
 
+.header {
+	background-color: rgb(244, 179, 48);
+	height: 5rem;
+	padding: 3rem;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: space-between;
+	z-index: 1;
+	align-items: center ;
+}
+
+.logito {
+	width: 4rem;
+	height: 4rem;
+}
+
+.cuerpocss {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.filter2{
+	margin: 4rem;
+	font-weight: 200;
+}
+
+.sunny {
+	width: 10rem;
+	height: 10rem;
+	background-image: url(https://png.pngtree.com/png-vector/20190826/ourlarge/pngtree-clear-sky-in-the-daytime-png-image_1699567.jpg);
+	background-color: antiquewhite;
+	padding: 4rem;
+	margin: 4rem;
+}
+
+.rainy {
+	color: white;
+	width: 10rem;
+	height: 10rem;
+	background-image: url(https://www.floridasforgottencoast.com/wp-content/uploads/2021/06/raining.jpg);
+	background-color: antiquewhite;
+	padding: 4rem;
+	margin: 4rem;
+  
 }
