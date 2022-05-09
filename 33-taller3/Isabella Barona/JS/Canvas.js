@@ -6,19 +6,19 @@ function setup() {
     var canvas = createCanvas(windowWidth, 160);
     canvas.parent('Canvas');
   for (var i = 0; i < 25; i++) {
-    RAIN[i] = new rain;
+    RAIN[i] = new Rain;
  }
 }
 
 function draw() {
-  background(80, 85, 150);
+  background(66, 85, 170);
   for (var i = 0; i < 25; i++) {
     RAIN[i].show();
     RAIN[i].update();
   }
 }
 
-class rain {
+class Rain {
     constructor(){
       this.x = random (0, width);
       this.y = random (0, -height);

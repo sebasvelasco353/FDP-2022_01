@@ -12,12 +12,12 @@
     <!-- header y select ciudad-->
     <div class="Header">
         <section class="Logo">
-            <img src="./Images/weather (3).png">
+            <img src="./Images/Icon2.png">
             <h3 style="margin: 1vh;">Weather app</h3>
         </section>
         <div class="Filter">
             <label for="FiltroCiudad">Choose your city: </label>
-            <select name="FiltroCiudad" id="FiltroCiudad">
+            <select name="FiltroCiudad" id="FiltroCiudad" onchange="drawElements()">
                 <option value="Cali">Cali</option>
                 <option value="Bogota">Bogotá</option>
             </select>
@@ -29,30 +29,36 @@
 
     <!-- resultados primer filtro -->
     <div class="Content">
-        <h2 id="City">City</h2>
-        <h4 id="Weekly" style="font-weight: normal;">Weekly overall</h4>
-
+        <section class="Respuesta">
+            <div class="Title">
+                <h2 id="City">City</h2>
+                <p>It will be <b>rainy</b> this week</p>
+            </div>
+            <div class="weekly_overall" id="weekly_overall"><!-- results --></div>
+        </section>
+        
         <!-- select día -->
         <div class="Filter2">
             <label for="FiltroDia">Choose a day: </label>
-            <select name="FiltroDia" id="FiltroDia">
-                <option value="All">All</option>
-                <option value="Monday">Monday</option>
-                <option value="Tuesday">Tuesday</option>
-                <option value="Wednesday">Wednesday</option>
-                <option value="Thursday">Thursday</option>
-                <option value="Friday">Friday</option>
-                <option value="Saturday">Saturday</option>
-                <option value="Sunday">Sunday</option>
+            <select name="FiltroDia" id="FiltroDia" onchange="drawElements()">
+                <option value="monday">Monday</option>
+                <option value="tuesday">Tuesday</option>
+                <option value="wednesday">Wednesday</option>
+                <option value="thursday">Thursday</option>
+                <option value="fiday">Friday</option>
+                <option value="saturday">Saturday</option>
+                <option value="sunday">Sunday</option>
             </select>
         </div>
 
         <!-- resultados segundo filtro -->
-        <section class="Display_day" id="Display_day"><!-- results --></section>
+        <div class="Display_day" id="Display_day"><!-- results --></div>
     </div>
-    <script src="./JS/App.js"></script>
-    <!--<script src="./JS/ChangeColors.js"></script>-->
+
+    <script src="./JS/App_filtro.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/p5.min.js"></script>
     <script src="./JS/Canvas.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="./JS/Animaciones.js"></script>
 </body>
 </html>
