@@ -25,25 +25,14 @@ body{
 .result{
     margin-bottom: 8%;
 }
-.result p{
-    margin: 5px 0 5px;
-}
-.result h2{
+h2{
     font-size: 30px;
     line-height: 70px;
     margin: -10px 0 10px;
     color: #fff;
 }
-.result h5{
-    font-size: 21px;
-    margin: 2px;
-    color: #fff;
-}
-form {
-    display: flex;
-    flex-direction: column;
-}
-form input[type="text"], form input[type="submit"], form select{
+
+form select{
     width: 100%;
     margin: 0px 0 25px;
     display: inline-block;
@@ -59,19 +48,7 @@ form input[type="text"], form input[type="submit"], form select{
     padding-bottom: 12px;
     font-family: 'Montserrat', sans-serif;
 }
-form input[type="submit"]{
-    width: 100%;
-    margin: 0 auto;
-    cursor: pointer;
-    background-color: #14d4a5;
-    border: 1px solid #14d4a5;
-    color: #fff;
-    font-weight: 600;
-    transition: width 1s;
-}
-form input[type="submit"]:hover{
-    width: 50%;
-}
+
 @media (max-width: 790px) {
     nav .nav-bar .sidebarOpen{
         display: block;
