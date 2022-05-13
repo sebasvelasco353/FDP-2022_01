@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
 :root {
-    --color-white: #FDF0D5;
-    --color-white2: #ebdec3;
-    --color-light: #87878759;
+    --color-sunny-background: #ffc300;
+    --color-rainy-background: #407BA7;
+    --color-rainy: #00043A;
+    --color-sunny: #800016;
+    
 
     --card-padding: 1.8rem;
     --padding-1: 1.2rem;
@@ -12,23 +14,12 @@
 
 }
 
-.rain-theme {
-    --color-heat: #669BBC;
-    --color-heat-accent: #003049;
-    --color-white: #99aada;
-}
-
-.heat-theme {
-    --color-heat2: #C1121F;
-    --color-heat-accent3: #780000;
-    --color-white4: #da4f4f;
-
-}
 
 html {
     font-size: 14px;
-    margin: auto;
+    margin: 5px;
     box-sizing: border-box;
+    height: 100%;
 
 }
 
@@ -38,10 +29,22 @@ body {
     background: var(--color-white);
     user-select: none;
     overflow-x: hidden;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
 }
 
-header {
-    margin-top: 0px;
+header { margin-top: -3rem;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: -2.5rem;
+}
+#rainy_icon {
+    margin: 1rem;
+    font-size: 5rem;
+    margin-top: 3rem;
+    color: var(--color-rainy-background);
 }
 
 div {
@@ -49,12 +52,10 @@ div {
     flex-direction: row;
 }
 
-.display_element {
+.changes {
     padding-left: 2rem;
     margin: auto;
-    align-items: flex-start;
     border-radius: 10px;
-    display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -63,27 +64,54 @@ div {
     padding: 0.7rem;
     position: relative;
     box-shadow: var(--box-shadow);
-    
+    flex-grow: 1;
 }
 
+.Sun p, .Rain p {
+    padding-right: 2rem;
+    font-size: 1.2rem;
+}
+
+.Sun {
+    background-color: var(--color-sunny-background);
+}
+
+.Rain {
+    background-color: var(--color-rainy-background);
+}
 h2 { 
-    font-size: 2rem;
+    font-size: 3.5rem;
     color: rgb(49, 47, 47);
 }
 
-select {
+select, input {
     font-size: 15px;
-    margin-right: 2rem;
+    margin-right: 1rem;
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
+    width: 15vw;
+    height: 4vh;
+    border-radius: 1rem;
+    margin: 3px;
+}
+label {
+    font-size: 15px;
+    padding-left: 0.5rem;
 
 }
-
 .sunny {
     background-color: var(--color-heat2);
 }
 
+.week {
+    font-size: 5rem;
+    font-weight:600;
+    position: fixed;
+    bottom: 0;
+    color: var(--color-sunny);
+
+}
 @media only screen and (max-width:500px) {
     header {
         width: 500px;
@@ -105,3 +133,5 @@ select {
         margin-right: 100px;
     }
     }
+
+

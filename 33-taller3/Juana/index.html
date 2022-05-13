@@ -7,28 +7,38 @@
     <link rel="stylesheet" href="styles.css">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
-<body>
+<body>  
     <header>
         <div class="logo"><h2>Sunny<span>Side</span></h2></div>
+        <span class="material-symbols-rounded" id="rainy_icon">rainy</span>
     </header>
+    <label for="ciudad">Choose your city:</label>
     <select name="" id="select" onchange="drawElements()">
         <option value="Cali">Cali</option>
         <option value="Bogota">Bogotá</option>
     </select>
+    <label for="day">Select your day:</label>
     <select name="" id="daysSelector" onchange="drawElements()">
-        <option value="week" id="rain">week</option>
-        <option value="monday" id="rain">monday</option>
-        <option value="tuesday" id="heat">tuesday</option>
-        <option value="wednesday" id="rain">wednesday</option>
-        <option value="thursday" id="rain">thursday</option>
-        <option value="fiday" id="heat">friday</option>
-        <option value="saturday" id="rain">saturday</option>   
-        <option value="sunday" id="heat">sunday</option>    
+        <option value="week" >week</option>
+        <option value="monday" >monday</option>
+        <option value="tuesday" >tuesday</option>
+        <option value="wednesday" >wednesday</option>
+        <option value="thursday">thursday</option>
+        <option value="fiday">friday</option>
+        <option value="saturday">saturday</option>   
+        <option value="sunday" >sunday</option>    
     </select>
+    <label for="city">Search another city:</label>
+    <input type="text" placeholder="Search your city">
     <main>
     <div id="element" class="cards"></div>
     </main>
+    <div class="bottom">
+    <div class="week" id="wholeWeek"> </div>
+
+    </div>
 <script src="code.js"> </script>
 </body>
 </html>
