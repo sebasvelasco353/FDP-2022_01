@@ -1,7 +1,6 @@
 class Rect {
-    constructor(posX, posY, size) {
-        this.posX = posX;
-        this.posY = posY;
+    constructor(position, size) {
+        this.position = position
         this.size = size;
         this.movementInput = {
             "38": -5,
