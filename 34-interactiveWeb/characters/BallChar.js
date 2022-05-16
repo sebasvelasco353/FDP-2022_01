@@ -1,20 +1,23 @@
 class Ball {
-    constructor(posX, posY, size) {
-        this.posX = posX;
-        this.posY = posY;
+    constructor(position, size) {
+        this.position = position;
         this.size = size;
+
+        this.posWidth = (windowWidth/3);
+        this.posHeight = (windowHeight/3);
+        
         this.movementInput = {
-            "87": -5,
-            "83": 5,
-            "65": -5,
-            "68": 5,
+            "87": -this.posWidth,
+            "83": this.posWidth,
+            "65": -this.posHeight,
+            "68": this.posHeight,
         }
     }
-    paint() {
-        ellipse(this.posX, this.posY, this.size, this.size);
+    getPosition() {
+        //console.log(this.position);
+        return [this.posWidth*this.position[0], this.posHeight*this.position[1]]; 
     }
-    move(key) {
-        if(parseInt(key) === 87 || parseInt(key) === 83) this.posY += this.movementInput[key];
-        if(parseInt(key) === 65 || parseInt(key) === 68) this.posX += this.movementInput[key];
+    paint() {
+        ellipse(this.getPosition()[0], this.getPosition()[1], this.size, this.size);
     }
 }
