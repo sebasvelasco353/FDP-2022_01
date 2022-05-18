@@ -1,0 +1,33 @@
+.primero{
+    width: 750px;
+    height: 800px;
+    color: rgb(255, 255, 255);
+    background-color: #071a25;
+    margin-left:15%;
+    margin-top: 3%;
+    padding: 3%;
+    border-radius: 15px;
+    grid-template-rows: auto;
+}
+
+.primerselect{
+    margin-top: 5px;
+    width: 80px;
+    padding: 15px;
+    height: 43px;
+    border: none;
+    border-radius: 8px;
+}
+.segundoselect{
+    margin-top: 5px;
+    width: 117px;
+    padding: 12px;
+    height: 43px;
+    border: none;
+    border-radius: 8px;
+
+}
+.filtrosegundo{
+    margin-top: -28%;
+    margin-left: 1%;
+}

@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./nuevo.css">
+    <link rel="stylesheet" href="./nav.css">
+    <link rel="stylesheet" href="./hearder.css">
+    <style media="screen">
+
+        
+       @media only screen and (max-width: 800px)  {
+           .primero{
+               background-color: rgb(78, 67, 88);
+               margin-left: 27%;
+               margin-top: 8%;
+               width: 280px ;
+               height: 200px;
+               border-radius: 16px;
+               border: none;
+               padding: 18px;
+           }
+       }
+
+
+      
+
+       @media only screen and (max-width: 800px)  {
+           .form > div{
+               display: flex;
+               background: #fff;
+               padding: 3px 7px 2px 9px;
+               border-radius: 30px;
+               border: 2px solid #cad3dc;
+               box-shadow: rgba(255, 255,255, 0.5) -8px -8px 15px,;
+               margin-top: 6.5%;
+               
+
+           }
+       }
+
+       
+       @media only screen and (max-width: 800px)  {
+           form input{
+
+               border: none;
+               background: transparent;
+               font-weight: bold;
+               padding-left: -30px;
+               width: 55px;
+               margin-right: 2%;
+               margin-left: 4%;
+               margin-top: 9.5%;
+
+           }
+       }
+       
+       @media only screen and (max-width: 800px)  {
+           .boton{
+
+               width: 25px;
+               height: 35px;
+               line-height: 35px;
+               text-align: center;
+               background-color: aliceblue;
+               border:none ;
+               border-radius: 14px;
+               font-size: 9px;
+               
+               margin-top: 2.5% ;
+               text-decoration: none;
+
+           }
+       }
+
+       @media only screen and (max-width: 800px)  {
+           .cali{
+
+               width: 25px;
+               height: 35px;
+               line-height: 35px;
+               text-align: center;
+               background-color: aliceblue;
+               border:none ;
+               border-radius: 14px;
+               font-size: 9px;
+               
+               margin-top: 1.5% ;
+               text-decoration: none;
+
+               
+               
+
+           }
+       }
+
+       @media only screen and (max-width: 800px)  {
+           .bogota{
+
+               width: 30px;
+               height: 35px;
+               line-height: 35px;
+               text-align: center;
+               background-color: rgb(16, 59, 97);
+               border:none ;
+               border-radius: 14px;
+               font-size: 9px;
+
+               margin-left: 03%;
+               margin-right: 0.3%;
+               
+               margin-top: 1.5% ;
+               text-decoration: none;
+
+               
+               
+
+           }
+       }
+
+       @media only screen and (max-width: 800px)  {
+           .ciudades{
+
+               width: 5x;
+               height: 40px;
+               line-height: 40px;
+               text-align: center;
+               background-color: aliceblue;
+               border:none ;
+               border-radius: 14px;
+               font-size: 13px;
+               
+               margin-top: 1.5% ;
+               text-decoration: none;
+               margin-left: 0.1%;
+               margin-right: -5%;
+
+           }
+       }
+
+
+       </style>
+
+
+ 
+    
+    <title>Weather</title>
+</head>
+<body>
+    <nav>
+        <p class="bienvenida">Weather</p>
+        <ul>
+            
+        
+    
+            <li>
+                <div class="barra"></div>
+                <img src="menu.png" width="20px"height="20px">
+                
+                <p class="menu">Inicio </p>
+            </li>
+    
+            <li>
+                <div class="barra"></div>
+                <img src="snowy.png" width="20px"height="20px">
+
+                
+    
+                <p class="menu">El tiempo</p>
+                
+            </li>
+
+            <li>
+                <div class="barra"></div>
+                <img src="snowy.png" width="20px"height="20px">
+
+    
+                <p class="menu">Mapas</p>
+                
+            </li>
+
+            <li>
+                <div class="barra"></div>
+    
+                <p class="menu">Pro.Mensual</p>
+                
+                
+            </li>
+
+            <li>
+                <div class="barra"></div>
+    
+                <p class="menu">Pro.Semanal</p>
+                
+            </li>
+
+            <li>
+                <div class="barra"></div>
+                <img src="tv.png" width="20px"height="20px">
+
+                    <p class="menu">Noticias</p>
+
+                
+            </li>
+
+            <li>
+                <div class="barra"></div>
+                <img src="sports.png" width="20px"height="20px">
+
+    
+                <p class="menu">Deportes</p>
+
+                
+            </li>
+
+           
+    
+        </ul>
+    </nav>
+    <!-- DIV COMO HEADER -->
+
+
+    <div class="top">
+        <div class="nombre">
+        <p class="nom">Bienvenido a YourWheater :)</p>
+    </div>
+        
+        <section>
+            <form autocomplete="off">
+                <div >
+                    <input type="text" name="q" placeholder="Buscar" onclick="run();";>
+                </div>
+            </form>
+        </section>
+
+        
+
+        <a class="boton cali" id="cali"> Salir</button>
+        <a class="boton bogota"> Iniciar</a>
+
+    </div>
+
+    <!-- DIVS -->
+
+
+
+    
+   
+   
+    
+    <!-- ciudad-->
+<div class="primero">
+
+    <img src="termom.png" width="50px"height="50px">
+
+    <div class="general">
+    <div class="Header">
+        
+        <h4 style="margin: 1vh;">Your Weather :D</h4>
+        </section>
+        <div class="Filter">
+            <label for="FiltroCiudad">Escoge Tu Ciudad : </label>
+            <select name="FiltroCiudad" class=" primerselect"id="FiltroCiudad" onchange="drawElements()">
+                <option value="Cali">Cali</option>
+                <option value="Bogota">Bogotá</option>
+            </select>
+        </div>
+    </div>
+
+ 
+
+   
+
+    <!-- RESULTS1-->
+    <div class="content">
+        <section class="Respuesta">
+            <div class="Title">
+                <h2 id="City" class="ciudad">Ciudad</h2>
+                
+            </div>
+            <div class="weekly_overall" id="weekly_overall"><!-- results --></div>
+        </section>
+        
+        <!-- DÍAS-->
+        
+        <div class="filtrosegundo">
+            <label for="FiltroDia">Elige Un Día Para Conocer El Clima :</label>
+            <select name="FiltroDia" class=" segundoselect" id="FiltroDia" onchange="drawElements()">
+                <option value="monday">Monday</option>
+                <option value="tuesday">Tuesday</option>
+                <option value="wednesday">Wednesday</option>
+                <option value="thursday">Thursday</option>
+                <option value="fiday">Friday</option>
+                <option value="saturday">Saturday</option>
+                <option value="sunday">Sunday</option>
+            </select>
+        
+
+        <!-- resultados segundo filtro -->
+        <div class="Display_day" id="Display_day"><!-- results --></div>
+    
+    
+
+    </div>
+
+
+
+    <script src="./appp.js"></script>
+    
+</body>
+</html>
