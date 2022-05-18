@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Clima</title>
+</head>
+
+<body>
+
+    <div>
+        <div class="filterOne">
+            <label for="filterC">City</label>
+            <select name="filterC" id="filterC">
+                <option value="Cali">Cali</option>
+                <option value="Bogota">Bogota</option>
+            </select>
+        </div>
+    </div>
+
+    <div>
+        <h3 id="city">City</h3>
+        <h4 id="week">Weekly Overall</h4>
+
+        <section class="displayOverall" id="displayOverall"><!--results--></section>
+
+        <div class="filterTwo">
+            <label for="filterD">Day</label>
+            <select name="filterD" id="filterD">
+                <option value="all">All</option>
+                <option value="mon">Monday</option>
+                <option value="tue">Tuesday</option>
+                <option value="wed">Wednesday</option>
+                <option value="thu">Thursday</option>
+                <option value="fri">Friday</option>
+                <option value="sat">Saturday</option>
+                <option value="sun">Sunday</option>
+            </select>
+
+            <section class="displayDays" id="displayDays"><!--results--></section>
+
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
