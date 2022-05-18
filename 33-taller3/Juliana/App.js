@@ -8,14 +8,16 @@ const Overall = document.getElementById("Overall");
 let Days = [];
 let TheData;
 
+
 window.onload = function () {
     fetch(Url)
-        .then(Response => Response.json())
-        .then(Data => {
-            ProcessInfo(Data)
-            TheData = Data;
+        .then(response => response.json())
+        .then(data => {
+            ProcessInfo(data)
+            TheData = data;
         });
 }
+
 
 function ProcessInfo(Data) {
     Data.ciudades.forEach(City => {
