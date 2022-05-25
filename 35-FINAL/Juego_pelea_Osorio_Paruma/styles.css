@@ -1,0 +1,51 @@
+*{
+    box-sizing: border-box;
+}
+#padre{
+    position: relative;
+    display: inline-block;
+}
+#hijo{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 20px;
+}
+.vida{
+    background-color: yellow;
+    height: 30px;
+    width: 100%;
+}
+
+#timer{
+    background-color: red;
+    height: 100px;
+    width: 100px;
+    flex-shrink: 0;
+}
+#sostenriv{
+    position: absolute;
+    background-color: aquamarine;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+#sostenjug{
+    position: absolute;
+    background-color: aquamarine;
+    top: 0;
+    bottom: 0;
+    width:100%;
+    right: 0;
+}
+.holder{
+    position: relative;
+    height: 30px;
+    width: 100%;
+}
+#jug{
+    display: flex;
+    justify-content: flex-end;
+}
