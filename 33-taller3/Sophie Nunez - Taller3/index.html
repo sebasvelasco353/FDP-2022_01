@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC Weather</title>
+    <link rel="shortcut icon" href="img/a.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="weatherApp">
+        <div class="container">
+            <h2 class="brand">BBC Weather</h2>
+            <div>
+                <div class="cityandoverall">
+                    <section class="displayCity" id="displayCity"></section>
+                    <section class="displayOverall" id="displayOverall"></section>
+                </div>
+            </div>
+        </div>
+        <div class="panel">
+            <div class="searchBar">
+                <input type="text" class="search" placeholder="Search Here">
+            </div>
+
+            <label for="selectC">Select your city:</label>
+            <select name="" class="selectC" id="selectC" onchange="drawElements()">
+                <option value="Cali">Cali</option>
+                <option value="Bogota">Bogota</option>
+            </select>
+
+            <label for="selectD">Select your day:</label>
+            <select name="" class="selectD" id="selectD" onchange="drawElements()">
+                <option value="all">All Days</option>
+                <option value="monday">Monday</option>
+                <option value="tuesday">Tuesday</option>
+                <option value="wednesday">Wednesday</option>
+                <option value="thursday">Thursday</option>
+                <option value="fiday">Friday</option>
+                <option value="saturday">Saturday</option>
+                <option value="sunday">Sunday</option>
+            </select>
+            <div id="element"></div>
+        </div>
+        <script src="app.js"></script>
+    </div>
+</body>
+
+</html>

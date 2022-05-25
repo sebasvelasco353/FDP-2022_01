@@ -1,0 +1,53 @@
+
+body{
+    background-color: #eff7ff
+
+}
+#div1{
+    background-color: #ffffff;
+    color: #071A26;
+    margin-left: 17%;
+    margin-top: 4%;
+    width:450px ;
+    height: 200px;
+    border-radius: 16px;
+    border: none;
+    padding: 18px;
+    box-shadow: 2px 2px 1px 1px rgba(0, 0, 0, 0.2);
+    
+}
+
+#div2{
+    background-color: #ffffff;
+    color: #071A26;
+    margin-left: 17%;
+    margin-top: 4%;
+    width:950px ;
+    height: 200px;
+    border-radius: 16px;
+    border: none;
+    padding: 18px;
+    box-shadow: 2px 2px 1px 1px rgba(0, 0, 0, 0.2);
+
+    
+    
+
+}
+
+.option{
+    color:aliceblue;
+    background-color: aqua;
+}
+
+/*container*/
+
+.container{
+
+    position:relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(lluvia.jpg);
+
+}
