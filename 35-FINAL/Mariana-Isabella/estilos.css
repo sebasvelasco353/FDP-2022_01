@@ -1,0 +1,76 @@
+:root {
+    --dark-cyan: hsla(185, 23%, 58%, 0.526);
+}
+
+
+body {
+    align-items:center ;
+    font-family: 'Raleway', sans-serif;
+    background-color: var(--dark-cyan);
+
+}
+form {
+    width: 200px;
+    margin: 20px auto;
+    
+}
+
+
+
+.poke-card {
+    position: relative;
+    height: fit-content;
+    font-family: 'Raleway', sans-serif;
+    max-width: 300px;
+    border-radius: 16px;
+    color: hsla(186, 12%, 31%, 0.526);
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    background-color: rgb(253, 248, 232);
+    box-shadow: 2px 2px 5px rgb(77, 77, 77);
+
+}
+
+.poke-card::before {
+    content: '';
+   
+    background-size: 3px 3px;
+    border-radius: 16px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    z-index: -1;
+}
+.pokemonName {
+    
+margin-top: 2rem;
+font-size: 5rem;
+}
+.img-container {
+    position: relative;
+    width: 180px;
+    margin: 10px auto;
+}
+
+.poke-stats div {
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    padding: 5px;
+    font-size: 18px;
+}
+
+.poke-types div {
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px dashed rgb(189, 182, 160);
+}
+
+.poke-img {
+    width: 200px;
+    border-radius: 60%;
+}

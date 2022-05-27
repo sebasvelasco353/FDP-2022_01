@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300&family=Roboto+Condensed:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
+    <link href="estilos.css" rel="stylesheet">
+    <script src="app.js" type="text/javascript" defer></script> 
+    <title>Pokedex App</title>
+    
+  </head>
+  <body>
+    <form action="" onsubmit="searchPokemon(event)">
+      <input type="text" name="pokemon" autocomplete="off">
+  </form>
+  <div data-pokemonCard class="poke-card">
+    <div data-pokemonName>Pokedex</div>
+    <div data-poke-containerImage class="img-container">
+        <img data-poke-img class="poke-img" src="./Recursos/pikachu.png"/>
+    </div>
+    <div data-pokeID></div>
+    <div data-pokeTypes class="poke-types"></div>
+    <div data-pokeStats class="poke-stats"></div>
+  </div>
+
+	
+  </body>
+</html>
