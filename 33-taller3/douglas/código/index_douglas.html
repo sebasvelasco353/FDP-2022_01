@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"href="douglas3_.css">   
+    <title>Weathering whit DS</title>
+    
+</head>
+<body>
+    <div class="flexcent" id="cabecera">
+    <header  id="head"><h1 id="titulo">Weathering with Darksea</h1></header>
+    </div> 
+    <div class="flexcent" id="filtro">
+        <label for="selppal">Most searched
+            <select name="Ciudades" id="maincitys" onchange="setinfo()">
+                <option value="Cali">Cali</option>
+                <option value="Bogota">Bogotá</option>
+            </select> 
+        </label>
+        <label for="diaosem">watch weather on
+            <select name="diaosem" id="dias" onchange="setinfo()">
+                <option value="all">All week</option>
+                <option value="monday">monday</option>
+                <option value="tuesday">tuesday</option>
+                <option value="wednesday">wednesday</option>
+                <option value="thursday">thursday</option>
+                <option value="fiday">fiday</option>
+                <option value="saturday">saturday</option>
+                <option value="sunday">sunday</option>
+            </select> 
+        </label>
+        <input type="text" placeholder="Search another city">
+    </div> 
+    <div class = "flexcent" id = "structure">
+        Structure of information below:
+    <p>Day of the week <img class="icon" src="../calendar-solid-24.png"></p>
+    <p>Average temperature <img class="icon" src="../thermometer-solid-24.png"></p>   
+    <p>Probability of rain <img class="icon" src="../cloud-rain-solid-24.png"></p>    
+    <p>General wather <img class="icon" src="../sun-solid-24.png"></p>    
+    </div>
+    <div class="flexcent" id="container"></div>
+
+    <script src="app_douglas.js"></script>
+</body>
+</html>

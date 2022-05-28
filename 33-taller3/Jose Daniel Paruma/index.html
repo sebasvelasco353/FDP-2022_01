@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Weather consultant</title>
+    <link rel="stylesheet" href="./Style.css">
+</head>
+   <div id="Inicio" class="weather-content">
+	<h1>Buscador de climar</h1>
+	<section class="result">
+		<h2>Consulta el clima de tus cercanias rapido y sencillo</h2>
+        <section class="weather-part">
+            <img src="Iconos/Nube con sol.png" alt="Weather Icon">
+	</section>
+    </section>
+
+    <form action="" method="POST" class="get-weather">
+        <select name="" id="select" onchange="drawElements()">
+            <option value="Cali">Cali</option>
+            <option value="Bogota">Bogota</option>
+        </select>
+    </form>
+<form action="" method="POST" class="get-weather">
+    <select name="" id="daysSelector" onchange="drawElements()">	
+        <option value="monday">monday</option>
+        <option value="tuesday">tuesday</option>
+        <option value="wednesday">wednesday</option>
+        <option value="thursday">thursday</option>
+        <option value="fiday">friday</option>
+        <option value="saturday">saturday</option>
+        <option value="sunday">sunday</option>
+    </select>
+</form>
+
+<div id="element"></div>
+
+<script src="Script.js"></script>
+
+</body>
+</html>

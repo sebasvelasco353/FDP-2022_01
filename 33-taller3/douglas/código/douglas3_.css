@@ -1,0 +1,133 @@
+
+*{
+    font-family: 'Merriweather', serif;
+}
+.flexcent{
+display:flex;
+justify-content:space-around;
+padding: 2rem;
+}
+#titulo{
+    font-family: 'Noto Sans JP', sans-serif;
+    color:white ;
+    font-size: 3rem;
+}
+#cabecera{
+    background-color: #7F207A;
+}
+#filtro{
+    background-color: #888;
+    color: white;
+}
+#structure{
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+    color: white;
+}
+.icon:hover{
+    transform:scale(1.5);
+
+}
+select {
+    display: block;
+    font-size: 16px;
+    font-weight: 100;
+    color: #444;
+    line-height: 1;
+    padding: .2em 1em .3em .8em;
+    width: 100%;
+    max-width: 100%; 
+    box-sizing: border-box;
+    border: 1px solid #aaa;
+    box-shadow: 0 1px 0 1px rgba(0,0,0,.03);
+    border-radius: .3em;
+    background-color: #fff;
+    background-position: right .7em top 50%, 0 0;
+    background-size: .65em auto, 100%;
+   }
+   select:hover {
+    border-color: #888;
+   }
+   select:focus {
+    border-color: #aaa;
+    box-shadow: 0 0 1px 3px rgba(59, 153, 252, .7);
+    box-shadow: 0 0 0 3px -moz-mac-focusring;
+    color: #222; 
+    outline: none;
+   }
+   #container{
+       flex-direction: column;
+   }
+.display_day_sunny{
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+    margin: 2rem; 
+    padding: 2rem;
+    background-color: rgba(255, 158, 13, 0.815);
+    border-radius: 20%;
+    height: 10rem;
+    font-size: 2.5rem;
+    color:white
+}
+.display_day_cloudy{
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+    margin: 2rem; 
+    padding: 2rem;
+    background-color: rgba(48, 48, 48, 0.815);
+    border-radius: 20%;
+    height: 10rem;
+    font-size: 2.5rem;
+    color:white
+}
+body{
+    background-color: rgb(80, 150, 241);
+}
+@media (max-width:800px){
+#structure{
+    display: flex;
+    flex-direction: column;
+}
+#titulo{
+font-size: 2rem;
+}
+.display_day_cloudy{
+font-size: 1.4rem;
+}
+.display_day_sunny{
+font-size: 1.4rem;
+}
+#filtro{
+    display: flex;
+    flex-direction: column;
+}
+}
+@media (min-width:2400px){
+    #structure{
+        font-size: 2.5rem;
+    }
+    #titulo{
+    font-size: 7rem;
+    }
+    .display_day_cloudy{
+    font-size: 4rem;
+    }
+    .display_day_sunny{
+    font-size: 4rem;
+    }
+    #filtro{
+       font-size: 3rem;
+    }
+    select{
+        max-width: 2rem;
+        max-height: 2rem;
+        font-size: 2rem;
+    }
+    .icon{
+        width: 3rem ;
+        height: 3rem;
+    }
+}
