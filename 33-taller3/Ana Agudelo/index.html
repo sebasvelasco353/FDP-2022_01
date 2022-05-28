@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./image/pngwing.png">
+    <title>Weather</title>
+</head>
+<body>
+    <div class="Header">
+        <section class="Logo">
+            <img src="./image/pngwing.png">
+            <p>Weather App</p>
+        </section>
+
+        <section class="All_Filters">
+            <div class="Filter_city">
+                <label for="FilterCity">Choose your city: </label>
+                <select name="FilterCity" id="FilterCity" onchange="drawElements()">
+                    <option value="Cali">Cali</option>
+                    <option value="Bogota">Bogotá</option>
+                </select>
+            </div>
+
+            <div class="Filter_week">
+                <label for="FilterDay">Choose a day: </label>
+                <select name="FilterDay" id="FilterDay" onchange="drawElements()">
+                    <option value="monday">Monday</option>
+                    <option value="tuesday">Tuesday</option>
+                    <option value="wednesday">Wednesday</option>
+                    <option value="thursday">Thursday</option>
+                    <option value="fiday">Friday</option>
+                    <option value="saturday">Saturday</option>
+                    <option value="sunday">Sunday</option>
+                </select>
+            </div>
+        </section>
+    </div>
+
+    <div class="Container">
+        <section class="Overall">
+            <div class="Title">
+                <p id="City"></p>
+                <img src="./image/rain.svg" alt="raining">
+                <p class="Overview">Overview of the week: <b>rainy</b></p>
+            </div>
+
+            <div class="Display_day" id="Display_day"><!-- results --></div>
+        </section>
+
+        <div class="Display_week" id="Display_week"><!-- results --></div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>

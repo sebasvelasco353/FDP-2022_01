@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="es">  
+  <head>    
+    <title>Weather Cali - Bogotá</title>    
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="hearder.css">
+    <link rel="stylesheet" href="contenido.css">
+
+    
+    
+    <style>
+        body {
+          padding: 0;
+          margin: 0;
+        }
+        
+      </style>
+
+    <!-- BREAKPOINTS -->
+
+    <style media="screen">
+
+         @media only screen and (max-width: 800px)  {
+            .top{
+                background-color: blueviolet;
+                display: flex;
+                flex-direction: row;
+                margin-left: 65px;
+                width: 718px;
+                height: 100px;
+                justify-content: space-between;
+                background-color: #cad3dc;
+
+                
+            }
+        }
+
+        @media only screen and (max-width: 800px)  {
+            #div1{
+                background-color: rgb(78, 67, 88);
+                margin-left: 27%;
+                margin-top: 8%;
+                width: 280px ;
+                height: 200px;
+                border-radius: 16px;
+                border: none;
+                padding: 18px;
+            }
+        }
+
+
+        @media only screen and (max-width: 800px)  {
+            #div2{
+                background-color: rgb(162, 91, 230);
+                margin-left: 27%;
+                margin-top: 8%;
+                width: 460px ;
+                height: 200px;
+                border-radius: 16px;
+                border: none;
+                padding: 18px;
+
+            }
+        }
+
+        @media only screen and (max-width: 800px)  {
+            .form > div{
+                display: flex;
+                background: #fff;
+                padding: 3px 7px 2px 9px;
+                border-radius: 30px;
+                border: 2px solid #cad3dc;
+                box-shadow: rgba(255, 255,255, 0.5) -8px -8px 15px,;
+                margin-top: 6.5%;
+                
+
+            }
+        }
+
+        
+        @media only screen and (max-width: 800px)  {
+            form input{
+
+                border: none;
+                background: transparent;
+                font-weight: bold;
+                padding-left: -30px;
+                width: 55px;
+                margin-right: 2%;
+                margin-left: 4%;
+                margin-top: 9.5%;
+
+            }
+        }
+        
+        @media only screen and (max-width: 800px)  {
+            .boton{
+
+                width: 25px;
+                height: 35px;
+                line-height: 35px;
+                text-align: center;
+                background-color: aliceblue;
+                border:none ;
+                border-radius: 14px;
+                font-size: 9px;
+                
+                margin-top: 2.5% ;
+                text-decoration: none;
+
+                
+                
+
+            }
+        }
+
+        @media only screen and (max-width: 800px)  {
+            .cali{
+
+                width: 25px;
+                height: 35px;
+                line-height: 35px;
+                text-align: center;
+                background-color: aliceblue;
+                border:none ;
+                border-radius: 14px;
+                font-size: 9px;
+                
+                margin-top: 1.5% ;
+                text-decoration: none;
+
+                
+                
+
+            }
+        }
+
+        @media only screen and (max-width: 800px)  {
+            .bogota{
+
+                width: 30px;
+                height: 35px;
+                line-height: 35px;
+                text-align: center;
+                background-color: aliceblue;
+                border:none ;
+                border-radius: 14px;
+                font-size: 9px;
+
+                margin-left: 03%;
+                margin-right: 0.3%;
+                
+                margin-top: 1.5% ;
+                text-decoration: none;
+
+                
+                
+
+            }
+        }
+
+        @media only screen and (max-width: 800px)  {
+            .ciudades{
+
+                width: 5x;
+                height: 40px;
+                line-height: 40px;
+                text-align: center;
+                background-color: aliceblue;
+                border:none ;
+                border-radius: 14px;
+                font-size: 13px;
+                
+                margin-top: 1.5% ;
+                text-decoration: none;
+                margin-left: 0.1%;
+                margin-right: -5%;
+
+                
+                
+
+            }
+        }
+
+
+        </style>
+
+    
+        
+    </style>
+
+     
+  </head>  
+  <body>  
+
+      
+    <!-- NAVEGADOR -->
+    <nav>
+        <p class="bienvenida">Weather</p>
+        <ul>
+            
+        
+    
+            <li>
+                <div class="barra"></div>
+                
+                <p class="menu">Inicio</p>
+            </li>
+    
+            <li>
+                <div class="barra"></div>
+    
+                <p class="menu">El tiempo</p>
+                
+            </li>
+
+            <li>
+                <div class="barra"></div>
+    
+                <p class="menu">Mapas</p>
+                
+            </li>
+
+            <li>
+                <div class="barra"></div>
+    
+                <p class="menu">Pronóstico Mensual</p>
+                
+            </li>
+
+            <li>
+                <div class="barra"></div>
+    
+                <p class="menu">Pronóstico Semanal</p>
+                
+            </li>
+
+            <li>
+                <div class="barra"></div>
+    
+                <p class="menu">Noticas</p>
+                
+            </li>
+
+            <li>
+                <div class="barra"></div>
+    
+                <p class="menu">Deportes</p>
+                
+            </li>
+
+           
+    
+        </ul>
+    </nav>
+    
+    <div id="caja" class="caja"></div>
+
+    <!-- DIV COMO HEADER -->
+
+    
+
+    <div class="top">
+        <div class="nombre">
+        <p class="nom">Bienvenido a YourWheater :)</p>
+    </div>
+        
+        <section>
+            <form autocomplete="off">
+                <div >
+                    <input type="text" name="q" placeholder="Buscar" onclick="run();";>
+                </div>
+            </form>
+        </section>
+
+        
+
+        <a class="boton cali" id="cali"> Cali</button>
+        <a class="boton bogota" id="bogota" href="./Bogotaw.html"> Bogotá</a>
+
+    </div>
+
+    <!-- DIV COMO HEADER -->
+
+    <div class="general">
+        <div class="primero"></div>
+
+        <div id="div1">Filtrar Por Días Para Ver El Clima
+
+        <select class="ciudades" id="cities">
+            <option value="0">Lunes</option>
+            <option value="1">Martes</option>
+            <option value="2">Miércoles</option>
+            <option value="3">Jueves</option>
+            <option value="4">Viernes</option>
+            <option value="5">Sábado</option>
+            <option value="6">Domingo</option>
+
+
+            </select>
+        </div>
+
+        <div id="div2">Clima Semanal de Cali</div>
+        
+
+    </div>
+    <div class="option">
+
+    
+    </div>
+
+
+
+
+
+    
+
+  
+
+
+
+
+   
+  </body>  
+  <script src="app.js"></script>
+</html>
