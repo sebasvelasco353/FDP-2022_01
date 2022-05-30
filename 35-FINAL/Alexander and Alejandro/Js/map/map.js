@@ -1,55 +1,42 @@
 // map main
-const map = document.querySelector('canvas');
-const ctx = map.getContext('2d');
-map.width = innerWidth;
-map.height = innerHeight;
+const canvas = document.querySelector('canvas');
+const ctx = canvas.getContext('2d');
 
-// object enemies
-class atack {
-    constructor(x, y, radius, color){
-        this.x = x;
-        this.y = y;
-        this.radius = radius;
-        this.color = color;
-    }
-    draw(){
-        ctx.beginPath();
-        ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
-        ctx.fillStyle = this.color;
-        ctx.fill();
-    }
-}
-
-const enemy = new atack(map.width / 2, map.height / 2, 32, 'darkblue')
+// canvas properties
+canvas.width = innerWidth;
+canvas.height = innerHeight;
 
 // object player
-class defender {
+class Player{
     constructor(x, y, radius, color){
         this.x = x;
-        this.y = y;
+        this.y = y,
         this.radius = radius;
         this.color = color;
     }
-    draw(){
+    draw() {
         ctx.beginPath();
         ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
         ctx.fillStyle = this.color;
         ctx.fill();
     }
-}
+};
 
-const player = new defender(map.width / 2, map.height / 2, 32, 'darkblue');
+const x = canvas.width / 2; 
+const y = canvas.height / 2;
+
+const player = new Player (x, y, 32, 'darkblue');
 
 // object bullet
-class shoot {
+class Projectile{
     constructor(x, y, radius, color, velocity){
         this.x = x;
-        this.y = y;
+        this.y = y,
         this.radius = radius;
         this.color = color;
         this.velocity = velocity;
     }
-    draw(){
+    draw() {
         ctx.beginPath();
         ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
         ctx.fillStyle = this.color;
@@ -57,58 +44,98 @@ class shoot {
     }
     update(){
         this.draw()
-        this.x = this.x + this.velocity.x;
-        this.y = this.y + this.velocity.y;
+        this.x = this.x + this.velocity.x,
+        this.y = this.y + this.velocity.y
     }
-}; 
+};
 
-// arrays
-const bullets = []
-const enemies = []
+// object enemy
+class Enemy{
+    constructor(x, y, radius, color, velocity){
+        this.x = x;
+        this.y = y,
+        this.radius = radius;
+        this.color = color;
+        this.velocity = velocity;
+    }
+    draw() {
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
+        ctx.fillStyle = this.color;
+        ctx.fill();
+    }
+    update(){
+        this.draw()
+        this.x = this.x + this.velocity.x,
+        this.y = this.y + this.velocity.y
+    }
+};
+
+// arrays bullet and enemies
+const projectiles = [];
+const enemies = [];
 
 // spawnEnemies
 function spawnEnemies(){
-    setInterval(() => {
-        const x = 100;
-        const y = 100;
-        const radius = 30;
-        const color = 'red';
-        const velocity = {
-            x: 1,
-            y: 1
+    setInterval(() =>{
+        const radius = Math.random() * (32 - 12) + 12;
+
+        let x;
+        let y;
+
+        if(Math.random() < 0.5){
+         x = Math.random() < 0.5 ? 0 - radius: canvas.width + radius;
+         y = Math.random() * canvas.height;
+        } else{
+             y = Math.random() < 0.5 ? 0 - radius: canvas.width + radius;
+             x = Math.random() * canvas.width;
         }
-        enemies.push(new atack(x, y, radius, color, velocity))
-        console.log(enemies);
-    }, 500);
-}
+        const color = 'red';
+        const angle = Math.atan2(canvas.width / 2- x, canvas.height / 2 - y );
+        const velocity = {
+            x: Math.sin(angle),
+            y: Math.cos(angle)
+        }
+        enemies.push(new Enemy(x, y, radius, color, velocity))
+    }, 1000)
+};
 
-// animation bullet
-function animation() {
-    requestAnimationFrame(animation);
-    ctx.clearRect(0, 0, map.width, map.height)
-    player.draw();
-    bullets.forEach(shoot => {
-        shoot.update();
-    });
-}
+// animation projectile
+function animation(){
+    requestAnimationFrame(animation)
+    ctx.clearRect(0, 0, canvas.width, canvas.height)
+    player.draw()
+    projectiles.forEach((projectile) => {
+        projectile.update();
+    })
 
-// angle bullet
-window.addEventListener('click', (event) =>{
-    const angle = Math.atan2(event.clientX - map.width / 2, event.clientY- map.height / 2)
+        enemies.forEach((enemy, index) => {
+         enemy.update();
 
+// condition to hit the bullet and the enemy
+        projectiles.forEach((projectile, projectileIndex) => {
+            const dist = Math.hypot(projectile.x - enemy.x, projectile.y - enemy.y)
+            if (dist - enemy.radius - projectile.radius < 1)
+            enemies.splice(index, 1);
+            projectiles.splice(projectileIndex, 1);
+        })
+    })
+};
+
+addEventListener('click', (event) =>{
+    const angle = Math.atan2(event.clientX - canvas.width / 2, event.clientY - canvas.height / 2);
     const velocity = {
-        x:Math.sin(angle),
-        y:Math.cos(angle)
+        x: Math.sin(angle),
+        y: Math.cos(angle)
     }
-
-    bullets.push(new shoot(
-        map.width / 2, 
-        map.height / 2,
+    projectiles.push(new Projectile(
+        canvas.width / 2,
+        canvas.height / 2,
         8,
         'lightblue',
         velocity
     ))
-})
+});
 
 animation();
 spawnEnemies();
