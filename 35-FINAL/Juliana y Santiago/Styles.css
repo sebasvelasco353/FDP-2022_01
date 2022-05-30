@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --White: #ffffff; 
+    --Black: #1a1a1a; 
+    --Green: #14a691ff;
+    /*--DarkGreen: #094836ff;*/
+    --Red: #f1310aff;
+    --Blue: #2842caff;
+    --Pink: #f19cc0ff;
+    --Beige: #f9f7f0;
+}
+
+/*BarNav*/
+.Nav {
+    z-index: 20;
+    position: fixed;
+    width: 100%;
+    background-color: var(--Red);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    transition: all 0.5s ease;
+}
+
+.Logo {
+    font-family: 'Yeseva One';
+    font-weight: 200;
+    font-size: 2rem;
+    color: var(--White);
+    margin-left: 5%;
+    margin-top: 18px;
+}
+
+.Menú {
+    display: flex;
+    margin-right: 4rem;
+    text-align: right;
+}
+
+.Menú li {
+    list-style: none;
+    margin: 15px;
+    font-size: 1.1rem;
+}
+
+.Menú li a {
+    font-family: Mukta;
+    font-weight: 800;
+    font-size: 1rem;
+    color: var(--White);
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+.Menú li a:hover {
+    padding: 5px 10px;
+    border-bottom: 1px solid var(--White);
+}
+
+/*Banner*/
+.Banner {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--Red);
+}
+
+.BannerTexts {
+    margin-top: 20%;
+    margin-left: 5%;
+}
+
+.BannerTexts h1 {
+    font-family: 'Yeseva One', cursive;
+    font-size: 5rem;
+    color: var(--White);
+}
+
+.BannerTexts h2 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.8rem;
+    color: var(--White);
+}
+
+.Banner img {
+    margin-top: 70px;
+    height: 90vh;
+}
+
+/*IntroInfo*/
+.IntroInfo {
+    background-color: var(--Beige);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+
+.IntroInfo h2 { 
+    text-align: center;
+    color: var(--Black);
+    font-family: 'Yeseva One', cursive;
+    font-size: 2.5rem;
+    padding: 20px
+}
+
+.IntroInfo h2 span {
+    color: var(--Red);
+}
+
+.IntroInfo p {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+/*Button More Info*/
+
+.learn-more{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: Mukta;
+    width: 12rem;
+    height: auto;
+}
+
+.circle{
+    transition: all 0.45s cubic-bezier(0.65,0,0.076,1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background-color: var(--Red);
+    border-radius: 1.625rem;
+}
+
+.icon{
+    transition: all 0.45s cubic-bezier(0.65,0,0.076,1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: var(--Beige); 
+}
+
+.arrow{
+    transition: all 0.45s cubic-bezier(0.65,0,0.076,1);
+    top: -0.25rem;
+    left: 0.625rem;
+    width: 1.145rem;
+    height: 0.145rem;  
+    background: none;    
+}
+
+.arrow::before{
+    position: absolute;
+    content: '';
+    top: -0.25rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.145rem solid var(--White);
+    border-right: 0.145rem solid var(--White);
+    transform: rotate(45deg); 
+} 
+
+.button-text {
+    transition: all 0.45s cubic-bezier(0.65,0,.076,1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: var(--Black);
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.learn-more:hover > .circle{
+    width: 100%;
+}
+
+.learn-more:hover > .circle > .arrow{
+    background: white;
+    transform: translate(1rem, 0);
+}
+
+.learn-more:hover > .button-text{
+    color: white;
+}
+
+/*Body Info*/
+
+.BodyInfo {
+    background-color: var(--Red);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 90vh;
+}
+
+/*Tittle with animation*/
+
+.text-container {
+    font-family:Yeseva One;
+    font-size:5em;
+    height:200px;
+    width:100%;
+    color:var(--White);
+  }
+
+.text{
+    margin-left: 5%;
+}
+
+  /* Body info */ 
+
+.BodyInfo p {
+    color: var(--White);
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-size: 1.4rem;
+    margin-left: 5%;
+    margin-top: -6rem;
+}
+
+/* Button Beige */
+
+.learn-more2{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: Mukta;
+    width: 12rem;
+    height: auto;
+    margin-left: 5%;
+}
+
+.circle2{
+    transition: all 0.45s cubic-bezier(0.65,0,0.076,1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background-color: var(--Beige);
+    border-radius: 1.625rem;
+}
+
+.icon2{
+    transition: all 0.45s cubic-bezier(0.65,0,0.076,1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: var(--Red); 
+}
+
+.arrow2{
+    transition: all 0.45s cubic-bezier(0.65,0,0.076,1);
+    top: -0.25rem;
+    left: 0.625rem;
+    width: 1.145rem;
+    height: 0.145rem;  
+    background: none;    
+}
+
+.arrow2::before{
+    position: absolute;
+    content: '';
+    top: -0.25rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.145rem solid var(--Red);
+    border-right: 0.145rem solid var(--Red);
+    transform: rotate(45deg); 
+} 
+
+.button-text2 {
+    transition: all 0.45s cubic-bezier(0.65,0,.076,1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: var(--White);
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.learn-more2:hover > .circle2{
+    width: 100%;
+}
+
+.learn-more2:hover > .circle2 > .arrow2{
+    background: var(--Red);
+    transform: translate(1rem, 0);
+}
+
+.learn-more2:hover > .button-text2{
+    color: var(--Red);
+}
+
+/* footer */
+footer{
+    height: 5rem;
+    width: 100%;
+    background-color: var(--Beige);
+}
+
+/*scrollbar*/
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--Green); 
+    border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #0c7fb5;
+}
