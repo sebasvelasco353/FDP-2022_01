@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/EstilosResultados.css">
+    <link rel="shortcut icon" href="./Images/Icon.png">
+    <title>Weather App</title>
+</head>
+<body>
+    <!-- header y select ciudad-->
+    <div class="Header">
+        <section class="Logo">
+            <img src="./Images/Icon2.png">
+            <h3 style="margin: 1vh;">Weather app</h3>
+        </section>
+        <div class="Filter">
+            <label for="FiltroCiudad">Choose your city: </label>
+            <select name="FiltroCiudad" id="FiltroCiudad" onchange="drawElements()">
+                <option value="Cali">Cali</option>
+                <option value="Bogota">Bogotá</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- canvas -->
+    <div id="Canvas"></div>
+
+    <!-- resultados primer filtro -->
+    <div class="Content">
+        <section class="Respuesta">
+            <div class="Title">
+                <h2 id="City">City</h2>
+                <p>It will be <b>rainy</b> this week</p>
+            </div>
+            <div class="weekly_overall" id="weekly_overall"><!-- results --></div>
+        </section>
+        
+        <!-- select día -->
+        <div class="Filter2">
+            <label for="FiltroDia">Choose a day: </label>
+            <select name="FiltroDia" id="FiltroDia" onchange="drawElements()">
+                <option value="monday">Monday</option>
+                <option value="tuesday">Tuesday</option>
+                <option value="wednesday">Wednesday</option>
+                <option value="thursday">Thursday</option>
+                <option value="fiday">Friday</option>
+                <option value="saturday">Saturday</option>
+                <option value="sunday">Sunday</option>
+            </select>
+        </div>
+
+        <!-- resultados segundo filtro -->
+        <div class="Display_day" id="Display_day"><!-- results --></div>
+    </div>
+
+    <script src="./JS/App_filtro.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/p5.min.js"></script>
+    <script src="./JS/Canvas.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="./JS/Animaciones.js"></script>
+</body>
+</html>

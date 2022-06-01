@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Overpass:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Styles.css">
+    <title>Clima</title>
+</head>
+<body>
+    <div class="Screen">
+        <section>
+            <nav class="Nav">
+                <div class="Logo"> <ion-icon name="cloudy-night"></ion-icon>Weather App</div>
+                <ul class="Menú">
+                    <li><a href="#" id="Section1btn" onclick="Err()"> Home </a></li>
+                    <li><a href="#" id="Section2btn" onclick="Err()"> Around the world </a></li>
+                    <li><a href="#" id="Section3btn" onclick="Err()"> Forecast </a></li>
+                    <li><a href="#" id="Section4btn" onclick="Err()"> Contact </a></li>
+                </ul>
+                </nav>
+        </section>
+    
+        <section class="Main">
+                <div class="Welcome">
+                    <h1>Hello, little cloud!</h1>
+                    <h3>This is the weather in your area:</h3>
+                </div>
+        
+                <div class="Filters">
+                    <h3>Choose your city and the day</h3>
+                    <label for="FilterByC">City:</label>
+                    <select name="FilterC" id="FilterC"onchange="DisplayData()">
+                        <option value="Cali">Cali</option>
+                        <option value="Bogota">Bogotá</option>
+                    </select>
+                    <label for="FilterByD">Day:</label>
+                    <select name="FilterD" id="FilterD" onchange="DisplayData()">
+                        <option value="all">All</option>
+                        <option value="monday">Monday</option>
+                        <option value="tuesday">Tuesday</option>
+                        <option value="wednesday">Wednesday</option>
+                        <option value="thursday">Thursday</option>
+                        <option value="fiday">Friday</option>
+                        <option value="saturday">Saturday</option>
+                        <option value="sunday">Sunday</option>
+                    </select>
+                </div>
+        
+            <div class="Overall" id="Overall">
+        
+            </div>
+            
+            <div class="Daily" id="Daily">
+        
+            </div>
+    
+            <div class="Search">
+                <label for="Search">
+                    <h3>Search a new city!</h3>
+                    <input type="text" placeholder="Search here">
+                </label>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="App.js"></script>
+</body>
+</html>

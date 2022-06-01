@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Oleo+Script:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Styles.css">
+    <title>App Clima</title>
+</head>
+<body>
+    <div class="Principal">
+        <div class="nav">
+            <div class="titulo"><ion-icon name="sunny"></ion-icon></ion-icon>App Clima</div>
+        </div>
+    
+            <div class="filtros">
+                <h3>Choose a city and a day to know the weather:</h3>
+                <select class="selectCiudad" id="selectCiudad" onchange="drawElements()">
+                    <option value="Cali">Cali</option>
+                    <option value="Bogota">Bogota</option>
+                </select>
+                <select class="selectDia" id="selectDia" onchange="drawElements()">
+                    <option value="all">week</option>
+                    <option value="monday">monday</option>
+                    <option value="tuesday">tuesday</option>
+                    <option value="wednesday">wednesday</option>
+                    <option value="thursday">thursday</option>
+                    <option value="fiday">friday</option>
+                    <option value="saturday">saturday</option>
+                    <option value="sunday">sunday</option>
+                </select>
+            </div>
+        
+            <div class="overallWeek" id="overallWeek">
+        
+            </div>
+
+            <div class="Search">
+                <h3>Try another city:</h3>
+                <input type="text" placeholder="Ej: Barrancabermeja">
+                <input type="button" value="Ok">
+            </div>
+    
+        <div class="Contenedor">
+            <div id="datosClima">
+        
+            </div>
+        </div>
+    </div>
+    
+    <script src="./App.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

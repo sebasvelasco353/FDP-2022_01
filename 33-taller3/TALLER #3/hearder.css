@@ -1,0 +1,122 @@
+.top{
+    display: flex;
+    flex-direction: row;
+    margin-left: 65px;
+    width: 1198px;
+    height: 100px;
+    justify-content: space-between;
+    background-color: #020b11;
+
+    
+   
+}
+.nom{
+    font-size:17px ;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 20px;
+    padding-left: 150px;
+    margin-top: 1.5%;
+    color: #ffffff;
+    
+}
+
+input{
+    font: inherit;
+    color:rgb(8, 8, 8);
+    
+}
+
+section{
+    min-height: 100vh;
+    display: flex;
+    align-items:top;
+    
+
+}
+
+
+
+form > div{
+    display: flex;
+    background: #fff;
+    color: #071A26;
+
+    padding: 9px 22px 9px 26px;
+    border-radius: 30px;
+    border: 2px solid #cad3dc;
+    box-shadow: rgba(255, 255,255, 0.5) -8px -8px 15px,;
+    margin-top: 6.5%;
+ 
+    
+                  
+
+
+}
+form input{
+    border: none;
+    background: transparent;
+    font-weight: bold;
+    padding-left: -80px;
+    width: 370px;
+    margin-right: 80px;
+    
+    
+    
+}
+
+.boton {
+    width: 80px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #f6fbff;
+    color: #071A26;
+    border:none ;
+    border-radius: 14px;
+    
+    margin-top: 2.5% ;
+    text-decoration: none;
+}
+
+.boton:hover{
+    background-color: #122430;
+    color: #f6fbff;
+    
+}
+
+
+.cali{
+    margin-left: 1%;
+    margin-right: -5%;
+}
+
+.bogota{
+    margin-left: 7%;
+    margin-right: 5%;
+}
+
+.ciudades{
+    width: 80px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #f6fbff;
+    color: #071A26;
+    border:none ;
+    border-radius: 14px;
+
+    margin-top:  2.5%;
+    margin-left: 7%;
+    margin-right: 3%;
+
+
+}
+
+.ciudades:hover{
+
+    background-color: #122430;
+    color: #f6fbff;
+
+}
+
+
