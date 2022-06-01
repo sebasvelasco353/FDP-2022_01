@@ -23,6 +23,7 @@ class Datos {
         opt.innerHTML = `<p class = "day_title">${this.day}</p> <p class="temp"><b>${this.temp}°C</b></p><br> It will be <b>${this.sunny ? "Sunny" : "Rainy"}</b><br> Precipitation: ${this.precipitation}<br> Uv Index: ${this.uv}`;
         elm.appendChild (opt);
     }
+
     drawCiu (ciu){
         const opt = document.createElement('p');
         opt.innerHTML = `${this.city}`;
