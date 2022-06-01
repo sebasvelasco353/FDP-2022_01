@@ -1,0 +1,159 @@
+@font-face {
+  font-family: "CourageRoad";
+  src: url("fuentes/CourageRoad.ttf") format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "LeagueGothic";
+  src: url("fuentes/LeagueGothic.ttf") format('truetype');
+  font-weight: normal;
+}
+
+
+/*Imágen incial y título */ 
+
+html, body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+  }
+  
+.full {
+    width: 100%;
+    height: 100%;
+    background: url('images/WalkLogo.jpg') no-repeat 50% 50%;
+    background-size: cover;
+    display: table;
+    margin: auto;
+    top: 0;
+  }
+  
+.full-inner {
+    width: 100%;
+    vertical-align: middle;
+    display: table-cell;
+  }
+  
+  
+
+/*Menu superior*/
+
+.menu{
+	list-style: none;
+	padding: 0;
+	background: #b25c0b;
+	margin: auto;
+  position: fixed;
+  align-content: center;
+  width: 100%;
+}
+
+.menu li a{
+	text-decoration: none;
+	color: white;
+	padding: 20px;
+	display: block;
+  text-align: center;
+}
+
+.menu li{
+	display: inline-block;
+	text-align: center;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.menu li a:hover{
+	background: #849b32;
+}
+
+/*Cards*/
+
+.Cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding: 1em;
+    border: 1em;
+    margin: 1em;
+    color: azure;
+}
+
+.card1:hover{
+	background: #849b32;
+}
+.card2:hover{
+	background: #849b32;
+}
+
+.card1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    margin: 1em;
+    background-color: #b25c0b;
+    border: 2px solid gray;
+    padding: 5px;
+    box-shadow: 7px 13px 37px rgb(183, 218, 219);
+}
+
+.card2 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    margin: 1em;
+    background-color: #b25c0b;
+    border: 2px solid gray;
+    padding: 5px;
+    box-shadow: 7px 13px 37px rgb(183, 218, 219);
+}
+
+.textoN {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.Subtitulos{
+    font-family: LeagueGothic;
+    font-size: 200%;
+    color: white;
+}
+
+.titulos{
+  font-family: LeagueGothic;
+  font-size: 300%;
+  color: white;
+}
+
+/*map*/
+#cardmap {
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+}
+
+/*comentarios*/
+
+.coment {
+  background-color: #b25c0b;
+  padding: 10px;
+  color: white;
+  margin: 1em;
+  border: 2px solid gray;
+  width: fit-content;
+  height: fit-content;
+}
+.coment:hover {
+	background: #849b32;
+}
+
+#display {
+  color: rgb(82, 76, 76);
+  padding: 10px;
+  border: 2px solid #849b32;
+  background-color: whitesmoke;
+}
