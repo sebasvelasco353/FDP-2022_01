@@ -9,11 +9,8 @@
 :root {
     --White: #ffffff; 
     --Black: #1a1a1a; 
-    --Green: #14a691ff;
-    /*--DarkGreen: #094836ff;*/
+    --Green: #007F70;
     --Red: #f1310aff;
-    --Blue: #2842caff;
-    --Pink: #f19cc0ff;
     --Beige: #f9f7f0;
 }
 
@@ -36,7 +33,6 @@
     font-size: 2rem;
     color: var(--White);
     margin-left: 5%;
-    margin-top: 18px;
 }
 
 .Menú {
@@ -58,6 +54,7 @@
     color: var(--White);
     text-decoration: none;
     transition: all 0.5s ease;
+    cursor: pointer;
 }
 
 .Menú li a:hover {
@@ -103,7 +100,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 90vh;
+    height: 100vh;
 }
 
 .IntroInfo h2 { 
@@ -126,7 +123,6 @@
 }
 
 /*Button More Info*/
-
 .learn-more{
     position: relative;
     display: inline-block;
@@ -214,17 +210,24 @@
 }
 
 /*Body Info*/
-
 .BodyInfo {
     background-color: var(--Red);
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 90vh;
+    height: 100vh;
+}
+
+.BodyInfo p {
+    color: var(--White);
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-size: 1.4rem;
+    margin-left: 5%;
+    margin-top: -6rem;
 }
 
 /*Tittle with animation*/
-
 .text-container {
     font-family:Yeseva One;
     font-size:5em;
@@ -237,19 +240,7 @@
     margin-left: 5%;
 }
 
-  /* Body info */ 
-
-.BodyInfo p {
-    color: var(--White);
-    font-family: 'Nunito', sans-serif;
-    font-weight: 600;
-    font-size: 1.4rem;
-    margin-left: 5%;
-    margin-top: -6rem;
-}
-
 /* Button Beige */
-
 .learn-more2{
     position: relative;
     display: inline-block;
@@ -337,11 +328,185 @@
     color: var(--Red);
 }
 
-/* footer */
-footer{
-    height: 5rem;
-    width: 100%;
+/*CountryInfo*/
+.CountryInfo{
     background-color: var(--Beige);
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    padding: 5rem;
+    overflow: hidden;
+    font-size: 1rem;
+}
+
+.CountryInfo h1 {
+    padding-bottom: 40px;
+    color: var(--Red);
+}
+
+.CountryInfo div{
+    width: 30%;
+    margin-left: 38%;
+}
+
+.CountryInfo > div > p{
+    font-family: Mukta;
+    
+}
+
+.CountryInfo > div > h3{
+    font-family: Mukta;
+    color: var(--Red);
+    
+}
+
+/*TakeAction*/
+.BgAction {
+    background-color: var(--Beige);
+    height: 100vh;
+}
+
+.TakeAction {
+    position: relative;
+    background-color: var(--White);
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.TakeAction img {
+    width: 50%;
+    height: 100%;
+}
+
+.ContainerForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    margin-top: 5%;
+}
+
+.TextForm {
+    width: 80%;
+    text-align: center;
+}
+
+.TextForm h1 {
+    font-family: 'Yeseva One', cursive;
+    font-size: 2rem;
+    color: var(--Green);
+    margin-bottom: 10px;
+    border-bottom: 4px solid var(--Green);
+    display: inline-block;
+}
+
+.TextForm h3 {
+    font-size: 1.05rem;
+    margin-bottom: 35px;
+    display: inline-block;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
+}
+
+.InputsForm {
+    margin-bottom: 10px;
+}
+
+.InputsForm span {
+    margin-bottom: 5px;
+    display: inline-block;
+    font-size: 1rem;
+    font-family: 'Nunito', sans-serif;
+}
+
+.InputsForm input {
+    width: 100%;
+    padding: 10px 20px;
+    outline: none;
+    font-weight: 400;
+    border: 1px solid var(--Green);
+    background: transparent;
+    border-radius: 30px;
+}
+
+.InputsForm .Message {
+    height: 100px;
+    border-radius: 20px;
+}
+
+input[type="button"]{
+    margin-top: 10px;
+    padding: 10px;
+    width: 100%;
+    height: 50px;
+    border: 1px solid;
+    background: var(--Green);
+    color: var(--White);
+    border-radius: 30px;
+    font-size: 18px;
+    font-family: 'Yeseva One', cursive;
+    cursor: pointer;
+    outline: none;
+}
+
+input[type="button"]:hover {
+    transition: .5s;
+    opacity: 1;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.SMText h3 {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.SocialMedia {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+}
+
+.SocialMedia img {
+    width: 55px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.SocialMedia img:hover {
+    transition: .5s;
+    transform: scale(1.15);
+}
+
+/*Final quote*/
+.Quote {
+    background-color: var(--Red);
+    width: 100%;
+    height: 40vh;
+}
+
+.Quote h1 {
+    font-size: 50px;
+    font-family: 'Yeseva One', cursive;
+    color: var(--White);
+    text-align: center;
+    padding: 110px 0 10px 0;
+}
+
+.Quote h3 {
+    font-size: 25px;
+    color: var(--White);
+    text-align: right;
+    padding-right: 135px;
+    font-family: 'Yeseva One', cursive;
+    font-style: italic;
 }
 
 /*scrollbar*/
@@ -355,5 +520,5 @@ footer{
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background-color: #0c7fb5;
+    background-color: #00b09b;
 }

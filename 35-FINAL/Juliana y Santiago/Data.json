@@ -1,0 +1,39 @@
+{
+    "Countries": [
+        {
+            "Country": "China",
+            "Co2": "10 billion tons",
+            "Status": "Dangerous"
+        },
+        {
+            "Country": "USA",
+            "Co2": "6,5 billion tons",
+            "Status": "Dangerous"
+        },
+        {
+            "Country": "India",
+            "Co2": "3,7 billion tons",
+            "Status": "Warning"
+        },
+        {
+            "Country": "Russia",
+            "Co2": "2,3 billion tons",
+            "Status": "Warning"
+        },
+        {
+            "Country": "Japan",
+            "Co2": "1,9 billion tons",
+            "Status": "Warning"
+        },
+        {
+            "Country": "Iran",
+            "Co2": "1,4 billion tons",
+            "Status": "Warning"
+        },
+        {
+            "Country": "Germany",
+            "Co2": "1 billion tons",
+            "Status": "Careful"
+        }
+    ]
+}
