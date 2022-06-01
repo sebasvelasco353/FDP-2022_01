@@ -1,0 +1,73 @@
+*{
+    box-sizing: border-box;
+}
+#padre{
+    position: relative;
+    display: inline-block;
+}
+#hijo{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 20px;
+}
+.vida{
+    background-color: red;
+    height: 30px;
+    width: 100%;
+    border: 3px solid rgba(102, 51, 153, 0.664);
+}
+
+#timer{
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    background-color: black;
+    color: bisque;
+    height: 50px;
+    width: 100px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid rgba(255, 228, 196, 0.5);
+}
+#sostenriv{
+    position: absolute;
+    background-color: rgb(16, 172, 159);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border: 3px solid rgba(255, 228, 196, 0.5);
+}
+#sostenjug{
+    position: absolute;
+    background-color: greenyellow;
+    top: 0;
+    bottom: 0;
+    width:100%;
+    right: 0;
+    border: 3px solid rgba(255, 228, 196, 0.5);
+}
+.holder{
+    position: relative;
+    height: 30px;
+    width: 100%;
+}
+#jug{
+    display: flex;
+    justify-content: flex-end;
+}
+#finjueg{
+    position: absolute;
+    color: white;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 4rem;
+}
