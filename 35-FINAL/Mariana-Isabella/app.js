@@ -77,7 +77,7 @@ const setCardColor = types => {
 }
 //funcion renderPokemonTypes que tiene el parametro types y tiene el innerHtml para borrar los que tenía y poner los nuevos
 //por cada uno de los tupos que recibamos, pueden ser uno o dos, y selecciona un type
-//crea un elemento que se llamatypeTextElement, se agrega un div
+//crea un elemento que se llama typeTextElement, se agrega un div
 //ese elemento va a tener un color igual a = selecciona segun un tipo especifico
 //a poketypes se le hace un appenchild con el typetextelement. Si viene uno solo se pone uno solo y si son los dos pues los dos
 
@@ -91,7 +91,7 @@ const renderPokemonTypes = types => {
     });
 }
 //funcion renderPokemonStats
-//con el innherit se borra lo anterior 
+//con el innerHTML se borra lo anterior 
 // se pone cada una de las estadisticas
 //Se crea un elemento statElement y dos más izq (estadistica) y derecha (porcentaje)datos
 
