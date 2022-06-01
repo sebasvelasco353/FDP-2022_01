@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BusterCallGame</title>
+    <link rel="stylesheet" href="./Style/style.css">
+</head>
+<body>
+
+    <!-- points obtained -->
+    <div class="points">
+        <span>Score:</span>
+        <span id="point">0</span>
+    </div>
+
+    <!-- Final points -->
+    <div class="main_container">
+        <div class="bacground" id="background">
+            <h1 id="scoretEnd">0</h1>
+            <p>Points</p>
+            <div class="button-start">
+                <button id="StartGame">Start</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- canvas principal -->
+    <canvas></canvas>
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/p5.min.js"></script>
+<script src="./Js/map/map.js"></script>
+</html>

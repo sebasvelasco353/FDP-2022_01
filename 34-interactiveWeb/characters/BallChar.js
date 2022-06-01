@@ -14,7 +14,7 @@ class Ball {
         }
     }
     getPosition() {
-        //console.log(this.position);
+        // console.log(this.position);
         return [this.posWidth*this.position[0], this.posHeight*this.position[1]]; 
     }
     paint() {
