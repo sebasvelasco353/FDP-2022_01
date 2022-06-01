@@ -13,23 +13,21 @@ const endPoint= document.querySelector('#scoretEnd');
 
 // object player
 class Player{
-    constructor(x, y, radius, color){
+    constructor(x, y, radius, velocity){
         this.x = x;
-        this.y = y,
+        this.y = y;
         this.radius = radius;
-        this.color = color;
+        this.velocity = velocity;
     }
     draw() {
-        ctx.beginPath();
-        ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
-        ctx.fillStyle = this.color;
-        ctx.fill();
+        const imgHuman = new Image();
+        imgHuman.src = './assets/player/Human3.png';
+        ctx.drawImage(imgHuman, canvas.width/2 - imgHuman.width/2, canvas.height/2 - imgHuman.height/2);
     }
 };
 
 const x = canvas.width / 2; 
 const y = canvas.height / 2;
-
 
 // arrays 
 let player = new Player (x, y, 24, 'white');
@@ -54,10 +52,9 @@ class Projectile{
         this.velocity = velocity;
     }
     draw() {
-        ctx.beginPath();
-        ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
-        ctx.fillStyle = this.color;
-        ctx.fill();
+        const imgBullet = new Image();
+        imgBullet.src = './assets/bullet/bullet7.png';
+        ctx.drawImage(imgBullet, this.x, this.y)
     }
     update(){
         this.draw()
@@ -76,10 +73,9 @@ class Enemy{
         this.velocity = velocity;
     }
     draw() {
-        ctx.beginPath();
-        ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
-        ctx.fillStyle = this.color;
-        ctx.fill();
+        const imgEnemy = new Image();
+        imgEnemy.src = './assets/enemy/Zombie3.png';
+        ctx.drawImage(imgEnemy, this.x, this.y)
     }
     update(){
         this.draw()
@@ -92,7 +88,7 @@ class Enemy{
 // spawnEnemies
 function spawnEnemies(){
     setInterval(() =>{
-        const radius = Math.random() * (32 - 12) + 12;
+        const radius = 40;
 
         let x;
         let y;
@@ -121,11 +117,11 @@ let score = 0;
 function animation(){
     idAnimation = requestAnimationFrame(animation)
     ctx.fillStyle= 'rgba(0, 0, 0, 0.4)';
-    ctx.fillRect(0,0, canvas.width, canvas.height);
-    player.draw();
+    ctx.fillRect( 0, 0, canvas.width, canvas.height);
 
     projectiles.forEach((projectile, index) => {
         projectile.update();
+        player.draw();
 
         // end the game
         if(projectile.x + projectile.radius < 0 ||
@@ -164,13 +160,6 @@ function animation(){
                         enemies.splice(index, 1);
                         projectiles.splice(projectileIndex, 1);
                     }, 0);
-                } else{
-                    score += 400;
-                    point.innerHTML = score;
-                    setTimeout(() => {
-                        enemies.splice(index, 1);
-                        projectiles.splice(projectileIndex, 1);
-                    }, 0);
                 }
             }
         })
@@ -188,11 +177,12 @@ addEventListener('click', (event) =>{
         canvas.width / 2,
         canvas.height / 2,
         8,
-        'blue',
+        'orange',
         velocity
     ))
 });
 
+//  event for star and reset the game 
 startGame.addEventListener('click', () =>{
     resetGame()
     animation();
@@ -200,3 +190,30 @@ startGame.addEventListener('click', () =>{
     containerScore.style.display = 'none';
 });
 
+// event to make the canvas fit the screen
+addEventListener('resize',()=>{
+    canvas.width = innerWidth;
+    canvas.height = innerHeight;
+    ctx.width = canvas.width;
+    ctx.height = canvas.height;
+});
+
+// event move the player   
+addEventListener('keydown',({keyCode}) =>{
+    switch (keyCode) {
+        case 87:
+            console.log('up');
+            break;
+        case 83:
+            console.log('down');
+            break;
+        case 65:
+            console.log('left');
+            break;
+        case 68:
+            console.log('right');
+            break;
+            player.velocity.x += 32;
+            break;
+    }
+})

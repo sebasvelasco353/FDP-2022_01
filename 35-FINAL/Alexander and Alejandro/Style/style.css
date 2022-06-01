@@ -3,6 +3,10 @@
     margin: 0px;
 }
 
+body{
+    overflow: hidden;
+}
+
 .points{
     display: flex;
     position: fixed;
