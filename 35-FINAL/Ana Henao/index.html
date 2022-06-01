@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anna's Ingredients</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+    <link rel="shortcut icon" href="./cocinando.png">
+    <link rel = "stylesheet" href = "style.css">
+    </head>
+    <body>
+    
+        <div class = "container">
+            <img class="logo" src="./cocinando.png" alt="icono cocina">
+            <div class = "envoltura">
+            <div class = "food-search">
+                <h2 class = "title">Find your meals</h2>
+
+                <div class = "food-search-container">
+                <input type = "text" class = "space-search" placeholder="Write an ingredient and click" id = "space-search">
+                <button type = "submit" class = "search-button btn" id = "search-button">
+                    <i class = "fas fa-search"></i>
+                </button>
+                </div>
+            </div>
+
+            <div class = "meal-result">
+                <h2 class = "title">Recipes:</h2>
+                <div id= "meal"></div>
+            </div>
+
+
+            <div class = "meal-details">
+                <!-- recipe close btn -->
+                <button type = "button" class = "btn recipe-close-btn" id = "recipe-close-btn">
+                <i class = "fas fa-times"></i>
+                </button>
+
+                <!-- meal content -->
+                <div class = "meal-details-content"></div>
+            </div>
+            </div>
+        </div>
+
+        <script src = "script.js"></script>
+    
+    </body>
+</html>
