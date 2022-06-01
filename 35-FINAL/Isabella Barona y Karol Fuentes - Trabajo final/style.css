@@ -1,0 +1,41 @@
+html, body {
+    height: 100%;
+  }
+
+html{
+    background-color: #010123;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+h4{margin: 2vh 0 0 0;}
+
+p{
+  font-size: small;
+  text-align: center;
+  margin: 2vh;
+}
+
+.swal-footer {
+  text-align: center;
+  margin: 2vh 0;
+}
+
+.swal-button {
+    background-color: rgb(249, 195, 74);
+}
+
+.swal-button--confirm:focus{box-shadow: none;}
+
+.sweet-warning:not([disabled]):hover{
+ background-color: rgb(222, 168, 70);
+}
