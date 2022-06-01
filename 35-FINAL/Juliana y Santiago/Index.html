@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&family=Yeseva+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Styles.css">
+    <title>Be Cool</title>
+</head>
+<body>
+    <div class="BarNav">
+        <nav class="Nav">
+            <div class="Logo"> Be Cool</div>
+            <ul class="Menú">
+                <li><a class="Navigation" data-link="Banner"> Home </a></li>
+                <li><a class="Navigation" data-link="IntroInfo"> About us </a></li>
+                <li><a class="Navigation" data-link="BodyInfo"> Global warming </a></li>
+                <li><a class="Navigation" data-link="CountryInfo"> Around the world </a></li>
+                <li><a class="Navigation" data-link="TakeAction"> Take action </a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="Banner" id="Banner">
+        <div class="BannerTexts">
+            <h1>Oh, no <br> Our house is on fire!</h1>
+            <h2>Find the better way to help...</h2>
+        </div>
+        <img src="https://thegreats-prod.s3.eu-central-1.amazonaws.com/artworks/acddd53cafdb917834c065fc0e19fded.jpg" alt="Keep it cool">
+    </div>
+
+    <div class="IntroInfo" id="IntroInfo">
+        <h2>What is <span> Be Cool?</span></h2>
+        <p>Be Cool is a mandatory response to climate change. <br>
+            Through design, music and different kinds of art, we seek to develop <br>the environmental awareness necessary to take action for our planet. <br> <br>
+            We are believers that change is in each of us, <br>we just have to be curious enough to find it.</p><br>
+
+            <button class="learn-more" onclick="Err()">
+                <span class="circle" aria-hidden="true">
+                    <span class="icon arrow"></span>
+                </span>
+                <span class="button-text">Learn More</span>
+            </button>    
+    </div>
+
+    <div class="BodyInfo" id="BodyInfo">
+        <div class="text-container"><span class="text" id="text"></span></div>
+        <p>Global warming is a term used for the observed century-scale rise in the average temperature of <br> Earth's climate system and its related effects. Scientists are more than 95% certain that nearly all <br>
+        of global warming is caused by increasing concentrations of greenhouse gases (GHGs) and other<br>human-caused emissions...</p><br>
+        
+        <button class="learn-more2" onclick="Err()">
+            <span class="circle2" aria-hidden="true">
+                <span class="icon2 arrow2"></span>
+            </span>
+            <span class="button-text2">Learn More</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="CountryInfo" id="CountryInfo">
+        <h1>Contamination around the world</h1>
+    </div>
+
+    <div class="BgAction">
+        <div class="TakeAction" id="TakeAction">
+            <img src="https://thegreats-prod.s3.eu-central-1.amazonaws.com/artworks/4c3ce18a9f42980380add6e1dd148ddb.jpg" alt="Eco-Logic">
+            <div class="ContainerForm">
+                <div class="TextForm">
+                    <h1>Be part of the solution!</h1>
+                    <h3>Send us a message and learn the best way to help</h3>
+                </div>
+                <form class="Form">
+                    <div class="InputsForm">
+                        <span>Name</span>
+                        <input type="text" id="Name">
+                    </div>
+                    <div class="InputsForm">
+                        <span>Phone</span>
+                        <input type="tel" id="Phone">
+                    </div>
+                    <div class="InputsForm">
+                        <span>Leave us a message</span>
+                        <input type="text" class="Message" id="Message">
+                    </div>
+                    <input type="button" value="Make the difference!" onclick="Send()">
+                </form>
+                <div class="SMText">
+                    <h3>Or follow us in social media</h3>
+                <div class="SocialMedia">
+                    <img src="https://cdn-icons-png.flaticon.com/512/20/20673.png" alt="Facebook">
+                    <img src="https://cdn-icons-png.flaticon.com/128/1384/1384017.png" alt="Twitter">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1384/1384015.png" alt="Instagram">
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="Quote">
+        <h1>"“What you do makes a difference, and you have to decide what kind of difference you want to make.”"</h1>
+        <h3>-Dr Jane Goodall</h3>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="App.js"></script>
+</body>
+</html>
