@@ -6,6 +6,7 @@ const ctx = canvas.getContext('2d');
 canvas.width = innerWidth;
 canvas.height = innerHeight;
 
+// count the points of player 
 const point = document.querySelector('#point');
 const startGame = document.querySelector('#StartGame');
 const containerScore = document.querySelector('#background');
@@ -22,24 +23,45 @@ class Player{
     draw() {
         const imgHuman = new Image();
         imgHuman.src = './assets/player/Human3.png';
-        ctx.drawImage(imgHuman, canvas.width/2 - imgHuman.width/2, canvas.height/2 - imgHuman.height/2);
+        ctx.drawImage(imgHuman, (canvas.width/2 - imgHuman.width/2) + imgHuman.width/4.2, canvas.height/2 - imgHuman.height/4.8);
     }
 };
 
+// coordenate of the player
 const x = canvas.width / 2; 
 const y = canvas.height / 2;
 
 // arrays 
-let player = new Player (x, y, 24, 'white');
+let player = new Player (x, y, 24);
 let projectiles = [];
 let enemies = [];
 
 function resetGame(){
-    player = new Player (x, y, 24, 'white');
+    player = new Player (x, y, 24);
     projectiles = [];
     enemies = [];
     score = 0;
     point.innerHTML = score;
+}
+
+addEventListener('keypress',(event) =>{
+    console.log(event);
+})
+
+// move the player
+function keyPressed() {
+    if(keyPressed === UP_ARROW){
+        player.y -= 5;
+    }
+    if(keyPressed === DOWN_ARROW){
+        player.y += 5;
+    }
+    if(keyPressed === LEFT_ARROW){
+        player.x -= 5;
+    }
+    if(keyPressed === RIGHT_ARROW){
+        player.x += 5;
+    }
 }
 
 // object bullet
@@ -101,7 +123,7 @@ function spawnEnemies(){
              x = Math.random() * canvas.width;
         }
         const color = 'red';
-        const angle = Math.atan2(canvas.width / 2- x, canvas.height / 2 - y );
+        const angle = Math.atan2(canvas.width / 2 - x, canvas.height / 2 - y );
         const velocity = {
             x: Math.sin(angle),
             y: Math.cos(angle)
@@ -110,13 +132,18 @@ function spawnEnemies(){
     }, 1000)
 };
 
-// animation projectile
 let idAnimation;
 let score = 0;
 
+// animation projectile
 function animation(){
     idAnimation = requestAnimationFrame(animation)
-    ctx.fillStyle= 'rgba(0, 0, 0, 0.4)';
+    const imgBg = new Image();
+    imgBg.src = './assets/background/Jungle2.jpg'
+    ctx.drawImage(imgBg,0 ,0)
+    imgBg.width = ctx.width;
+    imgBg.height = ctx.height;
+    ctx.fillStyle= 'rgba(0, 0, 0, 0.008)';
     ctx.fillRect( 0, 0, canvas.width, canvas.height);
 
     projectiles.forEach((projectile, index) => {
@@ -197,23 +224,3 @@ addEventListener('resize',()=>{
     ctx.width = canvas.width;
     ctx.height = canvas.height;
 });
-
-// event move the player   
-addEventListener('keydown',({keyCode}) =>{
-    switch (keyCode) {
-        case 87:
-            console.log('up');
-            break;
-        case 83:
-            console.log('down');
-            break;
-        case 65:
-            console.log('left');
-            break;
-        case 68:
-            console.log('right');
-            break;
-            player.velocity.x += 32;
-            break;
-    }
-})
